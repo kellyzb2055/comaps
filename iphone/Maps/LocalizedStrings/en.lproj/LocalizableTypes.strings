@@ -54,10 +54,11 @@
 "type.amenity.studio" = "Media Studio";
 "type.leisure.adult_gaming_centre" = "Adult Gaming Centre";
 "type.leisure.amusement_arcade" = "Arcade";
-"type.amenity.charging_station" = "Charging Station";
-"type.amenity.charging_station.bicycle" = "Bicycle Charging Station";
-"type.amenity.charging_station.motorcar" = "Car Charging Station";
-"type.amenity.charging_station.motorcar.small" = "Car Charging Point";
+"type.amenity.charging_station.general" = "Charging Station";
+"type.amenity.charging_station.motorcar" = "Cars";
+"type.amenity.charging_station.motorcycle" = "Motorcycles";
+"type.amenity.charging_station.bicycle" = "Bicycles";
+"type.amenity.charging_station.small" = "Limited Capacity";
 "type.amenity.childcare" = "Nursery";
 "type.amenity.cinema" = "Cinema";
 "type.leisure.bowling_alley" = "Bowling Alley";

@@ -330,7 +330,7 @@
 "amenity-animal_shelter": "Приют для животных",
 "@charging_station": "4Зарядная станция|зарядка|электрозарядка|зарядить",
 "amenity-charging_station-bicycle|@charging_station": "4Велозарядка|Зарядка для велосипедов",
-"amenity-charging_station-motorcar|amenity-charging_station-motorcar-small|@charging_station": "4Автозарядка",
+"amenity-charging_station-motorcar|@charging_station": "4Автозарядка",
 "amenity-childcare": "Детская комната|3ясли",
 "amenity-bicycle_parking": "4Велопарковка|велостоянка",
 "amenity-waste_basket": "3Урна|4Мусорная корзина",

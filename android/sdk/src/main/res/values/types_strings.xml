@@ -52,10 +52,11 @@
     <string name="type.amenity.gambling">Gambling</string>
     <string name="type.leisure.adult_gaming_centre">Adult Gaming Centre</string>
     <string name="type.leisure.amusement_arcade">Arcade</string>
-    <string name="type.amenity.charging_station">Charging Station</string>
-    <string name="type.amenity.charging_station.bicycle">Bicycle Charging Station</string>
-    <string name="type.amenity.charging_station.motorcar">Car Charging Station</string>
-    <string name="type.amenity.charging_station.motorcar.small">Car Charging Point</string>
+    <string name="type.amenity.charging_station.general">Charging Station</string>
+    <string name="type.amenity.charging_station.bicycle">Bicycles</string>
+    <string name="type.amenity.charging_station.motorcycle">Motorcycles</string>
+    <string name="type.amenity.charging_station.motorcar">Cars</string>
+    <string name="type.amenity.charging_station.small">Limited Capacity</string>
     <string name="type.amenity.childcare">Nursery</string>
     <string name="type.amenity.cinema">Cinema</string>
     <string name="type.amenity.studio">Media Studio</string>

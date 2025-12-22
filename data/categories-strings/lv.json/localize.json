@@ -320,7 +320,7 @@
 "amenity-veterinary": "4Veterinārārsts|vetārsts|vetklīnika|veterinārā klīnika",
 "@charging_station": "4Uzlādes stacija|uzlāde",
 "amenity-charging_station-bicycle|@charging_station": "4Velosipēdu uzlāde|Riteņu uzlāde|Ričuku uzlāde|Divriteņu uzlāde",
-"amenity-charging_station-motorcar|amenity-charging_station-motorcar-small|@charging_station": "Automobiļu uzlāde|mašīnu uzlāde",
+"amenity-charging_station-motorcar|@charging_station": "Automobiļu uzlāde|mašīnu uzlāde",
 "amenity-childcare": "Bērnistaba",
 "amenity-bicycle_parking": "4Velonovietne",
 "amenity-waste_basket": "Atkritumu tvertne|4miskaste",

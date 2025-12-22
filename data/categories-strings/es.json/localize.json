@@ -518,7 +518,7 @@
 "amenity-toilets|toilets-yes|@category_toilet": "wc",
 "leisure-sports_centre-sport-swimming": "4Centro de natación",
 "amenity-police|@category_police": "Estación de policía|policía",
-"amenity-charging_station-motorcar|amenity-charging_station-motorcar-small|@charging_station": "Cargador de autos|cargador de coches|cargador de carros|4Estación de carga|3Estación de carga|Cargador",
+"amenity-charging_station-motorcar|@charging_station": "Cargador de autos|cargador de coches|cargador de carros|4Estación de carga|3Estación de carga|Cargador",
 "amenity-sailing_school": "Escuela de vela|Escuela de navegación",
 "amenity-flight_school": "Escuela de aviación|Escuela de aeronáutica|Escuela de pilotos|aeronáutica|vuelo|aviación",
 "amenity-prep_school": "Propedéutico|Tutoría",

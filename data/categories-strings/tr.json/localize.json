@@ -331,7 +331,7 @@
 "amenity-veterinary": "4Veteriner",
 "@charging_station": "Şarj İstasyonu|şarj etme",
 "amenity-charging_station-bicycle|@charging_station": "4Bisiklet Şarjı",
-"amenity-charging_station-motorcar|amenity-charging_station-motorcar-small|@charging_station": "4Otomobil Şarj Cihazı|4Araba Şarj Cihazı|4Araç Şarj Cihazı|3Trugo|4TOGG Şarj",
+"amenity-charging_station-motorcar|@charging_station": "4Otomobil Şarj Cihazı|4Araba Şarj Cihazı|4Araç Şarj Cihazı|3Trugo|4TOGG Şarj",
 "amenity-childcare": "Çocuk Yuvası|Kreş",
 "amenity-bicycle_parking": "4Bisiklet park etme|bisiklet park",
 "amenity-waste_basket": "Çöp Kutusu",
