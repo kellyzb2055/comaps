@@ -228,7 +228,6 @@ private:
         {{"shop", "money_lender"}, SearchMarkType::Bank},
         {{"amenity", "fuel"}, SearchMarkType::Fuel},
         {{"amenity", "charging_station"}, SearchMarkType::ChargingStation},
-        {{"amenity", "charging_station", "general"}, SearchMarkType::ChargingStation},
         {{"amenity", "charging_station", "bicycle"}, SearchMarkType::ChargingStation},
         {{"amenity", "charging_station", "motorcycle"}, SearchMarkType::ChargingStation},
         {{"amenity", "charging_station", "motorcar"}, SearchMarkType::ChargingStation},

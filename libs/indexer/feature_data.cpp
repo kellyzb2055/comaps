@@ -196,15 +196,20 @@ void TypesHolder::SortBySpec()
 
   std::stable_sort(begin(), end(), [&checker, &getPriority, &isChargingStationChecker, &isChargingStationSmallChecker](uint32_t t1, uint32_t t2)
   {
-    if (isChargingStationSmallChecker(t1) && !isChargingStationSmallChecker(t2))
-      return false;
-    else if (isChargingStationSmallChecker(t1) && !isChargingStationSmallChecker(t2))
-      return true;
-    
-    if (isChargingStationChecker(t1) && !isChargingStationChecker(t2))
-      return true;
-    else if (isChargingStationChecker(t2) && !isChargingStationChecker(t1))
-      return false;
+    if (isChargingStationChecker(t1) && isChargingStationChecker(t2))
+    {
+      if (isChargingStationSmallChecker(t1) && !isChargingStationSmallChecker(t2))
+        return false;
+      else if (!isChargingStationSmallChecker(t1) && isChargingStationSmallChecker(t2))
+        return true;
+      
+      uint8_t const t1Level = ftype::GetLevel(t1);
+      uint8_t const t2Level = ftype::GetLevel(t2);
+      if (t1Level == 2 && t2Level != 2)
+        return true;
+      else if (t1Level != 2 && t2Level == 2)
+        return false;
+    }
       
     int const p1 = getPriority(t1);
     int const p2 = getPriority(t2);
@@ -416,7 +421,7 @@ void FeatureParams::SetRwSubwayType(char const * cityName)
 FeatureParams::TypesResult FeatureParams::FinishAddingTypesEx()
 {
   auto const & cl = classif();
-  auto charingStation = cl.GetTypeByPath({"amenity", "charging_station", "general"});
+  auto charingStation = cl.GetTypeByPath({"amenity", "charging_station"});
   auto motorcarCharingStation = cl.GetTypeByPath({"amenity", "charging_station", "motorcar"});
   auto carelessCharingStation = cl.GetTypeByPath({"amenity", "charging_station", "carless"});
   if (IsTypeExist(charingStation) && !IsTypeExist(motorcarCharingStation) && !IsTypeExist(carelessCharingStation))

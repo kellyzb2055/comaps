@@ -1191,7 +1191,7 @@ shop|tyres;1064;
 craft|beekeeper;1065;
 amenity|car_wash;1066;
 amenity|veterinary;1067;
-amenity|charging_station|general;[amenity=charging_station];;name;int_name;1068;
+amenity|charging_station;[amenity=charging_station];;name;int_name;1068;
 amenity|childcare;1069;
 craft|blacksmith;1070;
 amenity|bicycle_parking;1071;

@@ -435,7 +435,7 @@ amenity-charging_station-motorcycle                 # icon z16- (also has captio
 amenity-charging_station-bicycle                    # icon z16- (also has caption(optional) z16-, area z16-)
 === 3751
 
-amenity-charging_station-general                    # icon z16- (also has caption(optional) z16-, area z16-)
+amenity-charging_station                            # icon z16- (also has caption(optional) z16-, area z16-)
 === 3750
 
 amenity-charging_station-carless                    # icon z16- (also has caption(optional) z16-, area z16-)
@@ -1715,7 +1715,7 @@ leisure-swimming_pool-private                       # icon z17- (also has captio
 # amenity-charging_station-bicycle                  # caption(optional) z16- (also has icon z16-, area z16-)
 # === -6249
 
-# amenity-charging_station-general                  # caption(optional) z16- (also has icon z16-, area z16-)
+# amenity-charging_station                          # caption(optional) z16- (also has icon z16-, area z16-)
 # === -6250
 
 # amenity-charging_station-carless                  # caption(optional) z16- (also has icon z16-, area z16-)

@@ -351,6 +351,11 @@ private:
 // - both amenity-charging_station-motorcar and amenity-charging_station-bicycle are left;
 void LeaveLongestTypes(std::vector<generator::TypeStrings> & matchedTypes)
 {
+  auto const isChargingStation = [](auto const & lhs, auto const & rhs)
+  {
+    return lhs.size() > 1 && rhs.size() > 1 && lhs.at(1) == "charging_station" && rhs.at(1) == "charging_station" && lhs.at(0) == "amenity" && rhs.at(0) == "amenity";
+  };
+
   auto const equalPrefix = [](auto const & lhs, auto const & rhs)
   {
     size_t const prefixSz = std::min(lhs.size(), rhs.size());
@@ -369,8 +374,11 @@ void LeaveLongestTypes(std::vector<generator::TypeStrings> & matchedTypes)
     return lhs < rhs;
   };
 
-  auto const isEqual = [&equalPrefix](auto const & lhs, auto const & rhs)
+  auto const isEqual = [&equalPrefix, &isChargingStation](auto const & lhs, auto const & rhs)
   {
+    if (isChargingStation(lhs, rhs))
+      return false;
+    
     if (equalPrefix(lhs, rhs))
     {
       // Keep longest type only, so return equal is true.

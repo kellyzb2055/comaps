@@ -354,7 +354,7 @@
 "amenity-veterinary": "4Veterinary Doctor|3Veterinary|vet|veterinarian",
 "amenity-animal_shelter": "6Animal Shelter",
 "@charging_station": "4Charging Station|charging|charger",
-"amenity-charging_station-general|@charging_station": "",
+"amenity-charging_station|@charging_station": "",
 "amenity-charging_station-bicycle|@charging_station": "4Bicycle Charging Station|Bicycle Charging|Bike Charging",
 "amenity-charging_station-motorcycle|@charging_station": "5Motorcycle Charging Station|Motorcycle Charging|Motorbike Charging",
 "amenity-charging_station-motorcar|@charging_station": "3Car Charging Station|Motorcar Charging|Car Charging",
