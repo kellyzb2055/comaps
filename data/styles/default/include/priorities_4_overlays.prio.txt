@@ -2387,6 +2387,7 @@ tourism-information                                 # icon z16- (also has captio
 tourism-information-board                           # icon z16- (also has caption(optional) z16-)
 tourism-information-guidepost                       # icon z16- (also has caption(optional) z16-)
 tourism-information-map                             # icon z16- (also has caption(optional) z16-)
+tourism-information-tactile_map                     # icon z16- (also has caption(optional) z16-)
 === -9940
 
 amenity                                             # caption z19-
@@ -2478,4 +2479,5 @@ entrance-service                                    # icon z19- (also has captio
 # tourism-information-board                         # caption(optional) z16- (also has icon z16-)
 # tourism-information-guidepost                     # caption(optional) z16- (also has icon z16-)
 # tourism-information-map                           # caption(optional) z16- (also has icon z16-)
+# tourism-information-tactile_map                   # caption(optional) z16- (also has icon z16-)
 === -10000

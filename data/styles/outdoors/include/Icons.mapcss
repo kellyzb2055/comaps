@@ -353,6 +353,7 @@ node|z15-[tourism=information][information=board],
 node|z15-[tourism=information][information=guidepost],
 {icon-image: guidepost.svg;}
 node|z15-[tourism=information][information=map],
+node|z15-[tourism=information][information=tactile_map],
 {icon-image: map.svg;}
 
 node|z13-[amenity=ranger_station],

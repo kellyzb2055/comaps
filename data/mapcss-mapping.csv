@@ -518,7 +518,7 @@ piste:type|sled;402;
 leisure|beach_resort;403;
 leisure|dog_park;404;
 aerialway|gondola;405;
-deprecated:historic|museum:10.2021;[historic=museum];x;name;int_name;406;tourism|museum
+tourism|information|tactile_map;[tourism=information][information=tactile_map];;name;int_name;406;
 highway|living_street|bridge;[highway=living_street][bridge?];;name;int_name;407;
 leisure|track|area;[leisure=track][area?];;name;int_name;408;
 railway|monorail;409;
