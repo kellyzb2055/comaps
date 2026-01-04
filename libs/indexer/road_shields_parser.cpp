@@ -513,9 +513,9 @@ public:
   explicit AustriaRoadShieldParser(std::string const & baseRoadNumber)
     : SimpleRoadShieldParser(baseRoadNumber, {{"A", RoadShieldType::Generic_Blue_Bordered},
                                               {"S", RoadShieldType::Generic_Blue_Bordered},
-                                              {"B", RoadShieldType::Generic_Blue, false, true},
-                                              {"P", RoadShieldType::Generic_Pill_Red, false, true},
-                                              {"L", RoadShieldType::Generic_Pill_White_Bordered, false, true}})
+                                              {"B", RoadShieldType::Generic_Blue},
+                                              {"P", RoadShieldType::Generic_Pill_Red_Bordered},
+                                              {"L", RoadShieldType::Generic_Pill_White_Bordered}})
   {}
 };
 
@@ -604,17 +604,6 @@ public:
                                               {"IC", RoadShieldType::Generic_White_Bordered},
                                               {"EM", RoadShieldType::Generic_Orange},
                                               {"CM", RoadShieldType::Generic_Orange}})
-  {}
-};
-
-	class AlbaniaRoadShieldParser : public SimpleRoadShieldParser
-{
-public:
-  explicit AlbaniaRoadShieldParser(std::string const & baseRoadNumber)
-    : SimpleRoadShieldParser(baseRoadNumber, {{"A", RoadShieldType::Italy_Autostrada},
-                                              {"SH", RoadShieldType::Generic_Blue_Bordered},
-                                              {"RR", RoadShieldType::Generic_Blue_Bordered},
-                                              {"E", RoadShieldType::Generic_Green_Bordered}})
   {}
 };
 
@@ -714,11 +703,11 @@ class GermanyRoadShieldParser : public SimpleRoadShieldParser
 {
 public:
   explicit GermanyRoadShieldParser(std::string const & baseRoadNumber)
-    : SimpleRoadShieldParser(baseRoadNumber, {{"A", RoadShieldType::Highway_Hexagon_Blue, false, true},
+    : SimpleRoadShieldParser(baseRoadNumber, {{"A", RoadShieldType::Highway_Hexagon_Blue},
                                               {"D", RoadShieldType::Hidden},
                                               {"B", RoadShieldType::Generic_Orange_Bordered},
-                                              {"K", RoadShieldType::Generic_White_Bordered},
-                                              {"L", RoadShieldType::Generic_White_Bordered}})
+                                              {"L", RoadShieldType::Generic_White_Bordered},
+                                              {"K", RoadShieldType::Generic_White_Bordered}})
   {}
 };
 
@@ -892,7 +881,7 @@ RoadShieldsSetT GetRoadShields(std::string const & mwmName, std::string const & 
   if (mwmName == "India")
     return IndiaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Austria")
-    return AustriaRoadShieldParser(roadNumber, highwayClass).GetRoadShields();
+    return AustriaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Belgium")
     return BelgiumRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Greece")
@@ -911,8 +900,6 @@ RoadShieldsSetT GetRoadShields(std::string const & mwmName, std::string const & 
     return MoldovaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Portugal")
     return PortugalRoadShieldParser(roadNumber).GetRoadShields();
-  if (mwmName == "Albania")
-    return AlbaniaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Romania")
     return RomaniaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Serbia")
@@ -930,7 +917,7 @@ RoadShieldsSetT GetRoadShields(std::string const & mwmName, std::string const & 
   if (mwmName == "France")
     return FranceRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Germany")
-    return GermanyRoadShieldParser(roadNumber, highwayClass).GetRoadShields();
+    return GermanyRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Spain")
     return SpainRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Ukraine")
