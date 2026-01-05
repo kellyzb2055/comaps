@@ -278,10 +278,6 @@
   <style name="MwmTheme.Navigation">
     <item name="iconTint">@color/white_primary</item>
   </style>
-
-  <style name="PopupMenu" parent="ThemeOverlay.Material3">
-    <item name="android:popupBackground">?windowBackgroundForced</item>
-  </style>
     <!-- Theme required to apply M3 dialog style on preference screen -->
     <style name="MwmTheme.M3.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
         <item name="dialogCornerRadius">28dp</item>

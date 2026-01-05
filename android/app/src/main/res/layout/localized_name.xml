@@ -7,6 +7,7 @@
   android:orientation="vertical"
   android:paddingEnd="@dimen/margin_base"
   android:paddingStart="@dimen/margin_base"
+  android:background="@color/fg_editor"
   android:animateLayoutChanges="true">
 
   <com.google.android.material.textview.MaterialTextView
@@ -20,7 +21,12 @@
     android:textAppearance="@style/MwmTextAppearance.Body3"
     tools:drawableEnd="@drawable/ic_expand_more" />
 
-  <include layout="@layout/recycler_default" />
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fg_editor"
+    android:scrollbars="vertical"/>
 
   <com.google.android.material.button.MaterialButton
     android:id="@+id/more_names"
