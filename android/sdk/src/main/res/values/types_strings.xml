@@ -947,6 +947,9 @@
     <string name="type.railway.monorail">Monorail</string>
     <string name="type.railway.monorail.bridge">Monorail Bridge</string>
     <string name="type.railway.monorail.tunnel">Monorail Tunnel</string>
+    <string name="type.railway.miniature">Miniature Railway</string>
+    <string name="type.railway.miniature.bridge">Miniature Railway Bridge</string>
+    <string name="type.railway.miniature.tunnel">Miniature Railway Tunnel</string>
     <string name="type.railway.narrow_gauge">Narrow Gauge Rail</string>
     <string name="type.railway.narrow_gauge.bridge">Narrow Gauge Rail Bridge</string>
     <string name="type.railway.narrow_gauge.tunnel">Narrow Gauge Rail Tunnel</string>
