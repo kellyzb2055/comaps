@@ -1,8 +1,9 @@
-• Dados OSM de 17/12
-• Servidor de download de mapas configurável
-• Adição de informações sobre mapas desatualizados e um botão de atualização ao cartão de informações do local selecionado
-• Evita o uso de corredores de estacionamento para roteamento
-• Formato dos botões de zoom alterado
-• Sinônimos de busca em francês aprimorados
-• Editor OSM: verificação do limite de comprimento das tags do OSM na validação de valores
+• Dados OSM de 6/1
+• Editor: adição de POIs com mais de uma etiqueta OSM, por exemplo esculturas e pinturas; mais tipos de POI podem ser marcados como vagos/desativados
+• Adição de ferrovias em miniatura e ETEs
+• Uso de diálogos Material 3 e fundo mais escuro no modo escuro
+• Remoção de limites de velocidade fictícios para vias de ligação
+• Correção de recorte da câmera na navegação
+• Toque longo menos sensível (modo tela cheia)
+
 Mais detalhes em codeberg.org/comaps/comaps/releases

@@ -1,8 +1,9 @@
-• OpenStreetMap data as of December 17
-• Make map download server configurable
-• Added info about outdated maps and an update button to the selected place info card
-• Avoid using parking aisles for routing
-• Changed shape of zoom buttons
-• Improved French search synonyms
-• OSM editor: check length limit for OSM tags in value validation
+• OpenStreetMap data as of January 6
+• Editor: add POI types with more than one OSM tag, e.g. artwork subtypes sculptures, paintings..; more POI types could be marked as vacant/disused
+• Added miniature railways and wastewater treatment plants
+• Use Material 3 dialogs and darker background in dark mode
+• Removed fictional speed limits for link roads
+• Fixed camera cutout offset in navigation
+• Less sensitive long tap (full-screen mode)
+
 More details on codeberg.org/comaps/comaps/releases

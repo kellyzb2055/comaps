@@ -1,8 +1,9 @@
-• OpenStreetMap Daten vom 17. Dezember
-• Map download server nun wählbar
-• Warnung über veraltete Karten hinzugefügt + Knopf zum updaten
-• Vermeidung von Parkplatzwegen im Routing
-• Neuer Zoombutton
-• Verbesserte Französchische Suchsynonme
-• OSM editor: Maximale Länge für OSM-Tags werden nun geprüft
-Mehr auf codeberg.org/comaps/comaps/releases
+• OSM-Daten vom 6. Januar
+• Editor: POI mit mehr als einem Tag, (z.B. Arten von Kunstwerken wie Skulpturen...), mehr POI können als leer/stillgelegt werden
+• Miniatureisenbahnen & Kläranlagen hinzugefügt
+• Material 3-Dialoge & dunklerer Hintergrund im Darkmode
+• Fiktive Geschwindigkeitsbegrenzungen für Verbindungsstraßen entfernt
+• Versatz der Kameraausschnitt in der Navigation behoben
+• Weniger empfindliches langes Antippen
+
+Weitere Details unter codeberg.org/comaps/comaps/releases
