@@ -315,4 +315,22 @@
     <string name="error_enter_correct_web">সঠিক ওয়েব এড্রেস দিন</string>
     <string name="error_enter_correct_email">সঠিক ইমেইল দিন</string>
     <string name="placepage_add_place_button">OpenStreetMap এ স্থান যোগ করুন</string>
+    <string name="editor_zip_code">ডাক কোড</string>
+    <string name="error_enter_correct_zip_code">সঠিক ডাক কোড প্রদান করুন</string>
+    <string name="editor_reset_edits_button">পরিবর্তনগুলো বাতিল করুন</string>
+    <plurals name="bookmarks_places">
+        <item quantity="one">%dটি বুকমার্ক</item>
+        <item quantity="other">%dটি বুকমার্ক</item>
+    </plurals>
+    <plurals name="bookmarks_detect_message">
+        <item quantity="one">%dটি ফাইল পাওয়া গেছে। রূপান্তরের পর আপনি এটি দেখতে পারবেন।</item>
+        <item quantity="other">%dটি ফাইল পাওয়া গেছে। রূপান্তরের পর আপনি সেগুলো দেখতে পারবেন।</item>
+    </plurals>
+    <plurals name="tracks">
+        <item quantity="one">%dটি ট্র্যাক</item>
+        <item quantity="other">%dটি ট্র্যাক</item>
+    </plurals>
+    <string name="app_tip_06">আপনি আমাদের অ্যাপটি আপনার ভাষায় অনুবাদ করতে সাহায্য করতে পারেন।</string>
+    <string name="offline_explanation_title">অফলাইন মানচিত্র</string>
+    <string name="offline_explanation_text">এলাকাটি দেখতে এবং নেভিগেট করতে একটি মানচিত্র ডাউনলোড করতে হবে।\nআপনি যেসব এলাকায় ভ্রমণ করতে চান সেগুলোর মানচিত্র ডাউনলোড করুন।</string>
 </resources>

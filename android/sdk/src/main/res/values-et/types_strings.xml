@@ -1495,4 +1495,10 @@
     <string name="type.man_made.mast.communication">Sidemast</string>
     <string name="type.shop.beauty.nails">Küünestuudio</string>
     <string name="type.amenity.hydrant">Kastmishüdrant</string>
+    <string name="type.lateral.port">Pakpoordis</string>
+    <string name="type.lateral.starboard">Tüürpoordis</string>
+    <string name="type.cardinal.east">Idas</string>
+    <string name="type.cardinal.north">Põhjas</string>
+    <string name="type.cardinal.south">Lõunas</string>
+    <string name="type.cardinal.west">Läänes</string>
 </resources>

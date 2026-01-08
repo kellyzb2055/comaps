@@ -915,5 +915,5 @@
     <string name="advanced">Täiendavad seadistused</string>
     <string name="download_resources_custom_url_title">Sinu oma kaardiserver</string>
     <string name="download_resources_custom_url_message">Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. CoMapsi vaikimisi serveri kasutamiseks jäta tühjaks.</string>
-    <string name="download_resources_custom_url_error_scheme">Palun sisesta täismahuline võrguaadress, mille alguses on https:// ja lõpus /</string>
+    <string name="download_resources_custom_url_error_scheme">Palun sisesta täismahuline võrguaadress, mille alguses on http:// või https://</string>
 </resources>

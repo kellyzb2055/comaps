@@ -2,7 +2,7 @@
 "type.addr_interpolation.even" = "Адреса/Блок";
 "type.addr_interpolation.odd" = "Адреса/Блок";
 "type.aerialway" = "Гондола";
-"type.aerialway.cable_car" = "Ваздушни трамвај";
+"type.aerialway.cable_car" = "Жичара";
 "type.aerialway.chair_lift" = "Ски-лифт";
 "type.aerialway.drag_lift" = "Ски-лифт једносед";
 "type.aerialway.gondola" = "Гондола";

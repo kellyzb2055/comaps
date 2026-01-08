@@ -627,7 +627,7 @@
     <string name="type.landuse.vineyard">Viñedo</string>
     <string name="type.leisure">Ocio</string>
     <string name="type.leisure.common">Zona pública</string>
-    <string name="type.leisure.dog_park">Parque para perros</string>
+    <string name="type.leisure.dog_park">Parque canino</string>
     <string name="type.leisure.fitness_centre">Centro de fitnes</string>
     <string name="type.leisure.fitness_station">Parque de fitnes</string>
     <string name="type.leisure.dance">Salón de baile</string>

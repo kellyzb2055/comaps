@@ -897,5 +897,5 @@
     <string name="download_resources_custom_url_title">Servidor de Mapas Personalizado</string>
     <string name="download_resources_custom_url_message">Substitua o servidor padrão usado para baixar mapas. Deixe em branco para usar o servidor padrão do CoMaps.</string>
     <string name="download_resources_custom_url_summary_none">Não definido</string>
-    <string name="download_resources_custom_url_error_scheme">Insira um URL completo começando com https:// e terminando com /</string>
+    <string name="download_resources_custom_url_error_scheme">Insira uma URL começando com http:// ou https://</string>
 </resources>

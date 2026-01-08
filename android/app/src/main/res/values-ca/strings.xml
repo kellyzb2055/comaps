@@ -924,5 +924,5 @@
     <string name="download_resources_custom_url_title">Servidor de Mapes Personalitzat</string>
     <string name="download_resources_custom_url_message">Sobreescriu el servidor de descàrrega de mapes per defecte. Deixa en blanc per a emprar el servidor per defecte de CoMaps.</string>
     <string name="download_resources_custom_url_summary_none">No establert</string>
-    <string name="download_resources_custom_url_error_scheme">Per favor introdueix una URL completa que comence amb https:// i acabe amb /</string>
+    <string name="download_resources_custom_url_error_scheme">Per favor introdueix una URL que comence amb http:// o https://</string>
 </resources>

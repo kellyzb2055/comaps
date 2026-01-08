@@ -18,4 +18,11 @@
     <string name="month_ago">%s মাস আগে</string>
     <string name="year_ago">%s বছর আগে</string>
     <string name="core_entrance">প্রবেশ</string>
+    <string name="core_placepage_unknown_place">মানচিত্র বিন্দু</string>
+    <string name="subway_data_unavailable">সাবওয়ে মানচিত্র অনুপলব্ধ</string>
+    <string name="core_exit">প্রস্থান</string>
+    <string name="weeks_ago">%s সপ্তাহ আগে</string>
+    <string name="months_ago">%s মাস আগে</string>
+    <string name="years_ago">%s বছর আগে</string>
+    <string name="m">মি</string>
 </resources>

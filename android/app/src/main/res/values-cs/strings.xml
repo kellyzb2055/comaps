@@ -915,7 +915,7 @@
     <string name="navigation_start_tts_disabled_message">Hlasové pokyny vypnuty: služba TTS není dostupná</string>
     <string name="download_resources_custom_url_title">Vlastní mapový server</string>
     <string name="download_resources_custom_url_message">Přepsat výchozí server používaný ke stahování map. Nechte pole prázdné, pokud chcete použít výchozí server CoMaps.</string>
-    <string name="download_resources_custom_url_error_scheme">Zadejte prosím celou adresu URL začínající na https:// a končící s /</string>
+    <string name="download_resources_custom_url_error_scheme">Zadejte prosím celou adresu URL začínající na http:// nebo https://</string>
     <string name="advanced">Pokročilé</string>
     <string name="download_resources_custom_url_summary_none">Není nastaveno</string>
 </resources>

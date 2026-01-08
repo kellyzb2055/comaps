@@ -1463,4 +1463,5 @@
     <string name="type.entrance.house">Husdør</string>
     <string name="type.leisure.fitness_centre.sport.yoga">Yogastudie</string>
     <string name="type.leisure.sports_centre.sport.climbing">Klatrehal</string>
+    <string name="type.aeroway.gate">Gate</string>
 </resources>

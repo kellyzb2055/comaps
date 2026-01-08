@@ -900,5 +900,5 @@
     <string name="download_resources_custom_url_title">Pasirinktinis žemėlapių serveris</string>
     <string name="download_resources_custom_url_message">Žemėlapiams parsisiųsti galite nurodyti kitą, nei numatytasis, serverį. Palikite lauką tuščią, jei norite naudoti numatytąjį „CoMaps“ serverį.</string>
     <string name="download_resources_custom_url_summary_none">Nenurodytas</string>
-    <string name="download_resources_custom_url_error_scheme">Įveskite visą URL adresą, pradedant „https://“ ir baigiant „/“</string>
+    <string name="download_resources_custom_url_error_scheme">Įveskite URL adresą, prasidedantį „http://“ arba „https://“</string>
 </resources>

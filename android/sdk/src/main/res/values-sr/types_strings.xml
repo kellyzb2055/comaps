@@ -5,7 +5,7 @@
     <string name="type.addr_interpolation.even">Адреса/Блок</string>
     <string name="type.addr_interpolation.odd">Адреса/Блок</string>
     <string name="type.aerialway">Гондола</string>
-    <string name="type.aerialway.cable_car">Ваздушни трамвај</string>
+    <string name="type.aerialway.cable_car">Жичара</string>
     <string name="type.aerialway.chair_lift">Ски-лифт</string>
     <string name="type.aerialway.drag_lift">Ски-лифт једносед</string>
     <string name="type.aerialway.gondola">Гондола</string>

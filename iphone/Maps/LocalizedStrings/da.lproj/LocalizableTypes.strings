@@ -1562,3 +1562,4 @@
 "type.entrance.house" = "Husdør";
 "type.leisure.fitness_centre.sport.yoga" = "Yogastudie";
 "type.leisure.sports_centre.sport.climbing" = "Klatrehal";
+"type.aeroway.gate" = "Gate";

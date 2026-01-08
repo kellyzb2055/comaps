@@ -1586,3 +1586,9 @@
 "type.man_made.mast.communication" = "Sidemast";
 "type.shop.beauty.nails" = "Küünestuudio";
 "type.amenity.hydrant" = "Kastmishüdrant";
+"type.lateral.port" = "Pakpoordis";
+"type.lateral.starboard" = "Tüürpoordis";
+"type.cardinal.east" = "Idas";
+"type.cardinal.north" = "Põhjas";
+"type.cardinal.south" = "Lõunas";
+"type.cardinal.west" = "Läänes";

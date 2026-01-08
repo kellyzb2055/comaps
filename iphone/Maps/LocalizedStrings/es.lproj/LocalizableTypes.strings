@@ -692,7 +692,7 @@
 "type.landuse.vineyard" = "Viñedo";
 "type.leisure" = "Ocio";
 "type.leisure.common" = "Zona pública";
-"type.leisure.dog_park" = "Parque para perros";
+"type.leisure.dog_park" = "Parque canino";
 "type.leisure.fitness_centre" = "Centro de fitnes";
 "type.leisure.fitness_station" = "Parque de fitnes";
 "type.leisure.dance" = "Salón de baile";
