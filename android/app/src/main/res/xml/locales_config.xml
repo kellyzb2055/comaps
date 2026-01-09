@@ -49,7 +49,7 @@
     <locale android:name="ru" />
     <locale android:name="sl" />
     <locale android:name="sk" />
-    <locale android:name="sr-Cyrl" />
+    <locale android:name="sr" />
     <locale android:name="sr-Latn" />
     <locale android:name="sv" />
     <locale android:name="sw" />
