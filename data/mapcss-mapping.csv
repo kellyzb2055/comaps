@@ -74,7 +74,7 @@ landuse|residential;15;
 # Unpaved paths and trails (e.g. unpaved highway=footway are converted into paths,
 # while segregated shared paths into footway + cycleway, see osm2type.cpp).
 highway|path;16;
-highway|bus_stop;17;
+highway|bus_stop;[highway=bus_stop][public_transport=platform][bus=yes],[highway=bus_stop];;;;17;
 # ~4M usages.
 highway|footway|sidewalk;[highway=footway][footway=sidewalk];;name;int_name;18;
 place|locality;19;
