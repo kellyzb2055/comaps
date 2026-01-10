@@ -103,6 +103,7 @@ node[tourism=wilderness_hut],
 node[amenity=dojo],
 node[leisure=dance],
 node[leisure=fitness_centre],
+node[leisure=miniature_golf],
 node[leisure=sports_centre],
 node[leisure=stadium],
 {text-color: @sport_label;text-halo-radius: 0.1;text-halo-opacity: 0.7;text-halo-color: @label_halo_light;}
