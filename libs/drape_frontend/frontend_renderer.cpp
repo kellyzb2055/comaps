@@ -24,6 +24,7 @@
 
 #include "indexer/drawing_rules.hpp"
 #include "indexer/scales.hpp"
+#include "indexer/classificator_loader.hpp"
 
 #include "geometry/any_rect2d.hpp"
 

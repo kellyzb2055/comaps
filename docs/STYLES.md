@@ -77,9 +77,10 @@ e strings
 
 ## Testing your changes
 
-The most convenient way is using [the desktop app](INSTALL.md#desktop-app).
-(there is a "Designer" version of it also, which facilitates development
-by rebuilding styles and symbols quickly, but it's broken as of now, please help fix it!)
+The most convenient way is using [the desktop app](INSTALL_DESKTOP.md#desktop-app).
+There is a "Designer" version of it also, which facilitates development
+by rebuilding styles and symbols quickly. See the guide referenced above to find
+details on how to build and execute it.
 
 To test on Android or iOS device either re-build the app or put
 the compiled style files (e.g. `drules_proto_default_light.bin`) into

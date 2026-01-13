@@ -175,6 +175,11 @@ To build a desktop app:
 tools/unix/build_omim.sh -r desktop
 ```
 
+To build the "Designer" version of the desktop app, add the parameter `-t`:
+```bash
+tools/unix/build_omim.sh -r -t desktop
+```
+
 The output binary will go into `../omim-build-release`.
 
 Check `tools/unix/build_omim.sh -h` for more build options, e.g. to build a debug version.
@@ -203,6 +208,15 @@ _Linux:_
 
 ```bash
 ../omim-build-release/CoMaps
+```
+
+For running the "Designer" version instead, use the following command and
+optionally add the path to the style file to be loaded. If no path is provided,
+the application will ask for it by opening a file dialog on startup.
+
+
+```bash
+../omim-build-release/CoMaps.Designer optional/path/to/style.mapcss
 ```
 
 _macOS:_

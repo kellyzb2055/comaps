@@ -131,6 +131,12 @@ dependencies {
   testImplementation libs.junit
 }
 
+android {
+  androidResources {
+    ignoreAssetsPatterns.add("!design")
+  }
+}
+
 // TODO: Running lint task triggers native build. Find a better solution.
 project.afterEvaluate {
   boolean isLintRun = project.gradle.startParameter.taskNames.any { it.toLowerCase().contains('lint') }
