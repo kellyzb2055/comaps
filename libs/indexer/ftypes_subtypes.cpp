@@ -2,6 +2,7 @@
 
 #include "base/assert.hpp"
 #include "coding/csv_reader.hpp"
+#include "coding/reader_streambuf.hpp"
 #include "indexer/classificator.hpp"
 #include "platform/platform.hpp"
 
@@ -12,12 +13,14 @@ namespace ftypes
   {
     auto const & classificator = classif();
 
-    // Get the actual path to the CSV file.
+    // Get the stream to the CSV file.
     Platform & platform = GetPlatform();
-    string const filePath = platform.ReadPathForFile("subtypes.csv");
+    unique_ptr<ModelReader> reader = platform.GetReader("subtypes.csv");
+    ReaderStreamBuf buffer(std::move(reader));
+    istream stream(&buffer);
 
     // Load the CSV file and go through the lines of it one by one.
-    for (auto const & columns : coding::CSVRunner(coding::CSVReader(filePath, true, ';')))
+    for (auto const & columns : coding::CSVRunner(coding::CSVReader(stream, true, ';')))
     {
       // Skip empty lines.
       if (columns.empty())
