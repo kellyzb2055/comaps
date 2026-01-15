@@ -124,6 +124,7 @@ copy_resources(
   editor.config
   packed_polygons.bin
   patterns.txt
+  subtypes.csv
   transit_colors.txt
   types.txt
   mapcss-mapping.csv
