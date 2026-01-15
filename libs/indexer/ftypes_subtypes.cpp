@@ -5,6 +5,7 @@
 #include "coding/reader_streambuf.hpp"
 #include "indexer/classificator.hpp"
 #include "platform/platform.hpp"
+#include "defines.hpp"
 
 namespace ftypes
 {
@@ -15,7 +16,7 @@ namespace ftypes
 
     // Get the stream to the CSV file.
     Platform & platform = GetPlatform();
-    unique_ptr<ModelReader> reader = platform.GetReader("subtypes.csv");
+    unique_ptr<ModelReader> reader = platform.GetReader(SUBTYPES_FILE);
     ReaderStreamBuf buffer(std::move(reader));
     istream stream(&buffer);
 
