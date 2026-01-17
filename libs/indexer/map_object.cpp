@@ -121,7 +121,6 @@ std::string MapObject::GetLocalizedAllTypes(bool withMainType) const
 
   auto const & isPoi = ftypes::IsPoiChecker::Instance();
   auto const & subtypes = ftypes::Subtypes::Instance();
-  auto const & isDirectional = ftypes::IsDirectionalChecker::Instance();
   auto const & amenityChecker = ftypes::IsAmenityChecker::Instance();
   auto const & charingStationCarChecker = ftypes::IsCharingStationCarChecker::Instance();
   auto const & charingStationCarlessChecker = ftypes::IsCharingStationCarlessChecker::Instance();
@@ -143,7 +142,7 @@ std::string MapObject::GetLocalizedAllTypes(bool withMainType) const
     }
 
     // Ignore types that are not POI
-    if (!isMainType && !isPoi(type) && !subtypes.IsTypeWithSubtypesOrSubtype(type) && !isDirectional(type))
+    if (!isMainType && !isPoi(type) && !subtypes.IsTypeWithSubtypesOrSubtype(type))
       continue;
 
     // Ignore general amenity
