@@ -9,7 +9,7 @@
     style="@style/MwmWidget.FrameLayout.Elevation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_editor"
+    android:background="?colorSurfaceContainerLow"
     android:layout_above="@+id/tv__mode_switch"
     android:layout_below="@id/toolbar"/>
 
@@ -19,7 +19,7 @@
     android:layout_height="wrap_content"
     android:layout_alignTop="@+id/tv__mode_switch"
     android:layout_alignParentBottom="true"
-    android:background="@color/bg_editor"/>
+    android:background="?colorSurfaceContainerLow"/>
 
   <com.google.android.material.textview.MaterialTextView
     android:id="@+id/tv__mode_switch"

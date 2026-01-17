@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    android:background="@color/bg_editor"
+    android:background="?colorSurfaceContainerLow"
     tools:context=".editor.EditorActivity">
   <LinearLayout
       android:layout_width="match_parent"

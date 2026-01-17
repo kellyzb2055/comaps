@@ -65,8 +65,6 @@
   <color name="bg_panel">@color/bg_window</color>
   <color name="bg_primary_dark">#37653F</color> <!-- secondary dark -->
   <color name="bg_app">@android:color/white</color>
-  <color name="bg_editor">#ebefe4</color>
-  <color name="fg_editor">#f9faf2</color>
 
   <color name="bg_dialog_translucent">#BB000000</color>
   <color name="bg_text_translucent">#99FFFFFF</color>
