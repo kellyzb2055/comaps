@@ -475,6 +475,7 @@ amenity|parking|multi-storey;[amenity=parking][parking=multi-storey];;name;int_n
 # TODO: its being replaced by landuse-recreation_ground, merge in there.
 leisure|recreation_ground;360;
 deprecated:highway|footway|mountain_hiking:04.2024;[highway=footway][sac_scale=mountain_hiking];x;name;int_name;361;highway|path
+# Workaround for (mis)uses of emergency access points to provide kind of an additional emergency address to each house, which without this would completely clutter the map. See https://codeberg.org/comaps/comaps/pulls/3220.
 emergency|access_point|address;[emergency=access_point][operator=helpbidea];;name;;362;
 amenity|parking|multi-storey|fee;[amenity=parking][parking=multi-storey][fee];;name;int_name;363;
 sport|9pin;364;
