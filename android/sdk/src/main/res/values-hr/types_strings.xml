@@ -151,7 +151,6 @@
     <string name="type.amenity.pub">Pub</string>
     <string name="type.amenity.public_bookcase">Razmjena knjiga</string>
     <string name="type.amenity.recycling.centre">Centar za recikliranje</string>
-    <string name="type.amenity.recycling">Kontejner za recikliranje</string>
     <string name="type.amenity.recycling.container">Kontejner za recikliranje</string>
     <string name="type.recycling.batteries">Baterije</string>
     <string name="type.recycling.clothes">Odjeća</string>

@@ -232,7 +232,6 @@
 "type.amenity.pub" = "Beiz";
 "type.amenity.public_bookcase" = "Büecherschrank";
 "type.amenity.recycling.centre" = "Recyclinghof";
-"type.amenity.recycling" = "Recyclingcontainer";
 "type.amenity.recycling.container" = "Recyclingcontainer";
 "type.recycling.batteries" = "Batterie";
 "type.recycling.clothes" = "Altchleider";

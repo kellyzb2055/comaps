@@ -131,7 +131,6 @@
     <string name="type.amenity.public_bookcase">Biblioteca di strada</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Centro di riciclaggio</string>
-    <string name="type.amenity.recycling">Contenitore per materiali riciclabili</string>
     <string name="type.amenity.recycling.container">Contenitore per materiali riciclabili</string>
     <string name="type.recycling.batteries">Batterie</string>
     <string name="type.recycling.clothes">Vestiti usati</string>

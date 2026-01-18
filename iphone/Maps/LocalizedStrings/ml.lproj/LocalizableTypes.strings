@@ -18,7 +18,6 @@
 "type.amenity.pub" = "Pub";
 "type.amenity.recycling.centre" = "Recycling Center";
 "type.recycling.paper" = "Paper";
-"type.amenity.recycling" = "Recycling Container";
 "type.recycling.clothes" = "Clothes";
 "type.recycling.plastic_bottles" = "Plastic Bottles";
 "type.recycling.scrap_metal" = "Scrap Metal";

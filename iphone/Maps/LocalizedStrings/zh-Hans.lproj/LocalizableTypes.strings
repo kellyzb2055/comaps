@@ -370,7 +370,7 @@
 
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
 "type.entrance.main" = "主要入口";
-"type.entrance.exit" = "出口";
+"type.entrance.exit" = "单向出口";
 "type.fee.yes" = "¥";
 "type.fee.no" = "免费";
 "type.healthcare.laboratory" = "医学实验室";
@@ -1486,3 +1486,26 @@
 "type.power.portal" = "能源站";
 "type.building.guardhouse" = "保安亭";
 "type.amenity.bench.backless" = "长凳";
+"type.entrance.emergency" = "应急出口";
+"type.amenity.boat_rental" = "船只租赁";
+"type.man_made.telescope" = "望远镜";
+"type.man_made.telescope.optical" = "光学望远镜";
+"type.man_made.telescope.radio" = "射电望远镜";
+"type.man_made.telescope.gamma" = "伽玛射线望远镜";
+"type.man_made.observatory" = "观测台";
+"type.amenity.car_pooling" = "拼车";
+"type.xmas.tree" = "圣诞树";
+"type.amenity.food_sharing" = "食物共享设施";
+"type.amenity.give_box" = "捐赠箱";
+"type.shop.beauty.nails" = "美甲店";
+"type.natural.tree" = "树";
+"type.natural.sand" = "沙子";
+"type.leisure.sports_centre.sport.volleyball" = "运动中心";
+"type.leisure.sports_centre.sport.swimming" = "游泳中心";
+"type.cardinal.south" = "南";
+"type.cardinal.east" = "东";
+"type.cardinal.west" = "西";
+"type.cardinal.north" = "北";
+"type.entrance.garage" = "车库入口";
+"type.entrance.entry" = "单向入口";
+"type.emergency.access_point" = "紧急连络点";

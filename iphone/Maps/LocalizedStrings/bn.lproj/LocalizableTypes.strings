@@ -44,7 +44,6 @@
 "type.amenity.place_of_worship.muslim" = "মসজিদ";
 "type.amenity.place_of_worship.jewish" = "Synagogue";
 "type.amenity.recycling.centre" = "Recycling Center";
-"type.amenity.recycling" = "Recycling Container";
 "type.recycling.plastic_bottles" = "প্লাস্টিক বোতল";
 "type.recycling.cartons" = "কার্টন|কার্ডবোর্ডের বাক্স";
 "type.amenity.restaurant" = "রেস্টুরেন্ট";

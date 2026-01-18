@@ -149,7 +149,6 @@
     <string name="type.amenity.pub">Pab</string>
     <string name="type.amenity.public_bookcase">Razmena knjiga</string>
     <string name="type.amenity.recycling.centre">Centar za reciklažu</string>
-    <string name="type.amenity.recycling">Kontejner za reciklažu</string>
     <string name="type.amenity.recycling.container">Kontejner za reciklažu</string>
     <string name="type.recycling.batteries">Beterije</string>
     <string name="type.recycling.clothes">Stara odeća</string>

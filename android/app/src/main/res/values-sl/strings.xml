@@ -412,7 +412,7 @@
         <item quantity="few">%d datoteke najdene. Po pretvorbi si jih lahko ogledate.</item>
         <item quantity="other">%d datotek najdenih. Po pretvorbi si jih lahko ogledate.</item>
     </plurals>
-    <string name="restore">Obnovi</string>
+    <string name="restore">Povrni</string>
     <plurals name="tracks">
         <item quantity="one">%d pot</item>
         <item quantity="two">%d poti</item>

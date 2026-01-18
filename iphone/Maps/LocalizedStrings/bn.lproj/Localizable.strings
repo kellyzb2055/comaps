@@ -193,7 +193,7 @@
 "dialog_routing_disclaimer_priority" = "— রাস্তার অবস্থা, ট্রাফিক আইন এবং রাস্তার চিহ্নগুলি সর্বদা নেভিগেশন ইঙ্গিতের চেয়ে অগ্রাধিকার পায়;";
 "pref_tts_speedcams_always" = "Always warn";
 "hide_from_map" = "Hide from map";
-"bookmark_sets" = "Bookmark Lists";
+"bookmark_sets" = "বুকমার্ক তালিকার নাম";
 "opens_in" = "Opens in %@";
 "dialog_routing_check_gps" = "জিপিএস সিগন্যাল পরীক্ষা করুন";
 "dialog_routing_download_cross_route" = "এই মানচিত্রের সীমানা অতিক্রম করে আরও ভালো রুট তৈরি করতে অতিরিক্ত মানচিত্র ডাউনলোড করুন।";

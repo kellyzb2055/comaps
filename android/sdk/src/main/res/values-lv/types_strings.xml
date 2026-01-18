@@ -123,7 +123,7 @@
     <string name="type.leisure.common">Valsts zemes īpašums</string>
     <string name="type.leisure.dog_park">Suņu parks</string>
     <string name="type.disusedbusiness">Brīva uzņēmējdarbība</string>
-    <string name="type.amenity.bench.backless">Sols bez atzveltnes</string>
+    <string name="type.amenity.bench.backless">Bez atzveltnes</string>
     <string name="type.shop.coffee">Kafijas mazumtirgotājs</string>
     <string name="type.shop.computer">Datorveikals</string>
     <string name="type.shop.confectionery">Saldumu veikals</string>

@@ -129,7 +129,7 @@
     <string name="clear_search">Dilea Istori Hwilas</string>
     <string name="read_in_wikipedia">Wikipedya</string>
     <string name="wikimedia_commons">Wikimedia Commons</string>
-    <string name="p2p_your_location">Agas Tyller</string>
+    <string name="p2p_your_location">Dha Tyller</string>
     <string name="p2p_start">Dalleth</string>
     <string name="next_button">Nessa</string>
     <string name="editor_time_add">Addya Rol Vetyansow</string>
@@ -186,8 +186,8 @@
     <string name="error_enter_correct_zip_code">Ynworra unn kod post ewn</string>
     <string name="editor_other_info">Noten dhe bodhogyon OpenStreetMap (dre dhewis)</string>
     <string name="editor_more_about_osm">Moy a-dro OpenStreetMap</string>
-    <string name="editor_osm_history">Agas istori golegyans</string>
-    <string name="editor_osm_notes">Agas notennow mappow</string>
+    <string name="editor_osm_history">Dha istori golegyans</string>
+    <string name="editor_osm_notes">Dha notennow mappow</string>
     <string name="editor_operator">Oberador</string>
     <string name="operator">Oberador: %s</string>
     <string name="kilometers_per_hour">kdo</string>
@@ -266,9 +266,9 @@
     <string name="toll_road">Tollfordh</string>
     <string name="unpaved_road">Fordh dor</string>
     <string name="ferry_crossing">Kowbalhyns</string>
-    <string name="yes">Ya</string>
+    <string name="yes">Ea</string>
     <string name="no">Na</string>
-    <string name="yes_available">Ya</string>
+    <string name="yes_available">Ea</string>
     <string name="no_available">Na</string>
     <string name="capacity">Dalghuster: %s</string>
     <string name="network">Rosweyth: %s</string>

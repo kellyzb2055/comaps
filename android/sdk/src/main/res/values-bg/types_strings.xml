@@ -587,7 +587,6 @@
     <string name="type.amenity.police">Полиция</string>
     <string name="type.amenity.pub">Кръчма</string>
     <string name="type.amenity.public_bookcase">Книжен обмен</string>
-    <string name="type.amenity.recycling">Кофи за преработваем отпадък</string>
     <string name="type.amenity.recycling.container">Кофи за преработваем отпадък</string>
     <string name="type.recycling.clothes">Дрехи</string>
     <string name="type.recycling.glass_bottles">Стъклени бутилки</string>

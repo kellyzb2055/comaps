@@ -1395,7 +1395,7 @@
     <string name="type.power.portal">Õhuliini värava-tüüpi mast</string>
     <string name="type.office.security">Turvafirma kontor</string>
     <string name="type.shop.lighting">Lambipood</string>
-    <string name="type.amenity.bench.backless">Ilma seljatoeta pink</string>
+    <string name="type.amenity.bench.backless">Ilma seljatoeta</string>
     <string name="type.leisure.bandstand">Väike vabaõhulava</string>
     <string name="type.leisure.sports_centre.sport.multi">Spordikeskus</string>
     <string name="type.leisure.fitness_centre.sport.yoga">Joogastuudio</string>
@@ -1507,4 +1507,5 @@
     <string name="type.amenity.charging_station.motorcycle">Mootorrattad</string>
     <string name="type.amenity.charging_station.small">Väike laadimisjaam</string>
     <string name="type.emergency.disaster_help_point">Katastroofiabi teenused</string>
+    <string name="type.emergency.access_point.address">Hädaolukorras asukohatuvastuspunkti aadress</string>
 </resources>

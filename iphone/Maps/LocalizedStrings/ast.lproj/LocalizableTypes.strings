@@ -538,7 +538,6 @@
 "type.tourism.artwork.architecture" = "Architectural Artwork";
 "type.leisure.common" = "Public Land";
 "type.amenity.vending_machine.excrement_bags" = "Excrement Bags Dispenser";
-"type.amenity.recycling" = "Recycling Container";
 "type.shop.jewelry" = "Jewelry Store";
 "type.railway.subway_entrance.montreal" = "Subway Entrance";
 "type.amenity.courthouse" = "Courthouse";

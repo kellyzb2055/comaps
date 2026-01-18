@@ -131,7 +131,6 @@
     <string name="type.amenity.public_bookcase">Intercambio de libros</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Centro de reciclaje</string>
-    <string name="type.amenity.recycling">Contenedor de reciclaje</string>
     <string name="type.amenity.recycling.container">Contenedor de reciclaje</string>
     <string name="type.recycling.batteries">Baterías</string>
     <string name="type.recycling.clothes">Ropa</string>
@@ -1398,7 +1397,7 @@
     <string name="type.building.guardhouse">Garita de seguridad</string>
     <string name="type.power.portal">Torre de alta tensión</string>
     <string name="type.shop.lighting">Tienda de iluminación</string>
-    <string name="type.amenity.bench.backless">Banco sin respaldo</string>
+    <string name="type.amenity.bench.backless">Sin respaldo</string>
     <string name="type.leisure.bandstand">Templete</string>
     <string name="type.leisure.sports_centre.sport.multi">Centro deportivo</string>
     <string name="type.leisure.sports_centre.sport.american_football">Centro deportivo</string>
@@ -1509,4 +1508,5 @@
     <string name="type.railway.turntable">Plataforma giratoria ferroviaria</string>
     <string name="type.tourism.information.tactile_map">Mapa táctil</string>
     <string name="type.emergency.disaster_help_point">Punto de ayuda para emergencias y desastres</string>
+    <string name="type.emergency.access_point.address">Dirección de Punto de Emergencia</string>
 </resources>
