@@ -69,6 +69,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment implements La
     initAutoDownloadPrefsCallbacks();
     initLargeFontSizePrefsCallbacks();
     initTransliterationPrefsCallbacks();
+    initOnlyUseSysLangsInTheirRegionCallbacks();
     init3dModePrefsCallbacks();
     initPerspectivePrefsCallbacks();
     initAutoZoomPrefsCallbacks();
@@ -218,6 +219,20 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment implements La
       final boolean newVal = (Boolean) newValue;
       if (oldVal != newVal)
         Config.setLargeFontsSize(newVal);
+
+      return true;
+    });
+  }
+
+  private void initOnlyUseSysLangsInTheirRegionCallbacks()
+  {
+    final Preference pref = getPreference(getString(R.string.pref_set_only_use_syslangs_in_their_region));
+    ((TwoStatePreference) pref).setChecked(Config.isOnlyUseSysLangsInTheirRegion());
+    pref.setOnPreferenceChangeListener((preference, newValue) -> {
+      final boolean oldVal = Config.isOnlyUseSysLangsInTheirRegion();
+      final boolean newVal = (Boolean) newValue;
+      if (oldVal != newVal)
+        Config.setOnlyUseSysLangsInTheirRegion(newVal);
 
       return true;
     });

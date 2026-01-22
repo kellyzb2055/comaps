@@ -383,6 +383,16 @@ public final class Config
     return getLong(KEY_MISC_AGPS_TIMESTAMP, 0L);
   }
 
+  public static boolean isOnlyUseSysLangsInTheirRegion()
+  {
+    return nativeGetOnlyUseSysLangsInTheirRegion();
+  }
+
+  public static void setOnlyUseSysLangsInTheirRegion(boolean enabled)
+  {
+    nativeSetOnlyUseSysLangsInTheirRegion(enabled);
+  }
+
   public static boolean isTransliteration()
   {
     return nativeGetTransliteration();
@@ -521,7 +531,7 @@ public final class Config
   }
 
   private static native boolean nativeHasConfigValue(String name);
-  private static native boolean nativeDeleteConfigValue(String name);
+  private static native void nativeDeleteConfigValue(String name);
   private static native boolean nativeGetBoolean(String name, boolean defaultValue);
   private static native void nativeSetBoolean(String name, boolean value);
   private static native int nativeGetInt(String name, int defaultValue);
@@ -534,6 +544,8 @@ public final class Config
   private static native void nativeSetString(String name, String value);
   private static native boolean nativeGetLargeFontsSize();
   private static native void nativeSetLargeFontsSize(boolean value);
+  private static native boolean nativeGetOnlyUseSysLangsInTheirRegion();
+  private static native void nativeSetOnlyUseSysLangsInTheirRegion(boolean value);
   private static native boolean nativeGetTransliteration();
   private static native void nativeSetTransliteration(boolean value);
 }
