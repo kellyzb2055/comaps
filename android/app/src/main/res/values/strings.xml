@@ -981,4 +981,13 @@
     <string name="location_privacy">Location Privacy</string>
     <string name="pref_speedlimit_title">Show speed limits</string>
     <string name="rooms">%s rooms</string>
+    <!-- NavMenu: Route state strings -->
+    <string name="invalid_route">Invalid route</string>
+    <string name="building_route">Building route…</string>
+    <string name="route_not_started">Route not started</string>
+    <string name="on_route">On route</string>
+    <string name="route_needs_rebuild">Route needs rebuilding</string>
+    <string name="route_finished">Route finished</string>
+    <string name="not_following_route">Not following route</string>
+    <string name="rebuilding_route">Rebuilding route…</string>
 </resources>
