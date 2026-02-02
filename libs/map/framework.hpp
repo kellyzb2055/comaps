@@ -54,6 +54,7 @@
 #include "geometry/rect2d.hpp"
 #include "geometry/screenbase.hpp"
 
+#include "base/localisation_translation.hpp"
 #include "base/macros.hpp"
 #include "base/strings_bundle.hpp"
 
@@ -705,9 +706,11 @@ private:
   void ApplyMapLanguageCode(std::string const & langCode);
 
 public:
-  static std::string GetMapLanguageCode();
-  void SetMapLanguageCode(std::string const & langCode);
-  void ResetMapLanguageCode();
+  std::optional<localisation::LanguageCode> GetCustomMapLanguageCode();
+  void SetCustomMapLanguageCode(std::optional<localisation::LanguageCode> const languageCode = {});
+  void RefreshMapLanguage();
+  localisation::AlternativeMapLanguageHandling GetAlternativeMapLanguageHandling();
+  void SetAlternativeMapLanguageHandling(localisation::AlternativeMapLanguageHandling const alternativeMapLanguageHandling = localisation::AlternativeMapLanguageHandling::LocalOnly);
 
   void SetLargeFontsSize(bool isLargeSize);
   bool LoadLargeFontsSize();

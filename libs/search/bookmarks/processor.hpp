@@ -77,7 +77,7 @@ private:
   {
     SearchTrieRequest<DFA> request;
     FillRequestFromToken(token, request);
-    request.m_langs.insert(StringUtf8Multilang::kDefaultCode);
+    request.m_langs.insert(localisation::kDefaultNameIndex);
 
     MatchFeaturesInTrie(request, m_index.GetRootIterator(), [](Id const & /* id */) { return true; } /* filter */,
                         std::forward<Fn>(fn));

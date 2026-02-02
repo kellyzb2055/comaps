@@ -81,7 +81,7 @@ void AppendBookmarkIdDocs(vector<BookmarkInfo> const & marks, vector<BookmarkIdD
 
   auto const locale = languages::GetCurrentOrig();
   for (auto const & mark : marks)
-    result.emplace_back(KmlMarkIdToSearchBookmarkId(mark.m_bookmarkId), bookmarks::Doc(mark.m_bookmarkData, locale));
+    result.emplace_back(KmlMarkIdToSearchBookmarkId(mark.m_bookmarkId), bookmarks::Doc(mark.m_bookmarkData));
 }
 
 void AppendBookmarkIds(vector<kml::MarkId> const & marks, vector<bookmarks::Id> & result)

@@ -98,7 +98,6 @@ std::string_view constexpr kIsolinesEnabledKey = "IsolinesEnabled";
 std::string_view constexpr kOutdoorsEnabledKey = "OutdoorsEnabled";
 std::string_view constexpr kTrafficSimplifiedColorsKey = "TrafficSimplifiedColors";
 std::string_view constexpr kLargeFontsSize = "LargeFontsSize";
-std::string_view constexpr kTranslitMode = "TransliterationMode";
 std::string_view constexpr kPreferredGraphicsAPI = "PreferredGraphicsAPI";
 std::string_view constexpr kShowDebugInfo = "DebugInfo";
 std::string_view constexpr kScreenViewport = "ScreenClipRect";
@@ -798,7 +797,7 @@ void Framework::FillSpeedCameraMarkInfo(SpeedCameraMark const & speedCameraMark,
   if (!title.empty())
     title = title + " " + platform::GetLocalizedSpeedUnits(measurement_utils::GetMeasurementUnits());
 
-  info.SetCustomNames(title, platform::GetLocalizedTypeName("highway-speed_camera"));
+  info.SetCustomNames(title, localisation::TranslatedFeatureType("highway-speed_camera"));
 }
 
 void Framework::FillTransitMarkInfo(TransitMark const & transitMark, place_page::Info & info) const
@@ -1529,7 +1528,7 @@ void Framework::CreateDrapeEngine(ref_ptr<dp::GraphicsContextFactory> contextFac
 
   Allow3dMode(allow3d, allow3dBuildings);
 
-  ApplyMapLanguageCode(GetMapLanguageCode());
+  RefreshMapLanguage();
 
   LoadViewport();
 
@@ -2383,50 +2382,46 @@ void Framework::AllowTransliteration(bool allowTranslit)
 
 bool Framework::LoadTransliteration()
 {
-  Transliteration::Mode mode;
-  if (settings::Get(kTranslitMode, mode))
-    return mode == Transliteration::Mode::Enabled;
-  return true;
+  return localisation::ShouldUseTransliteration();
 }
 
 void Framework::SaveTransliteration(bool allowTranslit)
 {
-  settings::Set(kTranslitMode, allowTranslit ? Transliteration::Mode::Enabled : Transliteration::Mode::Disabled);
+  settings::Set(localisation::kTransliterationSetting, allowTranslit ? Transliteration::Mode::Enabled : Transliteration::Mode::Disabled);
 }
 
-std::string Framework::GetMapLanguageCode()
+std::optional<localisation::LanguageCode> Framework::GetCustomMapLanguageCode()
 {
-  return languages::GetCurrentMapLanguage();
+  return localisation::GetCustomMapLanguageCode();
 }
 
-void Framework::SetMapLanguageCode(std::string const & langCode)
+void Framework::SetCustomMapLanguageCode(std::optional<localisation::LanguageCode> const languageCode)
 {
-  settings::Set(settings::kMapLanguageCode, langCode);
+  if (languageCode.has_value())
+    settings::Set(localisation::kMapLanguageSetting, languageCode.value());
+  else
+    settings::Delete(localisation::kMapLanguageSetting);
+  
+  RefreshMapLanguage();
+}
+
+void Framework::RefreshMapLanguage()
+{
   if (m_drapeEngine)
-    ApplyMapLanguageCode(langCode);
-
+    m_drapeEngine->SetMapLangIndex(localisation::GetMapLanguageIndex());
   if (m_searchAPI)
-    m_searchAPI->SetLocale(langCode);
+    m_searchAPI->SetLocale(localisation::GetMapLanguageCode());
 }
 
-void Framework::ResetMapLanguageCode()
+localisation::AlternativeMapLanguageHandling Framework::GetAlternativeMapLanguageHandling()
 {
-  settings::Delete(settings::kMapLanguageCode);
-  if (m_drapeEngine)
-    ApplyMapLanguageCode(languages::GetCurrentMapLanguage());
-
-  if (m_searchAPI)
-    m_searchAPI->SetLocale(languages::GetCurrentMapLanguage());
+  return localisation::UsedAlternativeMapLanguageHandling();
 }
 
-void Framework::ApplyMapLanguageCode(std::string const & langCode)
+void Framework::SetAlternativeMapLanguageHandling(localisation::AlternativeMapLanguageHandling const alternativeMapLanguageHandling)
 {
-  int8_t langIndex = StringUtf8Multilang::GetLangIndex(langCode);
-  ASSERT(langIndex != StringUtf8Multilang::kUnsupportedLanguageCode, ());
-  if (langIndex == StringUtf8Multilang::kUnsupportedLanguageCode)
-    langIndex = StringUtf8Multilang::kDefaultCode;
-
-  m_drapeEngine->SetMapLangIndex(langIndex);
+  settings::Set(localisation::kAlternativeMapLanguageHandlingSetting, alternativeMapLanguageHandling);
+  InvalidateRect(GetCurrentViewport());
 }
 
 void Framework::Allow3dMode(bool allow3d, bool allow3dBuildings)
@@ -2735,7 +2730,7 @@ bool Framework::ParseEditorDebugCommand(search::SearchParams const & params)
         return true;
       }
 
-      search::Result res(feature::GetCenter(*ft), string(ft->GetReadableName()));
+      search::Result res(feature::GetCenter(*ft), ft->GetTranslatedName().m_primary.value());
       res.SetAddress(std::move(edit.second));
       res.FromFeature(fid, feature::TypesHolder(*ft).GetBestType(), 0, {});
 
@@ -2797,9 +2792,11 @@ bool LocalizeStreet(DataSource const & dataSource, FeatureID const & fid, osm::L
   if (!ft)
     return false;
 
-  result.m_defaultName = ft->GetName(StringUtf8Multilang::kDefaultCode);
+  result.m_defaultName = ft->GetName(localisation::kDefaultNameIndex);
 
-  result.m_localizedName = ft->GetReadableName();
+  optional<string> name = ft->GetTranslatedName().m_primary;
+  if (name.has_value())
+    result.m_localizedName = name.value();
 
   if (result.m_localizedName == result.m_defaultName)
     result.m_localizedName.clear();
@@ -3273,10 +3270,7 @@ void Framework::FillDescriptions(FeatureType & ft, place_page::Info & info) cons
   if (!ft.GetID().m_mwmId.IsAlive())
     return;
 
-  auto const & regionData = ft.GetID().m_mwmId.GetInfo()->GetRegionData();
-  auto const langPriority = feature::GetDescriptionLangPriority(regionData);
-
-  std::string wikiDescription = m_descriptionsLoader->GetWikiDescription(ft.GetID(), langPriority);
+  std::string wikiDescription = m_descriptionsLoader->GetWikiDescription(ft.GetID(), localisation::PrioritizedMapLanguageIndexes(ft.GetLanguages()));
   if (!wikiDescription.empty())
   {
     info.SetWikiDescription(std::move(wikiDescription));
@@ -3284,25 +3278,13 @@ void Framework::FillDescriptions(FeatureType & ft, place_page::Info & info) cons
                                                            : place_page::OpeningMode::PreviewPlus);
   }
 
-  std::string_view const osmDescriptionValue = ft.GetMetadata(feature::Metadata::FMD_DESCRIPTION);
-  if (osmDescriptionValue.empty())
+  std::string_view const osmDescription = ft.GetMetadata(feature::Metadata::FMD_DESCRIPTION);
+  if (osmDescription.empty())
     return;
 
-  buffer_vector<int8_t, 4> langCodes;
-  for (auto const & lang : languages::GetSystemPreferred())
-  {
-    auto const code = StringUtf8Multilang::GetLangIndex(languages::Normalize(lang));
-    if (code != StringUtf8Multilang::kUnsupportedLanguageCode)
-      langCodes.push_back(code);
-  }
-  langCodes.push_back(StringUtf8Multilang::kDefaultCode);
-  langCodes.push_back(StringUtf8Multilang::kEnglishCode);
-
-  auto const osmDescriptionMultilang = StringUtf8Multilang::FromBuffer(std::string(osmDescriptionValue));
-  std::string_view osmDescription = osmDescriptionMultilang.GetBestString(langCodes);
-  if (osmDescription.empty())
-    osmDescription = osmDescriptionMultilang.GetFirstString();
-  info.SetOSMDescription(std::string(osmDescription));
+  std::optional<std::string> translatedOsmDescription = localisation::TranslatedFeatureName(StringUtf8Multilang::FromBuffer(std::string(osmDescription)), ft.GetLanguages()).m_primary;
+  if (translatedOsmDescription.has_value())
+    info.SetOSMDescription(std::string(translatedOsmDescription.value()));
 }
 
 void Framework::OnPowerFacilityChanged(power_management::Facility const facility, bool enabled)

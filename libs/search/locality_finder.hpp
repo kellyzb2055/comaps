@@ -2,11 +2,10 @@
 
 #include "search/cities_boundaries_table.hpp"
 
+#include "indexer/feature_region_locator.hpp"
 #include "indexer/feature_utils.hpp"
 #include "indexer/mwm_set.hpp"
 #include "indexer/rank_table.hpp"
-
-#include "platform/preferred_languages.hpp"
 
 #include "coding/string_utf8_multilang.hpp"
 
@@ -42,21 +41,25 @@ struct LocalityItem
 
   bool GetSpecifiedOrDefaultName(int8_t lang, std::string_view & name) const
   {
-    return GetName(lang, name) || GetName(StringUtf8Multilang::kDefaultCode, name);
+    return GetName(lang, name) || GetName(localisation::kDefaultNameIndex, name);
   }
 
-  bool GetReadableName(std::string_view & name) const
+  std::string GetReadableName() const
   {
     auto const mwmInfo = m_id.m_mwmId.GetInfo();
     if (!mwmInfo)
-      return false;
+      return std::string();
 
-    feature::NameParamsOut out;
-    feature::GetReadableName(
-        {m_names, mwmInfo->GetRegionData(), languages::GetCurrentMapLanguage(), false /* allowTranslit */}, out);
+    auto regionData = mwmInfo->GetRegionData();
+    if (regionData.IsWorldLevel())
+      regionData.SetLanguages(feature::RegionLocator::Instance().GetLocalLanguageIndexes(m_center));
 
-    name = out.primary;
-    return !name.empty();
+    std::optional<std::string> translatedName = localisation::TranslatedFeatureName(m_names, regionData.GetLanguages()).m_primary;
+    if (translatedName.has_value())
+    {
+      return translatedName.value();
+    }
+    return std::string();
   }
 
   StringUtf8Multilang m_names;

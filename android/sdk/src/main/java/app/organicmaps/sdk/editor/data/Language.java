@@ -3,13 +3,13 @@ package app.organicmaps.sdk.editor.data;
 import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 
-// Corresponds to StringUtf8Multilang::Lang in core.
+// Corresponds to localisation::Language in core.
 // Called from JNI.
 @Keep
 @SuppressWarnings("unused")
 public class Language
 {
-  // StringUtf8Multilang::GetLangByCode(StringUtf8Multilang::kDefaultCode).
+  // localisation::GetLanguageNameByLanguageIndex(localisation::kDefaultNameIndex).
   public static final String DEFAULT_LANG_CODE = "default";
 
   public final String code;

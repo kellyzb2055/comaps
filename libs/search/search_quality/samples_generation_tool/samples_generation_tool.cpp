@@ -180,7 +180,7 @@ void ModifyHouse(uint8_t lang, string & str)
   if (str.empty())
     return;
 
-  if (lang == StringUtf8Multilang::GetLangIndex("ru") && isdigit(str[0]))
+  if (lang == localisation::kRussianLanguageIndex && isdigit(str[0]))
   {
     uniform_int_distribution<size_t> dis(0, 4);
     auto const r = dis(g_rng);
@@ -228,7 +228,7 @@ bool GetCafeInfo(FeatureType & ft, search::ReverseGeocoder const & coder, string
   if (!ft.HasName())
     return false;
 
-  if (!ft.GetNames().GetString(StringUtf8Multilang::kDefaultCode, name))
+  if (!ft.GetNames().GetString(localisation::kDefaultNameIndex, name))
     return false;
 
   for (auto const t : feature::TypesHolder(ft))
@@ -282,7 +282,7 @@ string_view GetLocalizedCafeType(ankerl::unordered_dense::map<uint32_t, StringUt
   string_view translation;
   if (it->second.GetString(lang, translation))
     return translation;
-  it->second.GetString(StringUtf8Multilang::kEnglishCode, translation);
+  it->second.GetString(localisation::kEnglishLanguageIndex, translation);
   return translation;
 }
 
@@ -292,7 +292,7 @@ optional<Sample> GenerateRequest(FeatureType & ft, search::ReverseGeocoder const
 {
   string street;
   string cafeStr;
-  auto const lang = !mwmLangCodes.empty() ? mwmLangCodes[0] : StringUtf8Multilang::kEnglishCode;
+  auto const lang = !mwmLangCodes.empty() ? mwmLangCodes[0] : localisation::kEnglishLanguageIndex;
 
   switch (requestType)
   {
@@ -323,7 +323,7 @@ optional<Sample> GenerateRequest(FeatureType & ft, search::ReverseGeocoder const
 
   Sample sample;
   sample.m_query = strings::MakeUniString(query);
-  sample.m_locale = StringUtf8Multilang::GetLangByCode(lang);
+  sample.m_locale = localisation::ConvertLanguageIndexToLanguageCode(lang);
   sample.m_pos = GenerateNearbyPosition(featureCenter);
   sample.m_viewport = GenerateNearbyViewport(featureCenter);
   sample.m_results.push_back(Sample::Result::Build(ft, Sample::Result::Relevance::Vital));

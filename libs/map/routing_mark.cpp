@@ -685,9 +685,9 @@ std::string RoadWarningMark::GetLocalizedRoadWarningType(RoadWarningMarkType typ
   switch (type)
   {
     using enum RoadWarningMarkType;
-  case Toll: return platform::GetLocalizedString("toll_road");
-  case Ferry: return platform::GetLocalizedString("ferry_crossing");
-  case Dirty: return platform::GetLocalizedString("unpaved_road");
+  case Toll: return localisation::TranslatedInterfaceText("toll_road");
+  case Ferry: return localisation::TranslatedInterfaceText("ferry_crossing");
+  case Dirty: return localisation::TranslatedInterfaceText("unpaved_road");
   case Count: CHECK(false, ("Invalid road warning mark type", type)); break;
   }
   return {};

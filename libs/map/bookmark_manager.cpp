@@ -756,10 +756,10 @@ std::string BookmarkManager::GetSortedByTimeBlockName(SortedByTimeBlockType bloc
 {
   switch (blockType)
   {
-  case SortedByTimeBlockType::WeekAgo: return platform::GetLocalizedString("week_ago_sorttype");
-  case SortedByTimeBlockType::MonthAgo: return platform::GetLocalizedString("month_ago_sorttype");
-  case SortedByTimeBlockType::MoreThanMonthAgo: return platform::GetLocalizedString("moremonth_ago_sorttype");
-  case SortedByTimeBlockType::MoreThanYearAgo: return platform::GetLocalizedString("moreyear_ago_sorttype");
+  case SortedByTimeBlockType::WeekAgo: return localisation::TranslatedInterfaceText("week_ago_sorttype");
+  case SortedByTimeBlockType::MonthAgo: return localisation::TranslatedInterfaceText("month_ago_sorttype");
+  case SortedByTimeBlockType::MoreThanMonthAgo: return localisation::TranslatedInterfaceText("moremonth_ago_sorttype");
+  case SortedByTimeBlockType::MoreThanYearAgo: return localisation::TranslatedInterfaceText("moreyear_ago_sorttype");
   case SortedByTimeBlockType::Others: return GetOthersSortedBlockName();
   }
   UNREACHABLE();
@@ -768,25 +768,25 @@ std::string BookmarkManager::GetSortedByTimeBlockName(SortedByTimeBlockType bloc
 // static
 std::string BookmarkManager::GetTracksSortedBlockName()
 {
-  return platform::GetLocalizedString("tracks_title");
+  return localisation::TranslatedInterfaceText("tracks_title");
 }
 
 // static
 std::string BookmarkManager::GetBookmarksSortedBlockName()
 {
-  return platform::GetLocalizedString("bookmarks");
+  return localisation::TranslatedInterfaceText("bookmarks");
 }
 
 // static
 std::string BookmarkManager::GetOthersSortedBlockName()
 {
-  return platform::GetLocalizedString("others_sorttype");
+  return localisation::TranslatedInterfaceText("others_sorttype");
 }
 
 // static
 std::string BookmarkManager::GetNearMeSortedBlockName()
 {
-  return platform::GetLocalizedString("near_me_sorttype");
+  return localisation::TranslatedInterfaceText("near_me_sorttype");
 }
 
 std::string BookmarkManager::GetLocalizedRegionAddress(m2::PointD const & pt)

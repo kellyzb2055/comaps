@@ -2,6 +2,8 @@
 
 #include "geometry/point_with_altitude.hpp"
 
+#include "base/localisation.hpp"
+
 #include <chrono>
 #include <limits>
 #include <map>
@@ -117,10 +119,8 @@ bool IsEqual(std::vector<T> const & lhs, std::vector<T> const & rhs)
 }
 
 struct BookmarkData;
-std::string GetPreferredBookmarkName(BookmarkData const & bmData, std::string_view languageOrig);
-std::string GetPreferredBookmarkStr(LocalizableString const & name, std::string const & languageNorm);
-std::string GetPreferredBookmarkStr(LocalizableString const & name, feature::RegionData const & regionData,
-                                    std::string const & languageNorm);
+std::string GetPreferredBookmarkNameForKml(BookmarkData const & bmData);
+std::string GetPreferredBookmarkStrForKml(LocalizableString const & name, std::vector<localisation::LanguageIndex> const languageIndexes);
 std::string GetLocalizedFeatureType(std::vector<uint32_t> const & types);
 
 #define DECLARE_COLLECTABLE(IndexType, ...)            \

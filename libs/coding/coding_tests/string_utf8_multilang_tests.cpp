@@ -68,7 +68,7 @@ UNIT_TEST(MultilangString_ForEach)
     size_t index = 0;
     s.ForEach([&index](char lang, string_view utf8s)
     {
-      TEST_EQUAL(lang, StringUtf8Multilang::GetLangIndex(gArr[index].m_lang), ());
+      TEST_EQUAL(lang, localisation::ConvertLanguageCodeToLanguageIndex(gArr[index].m_lang), ());
       TEST_EQUAL(utf8s, gArr[index].m_str, ());
       ++index;
     });
@@ -121,14 +121,14 @@ UNIT_TEST(MultilangString_Unique)
 UNIT_TEST(MultilangString_LangNames)
 {
   // It is important to compare the contents of the strings, and not just pointers
-  TEST_EQUAL(string("Беларуская"), StringUtf8Multilang::GetLangNameByCode(StringUtf8Multilang::GetLangIndex("be")), ());
+  TEST_EQUAL(string("Беларуская"), localisation::GetLanguageNameByLanguageIndex(localisation::ConvertLanguageCodeToLanguageIndex("be")), ());
 
-  auto const & langs = StringUtf8Multilang::GetSupportedLanguages();
+  auto const & languages = localisation::GetSupportedLanguages();
   // Using size_t workaround, because our logging/testing macroses do not support passing POD types
   // by value, only by reference. And our constant is a constexpr.
-  TEST_LESS_OR_EQUAL(langs.size(), static_cast<size_t>(StringUtf8Multilang::kMaxSupportedLanguages), ());
-  auto const international = StringUtf8Multilang::GetLangIndex("int_name");
-  TEST_EQUAL(langs[international].m_code, string("int_name"), ());
+  TEST_LESS_OR_EQUAL(languages.size(), static_cast<size_t>(localisation::kMaxSupportedLanguages), ());
+  auto const international = localisation::ConvertLanguageCodeToLanguageIndex("int_name");
+  TEST_EQUAL(languages[international].m_languageCode, string("int_name"), ());
 }
 
 UNIT_TEST(MultilangString_HasString)
@@ -250,13 +250,13 @@ UNIT_TEST(MultilangString_RemoveString)
 UNIT_TEST(MultilangString_Buffers)
 {
   StringUtf8Multilang s;
-  s.AddString(StringUtf8Multilang::kInternationalCode, "blabla");
+  s.AddString(localisation::kInternationalNameIndex, "blabla");
 
   StringUtf8Multilang const ss = StringUtf8Multilang::FromBuffer(std::string(s.GetBuffer()));
 
   std::string_view test;
   TEST_EQUAL(ss.CountLangs(), 1, ());
-  TEST(ss.GetString(StringUtf8Multilang::kInternationalCode, test), ());
+  TEST(ss.GetString(localisation::kInternationalNameIndex, test), ());
   TEST_EQUAL(test, "blabla", ());
 }
 

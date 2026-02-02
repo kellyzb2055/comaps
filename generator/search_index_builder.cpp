@@ -256,7 +256,7 @@ bool InsertPostcodes(FeatureType & f, FnT && fn)
     if (names.CountLangs() == 1)
     {
       std::string_view defaultName;
-      names.GetString(StringUtf8Multilang::kDefaultCode, defaultName);
+      names.GetString(localisation::kDefaultNameIndex, defaultName);
       if (!defaultName.empty() && LooksLikePostcode(defaultName, false /* isPrefix */))
       {
         // In UK it's common practice to set outer postcode as postcode and outer + inner as ref.
@@ -288,7 +288,7 @@ public:
 
     if (m_skipIndex.SkipAlways(types))
       return;
-    if (m_skipIndex.SkipSpecialNames(types, f.GetName(StringUtf8Multilang::kDefaultCode)))
+    if (m_skipIndex.SkipSpecialNames(types, f.GetName(localisation::kDefaultNameIndex)))
       return;
 
     SynonymsHolder const * synonyms = nullptr;
@@ -317,19 +317,19 @@ public:
     // Road number.
     if (hasStreetType)
       for (auto const & shield : ftypes::GetRoadShieldsNames(f))
-        m_inserter(StringUtf8Multilang::kDefaultCode, shield);
+        m_inserter(localisation::kDefaultNameIndex, shield);
 
     if (ftypes::IsAirportChecker::Instance()(types))
     {
       auto const iata = f.GetMetadata(feature::Metadata::FMD_AIRPORT_IATA);
       if (!iata.empty())
-        m_inserter(StringUtf8Multilang::kDefaultCode, iata);
+        m_inserter(localisation::kDefaultNameIndex, iata);
     }
 
     // Index operator to support "Sberbank ATM" for objects with amenity=atm and operator=Sberbank.
     auto const op = f.GetMetadata(feature::Metadata::FMD_OPERATOR);
     if (!op.empty())
-      m_inserter(StringUtf8Multilang::kDefaultCode, op);
+      m_inserter(localisation::kDefaultNameIndex, op);
 
     auto const brand = f.GetMetadata(feature::Metadata::FMD_BRAND);
     if (!brand.empty())
@@ -341,7 +341,7 @@ public:
     // Index branch to support searching by branch name like "McDonald's Downtown" for objects with branch=Downtown.
     auto const branch = f.GetMetadata(feature::Metadata::FMD_BRANCH);
     if (!branch.empty())
-      m_inserter(StringUtf8Multilang::kDefaultCode, branch);
+      m_inserter(localisation::kDefaultNameIndex, branch);
 
     // Check for empty name just before categories indexing. After postcodes, and other meta ..
     if (!f.HasName())
@@ -408,7 +408,7 @@ std::optional<uint32_t> MatchObjectByName(std::string_view keyName, std::vector<
         return;
 
       // Skip _non-language_ names for street<->address matching.
-      if (StringUtf8Multilang::IsAltOrOldName(lang))
+      if (localisation::IsAlternativeOrOldName(lang))
         return;
 
       strings::UniString const actual = getKey(name);

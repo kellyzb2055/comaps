@@ -227,7 +227,9 @@ public:
 
   bool IsWorldLevel() const;
   void SetLanguages(std::vector<std::string> const & codes);
+  void SetLanguages(std::vector<int8_t> const & codes);
   void GetLanguages(std::vector<int8_t> & langs) const;
+  std::vector<int8_t> GetLanguages() const;
   bool HasLanguage(int8_t const lang) const;
   bool IsSingleLanguage(int8_t const lang) const;
 

@@ -243,10 +243,10 @@ void FeatureParamsBase::MakeZero()
 bool FeatureParamsBase::SetDefaultNameIfEmpty(std::string const & s)
 {
   std::string_view existing;
-  if (name.GetString(StringUtf8Multilang::kDefaultCode, existing))
+  if (name.GetString(localisation::kDefaultNameIndex, existing))
     return existing == s;
 
-  name.AddString(StringUtf8Multilang::kDefaultCode, s);
+  name.AddString(localisation::kDefaultNameIndex, s);
   return true;
 }
 
@@ -299,7 +299,7 @@ bool FeatureParams::AddName(string_view lang, string_view s)
     return false;
 
   // The "default" new name will replace the old one if any (e.g. from SetHouseNumberAndHouseName call).
-  name.AddString(lang, s);
+  name.AddString(string{lang}, s);
   return true;
 }
 
@@ -318,7 +318,7 @@ char const * FeatureParams::kHNLogTag = "HNLog";
 
 void FeatureParams::SetHouseNumberAndHouseName(std::string houseNumber, std::string houseName)
 {
-  if (IsDummyName(houseName) || name.FindString(houseName) != StringUtf8Multilang::kUnsupportedLanguageCode)
+  if (IsDummyName(houseName) || name.FindString(houseName) != localisation::kUnsupportedLanguageIndex)
     houseName.clear();
 
   if (houseName.empty() && houseNumber.empty())

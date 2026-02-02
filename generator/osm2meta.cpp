@@ -544,27 +544,27 @@ void MetadataTagProcessor::operator()(std::string const & k, std::string const &
   using feature::Metadata;
   Metadata & md = m_params.GetMetadata();
 
-  auto const getLang = [view = std::string_view(k)]()
+  auto const getLanguageCode = [view = std::string(k)]()
   {
     size_t const i = view.find(':');
     if (i != std::string_view::npos)
       return view.substr(i + 1);
-    return std::string_view();
+    return std::string();
   };
 
   if (k.starts_with("description"))
   {
     // Separate description tags processing.
-    int8_t langIdx = StringUtf8Multilang::kDefaultCode;
-    auto const lang = getLang();
-    if (!lang.empty())
+    localisation::LanguageIndex languageIndex = localisation::kDefaultNameIndex;
+    auto const languageCode = getLanguageCode();
+    if (!languageCode.empty())
     {
-      langIdx = StringUtf8Multilang::GetLangIndex(lang);
-      if (langIdx == StringUtf8Multilang::kUnsupportedLanguageCode)
+      languageIndex = localisation::ConvertLanguageCodeToLanguageIndex(languageCode);
+      if (languageIndex == localisation::kUnsupportedLanguageIndex)
         return;
     }
 
-    m_description.AddString(langIdx, v);
+    m_description.AddString(languageIndex, v);
     return;
   }
 
@@ -594,7 +594,7 @@ void MetadataTagProcessor::operator()(std::string const & k, std::string const &
   case Metadata::FMD_PHONE_NUMBER: valid = ValidateAndFormat_phone(v); break;
   case Metadata::FMD_STARS: valid = ValidateAndFormat_stars(v); break;
   case Metadata::FMD_OPERATOR:
-    if (!m_operatorF.Add(getLang()))
+    if (!m_operatorF.Add(getLanguageCode()))
       return;
     valid = ValidateAndFormat_operator(v);
     break;
@@ -629,7 +629,7 @@ void MetadataTagProcessor::operator()(std::string const & k, std::string const &
   case Metadata::FMD_LEVEL: valid = ValidateAndFormat_level(v); break;
   case Metadata::FMD_AIRPORT_IATA: valid = ValidateAndFormat_airport_iata(v); break;
   case Metadata::FMD_BRAND:
-    if (!m_brandF.Add(getLang()))
+    if (!m_brandF.Add(getLanguageCode()))
       return;
     valid = ValidateAndFormat_brand(v);
     break;

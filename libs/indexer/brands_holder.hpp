@@ -88,7 +88,7 @@ void ForEachLocalizedBrands(std::string_view brand, FnT && fn)
   });
 
   if (!processed)
-    fn(BrandsHolder::Brand::Name(brand, StringUtf8Multilang::kDefaultCode));
+    fn(BrandsHolder::Brand::Name(brand, localisation::kDefaultNameIndex));
 }
 
 }  // namespace indexer

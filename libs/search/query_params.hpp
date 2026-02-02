@@ -1,15 +1,12 @@
 #pragma once
 
-#include "coding/string_utf8_multilang.hpp"
-
 #include "base/assert.hpp"
+#include "base/localisation_translation.hpp"
 #include "base/string_utils.hpp"
 
 #include <algorithm>
 #include <string>
 #include <vector>
-
-#include "3party/ankerl/unordered_dense.h"
 
 namespace search
 {
@@ -148,10 +145,5 @@ private:
   std::vector<TypeIndices> m_typeIndices;
 
   Langs m_langs;
-
-  inline std::string DebugPrint(Langs const & v)
-  {
-    return DebugPrintSequence(v.cbegin(), v.cend());
-  }
 };
 }  // namespace search

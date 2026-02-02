@@ -92,7 +92,7 @@ UNIT_CLASS_TEST(TestRawGenerator, Towns)
   {
     auto ft = guard.GetFeatureByIndex(id);
 
-    std::string_view const name = ft->GetName(StringUtf8Multilang::kDefaultCode);
+    std::string_view const name = ft->GetName(localisation::kDefaultNameIndex);
     if (!name.empty())
     {
       TEST_EQUAL(ft->GetGeomType(), feature::GeomType::Point, ());
@@ -304,7 +304,7 @@ UNIT_CLASS_TEST(TestRawGenerator, Place_Region)
       if (feature::TypesHolder(*ft).Has(regionType))
       {
         TEST_EQUAL(ft->GetGeomType(), feature::GeomType::Point, ());
-        TEST(!ft->GetName(StringUtf8Multilang::kDefaultCode).empty(), ());
+        TEST(!ft->GetName(localisation::kDefaultNameIndex).empty(), ());
 
         if (name == worldMwmName)
           ++worldRegions;
@@ -400,7 +400,7 @@ UNIT_CLASS_TEST(TestRawGenerator, Postcode_Relations)
   size_t count = 0;
   ForEachFeature(mwmName, [&count](std::unique_ptr<FeatureType> ft)
   {
-    auto const name = ft->GetName(StringUtf8Multilang::kDefaultCode);
+    auto const name = ft->GetName(localisation::kDefaultNameIndex);
     if (name == "Boulevard Malesherbes")
     {
       TEST_EQUAL(GetPostcode(*ft), "75017", ());
@@ -462,7 +462,7 @@ UNIT_CLASS_TEST(TestRawGenerator, Building_Address)
       TEST(res, ());
 
       auto street = guard.GetFeatureByIndex(res->m_streetId);
-      TEST_EQUAL(street->GetName(StringUtf8Multilang::kDefaultCode), "Airport Boulevard", ());
+      TEST_EQUAL(street->GetName(localisation::kDefaultNameIndex), "Airport Boulevard", ());
     }
   }
 
@@ -1010,7 +1010,7 @@ UNIT_CLASS_TEST(TestRawGenerator, Addr_Interpolation)
       TEST(res, ());
 
       auto street = guard.GetFeatureByIndex(res->m_streetId);
-      TEST_EQUAL(street->GetName(StringUtf8Multilang::kDefaultCode), "Juncal", ());
+      TEST_EQUAL(street->GetName(localisation::kDefaultNameIndex), "Juncal", ());
     }
   }
 

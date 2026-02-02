@@ -8,8 +8,6 @@
 #include "indexer/postcodes_matcher.hpp"
 #include "indexer/validate_and_format_contacts.hpp"
 
-#include "platform/preferred_languages.hpp"
-
 #include "base/control_flow.hpp"
 #include "base/string_utils.hpp"
 
@@ -26,21 +24,21 @@ using namespace std;
 
 namespace
 {
-bool ExtractName(StringUtf8Multilang const & names, int8_t const langCode, vector<osm::LocalizedName> & result)
+bool ExtractName(StringUtf8Multilang const & names, localisation::LanguageIndex const languageIndex, vector<osm::LocalizedName> & result)
 {
-  if (StringUtf8Multilang::kUnsupportedLanguageCode == langCode)
+  if (localisation::kUnsupportedLanguageIndex == languageIndex)
     return false;
 
   // Exclude languages that are already present.
   auto const it = base::FindIf(
-      result, [langCode](osm::LocalizedName const & localizedName) { return localizedName.m_code == langCode; });
+      result, [languageIndex](osm::LocalizedName const & localizedName) { return localizedName.m_code == languageIndex; });
 
   if (result.end() != it)
     return false;
 
   string_view name;
-  names.GetString(langCode, name);
-  result.emplace_back(langCode, name);
+  names.GetString(languageIndex, name);
+  result.emplace_back(languageIndex, name);
 
   return true;
 }
@@ -56,17 +54,17 @@ std::string GetCurrentDate()
 
 // LocalizedName -----------------------------------------------------------------------------------
 
-LocalizedName::LocalizedName(int8_t const code, string_view name)
-  : m_code(code)
-  , m_lang(StringUtf8Multilang::GetLangByCode(code))
-  , m_langName(StringUtf8Multilang::GetLangNameByCode(code))
+LocalizedName::LocalizedName(localisation::LanguageIndex const languageIndex, string_view name)
+  : m_code(languageIndex)
+  , m_lang(std::string_view{localisation::ConvertLanguageIndexToLanguageCode(languageIndex)})
+  , m_langName(std::string_view{localisation::GetLanguageNameByLanguageIndex(languageIndex)})
   , m_name(name)
 {}
 
-LocalizedName::LocalizedName(string const & langCode, string const & name)
-  : m_code(StringUtf8Multilang::GetLangIndex(langCode))
-  , m_lang(StringUtf8Multilang::GetLangByCode(m_code))
-  , m_langName(StringUtf8Multilang::GetLangNameByCode(m_code))
+LocalizedName::LocalizedName(localisation::LanguageCode const & languageCode, string const & name)
+  : m_code(localisation::ConvertLanguageCodeToLanguageIndex(languageCode))
+  , m_lang(std::string_view{localisation::ConvertLanguageIndexToLanguageCode(m_code)})
+  , m_langName(std::string_view{localisation::GetLanguageNameByLanguageIndex(m_code)})
   , m_name(name)
 {}
 
@@ -151,9 +149,7 @@ NamesDataSource EditableMapObject::GetNamesDataSource()
   vector<int8_t> mwmLanguages;
   mwmInfo->GetRegionData().GetLanguages(mwmLanguages);
 
-  auto const userLangCode = StringUtf8Multilang::GetLangIndex(languages::GetCurrentMapLanguage());
-
-  return GetNamesDataSource(m_name, mwmLanguages, userLangCode);
+  return GetNamesDataSource(m_name, mwmLanguages, localisation::GetMapLanguageIndex());
 }
 
 // static
@@ -165,7 +161,7 @@ NamesDataSource EditableMapObject::GetNamesDataSource(StringUtf8Multilang const 
   auto & mandatoryCount = result.mandatoryNamesCount;
 
   // Push default/native for country language.
-  if (ExtractName(source, StringUtf8Multilang::kDefaultCode, names))
+  if (ExtractName(source, localisation::kDefaultNameIndex, names))
     ++mandatoryCount;
 
   // Push other languages.
@@ -200,10 +196,10 @@ void EditableMapObject::ForEachMetadataItem(function<void(string_view tag, strin
       auto const mlDescr = StringUtf8Multilang::FromBuffer(std::string(value));
       mlDescr.ForEach([&fn](int8_t code, string_view v)
       {
-        if (code == StringUtf8Multilang::kDefaultCode)
+        if (code == localisation::kDefaultNameIndex)
           fn("description", v);
         else
-          fn(string("description:").append(StringUtf8Multilang::GetLangByCode(code)), v);
+          fn(string("description:").append(localisation::ConvertLanguageIndexToLanguageCode(code)), v);
       });
       break;
     }
@@ -243,14 +239,14 @@ void EditableMapObject::SetName(string_view name, int8_t langCode)
 }
 
 // static
-bool EditableMapObject::CanUseAsDefaultName(int8_t const lang, vector<int8_t> const & mwmLanguages)
+bool EditableMapObject::CanUseAsDefaultName(localisation::LanguageIndex const languageIndex, vector<localisation::LanguageIndex> const & mwmLanguageIndexes)
 {
-  for (auto const & mwmLang : mwmLanguages)
+  for (auto const & mwmLanguageIndex : mwmLanguageIndexes)
   {
-    if (StringUtf8Multilang::kUnsupportedLanguageCode == mwmLang)
+    if (localisation::kUnsupportedLanguageIndex == mwmLanguageIndex)
       continue;
 
-    if (lang == mwmLang)
+    if (languageIndex == mwmLanguageIndex)
       return true;
   }
 
@@ -787,10 +783,10 @@ void EditableMapObject::ApplyJournalEntry(JournalEntry const & entry)
     }
 
     // Names
-    int8_t langCode = StringUtf8Multilang::GetCodeByOSMTag(tagModData.key);
-    if (langCode != StringUtf8Multilang::kUnsupportedLanguageCode)
+    localisation::LanguageIndex languageIndex = StringUtf8Multilang::GetCodeByOSMTag(tagModData.key);
+    if (languageIndex != localisation::kUnsupportedLanguageIndex)
     {
-      m_name.AddString(langCode, tagModData.new_value);
+      m_name.AddString(languageIndex, tagModData.new_value);
       break;
     }
 
@@ -867,16 +863,16 @@ void EditableMapObject::LogDiffInJournal(EditableMapObject const & unedited_emo)
   auto const initialJournalSize = m_journal.GetJournal().size();
 
   // Name
-  for (auto const & language : StringUtf8Multilang::GetSupportedLanguages())
+  for (localisation::Language const & language : localisation::GetSupportedLanguages())
   {
-    int8_t const langCode = StringUtf8Multilang::GetLangIndex(language.m_code);
+    localisation::LanguageIndex const languageIndex = localisation::ConvertLanguageCodeToLanguageIndex(language.m_languageCode);
     std::string_view new_name, old_name;
-    UNUSED_VALUE(m_name.GetString(langCode, new_name));
-    UNUSED_VALUE(unedited_emo.GetNameMultilang().GetString(langCode, old_name));
+    UNUSED_VALUE(m_name.GetString(languageIndex, new_name));
+    UNUSED_VALUE(unedited_emo.GetNameMultilang().GetString(languageIndex, old_name));
 
     if (new_name != old_name)
     {
-      m_journal.AddTagChange(StringUtf8Multilang::GetOSMTagByCode(langCode), std::string(old_name),
+      m_journal.AddTagChange(StringUtf8Multilang::GetOSMTagByCode(languageIndex), std::string(old_name),
                              std::string(new_name));
     }
   }

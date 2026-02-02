@@ -42,6 +42,10 @@ set(SRC
   levenshtein_dfa.hpp
   limited_priority_queue.hpp
   linked_map.hpp
+  localisation.cpp
+  localisation.hpp
+  localisation_translation.cpp
+  localisation_translation.hpp
   logging.cpp
   logging.hpp
   lower_case.cpp

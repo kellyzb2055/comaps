@@ -17,22 +17,6 @@
 
 #include "cppjansson/cppjansson.hpp"
 
-namespace
-{
-// GetRussianName returns a Russian feature name if it's possible.
-// Otherwise, GetRussianName function returns a name that GetReadableName returns.
-std::string GetRussianName(StringUtf8Multilang const & str)
-{
-  feature::NameParamsOut out;
-  feature::GetReadableName({str, {} /* regionData */, "ru", false /* allowTranslit */}, out);
-  std::string result(out.primary);
-
-  for (auto const & ch : {';', '\n', '\t'})
-    std::replace(std::begin(result), std::end(result), ch, ',');
-  return result;
-}
-}  // namespace
-
 namespace generator
 {
 bool operator==(HierarchyEntry const & lhs, HierarchyEntry const & rhs)
@@ -82,11 +66,6 @@ uint32_t GetMainType(FeatureParams::Types const & types)
   auto const & buildingPartChecker = ftypes::IsBuildingPartChecker::Instance();
   it = base::FindIf(types, buildingPartChecker);
   return it != std::cend(types) ? *it : ftype::GetEmptyValue();
-}
-
-std::string GetName(StringUtf8Multilang const & str)
-{
-  return GetRussianName(str);
 }
 
 std::string HierarchyEntryToCsvString(HierarchyEntry const & entry, char delim)

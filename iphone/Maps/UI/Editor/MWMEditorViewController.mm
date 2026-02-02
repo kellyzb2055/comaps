@@ -470,7 +470,7 @@ void registerCellsForTableView(std::vector<MWMEditorCellID> const & cells, UITab
     auto const readableType = classif().GetReadableObjectName(*(types.begin()));
     MWMEditorCategoryCell * cCell = static_cast<MWMEditorCategoryCell *>(cell);
     [cCell configureWithDelegate:self
-                     detailTitle:@(platform::GetLocalizedTypeName(readableType).c_str())
+                     detailTitle:@(localisation::TranslatedFeatureType(readableType).c_str())
                       isCreating:self.isCreating];
     break;
   }
@@ -554,7 +554,7 @@ void registerCellsForTableView(std::vector<MWMEditorCellID> const & cells, UITab
     if (indexPath.row < localizedNames.size())
     {
       osm::LocalizedName const & name = localizedNames[indexPath.row];
-      NSString * langName = indexPath.row == StringUtf8Multilang::kDefaultCode ? L(@"editor_default_language_hint") : ToNSString(name.m_langName);
+      NSString * langName = indexPath.row == localisation::kDefaultNameIndex ? L(@"editor_default_language_hint") : ToNSString(name.m_langName);
       [tCell configWithDelegate:self
                        langCode:name.m_code
                        langName:langName
@@ -570,14 +570,14 @@ void registerCellsForTableView(std::vector<MWMEditorCellID> const & cells, UITab
 
       std::string name;
       // Default name can be changed in advanced mode.
-      if (langCode == StringUtf8Multilang::kDefaultCode)
+      if (langCode == localisation::kDefaultNameIndex)
       {
         name = m_mapObject.GetDefaultName();
       }
 
       [tCell configWithDelegate:self
                        langCode:langCode
-                       langName:ToNSString(StringUtf8Multilang::GetLangNameByCode(langCode))
+                       langName:ToNSString(localisation::GetLanguageNameByLanguageIndex(langCode))
                            name:@(name.c_str())
                    errorMessage:L(@"error_enter_correct_name")
                         isValid:isValid

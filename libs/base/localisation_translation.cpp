@@ -1,0 +1,103 @@
+#include "base/localisation_translation.hpp"
+
+#include "coding/transliteration.hpp"
+
+#include "platform/get_text_by_id.hpp"
+#include "platform/localization.hpp"
+
+namespace localisation
+{
+using namespace std;
+
+string BestTranslation(StringUtf8Multilang const translations,
+                       vector<LanguageIndex> const prioritizedMapLanguageIndexes,
+                       vector<LanguageIndex> const regionalLanguageIndexes)
+{
+  string bestTranslation = {};
+  LanguageIndex bestLanguageIndex = kUnsupportedLanguageIndex;
+  for (LanguageIndex const prioritizedMapLanguageIndex : prioritizedMapLanguageIndexes)
+  {
+    if (translations.GetString(prioritizedMapLanguageIndex, bestTranslation))
+    {
+      bestLanguageIndex = prioritizedMapLanguageIndex;
+      break;
+    }
+  }
+
+  if (bestLanguageIndex != kUnsupportedLanguageIndex && ShouldUseTransliteration())
+  {
+    if (bestLanguageIndex == kDefaultNameIndex)
+    {
+      bool shouldTransliterate = true;
+      vector<LanguageIndex> const mapLanguageIndexes = GetMapLanguageIndexes();
+      for (LanguageIndex const regionalLanguageIndex : regionalLanguageIndexes)
+        if (!shouldTransliterate || std::find(mapLanguageIndexes.begin(), mapLanguageIndexes.end(),
+                                              regionalLanguageIndex) != mapLanguageIndexes.end())
+          shouldTransliterate = false;
+      if (shouldTransliterate)
+        bestTranslation = Transliteration::Instance().Transliterate(bestLanguageIndex, bestTranslation);
+    }
+    else if (std::find(regionalLanguageIndexes.begin(), regionalLanguageIndexes.end(), bestLanguageIndex) ==
+             regionalLanguageIndexes.end())
+    {
+      bestTranslation = Transliteration::Instance().Transliterate(bestLanguageIndex, bestTranslation);
+    }
+  }
+
+  return bestTranslation;
+}
+
+string LocalTranslation(StringUtf8Multilang const translations)
+{
+  string localTranslation = {};
+  translations.GetString(kDefaultNameIndex, localTranslation);
+  return localTranslation;
+}
+
+struct NameTranslation TranslatedFeatureName(StringUtf8Multilang const names,
+                                             vector<LanguageIndex> const regionalLanguageIndexes)
+{
+  vector<LanguageIndex> const prioritizedMapLanguageIndexes = PrioritizedMapLanguageIndexes(regionalLanguageIndexes);
+
+  string const bestName = BestTranslation(names, prioritizedMapLanguageIndexes, regionalLanguageIndexes);
+  string const localName = LocalTranslation(names);
+  if (bestName == localName)
+    return {bestName};
+  else
+    return {bestName, localName};
+}
+
+string TranslatedFeatureType(string const translationKey)
+{
+  return platform::GetLocalizedTypeName(translationKey);
+}
+
+string TranslatedRegionName(storage::CountryId const countryId)
+{
+  auto nameGetter = platform::GetTextByIdFactoryForRegion(platform::TextSource::Countries, countryId);
+
+  if (!nameGetter)
+    return {};
+
+  string shortName = (*nameGetter)(countryId + " Short");
+  if (!shortName.empty())
+    return shortName;
+
+  string officialName = (*nameGetter)(countryId);
+  if (!officialName.empty())
+    return officialName;
+
+  return {};
+}
+
+string TranslatedBrand(string const translationKey)
+{
+  return platform::GetLocalizedBrandName(translationKey);
+}
+
+string TranslatedInterfaceText(string const translationKey)
+{
+  return platform::GetLocalizedString(translationKey);
+}
+
+}  // namespace localisation
