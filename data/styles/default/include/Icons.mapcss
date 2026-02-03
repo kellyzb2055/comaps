@@ -2542,6 +2542,9 @@ node|z17-[amenity=motorcycle_parking],
 node|z18-[amenity=parking_space][parking_space=disabled],
 {icon-image: parking-disabled-m.svg;}
 
+node|z16-[waterway=fuel],
+{icon-image: marina_fuel_station-m.svg;}
+
 /* 8. Colored Labels */
 
 @import("../../default/include/Icons_Label_Colors.mapcss");

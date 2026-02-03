@@ -379,6 +379,7 @@ amenity-charging_station-small                      # icon z15- (also has captio
 
 amenity-charging_station-motorcar                   # icon z14- (also has caption(optional) z14-, area z15-)
 amenity-fuel                                        # icon z14- (also has caption(optional) z14-, area z15-)
+waterway-fuel                                       # icon z16- (also has caption(optional) z16-)
 === 4270
 
 highway-services                                    # icon z14- (also has caption(optional) z14-, area z13-)
@@ -1655,6 +1656,7 @@ leisure-swimming_pool-private                       # icon z17- (also has captio
 
 # amenity-charging_station-motorcar                 # caption(optional) z14- (also has icon z14-, area z15-)
 # amenity-fuel                                      # caption(optional) z14- (also has icon z14-, area z15-)
+# waterway-fuel                                     # caption(optional) z16- (also has icon z16-)
 # === -5730
 
 # highway-services                                  # caption(optional) z14- (also has icon z14-, area z13-)
