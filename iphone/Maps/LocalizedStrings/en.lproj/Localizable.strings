@@ -1147,4 +1147,4 @@
 "edit_track" = "Edit Track";
 
 /* To indicate the number of rooms in hotel, hospital ... */
-"capacity" = "%@ rooms";
+"rooms" = "%@ rooms";

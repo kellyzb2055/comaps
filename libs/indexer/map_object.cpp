@@ -245,6 +245,11 @@ std::string MapObject::GetCapacity() const
   return std::string(m_metadata.Get(MetadataID::FMD_CAPACITY));
 }
 
+std::string MapObject::GetRooms() const
+{
+  return std::string(m_metadata.Get(MetadataID::FMD_ROOMS));
+}
+
 bool MapObject::IsPointType() const
 {
   return m_geomType == feature::GeomType::Point;

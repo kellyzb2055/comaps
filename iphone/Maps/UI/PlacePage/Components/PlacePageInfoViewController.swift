@@ -324,7 +324,7 @@ class PlacePageInfoViewController: UIViewController {
     }
 	
     if let rooms = placePageInfoData.rooms {
-      capacityView = createInfoItem(capacity, icon: UIImage(named: "ic_placepage_rooms"))
+      roomsView = createInfoItem(rooms, icon: UIImage(named: "ic_placepage_rooms"))
     }
 
     if let wheelchair = placePageInfoData.wheelchair {

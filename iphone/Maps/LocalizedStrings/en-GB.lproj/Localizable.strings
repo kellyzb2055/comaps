@@ -1120,3 +1120,6 @@
 /* Message for the toast when saving the track recording is finished but nothing to save. */
 "track_recording_toast_nothing_to_save" = "Track is empty - nothing to save";
 "edit_track" = "Edit Track";
+
+/* To indicate the number of rooms in hotel, hospital ... */
+"rooms" = "%@ rooms";
