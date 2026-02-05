@@ -206,7 +206,6 @@
 		34F742321E0834F400AC1FD6 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F742301E0834F400AC1FD6 /* UIViewController+Navigation.m */; };
 		34FE5A6F1F18F30F00BCA729 /* TrafficButtonArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE5A6D1F18F30F00BCA729 /* TrafficButtonArea.swift */; };
 		3D15ACEE2155117000F725D5 /* MWMObjectsCategorySelectorDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D15ACED2155117000F725D5 /* MWMObjectsCategorySelectorDataSource.mm */; };
-		408645FC21495EB1000A4A1D /* categories_cuisines.txt in Resources */ = {isa = PBXBuildFile; fileRef = 408645FB21495EB1000A4A1D /* categories_cuisines.txt */; };
 		44360A0D2A7D34990016F412 /* TransportRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44360A0C2A7D34990016F412 /* TransportRuler.swift */; };
 		44360A112A7D35440016F412 /* TransportRuler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44360A102A7D35440016F412 /* TransportRuler.xib */; };
 		4554B6EC1E55F0EF0084017F /* drules_proto_vehicle_light.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4554B6E81E55F02B0084017F /* drules_proto_vehicle_light.bin */; };
@@ -1117,7 +1116,6 @@
 		34FE5A6D1F18F30F00BCA729 /* TrafficButtonArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficButtonArea.swift; sourceTree = "<group>"; };
 		3D15ACED2155117000F725D5 /* MWMObjectsCategorySelectorDataSource.mm */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMObjectsCategorySelectorDataSource.mm; sourceTree = "<group>"; tabWidth = 2; };
 		3D15ACEF2155118800F725D5 /* MWMObjectsCategorySelectorDataSource.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MWMObjectsCategorySelectorDataSource.h; sourceTree = "<group>"; tabWidth = 2; };
-		408645FB21495EB1000A4A1D /* categories_cuisines.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = categories_cuisines.txt; path = ../../data/categories_cuisines.txt; sourceTree = "<group>"; };
 		44360A0C2A7D34990016F412 /* TransportRuler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportRuler.swift; sourceTree = "<group>"; };
 		44360A102A7D35440016F412 /* TransportRuler.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportRuler.xib; sourceTree = "<group>"; };
 		451950391B7A3E070085DA05 /* patterns.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = patterns.txt; path = ../../data/patterns.txt; sourceTree = "<group>"; };
@@ -3940,7 +3938,6 @@
 				165953732CB1D83700CFED7C /* fonts */,
 				165953932CB44B3B00CFED7C /* symbols */,
 				47AEF83F2231249E00D20538 /* categories_brands.txt */,
-				408645FB21495EB1000A4A1D /* categories_cuisines.txt */,
 				FAAFD696139D9BE2000AE70C /* categories.txt */,
 				EE026F0511D6AC0D00645242 /* classificator.txt */,
 				452FCA3A1B6A3DF7007019AB /* colors.txt */,
@@ -4284,7 +4281,6 @@
 				34AB665C1FC5AA330078E451 /* TransportTransitIntermediatePoint.xib in Resources */,
 				F6E2FEE81E097BA00083EBEC /* MWMSearchNoResults.xib in Resources */,
 				34AB660E1FC5AA320078E451 /* NavigationControlView.xib in Resources */,
-				408645FC21495EB1000A4A1D /* categories_cuisines.txt in Resources */,
 				F6E2FF391E097BA00083EBEC /* MWMSearchSuggestionCell.xib in Resources */,
 				34AB66231FC5AA330078E451 /* MWMiPadRoutePreview.xib in Resources */,
 				BB25B1A71FB32767007276FA /* transit_colors.txt in Resources */,
