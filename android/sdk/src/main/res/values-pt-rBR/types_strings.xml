@@ -1497,4 +1497,5 @@
     <string name="type.railway.turntable">Plataforma giratória ferroviária</string>
     <string name="type.tourism.information.tactile_map">Mapa tátil</string>
     <string name="type.amenity.charging_station.small">Capacidade limitada</string>
+    <string name="type.waterway.fuel">Posto de combustível da marina</string>
 </resources>

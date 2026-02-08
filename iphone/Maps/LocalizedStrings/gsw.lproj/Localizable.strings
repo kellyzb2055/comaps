@@ -597,4 +597,6 @@
 "voice_explanation" = "Es isch möglich, i de Systemiistellige under *Barrierefreiheit*, *Lesen & Sprechen*, *Stimmen* e besseri Stimm uuszwähle.";
 "voice_explanation_before_version26" = "Es isch möglich, i de Systemiistellige under *Barrierefreiheit*, *Gesprochene Inhalte*, *Stimmen* e besseri Stimm uuszwähle.";
 "unknown" = "Unbekantt";
-"limit_map_language_alternatives_to_local" = "Nutz anderi Systemspraachene nur i dere Region";
+"pref_alt_map_lang_handling_local_only" = "Bevorzuge und nur nutze, wenns die lokali Spraach isch";
+"pref_alt_map_lang_handling" = "Alternativi Charte-Spraache";
+"pref_alt_map_lang_handling_system_order" = "I de Systemreihefolg nutze";

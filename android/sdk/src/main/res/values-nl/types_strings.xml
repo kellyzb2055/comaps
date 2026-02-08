@@ -1508,4 +1508,5 @@
     <string name="type.amenity.charging_station.small">Beperkte capaciteit</string>
     <string name="type.emergency.disaster_help_point">Noodhulppost</string>
     <string name="type.emergency.access_point.address">Noodhulppost adres</string>
+    <string name="type.waterway.fuel">Brandstofsteiger</string>
 </resources>

@@ -1599,3 +1599,4 @@
 "type.railway.miniature.tunnel" = "Tunnel ferroviaire miniature";
 "type.railway.disused.tunnel" = "Tunnel ferroviaire désaffecté";
 "type.railway.miniature" = "Chemin de fer miniature";
+"type.waterway.fuel" = "Quai de ravitaillement en carburant";

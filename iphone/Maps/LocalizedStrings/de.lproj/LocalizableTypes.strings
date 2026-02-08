@@ -1599,3 +1599,4 @@
 "type.railway.miniature.tunnel" = "Miniatur-Eisenbahntunnel";
 "type.railway.disused.tunnel" = "Stillgelegter Eisenbahntunnel";
 "type.railway.miniature" = "Miniatureisenbahn";
+"type.waterway.fuel" = "Bunkerstation";

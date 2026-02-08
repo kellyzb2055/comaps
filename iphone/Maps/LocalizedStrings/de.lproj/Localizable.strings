@@ -750,7 +750,7 @@
 "planning_route_manage_route" = "Route verwalten";
 "button_plan" = "Planen";
 "placepage_remove_stop" = "Stopp entfernen";
-"planning_route_remove_title" = "Hierher ziehen zum Entfernen";
+"planning_route_remove_title" = "Hierher ziehen zum Löschen";
 "placepage_add_stop" = "Stopp hinzufügen";
 "start_from_my_position" = "Starten von";
 
@@ -833,9 +833,9 @@
 "toll_road" = "Mautstraße";
 "unpaved_road" = "Unbefestigte Straße";
 "ferry_crossing" = "Fährstelle";
-"trip_start" = "Losfahren";
+"trip_start" = "Starten";
 "pick_destination" = "Ziel";
-"follow_my_position" = "Zentrieren";
+"follow_my_position" = "Neuzentrieren";
 "search_results" = "Suchergebnisse";
 "then_turn" = "Danach";
 "redirect_route_alert" = "Möchtest du die Route neu erstellen?";
@@ -866,7 +866,7 @@
 "dialog_routing_download_files_carplay" = "Lade die fehlenden Karten herunter, um die Route zu erstellen";
 "dialog_routing_system_error_carplay" = "Es ist ein Fehler aufgetreten. Bitte starte CoMaps neu";
 "dialog_routing_rebuild_from_current_location_carplay" = "Die Route wird von deinem derzeitigen Standort aus neu erstellt werden";
-"dialog_routing_rebuild_for_vehicle_carplay" = "Die Route wird zu einer Route für Fahrzeuge geändert";
+"dialog_routing_rebuild_for_vehicle_carplay" = "Die Route wird zu einer Automobil-Route geändert";
 "not_all_shown_bookmarks_carplay" = "Es werden nicht alle Lesezeichen angezeigt";
 "switch_to_phone_bookmarks_carplay" = "Wechsle aufs Telefon um alle Lesezeichen zu sehen";
 "ok" = "OK";
@@ -900,7 +900,7 @@
 "hotels" = "Hotels";
 "buildings" = "Gebäude";
 "money" = "Geld";
-"shops" = "Ladengeschäfte";
+"shops" = "Geschäfte";
 "parkings" = "Parkplätze";
 "fuel_places" = "Tankstellen";
 "medicine" = "Medizin";
@@ -911,8 +911,8 @@
 "dialog_pedestrian_route_is_long_message" = "Wähle einen Start- oder Endpunkt näher an einer U-Bahn-Station";
 "button_layer_isolines" = "Höhelinien";
 "isolines_activation_error_dialog" = "Um die Höhenlinien nutzen zu können, aktualisiere die Karte des betreffenden Gebiets oder lade diese herunter";
-"isolines_location_error_dialog" = "Topographieebene ist für dieses Gebiet noch nicht verfügbar";
-"elevation_profile_diff_level" = "Anspruchsniveau";
+"isolines_location_error_dialog" = "Höhenlinien sind für dieses Gebiet noch nicht verfügbar";
+"elevation_profile_diff_level" = "Schwierigkeitsgrad";
 "elevation_profile_diff_level_easy" = "Leicht";
 "elevation_profile_diff_level_moderate" = "Mittel";
 "elevation_profile_diff_level_hard" = "Schwer";
@@ -920,7 +920,7 @@
 "elevation_profile_descent" = "Bergab";
 "elevation_profile_min_elevation" = "Min. Höhe";
 "elevation_profile_max_elevation" = "Max. Höhe";
-"isolines_toast_zooms_1_10" = "Karte vergrößern, um Höhelinien sichtbar zu machen";
+"isolines_toast_zooms_1_10" = "Karte vergrößern, um Höhenlinien sichtbar zu machen";
 "downloader_updating_ios" = "Aktualisierung";
 "downloader_loading_ios" = "Wird heruntergeladen";
 
@@ -991,7 +991,7 @@
 "car_used_on_the_car_screen" = "Du verwendest jetzt CoMaps auf dem Bildschirm des Autos";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
-"car_continue_on_the_phone" = "Weiter am Telefon";
+"car_continue_on_the_phone" = "Fortsetzen am Telefon";
 
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
 "car_continue_in_the_car" = "Zum Autobildschirm";
@@ -1088,14 +1088,14 @@
 "track_recording_alert_title" = "In Favoriten speichern?";
 
 /* Message for the toast when saving the track recording is finished but nothing to save. */
-"track_recording_toast_nothing_to_save" = "Route ist leer - nichts zu speichern";
+"track_recording_toast_nothing_to_save" = "Route ist leer – nichts zu speichern";
 "edit_track" = "Track bearbeiten";
 "pref_mapappearance_title" = "Kartendarstellung";
 "pref_maplanguage_title" = "Karten-Sprache";
 "pref_alt_map_lang_handling" = "Alternative Karten-Sprachen";
 "pref_alt_map_lang_handling_system_order" = "In Systemreihenfolge verwenden";
-"pref_alt_map_lang_handling_local_only" = "Bevorzugen und nur verwenden, wenn lokale Sprache";
-"transliteration_title_disabled_summary" = "Bei der Nutzung der lokalen Sprache für die Karte ausgeschaltet";
+"pref_alt_map_lang_handling_local_only" = "Bevorzugen und nur verwenden, wenn es lokale Sprache ist";
+"transliteration_title_disabled_summary" = "Deaktiviert, wenn für die Karte immer die lokale Sprache verwendet wird";
 "pref_maplanguage_local" = "Lokale Sprache";
 "existence_confirmed_time_ago" = "Existenz bestätigt %@";
 "hours_confirmed_time_ago" = "Bestätigt %@";

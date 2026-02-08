@@ -1099,4 +1099,5 @@
 "voice_explanation_before_version26" = "Sistēmas iestatījumos ir iespējams izvēlēties labāku balsi: *Piekļūstamība*, *Runātais saturs*, *Balsis*.";
 "voice_explanation" = "Sistēmas iestatījumos ir iespējams izvēlēties labāku balsi: *Piekļūstamība*, *Lasīt un runāt*, *Balsis*.";
 "avoid_paved" = "Izvairīties no ceļiem ar cietu mākslīgo segumu";
-"limit_map_language_alternatives_to_local" = "Izmantot tikai citas sistēmas valodas to apvidū";
+"pref_alt_map_lang_handling" = "Kartes papildu valodas";
+"pref_alt_map_lang_handling_system_order" = "Izmantot sistēmas secībā";

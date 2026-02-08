@@ -1413,3 +1413,4 @@
 "type.spherical_buoy.lateral.starboard" = "Chugelförmigi Lateralboje";
 "type.spherical_buoy.safe_water" = "Chugelförmigi Mittefahrwasserboje";
 "type.spherical_buoy.special_purpose" = "Chugelförmigi Spezialboje";
+"type.waterway.fuel" = "Bunkerstation";

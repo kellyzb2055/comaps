@@ -380,7 +380,7 @@
 "downloader_delete_map" = "Kaart verwijderen";
 
 /* Text for routing error dialog */
-"routing_download_maps_along" = "Download kaarten op de route";
+"routing_download_maps_along" = "Alle kaarten op de route downloaden";
 
 /* Text for routing error dialog */
 "routing_requires_all_map" = "Voor het creëren van een route is het nodig dat alle kaarten van uw locatie naar de bestemming gedownload en bijgewerkt zijn.";
@@ -1103,4 +1103,6 @@
 "avoid_paved" = "Verharde wegen vermijden";
 "editor_place_doesnt_exist_description" = "Beschrijf hoe de plaats er nu uitziet om een foutbericht te sturen naar de OpenStreetMap-community";
 "avoid_steps" = "Trappen vermijden";
-"limit_map_language_alternatives_to_local" = "Gebruik alleen andere systeemtalen in hun regio";
+"pref_alt_map_lang_handling" = "Alternatieve kaarttalen";
+"pref_alt_map_lang_handling_local_only" = "Gebruik lokale taal indien beschikbaar";
+"pref_alt_map_lang_handling_system_order" = "Gebruik in systeemvolgorde";

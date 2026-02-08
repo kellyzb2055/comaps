@@ -21,7 +21,7 @@
     <string name="close">বন্ধ করুন</string>
     <string name="download">ডাউনলোড</string>
     <string name="limited_accuracy">সীমিত সঠিকতা</string>
-    <string name="precise_location_is_disabled_long_text">সঠিক ন্যাভিগেশনের জন্য সেটিংস থেকে নিখুঁত লোকেশন অন করুন।</string>
+    <string name="precise_location_is_disabled_long_text">সঠিক ন্যাভিগেশনের জন্য সেটিংস থেকে নিখুঁত লোকেশন অন করুন</string>
     <string name="zoom_to_country">মানচিত্রে দেখান</string>
     <string name="country_status_download_failed">ডাউনলোড ব্যর্থ হয়েছে</string>
     <string name="try_again">আবার চেষ্টা করুন</string>
@@ -39,8 +39,8 @@
     <string name="not_enough_free_space_on_sdcard">এই অ্যাপটি ব্যবহার করার জন্য অনুগ্রহ করে SD কার্ড অথবা USB স্টোরেজ থেকে যায়গা মুক্ত করুন</string>
     <string name="download_resources_continue">মানচিত্রে যান</string>
     <string name="downloading_country_can_proceed">%1$s (%2$s) এখন ডাউনলোড হচ্ছে। আপনি এখন\nমানচিত্রে যেতে পারেন।</string>
-    <string name="download_country_ask">আপনি %1$s (%2$s) ডাউনলোড করতে চান?</string>
-    <string name="update_country_ask">আপনি %1$s (%2$s) আপডেট করতে চান?</string>
+    <string name="download_country_ask">আপনি %1$s ডাউনলোড করতে চান? (%2$s)</string>
+    <string name="update_country_ask">আপনি %1$s আপডেট করতে চান? (%2$s)</string>
     <string name="pause">বিরতি করুন</string>
     <string name="continue_button">চালিয়ে যান</string>
     <string name="add_new_set">নতুন তালিকা বানান</string>
@@ -130,7 +130,7 @@
     <string name="pref_map_auto_zoom">স্বয়ংক্রিয় জুম</string>
     <string name="placepage_distance">দুরত্ব</string>
     <string name="menu">মেনু</string>
-    <string name="news">খবর</string>
+    <string name="news">সংবাদ</string>
     <string name="pref_tts_playing_test_voice">যদি এখন আওয়াজ শুনতে না পান, তাহলে আওয়াজ অথবা সিস্টেমের \"টেক্সট-টু-স্পিচ\" সেটিংস পরীক্ষা করুন</string>
     <string name="website">ওয়েবসাইট</string>
     <string name="google_play_services">গুগল দ্বারা মিশ্রিত অবস্থান সেবা</string>
@@ -346,4 +346,25 @@
     <string name="login_osm_presentation">OpenStreetMap.org (OSM) একটি সাম্প্রদায়িক প্রকল্প যা একটি মুক্ত ও উন্মুক্ত মানচিত্র তৈরি করে। এটি CoMaps-এ মানচিত্র তথ্যের প্রধান উৎস এবং উইকিপিডিয়ার মতো কাজ করে। আপনি স্থান যোগ বা সম্পাদনা করতে পারেন এবং সেগুলো সারা বিশ্বের লক্ষ লক্ষ ব্যবহারকারীর জন্য উপলব্ধ হয়ে ওঠে। \nকমিউনিটিতে যোগ দিন এবং সবার জন্য আরও ভালো মানচিত্র তৈরি করতে সাহায্য করুন!</string>
     <string name="bookmark_lists">প্রিয় তালিকা</string>
     <string name="prefs_languages_information_off_link">আরও তথ্যের জন্য এই নির্দেশিকা চেক করুন</string>
+    <string name="accept">স্বীকার করুন</string>
+    <string name="decline">অস্বীকার করুন</string>
+    <string name="medicine">ওষুধ</string>
+    <string name="search_in_the_list">তালিকাতে খুঁজুন</string>
+    <string name="login_to_make_edits_visible">আপনার মানচিত্র সম্পাদনাগুলো বিশ্বজুড়ে প্রকাশ করতে একটি OpenStreetMap অ্যাকাউন্ট তৈরি করুন বা লগ ইন করুন</string>
+    <string name="download_over_mobile_message">কিছু প্ল্যানে বা রোমিং-এ এটি যথেষ্ট ব্যয়বহুল হতে পারে</string>
+    <string name="editor_building_levels">বাড়ির তলা (ভূমি-তলা সহ, ছাদ বাদে)</string>
+    <string name="error_enter_correct_storey_number">বাড়ির তলার সংখ্যা %d এর বেশি না হয়</string>
+    <string name="editor_other_info">OpenStreetMap স্বেচ্ছাসেবকদের জন্য নোট (ঐচ্ছিক)</string>
+    <string name="editor_note_hint">মানচিত্রে ত্রুটি বা CoMaps দিয়ে সম্পাদনা করা যায় না এমন বিষয়গুলো বর্ণনা করুন</string>
+    <string name="editor_about_osm">আপনার সম্পাদনাগুলি সর্বজনীন <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> ডাটাবেসে আপলোড করা হয়েছে। অনুগ্রহ করে ব্যক্তিগত বা কপিরাইটকৃত তথ্য যোগ করবেন না।</string>
+    <string name="editor_osm_history">আপনার সম্পাদনার ইতিহাস</string>
+    <string name="editor_osm_notes">আপনার মানচিত্র ডাটা নোটসমূহ</string>
+    <string name="editor_category_unsuitable_title">উপযুক্ত শ্রেণী খুঁজে পাচ্ছেন না?</string>
+    <string name="editor_category_unsuitable_text">CoMaps শুধুমাত্র সাধারণ বিন্দু শ্রেণী যোগ করার অনুমতি দেয়, অর্থাৎ শহর, রাস্তা, হ্রদ, ভবনের রূপরেখা ইত্যাদি নয়। অনুগ্রহ করে এই ধরনের শ্রেণী সরাসরি <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> এ যোগ করুন। বিস্তারিত ধাপে ধাপে নির্দেশনার জন্য আমাদের <a href="https://www.comaps.app/support/advanced-map-editing/">গাইড</a> টি দেখুন।</string>
+    <string name="downloader_no_downloaded_maps_message">অফলাইনে অনুসন্ধান ও নেভিগেশনের জন্য মানচিত্র ডাউনলোড করুন</string>
+    <string name="placepage_more_button">আরো</string>
+    <string name="placepage_personal_notes_hint">ব্যক্তিগত নোট (টেক্সট বা html)</string>
+    <string name="editor_reset_edits_message">সমস্ত স্থানীয় পরিবর্তন বাতিল করতে চান?</string>
+    <string name="editor_remove_place_message">যুক্ত স্থানগুলি মুছে দিতে চান?</string>
+    <string name="editor_remove_place_button">মুছুন</string>
 </resources>

@@ -1465,7 +1465,7 @@
 "type.barrier.guard_rail" = "Autoværn";
 "type.highway.ladder" = "Stige";
 "type.amenity.love_hotel" = "Kærlighedshotel";
-"type.natural.wetland.tidalflat" = "Vade";
+"type.natural.wetland.tidalflat" = "Flak";
 "type.sport.diving" = "Udspring";
 "type.natural.wetland.swamp" = "Sump";
 "type.natural.wetland.saltmarsh" = "Forland";

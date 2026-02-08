@@ -1510,4 +1510,5 @@
     <string name="type.railway.turntable">Eisenbahn-Drehscheibe</string>
     <string name="type.tourism.information.tactile_map">Taktile Karte</string>
     <string name="type.railway.miniature">Miniatureisenbahn</string>
+    <string name="type.waterway.fuel">Bunkerstation</string>
 </resources>

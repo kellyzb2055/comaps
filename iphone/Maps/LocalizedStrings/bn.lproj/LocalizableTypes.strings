@@ -957,7 +957,7 @@
 "type.leisure.fitness_centre" = "Fitness Centre";
 "type.junction.circular" = "Roundabout";
 "type.barrier" = "বাঁধা";
-"type.barrier.yes" = "Barrier";
+"type.barrier.yes" = "বাধা";
 "type.railway.station.subway.santiago" = "Subway Station";
 "type.cuisine.italian" = "Italian";
 "type.man_made.bridge" = "Bridge";

@@ -1092,7 +1092,6 @@
 "pref_maplanguage_local" = "Місцева мова";
 "existence_confirmed_time_ago" = "Existence confirmed %@";
 "hours_confirmed_time_ago" = "Confirmed %@";
-"limit_map_language_alternatives_to_local" = "Використовуйте інші системні мови лише у їхньому регіоні";
 "editor_place_doesnt_exist_description" = "Опишіть, як виглядає це місце зараз, щоб надіслати повідомлення про помилку спільноті OpenStreetMap";
 "avoid_steps" = "Уникати сходів";
 "avoid_paved" = "Уникати асфальтованих доріг";

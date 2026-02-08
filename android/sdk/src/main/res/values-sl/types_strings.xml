@@ -166,7 +166,7 @@
     <string name="type.amenity.courthouse">Sodišče</string>
     <string name="type.office.diplomatic">Veleposlaništvo</string>
     <string name="type.office.security">Pisarna varnostnikov</string>
-    <string name="type.building.guardhouse">Stražarnica</string>
+    <string name="type.building.guardhouse">Vratarnica</string>
     <string name="type.power.portal">Portal daljnovoda</string>
     <string name="type.amenity.fountain">Vodomet</string>
     <string name="type.amenity.fuel">Bencinska postaja</string>
@@ -1073,7 +1073,7 @@
     <string name="type.railway.station.subway.wuhan">Postaja podzemne železnice</string>
     <string name="type.railway.station.subway.yerevan">Postaja podzemne železnice</string>
     <string name="type.railway.station.subway.yokohama">Postaja podzemne železnice</string>
-    <string name="type.railway.subway">Podzemna železnica</string>
+    <string name="type.railway.subway">Povezava podzemne železnice</string>
     <string name="type.railway.subway.bridge">Most podzemne železnice</string>
     <string name="type.railway.subway.tunnel">Predor podzemne železnice</string>
     <string name="type.railway.subway_entrance">Vhod v podzemno železnico</string>
@@ -1414,4 +1414,5 @@
     <string name="type.amenity.dojo">Dojo (vadbeni prostor borilnih veščin)</string>
     <string name="type.leisure.sports_hall">Športna dvorana</string>
     <string name="type.xmas.tree">Božično drevo</string>
+    <string name="type.waterway.fuel">Pristan za gorivo</string>
 </resources>

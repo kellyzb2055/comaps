@@ -236,4 +236,5 @@
     <string name="type.cuisine.vietnamese">ভিয়েতনামীয়</string>
     <string name="type.aeroway.gate">গেট</string>
     <string name="type.amenity.arts_centre">শিল্পকলা কেন্দ্র</string>
+    <string name="type.barrier.yes">বাধা</string>
 </resources>

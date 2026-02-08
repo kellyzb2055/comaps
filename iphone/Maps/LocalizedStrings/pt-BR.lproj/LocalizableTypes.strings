@@ -1599,3 +1599,4 @@
 "type.railway.miniature.tunnel" = "Túnel ferroviário em miniatura";
 "type.railway.disused.tunnel" = "Túnel ferroviário desativado";
 "type.railway.miniature" = "Ferrovia em miniatura";
+"type.waterway.fuel" = "Posto de combustível da marina";

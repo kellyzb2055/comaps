@@ -1599,3 +1599,4 @@
 "type.railway.miniature.tunnel" = "Miniatuur spoortunnel";
 "type.railway.disused.tunnel" = "Ongebruikte spoortunnel";
 "type.railway.miniature" = "Miniatuur spoorweg";
+"type.waterway.fuel" = "Brandstofsteiger";

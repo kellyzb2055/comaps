@@ -922,7 +922,7 @@
     <string name="prefs_speed_cameras_information">Las advertencias de radares de velocidad están deshabilitadas en países donde las alertas están prohibidas por ley.</string>
     <string name="navigation_start_tts_message">"Iniciando Navegación, idioma de las instrucciones por voz: "</string>
     <string name="navigation_start_tts_disabled_message">Instrucciones por voz deshabilitadas: Motor de TTS no disponible</string>
-    <string name="advanced">Avanzado</string>
+    <string name="advanced">Opciones avanzadas</string>
     <string name="download_resources_custom_url_title">Servidor de mapas personalizado</string>
     <string name="download_resources_custom_url_message">Sobreescribe el servidor de mapas por defecto. Déjalo en blanco para usar el servidor de CoMaps por defecto.</string>
     <string name="download_resources_custom_url_summary_none">No establecido</string>

@@ -1414,4 +1414,5 @@
     <string name="type.spherical_buoy.lateral.starboard">Chugelförmigi Lateralboje</string>
     <string name="type.spherical_buoy.safe_water">Chugelförmigi Mittefahrwasserboje</string>
     <string name="type.spherical_buoy.special_purpose">Chugelförmigi Spezialboje</string>
+    <string name="type.waterway.fuel">Bunkerstation</string>
 </resources>

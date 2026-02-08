@@ -165,7 +165,7 @@
 "type.amenity.courthouse" = "Sodišče";
 "type.office.diplomatic" = "Veleposlaništvo";
 "type.office.security" = "Pisarna varnostnikov";
-"type.building.guardhouse" = "Stražarnica";
+"type.building.guardhouse" = "Vratarnica";
 "type.power.portal" = "Portal daljnovoda";
 "type.amenity.fountain" = "Vodomet";
 "type.amenity.fuel" = "Bencinska postaja";
@@ -1063,7 +1063,7 @@
 "type.railway.station.subway.wuhan" = "Postaja podzemne železnice";
 "type.railway.station.subway.yerevan" = "Postaja podzemne železnice";
 "type.railway.station.subway.yokohama" = "Postaja podzemne železnice";
-"type.railway.subway" = "Podzemna železnica";
+"type.railway.subway" = "Povezava podzemne železnice";
 "type.railway.subway.bridge" = "Most podzemne železnice";
 "type.railway.subway.tunnel" = "Predor podzemne železnice";
 "type.railway.subway_entrance" = "Vhod v podzemno železnico";
@@ -1413,3 +1413,4 @@
 "type.railway.miniature.tunnel" = "Predor miniaturne železnice";
 "type.railway.turntable" = "Sučna železniška ploščad";
 "type.tourism.information.tactile_map" = "Talne oznake za slabovidne";
+"type.waterway.fuel" = "Pristan za gorivo";

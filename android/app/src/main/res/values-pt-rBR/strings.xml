@@ -60,9 +60,9 @@
     <!-- Show popup notification on top of the map when country download has failed. -->
     <string name="download_country_failed">O download de %s falhou</string>
     <!-- "Add new bookmark list" dialog title -->
-    <string name="add_new_set">Adicionar novo conjunto</string>
+    <string name="add_new_set">Adicionar nova lista</string>
     <!-- Add Bookmark list dialog - hint when the list name is empty -->
-    <string name="bookmark_set_name">Nome do conjunto</string>
+    <string name="bookmark_set_name">Nome da lista</string>
     <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
     <string name="bookmarks">Lugares</string>
     <!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
@@ -143,13 +143,13 @@
     <string name="description">Anotações</string>
     <!-- Email Subject when sharing bookmark list -->
     <string name="share_bookmarks_email_subject">Meus favoritos do CoMaps</string>
-    <string name="share_bookmarks_email_body">Olá! \n \nSegue em anexo meus favoritos do app CoMaps. Se tiver instalado o CoMaps, pode abri-los agora. Caso não tenha, baixe o app para o seu dispositivo iOS ou Android via o link https://www.comaps.app/download/ \n \nDisfrute viajar com o CoMaps!</string>
+    <string name="share_bookmarks_email_body">Olá! \n \nSegue em anexo meus favoritos; por favor, abra-os no CoMaps. Caso não o tenha instalado, você pode baixá-lo aqui: https://www.comaps.app/download/ \n \nDesfrute de suas viagens com a CoMaps!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Carregando favoritos</string>
     <!-- Kmz file successful loading -->
     <string name="load_kmz_successful">Favoritos carregados com sucesso! Você pode encontrá-los no mapa ou na tela de gestão dos favoritos.</string>
     <!-- Kml file loading failed -->
-    <string name="load_kmz_failed">Falha ao carregar dos favoritos. O arquivo pode estar corrompido ou com defeito.</string>
+    <string name="load_kmz_failed">Falha ao carregar favoritos. O arquivo pode estar corrompido ou com defeito.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">O tipo de arquivo não é reconhecido pelo aplicativo: \n%1$s</string>
     <!-- Failed to open a bookmarks or tracks file in CoMaps. -->
@@ -409,7 +409,7 @@
     <string name="editor_profile_changes">Alterações verificadas</string>
     <string name="editor_edit_place_title">Edição</string>
     <string name="editor_add_place_title">Adicionando</string>
-    <string name="editor_edit_place_name_hint">Nome do lugar</string>
+    <string name="editor_edit_place_name_hint">Nome do local</string>
     <string name="editor_edit_place_category_title">Categoria</string>
     <string name="detailed_problem_description">Descrição detalhada do problema</string>
     <string name="editor_report_problem_other_title">Um problema diferente</string>
@@ -451,7 +451,7 @@
     <string name="editor_reset_edits_button">Descartar alterações</string>
     <string name="editor_remove_place_message">Remover local adicionado?</string>
     <string name="editor_remove_place_button">Remover</string>
-    <string name="editor_place_doesnt_exist">O lugar não existe</string>
+    <string name="editor_place_doesnt_exist">O local não existe</string>
     <!-- Error message for "Place doesn't exist" dialog when comment is empty -->
     <string name="delete_place_empty_comment_error">Por favor, explica o motivo pelo qual você está retirando o local</string>
     <!-- Phone number error message -->
@@ -546,7 +546,7 @@
     <string name="category_desc_more">…mais</string>
     <string name="delete_list">Deletar lista</string>
     <string name="speedcams_alert_title">Câmeras de trânsito</string>
-    <string name="place_description_title">Descrição do lugar</string>
+    <string name="place_description_title">Descrição do local</string>
     <!-- this text will be shown in application notification preferences opposite checkbox which enable/disable downloader notifications. Devices on Android 8+ are affected. -->
     <string name="notification_channel_downloader">Downloader do mapa</string>
     <!-- Speed camera settings menu option - Always warn (about speedcams) -->
@@ -900,4 +900,7 @@
     <string name="download_resources_custom_url_error_scheme">Insira uma URL começando com http:// ou https://</string>
     <string name="pref_maplanguage_local">Linguagem Local</string>
     <string name="limit_map_language_alternatives_to_local">Utilizar apenas outros idiomas do sistema em sua região</string>
+    <string name="location_privacy_info">Os aplicativos usam dados de localização do serviço de localização, que podem compartilhar sua localização com o Google e/ou com o fabricante do seu dispositivo. Use um sistema Android que preserve a sua privacidade para evitar isso.</string>
+    <string name="location_privacy">Privacidade da localização</string>
+    <string name="pref_speedlimit_title">Mostrar limites de velocidade</string>
 </resources>
