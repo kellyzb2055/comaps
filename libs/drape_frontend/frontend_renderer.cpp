@@ -1810,6 +1810,7 @@ void FrontendRenderer::RenderFrame()
   }
 
   m_frameData.m_frameTime = m_frameData.m_timer.ElapsedSeconds();
+  m_frameValues.m_frameTime = m_frameData.m_frameTime;
   scaleFpsHelper.SetFrameTime(m_frameData.m_frameTime,
                               m_frameData.m_inactiveFramesCounter + 1 < FrameData::kMaxInactiveFrames);
 
