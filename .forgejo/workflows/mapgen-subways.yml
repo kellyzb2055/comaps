@@ -26,7 +26,7 @@ env:
 # as is /tmp/planet
 jobs:
   update-planet-pbf:
-    if: !inputs.skip-planet-pbf
+    if: ${{ ! inputs.skip-planet-pbf }}
     name: Update OSM PBF Planet
     runs-on: mapfilemaker
     container:
