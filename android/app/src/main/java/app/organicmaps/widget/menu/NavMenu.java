@@ -296,7 +296,7 @@ public class NavMenu
         case RouteNeedsRebuild -> R.string.route_needs_rebuild;
         case RouteFinished -> R.string.route_finished;
         case RouteNoFollowing -> R.string.not_following_route;
-        case RouteRebuilding -> R.string.rebuilding_route;
+        case RouteRebuilding -> R.string.route_recalculating;
       }));
   }
 
