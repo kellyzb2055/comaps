@@ -83,7 +83,6 @@
    <release version="2026.02.09-4" date="2026-02-09">
      <url type="details">https://codeberg.org/comaps/comaps/releases/tag/v2026.02.09-4</url>
      <description>
-       <p>Changes in version 2026.02.09</p>
        <ul>
 	 <li>OpenStreetMap data as of February 7</li>
 	 <li>Added marina fuel docks</li>
