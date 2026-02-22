@@ -1,7 +1,4 @@
-Most of our coding style is specified in a configuration file for [ClangFormat](http://clang.llvm.org/docs/ClangFormat.html).
-To automatically format a file, install `clang-format` and run:
-
-    clang-format -i file.cpp file.hpp other_file.cpp
+Most of our coding style is specified in a configuration file for [ClangFormat](http://clang.llvm.org/docs/ClangFormat.html). See [FORMATTER.md](FORMATTER.md) on how to automatically format the code.
 
 ---
 
