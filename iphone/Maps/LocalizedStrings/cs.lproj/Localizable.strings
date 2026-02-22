@@ -1107,3 +1107,4 @@
 "pref_alt_map_lang_handling" = "Alternativní jazyky mapy";
 "pref_alt_map_lang_handling_system_order" = "Použít v systémovém pořadí";
 "rooms" = "%@ místností";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

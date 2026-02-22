@@ -593,3 +593,4 @@
 "editor_place_doesnt_exist_description" = "ত্রুটির নোট পাঠানোর জন্য OpenStreetMap সম্প্রদায়কে এখন ওই স্থানটির বর্ণনা দিন";
 "avoid_paved" = "পাকা রাস্তা এড়িয়ে চলুন";
 "avoid_steps" = "সিঁড়ি এড়িয়ে চলুন";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

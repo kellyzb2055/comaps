@@ -1096,3 +1096,4 @@
 "offline_explanation_text" = "O hartă trebuie descărcată ca să vezi și să navighezi prin zonă.\nDescarcă hărți pentru zonele în care vrei să mergi.";
 "offline_explanation_title" = "Hărti Offline";
 "voice" = "Voce";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

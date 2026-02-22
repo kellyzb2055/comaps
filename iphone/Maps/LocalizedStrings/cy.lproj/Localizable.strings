@@ -51,10 +51,10 @@
 "pref_tts_speedcams_always" = "Rhybuddio bob amser";
 "hide_from_map" = "Hide from map";
 "operator" = "Gweithredwr: %@";
-"bookmark_sets" = "Rhestrau Nod Tudalen";
+"bookmark_sets" = "Hoff Restrau";
 "vk" = "VK";
 "opens_in" = "Opens in %@";
-"dialog_routing_check_gps" = "Check GPS signal";
+"dialog_routing_check_gps" = "Gwiriwch eich cysylltiad GPS";
 "copied_to_clipboard" = "Copied to clipboard: %@";
 "placepage_distance" = "Pellter";
 "dialog_routing_download_cross_route" = "Download additional maps to create a better route that crosses the boundaries of this map.";
@@ -364,7 +364,7 @@
 "red" = "Coch";
 "hide" = "Cuddio";
 "editor_detailed_description_hint" = "Sylw manwl";
-"driving_options_title" = "Routing options";
+"driving_options_title" = "Opsiynau llywio";
 "dialog_routing_select_closer_start" = "Please select a starting point closer to a road.";
 "cancel" = "Canslo";
 "switch_to_phone_bookmarks_carplay" = "Switch to the phone to see all bookmarks";
@@ -460,7 +460,7 @@
 "editor_add_select_category_popular_subtitle" = "Poblogaidd";
 "swim_places" = "Nofio";
 "editor_time_add_closed" = "Add Non-Business Hours";
-"placepage_remove_stop" = "Remove Stop";
+"placepage_remove_stop" = "Dileu Stop";
 "search_results" = "Canlyniadau chwilio";
 "core_placepage_unknown_place" = "Pwynt Map";
 "elevation_profile_diff_level_hard" = "Anodd";
@@ -511,7 +511,7 @@
 "continue_button" = "Parhau";
 "placepage_delete_bookmark_button" = "Dileu Lle";
 "tourist_places" = "Golygfeydd";
-"placepage_call_button" = "Call";
+"placepage_call_button" = "Ffonio";
 "pref_tts_enable_title" = "Galluogi Cyfarwyddiadau Llais";
 "define_to_avoid_btn" = "Define roads to avoid";
 "book_button" = "Llyfr";
@@ -592,3 +592,4 @@
 "offline_explanation_title" = "Mapiau All-lein";
 "offline_explanation_text" = "Mae angen lawrlwytho map i weld a phori'r ardal.\nLawrlwythwch fapiau ar gyfer ardaloedd rydych am deithio iddynt.";
 "avoid_steps" = "Osgoi grisiau";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

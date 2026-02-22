@@ -1107,3 +1107,4 @@
 "pref_alt_map_lang_handling" = "Langues alternatives pour les cartes";
 "pref_alt_map_lang_handling_system_order" = "Utilisation dans l'ordre du système";
 "rooms" = "%@ pièces";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

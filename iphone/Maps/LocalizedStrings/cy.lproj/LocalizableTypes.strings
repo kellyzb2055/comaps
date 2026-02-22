@@ -136,7 +136,7 @@
 "type.railway.narrow_gauge.tunnel" = "Narrow Gauge Rail Tunnel";
 "type.tourism.information.map" = "Tourist Map";
 "type.historic.memorial.statue" = "Statue";
-"type.craft.shoemaker" = "Shoe Repair";
+"type.craft.shoemaker" = "Trwsio Esgidiau";
 "type.railway.subway_entrance.madrid" = "Subway Entrance";
 "type.attraction.big_wheel" = "Big Wheel";
 "type.landuse.commercial" = "Commercial Area";
@@ -288,7 +288,7 @@
 "type.man_made.water_tap" = "Water Tap";
 "type.cuisine.deli" = "Deli";
 "type.natural.heath" = "Rhos";
-"type.craft.electronics_repair" = "Electronics Repair";
+"type.craft.electronics_repair" = "Atgyweirio Electroneg";
 "type.amenity.library" = "Llyfrgell";
 "type.amenity.place_of_worship.christian.mormon" = "Church of Jesus Christ of Latter Day Saints";
 "type.sport.basketball" = "Pêl-fasged";
@@ -390,7 +390,7 @@
 "type.boundary.protected_area.6" = "Ardal Warchodedig";
 "type.shop.dairy" = "Dairy Shop";
 "type.amenity.luggage_locker" = "Luggage Locker";
-"type.amenity.arts_centre" = "Arts Center";
+"type.amenity.arts_centre" = "Canolfan Gelf";
 "type.wheelchair" = "Cadair Olwyn";
 "type.boundary.administrative.3" = "Regional Boundary";
 "type.tourism.theme_park" = "Theme Park";
@@ -540,7 +540,7 @@
 "type.recycling.green_waste" = "Green/Organic Waste";
 "type.railway.station.subway.valencia" = "Subway Station";
 "type.amenity.cinema" = "Sinema";
-"type.cuisine.bubble_tea" = "Bubble Tea";
+"type.cuisine.bubble_tea" = "Te Swigod";
 "type.railway.tram.bridge" = "Tram Line Bridge";
 "type.man_made.cutline" = "Llinell Dorri";
 "type.shop.craft" = "Craft Supplies Store";
@@ -1072,7 +1072,7 @@
 "type.shop.rental.bicycle" = "Bicycle Rental Shop";
 "type.highway.primary_link" = "Primary Road Ramp";
 "type.railway.station.subway.roma" = "Subway Station";
-"type.amenity.place_of_worship.jewish" = "Synagogue";
+"type.amenity.place_of_worship.jewish" = "Synagog";
 "type.railway.station.subway.mexico" = "Subway Station";
 "type.railway.subway_entrance.chicago" = "Subway Entrance";
 "type.amenity.vending_machine.public_transport_tickets" = "Ticket Machine";
@@ -1195,7 +1195,7 @@
 "type.railway.subway_entrance.izmir" = "Subway Entrance";
 "type.leisure.water_park" = "Water Park";
 "type.aerialway.mixed_lift" = "Mixed Lift";
-"type.cuisine.argentinian" = "Argentinian";
+"type.cuisine.argentinian" = "Ariannaidd";
 "type.amenity.clinic" = "Clinig";
 "type.railway.station.subway.ekb" = "Subway Station";
 "type.natural.hot_spring" = "Hot Spring";
@@ -1300,3 +1300,4 @@
 "type.power.portal" = "Power Portal";
 "type.building.guardhouse" = "Security Booth";
 "type.amenity.boat_rental" = "Hurio Cwch";
+"type.amenity.community_centre.youth_centre" = "Youth Centre";

@@ -1546,3 +1546,4 @@
 "type.social_facility.food_bank" = "Bancă de alimente";
 "type.xmas.tree" = "Brad de Crăciun";
 "type.amenity.hydrant" = "Hidrant Irigații";
+"type.amenity.community_centre.youth_centre" = "Youth Centre";

@@ -1093,3 +1093,4 @@
 "avoid_steps" = "Undvik trappor";
 "avoid_paved" = "Undvik asfalterade vägar";
 "offline_explanation_title" = "Offlinekartor";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

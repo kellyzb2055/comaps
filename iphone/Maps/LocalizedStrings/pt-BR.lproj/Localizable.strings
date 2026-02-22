@@ -1107,3 +1107,4 @@
 "pref_alt_map_lang_handling" = "Idiomas do mapa alternativos";
 "pref_alt_map_lang_handling_system_order" = "Usar na ordem do sistema";
 "rooms" = "%@ salas";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

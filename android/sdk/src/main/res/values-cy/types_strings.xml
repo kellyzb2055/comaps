@@ -317,4 +317,5 @@
     <string name="type.waterway.waterfall">Rhaeadr</string>
     <string name="type.wheelchair">Cadair Olwyn</string>
     <string name="type.amenity.dojo">Dojo</string>
+    <string name="type.amenity.place_of_worship.jewish">Synagog</string>
 </resources>

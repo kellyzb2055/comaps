@@ -491,7 +491,7 @@
     <!-- Displayed when saving some edits to the map to warn against publishing personal data -->
     <string name="editor_share_to_all_dialog_title">آیا می خواهید آن را برای دیگر کاربران ارسال کنید؟</string>
     <!-- Dialog before publishing the modifications to the public map. -->
-    <string name="editor_share_to_all_dialog_message_1">مطمئن شوید که هیچ اطلاعات شخصی وارد نکرده باشد</string>
+    <string name="editor_share_to_all_dialog_message_1">اُستیگان شوید که هیچ اطلاعات شخصی وارد نکرده باشد</string>
     <string name="editor_share_to_all_dialog_message_2">ویرایشگران OpenStreetMap ﺗﻐﯿﯿﺮﺍﺕ ﺭﺍ ﺑﺮﺭﺳﯽ ﮐﺮﺩﻩ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﺩﺍﺷﺘﻦ ﻫﺮﮔﻮﻧﻪ ﺳﻮﺍﻝ ﺑﺎ ﺷﻤﺎ ﺗﻤﺎﺱ ﺧﻮﺍﻫﻨﺪ ﮔﺮﻓﺖ</string>
     <string name="navigation_stop_button">توقف</string>
     <!-- Shown as toast when starting the recent track recording -->

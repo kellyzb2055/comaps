@@ -1101,3 +1101,4 @@
 "avoid_paved" = "Izvairīties no ceļiem ar cietu mākslīgo segumu";
 "pref_alt_map_lang_handling" = "Kartes papildu valodas";
 "pref_alt_map_lang_handling_system_order" = "Izmantot sistēmas secībā";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";

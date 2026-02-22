@@ -65,3 +65,5 @@
 "type.amenity.courthouse" = "Palacio de justicia";
 "type.amenity.dentist" = "Odontólogo/a";
 "type.amenity.doctors" = "Doctor/a";
+"type.aerialway.drag_lift" = "Drag Lift";
+"type.aerialway.mixed_lift" = "Mixed Lift";

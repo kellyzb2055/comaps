@@ -1105,3 +1105,4 @@
 "pref_alt_map_lang_handling" = "Алтернативни језици мапе";
 "pref_alt_map_lang_handling_system_order" = "Користите по системском редоследу";
 "rooms" = "%@ собе";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";
