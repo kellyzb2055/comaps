@@ -481,6 +481,6 @@
 "cuisine-sushi": "Sushia",
 "cuisine-tapas": "Txapelak",
 "cuisine-tea": "Tea",
-"cuisine-vegetarian": "Sukaldaritza begetarianoa",
-"cuisine-vegan": "Sukaldaritza beganoa|Sukaldaritza begetarianoa"
+"@cuisine_all_vegetarian": "Sukaldaritza begetarianoa",
+"cuisine-vegan|@cuisine_all_vegetarian": "Sukaldaritza beganoa"
 }

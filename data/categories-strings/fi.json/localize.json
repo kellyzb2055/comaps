@@ -473,6 +473,6 @@
 "cuisine-sushi": "Sushi",
 "cuisine-tapas": "Tapas",
 "cuisine-tea": "Tee",
-"cuisine-vegetarian": "Kasvis keittiö",
-"cuisine-vegan": "Vegaani keittiö|Kasvis keittiö"
+"@cuisine_all_vegetarian": "Kasvis keittiö",
+"cuisine-vegan|@cuisine_all_vegetarian": "Vegaani keittiö"
 }

@@ -246,14 +246,7 @@ void Processor::SetQuery(string const & query, bool categorialRequest /* = false
   m_preferredTypes.clear();
   m_isCategorialRequest = categorialRequest;
 
-  auto const locales = GetCategoryLocales();
-  // Try to match query to cuisine categories.
-  if (FillCategories(tokenSlice, locales, m_categories, m_cuisineTypes))
-  {
-    /// @todo What if I'd like to find "Burger" street? @see "BurgerStreet" test.
-    m_isCategorialRequest = true;
-    m_preferredTypes = ftypes::IsEatChecker::Instance().GetTypes();
-  }
+  FillCategories(tokenSlice, GetCategoryLocales(), m_categories, m_preferredTypes);
 
   if (!m_isCategorialRequest)
   {
@@ -835,7 +828,6 @@ void Processor::InitGeocoder(Geocoder::Params & geocoderParams, SearchParams con
   geocoderParams.m_pivot = GetPivotRect(viewportSearch);
   geocoderParams.m_position = m_position;
   geocoderParams.m_categoryLocales = GetCategoryLocales();
-  geocoderParams.m_cuisineTypes = m_cuisineTypes;
   geocoderParams.m_preferredTypes = m_preferredTypes;
   geocoderParams.m_tracer = searchParams.m_tracer;
   geocoderParams.m_filteringParams = searchParams.m_filteringParams;

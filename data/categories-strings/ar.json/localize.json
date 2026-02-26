@@ -482,6 +482,6 @@
 "cuisine-sushi": "سوشي",
 "cuisine-tapas": "تاباس",
 "cuisine-tea": "شاي",
-"cuisine-vegetarian": "مطبخ نباتي",
-"cuisine-vegan": "مطبخ نباتي"
+"@cuisine_all_vegetarian": "مطبخ نباتي",
+"cuisine-vegan|@cuisine_all_vegetarian": "مطبخ نباتي"
 }

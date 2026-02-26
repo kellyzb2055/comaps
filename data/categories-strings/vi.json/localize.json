@@ -465,6 +465,6 @@
 "cuisine-sushi": "Sushi",
 "cuisine-tapas": "Tapas",
 "cuisine-tea": "Trà",
-"cuisine-vegetarian": "Ẩm thực chay",
-"cuisine-vegan": "Ẩm thực chay|Ẩm thực chay"
+"@cuisine_all_vegetarian": "Ẩm thực chay",
+"cuisine-vegan|@cuisine_all_vegetarian": "Ẩm thực chay"
 }

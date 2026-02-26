@@ -472,6 +472,6 @@
 "cuisine-sushi": "초밥",
 "cuisine-tapas": "타파스",
 "cuisine-tea": "차",
-"cuisine-vegetarian": "채식주의자 음식",
-"cuisine-vegan": "비건 음식|채식주의자 음식"
+"@cuisine_all_vegetarian": "채식주의자 음식",
+"cuisine-vegan|@cuisine_all_vegetarian": "비건 음식"
 }

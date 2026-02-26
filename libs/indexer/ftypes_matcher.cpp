@@ -690,6 +690,12 @@ IsEatChecker::IsEatChecker()
 //   return IsEatChecker::Type::Count;
 // }
 
+IsDisusedBusiness::IsDisusedBusiness() : BaseChecker(1 /* level */)
+{
+  Classificator const & c = classif();
+  m_types.push_back(c.GetTypeByPath({"disusedbusiness"}));
+}
+
 IsCuisineChecker::IsCuisineChecker() : BaseChecker(1 /* level */)
 {
   Classificator const & c = classif();

@@ -28,6 +28,6 @@
 "cuisine-sushi": "Sušiai",
 "cuisine-tapas": "Tapos",
 "cuisine-tea": "Arbata",
-"cuisine-vegetarian": "Vegetariška virtuvė",
-"cuisine-vegan": "Veganiška virtuvė|Vegetariška virtuvė"
+"@cuisine_all_vegetarian": "Vegetariška virtuvė",
+"cuisine-vegan|@cuisine_all_vegetarian": "Veganiška virtuvė"
 }

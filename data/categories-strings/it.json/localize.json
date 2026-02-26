@@ -489,6 +489,6 @@
 "cuisine-sushi": "Sushi",
 "cuisine-tapas": "Tapas",
 "cuisine-tea": "Tè",
-"cuisine-vegetarian": "Cucina vegetariana",
-"cuisine-vegan": "Cucina vegana|Cucina vegetariana"
+"@cuisine_all_vegetarian": "Cucina vegetariana",
+"cuisine-vegan|@cuisine_all_vegetarian": "Cucina vegana"
 }

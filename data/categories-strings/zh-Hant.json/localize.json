@@ -479,6 +479,6 @@
 "cuisine-sushi": "壽司",
 "cuisine-tapas": "塔帕斯",
 "cuisine-tea": "茶",
-"cuisine-vegetarian": "素食",
-"cuisine-vegan": "全素料理|素食"
+"@cuisine_all_vegetarian": "素食",
+"cuisine-vegan|@cuisine_all_vegetarian": "全素料理"
 }

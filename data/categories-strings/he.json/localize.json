@@ -234,6 +234,6 @@
 "cuisine-sushi": "סושי",
 "cuisine-tapas": "טאפאס",
 "cuisine-tea": "תה",
-"cuisine-vegetarian": "מטבח טבעוני",
-"cuisine-vegan": "מטבח טבעוני|מטבח צמחוני"
+"@cuisine_all_vegetarian": "מטבח טבעוני",
+"cuisine-vegan|@cuisine_all_vegetarian": "ממטבח צמחוני"
 }

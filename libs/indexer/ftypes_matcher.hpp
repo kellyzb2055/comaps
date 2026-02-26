@@ -454,6 +454,14 @@ private:
   //  std::array<uint32_t, base::Underlying(Type::Count)> m_eat2clType;
 };
 
+class IsDisusedBusiness : public BaseChecker
+{
+  IsDisusedBusiness();
+
+public:
+  DECLARE_CHECKER_INSTANCE(IsDisusedBusiness);
+};
+
 class IsCuisineChecker : public BaseChecker
 {
   IsCuisineChecker();

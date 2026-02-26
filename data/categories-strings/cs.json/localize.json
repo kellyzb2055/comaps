@@ -478,6 +478,6 @@
 "cuisine-sushi": "Suši",
 "cuisine-tapas": "Tapas",
 "cuisine-tea": "Čaj",
-"cuisine-vegetarian": "Vegetariánská kuchyně",
-"cuisine-vegan": "Veganská kuchyně|Vegetariánská kuchyně"
+"@cuisine_all_vegetarian": "Vegetariánská kuchyně",
+"cuisine-vegan|@cuisine_all_vegetarian": "Veganská kuchyně"
 }

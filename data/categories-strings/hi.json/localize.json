@@ -387,5 +387,5 @@
 "cuisine-sushi": "सुशी",
 "cuisine-tapas": "तापा",
 "cuisine-tea": "चाय",
-"cuisine-vegan": "शाकाहारी"
+"cuisine-vegan|@cuisine_all_vegetarian": "शाकाहारी"
 }

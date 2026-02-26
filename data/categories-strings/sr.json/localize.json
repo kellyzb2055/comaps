@@ -454,6 +454,6 @@
 "cuisine-sushi": "Суши|Suši",
 "cuisine-tapas": "Тапас|Tapas",
 "cuisine-tea": "Чај|Čaj",
-"cuisine-vegetarian": "Вегетаријанска|Вегетаријанци|Vegetarijanska|Vegetarijanci",
-"cuisine-vegan": "Веганска|Вегетаријанска|Вегетаријанци|Вегани|Veganska|Vegetarijanska|Vegetarijanci|Vegani"
+"@cuisine_all_vegetarian": "Вегетаријанска|Вегетаријанци|Vegetarijanska|Vegetarijanci",
+"cuisine-vegan|@cuisine_all_vegetarian": "Веганска|Вегани|Veganska|Vegani"
 }

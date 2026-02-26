@@ -531,6 +531,6 @@
 "cuisine-sushi": "Suşi",
 "cuisine-tapas": "Tapas",
 "cuisine-tea": "Çay",
-"cuisine-vegetarian": "Vejetaryen mutfağı",
-"cuisine-vegan": "Vegan mutfağı|Vejetaryen mutfağı"
+"@cuisine_all_vegetarian": "Vejetaryen mutfağı",
+"cuisine-vegan|@cuisine_all_vegetarian": "Vegan mutfağı"
 }

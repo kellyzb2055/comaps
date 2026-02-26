@@ -471,6 +471,6 @@
 "cuisine-sushi": "Σούσι",
 "cuisine-tapas": "Τάπας",
 "cuisine-tea": "Τσάι",
-"cuisine-vegetarian": "Χορτοφαγική",
-"cuisine-vegan": "Για χορτοφάγους|Χορτοφαγική"
+"@cuisine_all_vegetarian": "Χορτοφαγική",
+"cuisine-vegan|@cuisine_all_vegetarian": "Για χορτοφάγους"
 }

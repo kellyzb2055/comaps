@@ -536,6 +536,6 @@
 "cuisine-sushi": "Суши|роллы",
 "cuisine-tapas": "5Тапас-бар",
 "cuisine-tea": "3Чайная",
-"cuisine-vegetarian": "Вегетарианская кухня",
-"cuisine-vegan": "Веганская кухня|Вегетарианская кухня"
+"@cuisine_all_vegetarian": "Вегетарианская кухня",
+"cuisine-vegan|@cuisine_all_vegetarian": "Веганская кухня"
 }

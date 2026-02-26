@@ -499,6 +499,6 @@
 "cuisine-sushi": "Суші",
 "cuisine-tapas": "Тапас-бар",
 "cuisine-tea": "Чайна",
-"cuisine-vegetarian": "Вегетаріанська кухня",
-"cuisine-vegan": "Веганська кухня|Вегетаріанська кухня"
+"@cuisine_all_vegetarian": "Вегетаріанська кухня",
+"cuisine-vegan|@cuisine_all_vegetarian": "Веганська кухня"
 }

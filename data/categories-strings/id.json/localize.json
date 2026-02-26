@@ -464,6 +464,6 @@
 "cuisine-sushi": "Sushi",
 "cuisine-tapas": "Kudapan spanyol",
 "cuisine-tea": "Teh",
-"cuisine-vegetarian": "Masakan vegetarian",
-"cuisine-vegan": "Masakan vegan|Masakan vegetarian"
+"@cuisine_all_vegetarian": "Masakan vegetarian",
+"cuisine-vegan|@cuisine_all_vegetarian": "Masakan vegan"
 }

@@ -491,6 +491,6 @@
 "cuisine-sushi": "Szusi",
 "cuisine-tapas": "Tapas",
 "cuisine-tea": "Tea",
-"cuisine-vegetarian": "Vegetáriánus konyha",
-"cuisine-vegan": "Vegán konyha|Vegetáriánus konyha"
+"@cuisine_all_vegetarian": "Vegetáriánus konyha",
+"cuisine-vegan|@cuisine_all_vegetarian": "Vegán konyha"
 }

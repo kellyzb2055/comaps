@@ -487,6 +487,6 @@
 "cuisine-sushi": "寿司",
 "cuisine-tapas": "タパス",
 "cuisine-tea": "紅茶",
-"cuisine-vegetarian": "ベジタリアン料理",
-"cuisine-vegan": "ビーガン料理|ベジタリアン料理"
+"@cuisine_all_vegetarian": "ベジタリアン料理",
+"cuisine-vegan|@cuisine_all_vegetarian": "ビーガン料理"
 }

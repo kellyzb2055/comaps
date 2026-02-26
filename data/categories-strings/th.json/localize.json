@@ -465,6 +465,6 @@
 "cuisine-sushi": "ซูชิ",
 "cuisine-tapas": "ทาปาส",
 "cuisine-tea": "ชา",
-"cuisine-vegetarian": "อาหารมังสวิรัติ",
-"cuisine-vegan": "อาหารมังสวิรัติ|อาหารมังสวิรัติ"
+"@cuisine_all_vegetarian": "อาหารมังสวิรัติ",
+"cuisine-vegan|@cuisine_all_vegetarian": "อาหารมังสวิรัติ"
 }

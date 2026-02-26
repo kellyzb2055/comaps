@@ -36,8 +36,6 @@ set(SRC
   city_finder.cpp
   city_finder.hpp
   common.hpp
-  cuisine_filter.cpp
-  cuisine_filter.hpp
   displayed_categories.cpp
   displayed_categories.hpp
   doc_vec.cpp
