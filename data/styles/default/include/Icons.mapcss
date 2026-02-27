@@ -597,14 +597,8 @@ node|z16-[historic=cross],
 node|z16-[man_made=cross],
 node|z16-[historic=tomb],
 node|z16-[tourism=aquarium],
-node|z17-[attraction=animal],
-node|z17-[attraction=amusement_ride],
-node|z17-[attraction=carousel],
-node|z17-[attraction=roller_coaster],
-node|z17-[attraction=maze],
-node|z17-[attraction=historic],
-node|z17-[attraction=big_wheel],
-node|z17-[attraction=bumper_car],
+node|z16-[attraction],
+node|z17-[attraction=water_slide],
 node|z17-[historic=ruins],
 node|z17-[historic=wayside_shrine],
 node|z17-[historic=archaeological_site],
@@ -820,17 +814,19 @@ node|z15[tourism=theme_park],
 node|z16-[tourism=theme_park],
 {icon-image: theme_park-m.svg;icon-min-distance: 24;}
 
-node|z17-[attraction=animal],
-{icon-image: animal-m.svg;icon-min-distance: 24;}
+node|z16-[attraction],
+{icon-image: attraction-m.svg;icon-min-distance: 24;}
 
-node|z17-[attraction=amusement_ride],
-node|z17-[attraction=carousel],
-node|z17-[attraction=roller_coaster],
-node|z17-[attraction=maze],
-node|z17-[attraction=historic],
-node|z17-[attraction=big_wheel],
-node|z17-[attraction=bumper_car],
-{icon-image: playground-m.svg;icon-min-distance: 24;}
+node|z16-[attraction=animal],
+{icon-image: animal-m.svg;}
+
+node|z16-[attraction=historic],
+{icon-image: historic_attraction-m.svg;}
+
+node|z16[attraction=water_slide],
+{text: none; icon-image: none}
+node|z17-[attraction=water_slide],
+{icon-image: water_slide-m.svg;icon-min-distance: 24;}
 
 node|z15-[amenity=community_centre],
 node|z16-[amenity=conference_centre],

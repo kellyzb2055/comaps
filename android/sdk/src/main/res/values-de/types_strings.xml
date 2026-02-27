@@ -1329,6 +1329,7 @@
     <string name="type.tourism.artwork.sculpture">Skulptur</string>
     <string name="type.tourism.artwork.statue">Statue</string>
     <string name="type.tourism.attraction">Sehenswürdigkeit</string>
+    <string name="type.attraction">Attraktion</string>
     <string name="type.attraction.amusement_ride">Fahrgeschäft</string>
     <string name="type.attraction.animal">Tiergehege</string>
     <string name="type.attraction.bumper_car">Autoscooter</string>

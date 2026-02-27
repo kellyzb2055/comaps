@@ -350,14 +350,22 @@ public:
   uint32_t GetType() const { return m_types[0]; }
 };
 
-class AttractionsChecker : public BaseChecker
+class IsTourismAttractionChecker : public BaseChecker
+{
+  IsTourismAttractionChecker();
+
+public:
+  DECLARE_CHECKER_INSTANCE(IsTourismAttractionChecker);
+};
+
+class IsPartOfTourismAttractionsChecker : public BaseChecker
 {
   size_t m_additionalTypesStart;
 
-  AttractionsChecker();
+  IsPartOfTourismAttractionsChecker();
 
 public:
-  DECLARE_CHECKER_INSTANCE(AttractionsChecker);
+  DECLARE_CHECKER_INSTANCE(IsPartOfTourismAttractionsChecker);
 
   // Used in generator.
   uint32_t GetBestType(FeatureParams::Types const & types) const;

@@ -246,7 +246,7 @@ highway|motorway_link|bridge;[highway=motorway_link][bridge?];;name;int_name;143
 railway|abandoned;144;
 amenity|parking|private;[amenity=parking][access=private];;name;int_name;145;
 deprecated:boundary|administrative|7:04.2024;[boundary=administrative][admin_level=7];x;name;int_name;146;
-tourism|attraction;147;
+tourism|attraction;[tourism=attraction][!attraction];;name;int_name;147;
 natural|water|reservoir;[natural=water][water=reservoir];;name;int_name;148;
 # ~430k usages.
 natural|water|river;[natural=water][water=river];;name;int_name;149;
@@ -1232,7 +1232,7 @@ shop|paint;1101;
 traffic_calming|bump;1102;
 traffic_calming|hump;1103;
 shop|car_parts;1104;
-deprecated|deprecated;1105;x
+attraction;[attraction];;name;int_name;1105;
 deprecated|deprecated;1106;x
 deprecated|deprecated;1107;x
 amenity|hydrant;1108;

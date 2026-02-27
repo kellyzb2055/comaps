@@ -120,6 +120,8 @@ std::string MapObject::GetLocalizedAllTypes(bool withMainType) const
   copy.SortBySpec();
 
   auto const & isPoi = ftypes::IsPoiChecker::Instance();
+  auto const & isTourismAttraction = ftypes::IsTourismAttractionChecker::Instance();
+  auto const & isPartOfTourismAttractions = ftypes::IsPartOfTourismAttractionsChecker::Instance();
   auto const & subtypes = ftypes::Subtypes::Instance();
   auto const & amenityChecker = ftypes::IsAmenityChecker::Instance();
 
@@ -135,7 +137,7 @@ std::string MapObject::GetLocalizedAllTypes(bool withMainType) const
     }
 
     // Ignore types that are not POI
-    if (!isMainType && !isPoi(type) && !subtypes.IsTypeWithSubtypesOrSubtype(type))
+    if (!isMainType && !isPoi(type) && !subtypes.IsTypeWithSubtypesOrSubtype(type) && !(isTourismAttraction(copy) && isPartOfTourismAttractions(type)))
       continue;
 
     // Ignore general amenity

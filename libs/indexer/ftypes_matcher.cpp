@@ -442,8 +442,7 @@ OneLevelPOIChecker::OneLevelPOIChecker() : ftypes::BaseChecker(1 /* level */)
 {
   Classificator const & c = classif();
 
-  for (auto const * path : {"amenity", "craft", "emergency", "healthcare", "historic", "leisure", "mountain_pass",
-                            "office", "railway", "shop", "sport", "tourism"})
+  for (auto const * path : {"amenity", "attraction", "craft", "emergency", "healthcare", "historic", "leisure", "mountain_pass", "office", "railway", "shop", "sport", "tourism"})
     m_types.push_back(c.GetTypeByPath({path}));
 }
 
@@ -496,7 +495,13 @@ IsCheckDateChecker::IsCheckDateChecker() : BaseChecker(1 /* level */)
     m_types.push_back(c.GetTypeByPath({path}));
 }
 
-AttractionsChecker::AttractionsChecker() : BaseChecker(2 /* level */)
+IsTourismAttractionChecker::IsTourismAttractionChecker()
+{
+  Classificator const & c = classif();
+  m_types.push_back(c.GetTypeByPath({"tourism", "attraction"}));
+}
+
+IsPartOfTourismAttractionsChecker::IsPartOfTourismAttractionsChecker() : BaseChecker(2 /* level */)
 {
   base::StringIL const primaryAttractionTypes[] = {
       {"amenity", "arts_centre"},
@@ -571,7 +576,7 @@ AttractionsChecker::AttractionsChecker() : BaseChecker(2 /* level */)
   sort(m_types.begin() + m_additionalTypesStart, m_types.end());
 }
 
-uint32_t AttractionsChecker::GetBestType(FeatureParams::Types const & types) const
+uint32_t IsPartOfTourismAttractionsChecker::GetBestType(FeatureParams::Types const & types) const
 {
   auto additionalType = ftype::GetEmptyValue();
   auto const itAdditional = m_types.begin() + m_additionalTypesStart;

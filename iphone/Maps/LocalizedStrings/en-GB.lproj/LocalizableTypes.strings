@@ -1450,13 +1450,14 @@
 "type.tourism.artwork.painting" = "Painting";
 "type.tourism.artwork.sculpture" = "Sculpture";
 "type.tourism.artwork.statue" = "Statue";
-"type.tourism.attraction" = "Attraction";
+"type.tourism.attraction" = "Tourist Attraction";
+"type.attraction" = "Attraction";
 "type.attraction.amusement_ride" = "Amusement Ride";
 "type.attraction.animal" = "Animal Enclosure";
 "type.attraction.bumper_car" = "Bumper Car";
 "type.attraction.big_wheel" = "Big Wheel";
 "type.attraction.carousel" = "Carousel";
-"type.attraction.historic" = "Historic attraction";
+"type.attraction.historic" = "Historic Attraction";
 "type.attraction.maze" = "Maze";
 "type.attraction.roller_coaster" = "Roller Coaster";
 "type.attraction.water_slide" = "Water Slide";

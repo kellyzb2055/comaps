@@ -1437,6 +1437,7 @@
 "type.tourism.artwork.sculpture" = "Skulptur";
 "type.tourism.artwork.statue" = "Statue";
 "type.tourism.attraction" = "Sehenswürdigkeit";
+"type.attraction" = "Attraktion";
 "type.attraction.amusement_ride" = "Fahrgeschäft";
 "type.attraction.animal" = "Tiergehege";
 "type.attraction.bumper_car" = "Autoscooter";

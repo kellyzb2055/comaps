@@ -1405,13 +1405,14 @@
     <string name="type.tourism.artwork.painting">Painting</string>
     <string name="type.tourism.artwork.sculpture">Sculpture</string>
     <string name="type.tourism.artwork.statue">Statue</string>
-    <string name="type.tourism.attraction">Attraction</string>
+    <string name="type.tourism.attraction">Tourist Attraction</string>
+    <string name="type.attraction">Attraction</string>
     <string name="type.attraction.amusement_ride">Amusement Ride</string>
     <string name="type.attraction.animal">Animal Enclosure</string>
     <string name="type.attraction.bumper_car">Bumper Car</string>
     <string name="type.attraction.big_wheel">Big Wheel</string>
     <string name="type.attraction.carousel">Carousel</string>
-    <string name="type.attraction.historic">Historic attraction</string>
+    <string name="type.attraction.historic">Historic Attraction</string>
     <string name="type.attraction.maze">Maze</string>
     <string name="type.attraction.roller_coaster">Roller Coaster</string>
     <string name="type.attraction.water_slide">Water Slide</string>
