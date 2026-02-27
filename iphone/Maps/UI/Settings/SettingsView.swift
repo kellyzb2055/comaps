@@ -85,6 +85,8 @@ struct SettingsView: View {
                         ProfileView()
                     } label: {
                         HStack {
+                            Image(systemName: "person.fill")
+                            
                             Text("osm_profile")
                                 .lineLimit(1)
                                 .layoutPriority(2)
@@ -100,7 +102,7 @@ struct SettingsView: View {
                     }
                 }
                 
-                Section("general") {
+                Section {
                     Toggle("autodownload", isOn: $hasAutomaticDownload)
                         .tint(.accent)
                     
@@ -127,9 +129,16 @@ struct SettingsView: View {
                     } label: {
                         Text("measurement_units")
                     }
+                } header: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "gearshape.2")
+                            .imageScale(.small)
+                        
+                        Text("general")
+                    }
                 }
                 
-                Section("interface") {
+                Section {
                     Picker(selection: $selectedAppearance) {
                         ForEach(Settings.Appearance.allCases) { appearance in
                             Text(appearance.description)
@@ -148,9 +157,16 @@ struct SettingsView: View {
                     
                     Toggle("pref_zoom_title", isOn: $hasZoomButtons)
                         .tint(.accent)
+                } header: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "slider.horizontal.below.rectangle")
+                            .imageScale(.small)
+                        
+                        Text("interface")
+                    }
                 }
                 
-                Section("map") {
+                Section {
                     Picker(selection: $selectedMapAppearance) {
                         ForEach(Settings.Appearance.allCases) { mapAppearance in
                             Text(mapAppearance.description)
@@ -210,16 +226,33 @@ struct SettingsView: View {
                         Text("transliteration_title")
                     }
                     .tint(.accent)
+                } header: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "map")
+                            .imageScale(.small)
+                        
+                        Text("map")
+                    }
                 }
                 
-                NavigationLink("prefs_group_route") {
-                    SettingsNavigationView()
+                NavigationLink(destination: SettingsNavigationView()) {
+                    HStack {
+                        Image(systemName: "arrow.up.right.diamond")
+                        
+                        Text("prefs_group_route")
+                            .lineLimit(1)
+                    }
                 }
                 
                 Section {
                     Toggle(isOn: $shouldSync) {
                         VStack(alignment: .leading) {
-                            Text("icloud_sync")
+                            HStack {
+                                Image(systemName: "icloud")
+                                
+                                Text("icloud_sync")
+                                    .lineLimit(1)
+                            }
                             
                             if !isSyncPossible {
                                 Text("icloud_disabled_message")
