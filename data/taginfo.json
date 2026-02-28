@@ -1,7 +1,7 @@
 {
     "data_format": 1,
     "data_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/taginfo.json",
-    "data_updated": "20260209T180320Z",
+    "data_updated": "20260228T171016Z",
     "project": {
         "name": "CoMaps",
         "description": "CoMaps is a community-focused privacy navigation iOS & Android app for travelers - drivers, hikers, and cyclists.",
@@ -3016,6 +3016,11 @@
             "key": "natural",
             "value": "tree",
             "icon_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/styles/default/light/symbols/tree-special-m.svg"
+        },
+        {
+            "description": "natural=tree_row",
+            "key": "natural",
+            "value": "tree_row"
         },
         {
             "description": "natural=volcano",
