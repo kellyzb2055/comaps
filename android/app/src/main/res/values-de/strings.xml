@@ -394,13 +394,7 @@
     <string name="editor_example_values">Beispielwerte</string>
     <string name="editor_correct_mistake">Fehler korrigieren</string>
     <string name="editor_add_select_location">Standort auswählen</string>
-    <string name="editor_report_problem_desription_1">Bitte beschreibe das Problem detailliert, damit die OpenStreetMap-Community den Fehler korrigieren kann.</string>
-    <string name="editor_report_problem_desription_2">Oder korrigiere es selbst auf https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">Senden</string>
-    <string name="editor_report_problem_title">Problem</string>
-    <string name="editor_report_problem_no_place_title">Dieser Ort existiert nicht</string>
-    <string name="editor_report_problem_under_construction_title">Wegen Bauarbeiten geschlossen</string>
-    <string name="editor_report_problem_duplicate_place_title">Doppelt vorhanderer Ort</string>
     <string name="autodownload">Automatisch herunterladen</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Täglich</string>

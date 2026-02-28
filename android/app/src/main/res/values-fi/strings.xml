@@ -397,13 +397,7 @@
     <string name="editor_example_values">Esimerkkiarvot</string>
     <string name="editor_correct_mistake">Korjaa virhe</string>
     <string name="editor_add_select_location">Valitse sijainti</string>
-    <string name="editor_report_problem_desription_1">Kuvaile ongelmaa yksityiskohtaisesti, jotta OpenStreetMap-yhteisö voi korjata vian.</string>
-    <string name="editor_report_problem_desription_2">Tai tee se itse osoitteessa https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">Lähetä</string>
-    <string name="editor_report_problem_title">Ongelma</string>
-    <string name="editor_report_problem_no_place_title">Paikkaa ei ole olemassa</string>
-    <string name="editor_report_problem_under_construction_title">Suljettu huoltoa varten</string>
-    <string name="editor_report_problem_duplicate_place_title">Paikan kaksoiskappale</string>
     <string name="autodownload">Lataa kartat automaattisesti</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Päivittäin</string>

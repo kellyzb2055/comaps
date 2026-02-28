@@ -376,13 +376,7 @@
     <string name="editor_example_values">उदाहरण मूल्ये</string>
     <string name="editor_correct_mistake">चूक सुधारा</string>
     <string name="editor_add_select_location">स्थान निवडा</string>
-    <string name="editor_report_problem_desription_1">OpenStreetMap समुदायाने ही त्रुटी सुधारण्यासाठी कृपया समस्येचे तपशिलात वर्णन करा.</string>
-    <string name="editor_report_problem_desription_2">किंवा https://www.openstreetmap.org/ वर ते स्वतः करा</string>
     <string name="editor_report_problem_send_button">पाठवा</string>
-    <string name="editor_report_problem_title">समस्या</string>
-    <string name="editor_report_problem_no_place_title">जागा अस्तित्वात नाही</string>
-    <string name="editor_report_problem_under_construction_title">देखभालीसाठी बंद</string>
-    <string name="editor_report_problem_duplicate_place_title">प्रतिलिपीत (डुप्लिकेट) ठिकाण</string>
     <string name="autodownload">स्वयं डाउनलोड</string>
     <!-- Place Page opening hours text -->
     <string name="daily">दैनिक</string>

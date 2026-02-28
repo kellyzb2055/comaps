@@ -378,13 +378,7 @@
     <string name="editor_example_values">Voorbeeldwaardes</string>
     <string name="editor_correct_mistake">Stel fout reg</string>
     <string name="editor_add_select_location">Kies Ligging</string>
-    <string name="editor_report_problem_desription_1">Beskryf asb. die probleem in detail sodat die OpenStreetMap-gemeenskap dit kan regstel.</string>
-    <string name="editor_report_problem_desription_2">Of doen dit welf by https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">Stuur</string>
-    <string name="editor_report_problem_title">Probleem</string>
-    <string name="editor_report_problem_no_place_title">Hierdie plek bestaan nie</string>
-    <string name="editor_report_problem_under_construction_title">Gesluit vir onderhoud</string>
-    <string name="editor_report_problem_duplicate_place_title">Dupliseer plek</string>
     <string name="autodownload">Laai kaarte outomaties af</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Daagliks</string>

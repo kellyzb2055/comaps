@@ -402,14 +402,8 @@
     <string name="editor_example_values">Exemple de valeurs</string>
     <string name="editor_correct_mistake">Corriger une erreur</string>
     <string name="editor_add_select_location">Sélectionnez un emplacement</string>
-    <string name="editor_report_problem_desription_1">Veuillez décrire le problème en détail pour permettre à la communauté OpenStreetMap de le résoudre.</string>
-    <string name="editor_report_problem_desription_2">Ou faites-le vous-même sur https://www.openstreetmap.org/</string>
-    <string name="editor_report_problem_send_button">Envoyer</string>
-    <string name="editor_report_problem_title">Problème</string>
-    <string name="editor_report_problem_no_place_title">Ce lieu n’existe pas</string>
-    <string name="editor_report_problem_under_construction_title">Fermé pour travaux</string>
-    <string name="editor_report_problem_duplicate_place_title">Lieu en doublon</string>
-    <string name="autodownload">Téléchargement automatique des cartes</string>
+  <string name="editor_report_problem_send_button">Envoyer</string>
+  <string name="autodownload">Téléchargement automatique des cartes</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Quotidien</string>
     <string name="twentyfour_seven">24/24 et 7/7</string>

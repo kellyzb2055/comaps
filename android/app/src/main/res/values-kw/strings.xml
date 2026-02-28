@@ -144,7 +144,6 @@
     <string name="editor_correct_mistake">Ewna kammgemeryans</string>
     <string name="editor_add_select_location">Dewis Tyller</string>
     <string name="editor_report_problem_send_button">Danvon</string>
-    <string name="editor_report_problem_title">Kudyn</string>
     <string name="daily">Dedhyek</string>
     <string name="twentyfour_seven">24/7</string>
     <string name="day_off_today">Deges hedhyw</string>
@@ -466,11 +465,6 @@
     <string name="editor_time_from">Dhyworth</string>
     <string name="editor_time_to">Bys</string>
     <string name="editor_example_values">Niverow Ensampel</string>
-    <string name="editor_report_problem_desription_1">Mar pleg, deskrifa an kudyn yn manylyon rag may an kemeneth OpenStreetMap gallos ewnhe y.</string>
-    <string name="editor_report_problem_desription_2">Po gul y dha honan yn https://www.openstreetmap.org/</string>
-    <string name="editor_report_problem_no_place_title">An le ma na eksistya</string>
-    <string name="editor_report_problem_under_construction_title">Deges rag mentons</string>
-    <string name="editor_report_problem_duplicate_place_title">Le dewblek</string>
     <string name="autodownload">Iskarga mappys yn awtomatek</string>
     <string name="opens_in">Ygeri yn %s</string>
     <string name="closes_in">Degea yn %s</string>

@@ -390,13 +390,7 @@
     <string name="editor_example_values">ערכים לדוגמה</string>
     <string name="editor_correct_mistake">תקן טעות</string>
     <string name="editor_add_select_location">בחר מיקום</string>
-    <string name="editor_report_problem_desription_1">בבקשה תארו את הבעיה בפירוט כדי שקהילת OpenStreetMap תוכל לתקן אותה.</string>
-    <string name="editor_report_problem_desription_2">או תקנו אותה בעצמכם: https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">שלח</string>
-    <string name="editor_report_problem_title">בעיה</string>
-    <string name="editor_report_problem_no_place_title">המקום הזה לא קיים</string>
-    <string name="editor_report_problem_under_construction_title">סגור בשל עבודות תחזוקה</string>
-    <string name="editor_report_problem_duplicate_place_title">מקום כפול</string>
     <string name="autodownload">הורדה אוטומטית של מפות</string>
     <!-- Place Page opening hours text -->
     <string name="daily">יומי</string>

@@ -305,7 +305,6 @@
     <string name="editor_example_values">Primjeri vrijednosti</string>
     <string name="editor_correct_mistake">Ispravite grešku</string>
     <string name="editor_add_select_location">Odaberite lokaciju</string>
-    <string name="editor_report_problem_desription_1">Molimo opišite problem detaljno kako bi ga OpenStreetMap zajednica mogla ispraviti.</string>
     <string name="downloader_delete_map_dialog">Sve vaše izmjene na karti bit će izbrisane s kartom</string>
     <string name="downloader_update_maps">Ažurirajte karte</string>
     <string name="downloader_mwm_migration_dialog">Za izradu rute potrebno je ažurirati sve karte, a zatim ponovno isplanirati rutu.</string>
@@ -464,11 +463,6 @@
     <string name="cyan">Cijan</string>
     <string name="teal">Tirkizna</string>
     <string name="lime">Limeta</string>
-    <string name="editor_report_problem_desription_2">Ili to učinite sami na https://www.openstreetmap.org/</string>
-    <string name="editor_report_problem_title">Problem</string>
-    <string name="editor_report_problem_no_place_title">Ovo mjesto ne postoji</string>
-    <string name="editor_report_problem_under_construction_title">Zatvoreno zbog održavanja</string>
-    <string name="editor_report_problem_duplicate_place_title">Duplikat mjesta</string>
     <string name="autodownload">Automatsko preuzimanje karata</string>
     <string name="twentyfour_seven">24/7</string>
     <string name="day_off_today">Zatvoreno danas</string>

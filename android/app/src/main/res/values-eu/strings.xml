@@ -396,13 +396,7 @@
     <string name="editor_example_values">Adibide balioak</string>
     <string name="editor_correct_mistake">Konpondu akatsa</string>
     <string name="editor_add_select_location">Hautatu kokapena</string>
-    <string name="editor_report_problem_desription_1">Mesedez, deskribatu arazoa xehetasunez, OpenStreetMap komunitateak akatsa konpondu dezan.</string>
-    <string name="editor_report_problem_desription_2">Edo zuk zeuk egin hemen https://www.openstreetmap.org/ helbidean</string>
     <string name="editor_report_problem_send_button">Bidali</string>
-    <string name="editor_report_problem_title">Arazoa</string>
-    <string name="editor_report_problem_no_place_title">Tokia ez da existitzen</string>
-    <string name="editor_report_problem_under_construction_title">Mantentze lanetarako itxita</string>
-    <string name="editor_report_problem_duplicate_place_title">Toki bikoiztua</string>
     <string name="autodownload">Deskarga automatikoa</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Egunero</string>

@@ -96,7 +96,6 @@
     <string name="editor_time_from">O</string>
     <string name="editor_time_to">I</string>
     <string name="editor_time_open">Ar agor</string>
-    <string name="editor_report_problem_title">Problem</string>
     <string name="daily">Dyddiol</string>
     <string name="twentyfour_seven">24/7</string>
     <string name="day_off">Ar gau</string>
@@ -208,7 +207,6 @@
     <string name="editor_example_values">Gwerthoedd Enghreifftiol</string>
     <string name="editor_correct_mistake">Cywiro gwall</string>
     <string name="editor_add_select_location">Dewis Lleoliad</string>
-    <string name="editor_report_problem_duplicate_place_title">Lleoliad dyblyg</string>
     <string name="day_off_today">Ar gau heddiw</string>
     <string name="logout">Allgofnodi</string>
     <string name="edit_place">Golygu Lle</string>

@@ -357,13 +357,7 @@
     <!-- Text for allday switch. -->
     <string name="editor_time_allday">O dia todo (24 horas)</string>
     <string name="editor_time_add_closed">Inserir horas sem funcionamento</string>
-    <string name="editor_report_problem_desription_1">Por favor, descreva o problema em detalhes para que a comunidade OpenStreetMap possa corrigir o erro.</string>
-    <string name="editor_report_problem_desription_2">Ou faça-o você mesmo em https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">Enviar</string>
-    <string name="editor_report_problem_title">Problema</string>
-    <string name="editor_report_problem_no_place_title">O lugar não existe</string>
-    <string name="editor_report_problem_under_construction_title">Fechado para manutenção</string>
-    <string name="editor_report_problem_duplicate_place_title">Lugar duplicado</string>
     <string name="autodownload">Download automático de mapas</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Diariamente</string>

@@ -199,7 +199,6 @@
     <string name="dialog_routing_disclaimer_recommendations">— প্রস্তাবিত রুটগুলিকে কেবল সুপারিশ হিসেবেই বোঝা উচিত;</string>
     <string name="p2p_only_from_current">নেভিগেশন শুধুমাত্র আপনার বর্তমান অবস্থান থেকে উপলব্ধ</string>
     <string name="dialog_routing_disclaimer_borders">— সীমান্তবর্তী অঞ্চলে রুট ব্যবহারে সতর্কতা অবলম্বন করুন: আমাদের অ্যাপ দ্বারা তৈরি রুটগুলি সম্ভবত অননুমোদিত স্থানে দেশের সীমানা অতিক্রম করতে পারে।</string>
-    <string name="editor_report_problem_desription_1">দয়া করে সমস্যাটি বিস্তারিতভাবে বর্ণনা করুন যাতে ওপেনস্ট্রিটম্যাপের ভলিউন্টিয়াররা এটি ঠিক করতে পারে।</string>
     <string name="edit_opening_hours">বাণিজ্যের সময় বদলান</string>
     <string name="p2p_reroute_from_current">আপনি কি আপনার বর্তমান অবস্থান থেকে একটি রুট পরিকল্পনা করতে চান?</string>
     <string name="editor_time_allday">সারাদিন (২৪ ঘন্টা)</string>
@@ -219,12 +218,7 @@
     <string name="editor_hours_closed">অবাণিজ্যিক সময়</string>
     <string name="editor_example_values">উদাহরণ মান</string>
     <string name="editor_add_select_location">অবস্থান বেছে নিন</string>
-    <string name="editor_report_problem_desription_2">অথবা এইখানে নিজে ঠিক করে নিন https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">পাঠান</string>
-    <string name="editor_report_problem_title">সমস্যা</string>
-    <string name="editor_report_problem_no_place_title">এই স্থানটির অস্তিত্ব নেই</string>
-    <string name="editor_report_problem_under_construction_title">রক্ষণাবেক্ষণের জন্য বন্ধ</string>
-    <string name="editor_report_problem_duplicate_place_title">ডুপ্লিকেট জায়গা</string>
     <string name="day_off_today">আজকে বন্ধ</string>
     <string name="opens_in">%s-এর মধ্যে খুলবে</string>
     <string name="closes_in">%s-এর মধ্যে বন্ধ হবে</string>

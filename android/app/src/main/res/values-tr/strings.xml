@@ -394,13 +394,7 @@
     <string name="editor_example_values">Örnek Değerler</string>
     <string name="editor_correct_mistake">Hatayı düzelt</string>
     <string name="editor_add_select_location">Konum Seç</string>
-    <string name="editor_report_problem_desription_1">OpenStreetMap topluluğunun hatayı düzeltmesi için lütfen problemi detaylı bir şekilde açıklayın.</string>
-    <string name="editor_report_problem_desription_2">Veya bunu https://www.openstreetmap.org/ adresinden kendiniz yapın</string>
     <string name="editor_report_problem_send_button">Gönder</string>
-    <string name="editor_report_problem_title">Sorun</string>
-    <string name="editor_report_problem_no_place_title">Yer yok</string>
-    <string name="editor_report_problem_under_construction_title">Bakım için kapalı</string>
-    <string name="editor_report_problem_duplicate_place_title">Kopyalanmış yer</string>
     <string name="autodownload">Haritaları kendiliğinden indir</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Her gün</string>

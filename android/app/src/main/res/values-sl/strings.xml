@@ -237,13 +237,7 @@
     <string name="editor_example_values">Primeri vrednosti</string>
     <string name="editor_correct_mistake">Popravi napako</string>
     <string name="editor_add_select_location">Izberi položaj</string>
-    <string name="editor_report_problem_desription_1">Podrobno opišite težavo, da jo lahko skupnost OpenStreetMap odpravi.</string>
-    <string name="editor_report_problem_desription_2">Ali pa jo popravite sami na https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">Pošlji</string>
-    <string name="editor_report_problem_title">Težava</string>
-    <string name="editor_report_problem_no_place_title">Ta kraj ne obstaja</string>
-    <string name="editor_report_problem_under_construction_title">Zaprto zaradi vzdrževalnih del</string>
-    <string name="editor_report_problem_duplicate_place_title">Podvojen kraj</string>
     <string name="autodownload">Samodejno prenesi zemljevide</string>
     <string name="daily">Vsak dan</string>
     <string name="twentyfour_seven">24/7</string>

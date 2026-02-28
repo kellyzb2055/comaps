@@ -390,13 +390,7 @@
     <string name="editor_example_values">Näidisväärtused</string>
     <string name="editor_correct_mistake">Paranda viga</string>
     <string name="editor_add_select_location">Vali asukoht</string>
-    <string name="editor_report_problem_desription_1">Palun kirjelda probleemi üksikasjalikult, et OpenStreetMapi kogukond saaks selle parandada.</string>
-    <string name="editor_report_problem_desription_2">Või tee seda ise aadressil https://www.openstreetmap.org/</string>
     <string name="editor_report_problem_send_button">Saada</string>
-    <string name="editor_report_problem_title">Probleem</string>
-    <string name="editor_report_problem_no_place_title">Sellist kohta pole olemas</string>
-    <string name="editor_report_problem_under_construction_title">Suletud hoolduseks</string>
-    <string name="editor_report_problem_duplicate_place_title">Dubleeritud koht</string>
     <string name="autodownload">Laadi kaardid automaaselt alla</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Iga päev</string>

@@ -434,12 +434,6 @@
     <string name="editor_time_from">இருந்து</string>
     <string name="editor_time_to">பெறுநர்</string>
     <string name="editor_correct_mistake">சரியான தவறு</string>
-    <string name="editor_report_problem_desription_1">சிக்கலை விரிவாக விவரிக்கவும், இதனால் OpenStreetMap சமூகம் அதை சரிசெய்ய முடியும்.</string>
-    <string name="editor_report_problem_desription_2">அல்லது https://www.openstreetmap.org/ இல் நீங்களே செய்யுங்கள்</string>
-    <string name="editor_report_problem_title">சிக்கல்</string>
-    <string name="editor_report_problem_no_place_title">இந்த இடம் இல்லை</string>
-    <string name="editor_report_problem_under_construction_title">பராமரிப்புக்காக மூடப்பட்டுள்ளது</string>
-    <string name="editor_report_problem_duplicate_place_title">நகல் இடம்</string>
     <string name="opens_in">%s இல் திறக்கப்படும்</string>
     <string name="closes_in">%s இல் மூடப்படும்</string>
     <string name="opens_at">%s இல் திறக்கப்படும்</string>

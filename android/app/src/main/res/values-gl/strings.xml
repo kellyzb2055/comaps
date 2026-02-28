@@ -6,7 +6,6 @@
     <string name="miles">Millas</string>
     <string name="category_transport">Transporte</string>
     <string name="length">Lonxitude</string>
-    <string name="editor_report_problem_title">Problema</string>
     <string name="editor_edit_place_category_title">Categoría</string>
     <string name="category_hotel">Hotel</string>
     <string name="editor_edit_place_title">Editar</string>
@@ -282,13 +281,8 @@
     <string name="editor_time_add_closed">Engadir horas de peche</string>
     <string name="editor_time_add">Engadir horario</string>
     <string name="editor_time_simple">Modo sinxelo</string>
-    <string name="editor_report_problem_desription_1">Por favor, describa o problema en detalle para que a comunidade de OpenStreetMap poida corrixir o erro.</string>
-    <string name="editor_report_problem_desription_2">Ou fágao vostede mesmo en https://www.openstreetmap.org/</string>
-    <string name="editor_report_problem_no_place_title">Este lugar non existe</string>
-    <string name="editor_report_problem_duplicate_place_title">Lugar duplicado</string>
     <string name="autodownload">Descarga automática</string>
     <string name="day_off_today">Pechado hoxe</string>
-    <string name="editor_report_problem_under_construction_title">Pechado por mantemento</string>
     <string name="opens_in">Abre en %s</string>
     <string name="closes_in">Pecha en %s</string>
     <string name="no_osm_account">Non ten conta en OpenStreetMap?</string>
