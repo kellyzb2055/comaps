@@ -56,7 +56,7 @@ final class CarPlayService: NSObject {
       router.restoreTripPreviewOnCarplay(beforeRootTemplateDidAppear: true)
     }
     updateContentStyle(configuration.contentStyle)
-    FrameworkHelper.updatePositionArrowOffset(false, offset: (Int32(window.height * window.screen.scale)/3))
+    FrameworkHelper.updatePositionArrowOffset(false, offset: 120)
 
     CarPlayWindowScaleAdjuster.updateAppearance(
       fromWindow: MapsAppDelegate.theApp().window,
