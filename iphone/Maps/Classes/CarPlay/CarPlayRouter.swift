@@ -220,14 +220,14 @@ extension CarPlayRouter {
   }
 
   func cancelNavigationSession() {
-    LOG(.info, "Сancelling navigation session")
+    LOG(.info, "Cancelling navigation session")
     routeSession?.cancelTrip()
     routeSession = nil
     RoutingManager.routingManager.resetOnNewTurnCallback()
   }
 
   func cancelTrip() {
-    LOG(.info, "Сancelling trip")
+    LOG(.info, "Cancelling trip")
     cancelNavigationSession()
     completeRouteAndRemovePoints()
   }
