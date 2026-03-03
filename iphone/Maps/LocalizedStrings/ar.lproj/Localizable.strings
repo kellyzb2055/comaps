@@ -1101,3 +1101,7 @@
 "offline_explanation_text" = "يجب تنزيل خريطة لعرض المنطقة والتنقل فيها.\nنزِّل خرائط للمناطق التي ترغب في السفر إليها.";
 "general" = "General";
 "interface" = "Interface";
+"contribute_to_osm_add_place" = "Add Place";
+"contribute_to_osm_update_map" = "Update the Map to Contribute";
+"contribute_to_osm" = "Contribute to OpenStreetMap";
+"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";

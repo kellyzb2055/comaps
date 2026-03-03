@@ -1108,5 +1108,9 @@
 "pref_alt_map_lang_handling_system_order" = "Gebruik in systeemvolgorde";
 "rooms" = "%@ kamers";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Geen alternatieven gebruiken";
-"general" = "General";
+"general" = "Algemeen";
 "interface" = "Interface";
+"contribute_to_osm_add_place" = "Add Place";
+"contribute_to_osm_update_map" = "Update the Map to Contribute";
+"contribute_to_osm" = "Contribute to OpenStreetMap";
+"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";

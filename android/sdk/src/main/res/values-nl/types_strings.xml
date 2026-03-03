@@ -1252,7 +1252,7 @@
     <string name="type.tourism.artwork.painting">Schilderij</string>
     <string name="type.tourism.artwork.sculpture">Kunstwerk</string>
     <string name="type.tourism.artwork.statue">Standbeeld</string>
-    <string name="type.tourism.attraction">Attractie</string>
+    <string name="type.tourism.attraction">Toeristische attractie</string>
     <string name="type.attraction.amusement_ride">Prettocht</string>
     <string name="type.attraction.animal">Dierenverblijf</string>
     <string name="type.attraction.bumper_car">Botsauto\'s</string>
@@ -1510,4 +1510,6 @@
     <string name="type.emergency.access_point.address">Noodhulppost adres</string>
     <string name="type.waterway.fuel">Brandstofsteiger</string>
     <string name="type.amenity.community_centre.youth_centre">Jeugdcentrum</string>
+    <string name="type.attraction">Attractie</string>
+    <string name="type.shop.water">Waterwinkel</string>
 </resources>

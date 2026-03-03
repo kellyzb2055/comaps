@@ -1108,5 +1108,9 @@
 "pref_alt_map_lang_handling_local_only" = "优先使用并仅在使用本地语言时使用";
 "rooms" = "%@ 房间";
 "pref_alt_map_lang_handling_ignore_alternatives" = "不使用备选语言";
-"general" = "General";
-"interface" = "Interface";
+"general" = "常规";
+"interface" = "界面";
+"contribute_to_osm_add_place" = "Add Place";
+"contribute_to_osm_update_map" = "Update the Map to Contribute";
+"contribute_to_osm" = "Contribute to OpenStreetMap";
+"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";

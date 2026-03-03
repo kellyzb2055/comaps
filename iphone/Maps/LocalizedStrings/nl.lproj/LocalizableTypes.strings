@@ -1350,7 +1350,7 @@
 "type.tourism.artwork.painting" = "Schilderij";
 "type.tourism.artwork.sculpture" = "Kunstwerk";
 "type.tourism.artwork.statue" = "Standbeeld";
-"type.tourism.attraction" = "Attractie";
+"type.tourism.attraction" = "Toeristische attractie";
 "type.attraction.amusement_ride" = "Prettocht";
 "type.attraction.animal" = "Dierenverblijf";
 "type.attraction.bumper_car" = "Botsauto's";
@@ -1601,5 +1601,5 @@
 "type.railway.miniature" = "Miniatuur spoorweg";
 "type.waterway.fuel" = "Brandstofsteiger";
 "type.amenity.community_centre.youth_centre" = "Jeugdcentrum";
-"type.shop.water" = "Water Shop";
-"type.attraction" = "Attraction";
+"type.shop.water" = "Waterwinkel";
+"type.attraction" = "Attractie";
