@@ -1600,5 +1600,5 @@
 "type.railway.disused.tunnel" = "Túnel ferroviario en desuso";
 "type.railway.miniature" = "Ferrocarril miniatura";
 "type.railway.miniature.bridge" = "Puente de ferrocarril miniatura";
-"type.shop.water" = "Water Shop";
-"type.attraction" = "Attraction";
+"type.shop.water" = "Empresas especializadas en la venta de sistemas de tratamiento de agua";
+"type.attraction" = "Atracción";

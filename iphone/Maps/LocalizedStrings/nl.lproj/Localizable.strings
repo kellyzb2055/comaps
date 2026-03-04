@@ -154,13 +154,13 @@
 
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Camperfaciliteiten";
-"share_bookmarks_email_body" = "Hallo! \n \nBijgevoegd zijn mijn favorieten; te openen in CoMaps. Als je dit niet geïnstalleerd hebt, dan kun je het hier downloaden: https://www.comaps.app/download/ \n \nGeniet van het reizen met CoMaps!";
+"share_bookmarks_email_body" = "Hallo! \n \nBijgevoegd zijn mijn favorieten; te openen in CoMaps. Als u dit niet geïnstalleerd hebt, dan kunt u het hier downloaden: https://www.comaps.app/download/ \n \nGeniet van het reizen met CoMaps!";
 
 /* message title of loading file */
 "load_kmz_title" = "Favorieten laden";
 
 /* Kmz file successful loading */
-"load_kmz_successful" = "Favorieten met succes geladen! Je vindt ze op de kaart of op het scherm Favorietenbeheer.";
+"load_kmz_successful" = "Favorieten met succes geladen! U vindt ze op de kaart of op het scherm Favorietenbeheer.";
 
 /* Kml file loading failed */
 "load_kmz_failed" = "Favorieten laden is mislukt. Het bestand is mogelijk beschadigd.";
@@ -169,7 +169,7 @@
 "edit" = "Bewerken";
 
 /* Warning message when doing search around current position */
-"unknown_current_position" = "Je locatie is nog niet vastgesteld";
+"unknown_current_position" = "Uw locatie is nog niet vastgesteld";
 
 /* Subject for emailed bookmark */
 "bookmark_share_email_subject" = "Hey, bekijk mijn pin op CoMaps!";
@@ -445,13 +445,13 @@
 "dialog_routing_disclaimer_beware" = "Blijf alert en rij veilig!";
 "dialog_routing_check_gps" = "Controleer gps-signaal";
 "dialog_routing_error_location_not_found" = "Route samenstellen mislukt. De huidige gps-coördinaten kunnen niet worden geïdentificeerd.";
-"dialog_routing_location_turn_wifi" = "Controleer uw gps-signaal. Schakel wifi in voor een betere locatiebepaling.";
+"dialog_routing_location_turn_wifi" = "Controleer uw gps-signaal. Schakel WiFi in voor een meer nauwkeurige locatiebepaling.";
 "dialog_routing_location_turn_on" = "Schakel locatiediensten in";
 "dialog_routing_location_unknown_turn_on" = "De huidige gps-coördinaten kunnen niet worden gevonden. Schakel locatiediensten in om de route te berekenen.";
 "dialog_routing_download_files" = "Download de vereiste bestanden";
 "dialog_routing_download_and_update_all" = "Download de kaart en route-informatie voor het ingestelde traject en werk deze bij om de route te berekenen.";
 "dialog_routing_unable_locate_route" = "Route vinden mislukt";
-"dialog_routing_change_start_or_end" = "Pas het startpunt of de bestemming aan.";
+"dialog_routing_change_start_or_end" = "Pas het beginpunt of de bestemming aan.";
 "dialog_routing_change_start" = "Startpunt aanpassen";
 "dialog_routing_start_not_determined" = "Route samenstellen mislukt. Startpunt kan niet worden gevonden.";
 "dialog_routing_select_closer_start" = "Kies een startpunt dat dichter bij een weg ligt.";
@@ -459,7 +459,7 @@
 "dialog_routing_end_not_determined" = "Route samenstellen mislukt. Bestemming kan niet worden gevonden.";
 "dialog_routing_select_closer_end" = "Kies een bestemming die dichter bij een weg ligt.";
 "dialog_routing_change_intermediate" = "Kan de tussenstop niet vinden.";
-"dialog_routing_intermediate_not_determined" = "Gelieve uw tussenstop aan te passen.";
+"dialog_routing_intermediate_not_determined" = "Pas de tussenstop aan.";
 "dialog_routing_system_error" = "Systeemfout";
 "dialog_routing_application_error" = "Route samenstellen mislukt door een applicatiefout.";
 "dialog_routing_try_again" = "Probeer het opnieuw";
@@ -487,7 +487,7 @@
 /* The message when user did not find anything in the search. */
 "search_not_found_query" = "Download de regio waar u zoekt of probeer een nabijgelegen stad/dorpnaam toe te voegen.";
 "search_history_title" = "Zoekgeschiedenis";
-"search_history_text" = "Snel toegang tot recente zoekopdrachten.";
+"search_history_text" = "Recente zoekopdrachten.";
 "clear_search" = "Zoekgeschiedenis wissen";
 
 /* Place Page link to Wikipedia article (if map object has it). */
@@ -499,7 +499,7 @@
 "p2p_start" = "Start";
 "p2p_from_here" = "Van";
 "p2p_to_here" = "Naar";
-"p2p_only_from_current" = "Navigatie is uitsluitend beschikbaar vanuit uw huidige locatie.";
+"p2p_only_from_current" = "Navigatie is alleen beschikbaar vanuit uw huidige locatie.";
 "p2p_reroute_from_current" = "Wilt u een route plannen vanaf uw huidige locatie?";
 "editor_time_add" = "Schema toevoegen";
 "editor_time_delete" = "Schema verwijderen";
@@ -515,7 +515,7 @@
 "editor_hours_closed" = "Sluitingstijden";
 "editor_example_values" = "Voorbeeldwaarden";
 "editor_add_select_location" = "Locatie selecteren";
-"editor_done_dialog_1" = "Je hebt de wereldkaart gewijzigd. Verberg dit niet! Vertel het je vrienden en bewerk haar samen.";
+"editor_done_dialog_1" = "U hebt de wereldkaart gewijzigd. Houdt dit niet voor uzelf! Vertel het uw vrienden en bewerk het samen.";
 "share_with_friends" = "Deel met je vrienden";
 "editor_report_problem_send_button" = "Verzenden";
 "autodownload" = "Kaarten automatisch downloaden";
@@ -546,7 +546,7 @@
 
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap-profiel";
-"osm_profile_promt" = "Maak een OpenStreetMap account aan of log in om uw kaartbewerkingen voor de wereld te publiceren.";
+"osm_profile_promt" = "Maak een OpenStreetMap-account aan of log in om uw kaartbewerkingen voor de wereld te publiceren.";
 "osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) is een gemeenschapsproject om een vrije en open kaart te bouwen. Het is de belangrijkste bron van kaartgegevens in CoMaps en werkt ongeveer hetzelfde als Wikipedia. U kunt plaatsen toevoegen of bewerken en deze worden dan beschikbaar voor miljoenen gebruikers over de hele wereld. \nSluit u aan bij de gemeenschap en help mee om een betere kaart voor iedereen te maken!";
 "osm_profile_login" = "Inloggen bij OpenStreetMap-account";
 "osm_profile_reauthorize_promt" = "Het OpenStreetMap-account is losgekoppeld van deze app";
@@ -694,7 +694,7 @@
 "placepage_add_place_button" = "Voeg een plaats toe aan OpenStreetMap";
 
 /* Displayed when saving some edits to the map to warn against publishing personal data */
-"editor_share_to_all_dialog_title" = "Wil je het naar alle gebruikers sturen?";
+"editor_share_to_all_dialog_title" = "Wilt u het naar alle gebruikers sturen?";
 
 /* Dialog before publishing the modifications to the public map. */
 "editor_share_to_all_dialog_message_1" = "Controleer dat je geen persoonlijke gegevens hebt ingevoerd.";
@@ -744,7 +744,7 @@
 "routing_add_start_point" = "Gebruik zoeken of tik op de kaart om een startpunt voor de route toe te voegen";
 
 /* User selected the start of a route by pressing Route From. Now the destination of a route should be selected using search or by tapping on the map and then pressing "Route To". */
-"routing_add_finish_point" = "Gebruik Zoeken of tik op de kaart om een bestemmingspunt toe te voegen";
+"routing_add_finish_point" = "Gebruik Zoeken of tik op de kaart om een punt van bestemming toe te voegen";
 "planning_route_manage_route" = "Route beheren";
 "button_plan" = "Plannen";
 "placepage_remove_stop" = "Verwijder tussenstop";
@@ -810,7 +810,7 @@
 "power_managment_setting_never" = "Nooit";
 "power_managment_setting_auto" = "Wanneer batterij bijna leeg is";
 "power_managment_setting_manual_max" = "Maximale energiebesparing";
-"enable_logging_warning_message" = "Deze optie is ingeschakeld voor logboekregistraties voor diagnostische doeleinden. Het helpt bij het identificeren van problemen met de applicatie. Schakel de optie alleen in op verzoek van CoMaps-ondersteuning.";
+"enable_logging_warning_message" = "Schakel deze optie tijdelijk in om gedetailleerde diagnostische logboeken over uw probleem op te nemen en handmatig naar ons te sturen met behulp van \"Meld een fout\" in het Help-dialoogvenster. Logboeken kunnen locatie-informatie bevatten.";
 "driving_options_title" = "Route-instellingen";
 
 /* Recommended length for CarPlay and Android Auto is around 25-27 characters */
@@ -823,7 +823,7 @@
 "avoid_ferry" = "Veerboten verbinden";
 "avoid_motorways" = "Snelwegen vermijden";
 "unable_to_calc_alert_title" = "Kan route niet berekenen";
-"unable_to_calc_alert_subtitle" = "Helaas konden we geen route berekenen. Dit kan komen door uw gekozen opties of door incomplete OpenStreetMap-data. Wijzig de instellingen en probeer het opnieuw.";
+"unable_to_calc_alert_subtitle" = "Een route kon niet worden gevonden. Dit kan worden veroorzaakt door uw routeringsopties of onvolledige OpenStreetMap-gegevens. Wijzig uw routeringsopties en probeer het opnieuw.";
 "define_to_avoid_btn" = "Te vermijden wegen instellen";
 "change_driving_options_btn" = "Route-instellingen ingeschakeld";
 "toll_road" = "Tolweg";
@@ -853,7 +853,7 @@
 
 /* To indicate the network of ATMs, bicycle rentals, electric vehicle charging stations... */
 "network" = "Netwerk: %@";
-"trip_finished" = "U bent aangekomen!";
+"trip_finished" = "Bestemming bereikt!";
 "keyboard_availability_alert" = "Toetsenbord is niet beschikbaar tijdens het rijden";
 "dialog_routing_change_start_carplay" = "Kan route vanaf huidige positie niet opbouwen";
 "dialog_routing_change_end_carplay" = "Kan route naar het eindpunt niet opbouwen. Kies een ander eindpunt";
@@ -951,16 +951,16 @@
 "translated_om_site_url" = "https://www.comaps.app/nl/";
 
 /* App Tip #00 */
-"app_tip_00" = "Bedankt voor het gebruik van onze door de community gemaakte kaarten!";
+"app_tip_00" = "Bedankt voor het gebruik van onze gemeenschappelijk gemaakte kaarten!";
 
 /* App tip #01 */
 "app_tip_01" = "Met uw donaties en steun kunnen we de beste kaarten ter wereld maken!";
 
 /* App tip #02 */
-"app_tip_02" = "Vind je onze app leuk? Doneer alsjeblieft om de ontwikkeling te ondersteunen! Vind je het nog niet leuk? Laat het ons weten, dan lossen we het op!";
+"app_tip_02" = "Vindt u onze app leuk? Doneer alstublieft om de ontwikkeling te ondersteunen! Vindt u het nog niet leuk? Laat het ons weten, dan lossen we het op!";
 
 /* App tip #03 */
-"app_tip_03" = "Als u een softwareontwikkelaar kent, kunt u hem of haar vragen een functie te implementeren die u nodig heeft.";
+"app_tip_03" = "Als u een softwareontwikkelaar kent, kunt u deze vragen om een functie te maken die u nodig heeft.";
 
 /* App tip #04 */
 "app_tip_04" = "Tik ergens op de kaart om iets te selecteren. Tik lang om de interface te verbergen en weer te geven.";
@@ -978,13 +978,13 @@
 "app_tip_08" = "U kunt de kaartgegevens eenvoudig corrigeren en verbeteren.";
 
 /* App tip #09 */
-"app_tip_09" = "Ons belangrijkste doel is om snelle, op privacy gerichte, gebruiksvriendelijke kaarten te maken waar u dol op zult zijn.";
+"app_tip_09" = "Ons belangrijkste doel is om snelle, op privacy gerichte, gebruiksvriendelijke kaarten te maken waar u van houdt.";
 
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Je gebruikt nu CoMaps op het telefoonscherm";
+"car_used_on_the_phone_screen" = "U gebruikt nu CoMaps op het telefoonscherm";
 
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Je gebruikt nu CoMaps op het autoscherm";
+"car_used_on_the_car_screen" = "U gebruikt nu CoMaps op het autoscherm";
 
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Ga verder op de telefoon";
@@ -1110,7 +1110,7 @@
 "pref_alt_map_lang_handling_ignore_alternatives" = "Geen alternatieven gebruiken";
 "general" = "Algemeen";
 "interface" = "Interface";
-"contribute_to_osm_add_place" = "Add Place";
-"contribute_to_osm_update_map" = "Update the Map to Contribute";
-"contribute_to_osm" = "Contribute to OpenStreetMap";
-"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
+"contribute_to_osm_add_place" = "Voeg plaats toe";
+"contribute_to_osm_update_map" = "Werk de kaart bij om bij te dragen";
+"contribute_to_osm" = "Draag bij aan OpenStreetMap";
+"contribute_to_osm_update_map_description" = "U moet de kaart %@ bijwerken naar de nieuwste versie voordat u kunt bijdragen aan de OpenStreetMap-gegevens";

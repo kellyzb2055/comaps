@@ -916,4 +916,9 @@
     <string name="pref_alt_map_lang_handling_ignore_alternatives">Brug ikke alternativer</string>
     <string name="pref_alt_map_lang_handling_system_order">Brug i systemorden</string>
     <string name="pref_alt_map_lang_handling_local_only">Foretræk og brug kun, hvor det er hjemmehørende</string>
+    <string name="bookmark_share_email_subject">Følg dette link %1$s eller indsæt disse koordinater %2$s i din kortapp for at se denne placering.</string>
+    <string name="my_position_share_email">Følg dette link %1$s eller indsæt disse koordinater %2$s i din kortapp for at se min placering.</string>
+    <string name="destination">Destination</string>
+    <string name="stop">Stop</string>
+    <string name="route_recalculating">Genberegner ruten…</string>
 </resources>

@@ -575,9 +575,9 @@
     <string name="phone_number">Tālruņa numurs</string>
     <string name="profile">„OpenStreetMap“ profils</string>
     <plurals name="bookmarks_detect_message">
-        <item quantity="zero">Lietotne atrada %d jaunu datņu. Varat tās apskatīt pēc konvertācijas.</item>
-        <item quantity="one">Lietotne atrada %d jaunu datni. Varat to apskatīt pēc konvertācijas.</item>
-        <item quantity="other">Lietotne atrada %d jaunas datnes. Varat tās apskatīt pēc konvertācijas.</item>
+        <item quantity="zero">Tika atrastas %d jaunas datnes. Tās var apskatīt pēc pārveidošanas.</item>
+        <item quantity="one">Tika atrasta %d jauna datne. To var apskatīt pēc pārveidošanas.</item>
+        <item quantity="other">Tika atrastas %d jaunas datnes. Tās var apskatīt pēc pārveidošanas.</item>
     </plurals>
     <string name="restore">Atjaunot</string>
     <plurals name="tracks">
@@ -588,7 +588,7 @@
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privātums</string>
     <string name="privacy_policy">Privātuma politika</string>
-    <string name="terms_of_use">Lietošanas noteikumi</string>
+    <string name="terms_of_use">Izmantošanas nosacījumi</string>
     <string name="button_layer_traffic">Satiksme</string>
     <string name="subway">Metro</string>
     <string name="layers_title">Kartes stili un slāņi</string>
@@ -888,4 +888,12 @@
     <string name="route_needs_rebuild">Maršrutam ir nepieciešama izveidošana no jauna</string>
     <string name="route_finished">Maršruts pabeigts</string>
     <string name="not_following_route">Neseko maršrutam</string>
+    <string name="power_management">Enerģijas pārvaldība</string>
+    <string name="route_recalculating">Pārrēķina maršrutu…</string>
+    <string name="pref_openexternallinks_title">Automātiski atvērt trešo pušu saites</string>
+    <string name="pref_openexternallinks_summary">Pēc noklusējuma atvērt trešo pušu saites CoMaps</string>
+    <string name="stop">Apturēt</string>
+    <string name="destination">Galamērķis</string>
+    <string name="pref_alt_map_lang_handling">Kartes papildu valodas</string>
+    <string name="pref_alt_map_lang_handling_system_order">Izmantot sistēmas secībā</string>
 </resources>

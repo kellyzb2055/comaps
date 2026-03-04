@@ -925,4 +925,9 @@
     <string name="pref_alt_map_lang_handling_system_order">Kasuta süsteemi järjestuses</string>
     <string name="pref_openexternallinks_title">Ava kolmandate osapoolte lingid automaatselt</string>
     <string name="pref_openexternallinks_summary">Ava Comapsis leiduvad kolmandate osapoolte lingid vaikimisi</string>
+    <string name="bookmark_share_email_subject">Selle asukoha nägemiseks palun klõpsa %1$s linki või kopeeri need koordinaadid kaardile: %2$s .</string>
+    <string name="my_position_share_email">Minu asukoha nägemiseks palun klõpsa %1$s linki või kopeeri need koordinaadid kaardile: %2$s .</string>
+    <string name="destination">Sihtpunkt</string>
+    <string name="stop">Vahepeatus</string>
+    <string name="route_recalculating">Koostan teekonda uuesti…</string>
 </resources>

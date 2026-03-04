@@ -739,7 +739,6 @@
 "type.landuse.brownfield" = "Brownfield";
 "type.place.city" = "City";
 "type.amenity.parking_entrance.permissive" = "Parking Entrance";
-"type.cuisine.italian_pizza" = "Italian, Pizza";
 "type.railway.narrow_gauge.bridge" = "Narrow Gauge Rail Bridge";
 "type.cuisine.noodles" = "Noodles";
 "type.amenity.parking.lane.private" = "Private Lane Parking";

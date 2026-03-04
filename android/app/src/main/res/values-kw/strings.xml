@@ -681,4 +681,9 @@
     <string name="not_following_route">Na ow holya fordh</string>
     <string name="pref_openexternallinks_title">Ygeri gorgevrennow parti tressa yn awtomatek</string>
     <string name="pref_openexternallinks_summary">Ygeri gorgevrennow parti tressa yn CoMaps yn defowt</string>
+    <string name="bookmark_share_email_subject">Sewya an gorgevren ma %1$s po dasskrifa an kesordenogyon ma %2$s yn dha app mappys rag gweles an tyller ma.</string>
+    <string name="my_position_share_email">Sewya an gorgevren ma %1$s po dasskrifa an kesordenogyon ma %2$s yn dha app mappys rag gweles ma tyller.</string>
+    <string name="destination">Diwedhva</string>
+    <string name="stop">Powes</string>
+    <string name="route_recalculating">Daskalkya an fordh…</string>
 </resources>

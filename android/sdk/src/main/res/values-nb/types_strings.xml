@@ -240,7 +240,7 @@
     <string name="type.cuisine.croatian">Kroatisk</string>
     <string name="type.cuisine.curry">Karri</string>
     <string name="type.cuisine.deli">Delikatesse</string>
-    <string name="type.cuisine.diner">Middag</string>
+    <string name="type.cuisine.diner">Diner</string>
     <string name="type.cuisine.donut">Smultring</string>
     <string name="type.cuisine.ethiopian">Etiopisk</string>
     <string name="type.cuisine.filipino">Filippinsk</string>
@@ -1123,7 +1123,7 @@
     <string name="type.tourism.artwork.painting">Malerkunst</string>
     <string name="type.tourism.artwork.sculpture">Skulptur</string>
     <string name="type.tourism.artwork.statue">Statue</string>
-    <string name="type.tourism.attraction">Attraksjon</string>
+    <string name="type.tourism.attraction">Turistattraksjon</string>
     <string name="type.attraction.amusement_ride">Forlystelsesattraksjon</string>
     <string name="type.attraction.animal">Innhegning for dyr</string>
     <string name="type.attraction.carousel">Karusell</string>
@@ -1393,4 +1393,6 @@
     <string name="type.railway.disused.tunnel">Ubenyttet jernbanetunnel</string>
     <string name="type.railway.disused.bridge">Ubenyttet jernbanebru</string>
     <string name="type.amenity.community_centre.youth_centre">Ungdomssenter</string>
+    <string name="type.shop.water">Drikkevannsbutikk</string>
+    <string name="type.attraction">Attraksjon</string>
 </resources>

@@ -776,7 +776,7 @@
 "bookmarks_convert_error_message" = "Atsevišķas datnes nav konvertētas.";
 "restore" = "Atjaunot";
 "privacy_policy" = "Privātuma politika";
-"terms_of_use" = "Lietošanas noteikumi";
+"terms_of_use" = "Izmantošanas nosacījumi";
 "button_layer_subway" = "Metro";
 "layers_title" = "Kartes stili un slāņi";
 "subway_data_unavailable" = "Metro karte nav pieejama";
@@ -1104,7 +1104,7 @@
 "pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";
 "general" = "General";
 "interface" = "Interface";
-"contribute_to_osm_add_place" = "Add Place";
-"contribute_to_osm_update_map" = "Update the Map to Contribute";
-"contribute_to_osm" = "Contribute to OpenStreetMap";
-"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
+"contribute_to_osm_add_place" = "Pievienot vietu";
+"contribute_to_osm_update_map" = "Jāatjaunina karte, lai līdzdarbotos";
+"contribute_to_osm" = "Līdzdarboties OpenStreetMap";
+"contribute_to_osm_update_map_description" = "Ir nepieciešams atjaunināt %@ karti uz jaunāko versiju, lai varētu sniegt savu devumu OpenStreetMap datiem";

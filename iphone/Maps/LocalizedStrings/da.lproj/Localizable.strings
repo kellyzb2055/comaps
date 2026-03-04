@@ -202,7 +202,7 @@
 "share_my_location" = "Del min placering";
 "prefs_group_route" = "Navigation";
 "pref_zoom_title" = "Zoom-knapper";
-"pref_left_button_type" = "Left Main Button";
+"pref_left_button_type" = "Venstre hovedknap";
 
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Udseende";
@@ -214,7 +214,7 @@
 "pref_appearance_dark" = "Mørk";
 
 /* Generic «Disabled» string */
-"disabled" = "Disabled";
+"disabled" = "Deaktiveret";
 
 /* Generic «Off» string */
 "off" = "Fra";
@@ -632,7 +632,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Operatør: %@";
 "editor_category_unsuitable_title" = "Kan du ikke finde en passende kategori?";
-"editor_category_unsuitable_text" = "CoMaps giver kun mulighed for at tilføje simple punktkategorier, dvs. ingen byer, veje, søer, bygningsomrids osv. Tilføj sådanne kategorier direkte til <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Se vores <a href=\"https://www.comaps.app/support/advanced-map-editing/\">guide</a> for detaljerede trin for trin-instruktioner.";
+"editor_category_unsuitable_text" = "CoMaps giver kun mulighed for at tilføje simple punktkategorier, dvs. ingen byer, veje, søer, bygningsomrids etc. Tilføj sådanne kategorier direkte til <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Se vores <a href=\"https://www.comaps.app/support/advanced-map-editing/\">guide</a> for detaljerede trin for trin-instruktioner.";
 "downloader_no_downloaded_maps_title" = "Du har ikke downloadet nogen kort";
 "downloader_no_downloaded_maps_message" = "Download kort for at søge og navigere offline.";
 "current_location_unknown_error_title" = "Aktuel placering er ukendt.";
@@ -1106,9 +1106,9 @@
 "pref_alt_map_lang_handling_system_order" = "Brug i systemorden";
 "rooms" = "%@ værelser";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Brug ikke alternativer";
-"general" = "General";
-"interface" = "Interface";
-"contribute_to_osm_add_place" = "Add Place";
-"contribute_to_osm_update_map" = "Update the Map to Contribute";
-"contribute_to_osm" = "Contribute to OpenStreetMap";
-"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
+"general" = "Generelt";
+"interface" = "Brugerflade";
+"contribute_to_osm_add_place" = "Tilføj sted";
+"contribute_to_osm_update_map" = "Opdater kortet for at bidrage";
+"contribute_to_osm" = "Bidrag til OpenStreetMap";
+"contribute_to_osm_update_map_description" = "Du skal opdatere %@-kortet til den nyeste version, før du kan bidrage til OpenStreetMap-dataene";

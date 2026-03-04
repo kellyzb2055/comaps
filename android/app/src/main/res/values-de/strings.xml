@@ -929,4 +929,9 @@
     <string name="pref_alt_map_lang_handling_ignore_alternatives">Verwende keine Alternativen</string>
     <string name="pref_alt_map_lang_handling_system_order">Systemreihenfolge verwenden</string>
     <string name="pref_alt_map_lang_handling_local_only">Bevorzugen und nur verwenden, wo es lokale Sprache ist</string>
+    <string name="bookmark_share_email_subject">Klick einfach auf diesen Link %1$s oder kopiere die Koordinaten %2$s in deine Karten-App, um den Standort zu sehen.</string>
+    <string name="my_position_share_email">Klick einfach auf diesen Link %1$s oder kopiere diese Koordinaten %2$s in deine Karten-App, um zu sehen, wo ich bin.</string>
+    <string name="destination">Ziel</string>
+    <string name="stop">Beenden</string>
+    <string name="route_recalculating">Neuberechnung der Route…</string>
 </resources>

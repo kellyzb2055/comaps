@@ -1288,7 +1288,6 @@
 "type.landuse.brownfield" = "Brownfield";
 "type.place.city" = "City";
 "type.amenity.parking_entrance.permissive" = "Parking Entrance";
-"type.cuisine.italian_pizza" = "Italian, Pizza";
 "type.leisure.escape_game" = "Escape Room";
 "type.amenity.luggage_locker" = "Luggage Locker";
 "type.amenity.ranger_station" = "Ranger Station";

@@ -1106,9 +1106,9 @@
 "pref_alt_map_lang_handling_system_order" = "Usar na ordem do sistema";
 "rooms" = "%@ salas";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Não usar alternativas";
-"general" = "General";
+"general" = "Geral";
 "interface" = "Interface";
-"contribute_to_osm_add_place" = "Add Place";
-"contribute_to_osm_update_map" = "Update the Map to Contribute";
-"contribute_to_osm" = "Contribute to OpenStreetMap";
-"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
+"contribute_to_osm_add_place" = "Adicionar Local";
+"contribute_to_osm_update_map" = "Atualize o Mapa para Contribuir";
+"contribute_to_osm" = "Contribuir para o OpenStreetMap";
+"contribute_to_osm_update_map_description" = "Precisa de atualizar o mapa %@ para a última versão antes de contribuir para os dados do OpenStreetMap";

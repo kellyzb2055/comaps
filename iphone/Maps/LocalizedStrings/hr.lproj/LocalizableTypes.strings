@@ -1272,7 +1272,6 @@
 "type.landuse.brownfield" = "Brownfield";
 "type.place.city" = "City";
 "type.amenity.parking_entrance.permissive" = "Ulaz u parkiralište";
-"type.cuisine.italian_pizza" = "Italian, Pizza";
 "type.cuisine.barbecue" = "Barbecue";
 "type.cuisine.bavarian" = "Bavarian";
 "type.natural.volcano" = "Volcano";

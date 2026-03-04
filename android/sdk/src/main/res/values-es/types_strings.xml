@@ -1510,4 +1510,6 @@
     <string name="type.emergency.access_point.address">Dirección de Punto de Emergencia</string>
     <string name="type.waterway.fuel">Gasolinera marina</string>
     <string name="type.amenity.community_centre.youth_centre">Centro juvenil</string>
+    <string name="type.shop.water">Empresas especializadas en la venta de sistemas de tratamiento de agua</string>
+    <string name="type.attraction">Atracción</string>
 </resources>

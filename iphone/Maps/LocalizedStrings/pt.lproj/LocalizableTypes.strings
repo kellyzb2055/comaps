@@ -1349,13 +1349,13 @@
 "type.tourism.artwork.painting" = "Pintura";
 "type.tourism.artwork.sculpture" = "Escultura";
 "type.tourism.artwork.statue" = "Estátua";
-"type.tourism.attraction" = "Atração turística";
+"type.tourism.attraction" = "Atração Turística";
 "type.attraction.amusement_ride" = "Atração de parque de diversão";
 "type.attraction.animal" = "Recinto para animais";
 "type.attraction.bumper_car" = "Carrinhos de choque";
 "type.attraction.big_wheel" = "Roda-gigante";
 "type.attraction.carousel" = "Carrossel";
-"type.attraction.historic" = "Atração histórica";
+"type.attraction.historic" = "Atração Histórica";
 "type.attraction.maze" = "Labirinto";
 "type.attraction.roller_coaster" = "Montanha-russa";
 "type.attraction.water_slide" = "Escorrega aquático";
@@ -1600,5 +1600,5 @@
 "type.railway.miniature" = "Ferrovia em Miniatura";
 "type.waterway.fuel" = "Doca de Combustível Marinha";
 "type.amenity.community_centre.youth_centre" = "Centro Juvenil";
-"type.shop.water" = "Water Shop";
-"type.attraction" = "Attraction";
+"type.shop.water" = "Loja de Água";
+"type.attraction" = "Atração";

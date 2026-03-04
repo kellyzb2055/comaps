@@ -730,7 +730,6 @@
 "type.landuse.brownfield" = "Brownfield";
 "type.place.city" = "City";
 "type.amenity.parking_entrance.permissive" = "Parking Entrance";
-"type.cuisine.italian_pizza" = "Italian, Pizza";
 "type.barrier.kissing_gate" = "কিসিঙ্গ গেট";
 "type.barrier.lift_gate" = "লিফ্ট গেট";
 "type.barrier.retaining_wall" = "Retaining Wall";

@@ -63,13 +63,13 @@
 "add_new_set" = "Добавить список";
 
 /* Add Bookmark list dialog - hint when the list name is empty */
-"bookmark_set_name" = "Название списка меток";
+"bookmark_set_name" = "Название списка";
 
 /* "Bookmark Lists" dialog title */
 "bookmark_sets" = "Списки меток";
 
 /* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
-"bookmarks" = "Метки";
+"bookmarks" = "Места";
 
 /* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
 "bookmarks_and_tracks" = "Избранное";
@@ -157,13 +157,13 @@
 "share_bookmarks_email_body" = "Здравствуйте!\n\nВ прикреплённом файле мои метки из офлайновых карт CoMaps. Для того чтобы открыть этот файл, вам потребуется приложение CoMaps, которое можно установить по ссылке: https://www.comaps.app/download/\n\nСпасибо!";
 
 /* message title of loading file */
-"load_kmz_title" = "Загрузка меток";
+"load_kmz_title" = "Загрузка избранных";
 
 /* Kmz file successful loading */
-"load_kmz_successful" = "Метки успешно загружены! Вы можете увидеть их на карте или в ваших сохранённых метках.";
+"load_kmz_successful" = "Избранные успешно загружены! Вы можете увидеть их на карте или в Ваших Избранных.";
 
 /* Kml file loading failed */
-"load_kmz_failed" = "Файл с метками не был загружен. Возможно, файл повреждён или неисправен.";
+"load_kmz_failed" = "Файл с избранными не был загружен. Возможно, файл повреждён или неисправен.";
 
 /* resource for context menu */
 "edit" = "Редактировать";
@@ -673,7 +673,7 @@
 "placepage_more_button" = "Ещё";
 "book_button" = "Забронировать";
 "placepage_call_button" = "Позвонить";
-"placepage_edit_bookmark_button" = "Редактировать метку";
+"placepage_edit_bookmark_button" = "Редактировать избранное место";
 "placepage_bookmark_name_hint" = "Название метки";
 "placepage_personal_notes_hint" = "Примечание (текст или html)";
 "placepage_delete_bookmark_button" = "Удалить метку";
@@ -734,7 +734,7 @@
 /* "traffic" as in "road congestion" */
 "traffic_data_unavailable" = "Данные о пробках недоступны";
 "enable_logging" = "Включить запись логов";
-"log_file_size" = "Размер файла логов: %@";
+"log_file_size" = "Размер лог-файла: %@";
 "transliteration_title" = "Транслитерация в латиницу";
 
 /* Subway exits for public transport marks on the map */
@@ -764,7 +764,7 @@
 "bookmarks_create_new_group" = "Создать новый список";
 
 /* Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files */
-"bookmarks_import" = "Импортировать метки и треки";
+"bookmarks_import" = "Импортировать Избранные";
 "downloader_hide_screen" = "Скрыть";
 "downloader_percent" = "%@ (%@ из %@)";
 "downloader_process" = "Загрузка %@…";
@@ -1091,7 +1091,7 @@
 "pref_mapappearance_title" = "Оформление карты";
 "transliteration_title_disabled_summary" = "Отключено при постоянном использовании местного языка для карты";
 "pref_maplanguage_title" = "Язык карты";
-"pref_maplanguage_local" = "Местный язык";
+"pref_maplanguage_local" = "Местный Язык";
 "existence_confirmed_time_ago" = "Существование подтверждено %@";
 "hours_confirmed_time_ago" = "Подтверждено %@";
 "avoid_steps" = "Избегать лестницы";

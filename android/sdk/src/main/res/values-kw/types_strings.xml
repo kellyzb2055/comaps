@@ -1296,13 +1296,13 @@
     <string name="type.tourism.artwork">Artweyth</string>
     <string name="type.tourism.artwork.architecture">Artweyth Pennsernethel</string>
     <string name="type.tourism.artwork.painting">Lymnans</string>
-    <string name="type.tourism.attraction">Tennvos</string>
+    <string name="type.tourism.attraction">Tennvos Tornysi</string>
     <string name="type.attraction.amusement_ride">Marghogeth-Omdhidhana</string>
     <string name="type.attraction.animal">Garth Eneval</string>
     <string name="type.attraction.bumper_car">Kerri Bomm</string>
     <string name="type.attraction.big_wheel">Ros Ferris</string>
     <string name="type.attraction.carousel">Res a-Dro</string>
-    <string name="type.attraction.historic">Tennvos istorek</string>
+    <string name="type.attraction.historic">Tennvos Istorek</string>
     <string name="type.attraction.maze">Milhyntal</string>
     <string name="type.attraction.roller_coaster">Tren-Omdhidhana</string>
     <string name="type.attraction.water_slide">Slynk Dowr</string>
@@ -1415,4 +1415,6 @@
     <string name="type.emergency.disaster_help_point">Poynt Gweres Goredhom</string>
     <string name="type.waterway.fuel">Kay Petrol Porth</string>
     <string name="type.amenity.community_centre.youth_centre">Kresen Yowynkneth</string>
+    <string name="type.shop.water">Gwerthji Dowr</string>
+    <string name="type.attraction">Tennvos</string>
 </resources>

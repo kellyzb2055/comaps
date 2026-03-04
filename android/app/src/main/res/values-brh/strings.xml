@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cancel">آخه</string>
+    <string name="kilometres">کلومیٹر</string>
+    <string name="miles">میل</string>
+    <string name="about_menu_title">CoMaps نا باروٹ</string>
 </resources>

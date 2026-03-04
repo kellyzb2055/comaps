@@ -23,7 +23,7 @@
     <!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
     <string name="search_map">Søk på kartet</string>
     <!-- Location services are disabled by user alert - message -->
-    <string name="location_is_disabled_long_text">Du har for øyeblikket deaktivert alle posisjonstjenester for denne enheten eller applikasjonen. Slå dem på i «Innstillinger».</string>
+    <string name="location_is_disabled_long_text">Posisjonstjenester er slått av for denne enheten eller appen. Slå dem på i «Innstillinger».</string>
     <!-- A dialog title, that warns a user that Precise Location is disabled and suggests to turn it on -->
     <string name="limited_accuracy">Begrenset nøyaktighet</string>
     <!-- A dialog text, that warns a user that Precise Location is disabled and suggests to turn it on -->
@@ -920,4 +920,9 @@
     <string name="pref_alt_map_lang_handling_system_order">Bruk i systemrekkefølge</string>
     <string name="pref_openexternallinks_title">Åpne tredje-parts lenker automatisk</string>
     <string name="pref_openexternallinks_summary">Åpne tredje-parts lenker i CoMaps som standard</string>
+    <string name="route_recalculating">Beregner ruten på nytt…</string>
+    <string name="stop">Stopp</string>
+    <string name="destination">Bestemmelsessted</string>
+    <string name="bookmark_share_email_subject">Følg denne lenken %1$s eller lim inn disse koordinatene %2$s i kart-appen din for å se denne posisjonen.</string>
+    <string name="my_position_share_email">Følg denne lenken %1$s eller lim inn disse koordinatene %2$s i kart-appen din for å se posisjonen min.</string>
 </resources>

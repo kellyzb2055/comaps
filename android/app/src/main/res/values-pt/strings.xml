@@ -923,4 +923,9 @@
     <string name="pref_alt_map_lang_handling_local_only">Preferir e usar apenas quando nativo</string>
     <string name="pref_openexternallinks_title">Abrir automaticamente ligações de terceiros</string>
     <string name="pref_openexternallinks_summary">Abrir ligações de terceiros no CoMaps por padrão</string>
+    <string name="bookmark_share_email_subject">Siga esta ligação %1$s ou insira estas coordenadas %2$s na sua aplicação de mapas para ver esta localização.</string>
+    <string name="my_position_share_email">Siga esta ligação %1$s ou insira estas coordenadas %2$s na sua aplicação de mapas para ver a minha localização.</string>
+    <string name="destination">Destino</string>
+    <string name="stop">Parar</string>
+    <string name="route_recalculating">Recalculando rota…</string>
 </resources>
