@@ -44,28 +44,6 @@ env:
   TZ: Etc/UTC
 
 jobs:
-  clone-repos:
-    name: Clone Git Repos
-    runs-on: mapfilemaker
-    container:
-      image: codeberg.org/comaps/maps_generator:f6d53d54f794
-      volumes:
-        - /mnt/4tbexternal:/mnt/4tbexternal
-    concurrency:
-      group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
-      cancel-in-progress: true
-    steps:
-      - uses: actions/cache@v4
-        with:
-          path: "~"
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Checkout main repo
-        shell: bash
-        run: |
-          echo "Cloning $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY branch $FORGEJO_REF_NAME"
-          cd ~
-          git clone --depth 1 --recurse-submodules --shallow-submodules -b $FORGEJO_REF_NAME --single-branch $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY.git comaps
-
   copy-coasts:
     # if: inputs.run-copy-coasts
     name: Copy Previously Generated Coasts
@@ -155,8 +133,6 @@ jobs:
     if: inputs.run-mapgen
     name: Generate Maps
     runs-on: mapfilemaker
-    needs:
-      - clone-repos
     timeout-minutes: 40320
     container:
       image: codeberg.org/comaps/maps_generator:f6d53d54f794
@@ -169,10 +145,6 @@ jobs:
       group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
       cancel-in-progress: true
     steps:
-      - uses: actions/cache@v4
-        with:
-          path: "~"
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Make output folders if necessary
         shell: bash
         run: |
@@ -187,6 +159,12 @@ jobs:
           echo "ERROR: NO SRTM"
           exit 1
           fi
+      - name: Checkout main repo
+        shell: bash
+        run: |
+          echo "Cloning $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY branch $FORGEJO_REF_NAME"
+          cd ~
+          git clone --depth 1 --recurse-submodules --shallow-submodules -b $FORGEJO_REF_NAME --single-branch $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY.git comaps
       - name: Run docker_maps_generator.sh
         shell: bash
         run: |
