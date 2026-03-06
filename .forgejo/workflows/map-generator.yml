@@ -17,11 +17,6 @@ on:
         required: false
         default: true
         type: boolean
-      run-mapgen:
-        description: 'Run maps generation?'
-        required: false
-        default: true
-        type: boolean
       map-generator-continue:
         description: 'Continue previous map generation?'
         required: false
@@ -44,92 +39,7 @@ env:
   TZ: Etc/UTC
 
 jobs:
-  copy-coasts:
-    if: inputs.run-copy-coasts
-    name: Copy Previously Generated Coasts
-    runs-on: mapfilemaker
-    container:
-      image: codeberg.org/comaps/maps_generator:f6d53d54f794
-      volumes:
-        - /mnt/4tbexternal/:/mnt/4tbexternal/
-        - /mnt/4tbexternal/osm-planet:/home/planet
-    concurrency:
-      group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
-      cancel-in-progress: true
-    steps:
-      - name: Copy Coasts
-        shell: bash
-        run: |
-          echo "WorldCoasts available:"
-          ls -al /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.*
-
-          if [ -f /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.geom ]; then
-
-          echo "Before:"
-          ls -al /home/planet/latest_coasts*
-          # TODO: don't copy coasts from test generations
-          cp -p /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.geom /home/planet/latest_coasts.geom
-          cp -p /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.rawgeom /home/planet/latest_coasts.rawgeom
-
-          echo "After:"
-          ls -al /home/planet/latest_coasts*
-
-          else
-
-          echo "No WorldCoasts found."
-
-          fi
-
-
-  update-planet-o5m:
-    if: inputs.run-planet-o5m
-    name: Update O5M Planet
-    runs-on: mapfilemaker
-    container:
-      image: codeberg.org/comaps/maps_generator:f6d53d54f794
-      volumes:
-        - /mnt/4tbexternal/:/mnt/4tbexternal/
-        - /mnt/4tbexternal/osm-planet:/home/planet
-    concurrency:
-      group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
-      cancel-in-progress: true
-    steps:
-      - name: Check for O5M Planet File
-        shell: bash
-        run: |
-          if [ ! -f /home/planet/planet/planet.o5m ]; then
-          echo "WARN: No file at /home/planet/planet/planet.o5m"
-
-          if [ ! -f /home/planet/planet/planet-latest.osm.pbf ]; then
-          echo "ERROR: No file at /home/planet/planet/planet-latest.osm.pbf"
-          ls -al /home/planet/planet/
-          exit 1
-          fi
-
-          echo "Converting planet-latest.osm.pbf to planet.o5m"
-          cd /home/planet/planet/
-          osmconvert -v --drop-author --drop-version --hash-memory=4000 planet-latest.osm.pbf -o=planet.o5m
-          echo "Conversion is done."
-          fi
-      - name: Update O5M planet
-        run: |
-          echo "Starting..."
-          cd /home/planet/planet/
-          rm -f planet-new.o5m
-          osmupdate -v --drop-author --drop-version --hash-memory=4000  --max-merge=32 --out-o5m planet.o5m planet-new.o5m
-          mv planet-new.o5m planet.o5m
-          echo "Done."
-      - name: Notify Zulip
-        run: |
-          curl -X POST https://comaps.zulipchat.com/api/v1/messages \
-            -u $ZULIP_BOT_EMAIL:$ZULIP_API_KEY \
-            --data-urlencode type=stream \
-            --data-urlencode 'to="DevOps"' \
-            --data-urlencode topic=codeberg-bot \
-            --data-urlencode 'content=O5M planet update is done!'
-
   generate-maps:
-    if: inputs.run-mapgen
     name: Generate Maps
     runs-on: mapfilemaker
     timeout-minutes: 3600 # 60hrs, usually takes ~35
@@ -144,6 +54,24 @@ jobs:
       group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
       cancel-in-progress: true
     steps:
+      - name: Copy worldcoasts from the previous generation
+        if: inputs.run-copy-coasts
+        continue-on-error: true
+        shell: bash
+        run: |
+          echo "WorldCoasts.* available:"
+          ls -al /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.*
+          if [ -f /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.geom ]; then
+            echo "Before:"
+            ls -alh /home/planet/latest_coasts*
+            # TODO: don't copy coasts from test generations
+            cp -p /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.geom /home/planet/latest_coasts.geom
+            cp -p /mnt/4tbexternal/osm-maps/*/intermediate_data/WorldCoasts.rawgeom /home/planet/latest_coasts.rawgeom
+            echo "After:"
+            ls -alh /home/planet/latest_coasts*
+          else
+            echo "No WorldCoasts found."
+          fi
       - name: Checkout main repo
         shell: bash
         run: |
@@ -172,6 +100,36 @@ jobs:
           cd ~/comaps
           export SKIP_MAP_DOWNLOAD=1 SKIP_GENERATE_SYMBOLS=1 SKIP_GENERATE_STRINGS=1
           ./configure.sh
+      - name: Check O5M planet file exists
+        shell: bash
+        run: |
+          if [ ! -f /home/planet/planet/planet.o5m ]; then
+            echo "WARN: No file at /home/planet/planet/planet.o5m"
+            if [ ! -f /home/planet/planet/planet-latest.osm.pbf ]; then
+              echo "ERROR: No file at /home/planet/planet/planet-latest.osm.pbf"
+              ls -al /home/planet/planet/
+              exit 1
+            fi
+          echo "Converting planet-latest.osm.pbf to planet.o5m"
+          cd /home/planet/planet/
+          osmconvert -v --drop-author --drop-version --hash-memory=4000 planet-latest.osm.pbf -o=planet.o5m
+          echo "Conversion is done."
+          fi
+      - name: Update O5M planet
+        if: inputs.run-planet-o5m
+        run: |
+          echo "Starting..."
+          cd /home/planet/planet/
+          rm -f planet-new.o5m
+          osmupdate -v --drop-author --drop-version --hash-memory=4000  --max-merge=32 --out-o5m planet.o5m planet-new.o5m
+          mv planet-new.o5m planet.o5m
+          echo "Done."
+          curl -X POST https://comaps.zulipchat.com/api/v1/messages \
+            -u $ZULIP_BOT_EMAIL:$ZULIP_API_KEY \
+            --data-urlencode type=stream \
+            --data-urlencode 'to="DevOps"' \
+            --data-urlencode topic=codeberg-bot \
+            --data-urlencode 'content=O5M planet is updated for maps generation.'
       - name: Generate maps
         shell: bash
         run: |
@@ -180,6 +138,12 @@ jobs:
             echo "ERROR: NO SRTM"
             exit 1
           fi
+          curl -X POST https://comaps.zulipchat.com/api/v1/messages \
+            -u $ZULIP_BOT_EMAIL:$ZULIP_API_KEY \
+            --data-urlencode type=stream \
+            --data-urlencode 'to="DevOps"' \
+            --data-urlencode topic=codeberg-bot \
+            --data-urlencode 'content=Starting maps generation.'
           mkdir -p /mnt/4tbexternal/osm-maps
           cd ~/comaps
           bash ./tools/unix/maps/docker_maps_generator.sh
@@ -221,4 +185,4 @@ jobs:
             --data-urlencode type=stream \
             --data-urlencode 'to="DevOps"' \
             --data-urlencode topic=codeberg-bot \
-            --data-urlencode 'content=Generator is done!'
+            --data-urlencode 'content=Maps generation is finished!'
