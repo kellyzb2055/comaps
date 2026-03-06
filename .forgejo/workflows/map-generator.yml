@@ -97,6 +97,19 @@ jobs:
             fi
           done
           echo "Intermediate data cleaned up."
+      - name: Check for enough free space
+        shell: bash
+        run: |
+          cd /mnt/4tbexternal/osm-maps
+          KB=`df -k --output=avail . | tail -n1`
+          GB=$(( KB/1024/1024 ))
+          echo "Free space available: $GB GB"
+          if [ $MWMCONTINUE == "true" ] || [[ -n $MWMCOUNTRIES ]]; then
+            echo "Skip free space check for continued or partial generations."
+          elif [[ $GB -lt 650 ]]; then
+            echo "ERROR: Need at least 650 GB free space for whole planet generation"
+            exit 1
+          fi
       - name: Checkout main repo
         shell: bash
         run: |
