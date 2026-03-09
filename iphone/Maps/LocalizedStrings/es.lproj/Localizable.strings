@@ -1105,7 +1105,6 @@
 "voice_explanation_before_version26" = "Es posible elegir ana mejor voz en el la configuración del sistema bajo *Accesibilidad*, *Contenido leído*, *Voces*.";
 "pref_alt_map_lang_handling" = "Idiomas del mapa alternativos";
 "pref_alt_map_lang_handling_system_order" = "Usar según el orden del sistema";
-"rooms" = "%@ habitaciones";
 "pref_alt_map_lang_handling_local_only" = "Dar preferencia y utilizar únicamente cuando sea el idioma local";
 "pref_alt_map_lang_handling_ignore_alternatives" = "No usar alternativas";
 "general" = "General";

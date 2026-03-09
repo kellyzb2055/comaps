@@ -1097,7 +1097,6 @@
 "offline_explanation_title" = "Hărti Offline";
 "voice" = "Voce";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";
-"rooms" = "%@ camere";
 "general" = "General";
 "interface" = "Interface";
 "contribute_to_osm_add_place" = "Add Place";

@@ -1106,7 +1106,6 @@
 "pref_alt_map_lang_handling_local_only" = "Preferir e usar apenas quando nativo";
 "pref_alt_map_lang_handling" = "Idiomas do mapa alternativos";
 "pref_alt_map_lang_handling_system_order" = "Usar na ordem do sistema";
-"rooms" = "%@ salas";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Não usar alternativas";
 "general" = "Geral";
 "interface" = "Interface";

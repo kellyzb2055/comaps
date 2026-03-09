@@ -1106,7 +1106,6 @@
 "pref_alt_map_lang_handling_local_only" = "偏好而且只在原生使用";
 "pref_alt_map_lang_handling" = "其他地圖語言";
 "pref_alt_map_lang_handling_system_order" = "在系統命令中使用";
-"rooms" = "%@ 房間";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";
 "general" = "General";
 "interface" = "Interface";

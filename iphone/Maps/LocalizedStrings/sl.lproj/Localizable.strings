@@ -600,7 +600,6 @@
 "pref_alt_map_lang_handling_local_only" = "Uporabljaj prednostno in samo kjer je domače";
 "pref_alt_map_lang_handling" = "Alternativni jeziki zemljevida";
 "pref_alt_map_lang_handling_system_order" = "Uporabi v sistemskem vrstne redu";
-"rooms" = "%@ sob";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Ne uporabljaj alternativ";
 "general" = "General";
 "interface" = "Interface";

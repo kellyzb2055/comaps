@@ -601,7 +601,6 @@
 "pref_alt_map_lang_handling" = "மாற்று வரைபட மொழிகள்";
 "pref_alt_map_lang_handling_system_order" = "கணினி வரிசையில் பயன்படுத்து";
 "pref_alt_map_lang_handling_local_only" = "பூர்வீகமாக இருக்கும் இடத்தில் மட்டுமே பயன்படுத்து";
-"rooms" = "%@ அறைகள்";
 "general" = "General";
 "interface" = "Interface";
 "contribute_to_osm_add_place" = "Add Place";

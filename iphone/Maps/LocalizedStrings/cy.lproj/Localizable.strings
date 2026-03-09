@@ -588,7 +588,6 @@
 "osm_profile_reauthorize" = "Reconnect with OpenStreetMap";
 "existence_confirmed_time_ago" = "Existence confirmed %@";
 "hours_confirmed_time_ago" = "Cadarnhawyd %@";
-"rooms" = "%@ ystafell";
 "offline_explanation_title" = "Mapiau All-lein";
 "offline_explanation_text" = "Mae angen lawrlwytho map i weld a phori'r ardal.\nLawrlwythwch fapiau ar gyfer ardaloedd rydych am deithio iddynt.";
 "avoid_steps" = "Osgoi grisiau";

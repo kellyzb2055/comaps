@@ -1106,7 +1106,6 @@
 "pref_alt_map_lang_handling" = "备选地图语言";
 "pref_alt_map_lang_handling_system_order" = "按系统顺序使用";
 "pref_alt_map_lang_handling_local_only" = "优先使用并仅在使用本地语言时使用";
-"rooms" = "%@ 房间";
 "pref_alt_map_lang_handling_ignore_alternatives" = "不使用备选语言";
 "general" = "常规";
 "interface" = "界面";

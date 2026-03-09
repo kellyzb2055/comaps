@@ -1106,7 +1106,6 @@
 "pref_alt_map_lang_handling_local_only" = "Privilégier la langue locale lorsqu'elle existe";
 "pref_alt_map_lang_handling" = "Langues alternatives pour les cartes";
 "pref_alt_map_lang_handling_system_order" = "Utiliser l'ordre système";
-"rooms" = "%@ pièces";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Ne pas utiliser d'alternative";
 "general" = "Général";
 "interface" = "Interface";

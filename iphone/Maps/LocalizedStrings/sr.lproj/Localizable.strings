@@ -1104,7 +1104,6 @@
 "pref_alt_map_lang_handling_local_only" = "Преферирају и користе само тамо где матерњи";
 "pref_alt_map_lang_handling" = "Алтернативни језици мапе";
 "pref_alt_map_lang_handling_system_order" = "Користите системски редослед";
-"rooms" = "%@ собе";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Не користите алтернативе";
 "general" = "General";
 "interface" = "Interface";
