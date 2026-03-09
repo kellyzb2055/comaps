@@ -716,6 +716,8 @@
     <string name="capacity">Capacity: %s</string>
     <!-- To indicate the network of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="network">Network: %s</string>
+    <!-- Population of cities, towns, etc. -->
+    <string name="population">Population: %s</string>
     <string name="trip_finished">You have arrived!</string>
     <string name="ok">OK</string>
     <!-- max. 10 symbols, both iOS and Android -->
@@ -992,5 +994,4 @@
     <string name="route_recalculating">Recalculating the route…</string>
     <string name="pref_openexternallinks_title">Automatically open third-party links</string>
     <string name="pref_openexternallinks_summary">Open third-party links in CoMaps by default</string>
-    <string name="population">residents</string>
 </resources>

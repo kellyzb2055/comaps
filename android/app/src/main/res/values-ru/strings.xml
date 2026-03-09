@@ -652,6 +652,8 @@
     <string name="capacity">Вместимость: %s</string>
     <!-- To indicate the network of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="network">Сеть: %s</string>
+    <!-- Population of cities, towns, etc. -->
+    <string name="population">Население: %s</string>
     <string name="trip_finished">Вы прибыли!</string>
     <string name="ok">Ок</string>
     <!-- max. 10 symbols, both iOS and Android -->

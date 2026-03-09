@@ -81,9 +81,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textview.MaterialTextView;
-
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -713,14 +711,23 @@ public class PlacePageView extends Fragment
     final String outdoorSeating = mMapObject.getMetadata(Metadata.MetadataType.FMD_OUTDOOR_SEATING);
     refreshMetadataOrHide(outdoorSeating.equals("yes") ? getString(R.string.outdoor_seating) : "", mOutdoorSeating,
                           mTvOutdoorSeating);
-    DecimalFormat populationFormat = new DecimalFormat("#,###");
-    populationFormat.setGroupingUsed(true);
-    populationFormat.setGroupingSize(3);
-    populationFormat.setDecimalFormatSymbols(new DecimalFormatSymbols(Locale.getDefault()) {{
-      setGroupingSeparator(' ');
-    }});
-    final String population = mMapObject.getMetadata(Metadata.MetadataType.FMD_POPULATION);
-      refreshMetadataOrHide(!TextUtils.isEmpty(population) ? populationFormat.format(Long.parseLong(population)) + " " + getString(R.string.population) : "", mPopulation, mTvPopulation);
+
+    String population = mMapObject.getMetadata(Metadata.MetadataType.FMD_POPULATION);
+    if (!TextUtils.isEmpty(population))
+    {
+      try
+      {
+        final long populationInt = Long.parseLong(population);
+        population = getString(R.string.population, NumberFormat.getIntegerInstance().format(populationInt));
+      }
+      catch (NumberFormatException e)
+      {
+        population = "";
+      }
+    }
+    else
+      population = "";
+    refreshMetadataOrHide(population, mPopulation, mTvPopulation);
 
     final String lastChecked = mMapObject.getMetadata(Metadata.MetadataType.FMD_CHECK_DATE);
     if (!lastChecked.isEmpty())
@@ -1113,7 +1120,7 @@ public class PlacePageView extends Fragment
     else if (id == R.id.ll__place_outdoor_seating)
       items.add(mTvOutdoorSeating.getText().toString());
     else if (id == R.id.ll__place_population)
-        items.add(mTvPopulation.getText().toString());
+      items.add(mTvPopulation.getText().toString());
 
     final Context context = requireContext();
     if (items.size() == 1)
