@@ -18,18 +18,6 @@
     <!-- SECTION: Strings for downloading map from search -->
     <string name="editor_zip_code">Postcode</string>
     <string name="error_enter_correct_zip_code">Enter a valid postcode</string>
-    <plurals name="bookmarks_places">
-        <item quantity="one">%d place</item>
-        <item quantity="other">%d places</item>
-    </plurals>
-    <plurals name="bookmarks_detect_message">
-        <item quantity="one">%d file was found. You can see it after conversion.</item>
-        <item quantity="other">%d files were found. You can see them after conversion.</item>
-    </plurals>
-    <plurals name="tracks">
-        <item quantity="one">%d track</item>
-        <item quantity="other">%d tracks</item>
-    </plurals>
     <string name="subway">Metro</string>
     <string name="avoid_motorways">Avoid motorways</string>
     <!-- SECTION: Bookmark types used for sorting -->
@@ -37,12 +25,6 @@
     <string name="transit_not_found">Metro navigation in this region is not available yet</string>
     <string name="dialog_pedestrian_route_is_long_header">No metro route found</string>
     <string name="dialog_pedestrian_route_is_long_message">Please choose a start or end point closer to a metro station</string>
-    <string name="dialog_routing_location_turn_on">Enable location services</string>
-    <string name="panoramax">Panoramax Picture</string>
-    <plurals name="minutes_short">
-        <item quantity="one">%d min</item>
-        <item quantity="other">%d mins</item>
-    </plurals>
     <string name="bookmarks_and_tracks">Favourites</string>
     <string name="share_bookmarks_email_subject">My CoMaps Favourites</string>
     <string name="share_bookmarks_email_body">Hello! \n \nAttached are my Favourites, please open them in CoMaps. If you don\'t have it installed you can download it here: https://www.comaps.app/download/ \n \nEnjoy travelling with CoMaps!</string>

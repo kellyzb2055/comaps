@@ -438,7 +438,7 @@
     <string name="closes_day_at">Closes on %1$s at %2$s</string>
     <plurals name="minutes_short">
       <item quantity="one">%d min</item>
-      <item quantity="other">%d min</item>
+      <item quantity="other">%d mins</item>
     </plurals>
     <!-- Used in the opening_hours fragment for the last checked date, eg. "Confirmed two weeks ago" -->
     <string name="hours_confirmed_time_ago">Confirmed %s</string>
