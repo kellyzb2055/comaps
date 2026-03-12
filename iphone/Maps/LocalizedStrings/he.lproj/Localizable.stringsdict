@@ -12,8 +12,12 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
+			<key>zero</key>
+			<string>אין סימניות</string>
 			<key>one</key>
-			<string>סימניה %d</string>
+			<string>סימנייה אחת</string>
+			<key>two</key>
+			<string>שתי סימניות</string>
 			<key>other</key>
 			<string>%d סימניות</string>
 		</dict>
@@ -29,9 +33,11 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>נמצא %d קובץ. תוכלו לראות אותו לאחר ההמרה.</string>
+			<string>נמצא קובץ אחד. יהיה אפשר לראות אותו לאחר ההמרה.</string>
+			<key>two</key>
+			<string>נמצאו %d קבצים. יהיה אפשר לראות אותם לאחר ההמרה.</string>
 			<key>other</key>
-			<string>נמצאו %d קבצים. תוכלו לראות אותם לאחר ההמרה.</string>
+			<string>נמצאו %d קבצים. יהיה אפשר לראות אותם לאחר ההמרה.</string>
 		</dict>
 	</dict>
 	<key>tracks</key>
@@ -45,7 +51,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>מסלול %d</string>
+			<string>מסלול אחד</string>
+			<key>two</key>
+			<string>שני מסלולים</string>
 			<key>other</key>
 			<string>%d מסלולים</string>
 		</dict>

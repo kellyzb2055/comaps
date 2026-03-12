@@ -62,5 +62,45 @@
 			<string>%d recorreguts</string>
 		</dict>
 	</dict>
+	<key>population</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>Cap resident</string>
+			<key>one</key>
+			<string>%lld resident</string>
+			<key>many</key>
+			<string>%lld residents</string>
+			<key>other</key>
+			<string>%lld residents</string>
+		</dict>
+	</dict>
+	<key>rooms</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>Cap habitació</string>
+			<key>one</key>
+			<string>%lld habitació</string>
+			<key>many</key>
+			<string>%lld habitacions</string>
+			<key>other</key>
+			<string>%lld habitacions</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

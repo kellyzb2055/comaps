@@ -219,7 +219,7 @@
     <!-- Settings «Route» category: «Test Voice Directions» title -->
     <string name="pref_tts_test_voice_title">Testuj wskazówki głosowe</string>
     <!-- Settings «Route» category: Pop-up message when clicking «Test Voice Directions» -->
-    <string name="pref_tts_playing_test_voice">Jeśli nie słyszysz głosu, sprawdź głośność lub systemowe ustawienia zamiany tekstu na mowę.</string>
+    <string name="pref_tts_playing_test_voice">Jeśli nie słyszysz głosu, sprawdź głośność lub systemowe ustawienia zamiany tekstu na mowę</string>
     <!-- Settings «Route» category: «Tts unavailable» subtitle -->
     <string name="pref_tts_unavailable">Niedostępne</string>
     <string name="pref_map_auto_zoom">Automatyczne powiększanie</string>
@@ -232,7 +232,7 @@
     <!-- Text in About menu, opens CoMaps news website -->
     <string name="news">Wiadomości</string>
     <!-- Settings: Send feedback button and dialog title -->
-    <string name="feedback">Informacja zwrotna</string>
+    <string name="feedback">Opinia</string>
     <!-- Text in menu -->
     <string name="rate_the_app">Oceń aplikację</string>
     <!-- Text in menu -->
@@ -939,4 +939,9 @@
     <string name="not_following_route">Bez podążania trasą</string>
     <string name="pref_openexternallinks_title">Automatycznie otwieraj odnośniki stron trzecich</string>
     <string name="pref_openexternallinks_summary">Domyślnie otwieraj odnośniki stron trzecich w CoMaps</string>
+    <string name="population">Liczba ludności: %s</string>
+    <string name="destination">Cel</string>
+    <string name="stop">Punkt pośredni</string>
+    <string name="charge_socket_type1_combo">Typ 1 combo</string>
+    <string name="route_recalculating">Ponowne obliczanie trasy…</string>
 </resources>

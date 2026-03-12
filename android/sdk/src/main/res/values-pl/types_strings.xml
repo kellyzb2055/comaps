@@ -1506,4 +1506,6 @@
     <string name="type.waterway.fuel">Stacji paliw dla łodzi motorowych</string>
     <string name="type.shop.water">Sklep z wodą pitną</string>
     <string name="type.attraction">Atrakcja</string>
+    <string name="type.amenity.community_centre.youth_centre">Centrum młodzieżowe</string>
+    <string name="type.emergency.disaster_help_point">Punkt pomocy dla ofiar klęski żywiołowej</string>
 </resources>

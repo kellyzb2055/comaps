@@ -62,5 +62,37 @@
 			<string>%d треков</string>
 		</dict>
 	</dict>
+	<key>rooms</key>
+	<dict>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld комната</string>
+			<key>few</key>
+			<string>%lld комнаты</string>
+			<key>many</key>
+			<string>%lld комнат</string>
+		</dict>
+	</dict>
+	<key>population</key>
+	<dict>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>%lld житель</string>
+			<key>few</key>
+			<string>%lld жителя</string>
+			<key>many</key>
+			<string>%lld жителей</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

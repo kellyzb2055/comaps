@@ -389,7 +389,7 @@
 "type.beacon.lateral.port" = "Боковой маяк";
 "type.beacon.lateral.starboard" = "Боковой маяк";
 "type.beacon.safe_water" = "Маяк Безопасной Воды";
-"type.beacon.special_purpose" = "Special Purpose Beacon";
+"type.beacon.special_purpose" = "Специальный маяк";
 "type.buoy.cardinal.east" = "Cardinal Buoy";
 "type.buoy.cardinal.north" = "Кардинальский буй";
 "type.buoy.cardinal.south" = "Кардинальский буй";

@@ -265,7 +265,7 @@
 "type.craft.brewery" = "Cervejaria artesanal";
 "type.craft.caterer" = "Serviço de bufê";
 "type.craft.carpenter" = "Carpinteiro";
-"type.craft.confectionery" = "Confeitaria";
+"type.craft.confectionery" = "Doceiro(a)";
 "type.craft.electrician" = "Eletricista";
 "type.craft.electronics_repair" = "Reparo de eletrônicos";
 "type.craft.gardener" = "Jardineiro";
@@ -1249,7 +1249,7 @@
 "type.shop.clothes" = "Loja de roupas";
 "type.shop.coffee" = "Loja de café";
 "type.shop.computer" = "Loja de informática";
-"type.shop.confectionery" = "Confeitaria";
+"type.shop.confectionery" = "Doceria";
 "type.shop.convenience" = "Loja de conveniência";
 "type.shop.copyshop" = "Copiadora";
 "type.shop.cosmetics" = "Loja de cosméticos";

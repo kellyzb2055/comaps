@@ -1510,4 +1510,5 @@
     <string name="type.tourism.information.tactile_map">Тактильная Карта</string>
     <string name="type.waterway.fuel">Топливный док для марин</string>
     <string name="type.xmas.tree">Рождественская Ёлка</string>
+    <string name="type.beacon.special_purpose">Специальный маяк</string>
 </resources>

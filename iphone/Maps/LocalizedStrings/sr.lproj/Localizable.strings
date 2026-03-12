@@ -862,11 +862,11 @@
 "track_recording_toast_nothing_to_save" = "Путања је празна, нема шта да се сачува";
 "edit_track" = "Измените путању";
 /* Title of the general section in settings */
-"general" = "General";
+"general" = "Опште";
 /* Title of the interface section in settings */
-"interface" = "Interface";
+"interface" = "Изглед";
 /* OpenStreetMap contribution section on the PlacePage. */
-"contribute_to_osm" = "Contribute to OpenStreetMap";
-"contribute_to_osm_add_place" = "Add Place";
-"contribute_to_osm_update_map" = "Update the Map to Contribute";
-"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
+"contribute_to_osm" = "Допринесите на OpenStreetMap";
+"contribute_to_osm_add_place" = "Додај место";
+"contribute_to_osm_update_map" = "Ажурирајте мапу ради доприноса";
+"contribute_to_osm_update_map_description" = "Морате да ажурирате мапу %@ на најновију верзију да бисте могли да допринесете подацима OpenStreetMap";

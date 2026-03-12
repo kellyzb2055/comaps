@@ -889,10 +889,10 @@
     <string name="editor_mark_business_vacant_description">Použijte, pokud se podnik přestěhoval a místo je volné a připravené pro nového zájemce.</string>
     <string name="editor_submit">Odeslat</string>
     <plurals name="minutes_short">
-        <item quantity="one">%d min</item>
-        <item quantity="few">%d min</item>
-        <item quantity="many">%d min</item>
-        <item quantity="other">%d min</item>
+        <item quantity="one">%d min.</item>
+        <item quantity="few">%d min.</item>
+        <item quantity="many">%d min.</item>
+        <item quantity="other">%d min.</item>
     </plurals>
     <string name="power_management">Správa výkonu</string>
     <string name="charge_socket_schuko">Domovní EU</string>
@@ -934,4 +934,5 @@
     <string name="destination">Cíl</string>
     <string name="stop">Zastávka</string>
     <string name="charge_socket_type1_combo">Typ 1 combo</string>
+    <string name="population">Počet obyvatel: %s</string>
 </resources>

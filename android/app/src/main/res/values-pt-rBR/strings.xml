@@ -866,7 +866,7 @@
     <string name="closes_day_at">Fecha %1$s às %2$s</string>
     <plurals name="minutes_short">
         <item quantity="one">%d min</item>
-        <item quantity="many">%d min</item>
+        <item quantity="many"></item>
         <item quantity="other">%d min</item>
     </plurals>
     <string name="editor_business_vacant_button">Local está desocupado</string>
@@ -913,4 +913,5 @@
     <string name="stop">Parar</string>
     <string name="charge_socket_type1_combo">Tipo 1 combo</string>
     <string name="route_recalculating">Recalculando rota…</string>
+    <string name="population">População: %s</string>
 </resources>

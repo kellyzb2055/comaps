@@ -947,4 +947,5 @@
     <string name="stop">أوقِف</string>
     <string name="route_recalculating">يعيد حساب المسار…</string>
     <string name="charge_socket_type1_combo">النوع 1 كومبو</string>
+    <string name="population">السكان: %s</string>
 </resources>

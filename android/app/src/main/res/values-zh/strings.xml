@@ -859,7 +859,7 @@
     <string name="osm_note_hint">或者，也可以为 OpenStreetMap 社区留下注记，以便其他人可以在此添加或修复地点。</string>
     <string name="osm_note_toast">注记将发送至 OpenStreetMap</string>
     <string name="existence_confirmed_time_ago">已于%s确认地点存在</string>
-    <string name="delete_track_dialog_title">是否删除%s？</string>
+    <string name="delete_track_dialog_title">是否删除 %s？</string>
     <string name="hours_confirmed_time_ago">已于%s确认</string>
     <string name="share_track">分享轨迹</string>
     <string name="pref_tts_no_system_tts_short">未找到文字转语音引擎，请检查应用设置</string>

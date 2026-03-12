@@ -842,7 +842,7 @@
     <string name="pref_backup_now_summary">Crear copia de seguridad inmediatamente</string>
     <string name="pref_backup_now_summary_progress">Copia de seguridad en progreso…</string>
     <string name="pref_backup_now_summary_ok">Copia de seguridad completada con éxito</string>
-    <string name="pref_backup_now_summary_empty_lists">No hay marcadores ni trayectos para hacer un respaldo</string>
+    <string name="pref_backup_now_summary_empty_lists">No hay favoritos para hacer un respaldo</string>
     <string name="pref_backup_now_summary_failed">Copia de seguridad fallida</string>
     <string name="pref_backup_now_summary_folder_unavailable">La carpeta de copia de seguridad no está disponible</string>
     <string name="pref_backup_location_summary_initial">Selecciona por favor primero una carpeta y concede permiso</string>
@@ -941,4 +941,5 @@
     <string name="route_recalculating">Recalculando la ruta…</string>
     <string name="bookmark_share_email_subject">Sigue este enlace %1$s o pega estas coordenadas %2$s en tu aplicación de mapas para ver esta ubicación.</string>
     <string name="my_position_share_email">Sigue este enlace %1$s o pega estas coordenadas %2$s en tu aplicación de mapas para ver mi ubicación.</string>
+    <string name="charge_socket_type1_combo">Tipo 1 combo</string>
 </resources>

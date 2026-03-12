@@ -62,5 +62,45 @@
 			<string>%d stop</string>
 		</dict>
 	</dict>
+	<key>population</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>%lld obyvatel</string>
+			<key>one</key>
+			<string>%lld obyvatel</string>
+			<key>few</key>
+			<string>%lld obyvatelé</string>
+			<key>other</key>
+			<string>%lld obyvatel</string>
+		</dict>
+	</dict>
+	<key>rooms</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>%lld místností</string>
+			<key>one</key>
+			<string>%lld místnost</string>
+			<key>few</key>
+			<string>%lld místnosti</string>
+			<key>other</key>
+			<string>%lld místností</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

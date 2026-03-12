@@ -884,8 +884,8 @@
     <string name="error_value_must_be_positive">De waarde moet positief zijn</string>
     <string name="list_description_empty">Bewerk de lijst om een beschrijving toe te voegen</string>
     <plurals name="minutes_short">
-        <item quantity="one">%d min.</item>
-        <item quantity="other">%d min.</item>
+        <item quantity="one">%d min.</item>
+        <item quantity="other">%d min.</item>
     </plurals>
     <string name="opens_at">Opent om %s</string>
     <string name="closes_at">Sluit om %s</string>

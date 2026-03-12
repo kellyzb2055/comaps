@@ -77,6 +77,8 @@
 			<key>other</key>
 			<string>%lld становника</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
 	</dict>
 	<key>rooms</key>
 	<dict>
@@ -95,6 +97,8 @@
 			<key>other</key>
 			<string>%lld соба</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
 	</dict>
 </dict>
 </plist>

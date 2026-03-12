@@ -846,8 +846,8 @@
     <string name="opens_day_at">Öppnar på %1$s kl. %2$s</string>
     <string name="closes_day_at">Stänger på %1$s kl. %2$s</string>
     <plurals name="minutes_short">
-        <item quantity="one">%d min</item>
-        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
     </plurals>
     <string name="mb_downloaded">%1$d MB / %2$d MB</string>
     <string name="editor_place_doesnt_exist_description">Beskriv hur platsen ser ut nu för att skicka en felanmälan till OpenStreetMaps community</string>

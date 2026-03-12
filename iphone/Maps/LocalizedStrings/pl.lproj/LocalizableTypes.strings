@@ -61,7 +61,7 @@
 "type.amenity.clinic" = "Klinika";
 "type.amenity.college" = "Szkoła wyższa";
 "type.amenity.community_centre" = "Centrum społecznościowe";
-"type.amenity.community_centre.youth_centre" = "Youth Centre";
+"type.amenity.community_centre.youth_centre" = "Centrum młodzieżowe";
 "type.amenity.compressed_air" = "Sprężone powietrze";
 "type.amenity.conference_centre" = "Centrum konferencyjne";
 "type.amenity.courthouse" = "Sąd";
@@ -373,7 +373,7 @@
 "type.emergency.access_point" = "Punkt ratunkowy";
 "type.emergency.access_point.address" = "Emergency Rescue Address";
 "type.emergency.assembly_point" = "Miejsce zbiórki do ewakuacji";
-"type.emergency.disaster_help_point" = "Emergency Disaster Help Point";
+"type.emergency.disaster_help_point" = "Punkt pomocy dla ofiar klęski żywiołowej";
 "type.emergency.life_ring" = "Koło ratunkowe";
 "type.emergency.defibrillator" = "Defibrylator";
 "type.emergency.fire_hydrant" = "Hydrant";

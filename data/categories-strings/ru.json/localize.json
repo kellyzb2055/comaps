@@ -542,5 +542,14 @@
 "cuisine-tapas": "5Тапас-бар",
 "cuisine-tea": "3Чайная",
 "@cuisine_all_vegetarian": "Вегетарианская кухня",
-"cuisine-vegan|@cuisine_all_vegetarian": "Веганская кухня"
+"cuisine-vegan|@cuisine_all_vegetarian": "Веганская кухня",
+"shop-water|@category_water|@category_food|@shop": "4Пить Воду|3Питьевая Вода|4Бутилированная Вода",
+"amenity-boat_rental": "4Аренда лодок|лодка|лодки|3Аренда",
+"amenity-love_hotel": "4Отель Любви|3Отель Секса|4Отель для взрослых",
+"leisure-sports_centre-sport-swimming": "4Плавательный центр",
+"amenity-charging_station-motorcycle|@charging_station": "Зарядка мотоцикла",
+"amenity-community_centre-youth_centre": "Молодежный центр",
+"amenity-police|@category_police": "6Полицейский участок",
+"waterway-fuel": "Заправка для лодок|Топливный причал|ПЗС|Заправочная станция для яхт",
+"amenity-vending_machine": "Торговый Автомат"
 }

@@ -570,5 +570,7 @@
 "cuisine-tapas": "Tapas",
 "cuisine-tea": "Té",
 "@cuisine_all_vegetarian": "Cocina vegetariana",
-"cuisine-vegan|@cuisine_all_vegetarian": "Cocina vegana"
+"cuisine-vegan|@cuisine_all_vegetarian": "Cocina vegana",
+"cuisine-brazilian": "brasilera|brasileña|comida brasilera|comida brasileña",
+"cuisine-bavarian": "bávara|comida bávara"
 }
