@@ -1,6 +1,5 @@
 package app.organicmaps.bookmarks;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -9,21 +8,21 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentActivity;
+
+import com.google.android.material.imageview.ShapeableImageView;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 import app.organicmaps.R;
 import app.organicmaps.base.BaseMwmToolbarFragment;
-import app.organicmaps.dialog.EditTextDialogFragment;
 import app.organicmaps.sdk.bookmarks.data.BookmarkCategory;
 import app.organicmaps.sdk.bookmarks.data.BookmarkManager;
 import app.organicmaps.util.InputUtils;
 import app.organicmaps.util.Utils;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.google.android.material.imageview.ShapeableImageView;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+
 import java.util.Objects;
 
 public class BookmarkCategorySettingsFragment extends BaseMwmToolbarFragment
@@ -91,9 +90,6 @@ public class BookmarkCategorySettingsFragment extends BaseMwmToolbarFragment
       @Override
       public void onTextChanged(CharSequence charSequence, int start, int before, int count)
       {
-        final FragmentActivity activity = getActivity();
-        if (activity == null)
-          return;
         BookmarkCategorySettingsFragment.this.validateCategoryName(charSequence.toString());
       }
 
