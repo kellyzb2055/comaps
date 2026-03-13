@@ -1,5 +1,6 @@
 package app.organicmaps.bookmarks;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -10,8 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+
 import app.organicmaps.R;
 import app.organicmaps.base.BaseMwmToolbarFragment;
+import app.organicmaps.dialog.EditTextDialogFragment;
 import app.organicmaps.sdk.bookmarks.data.BookmarkCategory;
 import app.organicmaps.sdk.bookmarks.data.BookmarkManager;
 import app.organicmaps.util.InputUtils;
@@ -37,8 +41,18 @@ public class BookmarkCategorySettingsFragment extends BaseMwmToolbarFragment
   @SuppressWarnings("NullableProblems")
   @NonNull
   private TextInputEditText mEditCategoryNameView;
+
+  @SuppressWarnings("NullableProblems")
+  @NonNull
+  private TextInputLayout mEditCategoryNameLayout;
+
+  @SuppressWarnings("NullableProblems")
+  @NonNull
+  private CategoryValidator mInputValidator;
+
   @NonNull
   private ShapeableImageView mSaveView;
+
 
   @Override
   public void onCreate(@Nullable Bundle savedInstanceState)
@@ -47,6 +61,7 @@ public class BookmarkCategorySettingsFragment extends BaseMwmToolbarFragment
     final Bundle args = requireArguments();
     mCategory = Objects.requireNonNull(
         Utils.getParcelable(args, BookmarkCategorySettingsActivity.EXTRA_BOOKMARK_CATEGORY, BookmarkCategory.class));
+    mInputValidator = new CategoryValidator();
   }
 
   @Nullable
@@ -61,21 +76,25 @@ public class BookmarkCategorySettingsFragment extends BaseMwmToolbarFragment
   private void initViews(@NonNull View root)
   {
     mEditCategoryNameView = root.findViewById(R.id.edit_list_name_view);
-    TextInputLayout clearNameBtn = root.findViewById(R.id.edit_list_name_input);
-    clearNameBtn.setEndIconOnClickListener(v -> clearAndFocus(mEditCategoryNameView));
+    mEditCategoryNameLayout = root.findViewById(R.id.edit_list_name_input);
+    mEditCategoryNameLayout.setEndIconOnClickListener(v -> clearAndFocus(mEditCategoryNameView));
     mEditCategoryNameView.setText(mCategory.getName());
     InputFilter[] f = {new InputFilter.LengthFilter(TEXT_LENGTH_LIMIT)};
     mEditCategoryNameView.setFilters(f);
     mEditCategoryNameView.requestFocus();
+    // Add validator here
     mEditCategoryNameView.addTextChangedListener(new TextWatcher() {
       @Override
       public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
       {}
 
       @Override
-      public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
+      public void onTextChanged(CharSequence charSequence, int start, int before, int count)
       {
-        clearNameBtn.setEndIconVisible(charSequence.length() > 0);
+        final FragmentActivity activity = getActivity();
+        if (activity == null)
+          return;
+        BookmarkCategorySettingsFragment.this.validateCategoryName(charSequence.toString());
       }
 
       @Override
@@ -91,6 +110,7 @@ public class BookmarkCategorySettingsFragment extends BaseMwmToolbarFragment
   private void onEditDoneClicked()
   {
     final String newCategoryName = getEditableCategoryName();
+
     if (!validateCategoryName(newCategoryName))
       return;
 
@@ -111,26 +131,16 @@ public class BookmarkCategorySettingsFragment extends BaseMwmToolbarFragment
 
   private boolean validateCategoryName(@Nullable String name)
   {
-    if (TextUtils.isEmpty(name))
+    if (!isCategoryNameChanged())
     {
-      new MaterialAlertDialogBuilder(requireActivity(), R.style.MwmTheme_AlertDialog)
-          .setTitle(R.string.bookmarks_error_title_empty_list_name)
-          .setMessage(R.string.bookmarks_error_message_empty_list_name)
-          .setPositiveButton(R.string.ok, null)
-          .show();
-      return false;
+      mEditCategoryNameLayout.setError(null);
+      return true;
     }
 
-    if (BookmarkManager.INSTANCE.isUsedCategoryName(name) && !TextUtils.equals(name, mCategory.getName()))
-    {
-      new MaterialAlertDialogBuilder(requireActivity(), R.style.MwmTheme_AlertDialog)
-          .setTitle(R.string.bookmarks_error_title_list_name_already_taken)
-          .setMessage(R.string.bookmarks_error_message_list_name_already_taken)
-          .setPositiveButton(R.string.ok, null)
-          .show();
-      return false;
-    }
-    return true;
+    final String maybeError = mInputValidator.validate(requireActivity(), name);
+    mEditCategoryNameLayout.setError(maybeError);
+    mEditCategoryNameView.requestFocus();
+    return maybeError == null;
   }
 
   @NonNull
