@@ -737,6 +737,7 @@
     <string name="type.leisure.sports_centre.sport.baseball">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.basketball">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.beachvolleyball">Sports Centre</string>
+    <string name="type.leisure.sports_centre.sport.boules">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.bowls">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.climbing">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.cricket">Sports Centre</string>
@@ -1369,6 +1370,7 @@
     <string name="type.sport.baseball">Baseball</string>
     <string name="type.sport.basketball">Basketball</string>
     <string name="type.sport.beachvolleyball">Beach Volleyball</string>
+    <string name="type.sport.boules">Boules</string>
     <string name="type.sport.bowls">Bowls</string>
     <string name="type.sport.chess">Chess</string>
     <string name="type.sport.climbing">Climbing</string>

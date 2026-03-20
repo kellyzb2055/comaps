@@ -1062,6 +1062,7 @@ node|z16-[leisure=sports_centre],
 node|z16-[leisure=sports_centre][sport=american_football],
 node|z16-[leisure=sports_centre][sport=basketball],
 node|z16-[leisure=sports_centre][sport=baseball],
+node|z16-[leisure=sports_centre][sport=boules],
 node|z16-[leisure=sports_centre][sport=equestrian],
 node|z16-[leisure=sports_centre][sport=soccer],
 node|z16-[leisure=sports_centre][sport=four_square],
@@ -1331,6 +1332,10 @@ node|z17-[sport=baseball],
 {icon-image: baseball-m.svg;}
 node|z16-[leisure=sports_centre][sport=baseball],
 {icon-image: baseball-centre-m.svg;}
+node|z17-[sport=boules],
+{icon-image: boules-m.svg;}
+node|z16-[leisure=sports_centre][sport=boules],
+{icon-image: boules-centre-m.svg;}
 node|z17-[sport=equestrian],
 {icon-image: equestrian-m.svg;}
 node|z16-[leisure=sports_centre][sport=equestrian],

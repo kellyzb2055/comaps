@@ -2599,6 +2599,7 @@ UNIT_CLASS_TEST(TestWithClassificator, OsmType_SimpleTypesSmoke)
       {"sport", "australian_football"},
       {"sport", "baseball"},
       {"sport", "basketball"},
+      {"sport", "boules"},
       {"sport", "bowls"},
       {"sport", "cricket"},
       {"sport", "curling"},

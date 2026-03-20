@@ -52,6 +52,7 @@ leisure-sports_centre-sport-badminton               # area z13- (also has icon z
 leisure-sports_centre-sport-baseball                # area z13- (also has icon z16-, caption(optional) z16-)
 leisure-sports_centre-sport-basketball              # area z13- (also has icon z16-, caption(optional) z16-)
 leisure-sports_centre-sport-beachvolleyball         # area z13- (also has icon z16-, caption(optional) z16-)
+leisure-sports_centre-sport-boules                  # area z13- (also has icon z16-, caption(optional) z16-)
 leisure-sports_centre-sport-bowls                   # area z13- (also has icon z16-, caption(optional) z16-)
 leisure-sports_centre-sport-climbing                # area z13- (also has icon z16-, caption(optional) z16-)
 leisure-sports_centre-sport-cricket                 # area z13- (also has icon z16-, caption(optional) z16-)

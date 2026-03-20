@@ -731,6 +731,7 @@
 "type.leisure.sports_centre.sport.baseball" = "Sports Centre";
 "type.leisure.sports_centre.sport.basketball" = "Sports Centre";
 "type.leisure.sports_centre.sport.beachvolleyball" = "Sports Centre";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";
 "type.leisure.sports_centre.sport.bowls" = "Sports Centre";
 "type.leisure.sports_centre.sport.climbing" = "Sports Centre";
 "type.leisure.sports_centre.sport.cricket" = "Sports Centre";
@@ -1363,6 +1364,7 @@
 "type.sport.baseball" = "Baseball";
 "type.sport.basketball" = "Basketball";
 "type.sport.beachvolleyball" = "Beach Volleyball";
+"type.sport.boules" = "Boules";
 "type.sport.bowls" = "Bowls";
 "type.sport.chess" = "Chess";
 "type.sport.climbing" = "Climbing";
