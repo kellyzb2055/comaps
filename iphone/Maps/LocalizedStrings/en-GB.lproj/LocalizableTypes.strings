@@ -737,6 +737,7 @@
 "type.leisure.sports_centre.sport.curling" = "Sports Centre";
 "type.leisure.sports_centre.sport.equestrian" = "Sports Centre";
 "type.leisure.sports_centre.sport.field_hockey" = "Sports Centre";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
 "type.leisure.sports_centre.sport.futsal" = "Sports Centre";
 "type.leisure.sports_centre.sport.golf" = "Sports Centre";
 "type.leisure.sports_centre.sport.gymnastics" = "Sports Centre";
@@ -1370,6 +1371,7 @@
 "type.sport.diving" = "High Diving";
 "type.sport.equestrian" = "Equestrian Sports";
 "type.sport.field_hockey" = "Field Hockey";
+"type.sport.four_square" = "Four Square";
 "type.sport.futsal" = "Futsal";
 "type.sport.golf" = "Golf";
 "type.sport.gymnastics" = "Gymnastics";

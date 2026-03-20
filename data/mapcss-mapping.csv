@@ -439,7 +439,7 @@ amenity|grave_yard|christian;[amenity=grave_yard][religion=christian];;name;int_
 highway|trunk|tunnel;[highway=trunk][tunnel?];;name;int_name;326;
 highway|steps|tunnel;[highway=steps][tunnel?],[highway=steps][location=underground];;name;int_name;327;
 amenity|car_sharing;328;
-deprecated:sport|football:10.2021;329;sport|soccer
+sport|four_square;329;
 highway|steps|bridge;[highway=steps][bridge?];;name;int_name;330;
 highway|track|tunnel;[highway=track][tunnel?];;name;int_name;331;
 highway|pedestrian|tunnel;[highway=pedestrian][tunnel?],[highway=pedestrian][location=underground];;name;int_name;332;
@@ -913,7 +913,7 @@ leisure|sports_centre|sport|scuba_diving;[leisure=sports_centre][sport=scuba_div
 leisure|sports_centre|sport|shooting;[leisure=sports_centre][sport=shooting];;name;int_name;784;
 leisure|sports_centre|sport|multi;[leisure=sports_centre][sport=multi];;name;int_name;785;
 leisure|sports_centre|sport|soccer;[leisure=sports_centre][sport=soccer];;name;int_name;786;
-deprecated|deprecated;787;x
+leisure|sports_centre|sport|four_square;[leisure=sports_centre][sport=four_square];;name;int_name;787;
 deprecated|deprecated;788;x
 deprecated|deprecated;789;x
 deprecated|deprecated;790;x

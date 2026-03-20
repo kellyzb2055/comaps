@@ -743,6 +743,7 @@
     <string name="type.leisure.sports_centre.sport.curling">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.equestrian">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.field_hockey">Sports Centre</string>
+    <string name="type.leisure.sports_centre.sport.four_square">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.futsal">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.golf">Sports Centre</string>
     <string name="type.leisure.sports_centre.sport.gymnastics">Sports Centre</string>
@@ -1377,6 +1378,7 @@
     <string name="type.sport.diving">High Diving</string>
     <string name="type.sport.equestrian">Equestrian Sports</string>
     <string name="type.sport.field_hockey">Field Hockey</string>
+    <string name="type.sport.four_square">Four Square</string>    
     <string name="type.sport.futsal">Futsal</string>
     <string name="type.sport.golf">Golf</string>
     <string name="type.sport.gymnastics">Gymnastics</string>

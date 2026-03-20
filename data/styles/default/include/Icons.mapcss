@@ -1064,6 +1064,7 @@ node|z16-[leisure=sports_centre][sport=basketball],
 node|z16-[leisure=sports_centre][sport=baseball],
 node|z16-[leisure=sports_centre][sport=equestrian],
 node|z16-[leisure=sports_centre][sport=soccer],
+node|z16-[leisure=sports_centre][sport=four_square],
 node|z16-[leisure=sports_centre][sport=futsal],
 node|z16-[leisure=sports_centre][sport=tennis],
 node|z16-[leisure=sports_centre][sport=skiing],
@@ -1379,6 +1380,10 @@ node|z17-[sport=climbing],
 {icon-image: climbing-m.svg;}
 node|z16-[leisure=sports_centre][sport=climbing],
 {icon-image: climbing-centre-m.svg;}
+node|z17-[sport=four_square],
+{icon-image: four_square-m.svg;}
+node|z16-[leisure=sports_centre][sport=four_square],
+{icon-image: four_square-centre-m.svg;}
 node|z17-[sport=golf],
 {icon-image: golf-m.svg;}
 node|z16-[leisure=sports_centre][sport=golf],

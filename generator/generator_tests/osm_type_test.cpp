@@ -2604,6 +2604,7 @@ UNIT_CLASS_TEST(TestWithClassificator, OsmType_SimpleTypesSmoke)
       {"sport", "curling"},
       {"sport", "diving"},
       {"sport", "equestrian"},
+      {"sport", "four_square"},
       {"sport", "gymnastics"},
       {"sport", "handball"},
       {"sport", "multi"},
