@@ -1,10 +1,8 @@
-• OpenStreetMap-Daten vom 7. März
-• Anzeige von Nutzungsgebühren und Einwohnerzahlen
-• Korrigierte Anzeige & Routing für U-Bahnen in einigen Städten
-• Besserer Text zum Teilen von Standorten
-• „ETA“ in Navigation antippen zeigt Ankunftszeit am nächsten Halt
-• „Typ 1 Combo”-Ladedosen hinzugefügt
-• Korrigiert Sprachenanzeige von Wikipedia-Artikeln
-• Behebt Problem bei dem Streckenaufzeichnung manchmal nicht funktioniert
+• OpenStreetMap-Daten vom 21. März
+• Sportarten hinzugefügt: Boule und Four Squares
+• Tschechische, thailändische, türkische & ukrainische Wikipedia-Artikel hinzugefügt
+• Sekundäre Namen, z. B. für Straßen, in mehrsprachigen Regionen werden je Einstellung nicht angezeigt
+• Verbesserte Fortschrittsanzeige mit flüssigerer Animation
+• Unterstützung von mehr Höchstgeschwindigkeitsdefinitionen in verschiedenen Ländern
 
 Weitere Details unter comaps.app/latest

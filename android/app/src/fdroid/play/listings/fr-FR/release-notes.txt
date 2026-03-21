@@ -1,10 +1,8 @@
-• Données d'OpenStreetMap à la date du 7 mars
-• Affichage des prix d'utilisation d'installations
-• Correction de l'affichage et des itinéraires des métros de plusieurs villes
-• Amélioration du texte de partage de la localisation
-• Appuyer sur l'heure estimée d'arrivée pendant la navigation l'affiche pour le prochain arrêt
-• Affiche le nombre d'habitants des villes
-• Ajout des chargeurs "Type 1 combo"
-• Correction de la langue des articles Wikipedia
+•  Données OpenStreetMap du 21 Mars
+•  Ajout de nouveaux sports : quatre-carrés et boules
+•  Ajout des pages Wikipedia en Thaï, Turc, Ukrainien et Tchèque
+•  Suppression de l'affichage du nom alternatif (ex. pour les noms de rues dans les régions multi-langages)
+•  Animations plus fluides pour les roues de progression
+•  Support de la définition de vitesse maximale pour plus de types de routes et de pays
 
-Plus de détails sur comaps.app/latest
+Plus d'infos sur comaps.app/latest

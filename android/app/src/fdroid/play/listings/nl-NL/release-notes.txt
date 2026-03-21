@@ -1,11 +1,8 @@
-• OpenStreetMap-gegevens per 7 maart
-• Tonen van tarieven voor voorzieningen
-• Metro-weergave en -routering in enkele steden hersteld
-• Gebruiksvriendelijkere tekst voor het delen van locaties
-• Tik in navigatiemodus op de "ETA" om deze voor de volgende stop te tonen
-• Tonen van inwoneraantal bij steden, dorpen, enz.
-• "Type 1 combo"-laadpunten toegevoegd
-• Weergavetaal Wikipedia-artikelen gecorrigeerd
-• Probleem verholpen bij het opnemen van sporen
+• OpenStreetMap-gegevens per 21 maart
+• Sporten toegevoegd: jeu de boules en four square
+• Wikipedia-artikelen in het Tsjechisch, Thais, Turks en Oekraïens toegevoegd
+• Secundaire namen, afhankelijk van de instelling, niet meer getoond bij bijv. straten in meertalige regio's
+• Verbeterde ronde voortgangsindicatoren met vloeiendere animatie
+• Ondersteuning voor maximumsnelheid op meer wegtypes in verschillende landen
 
 Meer details op comaps.app/latest

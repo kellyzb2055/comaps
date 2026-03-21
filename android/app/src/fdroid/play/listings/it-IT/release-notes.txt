@@ -1,10 +1,8 @@
-• Dati OpenStreetMap aggiornati al 7 marzo
-• Mostra i costi per l'utilizzo delle strutture
-• Correzione dei problemi legati alle metropolitane in diverse città
-• Testo per la condivisione della posizione più intuitivo
-• Tocca ETA nel pannello di navigazione per visualizzarlo per la sosta successiva
-• Mostra la popolazione di città, paesi, ecc.
-• Aggiunte prese di ricarica "Combo Tipo 1"
-• Correzione di alcuni problemi nella registrazione della traccia
+• Dati OpenStreetMap aggiornati al 21 marzo
+• Aggiunti sport: four square e bocce
+• Aggiunti articoli di Wikipedia in ceco, thailandese, turco e ucraino
+• Impedita la visualizzazione del nome secondario, ad esempio per le strade in regioni multilingue
+• Migliorati gli indicatori di progresso a ruota con animazioni più fluide
+• Supporto di più definizioni di velocità massima in diversi paesi
 
 Maggiori dettagli su comaps.app/latest

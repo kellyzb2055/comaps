@@ -1,11 +1,8 @@
-• Dados OSM de 7/03
-• Exibição dos valores cobrados pelo uso das instalações
-• Correção na exibição e no roteamento do metrô em diversas cidades
-• Texto de compartilhamento de localização mais amigável
-• Toque na previsão de chegada para exibi-la para a próxima parada
-• Exibição da população de cidades
-• Adição de tomadas de carregamento "Tipo 1"
-• Correção no idioma de exibição dos artigos da Wikipédia
-• Correção em problema de gravação de trilhas
+• Dados OSM de 21/03
+• Adicionados os seguintes esportes: four square e bocha
+• Adicionados artigos da Wikipédia em tcheco, tailandês, turco e ucraniano
+• Impedimento da exibição de nomes secundários, por exemplo, para ruas em regiões multilíngues
+• Indicadores de progresso aprimorados com animação mais fluida
+• Suporte para definições de velocidade máxima para mais tipos de vias em diferentes países
 
 Mais detalhes em comaps.app/latest
