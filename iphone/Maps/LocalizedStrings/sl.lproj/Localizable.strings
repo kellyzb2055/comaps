@@ -52,7 +52,7 @@
 /* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Zaznamki";
 /* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
-"bookmarks_and_tracks" = "Zaznamki in poti";
+"bookmarks_and_tracks" = "Priljubljeni";
 /* Default bookmark list name */
 "core_my_places" = "Moji kraji";
 /* Editor title above street and house number, duplicates [type.building.address] in types_strings.txt */
@@ -862,11 +862,11 @@
 "track_recording_toast_nothing_to_save" = "Sled je prazna – ničesar ni za shraniti";
 "edit_track" = "Uredi sled";
 /* Title of the general section in settings */
-"general" = "General";
+"general" = "Splošno";
 /* Title of the interface section in settings */
-"interface" = "Interface";
+"interface" = "Vmesnik";
 /* OpenStreetMap contribution section on the PlacePage. */
-"contribute_to_osm" = "Contribute to OpenStreetMap";
-"contribute_to_osm_add_place" = "Add Place";
-"contribute_to_osm_update_map" = "Update the Map to Contribute";
-"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
+"contribute_to_osm" = "Prispevajte k OpenStreetMap";
+"contribute_to_osm_add_place" = "Dodaj kraj";
+"contribute_to_osm_update_map" = "Prispevaj in posodobi zemljevid";
+"contribute_to_osm_update_map_description" = "Preden lahko prispevate na OpenStreetMap, morate posodobiti zemljevid %@ na zadnjo različico.";

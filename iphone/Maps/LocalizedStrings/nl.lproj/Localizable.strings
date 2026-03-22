@@ -262,7 +262,7 @@
 /* Displayed in a dialog that appears when a user tries to delete a map while the app is in the follow route mode */
 "downloader_delete_map_while_routing_dialog" = "Stop de navigatie om de kaart te verwijderen.";
 /* PointsInDifferentMWM */
-"routing_failed_cross_mwm_building" = "Alleen routes die volledig in één kaart passen, kunnen gecreëerd worden.";
+"routing_failed_cross_mwm_building" = "Alleen routes die volledig in één kaart passen, kunnen worden aangemaakt.";
 /* Context menu item for downloader. */
 "downloader_download_map" = "Kaart downloaden";
 /* Item status in downloader. */
@@ -272,7 +272,7 @@
 /* Text for routing error dialog */
 "routing_download_maps_along" = "Alle kaarten op de route downloaden";
 /* Text for routing error dialog */
-"routing_requires_all_map" = "Voor het creëren van een route is het nodig dat alle kaarten van uw locatie naar de bestemming gedownload en bijgewerkt zijn.";
+"routing_requires_all_map" = "Voor het samenstellen van een route is het nodig dat alle kaarten van uw locatie naar de bestemming gedownload en bijgewerkt zijn.";
 /* bookmark button text */
 "bookmark" = "plaats";
 "save" = "Opslaan";
@@ -313,7 +313,7 @@
 "dialog_routing_disclaimer_priority" = "— De toestand van het wegdek, de verkeersregels en -borden hebben altijd voorrang op het advies van het navigatiesysteem;";
 "dialog_routing_disclaimer_precision" = "— De kaart kan onnauwkeurig zijn en de voorgestelde route is niet altijd de meest optimale manier om uw bestemming te bereiken;";
 "dialog_routing_disclaimer_recommendations" = "— Beschouw de voorgestelde routes enkel als aanbevelingen;";
-"dialog_routing_disclaimer_borders" = "— Wees voorzichtig met de routes in de grenszones: de routes die door onze app gecreëerd zijn, gaan wellicht door landgrenzen in ongeautoriseerde plaatsen.";
+"dialog_routing_disclaimer_borders" = "— Wees voorzichtig met de routes in de grenszones: de routes die door onze app zijn gemaakt, gaan wellicht door landgrenzen in ongeautoriseerde plaatsen.";
 "dialog_routing_disclaimer_beware" = "Blijf alert en rij veilig!";
 "dialog_routing_check_gps" = "Controleer gps-signaal";
 "dialog_routing_error_location_not_found" = "Route samenstellen mislukt. De huidige gps-coördinaten kunnen niet worden geïdentificeerd.";
@@ -543,7 +543,7 @@
 "error_enter_correct_web" = "Voer een geldig webadres in";
 "error_enter_correct_email" = "Voer een geldig emailadres in";
 "refresh" = "Update";
-"placepage_add_place_button" = "Voeg een plaats toe aan OpenStreetMap";
+"placepage_add_place_button" = "Plaats toevoegen aan OpenStreetMap";
 /* Displayed when saving some edits to the map to warn against publishing personal data */
 "editor_share_to_all_dialog_title" = "Wilt u het naar alle gebruikers sturen?";
 /* Dialog before publishing the modifications to the public map. */
@@ -594,7 +594,7 @@
 "button_plan" = "Plannen";
 "placepage_remove_stop" = "Verwijder tussenstop";
 "planning_route_remove_title" = "Sleep hier om te verwijderen";
-"placepage_add_stop" = "Voeg tussenstop toe";
+"placepage_add_stop" = "Tussenstop toevoegen";
 "start_from_my_position" = "Start vanaf";
 /* Title for button when a route was saved. */
 "saved" = "Opgeslagen";
@@ -602,9 +602,9 @@
 "error_enter_correct_name" = "Voer een geldige naam in";
 "bookmark_lists" = "Lijsten";
 /* Do not display all bookmark lists on the map */
-"bookmark_lists_hide_all" = "Verberg alles";
+"bookmark_lists_hide_all" = "Ales verbergen";
 "bookmark_lists_show_all" = "Toon alles";
-"bookmarks_create_new_group" = "Maak een nieuwe lijst";
+"bookmarks_create_new_group" = "Nieuwe lijst aanmaken";
 /* Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files */
 "bookmarks_import" = "Favorieten importeren";
 "downloader_hide_screen" = "Verberg scherm";
@@ -630,8 +630,8 @@
 "subway_data_unavailable" = "Metrokaart is niet beschikbaar";
 "title_error_downloading_bookmarks" = "Er is een fout opgetreden";
 "popular_place" = "Populair";
-"export_file" = "Exporteer KMZ";
-"export_file_gpx" = "Exporteer GPX";
+"export_file" = "KMZ exporteren";
+"export_file_gpx" = "GPX exporteren";
 "delete_list" = "Verwijder lijst";
 "hide_from_map" = "Verberg van de kaart";
 "tags_loading_error_subtitle" = "Er is een fout opgetreden tijdens het laden van tags, probeer het opnieuw";
@@ -703,7 +703,7 @@
 "download_map_carplay" = "Download kaarten in de CoMaps app op uw apparaat";
 "carplay_roundabout_exit" = "Afrit nr. %@";
 /* max. 10 symbols, both iOS and Android */
-"sort" = "Sorteer…";
+"sort" = "Sorteren…";
 /* iOS */
 "sort_default" = "Standaard sortering";
 "sort_type" = "Sorteren op type";
@@ -714,8 +714,8 @@
 "month_ago_sorttype" = "Een maand geleden";
 "moremonth_ago_sorttype" = "Meer dan een maand geleden";
 "moreyear_ago_sorttype" = "Meer dan een jaar geleden";
-"near_me_sorttype" = "Dicht bij mij";
-"others_sorttype" = "Andere";
+"near_me_sorttype" = "Dichtbij";
+"others_sorttype" = "Overig";
 "food_places" = "Eten";
 "tourist_places" = "Bezienswaardigheden";
 "museums" = "Musea";

@@ -26,7 +26,7 @@
 "type.amenity.bench" = "Παγκάκι";
 "type.amenity.bench.backless" = "Χωρίς πλάτη";
 "type.amenity.bicycle_parking" = "Χώρος στάθμευσης ποδηλάτων";
-"type.amenity.bicycle_parking.covered" = "Covered Bicycle Parking";
+"type.amenity.bicycle_parking.covered" = "Στεγασμένος χώρος στάθμευσης ποδηλάτων";
 "type.amenity.boat_rental" = "Ενοικίαση σκαφών";
 "type.amenity.bicycle_rental" = "Ενοικίαση ποδηλάτων";
 "type.amenity.bicycle_repair_station" = "Σταθμός επισκευής ποδηλάτων";
@@ -221,7 +221,7 @@
 "type.natural.water.wastewater" = "Λυμάτων";
 "type.barrier.entrance" = "Είσοδος";
 "type.barrier.fence" = "Φράχτης";
-"type.barrier.guard_rail" = "Guard Rail";
+"type.barrier.guard_rail" = "Στηθαίο ασφαλείας";
 "type.barrier.gate" = "Πύλη";
 "type.barrier.hedge" = "Αντιστάθμιση";
 "type.barrier.kissing_gate" = "Πύλη";
@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Αθλητική αίθουσα";
 "type.xmas.tree" = "Χριστουγεννιάτικο δέντρο";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";

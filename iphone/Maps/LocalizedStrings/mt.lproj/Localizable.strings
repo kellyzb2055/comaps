@@ -54,7 +54,7 @@
 /* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
 "bookmarks_and_tracks" = "Werrejja u Korsiji";
 /* Default bookmark list name */
-"core_my_places" = "Il-Postijiet Tiegħi";
+"core_my_places" = "Il-Favoriti Tiegħi";
 /* Editor title above street and house number, duplicates [type.building.address] in types_strings.txt */
 "address" = "Indirizz";
 /* Settings button in system menu */
@@ -62,13 +62,13 @@
 /* Measurement units title in settings activity */
 "measurement_units" = "Unitajiet tal-kejl";
 /* Search category for cafes, bars, restaurants; any changes should be duplicated in categories.txt @category_eat! */
-"category_eat" = "Għażel fejn tiekol";
+"category_eat" = "Postijiet fejn tiekol";
 /* Search category for grocery stores; any changes should be duplicated in categories.txt @category_food! */
-"category_food" = "Tal-Merċa";
+"category_food" = "Ħwienet tal-merċa";
 /* Search category for public transport; any changes should be duplicated in categories.txt @category_transport! */
 "category_transport" = "Trasport";
 /* Search category for fuel stations; any changes should be duplicated in categories.txt @category_fuel! */
-"category_fuel" = "Gass";
+"category_fuel" = "Petrol / Diesel";
 /* Search category for parking lots; any changes should be duplicated in categories.txt @category_parking! */
 "category_parking" = "Parkeġġ";
 /* Search category for malls/clothes/shoes/gifts/jewellery/sport shops; any changes should be duplicated in categories.txt @category_shopping! */

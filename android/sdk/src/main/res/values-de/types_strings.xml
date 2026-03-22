@@ -1334,7 +1334,7 @@
     <string name="type.attraction.bumper_car">Autoscooter</string>
     <string name="type.attraction.big_wheel">Riesenrad</string>
     <string name="type.attraction.carousel">Karussell</string>
-    <string name="type.attraction.historic">Historische Sehenswürdigkeit</string>
+    <string name="type.attraction.historic">Historischer Lernort</string>
     <string name="type.attraction.maze">Labyrinth</string>
     <string name="type.attraction.roller_coaster">Achterbahn</string>
     <string name="type.attraction.water_slide">Wasserrutsche</string>
@@ -1513,4 +1513,8 @@
     <string name="type.railway.miniature">Miniatureisenbahn</string>
     <string name="type.waterway.fuel">Bunkerstation</string>
     <string name="type.shop.water">Trinkwassergeschäft</string>
+    <string name="type.leisure.sports_centre.sport.boules">Sportzentrum</string>
+    <string name="type.sport.boules">Boule</string>
+    <string name="type.sport.four_square">Four Square</string>
+    <string name="type.leisure.sports_centre.sport.four_square">Sportzentrum</string>
 </resources>

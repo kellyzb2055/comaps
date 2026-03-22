@@ -193,7 +193,7 @@
     <string name="type.barrier.chain">Cadena</string>
     <string name="type.barrier.city_wall">Muralla</string>
     <string name="type.barrier.cycle_barrier">Barrera per a bicicletes</string>
-    <string name="type.waterway.ditch">Sèquia de drenatge</string>
+    <string name="type.waterway.ditch">Séquia de drenatge</string>
     <string name="type.natural.water.moat">Fossat</string>
     <string name="type.natural.water.wastewater">Aigües residuals</string>
     <string name="type.barrier.entrance">Entrada</string>
@@ -410,7 +410,7 @@
     <string name="type.waterway.fish_pass">Pas de peix</string>
     <string name="type.waterway.dam">Presa</string>
     <string name="type.barrier.ditch">Rasa</string>
-    <string name="type.natural.water.ditch">Sèquia de drenatge</string>
+    <string name="type.natural.water.ditch">Séquia de drenatge</string>
     <string name="type.waterway.ditch.tunnel">Canonada de drenatge</string>
     <string name="type.waterway.dock">Moll</string>
     <string name="type.waterway.drain">Desguàs</string>
@@ -1266,4 +1266,11 @@
     <string name="type.railway.station.light_rail.berlin">Estació de S-Bahn</string>
     <string name="type.railway.station.light_rail.london">Estació de DLR</string>
     <string name="type.railway.station.monorail">Estació de monocarril</string>
+    <string name="type.shop.travel_agency">Agència de viatges</string>
+    <string name="type.shop.hardware">Ferreteria</string>
+    <string name="type.shop.laundry">Bugaderia</string>
+    <string name="type.place.isolated_dwelling">Habitatge aïllat</string>
+    <string name="type.place.locality">Localitat</string>
+    <string name="type.shop.garden_centre">Centre de jardineria</string>
+    <string name="type.tourism.information.guidepost">Post de direccions</string>
 </resources>

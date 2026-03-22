@@ -1508,4 +1508,6 @@
     <string name="type.amenity.community_centre.youth_centre">Centrum mládeže</string>
     <string name="type.shop.water">Obchod s vodou</string>
     <string name="type.attraction">Atrakce</string>
+    <string name="type.leisure.sports_centre.sport.four_square">Sportovní centrum</string>
+    <string name="type.sport.four_square">Four Square</string>
 </resources>

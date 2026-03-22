@@ -467,7 +467,7 @@
     <string name="type.landuse.military">Selva</string>
     <string name="type.landuse.orchard">Avalennek</string>
     <string name="type.landuse.quarry">Mengleudh</string>
-    <string name="type.landuse.railway">Yyns Horn</string>
+    <string name="type.landuse.railway">Tir Hyns Horn</string>
     <string name="type.landuse.recreation_ground">Park</string>
     <string name="type.landuse.reservoir">Kreun</string>
     <string name="type.landuse.residential">Tir Anedhel</string>
@@ -1316,8 +1316,8 @@
     <string name="type.tourism.guest_house">Gwesti</string>
     <string name="type.tourism.hostel">Ostel</string>
     <string name="type.tourism.hotel">Ostel</string>
-    <string name="type.tourism.information">Kudhlow Tornyas</string>
-    <string name="type.tourism.information.board">Bordh Kudhlow</string>
+    <string name="type.tourism.information">Kedhlow Tornyas</string>
+    <string name="type.tourism.information.board">Bordh Kedhlow</string>
     <string name="type.tourism.information.guidepost">Post Arwodh</string>
     <string name="type.tourism.information.map">Mappa Tornyas</string>
     <string name="type.tourism.information.office">Buro Tornyas</string>

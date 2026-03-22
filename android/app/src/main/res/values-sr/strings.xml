@@ -142,14 +142,14 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Напомене</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">CoMaps фаворити</string>
-    <string name="share_bookmarks_email_body">Здраво! \n \nУ прилогу су моји фаворити; молим те да их отвориш у CoMaps-у. Ако га немаш већ инсталираног, можеш да га преузмеш одавде: https://www.comaps.app/download/ \n \nУживај у путовању са CoMaps-ом!</string>
+    <string name="share_bookmarks_email_subject">CoMaps маркери</string>
+    <string name="share_bookmarks_email_body">Здраво! \n \nУ прилогу су моји маркери; молим те да их отвориш у CoMaps-у. Ако га немаш већ инсталираног, можеш да га преузмеш одавде: https://www.comaps.app/download/ \n \nУживај у путовању са CoMaps-ом!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Учитавање маркера</string>
     <!-- Kmz file successful loading -->
     <string name="load_kmz_successful">Маркери су успешно учитани! Можете их проначи на мапи помоћу Менаџера маркера.</string>
     <!-- Kml file loading failed -->
-    <string name="load_kmz_failed">Неуспешно учитавање фаворита. Могуће да је фајл оштећен или неисправан.</string>
+    <string name="load_kmz_failed">Неуспешно учитавање маркера. Могуће да је фајл оштећен или неисправан.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Апликација не препознаје ову врсту фајла: \n%1$s</string>
     <!-- Failed to open a bookmarks or tracks file in CoMaps. -->
@@ -641,7 +641,7 @@
     <!-- max. 10 symbols, both iOS and Android -->
     <string name="sort">Сортирање…</string>
     <!-- Android, title, max 20-22 symbols -->
-    <string name="sort_bookmarks">Сортирање фаворита</string>
+    <string name="sort_bookmarks">Сортирање маркера</string>
     <!-- Android -->
     <string name="by_default">Подразумевано</string>
     <!-- Android -->
@@ -747,7 +747,7 @@
     <string name="browser_not_available">Веб читач није доступан</string>
     <string name="volume">Јачина звука</string>
     <!-- Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks -->
-    <string name="bookmarks_export">Експортуј све фаворите</string>
+    <string name="bookmarks_export">Експортуј све маркере и путање</string>
     <!-- button in (app) TTS settings, to open the system TTS settings. -->
     <string name="pref_tts_open_system_settings">Системска подешавања синтезе говора</string>
     <!-- toast displayed when pressing the "Speech synthesis system settings" button, and the system settings aren't found. -->
@@ -779,7 +779,7 @@
     <!-- Title for the "Stop Without Saving" action for the alert when saving a track recording. -->
     <string name="continue_recording">Настави снимање</string>
     <!-- Title for the alert when saving a track recording. -->
-    <string name="track_recording_alert_title">Сачувати у маркерима?</string>
+    <string name="track_recording_alert_title">Сачувати у маркерима и путањама?</string>
     <!-- Message for the toast when saving the track recording is finished but nothing to save. -->
     <string name="track_recording_toast_nothing_to_save">Путања је празна, нема шта да се сачува</string>
     <!-- Error message when there are no File Manager apps installed to select a folder when importing Bookmarks and Tracks -->
@@ -816,15 +816,15 @@
     <string name="pref_left_button_title">Подешавање левог дугмета</string>
     <string name="pref_left_button_disable">Искључи</string>
     <string name="saved">Сачувано</string>
-    <string name="editor_building_levels">Spratovi (укљ. приземље, искључујући кров)</string>
+    <string name="editor_building_levels">Спратови (укљ. приземље, искључујући кров)</string>
     <string name="error_enter_correct_level">Унесите важећи спрат</string>
     <string name="editor_level">Спрат (0 је приземље)</string>
     <string name="clear">Чисто</string>
-    <string name="bicycle">Бицикла</string>
+    <string name="bicycle">Бицикл</string>
     <string name="route_type">Тип руте</string>
     <string name="pedestrian">Пешак</string>
     <string name="ruler">Лењир</string>
-    <string name="bookmark_color">Боја фаворита</string>
+    <string name="bookmark_color">Боја маркера</string>
     <string name="vehicle">Возило</string>
     <string name="about_help">О програму и помоћ</string>
     <string name="panoramax">Panoramax Picture</string>
@@ -845,8 +845,8 @@
     <string name="dialog_report_error_with_logs">Молимо вас, пошаљите нам поруку о грешци:\n- \"Омогући вођење дневника\" у подешавањима\n- репродукујте проблем\n- на екрану \"О програму и помоћ\" кликните на дугме \"Пријави грешку\" и пошаљите на е-маил или чат\n- онемогући вођење дневника</string>
     <string name="dialog_report_error_missing_folder">Изабрана локација резервне копије није доступна за снимање. Молимо вас, одаберите друго место.</string>
     <string name="pref_backup_interval_title">Аутоматска резервна копија</string>
-    <string name="pref_backup_now_summary_empty_lists">Нема фаворита за израду резервне копије</string>
-    <string name="pref_backup_title">Бекап фаворита</string>
+    <string name="pref_backup_now_summary_empty_lists">Нема маркера и путања за израду резервне копије</string>
+    <string name="pref_backup_title">Бекап маркера и путања</string>
     <string name="closed_now">Затворено сада</string>
     <string name="open_now">Сада је отворено</string>
     <string name="at">на %s</string>

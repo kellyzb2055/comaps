@@ -800,7 +800,7 @@
 /* Outdoors/hiking map style (activity) name in the Styles and Layers dialog */
 "button_layer_outdoor" = "На отвореном";
 /* Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks */
-"bookmarks_export" = "Експортуј све фаворите";
+"bookmarks_export" = "Експортуј све маркере и путање";
 /* Text for the editing the Track's color button. */
 "change_color" = "Промени боју";
 /* Main screen title "Map" displayed in the navigation back button's menu. */

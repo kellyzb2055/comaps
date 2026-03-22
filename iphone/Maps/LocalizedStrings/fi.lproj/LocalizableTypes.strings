@@ -195,7 +195,7 @@
 "type.amenity.vending_machine.food" = "Ruoka-automaatti";
 "type.amenity.vending_machine.newspapers" = "Sanomalehtiautomaatti";
 "type.amenity.vending_machine.parking_tickets" = "Pysäköintimaksuautomaatti";
-"type.amenity.vending_machine.public_transport_tickets" = "Julkisen liikenteen lippuautomaatti";
+"type.amenity.vending_machine.public_transport_tickets" = "Joukkoliikenteen lippuautomaatti";
 "type.amenity.vending_machine.sweets" = "Makeisautomaatti";
 "type.amenity.vending_machine.excrement_bags" = "Koirankakkapussiautomaatti";
 "type.amenity.parcel_locker" = "Pakettilokero";
@@ -1323,7 +1323,7 @@
 "type.shop.agrarian" = "Maatalouskauppa";
 "type.shop.antiques" = "Antiikkia";
 "type.shop.appliance" = "Kodinkoneet kauppa";
-"type.shop.water" = "Water Shop";
+"type.shop.water" = "Vesimyymälä";
 /* maybe change to Art Gallery for en-US when supported */
 "type.shop.art" = "Taidekauppa";
 "type.shop.baby_goods" = "Lasten kauppa";
@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Urheiluhalli";
 "type.xmas.tree" = "Joulukuusi";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";

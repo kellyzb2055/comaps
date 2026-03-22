@@ -1404,7 +1404,7 @@
 "type.attraction.bumper_car" = "Autoscooter";
 "type.attraction.big_wheel" = "Riesenrad";
 "type.attraction.carousel" = "Karussell";
-"type.attraction.historic" = "Historische Sehenswürdigkeit";
+"type.attraction.historic" = "Historischer Lernort";
 "type.attraction.maze" = "Labyrinth";
 "type.attraction.roller_coaster" = "Achterbahn";
 "type.attraction.water_slide" = "Wasserrutsche";
@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Sporthalle";
 "type.xmas.tree" = "Weihnachtsbaum";
+"type.leisure.sports_centre.sport.four_square" = "Sportzentrum";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boule";
+"type.leisure.sports_centre.sport.boules" = "Sportzentrum";

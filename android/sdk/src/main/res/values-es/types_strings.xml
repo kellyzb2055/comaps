@@ -1252,7 +1252,7 @@
     <string name="type.tourism.artwork.sculpture">Escultura</string>
     <string name="type.tourism.artwork.statue">Estatua</string>
     <string name="type.tourism.attraction">Atracción turística</string>
-    <string name="type.attraction.amusement_ride">Atracción</string>
+    <string name="type.attraction.amusement_ride">Atracción de feria</string>
     <string name="type.attraction.animal">Recinto de animales</string>
     <string name="type.attraction.bumper_car">Coches de choque</string>
     <string name="type.attraction.big_wheel">Noria</string>

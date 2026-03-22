@@ -452,13 +452,13 @@
 "type.highway.busway.tunnel" = "Terowongan";
 "type.highway.bus_stop" = "Halte bus";
 "type.highway.construction" = "Jalan sedang dibangun";
-"type.highway.cycleway" = "Cycle Path";
+"type.highway.cycleway" = "Jalur Sepeda";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.cycleway.bridge" = "Menjembatani";
-"type.highway.cycleway.permissive" = "Cycle Path";
+"type.highway.cycleway.permissive" = "Jalur Sepeda";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.cycleway.tunnel" = "Terowongan";
-"type.highway.elevator" = "Elevator";
+"type.highway.elevator" = "Lift";
 "type.highway.footway" = "Jalur";
 "type.highway.footway.sidewalk" = "Trotoar";
 "type.highway.footway.crossing" = "Penyeberangan Pejalan Kaki";
@@ -549,7 +549,7 @@
 "type.highway.services" = "Service Area";
 "type.highway.speed_camera" = "Kamera Kecepatan";
 "type.highway.steps" = "Jalur";
-"type.highway.ladder" = "Ladder";
+"type.highway.ladder" = "Tangga";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.steps.bridge" = "Menjembatani";
 /* These translations are used for all type.highway.*.tunnel. */
@@ -589,7 +589,7 @@
 "type.highway.unclassified.bridge" = "Menjembatani";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.unclassified.tunnel" = "Terowongan";
-"type.area_highway.cycleway" = "Cycle Path";
+"type.area_highway.cycleway" = "Jalur Sepeda";
 "type.area_highway.footway" = "Jalur";
 "type.area_highway.living_street" = "Jalan";
 "type.area_highway.motorway" = "Jalan";
@@ -649,22 +649,22 @@
 "type.historic.wayside_shrine" = "Kuil di pinggir jalan";
 "type.historic.wreck" = "Kecelakaan kapal";
 "type.internet_access" = "Internet";
-"type.internet_access.wlan" = "Internet";
-"type.junction" = "Junction";
-"type.junction.circular" = "Roundabout";
-"type.junction.roundabout" = "Roundabout";
+"type.internet_access.wlan" = "Wifi";
+"type.junction" = "Simpang";
+"type.junction.circular" = "Bundaran";
+"type.junction.roundabout" = "Bundaran";
 "type.landuse" = "Landuse";
 "type.landuse.allotments" = "Allotments";
-"type.landuse.basin" = "Sebuah baskom air";
-"type.landuse.brownfield" = "Brownfield";
+"type.landuse.basin" = "Kolam|Embung";
+"type.landuse.brownfield" = "Lahan Terbengkalai";
 /* In most (European) countries, сemeteries are usually independent of places of worship (e.g. military cemeteries), while grave yards are usually the yard of a place of worship. */
 "type.landuse.cemetery" = "Pemakaman";
 /* In most (European) countries, сemeteries are usually independent of places of worship (e.g. military cemeteries), while grave yards are usually the yard of a place of worship. */
 "type.landuse.cemetery.christian" = "Pemakaman";
-"type.landuse.religious" = "Religious Land";
-"type.landuse.commercial" = "Commercial Area";
-"type.landuse.construction" = "Construction Area";
-"type.landuse.education" = "Educational Facility";
+"type.landuse.religious" = "Lahan Keagamaan";
+"type.landuse.commercial" = "Area Komersial";
+"type.landuse.construction" = "Area Konstruksi";
+"type.landuse.education" = "Fasilitas Pendidikan";
 "type.landuse.farmland" = "Lahan pertanian";
 "type.landuse.farmyard" = "Farmyard";
 "type.landuse.field" = "Field";
@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Ruang olahraga";
 "type.xmas.tree" = "Christmas Tree";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";

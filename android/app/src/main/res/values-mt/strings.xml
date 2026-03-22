@@ -91,9 +91,9 @@
     <string name="measurement_units_summary">Għażel bejn mili u kilometri</string>
     <!-- SECTION: Search categories -->
     <!-- Search category for cafes, bars, restaurants; any changes should be duplicated in categories.txt @category_eat! -->
-    <string name="category_eat">Għażel fejn tiekol</string>
+    <string name="category_eat">Postijiet fejn tiekol</string>
     <!-- Search category for grocery stores; any changes should be duplicated in categories.txt @category_food! -->
-    <string name="category_food">Tal-Merċa</string>
+    <string name="category_food">Ħwienet tal-merċa</string>
     <!-- Search category for public transport; any changes should be duplicated in categories.txt @category_transport! -->
     <string name="category_transport">Trasport</string>
     <!-- Search category for parking lots; any changes should be duplicated in categories.txt @category_parking! -->
@@ -203,7 +203,7 @@
     <string name="donate">Donazzjoni</string>
     <string name="compass_calibration_recommended">Tejjeb id-direzzjoni tal-vleġġa billi tmexxi l-mowbajl f’moviment forma ta\' tmienja biex tikkalibra l-boxxla.</string>
     <string name="downloader_cancel_all">Ikkanċella kollox</string>
-    <string name="category_fuel">Gass</string>
+    <string name="category_fuel">Petrol / Diesel</string>
     <string name="compass_calibration_required">Mexxi l-mowbajl f\'moviment figura ta\' tmienja biex tikkalibra l-boxxla u tiffissa d-direzzjoni tal-vleġġa fuq il-mappa.</string>
     <string name="precise_location_is_disabled_long_text">Biex tassigura navigazzjoni preċiża, ixgħel Precise Location fis-settings</string>
     <string name="off">Itfi</string>

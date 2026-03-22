@@ -1359,4 +1359,6 @@
     <string name="type.power.generator">Γεννήτρια ρεύματος</string>
     <string name="type.power.line">Γραμμή ρεύματος</string>
     <string name="type.power.line.underground">Υπόγεια γραμμή ρεύματος</string>
+    <string name="type.amenity.bicycle_parking.covered">Στεγασμένος χώρος στάθμευσης ποδηλάτων</string>
+    <string name="type.barrier.guard_rail">Στηθαίο ασφαλείας</string>
 </resources>

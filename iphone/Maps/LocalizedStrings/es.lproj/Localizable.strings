@@ -48,13 +48,13 @@
 /* Add Bookmark list dialog - hint when the list name is empty */
 "bookmark_set_name" = "Nombre de la lista";
 /* "Bookmark Lists" dialog title */
-"bookmark_sets" = "Lista de favoritos";
+"bookmark_sets" = "Listas de favoritos";
 /* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Lugares";
 /* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
 "bookmarks_and_tracks" = "Favoritos";
 /* Default bookmark list name */
-"core_my_places" = "Mis lugares";
+"core_my_places" = "Mis favoritos";
 /* Editor title above street and house number, duplicates [type.building.address] in types_strings.txt */
 "address" = "Dirección";
 /* Settings button in system menu */
@@ -580,7 +580,7 @@
 "log_file_size" = "Tamaño del archivo de registro: %@";
 "pref_alt_map_lang_handling" = "Idiomas del mapa alternativos";
 "pref_alt_map_lang_handling_ignore_alternatives" = "No usar alternativas";
-"pref_alt_map_lang_handling_system_order" = "Usar según el orden del sistema";
+"pref_alt_map_lang_handling_system_order" = "Usar según orden del sistema";
 "pref_alt_map_lang_handling_local_only" = "Dar preferencia y utilizar únicamente cuando sea el idioma local";
 "transliteration_title" = "Transliteración al alfabeto latino";
 "transliteration_title_disabled_summary" = "Deshabilitado cuando siempre se usa el idioma local para el mapa";
@@ -606,7 +606,7 @@
 "bookmark_lists_show_all" = "Mostrar todo";
 "bookmarks_create_new_group" = "Crear nueva lista";
 /* Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files */
-"bookmarks_import" = "Importar favoritos y trazas";
+"bookmarks_import" = "Importar favoritos";
 "downloader_hide_screen" = "Ocultar pantalla";
 "downloader_percent" = "%@ (%@ de %@)";
 "downloader_process" = "Descargando %@…";
@@ -800,7 +800,7 @@
 /* Outdoors/hiking map style (activity) name in the Styles and Layers dialog */
 "button_layer_outdoor" = "Senderismo";
 /* Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks */
-"bookmarks_export" = "Exportar todos los favoritos y trazas";
+"bookmarks_export" = "Exportar todos los Favoritos";
 /* Text for the editing the Track's color button. */
 "change_color" = "Cambiar color";
 /* Main screen title "Map" displayed in the navigation back button's menu. */

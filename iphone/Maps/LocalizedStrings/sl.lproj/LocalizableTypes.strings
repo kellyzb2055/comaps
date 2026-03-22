@@ -1323,7 +1323,7 @@
 "type.shop.agrarian" = "Kmetijska trgovina";
 "type.shop.antiques" = "Starinarnica";
 "type.shop.appliance" = "Trgovina z gospodinjskimi aparati";
-"type.shop.water" = "Water Shop";
+"type.shop.water" = "Prodajalna vode";
 /* maybe change to Art Gallery for en-US when supported */
 "type.shop.art" = "Trgovina z umetninami";
 "type.shop.baby_goods" = "Otroška trgovina";
@@ -1397,8 +1397,8 @@
 "type.tourism.artwork.painting" = "Slika";
 "type.tourism.artwork.sculpture" = "Skulptura";
 "type.tourism.artwork.statue" = "Kip";
-"type.tourism.attraction" = "Znamenitost";
-"type.attraction" = "Attraction";
+"type.tourism.attraction" = "Turistična znamenitost";
+"type.attraction" = "Znamenitost";
 "type.attraction.amusement_ride" = "Zabaviščna vožnja";
 "type.attraction.animal" = "Ograda z živalmi";
 "type.attraction.bumper_car" = "Vožnja z avtomobilčki";
@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Športna dvorana";
 "type.xmas.tree" = "Božično drevo";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";

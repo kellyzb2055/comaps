@@ -54,7 +54,7 @@
 /* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
 "bookmarks_and_tracks" = "Suosikit";
 /* Default bookmark list name */
-"core_my_places" = "Paikkani";
+"core_my_places" = "Omat suosikit";
 /* Editor title above street and house number, duplicates [type.building.address] in types_strings.txt */
 "address" = "Osoite";
 /* Settings button in system menu */
@@ -579,7 +579,7 @@
 "enable_logging" = "Ota loki käyttöön";
 "log_file_size" = "Lokitiedoston koko: %@";
 "pref_alt_map_lang_handling" = "Alternative Map Languages";
-"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Älä käytä vaihtoehtoja";
 "pref_alt_map_lang_handling_system_order" = "Use in system order";
 "pref_alt_map_lang_handling_local_only" = "Prefer and only use where native";
 "transliteration_title" = "Translitterointi latinalaisiksi aakkosiksi";
@@ -857,7 +857,7 @@
 /* Title for the "Stop Without Saving" action for the alert when saving a track recording. */
 "continue_recording" = "Jatka tallennusta";
 /* Title for the alert when saving a track recording. */
-"track_recording_alert_title" = "Tallenna kirjanmerkkeihin ja reitteihin?";
+"track_recording_alert_title" = "Tallenna suosikkeihin?";
 /* Message for the toast when saving the track recording is finished but nothing to save. */
 "track_recording_toast_nothing_to_save" = "Reitti on tyhjä - ei mitään tallennettavaa";
 "edit_track" = "Muokkaa reittiä";
@@ -866,7 +866,7 @@
 /* Title of the interface section in settings */
 "interface" = "Interface";
 /* OpenStreetMap contribution section on the PlacePage. */
-"contribute_to_osm" = "Contribute to OpenStreetMap";
-"contribute_to_osm_add_place" = "Add Place";
-"contribute_to_osm_update_map" = "Update the Map to Contribute";
-"contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
+"contribute_to_osm" = "Paranna OpenStreetMapia";
+"contribute_to_osm_add_place" = "Lisää paikka";
+"contribute_to_osm_update_map" = "Päivitä kartta täydentääksesi";
+"contribute_to_osm_update_map_description" = "Sinun täytyy päivittää %@ kartta uusimpaan versioon ennen kuin voit osallistua OpenStreetMap-tietojen parantamiseen";

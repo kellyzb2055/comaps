@@ -300,4 +300,8 @@
     <string name="type.natural.cave_entrance">Cave Entrance</string>
     <string name="type.office.ngo">Non-Governmental Organisation</string>
     <string name="type.railway.station.light_rail">Train Station</string>
+    <string name="type.amenity.charging_station.motorcycle">Motorcycles</string>
+    <string name="type.amenity.kindergarten">Kindergarten</string>
+    <string name="type.amenity.library">Library</string>
+    <string name="type.amenity.lounger">Lounger</string>
 </resources>

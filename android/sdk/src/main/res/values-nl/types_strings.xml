@@ -1511,4 +1511,8 @@
     <string name="type.amenity.community_centre.youth_centre">Jeugdcentrum</string>
     <string name="type.attraction">Attractie</string>
     <string name="type.shop.water">Waterwinkel</string>
+    <string name="type.sport.four_square">Four Square</string>
+    <string name="type.leisure.sports_centre.sport.four_square">Sportcentrum</string>
+    <string name="type.leisure.sports_centre.sport.boules">Sportcentrum</string>
+    <string name="type.sport.boules">jeu de boules</string>
 </resources>

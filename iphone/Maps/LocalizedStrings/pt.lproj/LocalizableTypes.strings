@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Pavilhão desportivo";
 "type.xmas.tree" = "Árvore de Natal";
+"type.leisure.sports_centre.sport.four_square" = "Centro Desportivo";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Centro Desportivo";

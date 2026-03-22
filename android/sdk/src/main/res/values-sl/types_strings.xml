@@ -115,7 +115,7 @@
     <string name="type.sport.yoga">Joga</string>
     <string name="type.tourism">Turizem</string>
     <string name="type.tourism.artwork.statue">Kip</string>
-    <string name="type.tourism.attraction">Znamenitost</string>
+    <string name="type.tourism.attraction">Turistična znamenitost</string>
     <string name="type.attraction.water_slide">Tobogan</string>
     <string name="type.tourism.information.map">Turistični zemljevid</string>
     <string name="type.amenity.ranger_station">Čuvajnica</string>
@@ -1415,4 +1415,6 @@
     <string name="type.xmas.tree">Božično drevo</string>
     <string name="type.waterway.fuel">Pristan za gorivo</string>
     <string name="type.amenity.community_centre.youth_centre">Mladinski center</string>
+    <string name="type.shop.water">Prodajalna vode</string>
+    <string name="type.attraction">Znamenitost</string>
 </resources>

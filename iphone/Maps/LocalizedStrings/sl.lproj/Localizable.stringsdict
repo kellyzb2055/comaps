@@ -68,5 +68,49 @@
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@nevertranslate@</string>
 	</dict>
+	<key>population</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
+		<key>nevertranslate</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>Brez prebivalcev</string>
+			<key>one</key>
+			<string>%lld prebivalec</string>
+			<key>two</key>
+			<string>%lld prebivalca</string>
+			<key>few</key>
+			<string>%lld prebivalci</string>
+			<key>other</key>
+			<string>%lld prebivalcev</string>
+		</dict>
+	</dict>
+	<key>rooms</key>
+	<dict>
+		<key>nevertranslate</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>Brez sob</string>
+			<key>one</key>
+			<string>%lld soba</string>
+			<key>two</key>
+			<string>%lld sobi</string>
+			<key>few</key>
+			<string>%lld sobe</string>
+			<key>other</key>
+			<string>%lld sob</string>
+		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
+	</dict>
 </dict>
 </plist>

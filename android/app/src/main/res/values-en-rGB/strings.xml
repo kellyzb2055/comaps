@@ -42,4 +42,20 @@
     <string name="choose_color">Choose Colour</string>
     <string name="category_atm">Cash Machine</string>
     <string name="app_tip_09">Our main goal is to build fast, privacy-focussed, easy-to-use maps that you will love.</string>
+    <string name="location_is_disabled_long_text">You currently have all Location Services for this device or application disabled. Please enable them in Settings.</string>
+    <string name="limited_accuracy">Limited Accuracy</string>
+    <string name="about_menu_title">About CoMaps</string>
+    <string name="about_proposition_1">• Easy to use and polished</string>
+    <string name="about_developed_by_enthusiasts">Fully open source, not for profit, transparent decision-making and finances.</string>
+    <string name="unsupported_phone">The app requires hardware accelerated OpenGL. Unfortunately, your device is not supported.</string>
+    <string name="not_enough_free_space_on_sdcard">Please free up some space on the SD card/USB storage first in order to use the app</string>
+    <string name="download_resources">Before you start using the app, please download the world overview map to your device. \nIt will use %s of storage.</string>
+    <string name="download_resources_continue">Go to Map</string>
+    <string name="downloading_country_can_proceed">Downloading %1$s (%2$s). You can now \nproceed to the map.</string>
+    <string name="download_country_ask">Download %1$s? (%2$s)</string>
+    <string name="search">Search</string>
+    <string name="app_site_url">https://comaps.app/</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
 </resources>

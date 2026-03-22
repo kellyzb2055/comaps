@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Sporthal";
 "type.xmas.tree" = "Kerstboom";
+"type.leisure.sports_centre.sport.four_square" = "Sportcentrum";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "jeu de boules";
+"type.leisure.sports_centre.sport.boules" = "Sportcentrum";

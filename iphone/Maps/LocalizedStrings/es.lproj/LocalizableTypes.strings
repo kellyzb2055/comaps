@@ -1399,7 +1399,7 @@
 "type.tourism.artwork.statue" = "Estatua";
 "type.tourism.attraction" = "Atracción turística";
 "type.attraction" = "Atracción";
-"type.attraction.amusement_ride" = "Atracción";
+"type.attraction.amusement_ride" = "Atracción de feria";
 "type.attraction.animal" = "Recinto de animales";
 "type.attraction.bumper_car" = "Coches de choque";
 "type.attraction.big_wheel" = "Noria";
@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Pabellón deportivo";
 "type.xmas.tree" = "Árbol de Navidad";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";

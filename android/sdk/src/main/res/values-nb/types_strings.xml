@@ -1099,7 +1099,7 @@
     <string name="type.sport.scuba_diving">Dykking</string>
     <string name="type.sport.shooting">Skyting</string>
     <string name="type.sport.skateboard">Rullebrettkjøring</string>
-    <string name="type.sport.skiing">Stå på ski</string>
+    <string name="type.sport.skiing">Skisport</string>
     <string name="type.sport.soccer">Fotball</string>
     <string name="type.sport.swimming">Svømming</string>
     <string name="type.sport.table_tennis">Bordtennis</string>
@@ -1412,4 +1412,21 @@
     <string name="type.entrance.garage">Garasjeinngang</string>
     <string name="type.man_made.storage_tank">Lagringstank</string>
     <string name="type.amenity.payment_centre">Betalingssenter</string>
+    <string name="type.man_made.cutline">Gate</string>
+    <string name="type.piste_type.downhill.expert">Skibakke Ekspert</string>
+    <string name="type.piste_type.downhill.easy.area">Skibakke Lett</string>
+    <string name="type.piste_type.downhill.easy">Skibakke Lett</string>
+    <string name="type.piste_type.downhill.advanced.area">Skibakke Avansert</string>
+    <string name="type.piste_type.downhill.advanced">Skibakke Avansert</string>
+    <string name="type.piste_type.downhill.area">Skibakke</string>
+    <string name="type.piste_type.downhill">Skibakke</string>
+    <string name="type.piste_type.downhill.expert.area">Skibakke Ekspert</string>
+    <string name="type.piste_type.downhill.freeride">Skibakke Frikjøring</string>
+    <string name="type.piste_type.downhill.intermediate">Skibakke Middels</string>
+    <string name="type.piste_type.downhill.intermediate.area">Skibakke Middels</string>
+    <string name="type.piste_type.downhill.novice">Skibakke Nybegynner</string>
+    <string name="type.piste_type.downhill.novice.area">Skibakke Nybegynner</string>
+    <string name="type.leisure.sports_centre.sport.four_square">Sportssenter</string>
+    <string name="type.leisure.sports_centre.sport.boules">Sportssenter</string>
+    <string name="type.sport.boules">Boule</string>
 </resources>

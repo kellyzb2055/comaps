@@ -216,7 +216,7 @@
 "type.barrier.chain" = "Cadena";
 "type.barrier.city_wall" = "Muralla";
 "type.barrier.cycle_barrier" = "Barrera per a bicicletes";
-"type.waterway.ditch" = "Sèquia de drenatge";
+"type.waterway.ditch" = "Séquia de drenatge";
 "type.natural.water.moat" = "Fossat";
 "type.natural.water.wastewater" = "Aigües residuals";
 "type.barrier.entrance" = "Entrada";
@@ -885,8 +885,8 @@
 "type.place.hamlet" = "Hamlet";
 "type.place.island" = "Illa";
 "type.place.islet" = "Illot";
-"type.place.isolated_dwelling" = "Isolated Dwelling";
-"type.place.locality" = "Locality";
+"type.place.isolated_dwelling" = "Habitatge aïllat";
+"type.place.locality" = "Localitat";
 /* Named part of a city or town, bigger than place=neighbourhood and smaller than place=suburb (Wiki: https://wiki.openstreetmap.org/wiki/Tag:place%3Dquarter) */
 "type.place.quarter" = "Quarter";
 /* Named part of a city, town or suburb, smaller than place=quarter (Wiki: https://wiki.openstreetmap.org/wiki/Neighbourhood) */
@@ -1266,13 +1266,13 @@
 "type.shop.florist" = "Florist";
 "type.shop.funeral_directors" = "Funerària";
 "type.shop.furniture" = "Botiga de mobles";
-"type.shop.garden_centre" = "Garden Center";
+"type.shop.garden_centre" = "Centre de jardineria";
 "type.shop.gas" = "Botiga de gas";
 "type.shop.gift" = "Botiga de regals";
 "type.shop.greengrocer" = "Fruiteria";
 "type.shop.grocery" = "Grocery Store";
 "type.shop.hairdresser" = "Perruqueria";
-"type.shop.hardware" = "Hardware Store";
+"type.shop.hardware" = "Ferreteria";
 "type.shop.health_food" = "Health Food Shop";
 "type.shop.hearing_aids" = "Botiga d’aparells auditius";
 "type.shop.herbalist" = "Botiga d'herbes";
@@ -1281,7 +1281,7 @@
 "type.shop.jewelry" = "Botiga de joies";
 "type.shop.kiosk" = "Quiosc";
 "type.shop.kitchen" = "Kitchen Store";
-"type.shop.laundry" = "Laundry";
+"type.shop.laundry" = "Bugaderia";
 "type.shop.mall" = "Centre comercial";
 "type.shop.beauty.day_spa" = "Day Spa";
 "type.shop.massage" = "Massage Salon";
@@ -1314,7 +1314,7 @@
 "type.shop.telecommunication" = "Telecommunication Shop";
 "type.shop.ticket" = "Ticket Shop";
 "type.shop.toys" = "Botiga de jocs";
-"type.shop.travel_agency" = "Travel Agency";
+"type.shop.travel_agency" = "Agència de viatges";
 "type.shop.tyres" = "Tyre Shop";
 "type.shop.variety_store" = "Botiga de varietat";
 "type.shop.video" = "Video Shop";
@@ -1419,7 +1419,7 @@
 "type.tourism.hotel" = "Hotel";
 "type.tourism.information" = "Informació turística";
 "type.tourism.information.board" = "Tauler informatiu";
-"type.tourism.information.guidepost" = "Guidepost";
+"type.tourism.information.guidepost" = "Post de direccions";
 "type.tourism.information.map" = "Mapa turístic";
 "type.tourism.information.tactile_map" = "Tactile Map";
 "type.tourism.information.office" = "Oficina de turisme";
@@ -1444,7 +1444,7 @@
 "type.waterway.fish_pass" = "Pas de peix";
 "type.waterway.dam" = "Presa";
 "type.barrier.ditch" = "Rasa";
-"type.natural.water.ditch" = "Sèquia de drenatge";
+"type.natural.water.ditch" = "Séquia de drenatge";
 "type.waterway.ditch.tunnel" = "Canonada de drenatge";
 "type.waterway.dock" = "Moll";
 "type.waterway.drain" = "Desguàs";
@@ -1509,3 +1509,7 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Pavelló esportiu";
 "type.xmas.tree" = "Arbre de Nadal";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";

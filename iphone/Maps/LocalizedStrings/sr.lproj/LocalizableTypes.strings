@@ -38,7 +38,7 @@
 "type.amenity.cafe" = "Кафић";
 "type.amenity.car_rental" = "Рентакар";
 "type.amenity.motorcycle_rental" = "Изнајмљивање моторцикала";
-"type.amenity.car_sharing" = "Дељени аутомобили";
+"type.amenity.car_sharing" = "Дељење аутомобила";
 "type.amenity.car_wash" = "Ауто-перионица";
 "type.man_made.telescope" = "Телескоп";
 "type.man_made.telescope.optical" = "Телескоп (оптички)";
@@ -174,7 +174,7 @@
 /* A weather shelter by the public transport stop. */
 "type.amenity.shelter.public_transport" = "Склониште на станици";
 /* Compared to wilderness_hut its smaller and simpler, without a fireplace. */
-"type.amenity.shelter.basic_hut" = "Преноћиште / Бивак";
+"type.amenity.shelter.basic_hut" = "Колиба за ноћење (бивак)";
 /* A traditional 3-walled shelter (one side open), suitable for overnight camping. */
 "type.amenity.shelter.lean_to" = "Настрешница за спавање";
 "type.amenity.public_bath" = "Јавно купатило";
@@ -662,7 +662,7 @@
 /* In most (European) countries, сemeteries are usually independent of places of worship (e.g. military cemeteries), while grave yards are usually the yard of a place of worship. */
 "type.landuse.cemetery.christian" = "Hrišćansko groblje";
 "type.landuse.religious" = "Versko zemljište";
-"type.landuse.commercial" = "Kmercijalna oblast";
+"type.landuse.commercial" = "Комерцијална област";
 "type.landuse.construction" = "Градилиште";
 "type.landuse.education" = "Obrazovna ustanova";
 "type.landuse.farmland" = "Poljoprivredno zemljište";
@@ -764,7 +764,7 @@
 "type.leisure.beach_resort" = "Resort na plaži";
 "type.man_made" = "Građevinske strukture";
 "type.man_made.breakwater" = "Lukobran";
-"type.man_made.cairn" = "Gromila";
+"type.man_made.cairn" = "Громила";
 "type.man_made.chimney" = "Димњак";
 "type.man_made.cutline" = "Šumski put";
 "type.man_made.survey_point" = "Geodetska tačka";
@@ -1235,7 +1235,7 @@
 "type.shop.beverages" = "Pića";
 "type.shop.bicycle" = "Prodavnica bicikala";
 "type.shop.bookmaker" = "Kladionica";
-"type.shop.books" = "Knjižara";
+"type.shop.books" = "Књижара";
 "type.shop.butcher" = "Mesara";
 "type.shop.cannabis" = "Kanabis šop";
 "type.shop.car" = "Prodaja automobila";
@@ -1274,11 +1274,11 @@
 "type.shop.hairdresser" = "Фризер";
 "type.shop.hardware" = "Gvožđara";
 "type.shop.health_food" = "Zdrava hrana";
-"type.shop.hearing_aids" = "Prodavnica slušnog aparata";
+"type.shop.hearing_aids" = "Продавница слушних апарата";
 "type.shop.herbalist" = "Prodavnica bilja";
 "type.shop.hifi" = "HiFi audio";
 "type.shop.houseware" = "Kućne potrepštine";
-"type.shop.jewelry" = "Zlatara";
+"type.shop.jewelry" = "Златара";
 "type.shop.kiosk" = "Киоск";
 "type.shop.kitchen" = "Kuhinjska oprema";
 "type.shop.laundry" = "Perionica veša";
@@ -1328,7 +1328,7 @@
 "type.shop.art" = "Umetnički radovi";
 "type.shop.baby_goods" = "Беби-опрема";
 "type.shop.bag" = "Torbe";
-"type.shop.bed" = "Продавница кревета";
+"type.shop.bed" = "Душеци / кревети";
 "type.shop.boutique" = "Бутик";
 "type.shop.charity" = "Добротворна радња";
 "type.shop.cheese" = "Sir";
@@ -1485,8 +1485,8 @@
 "type.piste_type.nordic" = "Стаза за нордијско скијање";
 "type.piste_type.sled" = "Стаза за санкање";
 "type.piste_type.sled.area" = "Стаза за санкање";
-"type.piste_type.snow_park" = "Простор за скокове и трикове";
-"type.piste_type.hike" = "Стаза за пешачење";
+"type.piste_type.snow_park" = "Снежни парк";
+"type.piste_type.hike" = "Снежна стаза за ходање";
 "type.piste_type.connection" = "Веза између стаза";
 "type.piste_type.skitour" = "Стаза за турно скијање";
 "type.amenity.events_venue" = "Место за догађаје";
@@ -1501,11 +1501,15 @@
 "type.social_facility.soup_kitchen" = "Narodna kuhinja";
 "type.social_facility.food_bank" = "Банка хране";
 "type.amenity.food_sharing" = "Дељење хране";
-"type.amenity.give_box" = "Kutija za poklone";
+"type.amenity.give_box" = "Кутија за поклоне";
 /* https://wiki.openstreetmap.org/wiki/Tag:emergency=emergency_ward_entrance */
-"type.emergency.emergency_ward_entrance" = "Ulaz u hitnu pomoć";
+"type.emergency.emergency_ward_entrance" = "Улаз у хитну помоћ";
 /* https://wiki.openstreetmap.org/wiki/Tag:amenity=dojo */
 "type.amenity.dojo" = "Доџо";
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
-"type.leisure.sports_hall" = "Sportska hala";
-"type.xmas.tree" = "Božićna jelka";
+"type.leisure.sports_hall" = "Спортска хала";
+"type.xmas.tree" = "Божићна јелка";
+"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.sport.four_square" = "Four Square";
+"type.sport.boules" = "Boules";
+"type.leisure.sports_centre.sport.boules" = "Sports Centre";

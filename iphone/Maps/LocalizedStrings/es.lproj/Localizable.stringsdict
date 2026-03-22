@@ -72,10 +72,12 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
+			<key>one</key>
+			<string>%lld residente</string>
+			<key>many</key>
+			<string>%lld residentes</string>
 			<key>other</key>
 			<string>%lld residents</string>
-			<key>one</key>
-			<string>%lld resident</string>
 		</dict>
 	</dict>
 	<key>rooms</key>
@@ -88,10 +90,12 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
+			<key>one</key>
+			<string>%lld habitación</string>
+			<key>many</key>
+			<string>%lld habitaciones</string>
 			<key>other</key>
 			<string>%lld rooms</string>
-			<key>one</key>
-			<string>%lld room</string>
 		</dict>
 	</dict>
 </dict>

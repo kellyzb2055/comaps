@@ -3,12 +3,12 @@
 /* Button which interrupts country download */
 "cancel_download" = "Cancel Download";
 /* Button which deletes downloaded country */
-"delete" = "Delete";
-"download_maps" = "Download Maps";
+"delete" = "ڈلیٹ";
+"download_maps" = "نکشہ ڈاونلوڈ کر";
 /* Settings/Downloader - info for country which started downloading */
-"downloading" = "Downloading…";
+"downloading" = "ڈاون لوڈ مرسہ اے…";
 /* Title of offline maps explanation */
-"offline_explanation_title" = "Offline Maps";
+"offline_explanation_title" = "آفائن نکشہ";
 /* Text of offline maps explanation */
 "offline_explanation_text" = "A map needs to be downloaded to view and navigate the area.\nDownload maps for areas you want to travel.";
 /* Choose measurement on first launch alert - choose metric system button */
@@ -20,17 +20,17 @@
 /* A text for current gps location point/arrow selected on the map */
 "core_my_position" = "My Position";
 /* Update maps later button text */
-"later" = "Later";
+"later" = "پین وخت اس";
 /* View and button titles for accessibility, please also edit it in iphone/plist.txt */
-"search" = "Search";
+"search" = "پٹ";
 /* Settings/Downloader - 3G download warning dialog confirm button */
 "use_cellular_data" = "Yes";
 /* View and button titles for accessibility */
-"zoom_to_country" = "Show on the map";
+"zoom_to_country" = "نکشہ ٹی نشان ایت";
 /* Button text for the button at the center of the screen when the country is not downloaded and the size should not be shown */
 "country_status_download_without_size" = "Download Map";
 /* Message to display at the center of the screen when the country download has failed */
-"country_status_download_failed" = "Download has failed";
+"country_status_download_failed" = "ڈاونلوڈ مننگ کتو";
 /* Text in About screen */
 "about_headline" = "Open project powered by the community";
 /* Text in About screen */

@@ -461,7 +461,7 @@
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d/%2$d</string>
     <string name="download_over_mobile_header">Lataa käyttämällä puhelinverkkoyhteyttä?</string>
-    <string name="download_over_mobile_message">Tämä vaihtoehto saattaa olla huomattavasti kalliimpi tietyillä sopimuksilla tai verkkovierailunyhteydellä</string>
+    <string name="download_over_mobile_message">Tämä vaihtoehto saattaa olla huomattavasti kalliimpi tietyillä sopimuksilla tai verkkovierailuyhteydellä</string>
     <string name="error_enter_correct_house_number">Syötä oikea talon numero</string>
     <!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
     <string name="error_enter_correct_storey_number">Kerrosten määrä saa olla korkeintaan %d</string>
@@ -794,7 +794,7 @@
     <!-- Title for the "Stop Without Saving" action for the alert when saving a track recording. -->
     <string name="continue_recording">Jatka tallennusta</string>
     <!-- Title for the alert when saving a track recording. -->
-    <string name="track_recording_alert_title">Tallenna kirjanmerkkeihin ja reitteihin?</string>
+    <string name="track_recording_alert_title">Tallenna suosikkeihin?</string>
     <!-- Message for the toast when saving the track recording is finished but nothing to save. -->
     <string name="track_recording_toast_nothing_to_save">Reitti on tyhjä - ei mitään tallennettavaa</string>
     <!-- Error message when there are no File Manager apps installed to select a folder when importing Bookmarks and Tracks -->
@@ -828,7 +828,7 @@
     <string name="pedestrian">Jalankulkija</string>
     <string name="bicycle">Polkupyörä</string>
     <string name="ruler">Viivoitin</string>
-    <string name="bookmark_color">Kirjanmerkin väri</string>
+    <string name="bookmark_color">Suosikin väri</string>
     <string name="about_help">Tietoja ja ohje</string>
     <string name="panoramax">Panoramax-kuva</string>
     <string name="pref_backup_summary">Varmuuskopioi laitteeseen automaattisesti</string>
@@ -904,9 +904,24 @@
     <string name="advanced">Lisäasetukset</string>
     <string name="download_resources_custom_url_title">Mukautettu karttapalvelin</string>
     <string name="download_resources_custom_url_summary_none">Ei asetettu</string>
-    <string name="download_resources_custom_url_error_scheme">Kirjoita täysi URL-osoite alkaeh https:// ja päättyen /</string>
+    <string name="download_resources_custom_url_error_scheme">Anna URL-osoite, joka alkaa http:// tai https://</string>
     <string name="download_resources_custom_url_message">Ohita karttalatausten oletuspalvelin. Jätä tyhjäksi käyttääksesi CoMapsin oletuspalvelinta.</string>
     <string name="navigation_start_tts_disabled_message">Ääniohjeistukset pois käytöstä: TTS-moottori ei saatavilla</string>
     <string name="charge_socket_schuko">EU</string>
     <string name="pref_speedlimit_title">Näytä nopeusrajoitukset</string>
+    <string name="bookmark_share_email_subject">Seuraa tätä linkkiä %1$s tai liitä seuraavat koordinaatit %2$s karttasovellukseesi nähdäksesi tämän sijainnin.</string>
+    <string name="my_position_share_email">Seuraa tätä linkkiä %1$s tai liitä seuraavat koordinaatit %2$s karttasovellukseesi nähdäksesi tämän sijainnin.</string>
+    <string name="mb_downloaded">%1$d MB / %2$d MB</string>
+    <string name="pref_alt_map_lang_handling_ignore_alternatives">Älä käytä vaihtoehtoja</string>
+    <string name="location_privacy_info">Sovellukset vastaanottavat sijaintitietoja käyttöjärjestelmäsi sijaintipalvelusta, joka saattaa jakaa sijaintisi Googlen ja/tai laitevalmistajasi kanssa. Vältä tämä käyttämällä yksityisyyttä suojaavaa Android-käyttöjärjestelmää.</string>
+    <string name="location_privacy">Sijaintiyksityisyys</string>
+    <string name="rooms">%s huonetta</string>
+    <string name="building_route">Luodaan reittiä…</string>
+    <string name="route_not_started">Reittiä ei aloitettu</string>
+    <string name="on_route">Reitillä</string>
+    <string name="route_needs_rebuild">Reitti täytyy luoda uudelleen</string>
+    <string name="route_finished">Reitti valmis</string>
+    <string name="not_following_route">Ei reitillä</string>
+    <string name="pref_openexternallinks_title">Avaa kolmannen osapuolen linkit automaattisesti</string>
+    <string name="pref_openexternallinks_summary">Avaa kolmannen osapuolen linkit oletuksena CoMapsissa</string>
 </resources>

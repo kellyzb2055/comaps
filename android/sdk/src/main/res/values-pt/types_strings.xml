@@ -1512,4 +1512,8 @@
     <string name="type.amenity.community_centre.youth_centre">Centro Juvenil</string>
     <string name="type.shop.water">Loja de Água</string>
     <string name="type.attraction">Atração</string>
+    <string name="type.leisure.sports_centre.sport.four_square">Centro Desportivo</string>
+    <string name="type.sport.four_square">Four Square</string>
+    <string name="type.leisure.sports_centre.sport.boules">Centro Desportivo</string>
+    <string name="type.sport.boules">Boules</string>
 </resources>
