@@ -81,6 +81,8 @@ _WORK_PATH = _HOME_PATH
 TMPDIR = os.path.join(_HOME_PATH, "tmp")
 MAIN_OUT_PATH = os.path.join(_WORK_PATH, "generation")
 PUBLISH_PATH = ""
+PUBLISH_KEY_PUBLIC = ""
+PUBLISH_KEY_SECRET = ""
 CACHE_PATH = ""
 
 # Developer section:
@@ -193,6 +195,10 @@ def init(default_settings_path: AnyStr):
     MAIN_OUT_PATH = cfg.get_opt_path("Main", "MAIN_OUT_PATH", MAIN_OUT_PATH)
     global PUBLISH_PATH
     PUBLISH_PATH = cfg.get_opt_path("Main", "PUBLISH_PATH", PUBLISH_PATH)
+    global PUBLISH_KEY_PUBLIC
+    PUBLISH_KEY_PUBLIC = cfg.get_opt_path("Main", "PUBLISH_KEY_PUBLIC", PUBLISH_KEY_PUBLIC)
+    global PUBLISH_KEY_SECRET
+    PUBLISH_KEY_SECRET = cfg.get_opt_path("Main", "PUBLISH_KEY_SECRET", PUBLISH_KEY_SECRET)
     CACHE_PATH = cfg.get_opt_path("Main", "CACHE_PATH", CACHE_PATH)
 
     # Developer section:

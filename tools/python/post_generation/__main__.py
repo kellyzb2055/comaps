@@ -3,6 +3,9 @@ import json
 import os
 import sys
 
+from maps_generator.utils.file import sign_file
+from maps_generator.utils.file import verify_file
+
 from post_generation.hierarchy_to_countries import (
     hierarchy_to_countries as hierarchy_to_countries_,
 )
@@ -55,6 +58,9 @@ The post_generation commands are:
             required=True,
             help="Output countries.txt file (default is stdout)",
         )
+        parser.add_argument("--secret_key", help="Optional secret key file *.pem to sign output countries.txt")
+        parser.add_argument("--public_key", help="Optional public key file *.pem to verify signed countries.txt")
+
         args = parser.parse_args(sys.argv[2:])
         countries = hierarchy_to_countries_(
             args.old,
@@ -68,6 +74,15 @@ The post_generation commands are:
         if args.output:
             with open(args.output, "w") as f:
                 json.dump(countries, f, ensure_ascii=False, indent=1)
+            if args.secret_key:
+                signature_path = sign_file(args.output, args.secret_key)
+                logger.info(f"Signed {args.output}")
+                if args.public_key:
+                    if verify_file(args.output, signature_path, args.public_key):
+                        logger.info(f"Verified {signature_path}")
+                    else:
+                        logger.error(f"Verification of {signature_path} with {args.public_key} failed!")
+
         else:
             print(json.dumps(countries, ensure_ascii=False, indent=1))
 

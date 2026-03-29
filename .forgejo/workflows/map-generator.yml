@@ -184,34 +184,12 @@ jobs:
             --data-urlencode 'to="DevOps"' \
             --data-urlencode topic=codeberg-bot \
             --data-urlencode 'content=Starting maps generation.'
+          mkdir -p /root/keys
+          echo "$COUNTRIES_PUB_KEY" > /root/keys/comaps_maps_ed25519_pk.pem
+          echo "$COUNTRIES_SECRET_KEY" > /root/keys/comaps_maps_ed25519_sk.pem
           mkdir -p /mnt/4tbexternal/osm-maps
           cd ~/comaps
           bash ./tools/unix/maps/docker_maps_generator.sh
-      - name: Sign countries.txt and copy to latest
-        shell: bash
-        run: |
-          shopt -s nullglob
-          mkdir -p ~/keys
-
-          echo "$COUNTRIES_PUB_KEY" > ~/keys/countries_ed25519_pk.pem
-          echo "$COUNTRIES_SECRET_KEY" > ~/keys/countries_ed25519_sk.pem
-
-          buildfolder=$(find /mnt/4tbexternal/osm-maps/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f5)
-          builddate=$(find /mnt/4tbexternal/osm-maps/*/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f6)
-          cd /mnt/4tbexternal/osm-maps/$buildfolder/$builddate
-          echo "Signing..."
-          openssl pkeyutl -sign -inkey ~/keys/countries_ed25519_sk.pem -rawin -in countries.txt -out countries.txt.sig
-          echo "Verifying..."
-          openssl pkeyutl -verify -pubin -inkey ~/keys/countries_ed25519_pk.pem -rawin -in countries.txt -sigfile countries.txt.sig
-          cd ..
-          mkdir -p latest
-          cp -p /mnt/4tbexternal/osm-maps/$buildfolder/$builddate/countries* latest
-
-          cd /var/www/html/maps
-          # remove old symlink to old build's latest
-          rm -r latest
-          ln -s /mnt/4tbexternal/osm-maps/$buildfolder/latest latest
-          echo "Done."
       - name: Notify Zulip
         run: |
           curl -X POST https://comaps.zulipchat.com/api/v1/messages \

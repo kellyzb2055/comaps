@@ -18,7 +18,6 @@ from typing import Union
 
 from maps_generator.generator import settings
 from maps_generator.generator import status
-from maps_generator.generator.exceptions import MapsGeneratorError
 from maps_generator.generator.osmtools import build_osmtools
 from maps_generator.generator.stages import Stage
 from maps_generator.utils.file import find_executable
@@ -325,7 +324,7 @@ class PathProvider:
         return os.path.join(self.user_resource_path, "countries_synonyms.csv")
 
     @property
-    def counties_txt_path(self) -> AnyStr:
+    def countries_txt_path(self) -> AnyStr:
         return os.path.join(self.mwm_path, "countries.txt")
 
     @property
@@ -419,6 +418,14 @@ class Env:
         if self.publish_path:
             create_if_not_exist_path(self.publish_path)
             logger.info(f"Enabled publishing to: {self.publish_path}")
+
+        self.publish_key_public = settings.PUBLISH_KEY_PUBLIC
+        self.publish_key_secret = settings.PUBLISH_KEY_SECRET
+        if self.publish_key_secret:
+            if os.path.exists(self.publish_key_secret) and os.path.exists(self.publish_key_public):
+                logger.info("Publishing signing keys are configured.")
+            else:
+                raise FileNotFoundError(f"Publishing signing keys not found: {self.publish_key_public} and {self.publish_key_secret}")
 
         logger.info(f"Build name is {self.build_name}.")
         logger.info(f"Build path is {self.build_path}.")
