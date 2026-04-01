@@ -11,3 +11,6 @@
 #define TRAFFIC_DATA_BASE_URL ""
 #define USER_BINDING_PKCS12 ""
 #define USER_BINDING_PKCS12_PASSWORD ""
+
+// The app is compatible with maps belonging to the following or earlier map series:
+#define MAP_SERIES "2026.04.05"
