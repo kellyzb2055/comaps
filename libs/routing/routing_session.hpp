@@ -172,6 +172,7 @@ public:
   void SetGuidesForTests(GuidesTracks guides) { m_router->SetGuidesTracks(std::move(guides)); }
 
   double GetCompletionPercent() const;
+  std::vector<double> GetIntermediateStopsProgress() const;
 
 private:
   struct DoReadyCallback

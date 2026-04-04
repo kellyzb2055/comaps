@@ -329,6 +329,11 @@ public:
 
   std::vector<routing::RouteStepInfo> GetRouteTurnsForDisplay(std::string const & locale) const;
 
+  std::vector<double> GetIntermediateStopsProgress() const
+  {
+    return m_routingSession.GetIntermediateStopsProgress();
+  }
+
 private:
   /// \returns true if the route has warnings.
   bool InsertRoute(routing::Route const & route);
