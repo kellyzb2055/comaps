@@ -1667,6 +1667,13 @@ public class MwmActivity extends BaseMwmFragmentActivity
   }
 
   @Override
+  public void refreshNavigationController()
+  {
+    if (mNavigationController != null)
+      mNavigationController.refresh(getApplicationContext());
+  }
+
+  @Override
   public void onStartRouteBuilding()
   {
     if (mRoutingPlanInplaceController == null)

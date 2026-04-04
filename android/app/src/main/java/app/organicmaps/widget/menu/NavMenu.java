@@ -2,15 +2,18 @@ package app.organicmaps.widget.menu;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
-import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.util.Pair;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.view.RoundedCornerCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.preference.PreferenceManager;
 import app.organicmaps.R;
 import app.organicmaps.sdk.routing.RoutingInfo;
@@ -18,14 +21,13 @@ import app.organicmaps.sdk.routing.RoutingInfo.RoutingSessionState;
 import app.organicmaps.sdk.sound.TtsPlayer;
 import app.organicmaps.sdk.util.DateUtils;
 import app.organicmaps.sdk.util.Distance;
-import app.organicmaps.util.Graphics;
 import app.organicmaps.util.UiUtils;
+import app.organicmaps.widget.RouteProgressBar;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.color.MaterialColors;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.progressindicator.CircularProgressIndicator;
-import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.google.android.material.textview.MaterialTextView;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -54,7 +56,7 @@ public class NavMenu
   private final MaterialTextView mDistanceValue;
   private final MaterialTextView mDistanceUnits;
   private final ShapeableImageView mDotsSwitch;
-  private final LinearProgressIndicator mRouteProgress;
+  private final RouteProgressBar mRouteProgress;
   private final MaterialTextView mRoutingState;
   private final CircularProgressIndicator mRebuildingRouteProgressBar;
 
@@ -71,6 +73,9 @@ public class NavMenu
   // Variable to switch the display of distance and time info between final destination or
   // the next intermediate stop.
   private boolean mShowInfoToFinalDestination;
+
+  // Array of progress percentage to route intermediate stops.
+  private double[] mIntermediateStopsProgress;
 
   public interface OnMenuSizeChangedListener
   {
@@ -146,6 +151,37 @@ public class NavMenu
     mTts.setOnClickListener(v -> onTtsClicked());
     MaterialButton stop = bottomFrame.findViewById(R.id.stop);
     stop.setOnClickListener(v -> onStopClicked());
+
+    // Check window insets to detect possible display conflicts due to window bottom round corners.
+    ViewCompat.setOnApplyWindowInsetsListener(mHeaderFrame, (view, windowInsets) -> {
+
+      if (mRouteProgress.getWidth() > 0)
+      {
+        RoundedCornerCompat roundedCorner =
+          windowInsets.getRoundedCorner(RoundedCornerCompat.POSITION_BOTTOM_LEFT);
+
+        if (roundedCorner != null)
+        {
+          // The rounded corner area is inside the application's bounds.
+          // Get radius of round corners.
+          int bottomCornerRadius = roundedCorner.getRadius();
+
+          // Get navigation panel height.
+          int bottomNavSize =
+            windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom;
+
+          int margin = Math.max(bottomCornerRadius - bottomNavSize, 0);
+
+          final ViewGroup.MarginLayoutParams layoutParams =
+            (ViewGroup.MarginLayoutParams) mRouteProgress.getLayoutParams();
+          layoutParams.setMarginStart(margin);
+          layoutParams.setMarginEnd(margin);
+          mRouteProgress.setLayoutParams(layoutParams);
+        }
+      }
+
+      return windowInsets;
+    });
 
     // Set OnTouchListener on header frame to collect vertical click coordinate.
     mHeaderFrame.setOnTouchListener((view, motionEvent) -> {
@@ -309,13 +345,6 @@ public class NavMenu
                            distToTarget.getUnitsStr(mActivity.getApplicationContext()));
   }
 
-  private void updateRouteProgress(double completionPercent)
-  {
-    // Start progress at 1% according to M3 guidelines.
-    final int progress = (completionPercent < 1) ? 1 : (int) completionPercent;
-    mRouteProgress.setProgressCompat(progress, true);
-  }
-
   private void updateRoutingSessionState(RoutingSessionState routingSessionState)
   {
     // Show and update route state.
@@ -345,7 +374,7 @@ public class NavMenu
     if ((mShowInfoToFinalDestination) || (mRoutingInfo.indexOfNextStop <= 0))
     {
       destinationText = mActivity.getString(R.string.destination);
-      iconId = R.drawable.route_point_finish;
+      iconId = R.drawable.route_finish;
       distance = mRoutingInfo.distToTarget;
       timeInSeconds = mRoutingInfo.totalTimeInSeconds;
     }
@@ -417,7 +446,8 @@ public class NavMenu
 
       // Show & update route progress bar.
       UiUtils.show(mRouteProgress);
-      updateRouteProgress(mRoutingInfo.completionPercent);
+      mRouteProgress.update(mRoutingInfo.completionPercent, mRoutingInfo.indexOfNextStop,
+                            mShowInfoToFinalDestination, mIntermediateStopsProgress);
 
       // Update dots switch.
       updateDotsSwitch();
@@ -450,6 +480,17 @@ public class NavMenu
       // Update routing session state message.
       updateRoutingSessionState(mRoutingInfo.routingSessionState);
     }
+  }
+
+  public void setIntermediateStopsProgress(double[] intermediateStopsProgress)
+  {
+    mIntermediateStopsProgress = intermediateStopsProgress;
+
+    if (mRoutingInfo == null)
+      return;
+
+    mRouteProgress.update(mRoutingInfo.completionPercent, mRoutingInfo.indexOfNextStop,
+                          mShowInfoToFinalDestination, mIntermediateStopsProgress);
   }
 
   public interface NavMenuListener
