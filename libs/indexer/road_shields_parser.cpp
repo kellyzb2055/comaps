@@ -86,6 +86,7 @@ ankerl::unordered_dense::map<std::string, RoadShieldType> const kRoadNetworkShie
     {"za:regional", RoadShieldType::Generic_White_Bordered},
     {"my:federal", RoadShieldType::Generic_Orange_Bordered},
     {"ar:national", RoadShieldType::Argentina_RN},
+    {"bo:fundamental", RoadShieldType::Bolivia_Fundamental},
     // United States road networks.
     {"us:i", RoadShieldType::US_Interstate},
     {"us:us", RoadShieldType::US_Highway},
@@ -745,6 +746,16 @@ public:
   {}
 };
 
+class BoliviaRoadShieldParser : public SimpleRoadShieldParser
+{
+public:
+  // Hide duplicated shields to remove duplication due to tagging convention in Bolivia for national roads
+  // TODO: Same improvements as outlined for the ArgentinaRoadShieldParser apply
+  explicit BoliviaRoadShieldParser(std::string const & baseRoadNumber)
+    : SimpleRoadShieldParser(baseRoadNumber, {{"F", RoadShieldType::Hidden}})
+  {}
+};
+
 class UkraineRoadShieldParser : public SimpleUnicodeRoadShieldParser
 {
 public:
@@ -919,6 +930,8 @@ RoadShieldsSetT GetRoadShields(std::string const & mwmName, std::string const & 
     return AustriaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Argentina")
     return ArgentinaRoadShieldParser(roadNumber).GetRoadShields();
+  if (mwmName == "Bolivia")
+    return BoliviaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Belgium")
     return BelgiumRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Greece")
