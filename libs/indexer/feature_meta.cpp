@@ -178,7 +178,7 @@ bool Metadata::TypeFromString(string_view k, Metadata::EType & outType)
     outType = Metadata::FMD_BUILDING_MIN_LEVEL;
   else if (k == "denomination")
     outType = Metadata::FMD_DENOMINATION;
-  else if (k == "level")
+  else if (k == "level" || k == "indoor:level")
     outType = Metadata::FMD_LEVEL;
   else if (k == "iata")
     outType = Metadata::FMD_AIRPORT_IATA;
