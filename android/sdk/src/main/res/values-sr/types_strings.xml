@@ -743,8 +743,8 @@
     <string name="type.office.lawyer">Адвокат</string>
     <string name="type.office.ngo">NVO</string>
     <string name="type.office.telecommunication">Mobilni operater</string>
-    <string name="type.organic.only">Органско</string>
-    <string name="type.organic.yes">Органско</string>
+    <string name="type.organic.only">Само органско</string>
+    <string name="type.organic.yes">Органска храна</string>
     <string name="type.place.city">Град</string>
     <string name="type.place.city.capital">Главни град</string>
     <string name="type.place.city.capital.10">Град</string>
@@ -1517,4 +1517,5 @@
     <string name="type.sport.four_square">Четири квадрата</string>
     <string name="type.leisure.sports_centre.sport.pickleball">Спортски центар</string>
     <string name="type.sport.pickleball">Пиклбол</string>
+    <string name="type.organic.no">Нема органску храну</string>
 </resources>

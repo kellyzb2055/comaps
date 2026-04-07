@@ -10,7 +10,7 @@ Omjunya an gemeneth ena ha gweres gul an app mappys gwella
 ‣ <b>Ow Gul Revrons dhe Brivetter</b>: An app yw desinys gans privetter yn brys - na aswon tus, na helerghi, ha na guntel kedhlow personel. Heb argemynnow.
 ‣ <b>Sempel ha Polsys</b>: nasyow es may oberi yn fydhyadow.
 ‣ <b>Sawya dha Batri hag Efander</b>: Na wakhe dha batri haval dhe appys navigacyon aral. Mappys kesstrothys sawya efander precyous war dha klapkodh.
-‣ <b>Rydh ha Byldys gans an Gemeneth</b>: Tus haval dhe ta gwerys byldya an app gans owth addya leow dhe OpenStreetMap, ow previ ha dasliva a-dro dhe nasyow hag ow kevri aga sleynethow hag arghans.
+‣ <b>Rydh ha Byldys gans an Gemeneth</b>: Tus haval dhe ta gwerys byldya an app gans ow keworra leow dhe OpenStreetMap, ow previ ha dasliva a-dro dhe nasyow hag ow kevri aga sleynethow hag arghans.
 ‣ <b>Erviransow hag Arghansereth Ygor ha Treusweladow, Heb Budh, ha Kod Ygor yn Leun</b>
 
 <b>Nasyow Chif</b>
