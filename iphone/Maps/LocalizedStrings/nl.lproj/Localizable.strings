@@ -36,7 +36,7 @@
 /* Text in About screen */
 "about_proposition_1" = "Offline, snel en gebruiksvriendelijk";
 /* Text in About screen */
-"about_proposition_2" = "Privacygericht en advertentievrij";
+"about_proposition_2" = "Privacygericht en reclamevrij";
 /* Text in About screen */
 "about_proposition_3" = "Transparant en zonder winstoogmerk";
 "close" = "Sluiten";
@@ -149,7 +149,7 @@
 /* Settings «Map» category: «Map Language» local value */
 "pref_maplanguage_local" = "Plaatselijke taal";
 /* Settings «Map» category: «Map Appearance» title */
-"pref_mapappearance_title" = "Kaart uiterlijk";
+"pref_mapappearance_title" = "Kaartweergave";
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "Weergave";
 /* Settings "Appearance" category: "Light" title, should be consistent with the pref_appearance_title translation. */
@@ -169,7 +169,7 @@
 /* Settings «Map» category: «3D buildings» title */
 "pref_map_3d_buildings_title" = "3D-gebouwen";
 /* A message in Settings/Preferences explaining why is it not possible to enable 3D buildings when max power saving mode is enabled */
-"pref_map_3d_buildings_disabled_summary" = "3D-gebouwen worden uitgeschakeld in de energiebesparende modus";
+"pref_map_3d_buildings_disabled_summary" = "3D-gebouwen zijn uitgeschakeld in energiebesparende modus";
 /* Settings «Route» category: «Tts enabled» title */
 "pref_tts_title" = "Gesproken instructies";
 /* Settings «Route» category: «Tts enable» title */
@@ -222,7 +222,7 @@
 /* Text in menu */
 "help" = "Hulp";
 /* Button in the main Help dialog */
-"faq" = "Vragen en antwoorden";
+"faq" = "Veelgestelde vragen";
 /* Button in the main menu */
 "donate" = "Doneren";
 /* Button in the main Help dialog */
@@ -234,7 +234,7 @@
 /* Button in the About screen */
 "volunteer" = "Draag bij en verbeter CoMaps";
 /* "Social media" section header in the About screen */
-"follow_us" = "Verbind met ons";
+"follow_us" = "Blijf met ons in contact";
 /* Alert text */
 "email_error_body" = "Het e-mailprogramma is niet ingesteld. Stel het programma in of neem contact met ons op via %@";
 /* Alert title */
@@ -266,7 +266,7 @@
 /* Context menu item for downloader. */
 "downloader_download_map" = "Kaart downloaden";
 /* Item status in downloader. */
-"downloader_retry" = "Opnieuw";
+"downloader_retry" = "Opnieuw proberen";
 /* Item in context menu. */
 "downloader_delete_map" = "Kaart verwijderen";
 /* Text for routing error dialog */
@@ -298,11 +298,11 @@
 /* light blue color */
 "light_blue" = "Lichtblauw";
 /* cyan color */
-"cyan" = "Blauwgroen";
+"cyan" = "Cyaan";
 /* teal color */
-"teal" = "Smaragdgroen";
+"teal" = "Blauwgroen";
 /* lime color */
-"lime" = "Limoen";
+"lime" = "Limoengroen";
 /* deep orange color */
 "deep_orange" = "Donkeroranje";
 /* gray color */
@@ -310,19 +310,19 @@
 /* blue gray color */
 "blue_gray" = "Grijsblauw";
 "dialog_routing_disclaimer_title" = "Belangrijk bij het volgen van een route:";
-"dialog_routing_disclaimer_priority" = "— De toestand van het wegdek, de verkeersregels en -borden hebben altijd voorrang op het advies van het navigatiesysteem;";
+"dialog_routing_disclaimer_priority" = "— De situatie op de weg, verkeersregels en verkeersborden gaan altijd vóór op het advies van het navigatiesysteem;";
 "dialog_routing_disclaimer_precision" = "— De kaart kan onnauwkeurig zijn en de voorgestelde route is niet altijd de meest optimale manier om uw bestemming te bereiken;";
 "dialog_routing_disclaimer_recommendations" = "— Beschouw de voorgestelde routes enkel als aanbevelingen;";
 "dialog_routing_disclaimer_borders" = "— Wees voorzichtig met de routes in de grenszones: de routes die door onze app zijn gemaakt, gaan wellicht door landgrenzen in ongeautoriseerde plaatsen.";
-"dialog_routing_disclaimer_beware" = "Blijf alert en rij veilig!";
+"dialog_routing_disclaimer_beware" = "Blijf alert en rijd veilig!";
 "dialog_routing_check_gps" = "Controleer gps-signaal";
 "dialog_routing_error_location_not_found" = "Route samenstellen mislukt. De huidige gps-coördinaten kunnen niet worden geïdentificeerd.";
 "dialog_routing_location_turn_wifi" = "Controleer uw gps-signaal. Schakel WiFi in voor een meer nauwkeurige locatiebepaling.";
 "dialog_routing_location_turn_on" = "Schakel locatiediensten in";
-"dialog_routing_location_unknown_turn_on" = "De huidige gps-coördinaten kunnen niet worden gevonden. Schakel locatiediensten in om de route te berekenen.";
+"dialog_routing_location_unknown_turn_on" = "Kan de huidige gps-coördinaten niet bepalen. Schakel locatiediensten in om de route te berekenen.";
 "dialog_routing_download_files" = "Download de vereiste bestanden";
-"dialog_routing_download_and_update_all" = "Download de kaart en route-informatie voor het ingestelde traject en werk deze bij om de route te berekenen.";
-"dialog_routing_unable_locate_route" = "Route vinden mislukt";
+"dialog_routing_download_and_update_all" = "Download of update alle kaarten op de ingestelde route om een route te berekenen.";
+"dialog_routing_unable_locate_route" = "Route kan niet worden gevonden";
 "dialog_routing_change_start_or_end" = "Pas het beginpunt of de bestemming aan.";
 "dialog_routing_change_start" = "Startpunt aanpassen";
 "dialog_routing_start_not_determined" = "Route samenstellen mislukt. Startpunt kan niet worden gevonden.";
@@ -346,7 +346,7 @@
 /* Arrive routing message in navigation view */
 "routing_arrive" = "Aankomst: %@";
 /* Text for routing::RouterResultCode::FileTooOld dialog. */
-"dialog_routing_download_and_update_maps" = "Om een route te maken, download en update alle kaarten rondom de route.";
+"dialog_routing_download_and_update_maps" = "Download of update alle kaarten op de ingestelde route om een route te berekenen.";
 "categories" = "Categorieën";
 "history" = "Geschiedenis";
 "search_not_found" = "Sorry, geen resultaten gevonden.";
@@ -374,8 +374,8 @@
 "editor_time_add_closed" = "Sluitingstijden toevoegen";
 "editor_time_title" = "Openingstijden";
 "editor_time_advanced" = "Geavanceerde modus";
-"editor_time_simple" = "Eenvoudige modus";
-"editor_hours_closed" = "Sluitingstijden";
+"editor_time_simple" = "Simpele modus";
+"editor_hours_closed" = "Gesloten-tijden";
 "editor_example_values" = "Voorbeeldwaarden";
 "editor_add_select_location" = "Locatie selecteren";
 "editor_done_dialog_1" = "U hebt de wereldkaart gewijzigd. Houdt dit niet voor uzelf! Vertel het uw vrienden en bewerk het samen.";
