@@ -205,6 +205,12 @@ IsATMChecker::IsATMChecker()
   m_types.push_back(c.GetTypeByPath({"amenity", "atm"}));
 }
 
+IsOrganicChecker::IsOrganicChecker()
+{
+  Classificator const & c = classif();
+  m_types.push_back(c.GetTypeByPath({"organic", "yes"}));
+}
+
 IsSpeedCamChecker::IsSpeedCamChecker()
 {
   Classificator const & c = classif();
