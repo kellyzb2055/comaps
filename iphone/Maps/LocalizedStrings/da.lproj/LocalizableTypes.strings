@@ -520,7 +520,7 @@
 "type.highway.residential.bridge" = "Bro";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.residential.tunnel" = "Tunnel";
-"type.highway.rest_area" = "Holdeplads";
+"type.highway.rest_area" = "Rasteplads";
 "type.highway.road" = "Vej";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Bro";

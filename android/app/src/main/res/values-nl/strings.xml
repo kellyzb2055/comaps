@@ -407,11 +407,11 @@
     <string name="edit_opening_hours">Openingstijden bewerken</string>
     <string name="no_osm_account">Geen account bij OpenStreetMap?</string>
     <string name="register_at_openstreetmap">Registreer bij OpenStreetMap</string>
-    <string name="login">Log in</string>
+    <string name="login">Inloggen</string>
     <!-- Status message indicating that user did not login to OSM profile yet. -->
     <string name="not_signed_in">Niet ingelogd</string>
     <string name="login_osm">Log in bij OpenStreetMap</string>
-    <string name="logout">Log uit</string>
+    <string name="logout">Uitloggen</string>
     <string name="edit_place">Locatie bewerken</string>
     <string name="add_language">Taal toevoegen</string>
     <string name="street">Straat</string>
@@ -458,7 +458,7 @@
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d van %2$d</string>
     <string name="download_over_mobile_header">Downloaden via mobiele internetverbinding?</string>
-    <string name="download_over_mobile_message">Met sommige mobiele dataplannen kan dit erg duur zijn, vooral bij roaming.</string>
+    <string name="download_over_mobile_message">Met sommige mobiele abonnementen kan dit erg duur zijn, vooral bij roaming.</string>
     <string name="error_enter_correct_house_number">Voer een geldig huisnummer in</string>
     <!-- Error message in Editor when a user tries to set the number of floors for a building higher than %d floors -->
     <string name="error_enter_correct_storey_number">Het aantal verdiepingen mag niet groter zijn dan %d</string>
@@ -479,7 +479,7 @@
     <string name="editor_category_unsuitable_title">Kun je geen geschikte categorie vinden?</string>
     <string name="editor_category_unsuitable_text">CoMaps kan alleen eenvoudige puntcategorieën toevoegen, dus geen steden, wegen, meren, contouren van gebouwen, enz. Voeg dergelijke categorieën direct toe aan <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lees onze <a href="https://www.comaps.app/support/advanced-map-editing/">handleiding</a> voor gedetailleerde stap voor stap instructies.</string>
     <string name="downloader_no_downloaded_maps_title">U hebt geen kaarten gedownload</string>
-    <string name="downloader_no_downloaded_maps_message">Download kaarten om een locatie te zoeken en offline te navigeren</string>
+    <string name="downloader_no_downloaded_maps_message">Download kaarten om offline te zoeken en navigeren</string>
     <string name="current_location_unknown_error_title">Huidige locatie is onbekend</string>
     <!-- abbreviation for kilometers per hour -->
     <string name="kilometers_per_hour">km/h</string>
@@ -490,17 +490,17 @@
     <string name="placepage_more_button">Meer</string>
     <string name="placepage_edit_bookmark_button">Opgeslagen plaats bewerken</string>
     <string name="placepage_personal_notes_hint">Persoonlijke aantekeningen (tekst of html)</string>
-    <string name="editor_reset_edits_message">Alle lokale wijzigingen weggooien?</string>
-    <string name="editor_reset_edits_button">Wijzigingen weggooien</string>
+    <string name="editor_reset_edits_message">Alle lokale wijzigingen verwerpen?</string>
+    <string name="editor_reset_edits_button">Wijzigingen verwerpen</string>
     <string name="editor_remove_place_message">Toegevoegde locatie verwijderen?</string>
     <string name="editor_remove_place_button">Verwijder</string>
     <string name="editor_place_doesnt_exist">Locatie bestaat niet</string>
     <!-- Error message for "Place doesn't exist" dialog when comment is empty -->
-    <string name="delete_place_empty_comment_error">Graag de reden voor verwijdering aangeven</string>
+    <string name="delete_place_empty_comment_error">Geef de reden voor het verwijderen van de plaats op</string>
     <!-- Phone number error message -->
     <string name="error_enter_correct_phone">Voer een geldig telefoonnummer in</string>
     <string name="error_enter_correct_web">Voer een geldig webadres in</string>
-    <string name="error_enter_correct_email">Voer een geldig emailadres in</string>
+    <string name="error_enter_correct_email">Voer een geldig e-mailadres in</string>
     <string name="error_enter_correct_facebook_page">Voer een geldig Facebook-webadres, een accountnaam of een paginanaam in</string>
     <string name="error_enter_correct_instagram_page">Voer een geldig Instagram-webadres of accountnaam in</string>
     <string name="error_enter_correct_twitter_page">Voer een geldig Twitter-webadres of gebruikersnaam in</string>
@@ -516,7 +516,7 @@
     <!-- Shown as toast when starting the recent track recording -->
     <string name="track_recording">Route opnemen</string>
     <!-- For the first routing -->
-    <string name="accept">Accepteer</string>
+    <string name="accept">Accepteren</string>
     <!-- For the first routing -->
     <string name="decline">Weiger</string>
     <string name="mobile_data_dialog">Mobiel internet gebruiken om gedetailleerde informatie weer te geven?</string>
@@ -893,7 +893,7 @@
     <string name="closes_day_at">Sluit op %1$s om %2$s</string>
     <string name="editor_submit">Indienen</string>
     <string name="editor_business_vacant_button">Bedrijfsruimte is leeg</string>
-    <string name="editor_mark_business_vacant_title">Bedrijfsruimte leeg markeren</string>
+    <string name="editor_mark_business_vacant_title">Bedrijfsruimte als leeg markeren</string>
     <string name="editor_mark_business_vacant_description">Gebruik dit als het bedrijf is verhuisd en de ruimte leeg is en klaar is voor een nieuwe huurder.</string>
     <string name="power_management">Energiebeheer</string>
     <string name="charge_socket_schuko">Binnenlandse EU</string>
@@ -936,4 +936,6 @@
     <string name="route_recalculating">Route herberekenen…</string>
     <string name="charge_socket_type1_combo">Type 1 combo</string>
     <string name="population">Populatie: %s</string>
+    <string name="setting_value_system_default">Systeem standaard</string>
+    <string name="change_app_locale">Taal van de app</string>
 </resources>

@@ -236,7 +236,7 @@
 "type.boundary" = "Grens";
 "type.boundary.administrative" = "Administratieve grens";
 /* Borders between countries. */
-"type.boundary.administrative.2" = "Natiegrens";
+"type.boundary.administrative.2" = "Landsgrens";
 /* Country's primary subdivision borders, e.g. between regions, provinces, states.. */
 "type.boundary.administrative.3" = "Regiogrens";
 /* Country's primary subdivision borders, e.g. between regions, provinces, states.. */
@@ -263,7 +263,7 @@
 "type.craft.beekeeper" = "Imker";
 "type.craft.blacksmith" = "Smid";
 "type.craft.brewery" = "Brouwerij";
-"type.craft.caterer" = "Traiteur";
+"type.craft.caterer" = "Cateraar";
 "type.craft.carpenter" = "Timmerman";
 "type.craft.confectionery" = "Banketbakkerij";
 "type.craft.electrician" = "Elektricien";
@@ -273,7 +273,7 @@
 "type.craft.handicraft" = "Handwerk";
 /* Heating, Ventilation, and Air Conditioning */
 "type.craft.hvac" = "Airconditioning";
-"type.craft.key_cutter" = "Sleutel snijden";
+"type.craft.key_cutter" = "Sleutelmaker";
 "type.craft.locksmith" = "Slotenmaker";
 "type.craft.metal_construction" = "Metaalarbeider";
 "type.craft.painter" = "Schilder";
@@ -308,7 +308,7 @@
 "type.cuisine.crepe" = "Pannenkoek";
 "type.cuisine.croatian" = "Kroatisch";
 "type.cuisine.curry" = "Curry's";
-"type.cuisine.deli" = "Deli";
+"type.cuisine.deli" = "Delicatessen";
 "type.cuisine.diner" = "Diner";
 "type.cuisine.donut" = "Donuts";
 "type.cuisine.ethiopian" = "Ethiopisch";
@@ -325,7 +325,7 @@
 "type.cuisine.heuriger" = "Heuriger";
 "type.cuisine.hotdog" = "Hotdogs";
 "type.cuisine.hungarian" = "Hongaars";
-"type.cuisine.ice_cream" = "Ijs";
+"type.cuisine.ice_cream" = "IJs";
 "type.cuisine.indian" = "Indisch";
 "type.cuisine.indonesian" = "Indonesisch";
 "type.cuisine.international" = "Internationaal";
@@ -348,7 +348,7 @@
 "type.cuisine.pasta" = "Pasta";
 "type.cuisine.persian" = "Perzisch";
 "type.cuisine.peruvian" = "Peruaans";
-"type.cuisine.pizza" = "Pizza's";
+"type.cuisine.pizza" = "Pizza";
 "type.cuisine.polish" = "Pools";
 "type.cuisine.portuguese" = "Portugees";
 "type.cuisine.ramen" = "Ramennoedels";
@@ -364,7 +364,7 @@
 "type.cuisine.sushi" = "Sushi";
 "type.cuisine.tapas" = "Tapas";
 "type.cuisine.tea" = "Thee";
-"type.cuisine.thai" = "Thais gerechten";
+"type.cuisine.thai" = "Thais";
 "type.cuisine.turkish" = "Turks";
 "type.cuisine.vegan" = "Veganistisch";
 "type.cuisine.vegetarian" = "Vegetarisch";
@@ -779,9 +779,9 @@
 "type.man_made.surveillance" = "Bewakingscamera";
 "type.man_made.tower" = "Toren";
 /* A huge telecommunications tower. Often a local monument or a landmark. */
-"type.man_made.communications_tower" = "Communicatie Toren";
+"type.man_made.communications_tower" = "Communicatietoren";
 /* A regular telecommunications tower. */
-"type.man_made.tower.communication" = "Communicatie Toren";
+"type.man_made.tower.communication" = "Communicatietoren";
 /* A regular telecommunications mast. */
 "type.man_made.mast.communication" = "Telecommunicatiemast";
 /* A deep hole drilled into the earth to extract oil or gas. */
@@ -1415,7 +1415,7 @@
 "type.tourism.chalet" = "Vakantiehuis";
 "type.tourism.gallery" = "Galerij";
 "type.tourism.guest_house" = "Gasthuis";
-"type.tourism.hostel" = "Herberg";
+"type.tourism.hostel" = "Jeugdherberg";
 "type.tourism.hotel" = "Hotel";
 "type.tourism.information" = "Toeristische informatie";
 "type.tourism.information.board" = "Informatiebord";

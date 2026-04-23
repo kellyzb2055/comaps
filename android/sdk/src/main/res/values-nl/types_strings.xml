@@ -209,7 +209,7 @@
     <string name="type.boundary">Grens</string>
     <string name="type.boundary.administrative">Administratieve grens</string>
     <!-- Borders between countries. -->
-    <string name="type.boundary.administrative.2">Natiegrens</string>
+    <string name="type.boundary.administrative.2">Landsgrens</string>
     <!-- Country's primary subdivision borders, e.g. between regions, provinces, states.. -->
     <string name="type.boundary.administrative.3">Regiogrens</string>
     <!-- Country's primary subdivision borders, e.g. between regions, provinces, states.. -->
@@ -236,7 +236,7 @@
     <string name="type.craft.beekeeper">Imker</string>
     <string name="type.craft.blacksmith">Smid</string>
     <string name="type.craft.brewery">Brouwerij</string>
-    <string name="type.craft.caterer">Traiteur</string>
+    <string name="type.craft.caterer">Cateraar</string>
     <string name="type.craft.carpenter">Timmerman</string>
     <string name="type.craft.confectionery">Banketbakkerij</string>
     <string name="type.craft.electrician">Elektricien</string>
@@ -246,7 +246,7 @@
     <string name="type.craft.handicraft">Handwerk</string>
     <!-- Heating, Ventilation, and Air Conditioning -->
     <string name="type.craft.hvac">Airconditioning</string>
-    <string name="type.craft.key_cutter">Sleutel snijden</string>
+    <string name="type.craft.key_cutter">Sleutelmaker</string>
     <string name="type.craft.locksmith">Slotenmaker</string>
     <string name="type.craft.metal_construction">Metaalarbeider</string>
     <string name="type.craft.painter">Schilder</string>
@@ -280,7 +280,7 @@
     <string name="type.cuisine.crepe">Pannenkoek</string>
     <string name="type.cuisine.croatian">Kroatisch</string>
     <string name="type.cuisine.curry">Curry\'s</string>
-    <string name="type.cuisine.deli">Deli</string>
+    <string name="type.cuisine.deli">Delicatessen</string>
     <string name="type.cuisine.diner">Diner</string>
     <string name="type.cuisine.donut">Donuts</string>
     <string name="type.cuisine.ethiopian">Ethiopisch</string>
@@ -296,7 +296,7 @@
     <string name="type.cuisine.heuriger">Heuriger</string>
     <string name="type.cuisine.hotdog">Hotdogs</string>
     <string name="type.cuisine.hungarian">Hongaars</string>
-    <string name="type.cuisine.ice_cream">Ijs</string>
+    <string name="type.cuisine.ice_cream">IJs</string>
     <string name="type.cuisine.indian">Indisch</string>
     <string name="type.cuisine.indonesian">Indonesisch</string>
     <string name="type.cuisine.international">Internationaal</string>
@@ -319,7 +319,7 @@
     <string name="type.cuisine.pasta">Pasta</string>
     <string name="type.cuisine.persian">Perzisch</string>
     <string name="type.cuisine.peruvian">Peruaans</string>
-    <string name="type.cuisine.pizza">Pizza\'s</string>
+    <string name="type.cuisine.pizza">Pizza</string>
     <string name="type.cuisine.polish">Pools</string>
     <string name="type.cuisine.portuguese">Portugees</string>
     <string name="type.cuisine.ramen">Ramennoedels</string>
@@ -335,7 +335,7 @@
     <string name="type.cuisine.sushi">Sushi</string>
     <string name="type.cuisine.tapas">Tapas</string>
     <string name="type.cuisine.tea">Thee</string>
-    <string name="type.cuisine.thai">Thais gerechten</string>
+    <string name="type.cuisine.thai">Thais</string>
     <string name="type.cuisine.turkish">Turks</string>
     <string name="type.cuisine.vegan">Veganistisch</string>
     <string name="type.cuisine.vegetarian">Vegetarisch</string>
@@ -665,9 +665,9 @@
     <string name="type.man_made.surveillance">Bewakingscamera</string>
     <string name="type.man_made.tower">Toren</string>
     <!-- A huge telecommunications tower. Often a local monument or a landmark. -->
-    <string name="type.man_made.communications_tower">Communicatie Toren</string>
+    <string name="type.man_made.communications_tower">Communicatietoren</string>
     <!-- A regular telecommunications tower / mast. -->
-    <string name="type.man_made.tower.communication">Communicatie Toren</string>
+    <string name="type.man_made.tower.communication">Communicatietoren</string>
     <!-- A deep hole drilled into the earth to extract oil or gas. -->
     <string name="type.man_made.petroleum_well">Olie- of gasput</string>
     <!-- A tower/mast constructed to burn off excess gas. -->
@@ -1267,7 +1267,7 @@
     <string name="type.tourism.chalet">Vakantiehuis</string>
     <string name="type.tourism.gallery">Galerij</string>
     <string name="type.tourism.guest_house">Gasthuis</string>
-    <string name="type.tourism.hostel">Herberg</string>
+    <string name="type.tourism.hostel">Jeugdherberg</string>
     <string name="type.tourism.hotel">Hotel</string>
     <string name="type.tourism.information">Toeristische informatie</string>
     <string name="type.tourism.information.board">Informatiebord</string>

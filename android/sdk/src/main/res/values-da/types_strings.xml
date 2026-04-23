@@ -383,7 +383,7 @@
     <string name="type.highway.residential.bridge">Bro</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.residential.tunnel">Tunnel</string>
-    <string name="type.highway.rest_area">Holdeplads</string>
+    <string name="type.highway.rest_area">Rasteplads</string>
     <string name="type.highway.road">Vej</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.road.bridge">Bro</string>

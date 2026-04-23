@@ -405,7 +405,7 @@
 "closes_at" = "Sluit om %@";
 "closes_in" = "Sluit over %@";
 "closed" = "Gesloten";
-"add_opening_hours" = "Voeg openingstijden toe";
+"add_opening_hours" = "Openingstijden toevoegen";
 /* OpenStreetMap */
 "osm_mapdata" = "Kaartgegevens van OpenStreetMap";
 "osm_mapdata_explanation %@" = "Door de gemeenschap gemaakte kaartgegevens tot *%@*. Lees meer over hoe je de kaart kunt bewerken en bijwerken op [OpenStreetMap.org](https://openstreetmap.org).";
@@ -419,7 +419,7 @@
 "osm_profile_reauthorize_promt" = "Het OpenStreetMap-account is losgekoppeld van deze app";
 "osm_profile_reauthorize" = "Opnieuw verbinden met OpenStreetMap";
 "osm_profile_remove_promt" = "Als je je account niet opnieuw kunt of wilt koppelen, kun je het gewoon uit deze app verwijderen";
-"osm_profile_remove" = "Geheugen van OpenStreetMap-account uit deze app verwijderen";
+"osm_profile_remove" = "OpenStreetMap-account loskoppelen";
 "osm_profile_register_promt" = "Geen account bij OpenStreetMap?";
 "osm_profile_register" = "Registreer bij OpenStreetMap";
 "osm_profile_verfied_changes" = "Gecontroleerde wijzigingen";
@@ -429,7 +429,7 @@
 "osm_profile_delete" = "OpenStreetMap-account verwijderen";
 /* Information text: "Last upload 11.01.2016" */
 "last_upload" = "Laatste upload";
-"thank_you" = "Dank je wel";
+"thank_you" = "Dankjewel";
 "edit_place" = "Locatie bewerken";
 "place_name" = "Locatienaam";
 "add_language" = "Taal toevoegen";
@@ -495,10 +495,10 @@
 "editor_category_unsuitable_title" = "Kun je geen geschikte categorie vinden?";
 "editor_category_unsuitable_text" = "CoMaps kan alleen eenvoudige puntcategorieën toevoegen, dus geen steden, wegen, meren, contouren van gebouwen, enz. Voeg dergelijke categorieën direct toe aan <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Lees onze <a href=\"https://www.comaps.app/support/advanced-map-editing/\">handleiding</a> voor gedetailleerde stap voor stap instructies.";
 "downloader_no_downloaded_maps_title" = "U hebt geen kaarten gedownload";
-"downloader_no_downloaded_maps_message" = "Download kaarten om een locatie te zoeken en offline te navigeren.";
+"downloader_no_downloaded_maps_message" = "Download kaarten om offline te zoeken en navigeren.";
 "current_location_unknown_error_title" = "Huidige locatie is onbekend.";
 "current_location_unknown_error_message" = "Er is een fout opgetreden tijdens het zoeken naar uw locatie. Controleer of uw apparaat goed werkt en probeer het later opnieuw.";
-"location_services_disabled_header" = "Locatie-identificatie is uitgeschakeld";
+"location_services_disabled_header" = "Locatiediensten zijn uitgeschakeld";
 "location_services_disabled_message" = "Schakel de toegang tot geolocatie in in de instellingen van het apparaat";
 "location_services_disabled_1" = "1. Instellingen openen";
 "location_services_disabled_2" = "2. Tik op locatie";
@@ -506,7 +506,7 @@
 "location_services_disabled_3" = "3. Selecteer Bij gebruik van app";
 "location_services_disabled_on_device_2" = "2. Selecteer Privacy en beveiliging";
 "location_services_disabled_on_device_3" = "3. Selecteer Locatievoorzieningen";
-"location_services_disabled_on_device_4" = "4. Locatievoorzieningen inschakelen";
+"location_services_disabled_on_device_4" = "4. Locatiediensten inschakelen";
 "location_services_disabled_on_device_additional_message" = "Of blijf CoMaps gebruiken zonder locatie";
 /* abbreviation for meters */
 "m" = "m";
@@ -531,8 +531,8 @@
 "placepage_delete_bookmark_button" = "Verwijder plaats";
 "editor_edits_sent_message" = "Je opmerking wordt verzonden naar OpenStreetMap";
 "editor_comment_hint" = "Reactie…";
-"editor_reset_edits_message" = "Alle lokale wijzigingen weggooien?";
-"editor_reset_edits_button" = "Wijzigingen weggooien";
+"editor_reset_edits_message" = "Alle lokale wijzigingen verwerpen?";
+"editor_reset_edits_button" = "Wijzigingen verwerpen";
 "editor_remove_place_message" = "Toegevoegde locatie verwijderen?";
 "editor_remove_place_button" = "Verwijder";
 "editor_place_doesnt_exist" = "Locatie bestaat niet";
@@ -541,7 +541,7 @@
 /* Phone number error message */
 "error_enter_correct_phone" = "Voer een geldig telefoonnummer in";
 "error_enter_correct_web" = "Voer een geldig webadres in";
-"error_enter_correct_email" = "Voer een geldig emailadres in";
+"error_enter_correct_email" = "Voer een geldig e-mailadres in";
 "refresh" = "Update";
 "placepage_add_place_button" = "Plaats toevoegen aan OpenStreetMap";
 /* Displayed when saving some edits to the map to warn against publishing personal data */
@@ -558,7 +558,7 @@
 "recent_track_background_dialog_message" = "CoMaps gebruikt uw geografische positie op de achtergrond om uw onlangs afgelegde route vast te leggen.";
 "general_settings" = "Algemene instellingen";
 /* For the first routing */
-"accept" = "Accepteer";
+"accept" = "Accepteren";
 /* For the first routing */
 "decline" = "Weiger";
 "mobile_data_dialog" = "Mobiel internet gebruiken om gedetailleerde informatie weer te geven?";
