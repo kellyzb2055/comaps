@@ -1,4 +1,5 @@
 #include "shaders/gl_program_pool.hpp"
+#include "shaders/gl_program_info.hpp"
 #include "shaders/gl_shaders.hpp"
 #include "shaders/program_params.hpp"
 

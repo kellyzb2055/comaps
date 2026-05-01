@@ -5,6 +5,8 @@
 #include "platform/preferred_languages.hpp"
 #include "platform/settings.hpp"
 
+#include "base/macros.hpp"
+
 namespace localisation
 {
 using namespace std;

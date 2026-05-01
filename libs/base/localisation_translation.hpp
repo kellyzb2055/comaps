@@ -1,12 +1,13 @@
 #pragma once
 
-#include "coding/string_utf8_multilang.hpp"
-
-#include "storage/country_decl.hpp"
+#include "storage/storage_defines.hpp"
 
 #include "base/localisation.hpp"
 
+#include <string>
 #include <vector>
+
+class StringUtf8Multilang;
 
 namespace localisation
 {

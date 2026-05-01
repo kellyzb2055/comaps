@@ -1,7 +1,10 @@
 #pragma once
 
-#include "base/buffer_vector.hpp"
-
+#include <algorithm>
+#include <array>
+#include <cstdint>
+#include <optional>
+#include <string>
 #include <vector>
 
 namespace localisation
