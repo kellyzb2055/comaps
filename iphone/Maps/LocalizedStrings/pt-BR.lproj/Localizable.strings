@@ -4,7 +4,14 @@
 "cancel_download" = "Cancelar download";
 /* Button which deletes downloaded country */
 "delete" = "Apagar";
+/* Download/update Maps page */
 "download_maps" = "Baixar mapas";
+"downloader_check_updates_button" = "Verifique se há atualizações";
+"downloader_check_updates_checking" = "Buscando atualizações...";
+"downloader_check_updates_updated" = "Atualizações do mapa disponíveis!";
+"downloader_check_updates_no_updates" = "Nenhuma atualização disponível";
+"downloader_check_updates_eol" = "Não haverá mais atualizações de mapas para esta versão do aplicativo. Atualize o aplicativo!";
+"downloader_check_updates_error" = "Erro ao verificar atualizações";
 /* Settings/Downloader - info for country which started downloading */
 "downloading" = "Baixando…";
 /* Title of offline maps explanation */

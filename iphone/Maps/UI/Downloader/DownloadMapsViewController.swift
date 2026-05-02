@@ -4,6 +4,8 @@ import UIKit
 class DownloadMapsViewController: MWMViewController {
   // MARK: - Types
 
+  private var checkUpdatesButton: UIButton?
+    
   private enum NodeAction {
     case showOnMap
     case download
@@ -31,7 +33,7 @@ class DownloadMapsViewController: MWMViewController {
   var dataSource: IDownloaderDataSource!
   @objc var mode: MWMMapDownloaderMode = .downloaded
   private var skipCountryEvent = false
-  private var hasAddMapSection: Bool { dataSource.isRoot && mode == .downloaded }
+  private var hasAddMapSection: Bool { false }
   private let allMapsViewBottomOffsetConstant: CGFloat = 64
 
   lazy var noSerchResultViewController: SearchNoResultsViewController = {
@@ -94,6 +96,41 @@ class DownloadMapsViewController: MWMViewController {
     navigationItem.hidesSearchBarWhenScrolling = false
     
     configButtons()
+      
+    if mode == .downloaded && dataSource.isRoot {
+      let refreshControl = UIRefreshControl()
+      refreshControl.addTarget(self, action: #selector(onCheckUpdates), for: .valueChanged)
+      tableView.refreshControl = refreshControl
+        
+      var addConfig = UIButton.Configuration.tinted()
+      addConfig.title = L("download_maps")
+      addConfig.cornerStyle = .medium
+      let addBtn = UIButton(configuration: addConfig)
+      addBtn.addTarget(self, action: #selector(onAddMaps), for: .touchUpInside)
+        
+      var updateConfig = UIButton.Configuration.tinted()
+      updateConfig.title = L("downloader_check_updates_button")
+      updateConfig.cornerStyle = .medium
+      let updateBtn = UIButton(configuration: updateConfig)
+      updateBtn.addTarget(self, action: #selector(onCheckUpdates), for: .touchUpInside)
+      checkUpdatesButton = updateBtn
+        
+      let stack = UIStackView(arrangedSubviews: [addBtn, updateBtn])
+      stack.axis = .vertical
+      stack.spacing = 16
+      stack.translatesAutoresizingMaskIntoConstraints = false
+        
+      let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 132))
+      footerView.addSubview(stack)
+        
+      NSLayoutConstraint.activate([
+        stack.leadingAnchor.constraint(equalTo: footerView.leadingAnchor, constant: 16),
+        stack.trailingAnchor.constraint(equalTo: footerView.trailingAnchor, constant: -16),
+        stack.centerYAnchor.constraint(equalTo: footerView.centerYAnchor)
+      ])
+        
+      tableView.tableFooterView = footerView
+    }
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -243,6 +280,32 @@ class DownloadMapsViewController: MWMViewController {
     }
     vc.mode = .available
     navigationController?.pushViewController(vc, animated: true)
+  }
+    
+  @objc private func onCheckUpdates() {
+    checkUpdatesButton?.configuration?.title = L("downloader_check_updates_checking")
+    checkUpdatesButton?.isEnabled = false
+
+    Storage.shared().setCheckUpdatesListener { [weak self] status in
+      guard let self = self else { return }
+      
+      DispatchQueue.main.async {
+        self.checkUpdatesButton?.configuration?.title = L("downloader_check_updates_button")
+        self.checkUpdatesButton?.isEnabled = true
+        
+        self.tableView.refreshControl?.endRefreshing()
+        
+        self.dataSource.reload { self.reloadData() }
+      }
+      
+      Storage.shared().setCheckUpdatesListener(nil)
+    }
+
+    Storage.shared().startCheckUpdates()
+  }
+
+  private func updateButtonText(_ text: String) {
+    checkUpdatesButton?.configuration?.title = text
   }
 }
 

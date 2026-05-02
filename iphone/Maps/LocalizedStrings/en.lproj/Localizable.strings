@@ -4,7 +4,14 @@
 "cancel_download" = "Cancel Download";
 /* Button which deletes downloaded country */
 "delete" = "Delete";
+/* Download/update Maps page */
 "download_maps" = "Download Maps";
+"downloader_check_updates_button" = "Check for updates";
+"downloader_check_updates_checking" = "Checking for updates...";
+"downloader_check_updates_updated" = "Map updates available!";
+"downloader_check_updates_no_updates" = "No updates available";
+"downloader_check_updates_eol" = "No more map updates for this app version. Please update the app!";
+"downloader_check_updates_error" = "Error checking for updates";
 /* Settings/Downloader - info for country which started downloading */
 "downloading" = "Downloading…";
 /* Title of offline maps explanation */
