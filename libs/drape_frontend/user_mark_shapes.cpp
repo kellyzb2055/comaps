@@ -13,14 +13,23 @@
 
 #include "drape/attribute_provider.hpp"
 #include "drape/batcher.hpp"
+#include "drape/binding_info.hpp"
+#include "drape/font_constants.hpp"
+#include "drape/glsl_types.hpp"
+#include "drape/glyph_manager.hpp"
 #include "drape/overlay_handle.hpp"
+#include "drape/texture_types.hpp"
 #include "drape/utils/vertex_decl.hpp"
 
 #include "indexer/feature_decl.hpp"
 #include "indexer/scales.hpp"
 
 #include "geometry/clipping.hpp"
-#include "geometry/mercator.hpp"
+
+#include "base/assert.hpp"
+#include "base/buffer_vector.hpp"
+#include "base/math.hpp"
+#include "base/string_utils.hpp"
 
 #include <array>
 #include <cmath>

@@ -1,34 +1,36 @@
 #pragma once
 
-#include "traffic/traffic_info.hpp"
-
-#include "drape_frontend/backend_renderer.hpp"
-#include "drape_frontend/color_constants.hpp"
+#include "drape_frontend/base_renderer.hpp"
 #include "drape_frontend/custom_features_context.hpp"
 #include "drape_frontend/drape_engine_params.hpp"
 #include "drape_frontend/drape_hints.hpp"
 #include "drape_frontend/frontend_renderer.hpp"
+#include "drape_frontend/gui/skin.hpp"
+#include "drape_frontend/map_data_provider.hpp"
 #include "drape_frontend/overlays_tracker.hpp"
 #include "drape_frontend/postprocess_renderer.hpp"
 #include "drape_frontend/route_shape.hpp"
 #include "drape_frontend/scenario_manager.hpp"
 #include "drape_frontend/selection_shape.hpp"
-#include "drape_frontend/threads_commutator.hpp"
 
 #include "drape/drape_global.hpp"
 #include "drape/pointers.hpp"
-#include "drape/texture_manager.hpp"
 #include "drape/viewport.hpp"
+
+#include "indexer/mwm_set.hpp"
 
 #include "transit/transit_display_info.hpp"
 
+#include "kml/type_utils.hpp"
+
 #include "platform/location.hpp"
 
-#include "geometry/polyline2d.hpp"
-#include "geometry/screenbase.hpp"
+#include "geometry/any_rect2d.hpp"
+#include "geometry/point2d.hpp"
+#include "geometry/rect2d.hpp"
 #include "geometry/triangle2d.hpp"
 
-#include "base/strings_bundle.hpp"
+#include "std/target_os.hpp"
 
 #include <atomic>
 #include <functional>
@@ -42,10 +44,20 @@ class GlyphGenerator;
 class GraphicsContextFactory;
 }  // namespace dp
 
+namespace traffic
+{
+class TrafficInfo;
+}  // namespace traffic
+
 namespace df
 {
+class BackendRenderer;
+class UserLineMark;
 class UserMarksProvider;
-class MapDataProvider;
+class UserPointMark;
+struct GpsTrackPoint;
+struct UserLineRenderParams;
+struct UserMarkRenderParams;
 
 class DrapeEngine
 {

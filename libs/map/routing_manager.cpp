@@ -16,6 +16,7 @@
 #include "storage/routing_helpers.hpp"
 
 #include "drape_frontend/drape_engine.hpp"
+#include "drape_frontend/route_renderer.hpp"
 
 #include "routing_common/num_mwm_id.hpp"
 

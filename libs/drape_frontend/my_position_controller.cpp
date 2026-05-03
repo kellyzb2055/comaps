@@ -1,13 +1,18 @@
 #include "drape_frontend/my_position_controller.hpp"
 
 #include "drape_frontend/animation/arrow_animation.hpp"
+#include "drape_frontend/animation/interpolators.hpp"
 #include "drape_frontend/animation_system.hpp"
 #include "drape_frontend/animation_utils.hpp"
 #include "drape_frontend/drape_notifier.hpp"
+#include "drape_frontend/threads_commutator.hpp"
 #include "drape_frontend/user_event_stream.hpp"
 #include "drape_frontend/visual_params.hpp"
 
+#include "geometry/angles.hpp"
+#include "geometry/any_rect2d.hpp"
 #include "geometry/mercator.hpp"
+#include "geometry/screenbase.hpp"
 
 #include "platform/location.hpp"
 #include "platform/measurement_utils.hpp"

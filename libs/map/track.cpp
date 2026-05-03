@@ -4,6 +4,7 @@
 #include "map/user_mark_id_storage.hpp"
 
 #include "geometry/mercator.hpp"
+#include "geometry/parametrized_segment.hpp"
 #include "geometry/rect_intersect.hpp"
 
 #include <utility>

@@ -7,6 +7,7 @@
 #include "drape_frontend/path_symbol_shape.hpp"
 #include "drape_frontend/path_text_shape.hpp"
 #include "drape_frontend/poi_symbol_shape.hpp"
+#include "drape_frontend/render_state_extension.hpp"
 #include "drape_frontend/text_layout.hpp"
 #include "drape_frontend/text_shape.hpp"
 #include "drape_frontend/visual_params.hpp"
@@ -14,8 +15,11 @@
 #include "editor/osm_editor.hpp"
 
 #include "indexer/drules_include.hpp"
+#include "indexer/feature.hpp"
+#include "indexer/feature_data.hpp"
+#include "indexer/feature_decl.hpp"
 #include "indexer/feature_source.hpp"
-#include "indexer/map_style_reader.hpp"
+#include "indexer/ftypes_matcher.hpp"
 #include "indexer/road_shields_parser.hpp"
 
 #include "geometry/clipping.hpp"
@@ -23,11 +27,17 @@
 #include "geometry/smoothing.hpp"
 
 #include "drape/color.hpp"
+#include "drape/drape_global.hpp"
+#include "drape/font_constants.hpp"
+#include "drape/glyph_manager.hpp"
+#include "drape/overlay_handle.hpp"
 #include "drape/stipple_pen_resource.hpp"
 #include "drape/texture_manager.hpp"
 #include "drape/utils/projection.hpp"
 
+#include "base/assert.hpp"
 #include "base/logging.hpp"
+#include "base/math.hpp"
 #include "base/stl_helpers.hpp"
 
 #include <algorithm>

@@ -15,6 +15,8 @@
 
 namespace df
 {
+class DrapeEngine;
+
 struct DrapeApiLineData
 {
   DrapeApiLineData() = default;

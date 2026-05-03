@@ -1,22 +1,31 @@
 #pragma once
 
 #include "drape_frontend/animation/animation.hpp"
+#include "drape_frontend/arrow3d.hpp"
 #include "drape_frontend/drape_hints.hpp"
-#include "drape_frontend/frame_values.hpp"
 #include "drape_frontend/my_position.hpp"
 
 #include "drape/pointers.hpp"
 
 #include "shaders/program_manager.hpp"
 
-#include "platform/location.hpp"
+#include "geometry/point2d.hpp"
+#include "geometry/rect2d.hpp"
 
-#include "geometry/screenbase.hpp"
+#include "platform/location.hpp"
 
 #include "base/timer.hpp"
 
 #include <cstdint>
 #include <functional>
+
+class ScreenBase;
+
+namespace dp
+{
+class GraphicsContext;
+class TextureManager;
+}  // namespace dp
 
 namespace df
 {

@@ -1,35 +1,41 @@
 #pragma once
 
+#include "drape_frontend/animation/animation.hpp"
 #include "drape_frontend/base_renderer.hpp"
-#include "drape_frontend/drape_api_renderer.hpp"
 #include "drape_frontend/frame_values.hpp"
-#include "drape_frontend/gps_track_renderer.hpp"
-#include "drape_frontend/gui/layer_render.hpp"
+#include "drape_frontend/gui/skin.hpp"
 #include "drape_frontend/my_position_controller.hpp"
 #include "drape_frontend/overlays_tracker.hpp"
 #include "drape_frontend/postprocess_renderer.hpp"
 #include "drape_frontend/render_group.hpp"
 #include "drape_frontend/render_state_extension.hpp"
 #include "drape_frontend/requested_tiles.hpp"
-#include "drape_frontend/route_renderer.hpp"
 #include "drape_frontend/threads_commutator.hpp"
-#include "drape_frontend/traffic_renderer.hpp"
-#include "drape_frontend/transit_scheme_renderer.hpp"
+#include "drape_frontend/tile_utils.hpp"
 #include "drape_frontend/user_event_stream.hpp"
 
 #include "kml/type_utils.hpp"
 
-#include "shaders/program_manager.hpp"
-
+#include "drape/drape_global.hpp"
 #include "drape/overlay_tree.hpp"
 #include "drape/pointers.hpp"
+#include "drape/viewport.hpp"
+
+#include "indexer/feature_decl.hpp"
 
 #include "platform/location.hpp"
 
+#include "geometry/any_rect2d.hpp"
+#include "geometry/point2d.hpp"
+#include "geometry/rect2d.hpp"
 #include "geometry/screenbase.hpp"
 #include "geometry/triangle2d.hpp"
 
+#include "base/assert.hpp"
 #include "base/thread.hpp"
+#include "base/timer.hpp"
+
+#include "std/target_os.hpp"
 
 #include <array>
 #include <functional>
@@ -40,18 +46,33 @@
 namespace dp
 {
 class Framebuffer;
+class GraphicsContext;
+class GraphicsContextFactory;
 class OverlayTree;
 class RenderBucket;
+class TextureManager;
 }  // namespace dp
+
+namespace gui
+{
+class LayerRenderer;
+}  // namespace gui
 
 namespace df
 {
 class DebugRectRenderer;
+class DrapeApiRenderer;
 class DrapeNotifier;
+class GpsTrackRenderer;
+class RouteRenderer;
 class ScenarioManager;
 class ScreenQuadRenderer;
 class SelectionShape;
 class SelectObjectMessage;
+class TrafficRenderer;
+class TransitSchemeRenderer;
+struct ArrowBorders;
+struct BaseSubrouteData;
 
 struct TapInfo
 {
