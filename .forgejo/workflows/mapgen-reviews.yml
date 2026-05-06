@@ -1,0 +1,84 @@
+name: mapgen-reviews
+on:
+  workflow_dispatch: # Manual trigger
+    inputs:
+      import-osm:
+        description: |
+          Re-import the OSM data. Enable this if running for the first time or if you're updating the date.
+        required: true
+        type: boolean
+        default: false
+      date:
+        description: |
+          The date of OSM data to use (yymmdd); required if import-osm is enabled.
+        required: false
+        type: string
+
+env:
+  DEBIAN_FRONTEND: noninteractive
+  TZ: Etc/UTC
+  POSTGIS_DATA_DIR: /mnt/4tbexternal/reviews/data/postgis
+  CACHE_DIR: /mnt/4tbexternal/reviews/cache
+  OUT_DIR: /mnt/4tbexternal/home/planet/reviews/
+
+jobs:
+   mangrove-osm-code:
+    # the runner needs to provide access to docker: https://forgejo.org/docs/latest/admin/actions/docker-access/
+    # TODO: this needs to be the host where the maps_generator runs, so that the output of this job is available
+    # to the map-generator workflow.
+    runs-on: mapfilemaker-mmakowski
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check dependencies
+        run: |
+          if [ ! $(which just) ]; then
+            # TODO: consider automatically installing the missing tool, e.g.
+            # * on Debian: `apt update && apt install -y just`
+            echo "ERROR: just not found"
+            exit 1
+          fi          
+
+      - name: Update mangrove-osm-coder repo
+        run: |
+          cd ~
+          if [ ! -d mangrove-osm-coder ]; then
+            git clone -b main --single-branch https://codeberg.org/mmakowski/mangrove-osm-coder.git
+            # create regions.txt for the entire world
+            echo "planet" > ~/mangrove-osm-coder/run/regions.txt 
+          fi
+          cd mangrove-osm-coder
+          git pull
+
+      # a workaround for `just osm-code` recipe not waiting for postgis to become available
+      - name: Start PostGIS
+        run: |
+          cd ~/mangrove-osm-coder/run
+          just start
+
+      - name: Import OSM data
+        if: inputs.import-osm
+        run: |
+          cd ~/mangrove-osm-coder/run
+          if [ "${{ inputs.date }}" = "" ]; then
+            echo "ERROR: date not specified"
+            exit 1
+          fi
+          just date=${{ inputs.date }} import
+
+      - name: Download mangrove dump
+        run: |
+          cd ~/mangrove-osm-coder/run
+          just download-mangrove
+
+      - name: Preprocess mangrove data
+        run: |
+          cd ~/mangrove-osm-coder/run
+          just osm-code
+
+      # TODO: ensure `just stop` is run even if one of the previous steps fails
+      - name: Stop PostGIS
+        run: |
+          cd ~/mangrove-osm-coder/run
+          just stop
