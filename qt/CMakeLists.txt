@@ -59,6 +59,8 @@ set(SRC
   search_panel.cpp
   search_panel.hpp
   selection.hpp
+  star_rating_widget.cpp
+  star_rating_widget.hpp
   update_dialog.cpp
   update_dialog.hpp
 )

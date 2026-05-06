@@ -1,9 +1,11 @@
 #include "qt/place_page_dialog_developer.hpp"
 #include "qt/place_page_dialog_common.hpp"
+#include "qt/star_rating_widget.hpp"
 
 #include "qt/qt_common/text_dialog.hpp"
 
 #include "map/place_page_info.hpp"
+#include "reviews/display.hpp"
 
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QGridLayout>
@@ -50,6 +52,22 @@ PlacePageDialogDeveloper::PlacePageDialogDeveloper(QWidget * parent, place_page:
   if (auto const & subTitle = info.GetSubtitle(); !subTitle.empty())
     addEntry("Subtitle", subTitle);
 
+  if (auto const & featureReviews = info.GetReviews(); featureReviews.has_value())
+  {
+    grid->addWidget(new QLabel(QString::fromStdString("Reviews")), row, 0);
+    auto const & [averageRating, reviews] = featureReviews.value();
+    auto * reviewLine = new QHBoxLayout();
+    reviewLine->setSpacing(5);
+    grid->addLayout(reviewLine, row++, 1);
+    auto const starRating = reviews::ToStarRating(averageRating);
+    reviewLine->addWidget(new qt::StarRatingWidget(starRating));
+    std::string const summary =
+        std::format("avg rating: {}; stars: {:.1f}; review count: {}", averageRating, starRating, reviews.size());
+    auto * label = new QLabel(QString::fromStdString(summary));
+    reviewLine->addWidget(label);
+    reviewLine->addStretch(1);
+  }
+
   addEntry("Address", address.FormatAddress());
 
   if (info.IsBookmark())
@@ -89,6 +107,23 @@ PlacePageDialogDeveloper::PlacePageDialogDeveloper(QWidget * parent, place_page:
 
   QDialogButtonBox * dbb = new QDialogButtonBox();
   place_page_dialog::addCommonButtons(this, dbb, info.ShouldShowEditPlace());
+
+  if (auto const & reviews = info.GetReviews(); reviews.has_value())
+  {
+    auto * reviewsButton = new QPushButton("Reviews");
+    std::string content;
+    for (auto const & review : reviews.value().reviews)
+    {
+      content += std::format("<p>{:.1f} {:%Y-%m-%d} {}<br>{}</p>", reviews::ToStarRating(review.rating), review.date,
+                             review.author, review.opinion);
+    }
+    connect(reviewsButton, &QAbstractButton::clicked, this, [this, content, title]
+    {
+      auto textDialog = TextDialog(this, QString::fromStdString(content), QString::fromStdString("Reviews: " + title));
+      textDialog.exec();
+    });
+    dbb->addButton(reviewsButton, QDialogButtonBox::ActionRole);
+  }
 
   if (auto const & descr = info.GetWikiDescription(); !descr.empty())
   {
