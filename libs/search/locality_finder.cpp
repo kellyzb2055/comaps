@@ -9,8 +9,14 @@
 #include "indexer/feature_visibility.hpp"
 #include "indexer/ftypes_matcher.hpp"
 
+#include "indexer/feature.hpp"
+#include "indexer/feature_data.hpp"
+
+#include "geometry/mercator.hpp"
+
 #include "base/assert.hpp"
-#include "base/stl_helpers.hpp"
+
+#include "defines.hpp"
 
 #include <vector>
 

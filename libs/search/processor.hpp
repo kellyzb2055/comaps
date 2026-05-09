@@ -6,18 +6,21 @@
 #include "search/common.hpp"
 #include "search/emitter.hpp"
 #include "search/geocoder.hpp"
+#include "search/keyword_lang_matcher.hpp"
 #include "search/pre_ranker.hpp"
 #include "search/ranker.hpp"
-#include "search/search_params.hpp"
-#include "search/suggest.hpp"
+
+#include "indexer/feature_meta.hpp"
+
+#include "storage/storage_defines.hpp"
 
 #include "ge0/geo_url_parser.hpp"
 
-#include "indexer/string_slice.hpp"
-
+#include "geometry/point2d.hpp"
 #include "geometry/rect2d.hpp"
 
 #include "base/cancellable.hpp"
+#include "base/localisation.hpp"
 #include "base/mem_trie.hpp"
 
 #include <memory>
@@ -47,6 +50,9 @@ class Geocoder;
 class QueryParams;
 class Ranker;
 class ReverseGeocoder;
+class StringSliceBase;
+struct SearchParams;
+struct Suggest;
 
 class Processor : public base::Cancellable
 {

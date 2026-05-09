@@ -5,6 +5,8 @@
 
 #include "platform/get_text_by_id.hpp"
 
+#include "base/buffer_vector.hpp"
+
 #include <memory>
 #include <string>
 

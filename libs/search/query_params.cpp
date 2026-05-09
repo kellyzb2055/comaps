@@ -1,7 +1,8 @@
 #include "search/query_params.hpp"
 
-#include "search/ranking_utils.hpp"
 #include "search/token_range.hpp"
+
+#include "indexer/search_string_utils.hpp"
 
 #include <sstream>
 

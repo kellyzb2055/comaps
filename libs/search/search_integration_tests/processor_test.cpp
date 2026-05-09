@@ -5,6 +5,8 @@
 
 #include "generator/feature_builder.hpp"
 
+#include "search/ranking_info.hpp"
+#include "search/ranking_utils.hpp"
 #include "search/search_tests_support/helpers.hpp"
 #include "search/search_tests_support/test_results_matching.hpp"
 #include "search/search_tests_support/test_search_request.hpp"

@@ -2,8 +2,9 @@
 
 #include "search/cities_boundaries_table.hpp"
 
+#include "indexer/feature_decl.hpp"
+#include "indexer/feature_meta.hpp"
 #include "indexer/feature_region_locator.hpp"
-#include "indexer/feature_utils.hpp"
 #include "indexer/mwm_set.hpp"
 #include "indexer/rank_table.hpp"
 
@@ -13,6 +14,7 @@
 #include "geometry/rect2d.hpp"
 #include "geometry/tree4d.hpp"
 
+#include "base/localisation.hpp"
 #include "base/localisation_translation.hpp"
 #include "base/macros.hpp"
 

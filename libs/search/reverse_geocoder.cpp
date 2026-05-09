@@ -17,7 +17,14 @@
 #include "indexer/ftypes_matcher.hpp"
 #include "indexer/scales.hpp"
 
+#include "geometry/mercator.hpp"
+#include "geometry/rect2d.hpp"
+
+#include "base/assert.hpp"
+#include "base/localisation.hpp"
+#include "base/logging.hpp"
 #include "base/stl_helpers.hpp"
+#include "base/string_utils.hpp"
 
 #include <algorithm>
 #include <functional>

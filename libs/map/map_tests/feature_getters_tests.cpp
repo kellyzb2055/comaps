@@ -3,6 +3,7 @@
 #include "map/framework.hpp"
 
 #include "indexer/classificator.hpp"
+#include "indexer/ftypes_matcher.hpp"
 
 #include "platform/local_country_file.hpp"
 

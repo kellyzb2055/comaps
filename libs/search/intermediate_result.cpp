@@ -1,21 +1,24 @@
 #include "search/intermediate_result.hpp"
 
-#include "search/reverse_geocoder.hpp"
-
-#include "geometry/mercator.hpp"
-
 #include "storage/country_info_getter.hpp"
 
 #include "indexer/classificator.hpp"
 #include "indexer/feature.hpp"
 #include "indexer/feature_algo.hpp"
+#include "indexer/feature_meta.hpp"
 #include "indexer/feature_utils.hpp"
 #include "indexer/ftypes_matcher.hpp"
 #include "indexer/road_shields_parser.hpp"
 
-#include "platform/localization.hpp"
 #include "platform/measurement_utils.hpp"
 
+#include "geometry/mercator.hpp"
+
+#include "base/assert.hpp"
+#include "base/localisation.hpp"
+#include "base/localisation_translation.hpp"
+#include "base/macros.hpp"
+#include "base/stl_helpers.hpp"
 #include "base/string_utils.hpp"
 
 #include <algorithm>

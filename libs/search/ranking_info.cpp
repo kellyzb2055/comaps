@@ -2,7 +2,9 @@
 
 #include "search/utils.hpp"
 
+#include "indexer/categories_holder.hpp"
 #include "indexer/classificator.hpp"
+#include "indexer/feature_data.hpp"
 #include "indexer/search_string_utils.hpp"
 
 #include "base/assert.hpp"

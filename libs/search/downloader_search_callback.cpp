@@ -2,15 +2,17 @@
 
 #include "search/result.hpp"
 
-#include "editor/editable_data_source.hpp"
-
 #include "indexer/data_source.hpp"
+#include "indexer/feature.hpp"
+#include "indexer/feature_decl.hpp"
+#include "indexer/ftypes_matcher.hpp"
 
 #include "storage/country_info_getter.hpp"
 #include "storage/storage.hpp"
+#include "storage/storage_defines.hpp"
 
+#include "base/localisation.hpp"
 #include "base/logging.hpp"
-#include "base/string_utils.hpp"
 
 #include <set>
 #include <string>

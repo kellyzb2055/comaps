@@ -1,10 +1,13 @@
 #include "search/region_info_getter.hpp"
 
+#include "storage/country.hpp"
 #include "storage/country_decl.hpp"
 
 #include "base/localisation_translation.hpp"
 #include "base/logging.hpp"
 #include "base/string_utils.hpp"
+
+#include "defines.hpp"
 
 namespace search
 {
