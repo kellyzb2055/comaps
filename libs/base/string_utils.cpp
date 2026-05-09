@@ -429,6 +429,23 @@ std::string to_string_dac(double d, int dac)
   return ss.str();
 }
 
+std::string format_date(std::chrono::year_month_day const & ymd)
+{
+  std::ostringstream oss;
+
+  oss << std::setfill('0');
+
+  oss << std::setw(4) << static_cast<int>(ymd.year());
+  oss << '-';
+
+  oss << std::setw(2) << static_cast<unsigned>(ymd.month());
+  oss << '-';
+
+  oss << std::setw(2) << static_cast<unsigned>(ymd.day());
+
+  return oss.str();
+}
+
 bool IsHTML(std::string const & utf8)
 {
   auto it = utf8.begin();

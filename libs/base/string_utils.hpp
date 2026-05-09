@@ -665,6 +665,9 @@ inline std::string to_string(uint64_t i)
 std::string to_string_dac(double d, int dac);
 //@}
 
+/// Format date as %Y-%m-%d
+std::string format_date(std::chrono::year_month_day const & ymd);
+
 // Get string with fixed width. Extra '0' are added at the begining to fit size.
 template <typename T, typename = std::enable_if_t<std::is_integral<T>::value>>
 std::string to_string_width(T l, int width)

@@ -61,8 +61,9 @@ PlacePageDialogDeveloper::PlacePageDialogDeveloper(QWidget * parent, place_page:
     grid->addLayout(reviewLine, row++, 1);
     auto const starRating = reviews::ToStarRating(averageRating);
     reviewLine->addWidget(new qt::StarRatingWidget(starRating));
-    std::string const summary =
-        std::format("avg rating: {}; stars: {:.1f}; review count: {}", averageRating, starRating, reviews.size());
+    std::string const summary = "avg rating: " + strings::to_string(static_cast<uint16_t>(averageRating)) +
+                                "; stars: " + strings::to_string_dac(starRating, 1) +
+                                "; review count: " + strings::to_string(reviews.size());
     auto * label = new QLabel(QString::fromStdString(summary));
     reviewLine->addWidget(label);
     reviewLine->addStretch(1);
@@ -112,10 +113,10 @@ PlacePageDialogDeveloper::PlacePageDialogDeveloper(QWidget * parent, place_page:
   {
     auto * reviewsButton = new QPushButton("Reviews");
     std::string content;
-    for (auto const & review : reviews.value().reviews)
+    for (auto const & [rating, opinion, author, date] : reviews.value().reviews)
     {
-      content += std::format("<p>{:.1f} {:%Y-%m-%d} {}<br>{}</p>", reviews::ToStarRating(review.rating), review.date,
-                             review.author, review.opinion);
+      content += "<p>" + strings::to_string_dac(reviews::ToStarRating(rating), 1) + " " + strings::format_date(date) +
+                 " " + author + "<br>" + opinion + "</p>";
     }
     connect(reviewsButton, &QAbstractButton::clicked, this, [this, content, title]
     {
