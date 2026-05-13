@@ -23,11 +23,13 @@ namespace
 {
 
 template <class TIter>
-std::string DistToTextId(TIter begin, TIter end, uint32_t dist)
+std::string DistToTextId(TIter begin, TIter end, uint32_t dist, std::string overflowTextId)
 {
   TIter const it = std::lower_bound(begin, end, dist, [](auto const & p1, uint32_t p2) { return p1.first < p2; });
   if (it == end)
   {
+    if (overflowTextId != "")
+      return overflowTextId;
     ASSERT(false, ("notification.m_distanceUnits is not correct."));
     return {};
   }
@@ -149,7 +151,8 @@ std::string GetTtsText::GetTurnNotification(Notification const & notification) c
 
   std::string distStr;
   if (notification.m_distanceUnits > 0)
-    distStr = GetTextByIdTrimmed(GetDistanceTextId(notification));
+    distStr =
+        GetTextByIdTrimmed(GetDistanceUntilTextId(notification.m_distanceUnits, notification.m_lengthUnits, false));
 
   // For T-junction turns, "At the end of the road, ..." replaces the distance phrase.
   if (notification.m_useAtEndOfRoadPrefix)
@@ -305,6 +308,15 @@ std::string GetTtsText::GetRecalculatingNotification() const
   return GetTextById("route_recalculating");
 }
 
+std::string GetTtsText::GetOffRouteNotification(uint32_t distanceUnits, measurement_utils::Units lengthUnits) const
+{
+  char ttsOut[100];
+  std::string notRecalculatingMessage = GetTextById("route_not_recalculating");
+  std::snprintf(ttsOut, std::size(ttsOut), notRecalculatingMessage.c_str(),
+                GetTextById(GetDistanceFromTextId(distanceUnits, lengthUnits, true)).c_str());
+  return ttsOut;
+}
+
 std::string GetTtsText::GetSpeedCameraNotification() const
 {
   return GetTextById("unknown_camera");
@@ -339,18 +351,31 @@ std::string GetTtsText::GetTextById(std::string const & textId) const
   return (*m_getCurLang)(textId);
 }
 
-std::string GetDistanceTextId(Notification const & notification)
+std::string GetDistanceUntilTextId(uint32_t distanceUnits, measurement_utils::Units lengthUnits, bool allowOverflow)
 {
-  //  if (notification.m_useThenInsteadOfDistance)
-  //    return "then";
-
-  switch (notification.m_lengthUnits)
+  switch (lengthUnits)
   {
   case measurement_utils::Units::Metric:
-    return DistToTextId(GetAllSoundedDistMeters().cbegin(), GetAllSoundedDistMeters().cend(),
-                        notification.m_distanceUnits);
+    return DistToTextId(GetAllSoundedDistUntilMeters().cbegin(), GetAllSoundedDistUntilMeters().cend(), distanceUnits,
+                        allowOverflow ? "in_over_3_kilometers" : "");
   case measurement_utils::Units::Imperial:
-    return DistToTextId(GetAllSoundedDistFeet().cbegin(), GetAllSoundedDistFeet().cend(), notification.m_distanceUnits);
+    return DistToTextId(GetAllSoundedDistUntilFeet().cbegin(), GetAllSoundedDistUntilFeet().cend(), distanceUnits,
+                        allowOverflow ? "in_over_2_miles" : "");
+  }
+  UNREACHABLE();
+  return {};
+}
+
+std::string GetDistanceFromTextId(uint32_t distanceUnits, measurement_utils::Units lengthUnits, bool allowOverflow)
+{
+  switch (lengthUnits)
+  {
+  case measurement_utils::Units::Metric:
+    return DistToTextId(GetAllSoundedDistFromMeters().cbegin(), GetAllSoundedDistFromMeters().cend(), distanceUnits,
+                        allowOverflow ? "from_over_3_kilometers" : "");
+  case measurement_utils::Units::Imperial:
+    return DistToTextId(GetAllSoundedDistFromFeet().cbegin(), GetAllSoundedDistFromFeet().cend(), distanceUnits,
+                        allowOverflow ? "from_over_2_miles" : "");
   }
   ASSERT(false, ());
   return {};

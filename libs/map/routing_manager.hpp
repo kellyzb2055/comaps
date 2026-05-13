@@ -164,6 +164,10 @@ public:
   bool DisableFollowMode();
   kml::TrackId SaveRoute();
 
+  void SetAutoReroute(bool autoReroute) { m_routingSession.SetAutoReroute(autoReroute); }
+
+  bool AutoReroute() { return m_routingSession.AutoReroute(); }
+
   void SetRouteBuildingListener(RouteBuildingCallback const & buildingCallback)
   {
     m_routingBuildingCallback = buildingCallback;

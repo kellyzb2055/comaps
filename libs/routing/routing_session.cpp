@@ -28,6 +28,7 @@
 namespace
 {
 int constexpr kOnRouteMissedCount = 10;
+int constexpr kAnnounceRouteMissedCount = 20;
 
 double constexpr kShowLanesMinDistInMeters = 500.0;
 
@@ -136,6 +137,7 @@ void RoutingSession::RemoveRoute()
 
   m_lastDistance = 0.0;
   m_moveAwayCounter = 0;
+  m_moveAwayCounterSinceLastAnnounce = 0;
   m_turnNotificationsMgr.Reset();
 
   m_route = std::make_shared<Route>(std::string{} /* router */, 0 /* route id */);
@@ -162,6 +164,7 @@ void RoutingSession::RebuildRouteOnTrafficUpdate()
     case SessionState::RouteRebuilding: startPoint = m_checkpoints.GetPointFrom(); break;
 
     case SessionState::OnRoute:
+    case SessionState::OffRoute:
     case SessionState::RouteNeedsRebuild: break;
     }
 
@@ -184,7 +187,7 @@ bool RoutingSession::IsNavigable() const
 {
   CHECK_THREAD_CHECKER(m_threadChecker, ());
   return (m_state == SessionState::RouteNotStarted || m_state == SessionState::OnRoute ||
-          m_state == SessionState::RouteFinished);
+          m_state == SessionState::RouteFinished || m_state == SessionState::OffRoute);
 }
 
 bool RoutingSession::IsBuilt() const
@@ -287,6 +290,7 @@ SessionState RoutingSession::OnLocationPositionChanged(GpsInfo const & info)
   if (m_route->MoveIterator(info))
   {
     m_moveAwayCounter = 0;
+    m_moveAwayCounterSinceLastAnnounce = 0;
     m_lastDistance = 0.0;
 
     PassCheckpoints();
@@ -325,16 +329,27 @@ SessionState RoutingSession::OnLocationPositionChanged(GpsInfo const & info)
       return m_state;
 
     if (!info.HasSpeed() || info.m_speed < m_routingSettings.m_minSpeedForRouteRebuildMpS)
+    {
       m_moveAwayCounter += 1;
+      m_moveAwayCounterSinceLastAnnounce += 1;
+    }
     else
+    {
       m_moveAwayCounter += 2;
+      m_moveAwayCounterSinceLastAnnounce += 2;
+    }
 
     m_lastDistance = dist;
 
     if (m_moveAwayCounter > kOnRouteMissedCount)
     {
-      m_passedDistanceOnRouteMeters += m_route->GetCurrentDistanceFromBeginMeters();
-      SetState(SessionState::RouteNeedsRebuild);
+      if (m_autoReroute)
+      {
+        m_passedDistanceOnRouteMeters += m_route->GetCurrentDistanceFromBeginMeters();
+        SetState(SessionState::RouteNeedsRebuild);
+      }
+      else
+        SetState(SessionState::OffRoute);
     }
   }
 
@@ -573,6 +588,19 @@ void RoutingSession::GenerateNotifications(std::vector<std::string> & notificati
     return;
   }
 
+  // Route missed notifications
+  if (!m_autoReroute /* if we will not be rerouting (see case above) */
+      // if this is the first announcement, we can use a shorter threshold as the user wants to know right away
+      && ((m_moveAwayCounter == m_moveAwayCounterSinceLastAnnounce &&
+           m_moveAwayCounterSinceLastAnnounce > kOnRouteMissedCount)
+          // for second or higher announcement, we use a longer interval to avoid being repetitive
+          || (m_moveAwayCounterSinceLastAnnounce > kAnnounceRouteMissedCount)))
+  {
+    m_moveAwayCounterSinceLastAnnounce = 0;
+    notifications.emplace_back(m_turnNotificationsMgr.GenerateOffRouteText(m_lastDistance));
+    return;
+  }
+
   // Voice turn notifications.
   if (!m_routingSettings.m_soundDirection)
     return;
@@ -594,6 +622,32 @@ void RoutingSession::GenerateNotifications(std::vector<std::string> & notificati
   }
 
   m_speedCameraManager.GenerateNotifications(notifications);
+}
+
+void RoutingSession::SetAutoReroute(bool autoReroute)
+{
+  CHECK_THREAD_CHECKER(m_threadChecker, ());
+
+  if (autoReroute)
+  {
+    // If we are off the route, recalculate immediately.
+    AutoReroute();
+  }
+
+  m_autoReroute = autoReroute;
+}
+
+bool RoutingSession::AutoReroute()
+{
+  CHECK_THREAD_CHECKER(m_threadChecker, ());
+
+  if (m_state == SessionState::OffRoute)
+  {
+    SetState(SessionState::RouteNeedsRebuild);
+    return true;
+  }
+
+  return false;
 }
 
 void RoutingSession::AssignRoute(std::shared_ptr<Route> const & route, RouterResultCode e)
@@ -705,7 +759,7 @@ bool RoutingSession::DisableFollowMode()
 {
   CHECK_THREAD_CHECKER(m_threadChecker, ());
   LOG(LINFO, ("Routing disables a following mode. SessionState: ", m_state));
-  if (m_state == SessionState::RouteNotStarted || m_state == SessionState::OnRoute)
+  if (m_state == SessionState::RouteNotStarted || m_state == SessionState::OnRoute || m_state == SessionState::OffRoute)
   {
     SetState(SessionState::RouteNoFollowing);
     m_isFollowing = false;
@@ -721,6 +775,10 @@ bool RoutingSession::EnableFollowMode()
   if (m_state == SessionState::RouteNotStarted || m_state == SessionState::OnRoute)
   {
     SetState(SessionState::OnRoute);
+    m_isFollowing = true;
+  }
+  else if (m_state == SessionState::OffRoute)
+  {
     m_isFollowing = true;
   }
   return m_isFollowing;
@@ -972,6 +1030,7 @@ std::string DebugPrint(SessionState state)
   case SessionState::RouteFinished: return "RouteFinished";
   case SessionState::RouteNoFollowing: return "RouteNoFollowing";
   case SessionState::RouteRebuilding: return "RouteRebuilding";
+  case SessionState::OffRoute: return "OffRoute";
   }
   UNREACHABLE();
 }
