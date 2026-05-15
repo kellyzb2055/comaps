@@ -3,6 +3,7 @@
 #include "drape/gl_functions.hpp"
 #include "drape/oglcontext.hpp"
 #include "drape/metal/metal_base_context.hpp"
+#include "drape/vulkan/vulkan_base_context.hpp"
 #include "drape/vulkan/vulkan_context_factory.hpp"
 #include "drape/vulkan/vulkan_utils.hpp"
 
