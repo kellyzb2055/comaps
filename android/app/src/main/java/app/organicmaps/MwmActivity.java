@@ -2226,6 +2226,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
     closeFloatingPanels();
     setFullscreen(false);
+
     RoutingController.get().start();
   }
 

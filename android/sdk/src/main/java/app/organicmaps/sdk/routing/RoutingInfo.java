@@ -19,7 +19,8 @@ public final class RoutingInfo
     RouteNeedsRebuild(4),
     RouteFinished(5),
     RouteNoFollowing(6),
-    RouteRebuilding(7);
+    RouteRebuilding(7),
+    OffRoute(8);
 
     final int mState;
 
@@ -39,6 +40,7 @@ public final class RoutingInfo
         case 5 -> RouteFinished;
         case 6 -> RouteNoFollowing;
         case 7 -> RouteRebuilding;
+        case 8 -> OffRoute;
         default -> NoValidRoute;
       };
     }
@@ -47,7 +49,7 @@ public final class RoutingInfo
     {
       return switch (state)
       {
-        case RouteNotStarted, OnRoute, RouteFinished -> true;
+        case RouteNotStarted, OnRoute, RouteFinished, OffRoute -> true;
         default -> false;
       };
     }

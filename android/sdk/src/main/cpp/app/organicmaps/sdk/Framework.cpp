@@ -1125,6 +1125,17 @@ JNIEXPORT void JNICALL Java_app_organicmaps_sdk_Framework_nativeSaveRoute(JNIEnv
   frm()->SaveRoute();
 }
 
+JNIEXPORT void JNICALL Java_app_organicmaps_sdk_Framework_nativeSetAutoReroute(JNIEnv * env, jclass,
+                                                                               jboolean autoReroute)
+{
+  frm()->GetRoutingManager().SetAutoReroute(static_cast<bool>(autoReroute));
+}
+
+JNIEXPORT jboolean JNICALL Java_app_organicmaps_sdk_Framework_nativeAutoReroute(JNIEnv * env, jclass)
+{
+  return static_cast<jboolean>(frm()->GetRoutingManager().AutoReroute());
+}
+
 JNIEXPORT jstring JNICALL Java_app_organicmaps_sdk_Framework_nativeGetBookmarkDir(JNIEnv * env, jclass)
 {
   return jni::ToJavaString(env, GetPlatform().SettingsDir().c_str());

@@ -357,6 +357,10 @@ public class Framework
 
   public static native void nativeMemoryWarning();
   public static native void nativeSaveRoute();
+
+  public static native void nativeSetAutoReroute(boolean autoReroute);
+  public static native boolean nativeAutoReroute();
+
   public static native void nativeSetCustomMapDownloadUrl(String url);
 
   public static void applyCustomMapDownloadUrl(@NonNull Context context, @Nullable String url)

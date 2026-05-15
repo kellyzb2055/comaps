@@ -50,5 +50,11 @@
     android:key="@string/pref_android_auto_support"
     android:persistent="false"
     android:title="@string/pref_aa_support_title" />
+  <SwitchPreferenceCompat
+    android:defaultValue="true"
+    android:key="@string/pref_enable_auto_reroute"
+    android:title="@string/pref_enable_auto_reroute_title"
+    android:widgetLayout="@layout/preference_switch"
+    app:singleLineTitle="false" />
 
 </androidx.preference.PreferenceScreen>

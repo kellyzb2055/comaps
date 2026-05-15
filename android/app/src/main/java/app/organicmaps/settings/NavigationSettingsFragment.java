@@ -34,6 +34,7 @@ public class NavigationSettingsFragment extends BaseXmlSettingsFragment
     initPerspectivePrefsCallbacks();
     initAutoZoomPrefsCallbacks();
     initAndroidAutoSupportPrefsCallback();
+    initAutoRerouteCallback();
   }
 
   @Override
@@ -68,6 +69,18 @@ public class NavigationSettingsFragment extends BaseXmlSettingsFragment
   {
     final Preference pref = getPreference(getString(R.string.pref_tts_screen));
     pref.setSummary(Config.TTS.isEnabled() ? R.string.on : R.string.off);
+  }
+
+  private void initAutoRerouteCallback()
+  {
+    TwoStatePreference autoReroutePref =
+        getPreference(getString(app.organicmaps.sdk.R.string.pref_enable_auto_reroute));
+    Framework.nativeSetAutoReroute(autoReroutePref.isChecked());
+
+    autoReroutePref.setOnPreferenceChangeListener((preference, value) -> {
+      Framework.nativeSetAutoReroute((boolean) value);
+      return true;
+    });
   }
 
   private void updateRoutingSettingsPrefsSummary()
