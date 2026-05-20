@@ -557,6 +557,24 @@ void GetTurnDirectionBasic(IRoutingResult const & result, size_t const outgoingS
 
   turn.m_turn = intermediateDirection;
 
+  // T-junction detection: if no candidate continues roughly straight, the road ends here.
+  // Restricted to clear left/right turns — slight turns and GoStraight are continuations,
+  // not end-of-road scenarios. Must run before any slight-turn → GoStraight promotion.
+  if (nodes.isCandidatesAngleValid && !IsGoStraightOrSlightTurn(intermediateDirection))
+  {
+    double constexpr kEndOfRoadStraightAngle = 35.0;
+    bool hasStraightCandidate = false;
+    for (auto const & candidate : turnCandidates)
+    {
+      if (abs(candidate.m_angle) <= kEndOfRoadStraightAngle)
+      {
+        hasStraightCandidate = true;
+        break;
+      }
+    }
+    turn.m_isEndOfRoad = !hasStraightCandidate;
+  }
+
   if (turnCandidates.size() >= 2 && nodes.isCandidatesAngleValid)
     CorrectRightmostAndLeftmost(turnCandidates, firstOutgoingSeg, turnAngle, turn);
 

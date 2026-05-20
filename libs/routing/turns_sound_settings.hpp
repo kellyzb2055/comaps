@@ -145,6 +145,9 @@ struct Notification
   /// if m_useThenInsteadOfDistance == true the m_distanceUnits is ignored.
   /// The word "Then" will be pronounced instead of the distance.
   bool m_useThenInsteadOfDistance;
+  /// if m_useAtEndOfRoadPrefix == true, "At the end of the road" replaces the distance
+  /// for T-junction turn announcements.
+  bool m_useAtEndOfRoadPrefix = false;
   CarDirection m_turnDir = CarDirection::None;
   PedestrianDirection m_turnDirPedestrian = PedestrianDirection::None;
   measurement_utils::Units m_lengthUnits;
@@ -172,7 +175,8 @@ struct Notification
   bool operator==(Notification const & rhv) const
   {
     return m_distanceUnits == rhv.m_distanceUnits && m_exitNum == rhv.m_exitNum &&
-           m_useThenInsteadOfDistance == rhv.m_useThenInsteadOfDistance && m_turnDir == rhv.m_turnDir &&
+           m_useThenInsteadOfDistance == rhv.m_useThenInsteadOfDistance &&
+           m_useAtEndOfRoadPrefix == rhv.m_useAtEndOfRoadPrefix && m_turnDir == rhv.m_turnDir &&
            m_turnDirPedestrian == rhv.m_turnDirPedestrian && m_lengthUnits == rhv.m_lengthUnits &&
            m_nextStreetInfo == rhv.m_nextStreetInfo;
   }

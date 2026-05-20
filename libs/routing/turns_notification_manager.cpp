@@ -86,6 +86,10 @@ std::string NotificationManager::GenerateTurnText(uint32_t distanceUnits, uint8_
   if (turn.m_turn != CarDirection::EnterRoundAbout)
     notif.m_nextStreetInfo = nextStreetInfo;
 
+  // T-junction prefix replaces the distance in advance notifications only.
+  if (turn.m_isEndOfRoad && distanceUnits > 0)
+    notif.m_useAtEndOfRoadPrefix = true;
+
   return m_getTtsText.GetTurnNotification(notif);
 }
 

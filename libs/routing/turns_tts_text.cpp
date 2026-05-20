@@ -138,6 +138,14 @@ std::string GetTtsText::GetTurnNotification(Notification const & notification) c
   if (notification.m_distanceUnits > 0)
     distStr = GetTextByIdTrimmed(GetDistanceTextId(notification));
 
+  // For T-junction turns, "At the end of the road, ..." replaces the distance phrase.
+  if (notification.m_useAtEndOfRoadPrefix)
+  {
+    std::string endOfRoadStr = GetTextByIdTrimmed("at_the_end_of_the_road");
+    if (!endOfRoadStr.empty())
+      distStr = std::move(endOfRoadStr);
+  }
+
   // Get a string like 245; CA 123; Highway 99; San Francisco
   // In the future we could use the full RoadNameInfo struct to do some nice formatting.
   std::string streetOut;

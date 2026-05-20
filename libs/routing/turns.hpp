@@ -144,7 +144,7 @@ struct TurnItem
   bool operator==(TurnItem const & rhs) const
   {
     return m_index == rhs.m_index && m_turn == rhs.m_turn && m_lanes == rhs.m_lanes && m_exitNum == rhs.m_exitNum &&
-           m_pedestrianTurn == rhs.m_pedestrianTurn;
+           m_pedestrianTurn == rhs.m_pedestrianTurn && m_isEndOfRoad == rhs.m_isEndOfRoad;
   }
 
   bool IsTurnReachedYourDestination() const
@@ -164,6 +164,7 @@ struct TurnItem
    * if there is no pedestrian specific direction
    */
   PedestrianDirection m_pedestrianTurn = PedestrianDirection::None;
+  bool m_isEndOfRoad = false; /*!< True if no candidate continues straight (T-junction). */
 };
 
 std::string DebugPrint(TurnItem const & turnItem);
