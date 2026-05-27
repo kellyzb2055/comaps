@@ -262,6 +262,8 @@ public class Holders
     MaterialCheckBox mVisibilityMarker;
     @NonNull
     ShapeableImageView mMoreButton;
+    @NonNull
+    final ShapeableImageView mDragHandle;
 
     CategoryViewHolder(@NonNull View root)
     {
@@ -269,6 +271,7 @@ public class Holders
       mName = root.findViewById(R.id.name);
       mVisibilityMarker = root.findViewById(R.id.checkbox);
       mMoreButton = root.findViewById(R.id.more);
+      mDragHandle = root.findViewById(R.id.drag_handle);
     }
 
     void setVisibilityState(boolean visible)

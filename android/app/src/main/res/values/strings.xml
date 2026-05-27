@@ -739,6 +739,8 @@
     <string name="sort">Sort…</string>
     <!-- Android, title, max 20-22 symbols -->
     <string name="sort_bookmarks">Sort Favorites</string>
+    <!-- Android, title for sorting categories -->
+    <string name="sort_categories">Sort Favorite Lists</string>
     <!-- Android -->
     <string name="by_default">By default</string>
     <string name="setting_value_system_default">System default</string>
@@ -750,6 +752,9 @@
     <string name="by_date">By date</string>
     <!-- Android -->
     <string name="by_name">By name</string>
+    <!-- Android -->
+    <string name="by_recently_used">By recently used</string>
+    <string name="by_custom">By custom order</string>
     <string name="week_ago_sorttype">A week ago</string>
     <string name="month_ago_sorttype">A month ago</string>
     <string name="moremonth_ago_sorttype">More than a month ago</string>

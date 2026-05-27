@@ -474,7 +474,7 @@ std::vector<std::string> GetFilePathsToLoadFromKmz(std::string const & filePath)
     for (auto const & [kmlFileInZip, size] : files)
     {
       auto const name = base::FileNameFromFullPath(kmlFileInZip);
-      auto fileSavePath = GenerateValidAndUniqueFilePathForKML(kmlFileInZip);
+      auto fileSavePath = GenerateValidAndUniqueFilePathForKML(name);
       ZipFileReader::UnzipFile(filePath, kmlFileInZip, fileSavePath);
       kmlFilePaths.push_back(std::move(fileSavePath));
     }

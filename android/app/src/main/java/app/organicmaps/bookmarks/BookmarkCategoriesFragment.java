@@ -10,6 +10,9 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.DocumentsContract;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 import androidx.activity.result.ActivityResultLauncher;
@@ -124,6 +127,7 @@ public class BookmarkCategoriesFragment extends BaseMwmRecyclerFragment<Bookmark
     mCategoriesAdapterObserver = this::onCategoriesChanged;
     BookmarkManager.INSTANCE.addCategoriesUpdatesListener(mCategoriesAdapterObserver);
 
+    setHasOptionsMenu(true);
     shareLauncher = SharingUtils.RegisterLauncher(this);
   }
 
@@ -172,6 +176,43 @@ public class BookmarkCategoriesFragment extends BaseMwmRecyclerFragment<Bookmark
   {
     super.onDestroyView();
     BookmarkManager.INSTANCE.removeCategoriesUpdatesListener(mCategoriesAdapterObserver);
+  }
+
+  @Override
+  public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater)
+  {
+    inflater.inflate(R.menu.option_menu_bookmark_categories, menu);
+  }
+
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item)
+  {
+    if (item.getItemId() == R.id.bookmark_categories_sort)
+    {
+      int currentType = BookmarkManager.INSTANCE.getCategorySortType();
+      final int[] sortTypes = {
+          BookmarkManager.SORT_CATEGORIES_BY_LAST_MODIFIED,
+          BookmarkManager.SORT_CATEGORIES_BY_NAME,
+          BookmarkManager.SORT_CATEGORIES_MANUAL
+      };
+      String[] options = {
+          getString(R.string.by_recently_used),
+          getString(R.string.by_name),
+          getString(R.string.by_custom)
+      };
+
+      int checked = currentType;
+
+      new MaterialAlertDialogBuilder(requireActivity())
+          .setTitle(R.string.sort_categories)
+          .setSingleChoiceItems(options, checked, (dialog, which) -> {
+            BookmarkManager.INSTANCE.setCategorySortType(sortTypes[which]);
+            dialog.dismiss();
+          })
+          .show();
+      return true;
+    }
+    return super.onOptionsItemSelected(item);
   }
 
   protected final void showBottomMenu(@NonNull BookmarkCategory item)
