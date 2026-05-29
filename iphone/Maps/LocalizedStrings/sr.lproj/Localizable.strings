@@ -876,4 +876,5 @@
 "downloader_check_updates_no_updates" = "Нема доступних ажурирања";
 "downloader_check_updates_eol" = "За ову верзију апликације више нема ажурирања мапе. Молим Вас, ажурирајте апликацију!";
 "downloader_check_updates_error" = "Грешка при провери ажурирања";
-"editor_add_select_category_recent_subtitle" = "Recently Used";
+"editor_add_select_category_recent_subtitle" = "Недавно коришћено";
+"oh_unknown" = "Непознато радно време";

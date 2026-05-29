@@ -1366,7 +1366,7 @@
     <string name="type.power.generator">Generator</string>
     <string name="type.leisure.hackerspace">Hackerspace</string>
     <string name="type.amenity.food_court">Foodcourt</string>
-    <string name="type.highway.ladder">ladder</string>
+    <string name="type.highway.ladder">Ladder</string>
     <string name="type.leisure.firepit">Vuurplaats</string>
     <string name="type.landuse.plant_nursery">Plantenkwekerij</string>
     <string name="type.man_made.crane">Kraan</string>

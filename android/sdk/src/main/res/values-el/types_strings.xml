@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- SECTION: Types -->
-    <string name="type.addr_interpolation">Διεύθυνση/Μπλοκ</string>
-    <string name="type.addr_interpolation.even">Διεύθυνση/Μπλοκ</string>
-    <string name="type.addr_interpolation.odd">Διεύθυνση/Μπλοκ</string>
-    <string name="type.aerialway">Τελεφερίκ</string>
-    <string name="type.aerialway.cable_car">Τελεφερίκ</string>
-    <string name="type.aerialway.chair_lift">Τελεφερίκ</string>
-    <string name="type.aerialway.drag_lift">Τελεφερίκ</string>
-    <string name="type.aerialway.gondola">Τελεφερίκ</string>
-    <string name="type.aerialway.mixed_lift">Τελεφερίκ</string>
-    <string name="type.aerialway.station">Σταθμός τελεφερίκ</string>
+    <string name="type.addr_interpolation">Διεύθυνση/Τετράγωνο</string>
+    <string name="type.addr_interpolation.even">Διεύθυνση/Τετράγωνο</string>
+    <string name="type.addr_interpolation.odd">Διεύθυνση/Τετράγωνο</string>
+    <string name="type.aerialway">Εναέρια διαδρομή</string>
+    <string name="type.aerialway.cable_car">Τελεφερίκ με καμπίνα</string>
+    <string name="type.aerialway.chair_lift">Τελεφερίκ καρέκλα</string>
+    <string name="type.aerialway.drag_lift">Τελεφερίκ σκι</string>
+    <string name="type.aerialway.gondola">Τελεφερίκ γόνδολα</string>
+    <string name="type.aerialway.mixed_lift">Ανάμεικτο Τελεφερίκ</string>
+    <string name="type.aerialway.station">Σταθμός Εναέριας Διαδρομής</string>
     <string name="type.aeroway.aerodrome">Αεροδρόμιο</string>
     <string name="type.aeroway.aerodrome.international">Διεθνές αεροδρόμιο</string>
     <string name="type.aeroway.helipad">Ελικοδρόμιο</string>
@@ -40,7 +40,7 @@
     <string name="type.amenity.charging_station.motorcar">Αυτοκίνητα</string>
     <string name="type.amenity.childcare">Βρεφικός σταθμός</string>
     <string name="type.amenity.cinema">Κινηματογράφος</string>
-    <string name="type.leisure.bowling_alley">Αίθουσα σφαιρίσεως</string>
+    <string name="type.leisure.bowling_alley">Αίθουσα Μπόουλινκ</string>
     <string name="type.amenity.clinic">Κλινική</string>
     <string name="type.amenity.college">Κολέγιο</string>
     <string name="type.amenity.community_centre">Κέντρο κοινότητας</string>
@@ -48,7 +48,7 @@
     <string name="type.amenity.conference_centre">Συνεδριακό Κέντρο</string>
     <string name="type.amenity.courthouse">Δικαστικό μέγαρο</string>
     <string name="type.amenity.dentist">Οδοντίατρος</string>
-    <string name="type.amenity.doctors">Γιατροί</string>
+    <string name="type.amenity.doctors">Γιατρός</string>
     <string name="type.amenity.drinking_water">Πόσιμο νερό</string>
     <string name="type.drinking_water.yes">Πόσιμο νερό</string>
     <string name="type.amenity.driving_school">Σχολή οδήγησης</string>
@@ -1197,7 +1197,7 @@
     <string name="type.power.pole">Ηλεκτρικός πόλος</string>
     <string name="type.man_made.utility_pole">Πόλος κοινής ωφέλειας</string>
     <string name="type.railway.narrow_gauge.bridge">Σιδηροδρομική γέφυρα στενού εύρους</string>
-    <string name="type.aeroway">Υποδομή εναέριου χώρου</string>
+    <string name="type.aeroway">Υποδομή Εναέριου Χώρου</string>
     <string name="type.aeroway.apron">Χώρος στάθμευσης αεροσκαφών</string>
     <string name="type.aeroway.runway">Αεροδιάδρομος</string>
     <string name="type.aeroway.taxiway">Τροχόδρομος</string>
@@ -1361,4 +1361,13 @@
     <string name="type.power.line.underground">Υπόγεια γραμμή ρεύματος</string>
     <string name="type.amenity.bicycle_parking.covered">Στεγασμένος χώρος στάθμευσης ποδηλάτων</string>
     <string name="type.barrier.guard_rail">Στηθαίο ασφαλείας</string>
+    <string name="type.amenity.love_hotel">Ερωτικό Ξενοδοχείο</string>
+    <string name="type.amenity.studio">Στούντιο Πολυμέσων</string>
+    <string name="type.office.security">Γραφείο Φρουρών Ασφαλείας</string>
+    <string name="type.building.guardhouse">Θάλαμος Ασφαλείας</string>
+    <string name="type.power.portal">Πύλη Ισχύος</string>
+    <string name="type.amenity.food_court">Χώρος Εστίασης</string>
+    <string name="type.amenity.lounger">Ανέσεις</string>
+    <string name="type.amenity.luggage_locker">Θυρίδες Αποσκευών</string>
+    <string name="type.amenity.mobile_money_agent">Mobile Money Agent</string>
 </resources>

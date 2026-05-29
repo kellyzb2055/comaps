@@ -959,4 +959,7 @@
     <string name="pref_aa_support_summary_no">L\'application n\'a pas été installée depuis Google Play ; vous ne pouvez pas l\'utiliser dans votre voiture. Cliquez sur le paramètre pour obtenir plus d\'informations dans notre FAQ.</string>
     <string name="tts_toggle_enable">Activer les instructions vocales</string>
     <string name="tts_toggle_disable">Désactiver les instructions vocales</string>
+    <string name="oh_unknown">Horaires d\'ouverture inconnus</string>
+    <string name="editor_add_select_category_all_subtitle">Toutes les catégories</string>
+    <string name="editor_add_select_category_recent_subtitle">Récemment utilisés</string>
 </resources>

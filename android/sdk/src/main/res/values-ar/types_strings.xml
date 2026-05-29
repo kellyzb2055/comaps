@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- SECTION: Types -->
-    <string name="type.addr_interpolation">العنوان / البلوك</string>
+    <string name="type.addr_interpolation">العنوان/البلوك</string>
     <string name="type.addr_interpolation.even">العنوان / البلوك</string>
     <string name="type.addr_interpolation.odd">العنوان / البلوك</string>
     <string name="type.aerialway">طريق جوي</string>
@@ -282,7 +282,7 @@
     <string name="type.cuisine.croatian">مطبخ كرواتي</string>
     <string name="type.cuisine.curry">كاري</string>
     <string name="type.cuisine.deli">أطعمة مبردة</string>
-    <string name="type.cuisine.diner">عشاء</string>
+    <string name="type.cuisine.diner">مطعم أمريكي</string>
     <string name="type.cuisine.donut">دونات</string>
     <string name="type.cuisine.ethiopian">مطبخ إثيوبي</string>
     <string name="type.cuisine.filipino">مطبخ فلبيني</string>
@@ -1436,4 +1436,5 @@
     <string name="type.natural.wetland.swamp">مستنقع غابة</string>
     <string name="type.natural.wetland.mangrove">غابات المانغروف</string>
     <string name="type.social_facility.food_bank">بنك طعام</string>
+    <string name="type.cuisine.heuriger">هويريجر|هويريغر|حانة نبيذ نمساوية|بار نبيذ نمساوي|مطعم نمساوي تقليدي|مطعم نبيذ نمساوي|حانة نمساوية|مطعم نمساوي ريفي</string>
 </resources>

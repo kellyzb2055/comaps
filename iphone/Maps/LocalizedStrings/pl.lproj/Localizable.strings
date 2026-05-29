@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "Nowe aktualizacje map nie są już dostępne dla tej wersji aplikacji. Zaktualizuj aplikację!";
 "downloader_check_updates_error" = "Sprawdzanie dostępności aktualizacji nie powiodło się";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
+"oh_unknown" = "Opening hours unknown";

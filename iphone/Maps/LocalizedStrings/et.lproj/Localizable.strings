@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "Selle rakenduse versiooni jaoks enam kaardiuuendusi ei lisandu. Palun uuenda rakendust!";
 "downloader_check_updates_error" = "Viga uuenduste olemaolu kontrollimisel";
 "editor_add_select_category_recent_subtitle" = "Hiljuti kasutatud";
+"oh_unknown" = "Tööaeg pole teada";

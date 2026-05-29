@@ -109,11 +109,11 @@
 "category_rv" = "Lokoj por loĝaŭtoj";
 "share_bookmarks_email_body" = "Hello!\n\nAttached are my saved places; please open them in CoMaps. If you don't have it installed you can download it here: https://www.comaps.app/download/\n\nEnjoy travelling with CoMaps!";
 /* message title of loading file */
-"load_kmz_title" = "Loading Favorites";
+"load_kmz_title" = "Ŝargado de favoratoj";
 /* Kmz file successful loading */
-"load_kmz_successful" = "Favorites loaded successfully! You can find them on the map or on the Favorites Manager screen.";
+"load_kmz_successful" = "Ŝargado de favoratoj sukcesis! Vi povas trovi ĝin sur la mapo aŭ en la fenestro de favoratoj.";
 /* Kml file loading failed */
-"load_kmz_failed" = "Failed to load favorites. The file may be corrupted or defective.";
+"load_kmz_failed" = "Malsukcesis ŝargi favoratojn. La dosiero eble estas difektita.";
 /* resource for context menu */
 "edit" = "Edit";
 /* Warning message when doing search around current position */
@@ -606,7 +606,7 @@
 "bookmark_lists_show_all" = "Show all";
 "bookmarks_create_new_group" = "Create a new list";
 /* Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files */
-"bookmarks_import" = "Import Favorites";
+"bookmarks_import" = "Importi favoratojn";
 "downloader_hide_screen" = "Hide Screen";
 "downloader_percent" = "%@ (%@ of %@)";
 "downloader_process" = "Downloading %@…";
@@ -800,7 +800,7 @@
 /* Outdoors/hiking map style (activity) name in the Styles and Layers dialog */
 "button_layer_outdoor" = "Outdoors";
 /* Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks */
-"bookmarks_export" = "Export all Favorites";
+"bookmarks_export" = "Eksporti ĉiujn favoratojn";
 /* Text for the editing the Track's color button. */
 "change_color" = "Change Color";
 /* Main screen title "Map" displayed in the navigation back button's menu. */
@@ -857,7 +857,7 @@
 /* Title for the "Stop Without Saving" action for the alert when saving a track recording. */
 "continue_recording" = "Continue Recording";
 /* Title for the alert when saving a track recording. */
-"track_recording_alert_title" = "Save into Favorites?";
+"track_recording_alert_title" = "Ĉu konservi en Favoratojn?";
 /* Message for the toast when saving the track recording is finished but nothing to save. */
 "track_recording_toast_nothing_to_save" = "Track is empty - nothing to save";
 "edit_track" = "Edit Track";
@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "Map-aktualigaĵojn ne plu disponigas por tiu ĉi versio de la apo. Bonvolu aktualigi la apon!";
 "downloader_check_updates_error" = "Eraro okazis dum eltrovado de aktualigaĵoj";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
+"oh_unknown" = "Opening hours unknown";

@@ -883,7 +883,7 @@
     <string name="opens_at">Otevírá v %s</string>
     <string name="closes_at">Zavírá v %s</string>
     <string name="opens_day_at">Otevírá v %1$s v %2$s</string>
-    <string name="closes_day_at">Zavírá %1$s v %2$s</string>
+    <string name="closes_day_at">Zavírá v %1$s v %2$s</string>
     <string name="editor_business_vacant_button">Podnik je volný</string>
     <string name="editor_mark_business_vacant_title">Označit podnik jako volný</string>
     <string name="editor_mark_business_vacant_description">Použijte, pokud se podnik přestěhoval a místo je volné a připravené pro nového zájemce.</string>
@@ -950,4 +950,7 @@
     <string name="pref_aa_support_summary_no">Aplikace nebyla nainstalována z Obchodu Google Play, nemůžete ji použít ve svém autě. Pro více informací otevřete nastavení a navštivte naše často kladené dotazy.</string>
     <string name="tts_toggle_enable">Povolit hlasové instrukce</string>
     <string name="tts_toggle_disable">Zakázat hlasové instrukce</string>
+    <string name="editor_add_select_category_all_subtitle">Všechny kategorie</string>
+    <string name="editor_add_select_category_recent_subtitle">Naposledy použito</string>
+    <string name="oh_unknown">Neznámá otevírací doba</string>
 </resources>

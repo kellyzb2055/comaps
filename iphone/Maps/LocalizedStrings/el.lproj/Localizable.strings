@@ -511,9 +511,9 @@
 /* abbreviation for meters */
 "m" = "μ";
 /* abbreviation for kilometers */
-"km" = "χμ";
+"km" = "χλμ";
 /* abbreviation for kilometers per hour */
-"kilometers_per_hour" = "χμ/ω";
+"kilometers_per_hour" = "χλμ/ω";
 /* abbreviation for mile(s) */
 "mi" = "μι";
 /* A unit of measure */
@@ -870,10 +870,11 @@
 "contribute_to_osm_add_place" = "Προσθήκη μέρους";
 "contribute_to_osm_update_map" = "Ενημέρωση του χάρτη για συνεισφορά";
 "contribute_to_osm_update_map_description" = "Πρέπει να ενημερώσετε τον χάρτη %@ στην τελευταία έκδοση ώστε να μπορέσετε να συνεισφέρετε στα δεδομένα του OpenStreetMap";
-"downloader_check_updates_button" = "Check for updates";
-"downloader_check_updates_checking" = "Checking for updates...";
-"downloader_check_updates_updated" = "Map updates available!";
-"downloader_check_updates_no_updates" = "No updates available";
+"downloader_check_updates_button" = "Έλεγχος για ενημερώσεις";
+"downloader_check_updates_checking" = "Γίνεται έλεγχος για ενημερώσεις...";
+"downloader_check_updates_updated" = "Διαθέσιμες ενημερώσεις χάρτη!";
+"downloader_check_updates_no_updates" = "Δεν υπάρχουν διαθέσιμες ενημερώσεις";
 "downloader_check_updates_eol" = "No more map updates for this app version. Please update the app!";
 "downloader_check_updates_error" = "Error checking for updates";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
+"oh_unknown" = "Opening hours unknown";

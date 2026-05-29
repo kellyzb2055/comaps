@@ -12,7 +12,7 @@
 "type.aeroway.aerodrome" = "空港";
 "type.aeroway.aerodrome.international" = "空港";
 "type.aeroway.apron" = "エプロン";
-"type.aeroway.gate" = "搭乗口";
+"type.aeroway.gate" = "ゲート";
 "type.aeroway.helipad" = "ヘリポート";
 "type.aeroway.runway" = "滑走路";
 "type.aeroway.taxiway" = "誘導路";
@@ -24,10 +24,10 @@
 "type.amenity.bar" = "バー";
 "type.amenity.bbq" = "バーベキューグリル";
 "type.amenity.bench" = "ベンチ";
-"type.amenity.bench.backless" = "Without Backrest";
+"type.amenity.bench.backless" = "バックレスト無し";
 "type.amenity.bicycle_parking" = "駐輪場";
 "type.amenity.bicycle_parking.covered" = "Covered Bicycle Parking";
-"type.amenity.boat_rental" = "Boat Rental";
+"type.amenity.boat_rental" = "ボートレンタル";
 "type.amenity.bicycle_rental" = "レンタサイクル";
 "type.amenity.bicycle_repair_station" = "自転車修理ステーション";
 "type.amenity.biergarten" = "ビアガーデン";
@@ -40,9 +40,9 @@
 "type.amenity.motorcycle_rental" = "レンタルバイク";
 "type.amenity.car_sharing" = "カーシェアリング";
 "type.amenity.car_wash" = "洗車場";
-"type.man_made.telescope" = "Telescope";
-"type.man_made.telescope.optical" = "Telescope (Optical)";
-"type.man_made.telescope.radio" = "Telescope (Radio)";
+"type.man_made.telescope" = "望遠鏡";
+"type.man_made.telescope.optical" = "望遠鏡（可視光）";
+"type.man_made.telescope.radio" = "望遠鏡（電波）";
 "type.man_made.telescope.gamma" = "Telescope (Gamma)";
 "type.man_made.observatory" = "Observatory";
 "type.amenity.casino" = "カジノ";

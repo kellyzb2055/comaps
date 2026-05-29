@@ -141,7 +141,7 @@
     <!-- Search category for water; any changes should be duplicated in categories.txt @category_water! also used to sort bookmarks by type -->
     <string name="category_water">ماء</string>
     <!-- Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! -->
-    <string name="category_rv">منشآت للمنازل المتنقلة</string>
+    <string name="category_rv">منشآت المركبات الترفيهية</string>
     <!-- SECTION: Other translations -->
     <!-- Notes field in Bookmarks view -->
     <string name="description">ملاحظات</string>
@@ -844,7 +844,7 @@
         <item quantity="many">%d دقائق</item>
         <item quantity="other">%d دقيقة</item>
     </plurals>
-    <string name="hours_confirmed_time_ago">أُكِّد %s</string>
+    <string name="hours_confirmed_time_ago">تم التأكيد %s</string>
     <string name="existence_confirmed_time_ago">أُكِّد الوجود %s</string>
     <string name="level_value_generic">المستوى: %s</string>
     <string name="editor_building_levels">عدد الطوابق (بما في ذلك الطابق الأرضي، باستثناء السطح)</string>
@@ -950,12 +950,12 @@
     <string name="population">السكان: %s</string>
     <string name="setting_value_system_default">النظام المبدئي</string>
     <string name="change_app_locale">لغة التطبيق</string>
-    <string name="downloader_check_updates_button">تحقق من وجود تحديثات</string>
-    <string name="downloader_check_updates_checking">يتحقق من وجود تحديثات...</string>
-    <string name="downloader_check_updates_updated">يتوفّر تحديثات خرائط!</string>
-    <string name="downloader_check_updates_no_updates">لا يتوفّر تحديثات</string>
-    <string name="downloader_check_updates_eol">لا تتوفّر تحديثات أخرى للخرائط لهذا الإصدار من التطبيق. يُرجى تحديث التطبيق!</string>
-    <string name="downloader_check_updates_error">خطأ أثناء التحقق من وجود تحديثات</string>
+    <string name="downloader_check_updates_button">التحقق من التحديثات</string>
+    <string name="downloader_check_updates_checking">جارٍ التحقق من التحديثات...</string>
+    <string name="downloader_check_updates_updated">تحديثات الخرائط متوفرة!</string>
+    <string name="downloader_check_updates_no_updates">لا توجد تحديثات متوفرة</string>
+    <string name="downloader_check_updates_eol">لا توجد تحديثات خرائط إضافية لهذا الإصدار من التطبيق. يُرجى تحديث التطبيق!</string>
+    <string name="downloader_check_updates_error">حدث خطأ أثناء التحقق من التحديثات</string>
     <string name="pref_keyboard_typing_history_title">وضع لوحة المفاتيح المتخفي</string>
     <string name="pref_keyboard_typing_history_summary">اطلب لوحة مفاتيح النظام لكي لا تُسجل تاريخ الكتابة</string>
     <string name="tts_toggle_enable">فعِّل التعليمات الصوتية</string>
@@ -963,4 +963,7 @@
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_aa_support_summary_yes">ثُبّت التطبيق من متجر جوجل Play، ويمكنك استخدامه في سيارتك.</string>
     <string name="pref_aa_support_summary_no">لم يُثبّت التطبيق من متجر جوجل Play، لذا لا يمكنك استخدامه في سيارتك. اضغط على الإعدادات للحصول على مزيد من التفاصيل من خلال الأسئلة الشائعة.</string>
+    <string name="oh_unknown">ساعات العمل غير معروفة</string>
+    <string name="editor_add_select_category_all_subtitle">كل الفئات</string>
+    <string name="editor_add_select_category_recent_subtitle">مستخدمة حديثًا</string>
 </resources>

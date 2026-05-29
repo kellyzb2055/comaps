@@ -423,7 +423,7 @@
     <string name="downloader_update_maps">Opdatér kort</string>
     <string name="downloader_mwm_migration_dialog">For at oprette en rute skal du opdatere alle kort og så planlægge ruten igen.</string>
     <string name="downloader_search_field_hint">Find kort</string>
-    <string name="common_check_internet_connection_dialog">Sørg for, din enhed er forbundet til internettet</string>
+    <string name="common_check_internet_connection_dialog">Sørg for, at din enhed er forbundet til internettet</string>
     <string name="downloader_no_space_title">Ikke nok plads</string>
     <string name="downloader_no_space_message">Slet unødvendig data</string>
     <string name="editor_login_error_dialog">Login-fejl</string>
@@ -938,4 +938,7 @@
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_aa_support_summary_yes">Appen er installeret fra Google Play, du kan bruge den i din bil.</string>
     <string name="pref_aa_support_summary_no">Appen er ikke installeret fra Google Play, du kan ikke bruge den i din bil. Tryk på indstillingen for flere oplysninger i vores FAQ.</string>
+    <string name="oh_unknown">Åbningstider ukendt</string>
+    <string name="editor_add_select_category_all_subtitle">Alle kategorier</string>
+    <string name="editor_add_select_category_recent_subtitle">Nyligt anvendt</string>
 </resources>

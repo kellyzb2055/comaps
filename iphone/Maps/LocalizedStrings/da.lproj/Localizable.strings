@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "Der kommer ikke flere kortopdateringer til denne version af appen. Opdater appen!";
 "downloader_check_updates_error" = "Fejl ved søgning efter opdateringer";
 "editor_add_select_category_recent_subtitle" = "Nyligt anvendt";
+"oh_unknown" = "Åbningstider ukendt";

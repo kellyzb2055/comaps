@@ -106,7 +106,7 @@
 /* Search category for water; any changes should be duplicated in categories.txt @category_water! also used to sort bookmarks by type */
 "category_water" = "ماء";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
-"category_rv" = "منشآت للمنازل المتنقلة";
+"category_rv" = "منشآت المركبات الترفيهية";
 "share_bookmarks_email_body" = "مرحباً! ْ\n\n تم إرفاق إشاراتي المرجعية من تطبيق CoMaps. الرجاء فتحهم إذا لديك تطبيق CoMaps مثبتاً. أو، إذا لم يكن مثبتاً، قم بتنزيل التطبيق لنظام iOS أو أندرويد من خلال الضغط على هذا الرابط: https://www.comaps.app/download/ \n\nاستمتع بالسفر مع CoMaps!";
 /* message title of loading file */
 "load_kmz_title" = "يحمل المفضلات";
@@ -145,11 +145,11 @@
 "pref_zoom_title" = "أزرار تقريب/تبعيد";
 "pref_left_button_type" = "Left Main Button";
 /* Settings «Map» category: «Map Language» title */
-"pref_maplanguage_title" = "Map Language";
+"pref_maplanguage_title" = "لغة الخريطة";
 /* Settings «Map» category: «Map Language» local value */
 "pref_maplanguage_local" = "اللغة المحلية";
 /* Settings «Map» category: «Map Appearance» title */
-"pref_mapappearance_title" = "Map Appearance";
+"pref_mapappearance_title" = "مظهر الخريطة";
 /* Settings «Map» category: «Appearance» title */
 "pref_appearance_title" = "المظهر";
 /* Settings "Appearance" category: "Light" title, should be consistent with the pref_appearance_title translation. */
@@ -388,8 +388,8 @@
 "voice_explanation_before_version26" = "It's possible to pick a better voice in the system settings under *Accessibility*, *Spoken Content*, *Voices*.";
 "unknown" = "Unknown";
 /* Place page confirmation messages and time ago formatting */
-"existence_confirmed_time_ago" = "Existence confirmed %@";
-"hours_confirmed_time_ago" = "Confirmed %@";
+"existence_confirmed_time_ago" = "تم تأكيد الوجود %@";
+"hours_confirmed_time_ago" = "تم التأكيد %@";
 /* Place Page opening hours text */
 "closed_now" = "مغلق الآن";
 /* Place Page opening hours text */
@@ -459,7 +459,7 @@
 "editor_focus_map_on_location" = "اسحب الخريطة لوضع الصليب في موقع المكان أو النشاط التجاري.";
 "editor_add_select_category" = "اختر الفئة";
 "editor_add_select_category_popular_subtitle" = "رائج";
-"editor_add_select_category_all_subtitle" = "جميع الفئات";
+"editor_add_select_category_all_subtitle" = "كل الفئات";
 "editor_edit_place_title" = "التعديل";
 "editor_add_place_title" = "الإضافة";
 "editor_edit_place_name_hint" = "اسم المكان";
@@ -870,10 +870,11 @@
 "contribute_to_osm_add_place" = "Add Place";
 "contribute_to_osm_update_map" = "Update the Map to Contribute";
 "contribute_to_osm_update_map_description" = "You need to update the %@ map to the latest version before you can contribute to the OpenStreetMap data";
-"downloader_check_updates_button" = "Check for updates";
-"downloader_check_updates_checking" = "Checking for updates...";
-"downloader_check_updates_updated" = "Map updates available!";
-"downloader_check_updates_no_updates" = "No updates available";
-"downloader_check_updates_eol" = "No more map updates for this app version. Please update the app!";
-"downloader_check_updates_error" = "Error checking for updates";
-"editor_add_select_category_recent_subtitle" = "Recently Used";
+"downloader_check_updates_button" = "التحقق من التحديثات";
+"downloader_check_updates_checking" = "جارٍ التحقق من التحديثات...";
+"downloader_check_updates_updated" = "تحديثات الخرائط متوفرة!";
+"downloader_check_updates_no_updates" = "لا توجد تحديثات متوفرة";
+"downloader_check_updates_eol" = "لا توجد تحديثات خرائط إضافية لهذا الإصدار من التطبيق. يُرجى تحديث التطبيق!";
+"downloader_check_updates_error" = "حدث خطأ أثناء التحقق من التحديثات";
+"editor_add_select_category_recent_subtitle" = "مستخدمة حديثًا";
+"oh_unknown" = "ساعات العمل غير معروفة";

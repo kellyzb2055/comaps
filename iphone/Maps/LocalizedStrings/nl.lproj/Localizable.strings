@@ -876,4 +876,5 @@
 "downloader_check_updates_no_updates" = "Geen updates beschikbaar";
 "downloader_check_updates_eol" = "Geen kaartupdates meer voor deze appversie. Update de app!";
 "downloader_check_updates_error" = "Fout bij het controleren op updates";
-"editor_add_select_category_recent_subtitle" = "Onlangs gebruikt";
+"editor_add_select_category_recent_subtitle" = "Recentelijk gebruikt";
+"oh_unknown" = "Openingstijden onbekend";

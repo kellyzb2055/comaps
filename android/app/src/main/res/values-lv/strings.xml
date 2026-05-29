@@ -904,4 +904,11 @@
     <string name="tts_toggle_disable">Atspējot balss norādes</string>
     <string name="downloader_check_updates_eol">Šai lietotnes versijai vairs nav karšu atjauninājumu. Lūgums atjaunināt lietotni.</string>
     <string name="downloader_check_updates_updated">Pieejami karšu atjauninājumi.</string>
+    <string name="oh_unknown">Darba laiks nav zināms</string>
+    <string name="editor_add_select_category_all_subtitle">Visas kategorijas</string>
+    <string name="setting_value_system_default">Sistēmas noklusējums</string>
+    <string name="editor_add_select_category_recent_subtitle">Nesen izmantotās</string>
+    <string name="charge_socket_type1_combo">1. veida apvienojums</string>
+    <string name="backup_interval_every_week">Ik nedēļu</string>
+    <string name="pref_alt_map_lang_handling_local_only">Priekšroku dot un izmantot tikai tur, kur dzimtā</string>
 </resources>

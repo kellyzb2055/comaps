@@ -21,7 +21,7 @@
     <!-- abbreviation for meters -->
     <string name="m">μ</string>
     <!-- abbreviation for kilometers -->
-    <string name="km">χμ</string>
+    <string name="km">χλμ</string>
     <!-- A unit of measure -->
     <string name="ft">πόδια</string>
     <!-- Subway exits for public transport marks on the map -->

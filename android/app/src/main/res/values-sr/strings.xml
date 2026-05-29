@@ -945,4 +945,12 @@
     <string name="downloader_check_updates_error">Грешка при провери ажурирања</string>
     <string name="pref_keyboard_typing_history_title">Инкогнито режим тастатуре</string>
     <string name="pref_keyboard_typing_history_summary">Захтева од системске тастатуре да не бележи историју куцања</string>
+    <string name="tts_toggle_enable">Укључи гласовне инструкције</string>
+    <string name="tts_toggle_disable">Искључи гласовне инструкције</string>
+    <string name="oh_unknown">Непознато радно време</string>
+    <string name="editor_add_select_category_all_subtitle">Све категорије</string>
+    <string name="pref_aa_support_title">Андроид Ауто</string>
+    <string name="pref_aa_support_summary_yes">Апликација је инсталирана преко Google Play продавнице, можете је користити у аутомобилу.</string>
+    <string name="pref_aa_support_summary_no">Апликација није инсталирана преко Google Play продавнице, не можете је користити у аутомобилу. Додирните подешавања да бисте сазнали више детаља у нашим ЧПП.</string>
+    <string name="editor_add_select_category_recent_subtitle">Недавно коришћено</string>
 </resources>

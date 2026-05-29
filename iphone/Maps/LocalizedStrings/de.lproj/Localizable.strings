@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "Kartenaktualisierungen wurden für diese App-Version eingestellt. Bitte die App aktualisieren!";
 "downloader_check_updates_error" = "Fehler beim Prüfen auf Updates";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
+"oh_unknown" = "Opening hours unknown";

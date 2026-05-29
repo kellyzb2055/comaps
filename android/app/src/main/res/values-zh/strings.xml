@@ -953,4 +953,7 @@
     <string name="pref_aa_support_summary_no">该应用未从 Google Play 安装，您无法在车内使用它。点击设置查看常见问题中的更多详情。</string>
     <string name="tts_toggle_enable">启用语音提示</string>
     <string name="tts_toggle_disable">禁用语音提示</string>
+    <string name="oh_unknown">营业时间未知</string>
+    <string name="editor_add_select_category_all_subtitle">所有类别</string>
+    <string name="editor_add_select_category_recent_subtitle">最近用过</string>
 </resources>

@@ -958,4 +958,7 @@
     <string name="pref_aa_support_summary_no">La aplicación no se ha instalado desde Google Play, por lo que no puedes usarla en tu coche. Pulsa en Ajustes para obtener más información en nuestras Preguntas frecuentes.</string>
     <string name="tts_toggle_enable">Activar indicaciones por voz</string>
     <string name="tts_toggle_disable">Desactivar indicaciones por voz</string>
+    <string name="editor_add_select_category_recent_subtitle">Usado recientemente</string>
+    <string name="oh_unknown">Horario de apertura desconocido</string>
+    <string name="editor_add_select_category_all_subtitle">Todas las categorías</string>
 </resources>

@@ -1434,7 +1434,7 @@
     <string name="type.amenity.lounger">Chaise longue</string>
     <string name="type.amenity.boat_rental">Location de bateaux</string>
     <string name="type.amenity.payment_centre">Centre de paiement</string>
-    <string name="type.amenity.mobile_money_agent">Agent d\'argent liquide</string>
+    <string name="type.amenity.mobile_money_agent">Agent Mobile Money</string>
     <string name="type.leisure.indoor_play">Complexe de jeux intérieurs</string>
     <string name="type.shop.telecommunication">Boutique télécom</string>
     <string name="type.man_made.telescope.optical">Télescope (optique)</string>

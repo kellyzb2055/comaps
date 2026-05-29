@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "Non vai haber novos mapas para esta versión da app. Actualiza a app!";
 "downloader_check_updates_error" = "Erro ao comprobar as actualizacións";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
+"oh_unknown" = "Opening hours unknown";

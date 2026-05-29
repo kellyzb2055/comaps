@@ -945,4 +945,7 @@
     <string name="pref_aa_support_summary_no">A aplicação não foi instalada pela Google Play, não pode utilizá-la no seu carro. Pressione as definições para obter mais detalhes nas nossas perguntas frequentes.</string>
     <string name="tts_toggle_enable">Ativar instruções por voz</string>
     <string name="tts_toggle_disable">Desativar instruções por voz</string>
+    <string name="oh_unknown">Horas de abertura desconhecidas</string>
+    <string name="editor_add_select_category_all_subtitle">Todas as Categorias</string>
+    <string name="editor_add_select_category_recent_subtitle">Recentemente usados</string>
 </resources>

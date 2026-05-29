@@ -1,4 +1,4 @@
-"type.addr_interpolation" = "العنوان / البلوك";
+"type.addr_interpolation" = "العنوان/البلوك";
 "type.addr_interpolation.even" = "العنوان / البلوك";
 "type.addr_interpolation.odd" = "العنوان / البلوك";
 "type.aerialway" = "طريق جوي";
@@ -309,7 +309,7 @@
 "type.cuisine.croatian" = "مطبخ كرواتي";
 "type.cuisine.curry" = "كاري";
 "type.cuisine.deli" = "أطعمة مبردة";
-"type.cuisine.diner" = "عشاء";
+"type.cuisine.diner" = "مطعم أمريكي";
 "type.cuisine.donut" = "دونات";
 "type.cuisine.ethiopian" = "مطبخ إثيوبي";
 "type.cuisine.filipino" = "مطبخ فلبيني";
@@ -322,7 +322,7 @@
 "type.cuisine.german" = "مطبخ ألماني";
 "type.cuisine.greek" = "مطبخ يوناني";
 "type.cuisine.grill" = "شواء";
-"type.cuisine.heuriger" = "Heuriger";
+"type.cuisine.heuriger" = "هويريجر|هويريغر|حانة نبيذ نمساوية|بار نبيذ نمساوي|مطعم نمساوي تقليدي|مطعم نبيذ نمساوي|حانة نمساوية|مطعم نمساوي ريفي";
 "type.cuisine.hotdog" = "هوت دوغ";
 "type.cuisine.hungarian" = "مطبخ هنغاري";
 "type.cuisine.ice_cream" = "مُثَلّجات";

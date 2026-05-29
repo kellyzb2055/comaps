@@ -924,4 +924,10 @@
     <string name="downloader_check_updates_error">Erro ao verificar atualizações</string>
     <string name="pref_keyboard_typing_history_title">Modo anônimo do teclado</string>
     <string name="pref_keyboard_typing_history_summary">Solicite ao teclado do sistema que não registre o histórico de digitação</string>
+    <string name="oh_unknown">Horário de funcionamento desconhecido</string>
+    <string name="tts_toggle_enable">Ativar orientação por voz</string>
+    <string name="tts_toggle_disable">Desativar orientação por voz</string>
+    <string name="pref_aa_support_title">Android Auto</string>
+    <string name="pref_aa_support_summary_yes">O aplicativo foi instalado a partir do Google Play e você pode usá-lo no seu carro.</string>
+    <string name="pref_aa_support_summary_no">O aplicativo não foi instalado a partir do Google Play, portanto, você não pode usá-lo no seu carro. Vá para as configurações para obter mais detalhes em nossas perguntas frequentes.</string>
 </resources>

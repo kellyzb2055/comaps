@@ -459,7 +459,7 @@
 "editor_focus_map_on_location" = "Mova o mapa para colocar a cruz na localização da empresa ou do local.";
 "editor_add_select_category" = "Selecionar categoria";
 "editor_add_select_category_popular_subtitle" = "Popular";
-"editor_add_select_category_all_subtitle" = "Todas as categorias";
+"editor_add_select_category_all_subtitle" = "Todas as Categorias";
 "editor_edit_place_title" = "Edição";
 "editor_add_place_title" = "A adicionar";
 "editor_edit_place_name_hint" = "Nome do lugar";
@@ -876,4 +876,5 @@
 "downloader_check_updates_no_updates" = "Nenhuma atualização disponível";
 "downloader_check_updates_eol" = "Não existirão mais atualizações do mapa para esta versão. Por favor, atualize a aplicação!";
 "downloader_check_updates_error" = "Erro ao procurar atualizações";
-"editor_add_select_category_recent_subtitle" = "Usados Recentemente";
+"editor_add_select_category_recent_subtitle" = "Recentemente usados";
+"oh_unknown" = "Horas de abertura desconhecidas";

@@ -27,7 +27,7 @@
     <!-- A dialog title, that warns a user that Precise Location is disabled and suggests to turn it on -->
     <string name="limited_accuracy">Beperkte nauwkeurigheid</string>
     <!-- A dialog text, that warns a user that Precise Location is disabled and suggests to turn it on -->
-    <string name="precise_location_is_disabled_long_text">Voor nauwkeurige navigatie moet Nauwkeurige Locatie worden ingesteld in de instellingen</string>
+    <string name="precise_location_is_disabled_long_text">Voor nauwkeurige navigatie moet Exacte Locatie worden ingeschakeld in de Instellingen</string>
     <!-- View and button titles for accessibility -->
     <string name="zoom_to_country">Weergeven op kaart</string>
     <!-- Message to display at the center of the screen when the country download has failed -->
@@ -60,7 +60,7 @@
     <string name="download_country_ask">%1$s downloaden? (%2$s)</string>
     <string name="update_country_ask">%1$s bijwerken? (%2$s)</string>
     <!-- REMOVE THIS STRING AFTER REFACTORING -->
-    <string name="pause">Pauzeren</string>
+    <string name="pause">Onderbreken</string>
     <!-- REMOVE THIS STRING AFTER REFACTORING -->
     <string name="continue_button">Doorgaan</string>
     <!-- Show popup notification on top of the map when country download has failed. -->
@@ -951,4 +951,7 @@
     <string name="pref_aa_support_summary_no">De app is niet geïnstalleerd vanuit Google Play en daarom kunt u hem niet gebruiken in uw auto. Tik op de instelling voor meer informatie in onze FAQ.</string>
     <string name="tts_toggle_enable">Gesproken instructies inschakelen</string>
     <string name="tts_toggle_disable">Gesproken instructies uitschakelen</string>
+    <string name="oh_unknown">Openingstijden onbekend</string>
+    <string name="editor_add_select_category_recent_subtitle">Recentelijk gebruikt</string>
+    <string name="editor_add_select_category_all_subtitle">Alle categorieën</string>
 </resources>

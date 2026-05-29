@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "此应用版本不再有地图更新。请更新应用！";
 "downloader_check_updates_error" = "检查更新时出错";
 "editor_add_select_category_recent_subtitle" = "最近用过";
+"oh_unknown" = "营业时间未知";

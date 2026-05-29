@@ -19,7 +19,7 @@
 "Argentina_Northwest":"Argentína severozápad",
 "Argentina_Pampas":"Pampa",
 "Argentina_Patagonia":"Patagónia",
-"Arizona":"Arizona",
+"Arizona":"Arizóna",
 "Armenia":"Arménsko",
 "Australia":"Austrália",
 "Australia_Melbourne":"Melbourne",
@@ -2540,5 +2540,7 @@
 "Spain_Castile and Leon_West Short":"Kastília a León",
 "Spain_Galicia_North Short":"Galícia",
 "Spain_Galicia_South Short":"Galícia",
-"Switzerland_Espace Mittelland_East Short":"Espace Mittelland"
+"Switzerland_Espace Mittelland_East Short":"Espace Mittelland",
+"France_Normandy":"Normandia",
+"Germany_Brandenburg":"Bandenbursko"
 }

@@ -876,4 +876,5 @@
 "downloader_check_updates_no_updates" = "Aucune mise à jour disponible";
 "downloader_check_updates_eol" = "Cette version de l'application ne bénéficie plus de mises à jour cartographiques. Veuillez mettre à jour l'application !";
 "downloader_check_updates_error" = "Erreur lors de la recherche de mises à jour";
-"editor_add_select_category_recent_subtitle" = "Recently Used";
+"editor_add_select_category_recent_subtitle" = "Récemment utilisés";
+"oh_unknown" = "Horaires d'ouverture inconnus";

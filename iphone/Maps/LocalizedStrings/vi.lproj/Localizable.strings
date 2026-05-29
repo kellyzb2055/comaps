@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "Phiên bản ứng dụng này không còn nhận được các bản cập nhật bản đồ. Vui lòng cập nhật ứng dụng!";
 "downloader_check_updates_error" = "Xảy ra lỗi khi kiểm tra cập nhật";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
+"oh_unknown" = "Opening hours unknown";

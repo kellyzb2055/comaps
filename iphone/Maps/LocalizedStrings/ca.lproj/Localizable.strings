@@ -877,3 +877,4 @@
 "downloader_check_updates_eol" = "No hi ha més actualitzacions per a mapes en aquesta versió. Per favor, actualitza l'app!";
 "downloader_check_updates_error" = "No s'han pogut comprovar les actualitzacions";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
+"oh_unknown" = "Opening hours unknown";

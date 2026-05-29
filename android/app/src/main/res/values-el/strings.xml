@@ -484,7 +484,7 @@
     <string name="downloader_no_downloaded_maps_message">Κατεβάστε χάρτες για να κάνετε αναζήτηση και να πλοηγηθείτε χωρίς σύνδεση</string>
     <string name="current_location_unknown_error_title">Η τρέχουσα τοποθεσία είναι άγνωστη</string>
     <!-- abbreviation for kilometers per hour -->
-    <string name="kilometers_per_hour">χμ/ω</string>
+    <string name="kilometers_per_hour">χλμ/ω</string>
     <string name="placepage_more_button">Περισσότερα</string>
     <string name="placepage_edit_bookmark_button">Επεξεργασία Αποθηκευμένου Μέρους</string>
     <string name="placepage_personal_notes_hint">Προσωπικές σημειώσεις (κείμενο ή html)</string>
@@ -551,7 +551,7 @@
     <string name="dialog_error_storage_message">Ο εξωτερικός απθηκευτικός χώρος δεν είναι διαθέσιμος, πιθανότατα έχει αφαιρεθεί η κάρτα SD, είναι κατεστραμμένη ή το σύστημα αρχείων είναι μόνο για ανάγνωση. Ελέγξτε το και επικοινωνήστε μαζί μας στη διεύθυνση support@comaps.app</string>
     <string name="setting_emulate_bad_storage">Εξομείωση κακού αποθηκευτικού χώρου</string>
     <string name="error_enter_correct_name">Εισάγετε ένα σωστό όνομα</string>
-    <string name="bookmark_lists">Λίστες αγαπημένων</string>
+    <string name="bookmark_lists">Λίστες Αγαπημένων</string>
     <!-- Do not display all bookmark lists on the map -->
     <string name="bookmark_lists_hide_all">Απόκρυψη όλων</string>
     <string name="bookmark_lists_show_all">Εμφάνιση όλων</string>
@@ -920,4 +920,8 @@
     <string name="mb_downloaded">%1$d MB / %2$d MB</string>
     <string name="route_recalculating">Επαναϋπολογισμός της διαδρομής…</string>
     <string name="population">Πληθυσμός: %s</string>
+    <string name="downloader_check_updates_button">Έλεγχος για ενημερώσεις</string>
+    <string name="downloader_check_updates_updated">Διαθέσιμες ενημερώσεις χάρτη!</string>
+    <string name="downloader_check_updates_no_updates">Δεν υπάρχουν διαθέσιμες ενημερώσεις</string>
+    <string name="downloader_check_updates_checking">Γίνεται έλεγχος για ενημερώσεις...</string>
 </resources>
