@@ -55,25 +55,25 @@
     <p>
       The Linux version of CoMaps does not yet have feature parity with the Android and iOS versions, and has not yet been optimised for mobile devices. We welcome contributions over on our Codeberg!
     </p>
-	<p 
+	<p
 	  xml:lang="da">Linux-versionen har ikke alle funktioner fra Android- og iOS-versionerne endnu og er heller ikke optimeret for mobile enheder. Vi modtager gerne bidrag på Codeberg!
 	</p>
-	<p 
+	<p
 	  xml:lang="de">Die Linux-Version von CoMaps bietet noch nicht alle Funktionen der Android- und iOS-Versionen und ist auch noch nicht für mobile Geräte optimiert. Wir freuen uns über Mithilfe über Codeberg
 	</p>
-	<p 
+	<p
 	  xml:lang="es">La versión para Linux de CoMaps aún no tiene las mismas funciones que las versiones para Android e iOS, y todavía no se ha optimizado para dispositivos móviles. ¡Agradecemos cualquier contribución en nuestro Codeberg!
 	</p>
-	<p 
+	<p
 	  xml:lang="fr">La version Linux de CoMaps n'a pas les mêmes fonctionnalités que la version Android et iOS et n'est pas encore optimisée pour les appareils mobiles. Nous acceptons toutes contributions sur Codeberg !
 	</p>
-	<p 
+	<p
 	  xml:lang="nl">De Linux versie van CoMaps heeft nog niet alle functies van de Android- en iOS-versies en is ook nog niet geoptimaliseerd voor mobiele apparaten. We verwelkomen bijdragen op Codeberg!
 	</p>
-	<p 
+	<p
 	  xml:lang="pt_BR">A versão para Linux do CoMaps ainda não possui paridade de recursos com as versões para Android e iOS e ainda não foi otimizada para dispositivos móveis. Aceitamos contribuições em nosso Codeberg!
 	</p>
-	<p 
+	<p
 	  xml:lang="ru">Linux-версия CoMaps ещё не достигла функционала версий Android и iOS, и не была оптимизирована для мобильных устройств. Мы будем рады помощи на нашем Codeberg!
 	</p>
 
@@ -129,10 +129,19 @@
     </screenshot>
   </screenshots>
 
+
   <releases>
-    <release version="2026.05.04" date="2026-05-04">
+    <release version="2026.06.05" date="2026-06-05">
      <url type="details">https://comaps.app/latest/</url>
-	 <description><ul>
+     <description><ul>
+<li>OpenStreetMap data as of June 3 and further weekly updates via "Check for updates" button in the download screen</li>
+<li>Subway layer additions: Kiev, Charleroi, Nantes light rail and Paris Transilien network</li>
+<li>Fixed opening of POI info links in a browser</li>
+     </ul></description>
+    </release>
+    <release version="2026.05.06" date="2026-05-06">
+     <url type="details">https://codeberg.org/comaps/comaps/releases/tag/v2026.05.06-11</url>
+     <description><ul>
 <li>OpenStreetMap data as of May 4</li>
 <li>"Check for updates" button in the download screen to get new maps without updating the app (weekly map updates are planned)</li>
 <li>Added Slovenia specific road shields</li>
