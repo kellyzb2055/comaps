@@ -18,6 +18,8 @@ screenlog.0
 # symbols png/sdf are now generated at build
 data/symbols/**/symbols.png
 data/symbols/**/symbols.sdf
+# translations are also generated at build
+data/*-strings/*/localize.json
 
 data/bookmarks
 data/edits.xml

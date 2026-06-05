@@ -10,6 +10,7 @@ export PYTHONUTF8=1
 SKIP_MAP_DOWNLOAD="${SKIP_MAP_DOWNLOAD:-}"
 SKIP_GENERATE_SYMBOLS="${SKIP_GENERATE_SYMBOLS:-}"
 SKIP_GENERATE_DRULES="${SKIP_GENERATE_DRULES:-}"
+SKIP_GENERATE_JSON_STRINGS="${SKIP_GENERATE_JSON_STRINGS:-}"
 SKIP_GENERATE_STRINGS="${SKIP_GENERATE_STRINGS:-}"
 SKIP_GENERATE_SERBIAN_LATIN_STRINGS="${SKIP_GENERATE_SERBIAN_LATIN_STRINGS:-}"
 
@@ -52,8 +53,9 @@ while true; do
     -m | --skip-map-download ) SKIP_MAP_DOWNLOAD=1; shift ;;
     -s | --skip-generate-symbols ) SKIP_GENERATE_SYMBOLS=1; shift ;;
     -d | --skip-generate-drules ) SKIP_GENERATE_DRULES=1; shift ;;
+    -O | --skip-generate-json-strings ) SKIP_GENERATE_JSON_STRINGS=1; shift ;;
     -S | --skip-generate-strings ) SKIP_GENERATE_STRINGS=1; shift ;;
-    -L | --skip-generate-strings ) SKIP_GENERATE_SERBIAN_LATIN_STRINGS=1; shift ;;
+    -L | --skip-generate-serbian-latin-strings ) SKIP_GENERATE_SERBIAN_LATIN_STRINGS=1; shift ;;
     * ) break ;;
   esac
 done
@@ -126,6 +128,14 @@ fi
 
 echo "Generating search categories / synonyms..."
 ./tools/unix/generate_categories.sh
+
+# This step must be before all the other strings steps, since they expect strings in data/
+if [ -z "$SKIP_GENERATE_JSON_STRINGS" ]; then
+  echo "Generating json strings..."
+  ./tools/unix/generate_json_strings.sh
+else
+  echo "Skipping generate json strings..."
+fi
 
 if [ -z "$SKIP_GENERATE_STRINGS" ]; then
   if Diff data/strings_hash iphone/Maps/LocalizedStrings/en.lproj/LocalizableTypes.strings || [ ! -z "$STRINGS_NOT_GENERATED" ]; then
