@@ -39,7 +39,7 @@ git clone --recurse-submodules --shallow-submodules https://codeberg.org/comaps/
   <summary><span style="font-size: 1em; font-weight: bold;">Ubuntu/Debian</span></summary>
 
 ```bash
-sudo apt install build-essential cmake qt6-base-dev qt6-svg-dev qt6-positioning-dev libicu-dev libfreetype-dev libharfbuzz-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev optipng python3-pip ninja-build
+sudo apt install build-essential cmake qt6-base-dev qt6-svg-dev qt6-positioning-dev libicu-dev libfreetype-dev libharfbuzz-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev optipng python3-pip ninja-build jq
 
 ```
 </details>
@@ -48,7 +48,7 @@ sudo apt install build-essential cmake qt6-base-dev qt6-svg-dev qt6-positioning-
   <summary><span style="font-size: 1em; font-weight: bold;">Arch Linux</span></summary>
 
 ```bash
-sudo pacman -S base-devel cmake qt6-base qt6-svg qt6-positioning icu freetype2 harfbuzz harfbuzz-utils libxrandr libxinerama libxcursor libxi ninja python-pip optipng
+sudo pacman -S base-devel cmake qt6-base qt6-svg qt6-positioning icu freetype2 harfbuzz harfbuzz-utils libxrandr libxinerama libxcursor libxi ninja python-pip optipng jq
 ```
 
 </details>
@@ -57,7 +57,7 @@ sudo pacman -S base-devel cmake qt6-base qt6-svg qt6-positioning icu freetype2 h
   <summary><span style="font-size: 1em; font-weight: bold;">Fedora</span></summary>
 
 ```bash
-sudo dnf install @development-tools cmake qt6-qtbase qt6-qtsvg qt6-qtpositioning icu harfbuzz freetype libXrandr libXinerama libXcursor libXi optipng python3-pip ninja-build
+sudo dnf install @development-tools cmake qt6-qtbase qt6-qtsvg qt6-qtpositioning icu harfbuzz freetype libXrandr libXinerama libXcursor libXi optipng python3-pip ninja-build jq
 ```
 
 </details>
@@ -139,7 +139,7 @@ For _Windows 10/11_:  You should be able to build the project by following eithe
 
 **Setup 1: Using WSL**
 1. Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) on your machine.
-2. Install g++ by running the following command in WSL: `sudo apt install g++`
+2. Install g++ and jq by running the following command in WSL: `sudo apt install g++ jq`
 
 **Setup 2: Using Visual Studio Developer Command Prompt**
 Install the [Visual Studio Developer Command Prompt](https://docs.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=vs-2022) (make sure to choose the latest MSVC x64/x86 build tool and Windows 10/11 SDK as individual components while installing Visual Studio).
@@ -162,7 +162,7 @@ xcode-select --install
 
 #### Homebrew packages
 ```bash
-brew install wget optipng cmake ninja qt
+brew install wget optipng cmake ninja qt jq
 pip3 install "protobuf<3.21"
 ```
 
