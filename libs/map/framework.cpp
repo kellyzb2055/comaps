@@ -13,6 +13,8 @@
 
 #include "ge0/url_generator.hpp"
 
+#include "platform/location.hpp"
+#include "routing/route.hpp"
 #include "routing/router.hpp"
 #include "routing/speed_camera_prohibition.hpp"
 
@@ -640,7 +642,7 @@ void Framework::FillUserMarkInfo(UserMark const * mark, place_page::Info & outIn
     FillSpeedCameraMarkInfo(*static_cast<SpeedCameraMark const *>(mark), outInfo);
     break;
   }
-      
+
   case UserMark::Type::TRAFFIC_LIGHT:
   {
     auto const * tlMark = static_cast<TrafficLightMark const *>(mark);
@@ -648,7 +650,7 @@ void Framework::FillUserMarkInfo(UserMark const * mark, place_page::Info & outIn
       FillFeatureInfo(tlMark->GetFeatureID(), outInfo);
     break;
   }
-      
+
   default: CHECK(false, ("Unexpected user mark type", mark->GetMarkType()));
   }
 
@@ -2436,7 +2438,8 @@ bool Framework::LoadTransliteration()
 
 void Framework::SaveTransliteration(bool allowTranslit)
 {
-  settings::Set(localisation::kTransliterationSetting, allowTranslit ? Transliteration::Mode::Enabled : Transliteration::Mode::Disabled);
+  settings::Set(localisation::kTransliterationSetting,
+                allowTranslit ? Transliteration::Mode::Enabled : Transliteration::Mode::Disabled);
 }
 
 std::optional<localisation::LanguageCode> Framework::GetCustomMapLanguageCode()
@@ -2467,7 +2470,8 @@ localisation::AlternativeMapLanguageHandling Framework::GetAlternativeMapLanguag
   return localisation::UsedAlternativeMapLanguageHandling();
 }
 
-void Framework::SetAlternativeMapLanguageHandling(localisation::AlternativeMapLanguageHandling const alternativeMapLanguageHandling)
+void Framework::SetAlternativeMapLanguageHandling(
+    localisation::AlternativeMapLanguageHandling const alternativeMapLanguageHandling)
 {
   settings::Set(localisation::kAlternativeMapLanguageHandlingSetting, alternativeMapLanguageHandling);
   InvalidateRect(GetCurrentViewport());
@@ -2779,7 +2783,9 @@ bool Framework::ParseEditorDebugCommand(search::SearchParams const & params)
         return true;
       }
 
-      search::Result res(feature::GetCenter(*ft), ft->GetTranslatedName().m_primary.has_value() ? ft->GetTranslatedName().m_primary.value() : "");
+      search::Result res(feature::GetCenter(*ft), ft->GetTranslatedName().m_primary.has_value()
+                                                      ? ft->GetTranslatedName().m_primary.value()
+                                                      : "");
       res.SetAddress(std::move(edit.second));
       res.FromFeature(fid, feature::TypesHolder(*ft).GetBestType(), 0, {});
 
@@ -3282,6 +3288,7 @@ void Framework::ReadFeatures(function<void(FeatureType &)> const & reader, vecto
 void Framework::OnRouteFollow(routing::RouterType type)
 {
   bool const isPedestrianRoute = type == RouterType::Pedestrian;
+  bool const allowRouteRotation = type == RouterType::Vehicle && !m_isCarScreenMode;
   bool const enableAutoZoom = isPedestrianRoute ? false : LoadAutoZoom();
   int const scale = isPedestrianRoute ? scales::GetPedestrianNavigationScale() : scales::GetNavigationScale();
   int scale3d = isPedestrianRoute ? scales::GetPedestrianNavigation3dScale() : scales::GetNavigation3dScale();
@@ -3297,7 +3304,7 @@ void Framework::OnRouteFollow(routing::RouterType type)
   // TODO. We need to sync two enums VehicleType and RouterType to be able to pass
   // GetRoutingSettings(type).m_matchRoute to the FollowRoute() instead of |isPedestrianRoute|.
   // |isArrowGlued| parameter fully corresponds to |m_matchRoute| in RoutingSettings.
-  m_drapeEngine->FollowRoute(scale, scale3d, enableAutoZoom, !isPedestrianRoute /* isArrowGlued */);
+  m_drapeEngine->FollowRoute(scale, scale3d, enableAutoZoom, !isPedestrianRoute /* isArrowGlued */, allowRouteRotation);
   Refresh3dMode();
 }
 
@@ -3337,7 +3344,8 @@ void Framework::FillDescriptions(FeatureType & ft, place_page::Info & info) cons
   if (!ft.GetID().m_mwmId.IsAlive())
     return;
 
-  std::string wikiDescription = m_descriptionsLoader->GetWikiDescription(ft.GetID(), localisation::PrioritizedMapLanguageIndexes(ft.GetLanguages()));
+  std::string wikiDescription = m_descriptionsLoader->GetWikiDescription(
+      ft.GetID(), localisation::PrioritizedMapLanguageIndexes(ft.GetLanguages()));
   if (!wikiDescription.empty())
   {
     info.SetWikiDescription(std::move(wikiDescription));
@@ -3349,7 +3357,10 @@ void Framework::FillDescriptions(FeatureType & ft, place_page::Info & info) cons
   if (osmDescription.empty())
     return;
 
-  std::optional<std::string> translatedOsmDescription = localisation::TranslatedFeatureName(StringUtf8Multilang::FromBuffer(std::string(osmDescription)), ft.GetLanguages()).m_primary;
+  std::optional<std::string> translatedOsmDescription =
+      localisation::TranslatedFeatureName(StringUtf8Multilang::FromBuffer(std::string(osmDescription)),
+                                          ft.GetLanguages())
+          .m_primary;
   if (translatedOsmDescription.has_value())
     info.SetOSMDescription(std::string(translatedOsmDescription.value()));
 }
