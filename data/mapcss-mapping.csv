@@ -650,8 +650,8 @@ amenity|payment_centre;522;
 barrier|yes;523;
 railway|monorail|tunnel;[railway=monorail][tunnel?];;name;int_name;524;
 railway|funicular|bridge;[railway=funicular][bridge?];;name;int_name;525;
-deprecated|deprecated;526;x
-deprecated|deprecated;527;x
+amenity|toilets|private;[amenity=toilets][access=private],[amenity=toilets][access=no];;;;526;
+amenity|toilets|customers;[amenity=toilets][access=customers],[amenity=toilets][toilets:access=customers];;;;527;
 highway|primary_link|tunnel;[highway=primary_link][tunnel?];;name;int_name;528;
 deprecated:highway|footway|alpine_hiking:04.2024;[highway=footway][sac_scale=alpine_hiking];x;name;int_name;529;highway|path|expert
 deprecated|deprecated;530;x
