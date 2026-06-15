@@ -203,7 +203,6 @@ Using these steps all existing translations can still be kept and rebased into t
 [tts_git]: https://codeberg.org/comaps/comaps/src/branch/main/data/sound-strings
 [tts_git_en]: https://codeberg.org/comaps/comaps/src/branch/main/data/sound-strings/en.json/localize.json
 [categories_git]: https://codeberg.org/comaps/comaps/src/branch/main/data/categories.txt
-[categories_cuisines_git]:https://codeberg.org/comaps/comaps/src/branch/main/data/categories_cuisines.txt
 [website_weblate]: https://translate.codeberg.org/projects/comaps/website/
 [website_git]: https://codeberg.org/comaps/website/
 [website_guide]: https://codeberg.org/comaps/website/src/branch/main/TRANSLATIONS.md
