@@ -1018,6 +1018,7 @@ node|z17-[amenity=social_facility],
 node|z17-[social_facility=food_bank],
 node|z17-[social_facility=soup_kitchen],
 node|z17-[amenity=animal_shelter],
+node|z17-[amenity=animal_boarding],
 node|z17-[amenity=stage],
 node|z17-[amenity=kindergarten],
 node|z17-[amenity=childcare],
@@ -1226,6 +1227,11 @@ node|z17-[leisure=bandstand],
 {icon-image: bandstand-m.svg;}
 node|z18-[amenity=stage],
 node|z18-[leisure=bandstand],
+{font-size: 11;}
+
+node|z17-[amenity=animal_boarding],
+{icon-image: animal_shelter-m.svg;}
+node|z18-[amenity=animal_boarding],
 {font-size: 11;}
 
 node|z16-[amenity=pharmacy],

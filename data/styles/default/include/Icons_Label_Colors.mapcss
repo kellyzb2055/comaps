@@ -124,6 +124,8 @@ node[leisure=water_park],
 
 area[amenity=university][name],
 node[aeroway=gate],
+node[amenity=animal_boarding],
+node[amenity=animal_shelter],
 node[amenity=atm],
 node[amenity=bank],
 node[amenity=bureau_de_change],

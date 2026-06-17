@@ -983,6 +983,7 @@ leisure-sports_centre-sport-volleyball              # icon z16- (also has captio
 leisure-sports_centre-sport-yoga                    # icon z16- (also has caption(optional) z16-, area z13-)
 === 1610
 
+amenity-animal_boarding                             # icon z17- (also has caption(optional) z17-)
 amenity-animal_shelter                              # icon z17- (also has caption(optional) z17-)
 amenity-car_wash                                    # icon z17- (also has caption(optional) z17-, area z15-)
 amenity-childcare                                   # icon z17- (also has caption(optional) z17-, area z13-)
@@ -2078,6 +2079,7 @@ natural-tree                                        # icon z15- (also has captio
 # leisure-sports_centre-sport-yoga                  # caption(optional) z16- (also has icon z16-, area z13-)
 # === -8390
 
+# amenity-animal_boarding                           # caption(optional) z17- (also has icon z17-)
 # amenity-animal_shelter                            # caption(optional) z17- (also has icon z17-)
 # amenity-car_wash                                  # caption(optional) z17- (also has icon z17-, area z15-)
 # amenity-childcare                                 # caption(optional) z17- (also has icon z17-, area z13-)
