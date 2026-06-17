@@ -313,6 +313,7 @@ natural-peak                                        # icon z10- (also has captio
 natural-volcano                                     # icon z10- (also has caption(optional) z13-)
 === 5400
 
+amenity-planetarium                                 # icon z14- (also has caption(optional) z15-)
 amenity-theatre                                     # icon z14- (also has caption(optional) z14-)
 historic-battlefield                                # icon z15- (also has caption(optional) z15-)
 historic-city_gate                                  # icon z13- (also has caption(optional) z13-)
@@ -1628,6 +1629,7 @@ natural-tree                                        # icon z15- (also has captio
 # natural-volcano                                   # caption(optional) z13- (also has icon z10-)
 # === -4600
 
+# amenity-planetarium                               # caption(optional) z15- (also has icon z14-)
 # amenity-theatre                                   # caption(optional) z14- (also has icon z14-)
 # historic-battlefield                              # caption(optional) z15- (also has icon z15-)
 # historic-city_gate                                # caption(optional) z13- (also has icon z13-)

@@ -613,7 +613,7 @@ leisure|park|permissive;[leisure=park][access=permissive];;name;int_name;487;
 highway|bridleway|tunnel;[highway=bridleway][tunnel?];;name;int_name;488;
 highway|motorway_link|tunnel;[highway=motorway_link][tunnel?];;name;int_name;489;
 leisure|fitness_centre|sport|yoga;[leisure=fitness_centre][sport=yoga];;name;int_name;490;
-deprecated|deprecated;491;x
+amenity|planetarium;491;
 amenity|animal_boarding;492;
 highway|tertiary_link|bridge;[highway=tertiary_link][bridge?];;name;int_name;493;
 tourism|information|visitor_centre;[tourism=information][information=visitor_centre];;name;int_name;494;

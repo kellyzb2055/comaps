@@ -293,6 +293,9 @@
     "tourism-museum|@category_tourism": {
         "defaultMessage": "2Museum|U+1F3A8|3exhibition|3gallery"
     },
+    "amenity-planetarium|@category_tourism": {
+        "defaultMessage": "5Planetarium|U+1FA90|5astronomy"
+    },
     "waterway-waterfall|@category_tourism": {
         "defaultMessage": "2Waterfall"
     },

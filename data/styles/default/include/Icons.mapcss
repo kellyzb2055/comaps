@@ -571,6 +571,7 @@ node|z14-[tourism=attraction],
 node|z14-[tourism=theme_park],
 node|z14-[tourism=viewpoint],
 node|z15-[tourism=zoo][zoo=petting_zoo],
+node|z15-[amenity=planetarium],
 node|z15-[amenity=community_centre],
 node|z15-[historic=memorial],
 node|z15-[historic=mine],
@@ -727,6 +728,11 @@ node|z15[tourism=gallery]
 node|z16-[tourism=gallery],
 node|z17-[amenity=arts_centre],
 {icon-image: gallery-m.svg;text-offset: 1;icon-min-distance: 12;}
+
+node|z14[amenity=planetarium],
+{icon-image: planet-s.svg;}
+node|z15-[amenity=planetarium],
+{icon-image: planet-m.svg;}
 
 node|z14[amenity=theatre],
 {icon-image: theatre-s.svg;text-offset: 1;icon-min-distance: 8;}

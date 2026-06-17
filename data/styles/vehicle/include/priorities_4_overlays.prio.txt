@@ -502,6 +502,7 @@ tourism-zoo-petting                                 # icon z15- (also has captio
 tourism-museum                                      # icon z15- (also has caption(optional) z15-)
 === 1300
 
+amenity-planetarium                                 # icon z15- (also has caption(optional) z15-)
 tourism-gallery                                     # icon z15- (also has caption(optional) z15-)
 === 1250
 
@@ -1047,6 +1048,7 @@ entrance-emergency                                  # icon z19- (also has captio
 # tourism-museum                                    # caption(optional) z15- (also has icon z15-)
 # === -8700
 
+# amenity-planetarium                               # caption(optional) z15- (also has icon z15-)
 # tourism-gallery                                   # caption(optional) z15- (also has icon z15-)
 # === -8750
 
