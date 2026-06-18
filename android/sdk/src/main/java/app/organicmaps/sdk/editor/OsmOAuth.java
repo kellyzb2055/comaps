@@ -59,6 +59,12 @@ public final class OsmOAuth
     return mPrefs.getString(PREF_OSM_USERNAME, "");
   }
 
+  @NonNull
+  private static File getProfilePictureCacheFile()
+  {
+    return new File(StorageUtils.getTempPath(mContext), PROFILE_PICTURE_FILENAME);
+  }
+
   @WorkerThread
   @Nullable
   public static Bitmap getProfilePicture()
@@ -69,7 +75,7 @@ public final class OsmOAuth
       return loadCachedProfilePicture();
 
     final String cachedUrl = mPrefs.getString(PREF_OSM_PROFILE_PICTURE_URL, "");
-    final File cacheFile = new File(StorageUtils.getTempPath(mContext), PROFILE_PICTURE_FILENAME);
+    final File cacheFile = getProfilePictureCacheFile();
 
     if (!pictureUrl.equals(cachedUrl) || !cacheFile.exists())
     {
@@ -88,7 +94,7 @@ public final class OsmOAuth
   @Nullable
   private static Bitmap loadCachedProfilePicture()
   {
-    final File cacheFile = new File(StorageUtils.getTempPath(mContext), PROFILE_PICTURE_FILENAME);
+    final File cacheFile = getProfilePictureCacheFile();
     if (!cacheFile.exists())
       return null;
     return BitmapFactory.decodeFile(cacheFile.getAbsolutePath());
@@ -142,7 +148,7 @@ public final class OsmOAuth
             .remove(PREF_OSM_OAUTH2_TOKEN)
             .remove(PREF_OSM_PROFILE_PICTURE_URL)
             .apply();
-    new File(StorageUtils.getTempPath(mContext), PROFILE_PICTURE_FILENAME).delete();
+    getProfilePictureCacheFile().delete();
   }
 
   @NonNull
