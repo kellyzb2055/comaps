@@ -36,7 +36,12 @@ jobs:
           - /mnt/4tbexternal/reviews/data/postgis:/var/lib/postgresql
         ports:
           - "5432:5432"
-        options: --health-cmd "pg_isready -U ${{ env.POSTGRES_USER }} -d ${{ env.POSTGRES_DB }}" --health-interval 10s --health-timeout 5s --health-retries 5
+        options: >-
+          --health-cmd "pg_isready -U ${{ env.POSTGRES_USER }} -d ${{ env.POSTGRES_DB }}"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+          --health-start-period 60s
     container:
       image: iboates/osm2pgsql:${{ env.OSM2PGSQL_VERSION }}
       volumes:
@@ -76,7 +81,12 @@ jobs:
           - /mnt/4tbexternal/reviews/data/postgis:/var/lib/postgresql
         ports:
           - "5432:5432"
-        options: --health-cmd "pg_isready -U ${{ env.POSTGRES_USER }} -d ${{ env.POSTGRES_DB }}" --health-interval 10s --health-timeout 5s --health-retries 5
+        options: >-
+          --health-cmd "pg_isready -U ${{ env.POSTGRES_USER }} -d ${{ env.POSTGRES_DB }}"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+          --health-start-period 60s
     container:
       image: isharine/mangrove-osm-coder:${{ env.MOC_VERSION }}
       volumes:
