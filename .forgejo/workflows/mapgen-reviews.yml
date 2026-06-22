@@ -69,7 +69,7 @@ jobs:
           -P 5432 \
           -O flex \
           -S ${OSM2PGSQL_CONFIG_FILE} \
-          /home/planet/planet.o5m
+          /home/planet/planet/planet.o5m
 
   preprocess-mangrove:
     runs-on: mapfilemaker
