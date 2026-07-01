@@ -811,7 +811,8 @@ public:
   explicit LatviaRoadShieldParser(std::string const & baseRoadNumber)
     : SimpleRoadShieldParser(baseRoadNumber, {{"A", RoadShieldType::Generic_Red},
                                               {"E", RoadShieldType::Generic_Green},
-                                              {"P", RoadShieldType::Generic_Blue}})
+                                              {"P", RoadShieldType::Generic_Blue},
+                                              {"V", RoadShieldType::Generic_Grey_Bordered}})
   {}
 };
 
@@ -1045,11 +1046,13 @@ std::string DebugPrint(RoadShieldType shieldType)
   case RoadShieldType::Generic_Blue: return "blue";
   case RoadShieldType::Generic_Red: return "red";
   case RoadShieldType::Generic_Orange: return "orange";
+  case RoadShieldType::Generic_Grey: return "grey";
   case RoadShieldType::Generic_White_Bordered: return "white bordered";
   case RoadShieldType::Generic_Green_Bordered: return "green bordered";
   case RoadShieldType::Generic_Blue_Bordered: return "blue bordered";
   case RoadShieldType::Generic_Red_Bordered: return "red bordered";
   case RoadShieldType::Generic_Orange_Bordered: return "orange bordered";
+  case RoadShieldType::Generic_Grey_Bordered: return "grey bordered";
   case RoadShieldType::Generic_Pill_White: return "white pill";
   case RoadShieldType::Generic_Pill_Green: return "green pill";
   case RoadShieldType::Generic_Pill_Blue: return "blue pill";

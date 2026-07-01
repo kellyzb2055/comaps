@@ -67,6 +67,7 @@ df::ColorConstant const kRoadShieldGreenBackgroundColor = "RoadShieldGreenBackgr
 df::ColorConstant const kRoadShieldBlueBackgroundColor = "RoadShieldBlueBackground";
 df::ColorConstant const kRoadShieldRedBackgroundColor = "RoadShieldRedBackground";
 df::ColorConstant const kRoadShieldOrangeBackgroundColor = "RoadShieldOrangeBackground";
+df::ColorConstant const kRoadShieldGreyBackgroundColor = "RoadShieldGreyBackground";
 df::ColorConstant const kRoadShieldUKYellowTextColor = "RoadShieldUKYellowText";
 
 uint32_t constexpr kPathTextBaseTextIndex = 128;
@@ -265,11 +266,13 @@ bool IsColoredRoadShield(ftypes::RoadShield const & shield)
          shield.m_type == ftypes::RoadShieldType::Generic_Blue ||
          shield.m_type == ftypes::RoadShieldType::Generic_Red ||
          shield.m_type == ftypes::RoadShieldType::Generic_Orange ||
+         shield.m_type == ftypes::RoadShieldType::Generic_Grey ||
          shield.m_type == ftypes::RoadShieldType::Generic_White_Bordered ||
          shield.m_type == ftypes::RoadShieldType::Generic_Green_Bordered ||
          shield.m_type == ftypes::RoadShieldType::Generic_Blue_Bordered ||
          shield.m_type == ftypes::RoadShieldType::Generic_Red_Bordered ||
          shield.m_type == ftypes::RoadShieldType::Generic_Orange_Bordered ||
+         shield.m_type == ftypes::RoadShieldType::Generic_Grey_Bordered ||
          shield.m_type == ftypes::RoadShieldType::UK_Highway;
 }
 
@@ -297,11 +300,13 @@ dp::Color GetRoadShieldColor(dp::Color const & baseColor, ftypes::RoadShield con
       {RoadShieldType::Generic_Blue, kRoadShieldBlueBackgroundColor},
       {RoadShieldType::Generic_Red, kRoadShieldRedBackgroundColor},
       {RoadShieldType::Generic_Orange, kRoadShieldOrangeBackgroundColor},
+      {RoadShieldType::Generic_Grey, kRoadShieldGreyBackgroundColor},
       {RoadShieldType::Generic_White_Bordered, kRoadShieldWhiteBackgroundColor},
       {RoadShieldType::Generic_Green_Bordered, kRoadShieldGreenBackgroundColor},
       {RoadShieldType::Generic_Blue_Bordered, kRoadShieldBlueBackgroundColor},
       {RoadShieldType::Generic_Red_Bordered, kRoadShieldRedBackgroundColor},
       {RoadShieldType::Generic_Orange_Bordered, kRoadShieldOrangeBackgroundColor},
+      {RoadShieldType::Generic_Grey_Bordered, kRoadShieldGreyBackgroundColor},
       {RoadShieldType::Generic_Pill_White, kRoadShieldWhiteBackgroundColor},
       {RoadShieldType::Generic_Pill_Green, kRoadShieldGreenBackgroundColor},
       {RoadShieldType::Generic_Pill_Blue, kRoadShieldBlueBackgroundColor},
@@ -331,11 +336,13 @@ dp::Color GetRoadShieldTextColor(dp::Color const & baseColor, ftypes::RoadShield
       {RoadShieldType::Generic_Blue, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_Red, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_Orange, kRoadShieldBlackTextColor},
+      {RoadShieldType::Generic_Grey, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_White_Bordered, kRoadShieldBlackTextColor},
       {RoadShieldType::Generic_Green_Bordered, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_Blue_Bordered, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_Red_Bordered, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_Orange_Bordered, kRoadShieldBlackTextColor},
+      {RoadShieldType::Generic_Grey_Bordered, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_Pill_White, kRoadShieldBlackTextColor},
       {RoadShieldType::Generic_Pill_Green, kRoadShieldWhiteTextColor},
       {RoadShieldType::Generic_Pill_Blue, kRoadShieldWhiteTextColor},
@@ -371,6 +378,7 @@ float GetRoadShieldOutlineWidth(float baseWidth, ftypes::RoadShield const & shie
   if (shield.m_type == ftypes::RoadShieldType::Generic_White ||
       shield.m_type == ftypes::RoadShieldType::Generic_Green || shield.m_type == ftypes::RoadShieldType::Generic_Blue ||
       shield.m_type == ftypes::RoadShieldType::Generic_Red || shield.m_type == ftypes::RoadShieldType::Generic_Orange ||
+      shield.m_type == ftypes::RoadShieldType::Generic_Grey ||
       shield.m_type == ftypes::RoadShieldType::Generic_Pill_White ||
       shield.m_type == ftypes::RoadShieldType::Generic_Pill_Green ||
       shield.m_type == ftypes::RoadShieldType::Generic_Pill_Blue ||
