@@ -634,7 +634,7 @@
     <string name="avoid_motorways">Éviter les autoroutes</string>
     <string name="unable_to_calc_alert_title">Impossible de calculer l’itinéraire</string>
     <string name="unable_to_calc_alert_subtitle">Malheureusement aucun itinéraire n’a pu être calculé soit en raison d’un manque de données OpenStreetMap soit à cause des options de routage choisies. Modifiez les paramètres de routage et réessayez.</string>
-    <string name="define_to_avoid_btn">Définissez les routes à éviter</string>
+    <string name="define_to_avoid_btn">Définissez les préférences d’itinéraire</string>
     <string name="change_driving_options_btn">Paramètres d’itinéraire activés</string>
     <string name="toll_road">Route à péages</string>
     <string name="unpaved_road">Routes non revêtues</string>
@@ -963,8 +963,14 @@
     <string name="editor_add_select_category_all_subtitle">Toutes les catégories</string>
     <string name="editor_add_select_category_recent_subtitle">Récemment utilisés</string>
     <string name="sort_categories">Trier les listes de favoris</string>
-    <string name="by_recently_used">Par récemment utilisé</string>
+    <string name="by_recently_used">Par utilisation récente</string>
     <string name="by_custom">Par ordre personnalisé</string>
     <string name="enable_long_tap_fullscreen">Appuyez longuement pour masquer l\'interface utilisateur</string>
     <string name="long_tap_disabled_toast">Pour masquer l\'interface, activez la fonction « Appuyer longuement » dans les paramètres</string>
+    <string name="capacity_disabled">Places de stationnement pour handicapé : %s</string>
+    <string name="capacity_disabled_yes">Possède des places de stationnement pour handicapé</string>
+    <string name="capacity_disabled_no">Ne possède pas de place de stationnement pour handicapé</string>
+    <string name="capacity_charging">Emplacements avec chargeur : %s</string>
+    <string name="capacity_charging_yes">Possède des emplacements de stationnement avec chargeur</string>
+    <string name="capacity_charging_no">Ne possède pas d’emplacement de stationnement avec chargeur</string>
 </resources>

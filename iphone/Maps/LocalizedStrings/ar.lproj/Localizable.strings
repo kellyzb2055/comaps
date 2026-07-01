@@ -878,6 +878,6 @@
 "oh_unknown" = "ساعات العمل غير معروفة";
 "carplay_highway_exit" = "Exit %@";
 "capacity_disabled_yes" = "Has dedicated disabled spaces";
-"capacity_disabled_no" = "No dedicated disabled spaces";
-"capacity_charging_yes" = "Has spaces with chargers";
-"capacity_charging_no" = "No spaces with chargers";
+"capacity_disabled_no" = "لا مواقف مخصّصة لذوي الإعاقة";
+"capacity_charging_yes" = "يحتوي على أماكن مزودة بشواحن";
+"capacity_charging_no" = "لا أماكن مزودة بشواحن";

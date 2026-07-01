@@ -878,6 +878,6 @@
 "oh_unknown" = "Horario de apertura desconocido";
 "carplay_highway_exit" = "Salida %@";
 "capacity_disabled_yes" = "Has dedicated disabled spaces";
-"capacity_disabled_no" = "No dedicated disabled spaces";
-"capacity_charging_yes" = "Has spaces with chargers";
-"capacity_charging_no" = "No spaces with chargers";
+"capacity_disabled_no" = "No hay plazas reservadas para personas con discapacidad";
+"capacity_charging_yes" = "Dispone de plazas con cargadores";
+"capacity_charging_no" = "No hay plazas con cargadores";

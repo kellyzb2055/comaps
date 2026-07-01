@@ -1519,4 +1519,5 @@
     <string name="type.leisure.sports_centre.sport.pickleball">Centro Desportivo</string>
     <string name="type.sport.pickleball">Pickleball</string>
     <string name="type.organic.no">Sem opções orgânicas</string>
+    <string name="type.amenity.stage">Lugar</string>
 </resources>

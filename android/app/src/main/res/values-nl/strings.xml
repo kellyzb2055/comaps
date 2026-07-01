@@ -623,7 +623,7 @@
     <string name="avoid_motorways">Snelwegen vermijden</string>
     <string name="unable_to_calc_alert_title">Kan geen route berekenen</string>
     <string name="unable_to_calc_alert_subtitle">Het is niet gelukt om een route te vinden. Dit kan worden veroorzaakt door uw route-instellingen of onvolledige OpenStreetMap-gegevens. Wijzig uw route-instellingen en probeer het opnieuw.</string>
-    <string name="define_to_avoid_btn">Te vermijden wegen instellen</string>
+    <string name="define_to_avoid_btn">Routeopties kiezen</string>
     <string name="change_driving_options_btn">Route-instellingen ingeschakeld</string>
     <string name="toll_road">Tolweg</string>
     <string name="unpaved_road">Onverharde weg</string>
@@ -959,4 +959,10 @@
     <string name="sort_categories">Favorietenlijsten sorteren</string>
     <string name="by_recently_used">Op laatst gebruikt</string>
     <string name="by_custom">Aangepaste volgorde</string>
+    <string name="capacity_disabled">Plaatsen voor gehandicapten: %s</string>
+    <string name="capacity_disabled_yes">Heeft plaatsen voor gehandicapten</string>
+    <string name="capacity_disabled_no">Geen plaatsen voor gehandicapten</string>
+    <string name="capacity_charging">Plaatsen met laders: %s</string>
+    <string name="capacity_charging_yes">Heeft plaatsen met laders</string>
+    <string name="capacity_charging_no">Geen plaatsen met laders</string>
 </resources>

@@ -935,7 +935,7 @@
 "type.railway.funicular" = "Funicular";
 "type.railway.funicular.bridge" = "Puente de funicular";
 "type.railway.funicular.tunnel" = "Túnel de funicular";
-"type.railway.halt" = "Punto de parada";
+"type.railway.halt" = "Estación de tren";
 "type.railway.level_crossing" = "Cruce a nivel";
 "type.railway.light_rail" = "Tren ligero";
 "type.railway.light_rail.bridge" = "Puente de tren ligero";

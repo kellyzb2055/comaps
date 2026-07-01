@@ -65,7 +65,7 @@
 "highway-bus_stop|@category_transport": "3Bushalte|bus|halte",
 "railway-tram_stop|@category_transport": "3Tramhalte|tram|halte",
 "amenity-bus_station|@category_transport": "Busstation|2bus|station",
-"railway-station|railway-halt|building-train_station|@category_transport": "4Station|4spoorwegen|spoor|3trein",
+"railway-station|railway-halt|building-train_station|@category_transport": "4Station|4spoorwegen|spoor|3trein|halte",
 "railway-station-funicular": "4Funicular|Kabelspoorweg",
 "railway-station-subway|@category_transport": "4Metrosation|5ondergrondse|metro",
 "amenity-ferry_terminal|@category_transport": "3Veerpont|veerboot|veer|pont|overzetboot",

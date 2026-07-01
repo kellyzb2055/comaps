@@ -612,7 +612,7 @@
     <string name="avoid_motorways">Evitar autoestradas</string>
     <string name="unable_to_calc_alert_title">Não foi possível calcular a rota</string>
     <string name="unable_to_calc_alert_subtitle">Uma rota não foi possível ser encontrada. Isto pode ser causado pelas suas opções ou dados incompletos de OpenStreetMap. Por favor, mude as suas opções de rota e tente novamente.</string>
-    <string name="define_to_avoid_btn">Definir as estradas a evitar</string>
+    <string name="define_to_avoid_btn">Escolher opções de roteamento</string>
     <string name="change_driving_options_btn">Configurações de direção ativadas</string>
     <string name="toll_road">Estrada com portagem</string>
     <string name="unpaved_road">Estrada não pavimentada</string>
@@ -953,4 +953,14 @@
     <string name="sort_categories">Ordenar Listas de Favoritos</string>
     <string name="by_recently_used">Por usados recentemente</string>
     <string name="by_custom">Por ordem personalizada</string>
+    <string name="capacity_disabled">Lugares de estacionamento para pessoas com deficiência: %s</string>
+    <string name="capacity_disabled_yes">Tem lugares de estacionamento reservados para pessoas com deficiência</string>
+    <string name="capacity_disabled_no">Não tem lugares de estacionamento reservados para pessoas com deficiência</string>
+    <string name="capacity_charging">Estacionamento com carregadores: %s</string>
+    <string name="capacity_charging_yes">Têm estacionamento com carregadores</string>
+    <string name="capacity_charging_no">Não tem estacionamento com carregadores</string>
+    <string name="prefs_group_general_summary">Unidades, idioma, armazenamento</string>
+    <string name="prefs_group_route_summary">Instruções de voz, opções de roteamento</string>
+    <string name="prefs_group_privacy_summary">Serviços da Google Play, histórico de pesquisa</string>
+    <string name="prefs_group_power_summary">Estilo do mapa, tempo de proteção do ecrã</string>
 </resources>

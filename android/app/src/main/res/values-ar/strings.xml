@@ -631,7 +631,7 @@
     <string name="avoid_motorways">تجنب الطريق السريع</string>
     <string name="unable_to_calc_alert_title">تعذر حساب المسار</string>
     <string name="unable_to_calc_alert_subtitle">لم يتم العثور على مسار. قد يكون هذا بسبب خيارات توجيهك أو بيانات OpenStreetMap غير المكتملة. يُرجى تغيير خيارات توجيهك وإعادة المحاولة.</string>
-    <string name="define_to_avoid_btn">حدد الطرق التي يجب تجنبها</string>
+    <string name="define_to_avoid_btn">اختر خيارات المسار</string>
     <string name="change_driving_options_btn">فُعِّل خيارات التوجيه</string>
     <string name="toll_road">طريق برسوم مرور</string>
     <string name="unpaved_road">طريق غير معبد</string>
@@ -971,4 +971,10 @@
     <string name="sort_categories">رتّب قوائم المفضلة</string>
     <string name="by_recently_used">حسب أحدث استخدام</string>
     <string name="by_custom">حسب الترتيب المخصّص</string>
+    <string name="capacity_disabled">مواقف السيارات المخصّصة لذوي الإعاقة: %s</string>
+    <string name="capacity_disabled_yes">يحتوي على مواقف مخصّصة لذوي الإعاقة</string>
+    <string name="capacity_disabled_no">لا مواقف مخصّصة لذوي الإعاقة</string>
+    <string name="capacity_charging">أماكن مزودة بشواحن: %s</string>
+    <string name="capacity_charging_yes">يحتوي على أماكن مزودة بشواحن</string>
+    <string name="capacity_charging_no">لا أماكن مزودة بشواحن</string>
 </resources>

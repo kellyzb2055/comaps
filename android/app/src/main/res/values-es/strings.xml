@@ -630,7 +630,7 @@
     <string name="avoid_motorways">Evitar autopistas</string>
     <string name="unable_to_calc_alert_title">No se puede calcular la ruta</string>
     <string name="unable_to_calc_alert_subtitle">No se pudo encontrar una ruta. Quizás se deba a las opciones de enrutamiento o a datos faltantes en OpenStreetMap. Revisa tus opciones de enrutamiento y vuelve a intentarlo.</string>
-    <string name="define_to_avoid_btn">Defina los caminos para evitar</string>
+    <string name="define_to_avoid_btn">Elige las opciones de rutas</string>
     <string name="change_driving_options_btn">Opciones de enrutamiento activadas</string>
     <string name="toll_road">Carretera de peaje</string>
     <string name="unpaved_road">Camino sin pavimentar</string>
@@ -966,4 +966,14 @@
     <string name="by_custom">Personalizado</string>
     <string name="enable_long_tap_fullscreen">Mantén pulsado para ocultar la interfaz de usuario.</string>
     <string name="long_tap_disabled_toast">Para ocultar la interfaz, active la opción de pulsación larga en los ajustes</string>
+    <string name="capacity_disabled">Plazas de aparcamiento para personas con discapacidad: %s</string>
+    <string name="capacity_disabled_yes">Dispone de plazas de aparcamiento reservadas para personas con discapacidad</string>
+    <string name="capacity_disabled_no">No hay plazas reservadas para personas con discapacidad</string>
+    <string name="capacity_charging">Plazas con cargadores: %s</string>
+    <string name="capacity_charging_yes">Dispone de plazas con cargadores</string>
+    <string name="capacity_charging_no">No hay plazas con cargadores</string>
+    <string name="prefs_group_general_summary">Unidades, idioma, almacenamiento</string>
+    <string name="prefs_group_route_summary">Instrucciones de voz, opciones de la ruta</string>
+    <string name="prefs_group_privacy_summary">Servicios de Google Play, historial de búsqueda</string>
+    <string name="prefs_group_power_summary">Estilo del mapa, tiempo de espera de pantalla</string>
 </resources>

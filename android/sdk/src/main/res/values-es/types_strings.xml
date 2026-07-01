@@ -811,7 +811,7 @@
     <string name="type.railway.crossing">Paso a nivel</string>
     <string name="type.railway.disused">Vía férrea en desuso</string>
     <string name="type.railway.funicular">Funicular</string>
-    <string name="type.railway.halt">Punto de parada</string>
+    <string name="type.railway.halt">Estación de tren</string>
     <string name="type.railway.level_crossing">Cruce a nivel</string>
     <string name="type.railway.light_rail">Tren ligero</string>
     <string name="type.railway.monorail">Monorriel</string>
