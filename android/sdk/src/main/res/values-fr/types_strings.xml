@@ -777,7 +777,7 @@
     <string name="type.railway.funicular">Funiculaire</string>
     <string name="type.railway.funicular.bridge">Funiculaire</string>
     <string name="type.railway.funicular.tunnel">Funiculaire</string>
-    <string name="type.railway.halt">Gare ferroviaire</string>
+    <string name="type.railway.halt">Arrêt de train</string>
     <string name="type.railway.level_crossing">Passage à niveau</string>
     <string name="type.railway.monorail">Monorail</string>
     <string name="type.railway.monorail.bridge">Monorail</string>

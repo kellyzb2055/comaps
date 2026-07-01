@@ -877,7 +877,7 @@
 "editor_add_select_category_recent_subtitle" = "Récemment utilisés";
 "oh_unknown" = "Horaires d'ouverture inconnus";
 "carplay_highway_exit" = "Sortie %@";
-"capacity_disabled_yes" = "Has dedicated disabled spaces";
+"capacity_disabled_yes" = "Dispose de places de stationnement réservées aux personnes handicapées";
 "capacity_disabled_no" = "Ne possède pas de place de stationnement pour handicapé";
 "capacity_charging_yes" = "Possède des emplacements de stationnement avec chargeur";
 "capacity_charging_no" = "Ne possède pas d’emplacement de stationnement avec chargeur";

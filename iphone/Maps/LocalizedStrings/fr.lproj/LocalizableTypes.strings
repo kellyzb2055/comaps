@@ -936,7 +936,7 @@
 "type.railway.funicular" = "Funiculaire";
 "type.railway.funicular.bridge" = "Funiculaire";
 "type.railway.funicular.tunnel" = "Funiculaire";
-"type.railway.halt" = "Gare ferroviaire";
+"type.railway.halt" = "Arrêt de train";
 "type.railway.level_crossing" = "Passage à niveau";
 "type.railway.light_rail" = "Métro";
 "type.railway.light_rail.bridge" = "Pont de métro";
