@@ -1,109 +1,323 @@
 {
-"make_a_slight_right_turn":"Μείνετε δεξιά.",
-"make_a_slight_right_turn_street":"NULL",
-"make_a_slight_right_turn_street_verb":"NULL",
-"make_a_right_turn":"Στρίψτε δεξιά.",
-"make_a_right_turn_street":"NULL",
-"make_a_sharp_right_turn":"Απότομα δεξιά.",
-"make_a_sharp_right_turn_street":"NULL",
-"enter_the_roundabout":"Στον κυκλικό κόμβο.",
-"enter_the_roundabout_street":"NULL",
-"enter_the_roundabout_street_verb":"NULL",
-"leave_the_roundabout":"Βγείτε από τον κυκλικό κόμβο.",
-"leave_the_roundabout_street":"NULL",
-"leave_the_roundabout_street_verb":"NULL",
-"make_a_slight_left_turn":"Μείνετε αριστερά.",
-"make_a_slight_left_turn_street":"NULL",
-"make_a_slight_left_turn_street_verb":"NULL",
-"make_a_left_turn":"Στρίψτε αριστερά.",
-"make_a_left_turn_street":"NULL",
-"make_a_sharp_left_turn":"Απότομα αριστερά.",
-"make_a_sharp_left_turn_street":"NULL",
-"make_a_u_turn":"Κάντε στροφή 180 μοιρών.",
-"make_a_u_turn_street":"NULL",
-"make_a_u_turn_street_verb":"NULL",
-"go_straight":"Συνεχίστε ευθεία.",
-"exit":"Έξοδος.",
-"onto":"σε",
-"take_exit_number":"Έξοδος σε",
-"take_exit_number_street_verb":"NULL",
-"route_recalculating":"Επαναϋπολογισμός της διαδρομής",
-"destination":"Θα φτάσετε.",
-"you_have_reached_the_destination":"Έχετε φτάσει.",
-"in_50_meters":"Σε πενήντα μέτρα",
-"in_100_meters":"Σε εκατό μέτρα",
-"in_200_meters":"Σε διακόσια μέτρα",
-"in_250_meters":"Σε διακόσια πενήντα μέτρα",
-"in_300_meters":"Σε τριακόσια μέτρα",
-"in_400_meters":"Σε τετρακόσια μέτρα",
-"in_500_meters":"Σε πεντακόσια μέτρα",
-"in_600_meters":"Σε εξακόσια μέτρα",
-"in_700_meters":"Σε επτακόσια μέτρα",
-"in_750_meters":"Σε επτακόσια πενήντα μέτρα",
-"in_800_meters":"Σε οκτακόσια μέτρα",
-"in_900_meters":"Σε εννιακόσια μέτρα",
-"in_1_kilometer":"Σε ένα χιλιόμετρο",
-"in_1_5_kilometers":"Σε ενάμισυ χιλιόμετρο",
-"in_2_kilometers":"Σε δύο χιλιόμετρα",
-"in_2_5_kilometers":"Σε δυόμισι χιλιόμετρα",
-"in_3_kilometers":"Σε τρία χιλιόμετρα",
-"then":"Στη συνέχεια",
-"dist_direction_onto_street":"%1$s %2$s %3$s %4$s",
-"take_the_1_exit":"Πάρτε την πρώτη έξοδο.",
-"take_the_1_exit_street":"NULL",
-"take_the_1_exit_street_verb":"NULL",
-"take_the_2_exit":"Πάρτε τη δεύτερη έξοδο.",
-"take_the_2_exit_street":"NULL",
-"take_the_2_exit_street_verb":"NULL",
-"take_the_3_exit":"Πάρτε την τρίτη έξοδο.",
-"take_the_3_exit_street":"NULL",
-"take_the_3_exit_street_verb":"NULL",
-"take_the_4_exit":"Πάρτε την τέταρτη έξοδο.",
-"take_the_4_exit_street":"NULL",
-"take_the_4_exit_street_verb":"NULL",
-"take_the_5_exit":"Πάρτε την πέμπτη έξοδο.",
-"take_the_5_exit_street":"NULL",
-"take_the_5_exit_street_verb":"NULL",
-"take_the_6_exit":"Πάρτε την έκτη έξοδο.",
-"take_the_6_exit_street":"NULL",
-"take_the_6_exit_street_verb":"NULL",
-"take_the_7_exit":"Πάρτε την έβδομη έξοδο.",
-"take_the_7_exit_street":"NULL",
-"take_the_7_exit_street_verb":"NULL",
-"take_the_8_exit":"Πάρτε την όγδοη έξοδο.",
-"take_the_8_exit_street":"NULL",
-"take_the_8_exit_street_verb":"NULL",
-"take_the_9_exit":"Πάρτε την ένατη έξοδο.",
-"take_the_9_exit_street":"NULL",
-"take_the_9_exit_street_verb":"NULL",
-"take_the_10_exit":"Πάρτε την δέκατη έξοδο.",
-"take_the_10_exit_street":"NULL",
-"take_the_10_exit_street_verb":"NULL",
-"take_the_11_exit":"Πάρτε την ενδέκατη έξοδο.",
-"take_the_11_exit_street":"NULL",
-"take_the_11_exit_street_verb":"NULL",
-"in_50_feet":"Σε πενήντα πόδια",
-"in_100_feet":"Σε εκατό πόδια",
-"in_200_feet":"Σε διακόσια πόδια",
-"in_300_feet":"Στα τριακόσια πόδια",
-"in_400_feet":"Σε τετρακόσια πόδια",
-"in_500_feet":"Σε πεντακόσια πόδια",
-"in_600_feet":"Σε εξακόσια πόδια",
-"in_700_feet":"Σε επτακόσια πόδια",
-"in_800_feet":"Σε οκτακόσια πόδια",
-"in_900_feet":"Σε εννιακόσια πόδια",
-"in_1000_feet":"Σε χίλια πόδια",
-"in_1500_feet":"Σε χίλια πεντακόσια πόδια",
-"in_2000_feet":"Σε δύο χιλιάδες πόδια",
-"in_2500_feet":"Σε δυόμισυ χιλιάδες πόδια",
-"in_3000_feet":"Σε τρεις χιλιάδες πόδια",
-"in_3500_feet":"Σε τρισύμιση χιλιάδες πόδια",
-"in_4000_feet":"Σε τέσσερις χιλιάδες πόδια",
-"in_4500_feet":"Σε τεσσερισήμισι χιλιάδες πόδια",
-"in_5000_feet":"Σε πέντε χιλιάδες πόδια",
-"in_1_mile":"Σε ένα μίλι",
-"in_1_5_miles":"Σε ενάμισυ μίλι",
-"in_2_miles":"Σε δύο μίλια",
-"unknown_camera":"Προσέγγιση κάμερας ταχύτητας",
-"at_the_end_of_the_road":"Στο τέλος του δρόμου,"
+    "make_a_slight_right_turn": {
+        "defaultMessage": "Μείνετε δεξιά."
+    },
+    "make_a_slight_right_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_slight_right_turn_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_right_turn": {
+        "defaultMessage": "Στρίψτε δεξιά."
+    },
+    "make_a_right_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_sharp_right_turn": {
+        "defaultMessage": "Απότομα δεξιά."
+    },
+    "make_a_sharp_right_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "enter_the_roundabout": {
+        "defaultMessage": "Στον κυκλικό κόμβο."
+    },
+    "enter_the_roundabout_street": {
+        "defaultMessage": "NULL"
+    },
+    "enter_the_roundabout_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "leave_the_roundabout": {
+        "defaultMessage": "Βγείτε από τον κυκλικό κόμβο."
+    },
+    "leave_the_roundabout_street": {
+        "defaultMessage": "NULL"
+    },
+    "leave_the_roundabout_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_slight_left_turn": {
+        "defaultMessage": "Μείνετε αριστερά."
+    },
+    "make_a_slight_left_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_slight_left_turn_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_left_turn": {
+        "defaultMessage": "Στρίψτε αριστερά."
+    },
+    "make_a_left_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_sharp_left_turn": {
+        "defaultMessage": "Απότομα αριστερά."
+    },
+    "make_a_sharp_left_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_u_turn": {
+        "defaultMessage": "Κάντε στροφή 180 μοιρών."
+    },
+    "make_a_u_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_u_turn_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "go_straight": {
+        "defaultMessage": "Συνεχίστε ευθεία."
+    },
+    "exit": {
+        "defaultMessage": "Έξοδος."
+    },
+    "onto": {
+        "defaultMessage": "σε"
+    },
+    "take_exit_number": {
+        "defaultMessage": "Έξοδος σε"
+    },
+    "take_exit_number_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "route_recalculating": {
+        "defaultMessage": "Επαναϋπολογισμός της διαδρομής"
+    },
+    "destination": {
+        "defaultMessage": "Θα φτάσετε."
+    },
+    "you_have_reached_the_destination": {
+        "defaultMessage": "Έχετε φτάσει."
+    },
+    "in_50_meters": {
+        "defaultMessage": "Σε πενήντα μέτρα"
+    },
+    "in_100_meters": {
+        "defaultMessage": "Σε εκατό μέτρα"
+    },
+    "in_200_meters": {
+        "defaultMessage": "Σε διακόσια μέτρα"
+    },
+    "in_250_meters": {
+        "defaultMessage": "Σε διακόσια πενήντα μέτρα"
+    },
+    "in_300_meters": {
+        "defaultMessage": "Σε τριακόσια μέτρα"
+    },
+    "in_400_meters": {
+        "defaultMessage": "Σε τετρακόσια μέτρα"
+    },
+    "in_500_meters": {
+        "defaultMessage": "Σε πεντακόσια μέτρα"
+    },
+    "in_600_meters": {
+        "defaultMessage": "Σε εξακόσια μέτρα"
+    },
+    "in_700_meters": {
+        "defaultMessage": "Σε επτακόσια μέτρα"
+    },
+    "in_750_meters": {
+        "defaultMessage": "Σε επτακόσια πενήντα μέτρα"
+    },
+    "in_800_meters": {
+        "defaultMessage": "Σε οκτακόσια μέτρα"
+    },
+    "in_900_meters": {
+        "defaultMessage": "Σε εννιακόσια μέτρα"
+    },
+    "in_1_kilometer": {
+        "defaultMessage": "Σε ένα χιλιόμετρο"
+    },
+    "in_1_5_kilometers": {
+        "defaultMessage": "Σε ενάμισυ χιλιόμετρο"
+    },
+    "in_2_kilometers": {
+        "defaultMessage": "Σε δύο χιλιόμετρα"
+    },
+    "in_2_5_kilometers": {
+        "defaultMessage": "Σε δυόμισι χιλιόμετρα"
+    },
+    "in_3_kilometers": {
+        "defaultMessage": "Σε τρία χιλιόμετρα"
+    },
+    "then": {
+        "defaultMessage": "Στη συνέχεια"
+    },
+    "dist_direction_onto_street": {
+        "defaultMessage": "%1$s %2$s %3$s %4$s"
+    },
+    "take_the_1_exit": {
+        "defaultMessage": "Πάρτε την πρώτη έξοδο."
+    },
+    "take_the_1_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_1_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_2_exit": {
+        "defaultMessage": "Πάρτε τη δεύτερη έξοδο."
+    },
+    "take_the_2_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_2_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_3_exit": {
+        "defaultMessage": "Πάρτε την τρίτη έξοδο."
+    },
+    "take_the_3_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_3_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_4_exit": {
+        "defaultMessage": "Πάρτε την τέταρτη έξοδο."
+    },
+    "take_the_4_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_4_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_5_exit": {
+        "defaultMessage": "Πάρτε την πέμπτη έξοδο."
+    },
+    "take_the_5_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_5_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_6_exit": {
+        "defaultMessage": "Πάρτε την έκτη έξοδο."
+    },
+    "take_the_6_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_6_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_7_exit": {
+        "defaultMessage": "Πάρτε την έβδομη έξοδο."
+    },
+    "take_the_7_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_7_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_8_exit": {
+        "defaultMessage": "Πάρτε την όγδοη έξοδο."
+    },
+    "take_the_8_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_8_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_9_exit": {
+        "defaultMessage": "Πάρτε την ένατη έξοδο."
+    },
+    "take_the_9_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_9_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_10_exit": {
+        "defaultMessage": "Πάρτε την δέκατη έξοδο."
+    },
+    "take_the_10_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_10_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_11_exit": {
+        "defaultMessage": "Πάρτε την ενδέκατη έξοδο."
+    },
+    "take_the_11_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_11_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "in_50_feet": {
+        "defaultMessage": "Σε πενήντα πόδια"
+    },
+    "in_100_feet": {
+        "defaultMessage": "Σε εκατό πόδια"
+    },
+    "in_200_feet": {
+        "defaultMessage": "Σε διακόσια πόδια"
+    },
+    "in_300_feet": {
+        "defaultMessage": "Στα τριακόσια πόδια"
+    },
+    "in_400_feet": {
+        "defaultMessage": "Σε τετρακόσια πόδια"
+    },
+    "in_500_feet": {
+        "defaultMessage": "Σε πεντακόσια πόδια"
+    },
+    "in_600_feet": {
+        "defaultMessage": "Σε εξακόσια πόδια"
+    },
+    "in_700_feet": {
+        "defaultMessage": "Σε επτακόσια πόδια"
+    },
+    "in_800_feet": {
+        "defaultMessage": "Σε οκτακόσια πόδια"
+    },
+    "in_900_feet": {
+        "defaultMessage": "Σε εννιακόσια πόδια"
+    },
+    "in_1000_feet": {
+        "defaultMessage": "Σε χίλια πόδια"
+    },
+    "in_1500_feet": {
+        "defaultMessage": "Σε χίλια πεντακόσια πόδια"
+    },
+    "in_2000_feet": {
+        "defaultMessage": "Σε δύο χιλιάδες πόδια"
+    },
+    "in_2500_feet": {
+        "defaultMessage": "Σε δυόμισυ χιλιάδες πόδια"
+    },
+    "in_3000_feet": {
+        "defaultMessage": "Σε τρεις χιλιάδες πόδια"
+    },
+    "in_3500_feet": {
+        "defaultMessage": "Σε τρισύμιση χιλιάδες πόδια"
+    },
+    "in_4000_feet": {
+        "defaultMessage": "Σε τέσσερις χιλιάδες πόδια"
+    },
+    "in_4500_feet": {
+        "defaultMessage": "Σε τεσσερισήμισι χιλιάδες πόδια"
+    },
+    "in_5000_feet": {
+        "defaultMessage": "Σε πέντε χιλιάδες πόδια"
+    },
+    "in_1_mile": {
+        "defaultMessage": "Σε ένα μίλι"
+    },
+    "in_1_5_miles": {
+        "defaultMessage": "Σε ενάμισυ μίλι"
+    },
+    "in_2_miles": {
+        "defaultMessage": "Σε δύο μίλια"
+    },
+    "unknown_camera": {
+        "defaultMessage": "Προσέγγιση κάμερας ταχύτητας"
+    },
+    "at_the_end_of_the_road": {
+        "defaultMessage": "Στο τέλος του δρόμου,"
+    }
 }

@@ -1,108 +1,320 @@
 {
-"make_a_slight_right_turn":"Tartson jobbra.",
-"make_a_slight_right_turn_street":"NULL",
-"make_a_slight_right_turn_street_verb":"NULL",
-"make_a_right_turn":"Forduljon jobbra.",
-"make_a_right_turn_street":"NULL",
-"make_a_sharp_right_turn":"Kanyarodjon élesen jobbra.",
-"make_a_sharp_right_turn_street":"NULL",
-"enter_the_roundabout":"Hajtson be a körforgalomba.",
-"enter_the_roundabout_street":"NULL",
-"enter_the_roundabout_street_verb":"NULL",
-"leave_the_roundabout":"Hagyja el a körforgalmat.",
-"leave_the_roundabout_street":"NULL",
-"leave_the_roundabout_street_verb":"NULL",
-"make_a_slight_left_turn":"Tartson balra.",
-"make_a_slight_left_turn_street":"NULL",
-"make_a_slight_left_turn_street_verb":"NULL",
-"make_a_left_turn":"Forduljon balra.",
-"make_a_left_turn_street":"NULL",
-"make_a_sharp_left_turn":"Kanyarodjon élesen balra.",
-"make_a_sharp_left_turn_street":"NULL",
-"make_a_u_turn":"Forduljon vissza.",
-"make_a_u_turn_street":"NULL",
-"make_a_u_turn_street_verb":"NULL",
-"go_straight":"Haladjon tovább egyenesen.",
-"exit":"Hajtson ki.",
-"onto":"felé",
-"take_exit_number":"Hajtson ki a",
-"take_exit_number_street_verb":"NULL",
-"route_recalculating":"Az útvonal újraszámítása",
-"destination":"Megérkezik.",
-"you_have_reached_the_destination":"Megérkezett.",
-"in_50_meters":"Ötven méter után",
-"in_100_meters":"Száz méter után",
-"in_200_meters":"Kétszáz méter után",
-"in_250_meters":"Kétszázötven méter után",
-"in_300_meters":"Háromszáz méter után",
-"in_400_meters":"Négyszáz méter után",
-"in_500_meters":"Ötszáz méter után",
-"in_600_meters":"Hatszáz méter után",
-"in_700_meters":"Hétszáz méter után",
-"in_750_meters":"Hétszázötven méter után",
-"in_800_meters":"Nyolcszáz méter után",
-"in_900_meters":"Kilencszáz méter után",
-"in_1_kilometer":"Egy kilométer után",
-"in_1_5_kilometers":"Másfél kilométer után",
-"in_2_kilometers":"Két kilométer után",
-"in_2_5_kilometers":"Két és fél kilométer után",
-"in_3_kilometers":"Három kilométer után",
-"then":"Majd",
-"dist_direction_onto_street":"%1$s %2$s %4$s %3$s",
-"take_the_1_exit":"Hajtson ki az első kijáratnál.",
-"take_the_1_exit_street":"NULL",
-"take_the_1_exit_street_verb":"NULL",
-"take_the_2_exit":"Hajtson ki a második kijáratnál.",
-"take_the_2_exit_street":"NULL",
-"take_the_2_exit_street_verb":"NULL",
-"take_the_3_exit":"Hajtson ki a harmadik kijáratnál.",
-"take_the_3_exit_street":"NULL",
-"take_the_3_exit_street_verb":"NULL",
-"take_the_4_exit":"Hajtson ki a negyedik kijáratnál.",
-"take_the_4_exit_street":"NULL",
-"take_the_4_exit_street_verb":"NULL",
-"take_the_5_exit":"Hajtson ki az ötödik kijáratnál.",
-"take_the_5_exit_street":"NULL",
-"take_the_5_exit_street_verb":"NULL",
-"take_the_6_exit":"Hajtson ki a hatodik kijáratnál.",
-"take_the_6_exit_street":"NULL",
-"take_the_6_exit_street_verb":"NULL",
-"take_the_7_exit":"Hajtson ki a hetedik kijáratnál.",
-"take_the_7_exit_street":"NULL",
-"take_the_7_exit_street_verb":"NULL",
-"take_the_8_exit":"Hajtson ki a nyolcadik kijáratnál.",
-"take_the_8_exit_street":"NULL",
-"take_the_8_exit_street_verb":"NULL",
-"take_the_9_exit":"Hajtson ki a kilencedik kijáratnál.",
-"take_the_9_exit_street":"NULL",
-"take_the_9_exit_street_verb":"NULL",
-"take_the_10_exit":"Hajtson ki a tizedik kijáratnál.",
-"take_the_10_exit_street":"NULL",
-"take_the_10_exit_street_verb":"NULL",
-"take_the_11_exit":"Hajtson ki a tizenegyedik kijáratnál.",
-"take_the_11_exit_street":"NULL",
-"take_the_11_exit_street_verb":"NULL",
-"in_50_feet":"Ötven láb után",
-"in_100_feet":"Száz láb után",
-"in_200_feet":"Kétszáz láb után",
-"in_300_feet":"Háromszáz láb után",
-"in_400_feet":"Négyszáz láb után",
-"in_500_feet":"Ötszáz láb után",
-"in_600_feet":"Hatszáz láb után",
-"in_700_feet":"Hétszáz láb után",
-"in_800_feet":"Nyolcszáz láb után",
-"in_900_feet":"Kilencszáz láb után",
-"in_1000_feet":"Ezer láb után",
-"in_1500_feet":"Ezerötszáz láb után",
-"in_2000_feet":"Kétezer láb után",
-"in_2500_feet":"Kétezer-ötszáz láb után",
-"in_3000_feet":"Háromezer láb után",
-"in_3500_feet":"Háromezer-ötszáz láb után",
-"in_4000_feet":"Négyezer láb után",
-"in_4500_feet":"Négyezer-ötszáz láb után",
-"in_5000_feet":"Ötezer láb után",
-"in_1_mile":"Egy mérföld után",
-"in_1_5_miles":"Másfél mérföld után",
-"in_2_miles":"Két mérföld után",
-"unknown_camera":"Sebességkamera következik"
+    "make_a_slight_right_turn": {
+        "defaultMessage": "Tartson jobbra."
+    },
+    "make_a_slight_right_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_slight_right_turn_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_right_turn": {
+        "defaultMessage": "Forduljon jobbra."
+    },
+    "make_a_right_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_sharp_right_turn": {
+        "defaultMessage": "Kanyarodjon élesen jobbra."
+    },
+    "make_a_sharp_right_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "enter_the_roundabout": {
+        "defaultMessage": "Hajtson be a körforgalomba."
+    },
+    "enter_the_roundabout_street": {
+        "defaultMessage": "NULL"
+    },
+    "enter_the_roundabout_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "leave_the_roundabout": {
+        "defaultMessage": "Hagyja el a körforgalmat."
+    },
+    "leave_the_roundabout_street": {
+        "defaultMessage": "NULL"
+    },
+    "leave_the_roundabout_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_slight_left_turn": {
+        "defaultMessage": "Tartson balra."
+    },
+    "make_a_slight_left_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_slight_left_turn_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_left_turn": {
+        "defaultMessage": "Forduljon balra."
+    },
+    "make_a_left_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_sharp_left_turn": {
+        "defaultMessage": "Kanyarodjon élesen balra."
+    },
+    "make_a_sharp_left_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_u_turn": {
+        "defaultMessage": "Forduljon vissza."
+    },
+    "make_a_u_turn_street": {
+        "defaultMessage": "NULL"
+    },
+    "make_a_u_turn_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "go_straight": {
+        "defaultMessage": "Haladjon tovább egyenesen."
+    },
+    "exit": {
+        "defaultMessage": "Hajtson ki."
+    },
+    "onto": {
+        "defaultMessage": "felé"
+    },
+    "take_exit_number": {
+        "defaultMessage": "Hajtson ki a"
+    },
+    "take_exit_number_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "route_recalculating": {
+        "defaultMessage": "Az útvonal újraszámítása"
+    },
+    "destination": {
+        "defaultMessage": "Megérkezik."
+    },
+    "you_have_reached_the_destination": {
+        "defaultMessage": "Megérkezett."
+    },
+    "in_50_meters": {
+        "defaultMessage": "Ötven méter után"
+    },
+    "in_100_meters": {
+        "defaultMessage": "Száz méter után"
+    },
+    "in_200_meters": {
+        "defaultMessage": "Kétszáz méter után"
+    },
+    "in_250_meters": {
+        "defaultMessage": "Kétszázötven méter után"
+    },
+    "in_300_meters": {
+        "defaultMessage": "Háromszáz méter után"
+    },
+    "in_400_meters": {
+        "defaultMessage": "Négyszáz méter után"
+    },
+    "in_500_meters": {
+        "defaultMessage": "Ötszáz méter után"
+    },
+    "in_600_meters": {
+        "defaultMessage": "Hatszáz méter után"
+    },
+    "in_700_meters": {
+        "defaultMessage": "Hétszáz méter után"
+    },
+    "in_750_meters": {
+        "defaultMessage": "Hétszázötven méter után"
+    },
+    "in_800_meters": {
+        "defaultMessage": "Nyolcszáz méter után"
+    },
+    "in_900_meters": {
+        "defaultMessage": "Kilencszáz méter után"
+    },
+    "in_1_kilometer": {
+        "defaultMessage": "Egy kilométer után"
+    },
+    "in_1_5_kilometers": {
+        "defaultMessage": "Másfél kilométer után"
+    },
+    "in_2_kilometers": {
+        "defaultMessage": "Két kilométer után"
+    },
+    "in_2_5_kilometers": {
+        "defaultMessage": "Két és fél kilométer után"
+    },
+    "in_3_kilometers": {
+        "defaultMessage": "Három kilométer után"
+    },
+    "then": {
+        "defaultMessage": "Majd"
+    },
+    "dist_direction_onto_street": {
+        "defaultMessage": "%1$s %2$s %4$s %3$s"
+    },
+    "take_the_1_exit": {
+        "defaultMessage": "Hajtson ki az első kijáratnál."
+    },
+    "take_the_1_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_1_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_2_exit": {
+        "defaultMessage": "Hajtson ki a második kijáratnál."
+    },
+    "take_the_2_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_2_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_3_exit": {
+        "defaultMessage": "Hajtson ki a harmadik kijáratnál."
+    },
+    "take_the_3_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_3_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_4_exit": {
+        "defaultMessage": "Hajtson ki a negyedik kijáratnál."
+    },
+    "take_the_4_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_4_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_5_exit": {
+        "defaultMessage": "Hajtson ki az ötödik kijáratnál."
+    },
+    "take_the_5_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_5_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_6_exit": {
+        "defaultMessage": "Hajtson ki a hatodik kijáratnál."
+    },
+    "take_the_6_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_6_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_7_exit": {
+        "defaultMessage": "Hajtson ki a hetedik kijáratnál."
+    },
+    "take_the_7_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_7_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_8_exit": {
+        "defaultMessage": "Hajtson ki a nyolcadik kijáratnál."
+    },
+    "take_the_8_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_8_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_9_exit": {
+        "defaultMessage": "Hajtson ki a kilencedik kijáratnál."
+    },
+    "take_the_9_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_9_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_10_exit": {
+        "defaultMessage": "Hajtson ki a tizedik kijáratnál."
+    },
+    "take_the_10_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_10_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_11_exit": {
+        "defaultMessage": "Hajtson ki a tizenegyedik kijáratnál."
+    },
+    "take_the_11_exit_street": {
+        "defaultMessage": "NULL"
+    },
+    "take_the_11_exit_street_verb": {
+        "defaultMessage": "NULL"
+    },
+    "in_50_feet": {
+        "defaultMessage": "Ötven láb után"
+    },
+    "in_100_feet": {
+        "defaultMessage": "Száz láb után"
+    },
+    "in_200_feet": {
+        "defaultMessage": "Kétszáz láb után"
+    },
+    "in_300_feet": {
+        "defaultMessage": "Háromszáz láb után"
+    },
+    "in_400_feet": {
+        "defaultMessage": "Négyszáz láb után"
+    },
+    "in_500_feet": {
+        "defaultMessage": "Ötszáz láb után"
+    },
+    "in_600_feet": {
+        "defaultMessage": "Hatszáz láb után"
+    },
+    "in_700_feet": {
+        "defaultMessage": "Hétszáz láb után"
+    },
+    "in_800_feet": {
+        "defaultMessage": "Nyolcszáz láb után"
+    },
+    "in_900_feet": {
+        "defaultMessage": "Kilencszáz láb után"
+    },
+    "in_1000_feet": {
+        "defaultMessage": "Ezer láb után"
+    },
+    "in_1500_feet": {
+        "defaultMessage": "Ezerötszáz láb után"
+    },
+    "in_2000_feet": {
+        "defaultMessage": "Kétezer láb után"
+    },
+    "in_2500_feet": {
+        "defaultMessage": "Kétezer-ötszáz láb után"
+    },
+    "in_3000_feet": {
+        "defaultMessage": "Háromezer láb után"
+    },
+    "in_3500_feet": {
+        "defaultMessage": "Háromezer-ötszáz láb után"
+    },
+    "in_4000_feet": {
+        "defaultMessage": "Négyezer láb után"
+    },
+    "in_4500_feet": {
+        "defaultMessage": "Négyezer-ötszáz láb után"
+    },
+    "in_5000_feet": {
+        "defaultMessage": "Ötezer láb után"
+    },
+    "in_1_mile": {
+        "defaultMessage": "Egy mérföld után"
+    },
+    "in_1_5_miles": {
+        "defaultMessage": "Másfél mérföld után"
+    },
+    "in_2_miles": {
+        "defaultMessage": "Két mérföld után"
+    },
+    "unknown_camera": {
+        "defaultMessage": "Sebességkamera következik"
+    }
 }

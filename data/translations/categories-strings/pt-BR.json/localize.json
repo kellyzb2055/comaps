@@ -1,446 +1,1334 @@
 {
-"@category_eat": "Onde comer|comer|comida|alimentação",
-"@category_food": "Mercados|Alimentação",
-"@category_transport": "5Transporte",
-"@category_fuel": "Combustível",
-"@category_parking": "5Estacionamento",
-"@category_shopping": "4Compras",
-"@category_hotel": "Hotel|Hoteles",
-"@category_tourism": "4Atrações turísticas|3Turismo|Mirantes",
-"@category_entertainment": "Entretenimento",
-"@category_nightlife": "Vida noturna",
-"@category_children": "Passeio em família|Férias em família|criança pequena|criança|crianças|bebês|4família|ideal para famílias|família|filhos|infantil|programa em família",
-"@category_atm": "3Caixa eletrônico|caixa automático|banco 24 horas",
-"@category_rv": "Para trailers",
-"amenity-atm|@category_atm": "dinheiro|U+1F3E7|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7",
-"@category_bank": "3Banco",
-"@category_secondhand": "De segunda mão",
-"amenity-bank|@category_bank": "dinheiro|U+1F3E6|U+1F4B0|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7",
-"@category_recycling": "Reciclagem|Utilização de resíduos|Recicláveis|Coleta de seletiva|Separação de lixo|Reuso",
-"amenity-bureau_de_change": "3Casa de câmbio|3troca|dinheiro",
-"amenity-bar|amenity-pub|@category_eat|@category_nightlife": "2Drinqueria|bar|pub|boteco|cerveja|drink|beber|alimentação",
-"amenity-cafe|@category_eat": "3Café|3cafeteria",
-"amenity-fast_food|@category_eat": "4Lanchonete|fast-food|3alimentação|comida|restaurante|podrão|4lanche",
-"amenity-restaurant|@category_eat": "3Restaurante|3comida|3alimentação",
-"amenity-fuel|@category_fuel": "3Posto de combustível|3gasolina",
-"@shop": "2Loja|Compras",
-"shop-bakery|shop-pastry|@category_eat|@category_food|@shop": "3Padaria|3panificadora|Confeitaria|Bolo",
-"shop-cosmetics|@category_shopping|@shop": "4Cosméticos|estética",
-"shop-convenience|@category_food|@shop": "Loja de conveniência|4mercadinho|compras",
-"shop-deli|@category_food|@shop": "Iguarias regionais",
-"shop-garden_centre|@shop": "Loja de plantas|jardinagem|jardim|compras",
-"shop-mobile_phone|@shop": "Loja de celulares|celulares|telefone",
-"shop-florist|@shop": "4Florista|Floricultura|flores",
-"shop-butcher|@category_food|@shop": "Açougue|açougueiro",
-"shop-furniture|@shop": "Loja de móveis",
-"shop-kitchen|@shop": "Loja de cozinha",
-"shop-alcohol|@category_food|@shop": "Loja de bebidas|bebidas alcoólicas",
-"shop-books|@shop": "4Livraria",
-"shop-shoes|@category_shopping|@shop": "Sapataria|loja de calçados",
-"shop-electronics|@shop": "Loja de eletrônicos",
-"shop-hardware|shop-doityourself|@shop": "Loja de ferramentas|ferragens",
-"shop-houseware|@shop": "Bens domésticos",
-"shop-jewelry|@category_shopping|@shop": "Joalheria",
-"shop-optician|@shop": "Ótica|4oculista|3óculos",
-"shop-gift|@category_shopping|@shop": "Loja de presentes",
-"shop-beauty": "Salão de beleza",
-"shop-greengrocer|@category_food|@shop": "Quitanda|verdureiro|varejão",
-"shop-sports|@category_shopping|@shop": "Artigos esportivos",
-"shop-supermarket|@category_food|@shop": "3Supermercado|mercado",
-"shop-mall|@category_shopping|@shop": "Shopping center",
-"shop-department_store|@category_shopping|@shop": "Loja de departamentos|compras",
-"shop-beverages|@category_food|@shop": "4Bebidas",
-"shop-computer|@shop": "Loja de informática",
-"shop-confectionery|craft-confectionery|@category_food|@shop": "Loja de doces|doce|guloseima|doçaria",
-"shop-laundry": "4Lavanderia",
-"shop-toys|@category_children|@shop": "Loja de brinquedos",
-"amenity-marketplace|@category_food": "3Mercado|mercadão|feira-livre",
-"amenity-money_transfer": "Transferência de dinheiro",
-"shop-clothes|@category_shopping|@shop": "Loja de roupas",
-"shop-car|@shop": "Loja de carros|4concessionária|veículos",
-"shop-bicycle|@shop": "Loja de bicicletas|4bicicletaria|4bicicleta|bike",
-"shop-kiosk": "4Quiosque",
-"highway-bus_stop|@category_transport": "2Ponto de ônibus",
-"railway-tram_stop|@category_transport": "3Parada de bonde|via férrea",
-"amenity-bus_station|@category_transport": "2Rodoviária|estação BRT",
-"railway-station|railway-halt|building-train_station|@category_transport": "Estação de trem|ferrovia|Ponto de parada",
-"railway-station-subway|@category_transport": "Estação do metrô|3Mêtro|Entrada de estação do metrô",
-"amenity-ferry_terminal|@category_transport": "2Estação de barcas|balsa",
-"amenity-taxi|@category_transport": "2Táxi",
-"amenity-townhall": "3Prefeitura",
-"tourism-attraction|@category_tourism": "3Atração turística",
-"tourism-artwork": "3Obra de arte|3instalação artística",
-"tourism-viewpoint|@category_tourism": "4Mirante|miradouro",
-"tourism-information": "3Informações turísticas|4informação",
-"tourism-picnic_site|amenity-bbq|leisure-picnic_table": "4Local de piquenique|churrasqueira",
-"amenity-place_of_worship": "Local de culto|3templo|igreja",
-"amenity-place_of_worship-christian": "Igreja|local de culto|templo|catedral|basílica",
-"amenity-place_of_worship-muslim": "4Mesquita|local de culto|templo",
-"amenity-place_of_worship-buddhist": "Templo budista|local de culto",
-"amenity-place_of_worship-hindu": "Templo hindu|local de culto",
-"amenity-place_of_worship-shinto": "Templo shintoísta|santuário|local de culto",
-"amenity-place_of_worship-jewish": "4Sinagoga|templo|local de culto",
-"amenity-place_of_worship-taoist": "Templo taoísta|local de culto",
-"tourism-museum|@category_tourism": "2Museu",
-"waterway-waterfall|@category_tourism": "2Cachoeira|2Queda de água|2Cascata|2Salto|2Catarata",
-"historic-archaeological_site|@category_tourism": "Sítio arqueológico|atração",
-"historic-stone": "Pedra histórica",
-"historic-memorial-plaque": "Placa comemorativa",
-"historic-cannon": "Canhão",
-"historic-anchor": "Âncora histórica",
-"historic-mine": "Mina histórica",
-"historic-wreck": "Naufrágio",
-"historic-locomotive|@category_tourism": "Locomotiva histórica",
-"historic-tank|@category_tourism": "Tanque histórico",
-"historic-aircraft|@category_tourism": "Aeronave histórica|Avião histórico",
-"leisure-dog_park": "Parque canino|Parque para cães|Parque para cachorros",
-"leisure-garden": "2Jardim|lazer",
-"amenity-bench": "Assento|Banco de praça",
-"amenity-bicycle_rental": "Aluguel de bicicletas|4bicicleta|3aluguel",
-"amenity-bicycle_repair_station": "Oficina de bicicletas|4bicicleta",
-"amenity-car_sharing": "Compartilhamento de carro",
-"amenity-car_rental": "Aluguel de automóveis|carro|aluguel",
-"amenity-motorcycle_rental": "Aluguel de motocicletas",
-"amenity-cinema|@category_entertainment": "3Cinema",
-"leisure-bowling_alley|@category_entertainment": "Pista de boliche",
-"amenity-theatre|@category_entertainment": "3Teatro",
-"amenity-nightclub|@category_entertainment|@category_nightlife": "3Boate|3discoteca|4casa noturna|3dançar",
-"amenity-brothel": "Bordel",
-"amenity-casino|@category_entertainment|@category_nightlife|@gambling": "Cassino",
-"amenity-college": "Escola técnica",
-"amenity-fire_station": "Posto de bombeiros|corpo de bombeiros",
-"amenity-fountain": "4Fonte|chafariz",
-"amenity-grave_yard|landuse-cemetery": "5Cemitério",
-"shop-funeral_directors": "5Funerária",
-"@category_hospital": "3Hospital",
-"amenity-hospital|@category_hospital": "3Hospital|3clínica|3médico|saúde|serviços de saúde|primeiros socorros",
-"amenity-clinic|@category_hospital": "4Clínica|centro de saúde|posto de saúde|policlínica|centro médico|posto médico",
-"amenity-doctors|@category_hospital": "Consultório médico|clínica|saúde",
-"amenity-dentist": "4Dentista|cirurgião dentista|centro odontológico",
-"healthcare-laboratory": "Laboratório médico",
-"healthcare-physiotherapist": "Fisioterapeuta",
-"healthcare-alternative": "Medicina alternativa",
-"healthcare-audiologist": "Fonoaudiologia|Fonoaudiólogo",
-"healthcare-blood_donation": "Doação de sangue",
-"healthcare-optometrist": "Optometria|Optometrista",
-"healthcare-podiatrist": "Podiatria|Podiatra",
-"healthcare-psychotherapist": "Psicoterapia|Psicoterapeuta",
-"healthcare-speech_therapist": "Terapia da fala|Terapeuta da fala",
-"amenity-hunting_stand": "Estande de caça",
-"amenity-kindergarten": "Jardim de infância|escola infantil|pré-escola",
-"amenity-library": "3Biblioteca",
-"amenity-parking|amenity-parking_entrance|@category_parking": "3Estacionamento",
-"@category_pharmacy": "3Farmácia",
-"amenity-pharmacy|@category_pharmacy": "3Drogaria",
-"@category_post": "3Correios",
-"amenity-post_box|@category_post": "3Caixa de correio|correios",
-"amenity-post_office|post_office-post_partner|@category_post": "3Correios",
-"amenity-waste_disposal": "Depósito de lixo|lixo",
-"amenity-recycling-centre|@category_recycling": "Reciclagem|descarte seletivo",
-"amenity-recycling-container|@category_recycling": "Recipiente de reciclagem",
-"recycling-batteries|@category_recycling": "Baterias",
-"recycling-clothes|@category_recycling": "Roupas velhas|Reciclar roupas velhas",
-"recycling-glass_bottles|@category_recycling": "Garrafas de vidro",
-"recycling-paper|@category_recycling": "Lixo de papel|Papel",
-"recycling-plastic|@category_recycling": "Lixo plástico|Plástico",
-"recycling-plastic_bottles|@category_recycling": "Garrafas plasticas",
-"recycling-scrap_metal|@category_recycling": "Ferro velho",
-"recycling-small_appliances|@category_recycling": "Lixo eletrônico",
-"amenity-school": "3Escola",
-"amenity-shelter": "Abrigo",
-"amenity-shelter-lean_to": "Abrigo tipo alpendre|alpendre",
-"amenity-stripclub": "Clube de striptease",
-"amenity-telephone": "3Telefone|3orelhão",
-"@category_toilet": "4Banheiro|WC",
-"amenity-toilets|toilets-yes|@category_toilet": "toalete|wc|sanitários|lavabo|privada",
-"amenity-university": "4Universidade|faculdade",
-"place-continent": "Continente",
-"place-country": "País",
-"place-city": "Cidade",
-"place-town": "Cidade",
-"place-city-capital": "Capital",
-"place-county": "Município|Condado",
-"place-state": "Estado|província",
-"place-region": "Região",
-"place-island|place-islet": "Ilha|Ilhota",
-"place-suburb|place-quarter|place-neighbourhood|landuse-residential": "Bairro|subúrbio|distrito|Vizinhança",
-"place-hamlet": "Lugarejo|aldeia|vila",
-"place-village": "Povoado|aldeia|vila",
-"place-locality": "Localidade",
-"place-farm": "Fazenda|sítio|chácara",
-"highway-raceway": "Pista de corrida",
-"highway-path|highway-footway|highway-steps|highway-cycleway": "Caminho|trilha",
-"highway-pedestrian|highway-primary|highway-primary_link|highway-residential|highway-secondary|highway-secondary_link|highway-tertiary|highway-tertiary_link|highway-service|highway-road|highway-track|highway-trunk|highway-trunk_link|highway-living_street|highway-unclassified|highway-motorway_link|highway-motorway|highway-cycleway": "Rua|Avenida",
-"highway-motorway_junction": "2Saída|3junção",
-"@mountain": "Pico|montanha",
-"natural-strait": "Estreito",
-"landuse-forest": "Floresta|mata",
-"leisure-park": "Parque|praça",
-"tourism-hostel|@category_hotel": "3Hostel|3pousada|2albergue",
-"tourism-hotel|@category_hotel": "motel",
-"tourism-guest_house|@category_hotel": "Pousada|casa de hóspedes|hospedagem",
-"tourism-motel|@category_hotel": "3Motel|3hotel de estrada|3pousada",
-"tourism-alpine_hut|@category_hotel": "Abrigo de montanha|cabana alpina|3pousada|motel|hotel",
-"shop-hairdresser": "Cabeleireiro|barbeiro",
-"aeroway-aerodrome": "3Aeroporto|aeródromo",
-"leisure-stadium": "5Estádio|esporte",
-"leisure-playground|@category_children": "Parquinho|parque infantil",
-"leisure-sports_centre": "Centro esportivo|clube|esporte|complexo esportivo",
-"leisure-golf_course": "Campo de golfe",
-"leisure-escape_game": "4Escape Room|Sala de fuga|Escape game|Jogo de fuga|Sala de enigmas|Sala de mistérios",
-"leisure-pitch": "Campo de esportes|campo|quadra|esporte",
-"leisure-swimming_pool": "4Piscina|esporte",
-"sport-american_football": "Futebol americano",
-"sport-archery": "Tiro com arco",
-"sport-athletics": "Atletismo|Atlético",
-"sport-australian_football": "Futebol australiano",
-"sport-baseball": "Beisebol",
-"sport-basketball": "Basquetebol",
-"sport-bowls": "Lawn bowls|Tigelas",
-"sport-cricket": "Críquete",
-"sport-curling": "Curling",
-"sport-equestrian": "Esportes equestres",
-"sport-golf": "Golfe",
-"sport-gymnastics": "Ginástica",
-"sport-handball": "Handebol",
-"sport-scuba_diving": "Mergulho autônomo",
-"sport-shooting": "Clube de tiro",
-"sport-skiing": "Esqui",
-"sport-soccer": "Futebol",
-"sport-swimming": "Centro de natação",
-"sport-table_tennis": "Tênis de mesa",
-"sport-tennis": "Tênis",
-"building": "Edifício|prédio|construção",
-"building-address": "Endereço",
-"@category_police": "4Polícia",
-"amenity-police|@category_police": "Polícia",
-"office-diplomatic": "4Embaixada",
-"natural-bay": "Baía",
-"@category_water": "2Água",
-"amenity-drinking_water|drinking_water-yes|@category_water": "2Água potável|4bebedouro",
-"natural-spring|@category_water": "Nascente|cabeceira|olho-d'água|manancial|exsurgência|mina de água|fonte",
-"man_made-water_well|@category_water": "Poço de água",
-"amenity-water_point|@category_water|@category_rv": "Ponto de água|Água para Caravana",
-"man_made-water_tap|@category_water": "Torneira de água",
-"@waterbody": "Corpo de água",
-"natural-water-basin|landuse-basin|@waterbody": "Reservatório",
-"natural-water-pond|@waterbody": "Lagoa",
-"natural-water-lake|@waterbody": "Lago",
-"waterway-river|waterway-stream|natural-water-river": "Rio|Ribeiro|Ribeira|Córrego|Riaxo",
-"waterway-canal": "Canal",
-"shop-car_repair": "Oficina de automóveis|mecânica|4mecânico|auto elétro",
-"tourism-camp_site|@category_hotel": "4Local de acampamento|área de acampamento|4camping",
-"tourism-caravan_site|@category_rv||@category_hotel": "4Área de trailers|caravanismo|acampamento",
-"office": "Escritório|empresa",
-"office-company": "Escritório de empresa",
-"office-government": "Gabinete governamental|órgão público",
-"office-lawyer": "Escritório de advocacia|Escritório de advogado|4advocacia|advogada|advogado|procurador",
-"office-telecommunication": "Operadora de telecomunicações|telefonia|móvel",
-"craft-brewery": "6Cervejaria",
-"craft-caterer": "Serviço de bufê",
-"craft-electronics_repair": "Reparo de eletrônicos",
-"craft-hvac": "5Climatização|Aquecimento|AC|Ventilação|Ar Condicionado|Calefação",
-"craft-metal_construction": "Serralheiro|metalúrgico",
-"craft-key_cutter": "Chaveiro",
-"craft-locksmith": "Serralheiro",
-"craft-plumber": "Encanador",
-"craft-shoemaker": "5Sapateiro",
-"craft-winery": "Vinícola",
-"craft-tailor": "Alfaiate|costureiro|conserto de roupas",
-"area:highway-footway|area:highway-pedestrian|area:highway-steps|place-square": "Largo|praça|rua de pedestres|escadaria",
-"place-sea": "Mar",
-"place-ocean": "Oceano",
-"@category_wifi": "WiFi|Wi-Fi",
-"internet_access|internet_access-wlan|@category_wifi": "3Internet",
-"natural-beach|natural-beach-sand|natural-beach-gravel|leisure-beach_resort": "Praia",
-"man_made-lighthouse": "Farol",
-"man_made-communications_tower|man_made-tower-communication": "Torre de Comunicações",
-"man_made-petroleum_well": "4Poço de petróleo",
-"organic-only|organic-yes": "eco|bio|biológico|ambiental|natural|orgânico",
-"shop-copyshop": "4Copiadora|4impressões",
-"shop-photo|@shop": "Artigos para fotografia|molduras|comércio|compras",
-"shop-camera|@shop": "Loja de câmeras",
-"shop-travel_agency": "Agência de viagem|viagens",
-"shop-outdoor|@shop": "Equipamentos esportivos|caminhada|escalada|camping|comércio|Artigos de atividades ao ar livre",
-"shop-dry_cleaning": "Lavagem a seco|lavanderia",
-"shop-tyres|@shop": "Loja de pneus|borracharia|borracheiro|comércio",
-"amenity-car_wash": "5Lava-jato|5Lavagem de veículos",
-"amenity-veterinary": "4Veterinário",
-"@charging_station": "Eletroposto|recarga|abastecimento",
-"amenity-childcare": "Creche|jardim de infância",
-"amenity-bicycle_parking": "Bicicletário|estacionamento de bicicletas",
-"amenity-waste_basket": "Cesto de lixo|lixeira",
-"emergency-phone": "3Telefone de emergência",
-"leisure-fitness_centre": "Academia de ginástica|academia de musculação|centro de fitness|ginásio",
-"leisure-sauna": "3Sauna",
-"shop-car_repair-tyres|shop-car_repair": "Borracheiro|borracharia|pneus",
-"shop-chemist|@shop": "4Drogaria|farmácia",
-"shop-pet|@shop": "3Pet-shop|loja de artigos para animais",
-"tourism-zoo|@category_tourism|@category_children": "Jardim zoológico|3Zoológico",
-"tourism-information-office|amenity-ranger_station|@category_tourism": "Escritório de turismo",
-"tourism-information-visitor_centre|amenity-ranger_station|@category_tourism": "Centro de visitantes",
-"amenity-community_centre": "Centro comunitário",
-"amenity-courthouse": "4Tribunal",
-"amenity-vending_machine-cigarettes": "Máquina de venda de cigarros",
-"amenity-vending_machine-drinks": "Máquina de venda de bebidas",
-"amenity-vending_machine-parking_tickets|@category_parking": "Máquina venda de tíquetes de estacionamento",
-"amenity-vending_machine-public_transport_tickets|@category_transport": "Máquinas automáticas de venda de passagens de transporte público",
-"shop-outpost": "Ponto de coleta",
-"building-garage": "Garagem",
-"highway-rest_area|highway-services": "Área de descanso|Área de serviços de estrada",
-"man_made-chimney": "Chaminé de fábrica",
-"man_made-tower|man_made-flare": "Torre",
-"shop-bookmaker|@gambling": "Casa de apostas",
-"shop-seafood|@category_food|@shop": "Peixaria",
-"shop-second_hand|@category_shopping|@shop|@category_secondhand": "Loja de segunda mão",
-"shop-charity|@shop|@category_secondhand": "Loja de caridade",
-"shop-ticket": "Bilheteria",
-"shop-wine|@category_food|@shop": "Loja de vinhos|bebidas",
-"shop-car_parts|@shop": "Peças de carro|auto peças",
-"tourism-information-board": "Painel de informações",
-"tourism-information-map": "Mapa turístico",
-"aerialway-station": "Estação de teleférico",
-"aeroway-helipad": "Heliponto|heliporto",
-"barrier-border_control": "Controle de fronteira",
-"leisure-water_park|@category_tourism|@category_children": "Parque aquático",
-"man_made-water_tower": "Torre de água|caixa de água",
-"man_made-windmill": "Moinho de vento",
-"natural-cave_entrance": "4Caverna|Cova|3Gruta",
-"natural-volcano|@mountain": "4Vulcão",
-"office-estate_agent": "Corretor imobiliário|agente imobiliário",
-"waterway-lock_gate": "Comporta de eclusa",
-"amenity-public_bookcase": "Biblioteca livre|troca de livros",
-"sport-climbing": "Ginásio de escalada",
-"sport-yoga": "Estúdio de ioga",
-"tourism-apartment|@category_hotel": "5Apartamentos|Apartamento de temporada",
-"leisure-resort|@category_hotel": "Resort",
-"amenity-biergarten|@category_eat|@category_nightlife": "5Biergarten|Jardim da cerveja",
-"amenity-driving_school": "4Autoescola|CFC",
-"amenity-ice_cream": "Sorveteria",
-"amenity-internet_cafe": "5Cibercafé",
-"amenity-motorcycle_parking": "Estacionamento de motos",
-"amenity-nursing_home": "Casa de repouso",
-"amenity-payment_terminal": "Terminal de pagamento",
-"amenity-shower": "Chuveiro",
-"emergency-defibrillator": "4Desfibrilador",
-"emergency-fire_hydrant": "Hidrante",
-"emergency-lifeguard": "Salva-vidas|Guarda-vidas|Nadador-salvador|Socorrista",
-"emergency-mountain_rescue": "4Resgate de montanha de emergência",
-"leisure-fitness_station": "Estação de fitness",
-"office-insurance": "Seguradora|Corretora de seguros",
-"office-ngo": "Escritório de ONG",
-"shop-erotic|@shop": "3Sex Shop",
-"shop-massage": "4Massagista|Salão de massagens",
-"shop-motorcycle|@shop": "Loja de Motos",
-"shop-motorcycle_repair": "Oficina de motos",
-"shop-newsagent": "Banca de jornais|jornaleiro",
-"shop-pawnbroker": "Casa de penhores",
-"shop-stationery|@shop": "Papelaria",
-"shop-tattoo": "Estúdio de tatuagens|4tatuador",
-"shop-variety_store|@category_shopping|@shop": "1,99|Loja de variedades",
-"shop-video|@shop": "4Video locadora|Locadora de vídeo|Videolocadora",
-"shop-video_games|@shop": "Loja de jogos eletrônicos",
-"tourism-wilderness_hut|@category_hotel": "4Cabana",
-"tourism-gallery|@category_tourism": "3Galeria|museu",
-"tourism-theme_park|@category_tourism|@category_children": "Parque de diversão|parque temático",
-"boundary-national_park|@category_tourism": "Parque nacional",
-"leisure-nature_reserve|@category_tourism": "Reserva florestal",
-"natural-cape": "Cabo",
-"natural-geyser": "3Gêiser",
-"natural-glacier|@category_tourism": "Geleira",
-"highway-ford": "Vau|passo|Rio raso|Passagem em curso de água baixo",
-"leisure-marina": "3Marina",
-"amenity-events_venue": "Local do evento",
-"shop-chocolate|@category_food|@shop": "Loja de chocolates",
-"shop-coffee|@category_food|@shop": "Loja de café",
-"shop-fabric|@shop": "Loja de aviamentos",
-"shop-money_lender": "Prestamista",
-"shop-music|@shop": "Loja de música",
-"shop-musical_instrument|@shop": "Loja de instrumentos musicais",
-"shop-tea|@shop": "Loja de chás",
-"shop-antiques|@category_shopping|@shop|@category_secondhand": "Antiguidades",
-"shop-art|@category_shopping|@shop": "Loja de artes",
-"shop-baby_goods|@category_children|@shop": "Loja infantil",
-"shop-bag|@category_shopping|@shop": "Loja de bolsas",
-"shop-cheese|@category_food|@shop": "Loja de queijos",
-"shop-dairy|@category_food|@shop": "Lacticínios",
-"shop-electrical|@shop": "Loja de materiais elétricos",
-"shop-fishing|@shop": "Loja de pesca",
-"shop-interior_decoration|@shop": "Decorações de Interiores",
-"shop-lottery|@gambling": "Lotérica",
-"shop-medical_supply|@shop": "Suprimentos médicos",
-"shop-nutrition_supplements|@shop": "Suplementos nutricionais",
-"shop-paint|@shop": "Tintas",
-"shop-perfumery|@category_shopping|@shop": "Perfumaria",
-"shop-sewing|@shop": "Materiais de costura",
-"shop-storage_rental": "Aluguel de Armazenamento",
-"shop-tobacco|@shop": "Tabaco",
-"shop-trade|@shop": "Comércio de suprimentos",
-"shop-watches|@category_shopping|@shop": "Relógios",
-"shop-wholesale|@shop": "Loja de atacado",
-"leisure-track": "Pista para esportes não motorizados",
-"power-plant": "Usina elétrica",
-"shop-collector|@category_shopping|@category_secondhand": "Coletor|Colecionáveis",
-"man_made-cairn": "Moledro ou mariola",
-"amenity-social_facility": "Unidade de assistência social",
-"leisure-sports_hall": "Salão de esportes",
-"shop-bathroom_furnishing|@shop": "Loja de móveis de banheiro",
-"shop-bed|@shop": "Loja de camas",
-"shop-boutique|@shop": "Boutique",
-"amenity-food_court": "Praça de alimentação",
-"shop-curtain|@shop": "Loja de cortinas",
-"shop-gas|@shop": "Distribuidora de gás",
-"shop-pet_grooming": "Banho e tosa",
-"shop-hifi|@shop": "Loja de áudio Hi-Fi",
-"shop-herbalist|@shop": "Loja de ervas",
-"shop-appliance|@shop": "Loja de eletrodomésticos",
-"shop-agrarian|@shop": "Loja agrícola",
-"shop-fashion_accessories|@shop": "Loja de acessórios de moda",
-"amenity-waste_transfer_station": "Estação de transferência de resíduos",
-"shop-carpet|@shop": "Loja de tapetes",
-"shop-pasta|@shop": "Massas",
-"amenity-luggage_locker": "Armário de bagagem",
-"amenity-studio": "Estúdio|TV|Gravação|Rádio",
-"shop-cannabis|@shop": "Cannabis|Maconha|Marijuana|THX|Haxixe|CBD",
-"shop-farm|@category_food|@shop": "Quitanda|Granja",
-"shop-grocery|@category_food|@shop": "Loja de comida|Armazém|Não-perecível",
-"shop-health_food|@category_food|@shop": "Alimentos saudáveis|Saudável",
-"shop-hearing_aids|@shop": "Aparelhos Auditivos",
-"railway-station-funicular": "Funicular",
-"historic-citywalls|@category_tourism": "Muralha da Cidade",
-"historic-fort|@category_tourism": "Fortaleza",
-"historic-battlefield": "Campo de batalha",
-"sport-padel": "Pádel",
-"sport-volleyball": "Vôlei|Voleibol|Volleyball",
-"amenity-hydrant": "Hidrante de irrigação",
-"@fastfood": "Fast food",
-"cuisine-bagel": "Bagel",
-"cuisine-breakfast": "Café da manhã",
-"cuisine-burger|@fastfood": "Hambúrguer",
-"cuisine-cake": "Bolo|padaria",
-"cuisine-coffee_shop": "Café|cafeteria",
-"cuisine-curry": "Curry",
-"cuisine-diner": "Lanchonete",
-"cuisine-donut": "Rosquinha",
-"cuisine-fish_and_chips": "Peixe e batatas fritas",
-"cuisine-friture|@fastfood": "Fritura",
-"cuisine-grill": "Grelhada",
-"cuisine-hotdog|@fastfood": "Cachorro-quente",
-"cuisine-ice_cream": "Sorvete",
-"cuisine-kebab|@fastfood": "Espetinho",
-"cuisine-noodles": "Macarrão",
-"cuisine-pancake|cuisine-crepe": "Panqueca|panquecas|crepes|crepe",
-"cuisine-pasta": "Massa",
-"cuisine-pizza|@fastfood": "Pizza|pizzaria|pizaria",
-"cuisine-ramen": "Lámen|rāmen",
-"cuisine-sandwich|@fastfood": "Sanduíche",
-"cuisine-sausage|@fastfood": "Linguiça",
-"cuisine-seafood|cuisine-fish": "Frutos do mar|peixe|marisco|marisqueira",
-"cuisine-soba": "Soba|sobá",
-"cuisine-steak_house": "Churrascaria",
-"cuisine-sushi": "Sushi",
-"cuisine-tapas": "Tapas",
-"cuisine-tea": "Chá",
-"@cuisine_all_vegetarian": "Vegetariana",
-"cuisine-vegan|@cuisine_all_vegetarian": "Vegana"
+    "@category_eat": {
+        "defaultMessage": "Onde comer|comer|comida|alimentação"
+    },
+    "@category_food": {
+        "defaultMessage": "Mercados|Alimentação"
+    },
+    "@category_transport": {
+        "defaultMessage": "5Transporte"
+    },
+    "@category_fuel": {
+        "defaultMessage": "Combustível"
+    },
+    "@category_parking": {
+        "defaultMessage": "5Estacionamento"
+    },
+    "@category_shopping": {
+        "defaultMessage": "4Compras"
+    },
+    "@category_hotel": {
+        "defaultMessage": "Hotel|Hoteles"
+    },
+    "@category_tourism": {
+        "defaultMessage": "4Atrações turísticas|3Turismo|Mirantes"
+    },
+    "@category_entertainment": {
+        "defaultMessage": "Entretenimento"
+    },
+    "@category_nightlife": {
+        "defaultMessage": "Vida noturna"
+    },
+    "@category_children": {
+        "defaultMessage": "Passeio em família|Férias em família|criança pequena|criança|crianças|bebês|4família|ideal para famílias|família|filhos|infantil|programa em família"
+    },
+    "@category_atm": {
+        "defaultMessage": "3Caixa eletrônico|caixa automático|banco 24 horas"
+    },
+    "@category_rv": {
+        "defaultMessage": "Para trailers"
+    },
+    "amenity-atm|@category_atm": {
+        "defaultMessage": "dinheiro|U+1F3E7|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7"
+    },
+    "@category_bank": {
+        "defaultMessage": "3Banco"
+    },
+    "@category_secondhand": {
+        "defaultMessage": "De segunda mão"
+    },
+    "amenity-bank|@category_bank": {
+        "defaultMessage": "dinheiro|U+1F3E6|U+1F4B0|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7"
+    },
+    "@category_recycling": {
+        "defaultMessage": "Reciclagem|Utilização de resíduos|Recicláveis|Coleta de seletiva|Separação de lixo|Reuso"
+    },
+    "amenity-bureau_de_change": {
+        "defaultMessage": "3Casa de câmbio|3troca|dinheiro"
+    },
+    "amenity-bar|amenity-pub|@category_eat|@category_nightlife": {
+        "defaultMessage": "2Drinqueria|bar|pub|boteco|cerveja|drink|beber|alimentação"
+    },
+    "amenity-cafe|@category_eat": {
+        "defaultMessage": "3Café|3cafeteria"
+    },
+    "amenity-fast_food|@category_eat": {
+        "defaultMessage": "4Lanchonete|fast-food|3alimentação|comida|restaurante|podrão|4lanche"
+    },
+    "amenity-restaurant|@category_eat": {
+        "defaultMessage": "3Restaurante|3comida|3alimentação"
+    },
+    "amenity-fuel|@category_fuel": {
+        "defaultMessage": "3Posto de combustível|3gasolina"
+    },
+    "@shop": {
+        "defaultMessage": "2Loja|Compras"
+    },
+    "shop-bakery|shop-pastry|@category_eat|@category_food|@shop": {
+        "defaultMessage": "3Padaria|3panificadora|Confeitaria|Bolo"
+    },
+    "shop-cosmetics|@category_shopping|@shop": {
+        "defaultMessage": "4Cosméticos|estética"
+    },
+    "shop-convenience|@category_food|@shop": {
+        "defaultMessage": "Loja de conveniência|4mercadinho|compras"
+    },
+    "shop-deli|@category_food|@shop": {
+        "defaultMessage": "Iguarias regionais"
+    },
+    "shop-garden_centre|@shop": {
+        "defaultMessage": "Loja de plantas|jardinagem|jardim|compras"
+    },
+    "shop-mobile_phone|@shop": {
+        "defaultMessage": "Loja de celulares|celulares|telefone"
+    },
+    "shop-florist|@shop": {
+        "defaultMessage": "4Florista|Floricultura|flores"
+    },
+    "shop-butcher|@category_food|@shop": {
+        "defaultMessage": "Açougue|açougueiro"
+    },
+    "shop-furniture|@shop": {
+        "defaultMessage": "Loja de móveis"
+    },
+    "shop-kitchen|@shop": {
+        "defaultMessage": "Loja de cozinha"
+    },
+    "shop-alcohol|@category_food|@shop": {
+        "defaultMessage": "Loja de bebidas|bebidas alcoólicas"
+    },
+    "shop-books|@shop": {
+        "defaultMessage": "4Livraria"
+    },
+    "shop-shoes|@category_shopping|@shop": {
+        "defaultMessage": "Sapataria|loja de calçados"
+    },
+    "shop-electronics|@shop": {
+        "defaultMessage": "Loja de eletrônicos"
+    },
+    "shop-hardware|shop-doityourself|@shop": {
+        "defaultMessage": "Loja de ferramentas|ferragens"
+    },
+    "shop-houseware|@shop": {
+        "defaultMessage": "Bens domésticos"
+    },
+    "shop-jewelry|@category_shopping|@shop": {
+        "defaultMessage": "Joalheria"
+    },
+    "shop-optician|@shop": {
+        "defaultMessage": "Ótica|4oculista|3óculos"
+    },
+    "shop-gift|@category_shopping|@shop": {
+        "defaultMessage": "Loja de presentes"
+    },
+    "shop-beauty": {
+        "defaultMessage": "Salão de beleza"
+    },
+    "shop-greengrocer|@category_food|@shop": {
+        "defaultMessage": "Quitanda|verdureiro|varejão"
+    },
+    "shop-sports|@category_shopping|@shop": {
+        "defaultMessage": "Artigos esportivos"
+    },
+    "shop-supermarket|@category_food|@shop": {
+        "defaultMessage": "3Supermercado|mercado"
+    },
+    "shop-mall|@category_shopping|@shop": {
+        "defaultMessage": "Shopping center"
+    },
+    "shop-department_store|@category_shopping|@shop": {
+        "defaultMessage": "Loja de departamentos|compras"
+    },
+    "shop-beverages|@category_food|@shop": {
+        "defaultMessage": "4Bebidas"
+    },
+    "shop-computer|@shop": {
+        "defaultMessage": "Loja de informática"
+    },
+    "shop-confectionery|craft-confectionery|@category_food|@shop": {
+        "defaultMessage": "Loja de doces|doce|guloseima|doçaria"
+    },
+    "shop-laundry": {
+        "defaultMessage": "4Lavanderia"
+    },
+    "shop-toys|@category_children|@shop": {
+        "defaultMessage": "Loja de brinquedos"
+    },
+    "amenity-marketplace|@category_food": {
+        "defaultMessage": "3Mercado|mercadão|feira-livre"
+    },
+    "amenity-money_transfer": {
+        "defaultMessage": "Transferência de dinheiro"
+    },
+    "shop-clothes|@category_shopping|@shop": {
+        "defaultMessage": "Loja de roupas"
+    },
+    "shop-car|@shop": {
+        "defaultMessage": "Loja de carros|4concessionária|veículos"
+    },
+    "shop-bicycle|@shop": {
+        "defaultMessage": "Loja de bicicletas|4bicicletaria|4bicicleta|bike"
+    },
+    "shop-kiosk": {
+        "defaultMessage": "4Quiosque"
+    },
+    "highway-bus_stop|@category_transport": {
+        "defaultMessage": "2Ponto de ônibus"
+    },
+    "railway-tram_stop|@category_transport": {
+        "defaultMessage": "3Parada de bonde|via férrea"
+    },
+    "amenity-bus_station|@category_transport": {
+        "defaultMessage": "2Rodoviária|estação BRT"
+    },
+    "railway-station|railway-halt|building-train_station|@category_transport": {
+        "defaultMessage": "Estação de trem|ferrovia|Ponto de parada"
+    },
+    "railway-station-subway|@category_transport": {
+        "defaultMessage": "Estação do metrô|3Mêtro|Entrada de estação do metrô"
+    },
+    "amenity-ferry_terminal|@category_transport": {
+        "defaultMessage": "2Estação de barcas|balsa"
+    },
+    "amenity-taxi|@category_transport": {
+        "defaultMessage": "2Táxi"
+    },
+    "amenity-townhall": {
+        "defaultMessage": "3Prefeitura"
+    },
+    "tourism-attraction|@category_tourism": {
+        "defaultMessage": "3Atração turística"
+    },
+    "tourism-artwork": {
+        "defaultMessage": "3Obra de arte|3instalação artística"
+    },
+    "tourism-viewpoint|@category_tourism": {
+        "defaultMessage": "4Mirante|miradouro"
+    },
+    "tourism-information": {
+        "defaultMessage": "3Informações turísticas|4informação"
+    },
+    "tourism-picnic_site|amenity-bbq|leisure-picnic_table": {
+        "defaultMessage": "4Local de piquenique|churrasqueira"
+    },
+    "amenity-place_of_worship": {
+        "defaultMessage": "Local de culto|3templo|igreja"
+    },
+    "amenity-place_of_worship-christian": {
+        "defaultMessage": "Igreja|local de culto|templo|catedral|basílica"
+    },
+    "amenity-place_of_worship-muslim": {
+        "defaultMessage": "4Mesquita|local de culto|templo"
+    },
+    "amenity-place_of_worship-buddhist": {
+        "defaultMessage": "Templo budista|local de culto"
+    },
+    "amenity-place_of_worship-hindu": {
+        "defaultMessage": "Templo hindu|local de culto"
+    },
+    "amenity-place_of_worship-shinto": {
+        "defaultMessage": "Templo shintoísta|santuário|local de culto"
+    },
+    "amenity-place_of_worship-jewish": {
+        "defaultMessage": "4Sinagoga|templo|local de culto"
+    },
+    "amenity-place_of_worship-taoist": {
+        "defaultMessage": "Templo taoísta|local de culto"
+    },
+    "tourism-museum|@category_tourism": {
+        "defaultMessage": "2Museu"
+    },
+    "waterway-waterfall|@category_tourism": {
+        "defaultMessage": "2Cachoeira|2Queda de água|2Cascata|2Salto|2Catarata"
+    },
+    "historic-archaeological_site|@category_tourism": {
+        "defaultMessage": "Sítio arqueológico|atração"
+    },
+    "historic-stone": {
+        "defaultMessage": "Pedra histórica"
+    },
+    "historic-memorial-plaque": {
+        "defaultMessage": "Placa comemorativa"
+    },
+    "historic-cannon": {
+        "defaultMessage": "Canhão"
+    },
+    "historic-anchor": {
+        "defaultMessage": "Âncora histórica"
+    },
+    "historic-mine": {
+        "defaultMessage": "Mina histórica"
+    },
+    "historic-wreck": {
+        "defaultMessage": "Naufrágio"
+    },
+    "historic-locomotive|@category_tourism": {
+        "defaultMessage": "Locomotiva histórica"
+    },
+    "historic-tank|@category_tourism": {
+        "defaultMessage": "Tanque histórico"
+    },
+    "historic-aircraft|@category_tourism": {
+        "defaultMessage": "Aeronave histórica|Avião histórico"
+    },
+    "leisure-dog_park": {
+        "defaultMessage": "Parque canino|Parque para cães|Parque para cachorros"
+    },
+    "leisure-garden": {
+        "defaultMessage": "2Jardim|lazer"
+    },
+    "amenity-bench": {
+        "defaultMessage": "Assento|Banco de praça"
+    },
+    "amenity-bicycle_rental": {
+        "defaultMessage": "Aluguel de bicicletas|4bicicleta|3aluguel"
+    },
+    "amenity-bicycle_repair_station": {
+        "defaultMessage": "Oficina de bicicletas|4bicicleta"
+    },
+    "amenity-car_sharing": {
+        "defaultMessage": "Compartilhamento de carro"
+    },
+    "amenity-car_rental": {
+        "defaultMessage": "Aluguel de automóveis|carro|aluguel"
+    },
+    "amenity-motorcycle_rental": {
+        "defaultMessage": "Aluguel de motocicletas"
+    },
+    "amenity-cinema|@category_entertainment": {
+        "defaultMessage": "3Cinema"
+    },
+    "leisure-bowling_alley|@category_entertainment": {
+        "defaultMessage": "Pista de boliche"
+    },
+    "amenity-theatre|@category_entertainment": {
+        "defaultMessage": "3Teatro"
+    },
+    "amenity-nightclub|@category_entertainment|@category_nightlife": {
+        "defaultMessage": "3Boate|3discoteca|4casa noturna|3dançar"
+    },
+    "amenity-brothel": {
+        "defaultMessage": "Bordel"
+    },
+    "amenity-casino|@category_entertainment|@category_nightlife|@gambling": {
+        "defaultMessage": "Cassino"
+    },
+    "amenity-college": {
+        "defaultMessage": "Escola técnica"
+    },
+    "amenity-fire_station": {
+        "defaultMessage": "Posto de bombeiros|corpo de bombeiros"
+    },
+    "amenity-fountain": {
+        "defaultMessage": "4Fonte|chafariz"
+    },
+    "amenity-grave_yard|landuse-cemetery": {
+        "defaultMessage": "5Cemitério"
+    },
+    "shop-funeral_directors": {
+        "defaultMessage": "5Funerária"
+    },
+    "@category_hospital": {
+        "defaultMessage": "3Hospital"
+    },
+    "amenity-hospital|@category_hospital": {
+        "defaultMessage": "3Hospital|3clínica|3médico|saúde|serviços de saúde|primeiros socorros"
+    },
+    "amenity-clinic|@category_hospital": {
+        "defaultMessage": "4Clínica|centro de saúde|posto de saúde|policlínica|centro médico|posto médico"
+    },
+    "amenity-doctors|@category_hospital": {
+        "defaultMessage": "Consultório médico|clínica|saúde"
+    },
+    "amenity-dentist": {
+        "defaultMessage": "4Dentista|cirurgião dentista|centro odontológico"
+    },
+    "healthcare-laboratory": {
+        "defaultMessage": "Laboratório médico"
+    },
+    "healthcare-physiotherapist": {
+        "defaultMessage": "Fisioterapeuta"
+    },
+    "healthcare-alternative": {
+        "defaultMessage": "Medicina alternativa"
+    },
+    "healthcare-audiologist": {
+        "defaultMessage": "Fonoaudiologia|Fonoaudiólogo"
+    },
+    "healthcare-blood_donation": {
+        "defaultMessage": "Doação de sangue"
+    },
+    "healthcare-optometrist": {
+        "defaultMessage": "Optometria|Optometrista"
+    },
+    "healthcare-podiatrist": {
+        "defaultMessage": "Podiatria|Podiatra"
+    },
+    "healthcare-psychotherapist": {
+        "defaultMessage": "Psicoterapia|Psicoterapeuta"
+    },
+    "healthcare-speech_therapist": {
+        "defaultMessage": "Terapia da fala|Terapeuta da fala"
+    },
+    "amenity-hunting_stand": {
+        "defaultMessage": "Estande de caça"
+    },
+    "amenity-kindergarten": {
+        "defaultMessage": "Jardim de infância|escola infantil|pré-escola"
+    },
+    "amenity-library": {
+        "defaultMessage": "3Biblioteca"
+    },
+    "amenity-parking|amenity-parking_entrance|@category_parking": {
+        "defaultMessage": "3Estacionamento"
+    },
+    "@category_pharmacy": {
+        "defaultMessage": "3Farmácia"
+    },
+    "amenity-pharmacy|@category_pharmacy": {
+        "defaultMessage": "3Drogaria"
+    },
+    "@category_post": {
+        "defaultMessage": "3Correios"
+    },
+    "amenity-post_box|@category_post": {
+        "defaultMessage": "3Caixa de correio|correios"
+    },
+    "amenity-post_office|post_office-post_partner|@category_post": {
+        "defaultMessage": "3Correios"
+    },
+    "amenity-waste_disposal": {
+        "defaultMessage": "Depósito de lixo|lixo"
+    },
+    "amenity-recycling-centre|@category_recycling": {
+        "defaultMessage": "Reciclagem|descarte seletivo"
+    },
+    "amenity-recycling-container|@category_recycling": {
+        "defaultMessage": "Recipiente de reciclagem"
+    },
+    "recycling-batteries|@category_recycling": {
+        "defaultMessage": "Baterias"
+    },
+    "recycling-clothes|@category_recycling": {
+        "defaultMessage": "Roupas velhas|Reciclar roupas velhas"
+    },
+    "recycling-glass_bottles|@category_recycling": {
+        "defaultMessage": "Garrafas de vidro"
+    },
+    "recycling-paper|@category_recycling": {
+        "defaultMessage": "Lixo de papel|Papel"
+    },
+    "recycling-plastic|@category_recycling": {
+        "defaultMessage": "Lixo plástico|Plástico"
+    },
+    "recycling-plastic_bottles|@category_recycling": {
+        "defaultMessage": "Garrafas plasticas"
+    },
+    "recycling-scrap_metal|@category_recycling": {
+        "defaultMessage": "Ferro velho"
+    },
+    "recycling-small_appliances|@category_recycling": {
+        "defaultMessage": "Lixo eletrônico"
+    },
+    "amenity-school": {
+        "defaultMessage": "3Escola"
+    },
+    "amenity-shelter": {
+        "defaultMessage": "Abrigo"
+    },
+    "amenity-shelter-lean_to": {
+        "defaultMessage": "Abrigo tipo alpendre|alpendre"
+    },
+    "amenity-stripclub": {
+        "defaultMessage": "Clube de striptease"
+    },
+    "amenity-telephone": {
+        "defaultMessage": "3Telefone|3orelhão"
+    },
+    "@category_toilet": {
+        "defaultMessage": "4Banheiro|WC"
+    },
+    "amenity-toilets|toilets-yes|@category_toilet": {
+        "defaultMessage": "toalete|wc|sanitários|lavabo|privada"
+    },
+    "amenity-university": {
+        "defaultMessage": "4Universidade|faculdade"
+    },
+    "place-continent": {
+        "defaultMessage": "Continente"
+    },
+    "place-country": {
+        "defaultMessage": "País"
+    },
+    "place-city": {
+        "defaultMessage": "Cidade"
+    },
+    "place-town": {
+        "defaultMessage": "Cidade"
+    },
+    "place-city-capital": {
+        "defaultMessage": "Capital"
+    },
+    "place-county": {
+        "defaultMessage": "Município|Condado"
+    },
+    "place-state": {
+        "defaultMessage": "Estado|província"
+    },
+    "place-region": {
+        "defaultMessage": "Região"
+    },
+    "place-island|place-islet": {
+        "defaultMessage": "Ilha|Ilhota"
+    },
+    "place-suburb|place-quarter|place-neighbourhood|landuse-residential": {
+        "defaultMessage": "Bairro|subúrbio|distrito|Vizinhança"
+    },
+    "place-hamlet": {
+        "defaultMessage": "Lugarejo|aldeia|vila"
+    },
+    "place-village": {
+        "defaultMessage": "Povoado|aldeia|vila"
+    },
+    "place-locality": {
+        "defaultMessage": "Localidade"
+    },
+    "place-farm": {
+        "defaultMessage": "Fazenda|sítio|chácara"
+    },
+    "highway-raceway": {
+        "defaultMessage": "Pista de corrida"
+    },
+    "highway-path|highway-footway|highway-steps|highway-cycleway": {
+        "defaultMessage": "Caminho|trilha"
+    },
+    "highway-pedestrian|highway-primary|highway-primary_link|highway-residential|highway-secondary|highway-secondary_link|highway-tertiary|highway-tertiary_link|highway-service|highway-road|highway-track|highway-trunk|highway-trunk_link|highway-living_street|highway-unclassified|highway-motorway_link|highway-motorway|highway-cycleway": {
+        "defaultMessage": "Rua|Avenida"
+    },
+    "highway-motorway_junction": {
+        "defaultMessage": "2Saída|3junção"
+    },
+    "@mountain": {
+        "defaultMessage": "Pico|montanha"
+    },
+    "natural-strait": {
+        "defaultMessage": "Estreito"
+    },
+    "landuse-forest": {
+        "defaultMessage": "Floresta|mata"
+    },
+    "leisure-park": {
+        "defaultMessage": "Parque|praça"
+    },
+    "tourism-hostel|@category_hotel": {
+        "defaultMessage": "3Hostel|3pousada|2albergue"
+    },
+    "tourism-hotel|@category_hotel": {
+        "defaultMessage": "motel"
+    },
+    "tourism-guest_house|@category_hotel": {
+        "defaultMessage": "Pousada|casa de hóspedes|hospedagem"
+    },
+    "tourism-motel|@category_hotel": {
+        "defaultMessage": "3Motel|3hotel de estrada|3pousada"
+    },
+    "tourism-alpine_hut|@category_hotel": {
+        "defaultMessage": "Abrigo de montanha|cabana alpina|3pousada|motel|hotel"
+    },
+    "shop-hairdresser": {
+        "defaultMessage": "Cabeleireiro|barbeiro"
+    },
+    "aeroway-aerodrome": {
+        "defaultMessage": "3Aeroporto|aeródromo"
+    },
+    "leisure-stadium": {
+        "defaultMessage": "5Estádio|esporte"
+    },
+    "leisure-playground|@category_children": {
+        "defaultMessage": "Parquinho|parque infantil"
+    },
+    "leisure-sports_centre": {
+        "defaultMessage": "Centro esportivo|clube|esporte|complexo esportivo"
+    },
+    "leisure-golf_course": {
+        "defaultMessage": "Campo de golfe"
+    },
+    "leisure-escape_game": {
+        "defaultMessage": "4Escape Room|Sala de fuga|Escape game|Jogo de fuga|Sala de enigmas|Sala de mistérios"
+    },
+    "leisure-pitch": {
+        "defaultMessage": "Campo de esportes|campo|quadra|esporte"
+    },
+    "leisure-swimming_pool": {
+        "defaultMessage": "4Piscina|esporte"
+    },
+    "sport-american_football": {
+        "defaultMessage": "Futebol americano"
+    },
+    "sport-archery": {
+        "defaultMessage": "Tiro com arco"
+    },
+    "sport-athletics": {
+        "defaultMessage": "Atletismo|Atlético"
+    },
+    "sport-australian_football": {
+        "defaultMessage": "Futebol australiano"
+    },
+    "sport-baseball": {
+        "defaultMessage": "Beisebol"
+    },
+    "sport-basketball": {
+        "defaultMessage": "Basquetebol"
+    },
+    "sport-bowls": {
+        "defaultMessage": "Lawn bowls|Tigelas"
+    },
+    "sport-cricket": {
+        "defaultMessage": "Críquete"
+    },
+    "sport-curling": {
+        "defaultMessage": "Curling"
+    },
+    "sport-equestrian": {
+        "defaultMessage": "Esportes equestres"
+    },
+    "sport-golf": {
+        "defaultMessage": "Golfe"
+    },
+    "sport-gymnastics": {
+        "defaultMessage": "Ginástica"
+    },
+    "sport-handball": {
+        "defaultMessage": "Handebol"
+    },
+    "sport-scuba_diving": {
+        "defaultMessage": "Mergulho autônomo"
+    },
+    "sport-shooting": {
+        "defaultMessage": "Clube de tiro"
+    },
+    "sport-skiing": {
+        "defaultMessage": "Esqui"
+    },
+    "sport-soccer": {
+        "defaultMessage": "Futebol"
+    },
+    "sport-swimming": {
+        "defaultMessage": "Centro de natação"
+    },
+    "sport-table_tennis": {
+        "defaultMessage": "Tênis de mesa"
+    },
+    "sport-tennis": {
+        "defaultMessage": "Tênis"
+    },
+    "building": {
+        "defaultMessage": "Edifício|prédio|construção"
+    },
+    "building-address": {
+        "defaultMessage": "Endereço"
+    },
+    "@category_police": {
+        "defaultMessage": "4Polícia"
+    },
+    "amenity-police|@category_police": {
+        "defaultMessage": "Polícia"
+    },
+    "office-diplomatic": {
+        "defaultMessage": "4Embaixada"
+    },
+    "natural-bay": {
+        "defaultMessage": "Baía"
+    },
+    "@category_water": {
+        "defaultMessage": "2Água"
+    },
+    "amenity-drinking_water|drinking_water-yes|@category_water": {
+        "defaultMessage": "2Água potável|4bebedouro"
+    },
+    "natural-spring|@category_water": {
+        "defaultMessage": "Nascente|cabeceira|olho-d'água|manancial|exsurgência|mina de água|fonte"
+    },
+    "man_made-water_well|@category_water": {
+        "defaultMessage": "Poço de água"
+    },
+    "amenity-water_point|@category_water|@category_rv": {
+        "defaultMessage": "Ponto de água|Água para Caravana"
+    },
+    "man_made-water_tap|@category_water": {
+        "defaultMessage": "Torneira de água"
+    },
+    "@waterbody": {
+        "defaultMessage": "Corpo de água"
+    },
+    "natural-water-basin|landuse-basin|@waterbody": {
+        "defaultMessage": "Reservatório"
+    },
+    "natural-water-pond|@waterbody": {
+        "defaultMessage": "Lagoa"
+    },
+    "natural-water-lake|@waterbody": {
+        "defaultMessage": "Lago"
+    },
+    "waterway-river|waterway-stream|natural-water-river": {
+        "defaultMessage": "Rio|Ribeiro|Ribeira|Córrego|Riaxo"
+    },
+    "waterway-canal": {
+        "defaultMessage": "Canal"
+    },
+    "shop-car_repair": {
+        "defaultMessage": "Oficina de automóveis|mecânica|4mecânico|auto elétro"
+    },
+    "tourism-camp_site|@category_hotel": {
+        "defaultMessage": "4Local de acampamento|área de acampamento|4camping"
+    },
+    "tourism-caravan_site|@category_rv||@category_hotel": {
+        "defaultMessage": "4Área de trailers|caravanismo|acampamento"
+    },
+    "office": {
+        "defaultMessage": "Escritório|empresa"
+    },
+    "office-company": {
+        "defaultMessage": "Escritório de empresa"
+    },
+    "office-government": {
+        "defaultMessage": "Gabinete governamental|órgão público"
+    },
+    "office-lawyer": {
+        "defaultMessage": "Escritório de advocacia|Escritório de advogado|4advocacia|advogada|advogado|procurador"
+    },
+    "office-telecommunication": {
+        "defaultMessage": "Operadora de telecomunicações|telefonia|móvel"
+    },
+    "craft-brewery": {
+        "defaultMessage": "6Cervejaria"
+    },
+    "craft-caterer": {
+        "defaultMessage": "Serviço de bufê"
+    },
+    "craft-electronics_repair": {
+        "defaultMessage": "Reparo de eletrônicos"
+    },
+    "craft-hvac": {
+        "defaultMessage": "5Climatização|Aquecimento|AC|Ventilação|Ar Condicionado|Calefação"
+    },
+    "craft-metal_construction": {
+        "defaultMessage": "Serralheiro|metalúrgico"
+    },
+    "craft-key_cutter": {
+        "defaultMessage": "Chaveiro"
+    },
+    "craft-locksmith": {
+        "defaultMessage": "Serralheiro"
+    },
+    "craft-plumber": {
+        "defaultMessage": "Encanador"
+    },
+    "craft-shoemaker": {
+        "defaultMessage": "5Sapateiro"
+    },
+    "craft-winery": {
+        "defaultMessage": "Vinícola"
+    },
+    "craft-tailor": {
+        "defaultMessage": "Alfaiate|costureiro|conserto de roupas"
+    },
+    "area:highway-footway|area:highway-pedestrian|area:highway-steps|place-square": {
+        "defaultMessage": "Largo|praça|rua de pedestres|escadaria"
+    },
+    "place-sea": {
+        "defaultMessage": "Mar"
+    },
+    "place-ocean": {
+        "defaultMessage": "Oceano"
+    },
+    "@category_wifi": {
+        "defaultMessage": "WiFi|Wi-Fi"
+    },
+    "internet_access|internet_access-wlan|@category_wifi": {
+        "defaultMessage": "3Internet"
+    },
+    "natural-beach|natural-beach-sand|natural-beach-gravel|leisure-beach_resort": {
+        "defaultMessage": "Praia"
+    },
+    "man_made-lighthouse": {
+        "defaultMessage": "Farol"
+    },
+    "man_made-communications_tower|man_made-tower-communication": {
+        "defaultMessage": "Torre de Comunicações"
+    },
+    "man_made-petroleum_well": {
+        "defaultMessage": "4Poço de petróleo"
+    },
+    "organic-only|organic-yes": {
+        "defaultMessage": "eco|bio|biológico|ambiental|natural|orgânico"
+    },
+    "shop-copyshop": {
+        "defaultMessage": "4Copiadora|4impressões"
+    },
+    "shop-photo|@shop": {
+        "defaultMessage": "Artigos para fotografia|molduras|comércio|compras"
+    },
+    "shop-camera|@shop": {
+        "defaultMessage": "Loja de câmeras"
+    },
+    "shop-travel_agency": {
+        "defaultMessage": "Agência de viagem|viagens"
+    },
+    "shop-outdoor|@shop": {
+        "defaultMessage": "Equipamentos esportivos|caminhada|escalada|camping|comércio|Artigos de atividades ao ar livre"
+    },
+    "shop-dry_cleaning": {
+        "defaultMessage": "Lavagem a seco|lavanderia"
+    },
+    "shop-tyres|@shop": {
+        "defaultMessage": "Loja de pneus|borracharia|borracheiro|comércio"
+    },
+    "amenity-car_wash": {
+        "defaultMessage": "5Lava-jato|5Lavagem de veículos"
+    },
+    "amenity-veterinary": {
+        "defaultMessage": "4Veterinário"
+    },
+    "@charging_station": {
+        "defaultMessage": "Eletroposto|recarga|abastecimento"
+    },
+    "amenity-childcare": {
+        "defaultMessage": "Creche|jardim de infância"
+    },
+    "amenity-bicycle_parking": {
+        "defaultMessage": "Bicicletário|estacionamento de bicicletas"
+    },
+    "amenity-waste_basket": {
+        "defaultMessage": "Cesto de lixo|lixeira"
+    },
+    "emergency-phone": {
+        "defaultMessage": "3Telefone de emergência"
+    },
+    "leisure-fitness_centre": {
+        "defaultMessage": "Academia de ginástica|academia de musculação|centro de fitness|ginásio"
+    },
+    "leisure-sauna": {
+        "defaultMessage": "3Sauna"
+    },
+    "shop-car_repair-tyres|shop-car_repair": {
+        "defaultMessage": "Borracheiro|borracharia|pneus"
+    },
+    "shop-chemist|@shop": {
+        "defaultMessage": "4Drogaria|farmácia"
+    },
+    "shop-pet|@shop": {
+        "defaultMessage": "3Pet-shop|loja de artigos para animais"
+    },
+    "tourism-zoo|@category_tourism|@category_children": {
+        "defaultMessage": "Jardim zoológico|3Zoológico"
+    },
+    "tourism-information-office|amenity-ranger_station|@category_tourism": {
+        "defaultMessage": "Escritório de turismo"
+    },
+    "tourism-information-visitor_centre|amenity-ranger_station|@category_tourism": {
+        "defaultMessage": "Centro de visitantes"
+    },
+    "amenity-community_centre": {
+        "defaultMessage": "Centro comunitário"
+    },
+    "amenity-courthouse": {
+        "defaultMessage": "4Tribunal"
+    },
+    "amenity-vending_machine-cigarettes": {
+        "defaultMessage": "Máquina de venda de cigarros"
+    },
+    "amenity-vending_machine-drinks": {
+        "defaultMessage": "Máquina de venda de bebidas"
+    },
+    "amenity-vending_machine-parking_tickets|@category_parking": {
+        "defaultMessage": "Máquina venda de tíquetes de estacionamento"
+    },
+    "amenity-vending_machine-public_transport_tickets|@category_transport": {
+        "defaultMessage": "Máquinas automáticas de venda de passagens de transporte público"
+    },
+    "shop-outpost": {
+        "defaultMessage": "Ponto de coleta"
+    },
+    "building-garage": {
+        "defaultMessage": "Garagem"
+    },
+    "highway-rest_area|highway-services": {
+        "defaultMessage": "Área de descanso|Área de serviços de estrada"
+    },
+    "man_made-chimney": {
+        "defaultMessage": "Chaminé de fábrica"
+    },
+    "man_made-tower|man_made-flare": {
+        "defaultMessage": "Torre"
+    },
+    "shop-bookmaker|@gambling": {
+        "defaultMessage": "Casa de apostas"
+    },
+    "shop-seafood|@category_food|@shop": {
+        "defaultMessage": "Peixaria"
+    },
+    "shop-second_hand|@category_shopping|@shop|@category_secondhand": {
+        "defaultMessage": "Loja de segunda mão"
+    },
+    "shop-charity|@shop|@category_secondhand": {
+        "defaultMessage": "Loja de caridade"
+    },
+    "shop-ticket": {
+        "defaultMessage": "Bilheteria"
+    },
+    "shop-wine|@category_food|@shop": {
+        "defaultMessage": "Loja de vinhos|bebidas"
+    },
+    "shop-car_parts|@shop": {
+        "defaultMessage": "Peças de carro|auto peças"
+    },
+    "tourism-information-board": {
+        "defaultMessage": "Painel de informações"
+    },
+    "tourism-information-map": {
+        "defaultMessage": "Mapa turístico"
+    },
+    "aerialway-station": {
+        "defaultMessage": "Estação de teleférico"
+    },
+    "aeroway-helipad": {
+        "defaultMessage": "Heliponto|heliporto"
+    },
+    "barrier-border_control": {
+        "defaultMessage": "Controle de fronteira"
+    },
+    "leisure-water_park|@category_tourism|@category_children": {
+        "defaultMessage": "Parque aquático"
+    },
+    "man_made-water_tower": {
+        "defaultMessage": "Torre de água|caixa de água"
+    },
+    "man_made-windmill": {
+        "defaultMessage": "Moinho de vento"
+    },
+    "natural-cave_entrance": {
+        "defaultMessage": "4Caverna|Cova|3Gruta"
+    },
+    "natural-volcano|@mountain": {
+        "defaultMessage": "4Vulcão"
+    },
+    "office-estate_agent": {
+        "defaultMessage": "Corretor imobiliário|agente imobiliário"
+    },
+    "waterway-lock_gate": {
+        "defaultMessage": "Comporta de eclusa"
+    },
+    "amenity-public_bookcase": {
+        "defaultMessage": "Biblioteca livre|troca de livros"
+    },
+    "sport-climbing": {
+        "defaultMessage": "Ginásio de escalada"
+    },
+    "sport-yoga": {
+        "defaultMessage": "Estúdio de ioga"
+    },
+    "tourism-apartment|@category_hotel": {
+        "defaultMessage": "5Apartamentos|Apartamento de temporada"
+    },
+    "leisure-resort|@category_hotel": {
+        "defaultMessage": "Resort"
+    },
+    "amenity-biergarten|@category_eat|@category_nightlife": {
+        "defaultMessage": "5Biergarten|Jardim da cerveja"
+    },
+    "amenity-driving_school": {
+        "defaultMessage": "4Autoescola|CFC"
+    },
+    "amenity-ice_cream": {
+        "defaultMessage": "Sorveteria"
+    },
+    "amenity-internet_cafe": {
+        "defaultMessage": "5Cibercafé"
+    },
+    "amenity-motorcycle_parking": {
+        "defaultMessage": "Estacionamento de motos"
+    },
+    "amenity-nursing_home": {
+        "defaultMessage": "Casa de repouso"
+    },
+    "amenity-payment_terminal": {
+        "defaultMessage": "Terminal de pagamento"
+    },
+    "amenity-shower": {
+        "defaultMessage": "Chuveiro"
+    },
+    "emergency-defibrillator": {
+        "defaultMessage": "4Desfibrilador"
+    },
+    "emergency-fire_hydrant": {
+        "defaultMessage": "Hidrante"
+    },
+    "emergency-lifeguard": {
+        "defaultMessage": "Salva-vidas|Guarda-vidas|Nadador-salvador|Socorrista"
+    },
+    "emergency-mountain_rescue": {
+        "defaultMessage": "4Resgate de montanha de emergência"
+    },
+    "leisure-fitness_station": {
+        "defaultMessage": "Estação de fitness"
+    },
+    "office-insurance": {
+        "defaultMessage": "Seguradora|Corretora de seguros"
+    },
+    "office-ngo": {
+        "defaultMessage": "Escritório de ONG"
+    },
+    "shop-erotic|@shop": {
+        "defaultMessage": "3Sex Shop"
+    },
+    "shop-massage": {
+        "defaultMessage": "4Massagista|Salão de massagens"
+    },
+    "shop-motorcycle|@shop": {
+        "defaultMessage": "Loja de Motos"
+    },
+    "shop-motorcycle_repair": {
+        "defaultMessage": "Oficina de motos"
+    },
+    "shop-newsagent": {
+        "defaultMessage": "Banca de jornais|jornaleiro"
+    },
+    "shop-pawnbroker": {
+        "defaultMessage": "Casa de penhores"
+    },
+    "shop-stationery|@shop": {
+        "defaultMessage": "Papelaria"
+    },
+    "shop-tattoo": {
+        "defaultMessage": "Estúdio de tatuagens|4tatuador"
+    },
+    "shop-variety_store|@category_shopping|@shop": {
+        "defaultMessage": "1,99|Loja de variedades"
+    },
+    "shop-video|@shop": {
+        "defaultMessage": "4Video locadora|Locadora de vídeo|Videolocadora"
+    },
+    "shop-video_games|@shop": {
+        "defaultMessage": "Loja de jogos eletrônicos"
+    },
+    "tourism-wilderness_hut|@category_hotel": {
+        "defaultMessage": "4Cabana"
+    },
+    "tourism-gallery|@category_tourism": {
+        "defaultMessage": "3Galeria|museu"
+    },
+    "tourism-theme_park|@category_tourism|@category_children": {
+        "defaultMessage": "Parque de diversão|parque temático"
+    },
+    "boundary-national_park|@category_tourism": {
+        "defaultMessage": "Parque nacional"
+    },
+    "leisure-nature_reserve|@category_tourism": {
+        "defaultMessage": "Reserva florestal"
+    },
+    "natural-cape": {
+        "defaultMessage": "Cabo"
+    },
+    "natural-geyser": {
+        "defaultMessage": "3Gêiser"
+    },
+    "natural-glacier|@category_tourism": {
+        "defaultMessage": "Geleira"
+    },
+    "highway-ford": {
+        "defaultMessage": "Vau|passo|Rio raso|Passagem em curso de água baixo"
+    },
+    "leisure-marina": {
+        "defaultMessage": "3Marina"
+    },
+    "amenity-events_venue": {
+        "defaultMessage": "Local do evento"
+    },
+    "shop-chocolate|@category_food|@shop": {
+        "defaultMessage": "Loja de chocolates"
+    },
+    "shop-coffee|@category_food|@shop": {
+        "defaultMessage": "Loja de café"
+    },
+    "shop-fabric|@shop": {
+        "defaultMessage": "Loja de aviamentos"
+    },
+    "shop-money_lender": {
+        "defaultMessage": "Prestamista"
+    },
+    "shop-music|@shop": {
+        "defaultMessage": "Loja de música"
+    },
+    "shop-musical_instrument|@shop": {
+        "defaultMessage": "Loja de instrumentos musicais"
+    },
+    "shop-tea|@shop": {
+        "defaultMessage": "Loja de chás"
+    },
+    "shop-antiques|@category_shopping|@shop|@category_secondhand": {
+        "defaultMessage": "Antiguidades"
+    },
+    "shop-art|@category_shopping|@shop": {
+        "defaultMessage": "Loja de artes"
+    },
+    "shop-baby_goods|@category_children|@shop": {
+        "defaultMessage": "Loja infantil"
+    },
+    "shop-bag|@category_shopping|@shop": {
+        "defaultMessage": "Loja de bolsas"
+    },
+    "shop-cheese|@category_food|@shop": {
+        "defaultMessage": "Loja de queijos"
+    },
+    "shop-dairy|@category_food|@shop": {
+        "defaultMessage": "Lacticínios"
+    },
+    "shop-electrical|@shop": {
+        "defaultMessage": "Loja de materiais elétricos"
+    },
+    "shop-fishing|@shop": {
+        "defaultMessage": "Loja de pesca"
+    },
+    "shop-interior_decoration|@shop": {
+        "defaultMessage": "Decorações de Interiores"
+    },
+    "shop-lottery|@gambling": {
+        "defaultMessage": "Lotérica"
+    },
+    "shop-medical_supply|@shop": {
+        "defaultMessage": "Suprimentos médicos"
+    },
+    "shop-nutrition_supplements|@shop": {
+        "defaultMessage": "Suplementos nutricionais"
+    },
+    "shop-paint|@shop": {
+        "defaultMessage": "Tintas"
+    },
+    "shop-perfumery|@category_shopping|@shop": {
+        "defaultMessage": "Perfumaria"
+    },
+    "shop-sewing|@shop": {
+        "defaultMessage": "Materiais de costura"
+    },
+    "shop-storage_rental": {
+        "defaultMessage": "Aluguel de Armazenamento"
+    },
+    "shop-tobacco|@shop": {
+        "defaultMessage": "Tabaco"
+    },
+    "shop-trade|@shop": {
+        "defaultMessage": "Comércio de suprimentos"
+    },
+    "shop-watches|@category_shopping|@shop": {
+        "defaultMessage": "Relógios"
+    },
+    "shop-wholesale|@shop": {
+        "defaultMessage": "Loja de atacado"
+    },
+    "leisure-track": {
+        "defaultMessage": "Pista para esportes não motorizados"
+    },
+    "power-plant": {
+        "defaultMessage": "Usina elétrica"
+    },
+    "shop-collector|@category_shopping|@category_secondhand": {
+        "defaultMessage": "Coletor|Colecionáveis"
+    },
+    "man_made-cairn": {
+        "defaultMessage": "Moledro ou mariola"
+    },
+    "amenity-social_facility": {
+        "defaultMessage": "Unidade de assistência social"
+    },
+    "leisure-sports_hall": {
+        "defaultMessage": "Salão de esportes"
+    },
+    "shop-bathroom_furnishing|@shop": {
+        "defaultMessage": "Loja de móveis de banheiro"
+    },
+    "shop-bed|@shop": {
+        "defaultMessage": "Loja de camas"
+    },
+    "shop-boutique|@shop": {
+        "defaultMessage": "Boutique"
+    },
+    "amenity-food_court": {
+        "defaultMessage": "Praça de alimentação"
+    },
+    "shop-curtain|@shop": {
+        "defaultMessage": "Loja de cortinas"
+    },
+    "shop-gas|@shop": {
+        "defaultMessage": "Distribuidora de gás"
+    },
+    "shop-pet_grooming": {
+        "defaultMessage": "Banho e tosa"
+    },
+    "shop-hifi|@shop": {
+        "defaultMessage": "Loja de áudio Hi-Fi"
+    },
+    "shop-herbalist|@shop": {
+        "defaultMessage": "Loja de ervas"
+    },
+    "shop-appliance|@shop": {
+        "defaultMessage": "Loja de eletrodomésticos"
+    },
+    "shop-agrarian|@shop": {
+        "defaultMessage": "Loja agrícola"
+    },
+    "shop-fashion_accessories|@shop": {
+        "defaultMessage": "Loja de acessórios de moda"
+    },
+    "amenity-waste_transfer_station": {
+        "defaultMessage": "Estação de transferência de resíduos"
+    },
+    "shop-carpet|@shop": {
+        "defaultMessage": "Loja de tapetes"
+    },
+    "shop-pasta|@shop": {
+        "defaultMessage": "Massas"
+    },
+    "amenity-luggage_locker": {
+        "defaultMessage": "Armário de bagagem"
+    },
+    "amenity-studio": {
+        "defaultMessage": "Estúdio|TV|Gravação|Rádio"
+    },
+    "shop-cannabis|@shop": {
+        "defaultMessage": "Cannabis|Maconha|Marijuana|THX|Haxixe|CBD"
+    },
+    "shop-farm|@category_food|@shop": {
+        "defaultMessage": "Quitanda|Granja"
+    },
+    "shop-grocery|@category_food|@shop": {
+        "defaultMessage": "Loja de comida|Armazém|Não-perecível"
+    },
+    "shop-health_food|@category_food|@shop": {
+        "defaultMessage": "Alimentos saudáveis|Saudável"
+    },
+    "shop-hearing_aids|@shop": {
+        "defaultMessage": "Aparelhos Auditivos"
+    },
+    "railway-station-funicular": {
+        "defaultMessage": "Funicular"
+    },
+    "historic-citywalls|@category_tourism": {
+        "defaultMessage": "Muralha da Cidade"
+    },
+    "historic-fort|@category_tourism": {
+        "defaultMessage": "Fortaleza"
+    },
+    "historic-battlefield": {
+        "defaultMessage": "Campo de batalha"
+    },
+    "sport-padel": {
+        "defaultMessage": "Pádel"
+    },
+    "sport-volleyball": {
+        "defaultMessage": "Vôlei|Voleibol|Volleyball"
+    },
+    "amenity-hydrant": {
+        "defaultMessage": "Hidrante de irrigação"
+    },
+    "@fastfood": {
+        "defaultMessage": "Fast food"
+    },
+    "cuisine-bagel": {
+        "defaultMessage": "Bagel"
+    },
+    "cuisine-breakfast": {
+        "defaultMessage": "Café da manhã"
+    },
+    "cuisine-burger|@fastfood": {
+        "defaultMessage": "Hambúrguer"
+    },
+    "cuisine-cake": {
+        "defaultMessage": "Bolo|padaria"
+    },
+    "cuisine-coffee_shop": {
+        "defaultMessage": "Café|cafeteria"
+    },
+    "cuisine-curry": {
+        "defaultMessage": "Curry"
+    },
+    "cuisine-diner": {
+        "defaultMessage": "Lanchonete"
+    },
+    "cuisine-donut": {
+        "defaultMessage": "Rosquinha"
+    },
+    "cuisine-fish_and_chips": {
+        "defaultMessage": "Peixe e batatas fritas"
+    },
+    "cuisine-friture|@fastfood": {
+        "defaultMessage": "Fritura"
+    },
+    "cuisine-grill": {
+        "defaultMessage": "Grelhada"
+    },
+    "cuisine-hotdog|@fastfood": {
+        "defaultMessage": "Cachorro-quente"
+    },
+    "cuisine-ice_cream": {
+        "defaultMessage": "Sorvete"
+    },
+    "cuisine-kebab|@fastfood": {
+        "defaultMessage": "Espetinho"
+    },
+    "cuisine-noodles": {
+        "defaultMessage": "Macarrão"
+    },
+    "cuisine-pancake|cuisine-crepe": {
+        "defaultMessage": "Panqueca|panquecas|crepes|crepe"
+    },
+    "cuisine-pasta": {
+        "defaultMessage": "Massa"
+    },
+    "cuisine-pizza|@fastfood": {
+        "defaultMessage": "Pizza|pizzaria|pizaria"
+    },
+    "cuisine-ramen": {
+        "defaultMessage": "Lámen|rāmen"
+    },
+    "cuisine-sandwich|@fastfood": {
+        "defaultMessage": "Sanduíche"
+    },
+    "cuisine-sausage|@fastfood": {
+        "defaultMessage": "Linguiça"
+    },
+    "cuisine-seafood|cuisine-fish": {
+        "defaultMessage": "Frutos do mar|peixe|marisco|marisqueira"
+    },
+    "cuisine-soba": {
+        "defaultMessage": "Soba|sobá"
+    },
+    "cuisine-steak_house": {
+        "defaultMessage": "Churrascaria"
+    },
+    "cuisine-sushi": {
+        "defaultMessage": "Sushi"
+    },
+    "cuisine-tapas": {
+        "defaultMessage": "Tapas"
+    },
+    "cuisine-tea": {
+        "defaultMessage": "Chá"
+    },
+    "@cuisine_all_vegetarian": {
+        "defaultMessage": "Vegetariana"
+    },
+    "cuisine-vegan|@cuisine_all_vegetarian": {
+        "defaultMessage": "Vegana"
+    }
 }
