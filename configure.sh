@@ -126,9 +126,6 @@ else
   echo "Skipping world map download..."
 fi
 
-echo "Generating search categories / synonyms..."
-./tools/unix/generate_categories.sh
-
 # This step must be before all the other strings steps, since they expect strings in data/
 if [ -z "$SKIP_GENERATE_JSON_STRINGS" ]; then
   echo "Generating json strings..."
@@ -136,6 +133,9 @@ if [ -z "$SKIP_GENERATE_JSON_STRINGS" ]; then
 else
   echo "Skipping generate json strings..."
 fi
+
+echo "Generating search categories / synonyms..."
+./tools/unix/generate_categories.sh
 
 if [ -z "$SKIP_GENERATE_STRINGS" ]; then
   if Diff data/strings_hash iphone/Maps/LocalizedStrings/en.lproj/LocalizableTypes.strings || [ ! -z "$STRINGS_NOT_GENERATED" ]; then
