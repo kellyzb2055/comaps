@@ -864,4 +864,9 @@ public class RoutingController
 
     mWaitingPoiPickType = null;
   }
+
+  public void updateCachedRoutingInfo(@Nullable RoutingInfo info)
+  {
+    mCachedRoutingInfo = info;
+  }
 }

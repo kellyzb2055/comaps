@@ -1036,4 +1036,7 @@
     <string name="capacity_charging">Spaces with chargers: %s</string>
     <string name="capacity_charging_yes">Has spaces with chargers</string>
     <string name="capacity_charging_no">No spaces with chargers</string>
+    <!-- Permission descriptions -->
+    <string name="permission_read_navigation_label">Read CoMaps navigation data</string>
+    <string name="permission_read_navigation_description">read live navigation information such as upcoming turns or the name of the road you are on</string>
 </resources>
