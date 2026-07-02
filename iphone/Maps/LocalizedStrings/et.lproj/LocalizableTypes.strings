@@ -935,7 +935,7 @@
 "type.railway.funicular" = "Köisraudtee";
 "type.railway.funicular.bridge" = "Köisraudtee sild";
 "type.railway.funicular.tunnel" = "Köisraudtee tunnel";
-"type.railway.halt" = "Rongipeatus (nõudepeatus / teivasjaam)";
+"type.railway.halt" = "Rongipeatus";
 "type.railway.level_crossing" = "Raudteeületuskoht";
 "type.railway.light_rail" = "Kergraudtee";
 "type.railway.light_rail.bridge" = "Kergraudtee sild";

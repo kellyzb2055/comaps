@@ -619,7 +619,7 @@
     <string name="avoid_motorways">Väldi kiirteed</string>
     <string name="unable_to_calc_alert_title">Teekonna koostamine ei õnnestu</string>
     <string name="unable_to_calc_alert_subtitle">Teekonda ei õnnestunud koostada. See võib olla põhjustatud sinu seatud tingimustest või OpenStreetMapi andmete puudumisest. Muuda algtingimusi ja proovi uuesti.</string>
-    <string name="define_to_avoid_btn">Määra välditavad teed</string>
+    <string name="define_to_avoid_btn">Vali teekonnakoostamise valikuid</string>
     <string name="change_driving_options_btn">Lubatud valikud teekonna koostamisel</string>
     <string name="toll_road">Tasuline tee</string>
     <string name="unpaved_road">Sillutamata tee</string>
@@ -955,4 +955,16 @@
     <string name="sort_categories">Järjesta lemmikute loendid</string>
     <string name="by_recently_used">Hiljuti kasutamise alusel</string>
     <string name="by_custom">Sinu määratud järjestuses</string>
+    <string name="capacity_disabled">Parkimiskohti puuetega inimestele: %s</string>
+    <string name="capacity_disabled_no">Pole eraldi parkimiskohti puuetega inimeste jaoks</string>
+    <string name="capacity_charging_yes">On laadijatega parkimiskohad</string>
+    <string name="capacity_charging_no">Pole laadijatega parkimiskohti</string>
+    <string name="prefs_group_general_summary">Ühikud, keel, andmeruum</string>
+    <string name="prefs_group_route_summary">Hääljuhised, teekonna koostamise valikud</string>
+    <string name="prefs_group_privacy_summary">Google Play teenused, otsinguajalugu</string>
+    <string name="prefs_group_power_summary">Kaardistiil, ekraani väljalülitumine</string>
+    <string name="capacity_disabled_yes">On eraldi parkimiskohti puuetega inimeste jaoks</string>
+    <string name="capacity_charging">Laadijatega parkimiskohti: %s</string>
+    <string name="permission_read_navigation_label">CoMapsi teejuhatamise teabe ettelugemine</string>
+    <string name="permission_read_navigation_description">teejuhatamise teabe ettelugemine reaalajas, näiteks järgmised pöörded ja hetkel kasutusel tee nimi</string>
 </resources>

@@ -94,5 +94,10 @@
 			<string>%lld salas</string>
 		</dict>
 	</dict>
+	<key>capacity_disabled</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
+	</dict>
 </dict>
 </plist>

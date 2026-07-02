@@ -977,4 +977,10 @@
     <string name="capacity_charging">أماكن مزودة بشواحن: %s</string>
     <string name="capacity_charging_yes">يحتوي على أماكن مزودة بشواحن</string>
     <string name="capacity_charging_no">لا أماكن مزودة بشواحن</string>
+    <string name="prefs_group_general_summary">الوحدات، اللغة، التخزين</string>
+    <string name="prefs_group_route_summary">التعليمات الصوتية، خيارات المسار</string>
+    <string name="prefs_group_privacy_summary">خدمات Google Play، سجل البحث</string>
+    <string name="prefs_group_power_summary">نمط الخريطة، مهلة الشاشة</string>
+    <string name="permission_read_navigation_label">قراءة بيانات الملاحة من CoMaps</string>
+    <string name="permission_read_navigation_description">قراءة معلومات الملاحة المباشرة، مثل المنعطفات القادمة أو اسم الطريق الذي تسير عليه</string>
 </resources>

@@ -809,7 +809,7 @@
     <string name="type.railway.funicular">Köisraudtee</string>
     <string name="type.railway.funicular.bridge">Köisraudtee sild</string>
     <string name="type.railway.funicular.tunnel">Köisraudtee tunnel</string>
-    <string name="type.railway.halt">Rongipeatus (nõudepeatus / teivasjaam)</string>
+    <string name="type.railway.halt">Rongipeatus</string>
     <string name="type.railway.level_crossing">Raudteeületuskoht</string>
     <string name="type.railway.light_rail">Kergraudtee</string>
     <string name="type.railway.light_rail.bridge">Kergraudtee sild</string>

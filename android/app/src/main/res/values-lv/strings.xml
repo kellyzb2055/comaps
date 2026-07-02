@@ -911,4 +911,10 @@
     <string name="charge_socket_type1_combo">1. veida apvienojums</string>
     <string name="backup_interval_every_week">Ik nedēļu</string>
     <string name="pref_alt_map_lang_handling_local_only">Priekšroku dot un izmantot tikai tur, kur dzimtā</string>
+    <string name="capacity_disabled">Invalīdu stāvvietas: %s</string>
+    <string name="capacity_disabled_yes">Ir atsevišķa invalīdu stāvvieta</string>
+    <string name="capacity_disabled_no">Nav atsevišķu invalīdu vietu</string>
+    <string name="capacity_charging">Vietas ar lādētājiem: %s</string>
+    <string name="capacity_charging_yes">Ir vietas ar lādētājiem</string>
+    <string name="capacity_charging_no">Nav vietu ar lādētājiem</string>
 </resources>

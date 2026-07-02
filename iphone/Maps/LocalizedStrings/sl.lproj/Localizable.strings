@@ -52,9 +52,9 @@
 /* Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. */
 "bookmarks" = "Zaznamki";
 /* "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt */
-"bookmarks_and_tracks" = "Priljubljeni";
+"bookmarks_and_tracks" = "Zaznamki";
 /* Default bookmark list name */
-"core_my_places" = "Moji kraji";
+"core_my_places" = "Moji zaznamki";
 /* Editor title above street and house number, duplicates [type.building.address] in types_strings.txt */
 "address" = "Naslov";
 /* Settings button in system menu */
@@ -111,7 +111,7 @@
 /* message title of loading file */
 "load_kmz_title" = "Nalaganje zaznamkov";
 /* Kmz file successful loading */
-"load_kmz_successful" = "Zaznamki so uspešno naloženi! Najdete jih lahko na zemljevidu ali v upravitelju zaznamkov.";
+"load_kmz_successful" = "Zaznamki so uspešno naloženi! Najdete jih lahko na zemljevidu ali v upravitelju Zaznamkov.";
 /* Kml file loading failed */
 "load_kmz_failed" = "Zaznamkov ni bilo mogoče naložiti. Datoteka je morda okvarjena.";
 /* resource for context menu */
@@ -459,7 +459,7 @@
 "editor_focus_map_on_location" = "Povlecite zemljevid tako, da bo križec na položaju kraja ali podjetja.";
 "editor_add_select_category" = "Izberite kategorijo";
 "editor_add_select_category_popular_subtitle" = "Priljubljeno";
-"editor_add_select_category_all_subtitle" = "Vsi razredi";
+"editor_add_select_category_all_subtitle" = "Vse kategorije";
 "editor_edit_place_title" = "Urejanje";
 "editor_add_place_title" = "Dodajanje";
 "editor_edit_place_name_hint" = "Ime kraja";
@@ -868,16 +868,16 @@
 "contribute_to_osm_add_place" = "Dodaj kraj";
 "contribute_to_osm_update_map" = "Prispevaj in posodobi zemljevid";
 "contribute_to_osm_update_map_description" = "Preden lahko prispevate na OpenStreetMap, morate posodobiti zemljevid %@ na zadnjo različico";
-"downloader_check_updates_button" = "Check for updates";
-"downloader_check_updates_checking" = "Checking for updates...";
-"downloader_check_updates_updated" = "Map updates available!";
+"downloader_check_updates_button" = "Preveri posodobitve";
+"downloader_check_updates_checking" = "Preverjanje posodobitev...";
+"downloader_check_updates_updated" = "Posodobitve zemljevidov so na voljo!";
 "downloader_check_updates_no_updates" = "Posodobitev ni na voljo";
-"downloader_check_updates_eol" = "No more map updates for this app version. Please update the app!";
-"downloader_check_updates_error" = "Error checking for updates";
-"editor_add_select_category_recent_subtitle" = "Recently Used";
-"oh_unknown" = "Opening hours unknown";
-"carplay_highway_exit" = "Exit %@";
-"capacity_disabled_yes" = "Has dedicated disabled spaces";
-"capacity_disabled_no" = "No dedicated disabled spaces";
-"capacity_charging_yes" = "Has spaces with chargers";
-"capacity_charging_no" = "No spaces with chargers";
+"downloader_check_updates_eol" = "Za to verzijo aplikacije posodobitve zemljevidov niso več na voljo. Prosimo posodobite aplikacijo!";
+"downloader_check_updates_error" = "Napaka pri preverjanju posodobitev";
+"editor_add_select_category_recent_subtitle" = "Nedavno uporabljeno";
+"oh_unknown" = "Odpiralni časi neznani";
+"carplay_highway_exit" = "Izvoz %@";
+"capacity_disabled_yes" = "Ima mesta za invalide";
+"capacity_disabled_no" = "Nima mest za invalide";
+"capacity_charging_yes" = "Ima mesta za polnjenje";
+"capacity_charging_no" = "Nima mest za polnjenje";

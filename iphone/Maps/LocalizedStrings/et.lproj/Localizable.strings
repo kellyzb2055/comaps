@@ -877,7 +877,7 @@
 "editor_add_select_category_recent_subtitle" = "Hiljuti kasutatud";
 "oh_unknown" = "Tööaeg pole teada";
 "carplay_highway_exit" = "Ärapööre %@";
-"capacity_disabled_yes" = "Has dedicated disabled spaces";
-"capacity_disabled_no" = "No dedicated disabled spaces";
-"capacity_charging_yes" = "Has spaces with chargers";
-"capacity_charging_no" = "No spaces with chargers";
+"capacity_disabled_yes" = "On eraldi kohad puuetega inimeste jaoks";
+"capacity_disabled_no" = "Pole eraldi parkimiskohti puuetega inimeste jaoks";
+"capacity_charging_yes" = "On laadijatega parkimiskohad";
+"capacity_charging_no" = "Pole laadijatega parkimiskohti";
