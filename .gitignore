@@ -19,7 +19,8 @@ screenlog.0
 data/symbols/**/symbols.png
 data/symbols/**/symbols.sdf
 # translations are also generated at build
-data/*-strings/*/localize.json
+data/sound-strings/*/localize.json
+data/countries-strings/*/localize.json
 
 data/bookmarks
 data/edits.xml
