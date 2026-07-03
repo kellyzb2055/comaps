@@ -231,7 +231,7 @@
     <!-- Text in menu -->
     <string name="help">Súgó</string>
     <!-- Button in the main Help dialog -->
-    <string name="faq">GYIK</string>
+    <string name="faq">Gyakran ismételt kérdések</string>
     <!-- Button in the main menu -->
     <string name="donate">Adományozás</string>
     <!-- Button in the main Help dialog -->
@@ -519,7 +519,7 @@
     <!-- Settings: "Send general feedback" button -->
     <string name="feedback_general">Általános visszajelzés</string>
     <string name="prefs_languages_information">A CoMaps TTS-rendszert használ a hangnavigációhoz. Sok androidos eszköz használja a Google TTS-t; töltse le vagy frissítse a Google Play áruházból (https://play.google.com/store/apps/details?id=com.google.android.tts)</string>
-    <string name="prefs_languages_information_off">Egyes nyelveknél másik beszédszintetizátort vagy további nyelvi csomagot kell telepítenie az alkalmazás-áruházból (Google Play, Galaxy Store, App Gallery, FDroid).\nNyissa meg az eszköz beállításait → Nyelv és bevitel → Beszéd → Szöveg-beszéd átalakító kimenet.\nItt kezelheti a beszédszintézis beállításokat (például: nyelvi csomag letöltése a kapcsolat nélküli használathoz) és másik szövegfelolvasót jelölhet ki.</string>
+    <string name="prefs_languages_information_off">Egyes nyelveknél másik beszédszintetizátort vagy további nyelvi csomagot kell telepítenie az alkalmazás-áruházból (Google Play, Galaxy Store, App Gallery, F-Droid).\nNyissa meg az eszköz beállításait → Nyelv és bevitel → Beszéd → Beszédfelismerés és -szintézis.\nItt kezelheti a beszédszintézis beállításait (például: nyelvi csomag letöltése kapcsolat nélküli használathoz) és másik szövegfelolvasót jelölhet ki.</string>
     <string name="prefs_languages_information_off_link">Ebben az útmutatóban további tájékoztatást talál</string>
     <string name="transliteration_title">Átírás latin betűkre</string>
     <string name="learn_more">Tudjon meg többet</string>
@@ -850,7 +850,7 @@
     <string name="bookmark_color">Kedvenc színe</string>
     <string name="about_help">Névjegy és súgó</string>
     <string name="share_track">Nyomvonal megosztása</string>
-    <string name="pref_tts_no_system_tts_short">Nem található szövegfelovasási szolgáltatás (TTS), ellenőrizze az alkalmazás beállításait a „Hangutasítások” müpontban</string>
+    <string name="pref_tts_no_system_tts_short">Nem található szövegfelolvasási szolgáltatás (TTS), ellenőrizze az alkalmazás beállításait a „Hangutasítások” menüpontban</string>
     <string name="dialog_report_error_with_logs">Küldjön hibajelentést:\n - „Naplózás engedélyezése” a beállításokban\n - reprodukálja a hibát\n - A „Névjegy és súgó” képernyőn nyomja meg a „Hibajelentés” gombot, és küldje el e-mailben vagy csevegésben.\n - naplózás kikapcsolása</string>
     <string name="charge_socket_type2">2. típus (nincs kábel)</string>
     <string name="charge_socket_type2_cable">2. típus (kábel nélküli)</string>
@@ -918,9 +918,49 @@
     <string name="destination">Célállomás</string>
     <string name="stop">Állj</string>
     <string name="navigation_start_tts_message">"Navigáció indítása, hangutasítások nyelve: "</string>
-    <string name="navigation_start_tts_disabled_message">Hangutasítások letiltva: nem érhető el TTS motor</string>
+    <string name="navigation_start_tts_disabled_message">Hangutasítások letiltva: nem érhető el TTS szolgáltatás</string>
     <string name="charge_socket_type1_combo">1. típus, kombinált</string>
     <string name="charge_socket_schuko">Helyi, EU-s</string>
     <string name="advanced">Speciális</string>
     <string name="download_resources_custom_url_title">Egyéni térképkiszolgáló</string>
+    <string name="bookmark_share_email_subject">Kövesse a %1$s hivatkozást, vagy illessze be a %2$s koordinátákat a térképalkalmazásába a hely megtekintéséhez.</string>
+    <string name="my_position_share_email">Kövesse a %1$s hivatkozást, vagy illessze be a %2$s koordinátákat a térképalkalmazásába a helyem megtekintéséhez.</string>
+    <string name="prefs_speed_cameras_information">A sebességkamera-figyelmeztetések le vannak tiltva azokban az országokban, ahol ezeket tiltja a törvényt.</string>
+    <string name="avoid_paved">Burkolt utak elkerülése</string>
+    <string name="list_description_empty">A lista szerkesztése leírás hozzáadása céljából</string>
+    <string name="download_resources_custom_url_message">Az alapértelmezett térképletöltési kiszolgáló felülbírálása. A CoMaps alapértelmezésének használatához hagyja üresen.</string>
+    <string name="download_resources_custom_url_summary_none">Nincs beállítva</string>
+    <string name="download_resources_custom_url_error_scheme">Adjon meg egy http:// vagy https:// kezdetű webcímet</string>
+    <string name="pref_alt_map_lang_handling">Alternatív térképnyelvek</string>
+    <string name="pref_alt_map_lang_handling_ignore_alternatives">Ne használjon alternatívákat</string>
+    <string name="pref_alt_map_lang_handling_system_order">Rendszersorrend használata</string>
+    <string name="pref_alt_map_lang_handling_local_only">Helyi nyelv előnyben részítése</string>
+    <string name="location_privacy_info">Az alkalmazások az operációs rendszer helymeghatározó szolgáltatásától kapják a helyadatokat, amelyek a felhasználó tartózkodási helyét megoszthatják a Google-lel és az eszköz gyártójával is. Ennek elkerülése érdekében használjon olyan Android operációs rendszert, amely védi a magánszféráját.</string>
+    <string name="location_privacy">Helyadatok adatvédelme</string>
+    <string name="pref_speedlimit_title">Sebességkorlátok megjelenítése</string>
+    <string name="rooms">%s szoba</string>
+    <string name="invalid_route">Érvénytelen útvonal</string>
+    <string name="building_route">Útvonal összeállítása…</string>
+    <string name="route_not_started">Az útvonal nincs elindítva</string>
+    <string name="on_route">Úton</string>
+    <string name="route_needs_rebuild">Az útvonalat újra kell építeni</string>
+    <string name="route_finished">Az útvonal kész</string>
+    <string name="not_following_route">Nem követi az útvonalat</string>
+    <string name="route_recalculating">Útvonal újraszámítása…</string>
+    <string name="pref_openexternallinks_title">Külső hivatkozások automatikus megnyitása</string>
+    <string name="pref_openexternallinks_summary">Külső hivatkozások automatikus megnyitása a CoMapsban</string>
+    <string name="pref_keyboard_typing_history_title">Billentyűzet ikognitó módja</string>
+    <string name="pref_keyboard_typing_history_summary">A rendszerbillentyűzet megkérése, hogy ne jegyezze fel a gépelési előzményeket</string>
+    <string name="pref_aa_support_title">Android Auto</string>
+    <string name="pref_aa_support_summary_yes">Az alkalmazás a Google Playből lett telepítve, így használhatja az autójában.</string>
+    <string name="pref_aa_support_summary_no">Az alkalmazás nem a Google Playből lett telepítve, így nem használhatja az autójában. Koppintson a beállításra, hogy több információt kapjon a GYIK oldalunkon.</string>
+    <string name="editor_add_select_category_recent_subtitle">Legutóbb használt</string>
+    <string name="capacity_disabled">Mozgássérült parkolóhelyek: %s</string>
+    <string name="capacity_disabled_yes">Van kijelölt mozgássérült hely</string>
+    <string name="capacity_disabled_no">Nincs kijelölt mozgássérült hely</string>
+    <string name="capacity_charging">Helyek töltővel: %s</string>
+    <string name="capacity_charging_yes">Van hely töltővel</string>
+    <string name="capacity_charging_no">Nincs hely töltővel</string>
+    <string name="permission_read_navigation_label">CoMaps navigáció adatok olvasása</string>
+    <string name="permission_read_navigation_description">élő navigációs információk felolvasása, mint a következő kanyarok, vagy a jelenleg használt út neve</string>
 </resources>

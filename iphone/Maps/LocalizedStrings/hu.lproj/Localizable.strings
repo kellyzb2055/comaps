@@ -222,7 +222,7 @@
 /* Text in menu */
 "help" = "Súgó";
 /* Button in the main Help dialog */
-"faq" = "GYIK";
+"faq" = "Gyakran ismételt kérdések";
 /* Button in the main menu */
 "donate" = "Adományozás";
 /* Button in the main Help dialog */
@@ -578,10 +578,10 @@
 "traffic_data_unavailable" = "Nem állnak rendelkezésre forgalmi adatok";
 "enable_logging" = "Naplózás engedélyezése";
 "log_file_size" = "Naplófájl mérete: %@";
-"pref_alt_map_lang_handling" = "Alternative Map Languages";
-"pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";
-"pref_alt_map_lang_handling_system_order" = "Use in system order";
-"pref_alt_map_lang_handling_local_only" = "Prefer and only use where native";
+"pref_alt_map_lang_handling" = "Alternatív térképnyelvek";
+"pref_alt_map_lang_handling_ignore_alternatives" = "Ne használjon alternatívákat";
+"pref_alt_map_lang_handling_system_order" = "Rendszersorrend használata";
+"pref_alt_map_lang_handling_local_only" = "Helyi nyelv előnyben részítése";
 "transliteration_title" = "Átírás latin betűkre";
 "transliteration_title_disabled_summary" = "Letiltva, ha mindig a helyi nyelvet használja a térképen";
 /* Subway exits for public transport marks on the map */
@@ -655,7 +655,7 @@
 "avoid_tolls" = "Díjköteles utak elkerülése";
 /* Recommended length for CarPlay and Android Auto is around 25-27 characters */
 "avoid_unpaved" = "Burkolatlan utak elkerülése";
-"avoid_paved" = "Avoid paved roads";
+"avoid_paved" = "Burkolt utak elkerülése";
 /* Recommended length for CarPlay and Android Auto is around 25-27 characters */
 "avoid_steps" = "Lépcsők elkerülése";
 "avoid_ferry" = "Kompátkelők elkerülése";
@@ -874,10 +874,10 @@
 "downloader_check_updates_no_updates" = "Nincsenek térképfrissítések";
 "downloader_check_updates_eol" = "Nem érhető el további térképfrissítés ehhez a verzióhoz. Frissítse az alkalmazást!";
 "downloader_check_updates_error" = "Hiba a frissítések keresése során";
-"editor_add_select_category_recent_subtitle" = "Recently Used";
+"editor_add_select_category_recent_subtitle" = "Legutóbb használt";
 "oh_unknown" = "A nyitvatartás ismeretlen";
 "carplay_highway_exit" = "Exit %@";
 "capacity_disabled_yes" = "Has dedicated disabled spaces";
-"capacity_disabled_no" = "No dedicated disabled spaces";
-"capacity_charging_yes" = "Has spaces with chargers";
-"capacity_charging_no" = "No spaces with chargers";
+"capacity_disabled_no" = "Nincs kijelölt mozgássérült hely";
+"capacity_charging_yes" = "Van hely töltővel";
+"capacity_charging_no" = "Nincs hely töltővel";
