@@ -1517,3 +1517,4 @@
 "type.leisure.sports_centre.sport.pickleball" = "Sportközpont";
 "type.organic.no" = "Nincs biotermék-lehetőség";
 "type.amenity.stage" = "Stage";
+"type.amenity.animal_boarding" = "Animal Boarding";

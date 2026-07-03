@@ -131,6 +131,8 @@
 			<key>other</key>
 			<string>%lld parkirnih mest</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nikoliprevajat@</string>
 	</dict>
 	<key>capacity_charging</key>
 	<dict>
@@ -151,6 +153,8 @@
 			<key>other</key>
 			<string>%lld mest za polnjenje</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nikoliprevajaj@</string>
 	</dict>
 	<key>capacity</key>
 	<dict>
@@ -171,6 +175,8 @@
 			<key>other</key>
 			<string>%lld mest</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nikoliprevajaj@</string>
 	</dict>
 </dict>
 </plist>

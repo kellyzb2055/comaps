@@ -1517,3 +1517,4 @@
 "type.leisure.sports_centre.sport.pickleball" = "Спортски центар";
 "type.organic.no" = "Нема органску храну";
 "type.amenity.stage" = "Бина";
+"type.amenity.animal_boarding" = "Animal Boarding";

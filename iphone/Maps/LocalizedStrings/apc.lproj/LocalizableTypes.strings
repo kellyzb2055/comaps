@@ -1424,3 +1424,4 @@
 "type.xmas.tree" = "Christmas Tree";
 "type.organic.no" = "No organic options";
 "type.amenity.stage" = "Stage";
+"type.amenity.animal_boarding" = "Animal Boarding";

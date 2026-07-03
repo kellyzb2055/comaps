@@ -896,7 +896,7 @@
 "type.place.sea" = "Morje";
 "type.place.square" = "Trg";
 "type.place.state" = "Zvezna država";
-"type.place.state.USA" = "Zvezna država ZDA";
+"type.place.state.USA" = "Zvezna država";
 /* Named part of a city or town, bigger than place=quarter (Wiki: https://wiki.openstreetmap.org/wiki/Tag:place%3Dsuburb) */
 "type.place.suburb" = "Predmestje";
 "type.place.town" = "Manjše mesto";
@@ -1517,3 +1517,4 @@
 "type.leisure.sports_centre.sport.pickleball" = "Športno središče";
 "type.organic.no" = "Ni organskih m";
 "type.amenity.stage" = "Oder";
+"type.amenity.animal_boarding" = "Vkrcanje živali";

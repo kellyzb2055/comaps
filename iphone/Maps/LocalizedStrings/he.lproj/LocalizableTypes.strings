@@ -1517,3 +1517,4 @@
 "type.railway.narrow_gauge.bridge" = "Narrow Gauge Rail Bridge";
 "type.organic.no" = "No organic options";
 "type.amenity.stage" = "Stage";
+"type.amenity.animal_boarding" = "Animal Boarding";

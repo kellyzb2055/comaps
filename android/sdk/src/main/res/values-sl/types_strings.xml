@@ -786,7 +786,7 @@
     <string name="type.place.region">Regija</string>
     <string name="type.place.square">Trg</string>
     <string name="type.place.state">Zvezna država</string>
-    <string name="type.place.state.USA">Zvezna država ZDA</string>
+    <string name="type.place.state.USA">Zvezna država</string>
     <string name="type.place.suburb">Predmestje</string>
     <string name="type.place.town">Manjše mesto</string>
     <string name="type.place.village">Vas</string>
@@ -1425,4 +1425,5 @@
     <string name="type.sport.four_square">Four Square</string>
     <string name="type.sport.pickleball">Pickleball</string>
     <string name="type.amenity.stage">Oder</string>
+    <string name="type.amenity.animal_boarding">Vkrcanje živali</string>
 </resources>

@@ -621,7 +621,7 @@
     <string name="avoid_motorways">Αποφυγή αυτοκινητόδρομων</string>
     <string name="unable_to_calc_alert_title">Δεν ήταν δυνατός ο υπολογισμός διαδρομής</string>
     <string name="unable_to_calc_alert_subtitle">Δυστυχώς, δεν μπορούσαμε να δημιουργήσουμε μια διαδρομή με τις καθορισμένες επιλογές. Αλλάξτε τις ρυθμίσεις και δοκιμάστε πάλι.</string>
-    <string name="define_to_avoid_btn">Ορισμός δρόμων προς αποφυγή</string>
+    <string name="define_to_avoid_btn">Επιλέξτε επιλογές δρομολόγησης</string>
     <string name="change_driving_options_btn">Ρυθμίσεις δρομολόγησης ενεργοποιημένες</string>
     <string name="toll_road">Δρόμος με διόδια</string>
     <string name="unpaved_road">Χωματόδρομος</string>
@@ -959,4 +959,16 @@
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_aa_support_summary_yes">Η εφαρμογή έχει εγκατασταθεί απ\' το Google Play, μπορείτε να τη χρησιμοποιείτε στο αυτοκίνητό σας.</string>
     <string name="pref_aa_support_summary_no">Η εφαρμογή δεν έχει εγκατασταθεί απ\' το Google Play, δε μπορείτε να τη χρησιμοποιείτε στο αυτοκίνητό σας. Πατήστε την ρύθμιση για να δείτε περισσότερες λεπτομέρειες στο FAQ μας.</string>
+    <string name="capacity_disabled_yes">Έχει θέσεις για ΑΜΕΑ</string>
+    <string name="capacity_disabled_no">Δεν έχει θέσεις για ΑΜΕΑ</string>
+    <string name="capacity_charging_yes">Έχει θέσεις με φορτιστές</string>
+    <string name="capacity_charging_no">Δεν έχει θέσεις με φορτιστές</string>
+    <string name="capacity_charging">Θέσεις με φορτιστές: %s</string>
+    <string name="capacity_disabled">Θέσεις για ΑΜΕΑ: %s</string>
+    <string name="permission_read_navigation_label">Ανάγνωση δεδομένων πλοήγησης CoMaps</string>
+    <string name="permission_read_navigation_description">ανάγνωση ζωντανών πληροφοριών πλοήγησης, όπως επερχόμενες στροφές ή ονομασία του δρόμου όπου βρίσκεστε</string>
+    <string name="prefs_group_general_summary">Μονάδες, γλώσσα, αποθηκευτικός χώρος</string>
+    <string name="prefs_group_route_summary">Φωνητικές οδηγίες, επιλογές δρομολόγησης</string>
+    <string name="prefs_group_privacy_summary">Υπηρεσίες Google Play, ιστορικό αναζήτησης</string>
+    <string name="prefs_group_power_summary">Στυλ χάρτη, σβήσιμο οθόνης</string>
 </resources>

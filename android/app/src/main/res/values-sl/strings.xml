@@ -30,7 +30,7 @@
     <string name="dialog_routing_location_turn_on">Omogoči zaznavanje položaja</string>
     <string name="download_over_mobile_message">To je lahko precej drago z nekaterimi mobilnimi naročninami ali če gostujete v tujem mobilnem omrežju.</string>
     <string name="error_enter_correct_house_number">Vnesite veljavno številko stavbe</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://comaps.app/sl/</string>
     <string name="disconnect_usb_cable">Pred uporabo CoMaps iztaknite kabel USB ali vstavite spominsko kartico</string>
     <string name="not_enough_free_space_on_sdcard">Pred uporabo aplikacije najprej sprostite nekaj prostora na SD kartici/USB shrambi</string>
     <string name="download_resources">Preden začnete uporabljati aplikacijo, najprej prenesite pregledni zemljevid sveta na svojo napravo. \nZemljevid bo porabil %s prostora.</string>

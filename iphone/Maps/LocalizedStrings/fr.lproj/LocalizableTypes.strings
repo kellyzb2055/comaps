@@ -1517,3 +1517,4 @@
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Centre Sportif";
 "type.organic.no" = "Pas d'options bio";
+"type.amenity.animal_boarding" = "Animal Boarding";
