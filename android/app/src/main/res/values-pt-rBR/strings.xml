@@ -559,7 +559,7 @@
     <string name="avoid_motorways">Evitar autoestradas</string>
     <string name="unable_to_calc_alert_title">Incapaz de calcular rota</string>
     <string name="unable_to_calc_alert_subtitle">Infelizmente, não conseguimos encontrar uma rota, provavelmente por causa das opções escolhidas ou dados do OpenStreetMap em falta. Por favor, altere as configurações e tente novamente.</string>
-    <string name="define_to_avoid_btn">Definir as estradas a serem evitadas</string>
+    <string name="define_to_avoid_btn">Escolher opções de roteamento</string>
     <string name="change_driving_options_btn">Opções de direção ativadas</string>
     <string name="toll_road">Pedágio</string>
     <string name="unpaved_road">Via não pavimentada</string>
@@ -937,4 +937,16 @@
     <string name="by_recently_used">Por usado recentemente</string>
     <string name="by_custom">Por ordem personalizada</string>
     <string name="sort_categories">Ordenar listas de favoritos</string>
+    <string name="capacity_disabled_no">Sem espaços dedicados para deficientes</string>
+    <string name="capacity_charging_yes">Possui espaços com carregadores</string>
+    <string name="capacity_charging_no">Sem espaços com carregadores</string>
+    <string name="prefs_group_general_summary">Unidades, idioma, armazenamento</string>
+    <string name="prefs_group_route_summary">Instruções de voz, opções de roteamento</string>
+    <string name="prefs_group_privacy_summary">Serviços do Google Play, histórico de pesquisa</string>
+    <string name="prefs_group_power_summary">Estilo do mapa, tempo limite da tela</string>
+    <string name="capacity_disabled">Vagas de estacionamento para deficientes: %s</string>
+    <string name="capacity_disabled_yes">Possui espaço dedicado para deficientes</string>
+    <string name="capacity_charging">Espaços com carregadores: %s</string>
+    <string name="permission_read_navigation_label">Ler os dados de navegação do CoMaps</string>
+    <string name="permission_read_navigation_description">ler informações de navegação ao vivo, como as próximas curvas ou o nome da estrada em que você está</string>
 </resources>

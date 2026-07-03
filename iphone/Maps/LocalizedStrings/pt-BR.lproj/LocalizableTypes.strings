@@ -130,7 +130,7 @@
 "type.amenity.parking_space.private" = "Lugar de estacionamento";
 "type.amenity.parking_space.underground" = "Lugar de estacionamento";
 "type.amenity.parking_space.disabled" = "Estacionamento para deficientes";
-"type.amenity.car_pooling" = "Carona";
+"type.amenity.car_pooling" = "Carona solidária";
 "type.amenity.payment_terminal" = "Terminal de pagamento";
 "type.amenity.payment_centre" = "Centro de pagamentos";
 "type.amenity.pharmacy" = "Farmácia";
@@ -935,7 +935,7 @@
 "type.railway.funicular" = "Trem funicular";
 "type.railway.funicular.bridge" = "Funicular";
 "type.railway.funicular.tunnel" = "Funicular";
-"type.railway.halt" = "Ponto de parada";
+"type.railway.halt" = "Parada de trem";
 "type.railway.level_crossing" = "Passagem em nível";
 "type.railway.light_rail" = "Metrô de superfície";
 "type.railway.light_rail.bridge" = "Metrô de superfície";
@@ -1516,5 +1516,5 @@
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Centro de esportes";
 "type.organic.no" = "Sem opções orgânicas";
-"type.amenity.stage" = "Stage";
-"type.amenity.animal_boarding" = "Animal Boarding";
+"type.amenity.stage" = "Palco";
+"type.amenity.animal_boarding" = "Hotel de animais";

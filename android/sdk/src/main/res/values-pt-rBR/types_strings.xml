@@ -648,7 +648,7 @@
     <string name="type.railway.disused">Ferrovia em desuso</string>
     <string name="type.railway.funicular.bridge">Funicular</string>
     <string name="type.railway.funicular.tunnel">Funicular</string>
-    <string name="type.railway.halt">Ponto de parada</string>
+    <string name="type.railway.halt">Parada de trem</string>
     <string name="type.railway.level_crossing">Passagem em nível</string>
     <string name="type.railway.light_rail">Metrô de superfície</string>
     <string name="type.railway.light_rail.bridge">Metrô de superfície</string>
@@ -1427,7 +1427,7 @@
     <string name="type.man_made.telescope.gamma">Telescópio (gama)</string>
     <string name="type.man_made.observatory">Observatório</string>
     <string name="type.amenity.mobile_money_agent">Agente mobile money</string>
-    <string name="type.amenity.car_pooling">Carona</string>
+    <string name="type.amenity.car_pooling">Carona solidária</string>
     <string name="type.amenity.payment_centre">Centro de pagamentos</string>
     <string name="type.leisure.indoor_play">Centro de recreação interno</string>
     <string name="type.shop.telecommunication">Loja de telecomunicações</string>
@@ -1507,4 +1507,6 @@
     <string name="type.organic.no">Sem opções orgânicas</string>
     <string name="type.leisure.sports_centre.sport.pickleball">Centro de esportes</string>
     <string name="type.sport.pickleball">Pickleball</string>
+    <string name="type.amenity.animal_boarding">Hotel de animais</string>
+    <string name="type.amenity.stage">Palco</string>
 </resources>

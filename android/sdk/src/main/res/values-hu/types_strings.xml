@@ -1515,4 +1515,6 @@
     <string name="type.leisure.sports_centre.sport.pickleball">Sportközpont</string>
     <string name="type.attraction">Látványosság</string>
     <string name="type.social_facility.food_bank">Élelmiszerbank</string>
+    <string name="type.amenity.animal_boarding">Állatpanzió</string>
+    <string name="type.amenity.stage">Színpad</string>
 </resources>
