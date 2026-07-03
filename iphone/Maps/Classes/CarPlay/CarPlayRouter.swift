@@ -16,6 +16,8 @@ final class CarPlayRouter: NSObject {
   private let listenerContainer: ListenerContainer<CarPlayRouterListener>
   private var routeSession: CPNavigationSession?
   private var initialSpeedCamSettings: SpeedCameraManagerMode
+  /// Typed `AnyObject?` until we target iOS 18
+  private var activeLaneGuidance: AnyObject?
   var currentTrip: CPTrip? {
     return routeSession?.trip
   }
@@ -224,6 +226,7 @@ extension CarPlayRouter {
     LOG(.info, "Cancelling navigation session")
     routeSession?.cancelTrip()
     routeSession = nil
+    activeLaneGuidance = nil
     RoutingManager.routingManager.resetOnNewTurnCallback()
   }
 
@@ -237,13 +240,38 @@ extension CarPlayRouter {
     LOG(.info, "Finishing trip")
     routeSession?.finishTrip()
     routeSession = nil
+    activeLaneGuidance = nil
     completeRouteAndRemovePoints()
     RoutingManager.routingManager.resetOnNewTurnCallback()
   }
 
   func updateUpcomingManeuvers() {
     let maneuvers = createUpcomingManeuvers()
+    if #available(iOS 17.4, *) {
+      if let guidance = activeLaneGuidance as? CPLaneGuidance {
+        routeSession?.add([guidance])
+      }
+      routeSession?.add(maneuvers)
+    }
     routeSession?.upcomingManeuvers = maneuvers
+    if #available(iOS 17.4, *), let routeInfo = RoutingManager.routingManager.routeInfo {
+      routeSession?.maneuverState = maneuverState(forDistanceToTurn: routeInfo.distanceToTurn,
+                                                  units: routeInfo.turnUnits)
+      routeSession?.currentLaneGuidance = activeLaneGuidance as? CPLaneGuidance
+      let roadName = routeInfo.currentRoadName.trimmingCharacters(in: .whitespacesAndNewlines)
+      routeSession?.currentRoadNameVariants = roadName.isEmpty ? [] : [roadName]
+    }
+  }
+
+  @available(iOS 17.4, *)
+  private func maneuverState(forDistanceToTurn distance: Double, units: UnitLength) -> CPManeuverState {
+    let meters = Measurement(value: distance, unit: units).converted(to: .meters).value
+    switch meters {
+    case ..<30: return .execute
+    case ..<150: return .prepare
+    case ..<400: return .initial
+    default: return .continue
+    }
   }
 
   func updateEstimates() {
@@ -291,8 +319,14 @@ extension CarPlayRouter {
       primaryManeuver.initialTravelEstimates = estimates
     }
     // Lane guidance for the instrument cluster / any surface that consumes it (not the app screen).
-    if #available(iOS 18.0, *), !routeInfo.lanes.isEmpty {
-      primaryManeuver.linkedLaneGuidance = laneGuidance(for: routeInfo)
+    if #available(iOS 18.0, *) {
+      if routeInfo.lanes.isEmpty {
+        activeLaneGuidance = nil
+      } else {
+        let guidance = laneGuidance(for: routeInfo)
+        activeLaneGuidance = guidance
+        primaryManeuver.linkedLaneGuidance = guidance
+      }
     }
     // Structured metadata for the instrument cluster / HUD on supported vehicles.
     if #available(iOS 17.4, *) {

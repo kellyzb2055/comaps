@@ -124,6 +124,7 @@
                                                        destinationRef:@(info.m_nextDestinationRef.c_str())
                                                           destination:@(info.m_nextDestination.c_str())
                                                                isLink:info.m_nextIsLink
+                                                      currentRoadName:@(info.m_currentStreetName.c_str())
                                                     carDirectionIndex:static_cast<UInt8>(info.m_turn)
                                                     isLeftHandTraffic:info.m_isLeftHandTraffic];
   return objCInfo;

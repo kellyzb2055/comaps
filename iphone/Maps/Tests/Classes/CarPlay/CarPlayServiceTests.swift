@@ -33,6 +33,7 @@ final class CarPlayServiceTests: XCTestCase {
                               destinationRef: "",
                               destination: "",
                               isLink: false,
+                              currentRoadName: "Niamiha",
                               carDirectionIndex: 0,
                               isLeftHandTraffic: false)
     let estimates = carPlayService.createEstimates(routeInfo: routeInfo)

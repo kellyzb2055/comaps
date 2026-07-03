@@ -224,6 +224,7 @@ class RouteInfo: NSObject {
   let destinationRef: String
   let destination: String
   let isLink: Bool
+  let currentRoadName: String
   /// Upcoming maneuver direction, used for CarPlay instrument-cluster metadata.
   let carDirection: CarDirection
   let isLeftHandTraffic: Bool
@@ -245,6 +246,7 @@ class RouteInfo: NSObject {
              destinationRef: String,
              destination: String,
              isLink: Bool,
+             currentRoadName: String,
              carDirectionIndex: UInt8,
              isLeftHandTraffic: Bool) {
     self.timeToTarget = timeToTarget
@@ -265,6 +267,7 @@ class RouteInfo: NSObject {
     self.destinationRef = destinationRef
     self.destination = destination
     self.isLink = isLink
+    self.currentRoadName = currentRoadName
     self.carDirection = CarDirection(rawValue: carDirectionIndex) ?? .none
     self.isLeftHandTraffic = isLeftHandTraffic
   }

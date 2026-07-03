@@ -392,6 +392,12 @@ extension CarPlayService: CPSessionConfigurationDelegate {
 
 // MARK: - CPMapTemplateDelegate implementation
 extension CarPlayService: CPMapTemplateDelegate {
+  // Instrument cluster maneuver display
+  @available(iOS 17.4, *)
+  public func mapTemplateShouldProvideNavigationMetadata(_ mapTemplate: CPMapTemplate) -> Bool {
+    return true
+  }
+
   public func mapTemplateDidShowPanningInterface(_ mapTemplate: CPMapTemplate) {
     isUserPanMap = false
     MapTemplateBuilder.configurePanUI(mapTemplate: mapTemplate)
