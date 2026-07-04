@@ -48,6 +48,11 @@ std::array<std::string, 61> const kStatesCode = {{
 std::array<std::string, 13> const kModifiers = {{"alt", "alternate", "bus", "business", "bypass", "historic",
                                                  "connector", "loop", "scenic", "spur", "temporary", "toll", "truck"}};
 
+std::array<std::string, 27> const kBrazilStatesCode = {{
+    "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA",
+    "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO",
+}};
+
 // Shields based on a network tag in a route=road relation.
 ankerl::unordered_dense::map<std::string, RoadShieldType> const kRoadNetworkShields = {
     // International road networks.
@@ -782,6 +787,71 @@ public:
   {}
 };
 
+class BrazilRoadShieldParser : public RoadShieldParser
+{
+public:
+  explicit BrazilRoadShieldParser(std::string const & baseRoadNumber) : RoadShieldParser(baseRoadNumber) {}
+
+  // Refs look like "BR-116" (federal) or "RS-410"/"SP-280" (state), occasionally with a space
+  // instead of a dash: https://wiki.openstreetmap.org/wiki/Brazil/Highway_classification
+  // Only the number is displayed as text: the "BR" lettering is drawn into the federal symbol,
+  // and each state has its own symbol with the state code also drawn
+  RoadShield ParseRoadShield(std::string_view rawText, uint8_t index) const override
+  {
+    if (rawText.size() > kMaxRoadShieldBytesSize)
+      return RoadShield();
+
+    std::string shieldText(rawText);
+    std::replace(shieldText.begin(), shieldText.end(), '-', ' ');
+    auto const parts = strings::Tokenize(shieldText, " ");
+
+    // Keep leading zeros
+    if (parts.size() != 2 || parts[1].size() > 3 || !strings::IsASCIINumeric(parts[1]))
+      return RoadShield(RoadShieldType::Default, rawText);
+
+    if (parts[0] == "BR")
+      return RoadShield(RoadShieldType::Brazil_National, parts[1]);
+
+    std::string_view code = parts[0];
+    // Some states add a letter to the code for special road classes, e.g. ERS/VRS/RSC
+    // in Rio Grande do Sul, MGC/LMG/AMG in Minas Gerais, PRC in Paraná.
+    // The signs display the plain state code.
+    if (code.size() == 3)
+    {
+      if (base::IsExist(kBrazilStatesCode, code.substr(0, 2)))
+        code = code.substr(0, 2);
+      else if (base::IsExist(kBrazilStatesCode, code.substr(1)))
+        code = code.substr(1);
+    }
+
+    if (base::IsExist(kBrazilStatesCode, code))
+    {
+      // "Coincident" state roads share the number of the federal highway they overlap
+      // (e.g. ref="BR-453;RSC-453"): show only the federal shield then.
+      if (IsCoincidentWithFederal(parts[1]))
+        return RoadShield(RoadShieldType::Hidden, parts[1]);
+      return RoadShield(RoadShieldType::Brazil_State, std::string{parts[1]}, std::string{code});
+    }
+
+    return RoadShield(RoadShieldType::Default, rawText);
+  }
+
+private:
+  bool IsCoincidentWithFederal(std::string_view number) const
+  {
+    bool found = false;
+    strings::Tokenize(m_baseRoadNumber, ";", [&](std::string_view token)
+    {
+      auto const slashPos = token.find('/');
+      if (slashPos != std::string_view::npos)
+        token = token.substr(slashPos + 1);
+      if ((token.starts_with("BR-") || token.starts_with("BR ")) && token.substr(3) == number)
+        found = true;
+    });
+    return found;
+  }
+};
+
 class UkraineRoadShieldParser : public SimpleUnicodeRoadShieldParser
 {
 public:
@@ -959,6 +1029,8 @@ RoadShieldsSetT GetRoadShields(std::string const & mwmName, std::string const & 
     return ArgentinaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Bolivia")
     return BoliviaRoadShieldParser(roadNumber).GetRoadShields();
+  if (mwmName == "Brazil")
+    return BrazilRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Belgium")
     return BelgiumRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Greece")
@@ -1072,6 +1144,8 @@ std::string DebugPrint(RoadShieldType shieldType)
   case RoadShieldType::UK_Highway: return "UK highway";
   case RoadShieldType::Bolivia_Fundamental: return "Bolivia fundamental";
   case RoadShieldType::Argentina_RN: return "Argentina national";
+  case RoadShieldType::Brazil_National: return "Brazil national";
+  case RoadShieldType::Brazil_State: return "Brazil state";
   case RoadShieldType::UY_National: return "UY national";
   case RoadShieldType::Italy_Autostrada: return "Italy autostrada";
   case RoadShieldType::Hungary_Green: return "hungary green";

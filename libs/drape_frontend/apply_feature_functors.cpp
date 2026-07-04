@@ -39,6 +39,7 @@
 #include "base/logging.hpp"
 #include "base/math.hpp"
 #include "base/stl_helpers.hpp"
+#include "base/string_utils.hpp"
 
 #include <algorithm>
 #include <cmath>
@@ -218,6 +219,8 @@ bool IsSymbolRoadShield(ftypes::RoadShield const & shield)
          shield.m_type == ftypes::RoadShieldType::Italy_Autostrada ||
          shield.m_type == ftypes::RoadShieldType::Argentina_RN ||
          shield.m_type == ftypes::RoadShieldType::Bolivia_Fundamental ||
+         shield.m_type == ftypes::RoadShieldType::Brazil_National ||
+         shield.m_type == ftypes::RoadShieldType::Brazil_State ||
          shield.m_type == ftypes::RoadShieldType::Hungary_Green ||
          shield.m_type == ftypes::RoadShieldType::Hungary_Blue;
 }
@@ -250,6 +253,15 @@ std::string GetRoadShieldSymbolName(ftypes::RoadShield const & shield, double fo
     result = shield.m_name.size() <= 2 ? "shield-argentina-rn" : "shield-argentina-rn-wide";
   else if (shield.m_type == ftypes::RoadShieldType::Bolivia_Fundamental)
     result = "shield-bolivia-fundamental" ;
+  else if (shield.m_type == ftypes::RoadShieldType::Brazil_National)
+    result = "shield-brazil-national";
+  else if (shield.m_type == ftypes::RoadShieldType::Brazil_State)
+  {
+    // The state code (e.g. "RS") is carried in m_additionalText, see BrazilRoadShieldParser.
+    std::string stateCode = shield.m_additionalText;
+    strings::AsciiToLower(stateCode);
+    result = "shield-brazil-" + stateCode;
+  }
   else
     ASSERT(false, ("This shield type doesn't support symbols:", shield.m_type));
 
@@ -363,6 +375,8 @@ dp::Color GetRoadShieldTextColor(dp::Color const & baseColor, ftypes::RoadShield
       {RoadShieldType::UK_Highway, kRoadShieldUKYellowTextColor},
       {RoadShieldType::Italy_Autostrada, kRoadShieldWhiteTextColor},
       {RoadShieldType::Bolivia_Fundamental, kRoadShieldWhiteTextColor},
+      {RoadShieldType::Brazil_National, kRoadShieldBlackTextColor},
+      {RoadShieldType::Brazil_State, kRoadShieldBlackTextColor},
       {RoadShieldType::Hungary_Green, kRoadShieldWhiteTextColor},
       {RoadShieldType::Hungary_Blue, kRoadShieldWhiteTextColor}};
 
@@ -1124,7 +1138,9 @@ void ApplyLineFeatureAdditional::GetRoadShieldsViewParams(ref_ptr<dp::TextureMan
     shieldPixelSize = region.GetPixelSize();
   }
 
-  if (!shield.m_additionalText.empty() && (anchor & dp::Top || anchor & dp::Center))
+  // Brazil state shields use m_additionalText to select the symbol, it is not a caption.
+  if (!shield.m_additionalText.empty() && shield.m_type != ftypes::RoadShieldType::Brazil_State &&
+      (anchor & dp::Top || anchor & dp::Center))
   {
     auto & titleDecl = textParams.m_titleDecl;
     titleDecl.m_secondaryText = shield.m_additionalText;

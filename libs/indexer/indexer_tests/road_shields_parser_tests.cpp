@@ -2,6 +2,75 @@
 
 #include "indexer/road_shields_parser.hpp"
 
+UNIT_TEST(RoadShields_Brazil)
+{
+  using namespace ftypes;
+
+  auto shields = GetRoadShields("Brazil", "BR-116", HighwayClass::Trunk);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Brazil_National, ());
+  TEST_EQUAL(shields[0].m_name, "116", ());
+
+  // Leading zeros are kept, like on the real signs.
+  shields = GetRoadShields("Brazil", "BR-040", HighwayClass::Trunk);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Brazil_National, ());
+  TEST_EQUAL(shields[0].m_name, "040", ());
+
+  shields = GetRoadShields("Brazil", "RS-410", HighwayClass::Secondary);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Brazil_State, ());
+  TEST_EQUAL(shields[0].m_name, "410", ());
+  TEST_EQUAL(shields[0].m_additionalText, "RS", ());
+
+  shields = GetRoadShields("Brazil", "BR-290;RS-122", HighwayClass::Primary);
+  TEST_EQUAL(shields.size(), 2, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Brazil_National, ());
+  TEST_EQUAL(shields[0].m_name, "290", ());
+  TEST_EQUAL(shields[1].m_type, RoadShieldType::Brazil_State, ());
+  TEST_EQUAL(shields[1].m_additionalText, "RS", ());
+
+  // Special state road classes: ERS/VRS/RSC (Rio Grande do Sul), MGC/LMG (Minas Gerais),
+  // PRC (Paraná) display the plain state code on the shield.
+  for (auto const & ref : {"ERS-123", "VRS-123", "RSC-123"})
+  {
+    shields = GetRoadShields("Brazil", ref, HighwayClass::Secondary);
+    TEST_EQUAL(shields.size(), 1, (ref));
+    TEST_EQUAL(shields[0].m_type, RoadShieldType::Brazil_State, (ref));
+    TEST_EQUAL(shields[0].m_name, "123", (ref));
+    TEST_EQUAL(shields[0].m_additionalText, "RS", (ref));
+  }
+
+  shields = GetRoadShields("Brazil", "MGC-120;LMG-808", HighwayClass::Secondary);
+  TEST_EQUAL(shields.size(), 2, ());
+  TEST_EQUAL(shields[0].m_additionalText, "MG", ());
+  TEST_EQUAL(shields[1].m_additionalText, "MG", ());
+
+  shields = GetRoadShields("Brazil", "PRC-280", HighwayClass::Secondary);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Brazil_State, ());
+  TEST_EQUAL(shields[0].m_additionalText, "PR", ());
+
+  // Coincident state roads (same number as the overlapping federal highway) are hidden,
+  // regardless of the order in the ref.
+  for (auto const & ref : {"BR-453;RSC-453", "RSC-453;BR-453", "BR-453;MG-453"})
+  {
+    shields = GetRoadShields("Brazil", ref, HighwayClass::Trunk);
+    TEST_EQUAL(shields.size(), 1, (ref));
+    TEST_EQUAL(shields[0].m_type, RoadShieldType::Brazil_National, (ref));
+    TEST_EQUAL(shields[0].m_name, "453", (ref));
+  }
+
+  // Different numbers are not coincident: both shields stay.
+  shields = GetRoadShields("Brazil", "BR-453;RSC-470", HighwayClass::Trunk);
+  TEST_EQUAL(shields.size(), 2, ());
+
+  // Unknown formats fall back to the default shield with the full ref.
+  shields = GetRoadShields("Brazil", "SPA 262/310", HighwayClass::Secondary);
+  for (auto const & shield : shields)
+    TEST_EQUAL(shield.m_type, RoadShieldType::Default, ());
+}
+
 UNIT_TEST(RoadShields_Smoke)
 {
   using namespace ftypes;

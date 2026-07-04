@@ -53,6 +53,8 @@ enum class RoadShieldType
   Hungary_Blue,
   Argentina_RN,
   Bolivia_Fundamental,
+  Brazil_National,
+  Brazil_State,
   Hidden,
   Count
 };
