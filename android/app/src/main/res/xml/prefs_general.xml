@@ -22,6 +22,13 @@
     android:title="@string/pref_left_button_title"
     app:singleLineTitle="false" />
   <SwitchPreferenceCompat
+    android:defaultValue="false"
+    android:key="@string/pref_long_tap_fullscreen"
+    android:summary="@string/enable_long_tap_fullscreen_description"
+    android:title="@string/enable_long_tap_fullscreen"
+    android:widgetLayout="@layout/preference_switch"
+    app:singleLineTitle="false" />
+  <SwitchPreferenceCompat
     android:key="@string/pref_3d_buildings"
     android:title="@string/pref_map_3d_buildings_title"
     android:widgetLayout="@layout/preference_switch"

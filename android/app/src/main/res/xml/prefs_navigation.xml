@@ -29,6 +29,13 @@
       <extra android:name="from" android:value="settings" />
     </intent>
   </PreferenceScreen>
+  <SwitchPreferenceCompat
+    android:defaultValue="true"
+    android:key="@string/pref_speedlimit"
+    android:title="@string/pref_speedlimit_title"
+    android:widgetLayout="@layout/preference_switch"
+    app:icon="@drawable/ic_speed"
+    app:singleLineTitle="true" />
   <Preference
     android:key="@string/pref_android_auto_support"
     android:persistent="false"
