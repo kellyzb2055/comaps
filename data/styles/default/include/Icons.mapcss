@@ -1842,13 +1842,17 @@ node|z16-[amenity=fire_station],
 {icon-image: fire_station-m.svg;}
 node|z18-[amenity=fire_station],
 {font-size: 11;}
-node|z18-[amenity=toilets],
-{icon-image: toilets-m.svg;font-size: 11;}
-node|z18-[amenity=toilets][access=private],
-node|z18-[amenity=toilets][access=customers],
-{icon-image: toilets_private-m.svg;font-size: 11;}
 node|z18-[amenity=atm],
 {icon-image: atm-m.svg;font-size: 11;}
+
+node|z18-[amenity=toilets],
+{icon-image: toilets-m.svg; font-size: 11;}
+/* Reset on z18 to display from z19- only */
+node|z18[amenity=toilets][access=customers],
+node|z18[amenity=toilets][access=private],
+{icon-image: none; text: none;}
+node|z19-[amenity=toilets][access=private],
+{icon-image: toilets_private-m.svg;}
 
 node|z18-[amenity=bench],
 {icon-image: bench.svg;}

@@ -1284,10 +1284,6 @@ shop-watches                                        # icon z18- (also has captio
 shop-wholesale                                      # icon z18- (also has caption(optional) z18-)
 === 500
 
-amenity-toilets-customers                           # icon z15- (also has caption(optional) z18-)
-amenity-toilets-private                             # icon z15- (also has caption(optional) z18-)
-=== 475
-
 amenity-shower                                      # icon z17- (also has caption(optional) z17-)
 amenity-toilets                                     # icon z15- (also has caption(optional) z18-)
 man_made-embankment                                 # pathtext z18- (also has line z16-)
@@ -1300,6 +1296,7 @@ shop                                                # icon z18- (also has captio
 amenity-bbq                                         # icon z16- (also has caption(optional) z17-)
 amenity-luggage_locker                              # icon z17- (also has caption(optional) z19-)
 amenity-public_bookcase                             # icon z18- (also has caption(optional) z18-)
+amenity-toilets-customers                           # icon z17- (also has caption(optional) z19-)
 cemetery-grave                                      # icon z17- (also has caption(optional) z17-)
 leisure-firepit                                     # icon z16- (also has caption(optional) z17-)
 leisure-outdoor_seating                             # icon z18-
@@ -1395,6 +1392,7 @@ historic-stone                                      # icon z18- (also has captio
 
 amenity-post_box                                    # icon z18-
 amenity-recycling-container                         # icon z17- (also has caption(optional) z18-)
+amenity-toilets-private                             # icon z18- (also has caption(optional) z19-)
 historic-memorial-stolperstein                      # icon z19- (also has caption(optional) z19-)
 === 200
 
@@ -2362,10 +2360,6 @@ natural-tree                                        # icon z15- (also has captio
 # shop-wholesale                                    # caption(optional) z18- (also has icon z18-)
 # === -9500
 
-# amenity-toilets-customers                         # caption(optional) z18- (also has icon z15-)
-# amenity-toilets-private                           # caption(optional) z18- (also has icon z15-)
-# === -9525
-
 # amenity-shower                                    # caption(optional) z17- (also has icon z17-)
 # amenity-toilets                                   # caption(optional) z18- (also has icon z15-)
 # office                                            # caption(optional) z18- (also has icon z18-)
@@ -2380,6 +2374,7 @@ xmas-tree                                           # icon z18-
 # amenity-bbq                                       # caption(optional) z17- (also has icon z16-)
 # amenity-luggage_locker                            # caption(optional) z19- (also has icon z17-)
 # amenity-public_bookcase                           # caption(optional) z18- (also has icon z18-)
+# amenity-toilets-customers                         # caption(optional) z19- (also has icon z17-)
 # cemetery-grave                                    # caption(optional) z17- (also has icon z17-)
 # leisure-firepit                                   # caption(optional) z17- (also has icon z16-)
 # man_made-mast                                     # caption(optional) z14- (also has icon z13-)
@@ -2430,6 +2425,7 @@ xmas-tree                                           # icon z18-
 # === -9790
 
 # amenity-recycling-container                       # caption(optional) z18- (also has icon z17-)
+# amenity-toilets-private                           # caption(optional) z19- (also has icon z18-)
 # historic-memorial-stolperstein                    # caption(optional) z19- (also has icon z19-)
 # === -9800
 

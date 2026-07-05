@@ -738,10 +738,6 @@ amenity-fast_food                                   # icon z17- (also has captio
 shop-convenience                                    # icon z17- (also has caption(optional) z18-)
 === 250
 
-amenity-toilets-customers                           # icon z17- (also has caption(optional) z17-)
-amenity-toilets-private                             # icon z17- (also has caption(optional) z17-)
-=== 225
-
 amenity-bank                                        # icon z17- (also has caption(optional) z17-)
 amenity-parcel_locker                               # icon z17- (also has caption(optional) z17-)
 amenity-police                                      # icon z17-
@@ -752,6 +748,7 @@ post_office-post_partner                            # icon z18- (also has captio
 shop-motorcycle                                     # icon z17-
 === 200
 
+amenity-toilets-customers                           # icon z18- (also has caption(optional) z18-)
 building-address                                    # caption z18-
 landuse-landfill                                    # caption z15- (also has area z15-)
 landuse-quarry                                      # caption z15- (also has area z15-)
@@ -1250,16 +1247,15 @@ entrance-emergency                                  # icon z19- (also has captio
 # shop-convenience                                  # caption(optional) z18- (also has icon z17-)
 # === -9750
 
-# amenity-toilets-customers                         # caption(optional) z17- (also has icon z17-)
-# amenity-toilets-private                           # caption(optional) z17- (also has icon z17-)
-# === -9775
-
 # amenity-bank                                      # caption(optional) z17- (also has icon z17-)
 # amenity-parcel_locker                             # caption(optional) z17- (also has icon z17-)
 # amenity-post_office                               # caption(optional) z17- (also has icon z17-)
 # amenity-toilets                                   # caption(optional) z17- (also has icon z17-)
 # post_office-post_partner                          # caption(optional) z18- (also has icon z18-)
 # === -9800
+
+# amenity-toilets-customers                         # caption(optional) z18- (also has icon z18-)
+# === -9850
 
 # leisure-park-no-access                            # caption(optional) z14- (also has icon z14-, area z10-)
 # leisure-park-private                              # caption(optional) z14- (also has icon z14-, area z10-)
