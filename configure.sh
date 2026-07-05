@@ -103,14 +103,16 @@ if [ -z "$SKIP_MAP_DOWNLOAD" ]; then
 
   mkdir -p "$MWM_PATH"
 
+  # TODO: if needed World map file version exists already then we need to update a symlink to point to it anyway
   if [ ! -f "$WORLD_PATH" ]; then
     echo "Downloading world map..."
-    # Using a fi1 maps mirror/CDN
-    wget -N "https://cdn-fi-1.comaps.app/maps/$MWM_VERSION/World.mwm" -P "$MWM_PATH" &&
+    # mapgen-fi-1 is supposed to have all historic prod map versions as well as recent test maps
+    # TODO: change to use map series folders structure; try different CDN nodes
+    wget -N "https://mapgen-fi-1.comaps.app/maps/$MWM_VERSION/World.mwm" -P "$MWM_PATH" &&
     rm -f World.mwm; ln -s "$WORLD_PATH" World.mwm
   fi
   if [ ! -f "$WORLD_PATH2" ]; then
-    wget -N "https://cdn-fi-1.comaps.app/maps/$MWM_VERSION/WorldCoasts.mwm" -P "$MWM_PATH" &&
+    wget -N "https://mapgen-fi-1.comaps.app/maps/$MWM_VERSION/WorldCoasts.mwm" -P "$MWM_PATH" &&
     rm -f WorldCoasts.mwm; ln -s "$WORLD_PATH2" WorldCoasts.mwm
   fi
 
