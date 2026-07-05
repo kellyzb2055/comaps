@@ -39,7 +39,7 @@
         "defaultMessage": "2RV Facilities|RV|4Caravan|Vanlife|5Campervan|5Motorhome|camper"
     },
     "amenity-atm|@category_atm": {
-        "defaultMessage": "money|cash|U+1F3E7|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7"
+        "defaultMessage": "money|cash|5minibank|6mini-bank|6mini bank|U+1F3E7|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7"
     },
     "@category_bank": {
         "defaultMessage": "3Bank"
@@ -84,7 +84,7 @@
         "defaultMessage": ""
     },
     "shop-cannabis|@shop": {
-        "defaultMessage": "Cannabis"
+        "defaultMessage": "Cannabis|3CBD"
     },
     "shop-cosmetics|@category_shopping|@shop": {
         "defaultMessage": "4Cosmetics|4Beauty Care|makeup|make-up"
@@ -147,7 +147,7 @@
         "defaultMessage": "4Housewares"
     },
     "shop-jewelry|@category_shopping|@shop": {
-        "defaultMessage": "4Jewelry|U+1F48D"
+        "defaultMessage": "4Jewelry|4Diamond|U+1F48D"
     },
     "shop-optician|@shop": {
         "defaultMessage": "4Optician|glasses|sunglasses|U+1F453"
@@ -186,7 +186,7 @@
         "defaultMessage": "4Sweets|4confectionery|candies|candy|U+1F36C|U+1F36D|sweetshop|tuck|Confectioner"
     },
     "shop-laundry": {
-        "defaultMessage": "4Laundry|Laundrette|laundromat"
+        "defaultMessage": "4Laundry|Laundrette|laundromat|5washateria|coin laundry"
     },
     "shop-toys|@category_children|@shop": {
         "defaultMessage": "Toy|toyshop|kids|toys|kids toys"
@@ -201,7 +201,7 @@
         "defaultMessage": "5Money Transfer"
     },
     "shop-clothes|@category_shopping|@shop": {
-        "defaultMessage": "3Clothes|U+1F45A|U+1F457|U+1F456|U+1F455|clothing|apparel|wear|fashion|garments "
+        "defaultMessage": "3Clothes|U+1F45A|U+1F457|U+1F456|U+1F455|clothing|apparel|wear|fashion|garments|attire"
     },
     "shop-caravan|@category_rv|@shop": {
         "defaultMessage": "2RV dealership|4Caravan dealership|5Motorhome dealership"
@@ -237,7 +237,7 @@
         "defaultMessage": "3Ferry|terminal|U+1F6A2|U+1F6A4|U+2693"
     },
     "amenity-taxi|@category_transport": {
-        "defaultMessage": "Taxi|3Taxi Stand|Taxi Rank|U+1F695|U+1F696"
+        "defaultMessage": "Taxi|3Taxi Stand|Taxi Rank|cab|U+1F695|U+1F696"
     },
     "amenity-townhall": {
         "defaultMessage": "3Town Hall|townhall|city hall|guildhall|village hall|4municipal hall|civic centre"
@@ -258,7 +258,7 @@
         "defaultMessage": "Painting|Artwork|U+1F3A8"
     },
     "tourism-viewpoint|@category_tourism": {
-        "defaultMessage": "4Viewpoint|Vista"
+        "defaultMessage": "4Viewpoint|Vista|4lookout|5overlook|vantage|scenic"
     },
     "tourism-information": {
         "defaultMessage": "4Tourist Information|4information|U+1F481"
@@ -309,7 +309,7 @@
         "defaultMessage": "Boundary stone"
     },
     "historic-castle|@category_tourism": {
-        "defaultMessage": "4Castle|4Palace|4Fortress|U+1F3EF|U+1F3F0|U+1F451|U+1F478|Hillfort|Kremlin|Manor house"
+        "defaultMessage": "4Castle|4Palace|4Fortress|U+1F3EF|U+1F3F0|U+1F451|U+1F478|Hillfort|Kremlin|5Manor house|Chateau"
     },
     "historic-city_gate|@category_tourism": {
         "defaultMessage": "4City gate"
@@ -324,13 +324,13 @@
         "defaultMessage": "Gallows"
     },
     "historic-memorial|@category_tourism": {
-        "defaultMessage": "4Memorial|monument|U+1F5FC|U+1F5FD|U+1F5FF"
+        "defaultMessage": "4Memorial|monument|5rememberance|U+1F5FC|U+1F5FD|U+1F5FF"
     },
     "historic-memorial-cross": {
         "defaultMessage": "Memorial cross"
     },
     "historic-memorial-plaque": {
-        "defaultMessage": "Commemorative plaque"
+        "defaultMessage": "Commemorative plaque|historic plaque"
     },
     "historic-memorial-sculpture|@category_tourism": {
         "defaultMessage": "5Sculpture"
@@ -489,7 +489,7 @@
         "defaultMessage": "Medical Laboratory|lab|laboratory"
     },
     "healthcare-physiotherapist": {
-        "defaultMessage": "Physiotherapist"
+        "defaultMessage": "7Physiotherapist"
     },
     "healthcare-alternative": {
         "defaultMessage": "alternative medicine"
@@ -618,7 +618,7 @@
         "defaultMessage": "3Toilet|toilets|4Restroom|potty|WC|water closet"
     },
     "amenity-toilets|toilets-yes|@category_toilet": {
-        "defaultMessage": "wc|4Bathroom|loo|lavatory|U+1F6BD|U+1F6BE|U+1F4A9|U+1F6BB|U+1F6B9|U+1F6BA"
+        "defaultMessage": "wc|4Bathroom|loo|lavatory|5washroom|U+1F6BD|U+1F6BE|U+1F4A9|U+1F6BB|U+1F6B9|U+1F6BA"
     },
     "amenity-university": {
         "defaultMessage": "4University|U+1F393|Uni"
@@ -756,7 +756,7 @@
         "defaultMessage": "DoNotMatchThisType_OneLanguageDefinitionIsEnoughHere"
     },
     "sport-american_football": {
-        "defaultMessage": "American Football"
+        "defaultMessage": "American Football|8gridiron football"
     },
     "sport-archery": {
         "defaultMessage": "Archery"
@@ -765,7 +765,7 @@
         "defaultMessage": "Athletics"
     },
     "sport-australian_football": {
-        "defaultMessage": "Australian Football"
+        "defaultMessage": "Australian Football|footy"
     },
     "sport-baseball": {
         "defaultMessage": "Baseball"
@@ -933,10 +933,10 @@
         "defaultMessage": "Telecom Company|6Telecommunication office"
     },
     "craft-beekeeper": {
-        "defaultMessage": "Beekeeper"
+        "defaultMessage": "Beekeeper|5apiarist"
     },
     "craft-blacksmith": {
-        "defaultMessage": "Blacksmith"
+        "defaultMessage": "Blacksmith|ironsmith"
     },
     "craft-brewery": {
         "defaultMessage": "Craft brewery|4Brewery|brew house|beer|beer bar|craft beer"
@@ -945,7 +945,7 @@
         "defaultMessage": "4Caterer"
     },
     "craft-carpenter": {
-        "defaultMessage": "4Carpenter"
+        "defaultMessage": "4Carpenter|joiner"
     },
     "craft-confectionery": {
         "defaultMessage": "Confectionery|Confectioner"
@@ -987,10 +987,10 @@
         "defaultMessage": "4Plumber"
     },
     "craft-sawmill": {
-        "defaultMessage": "Sawmill"
+        "defaultMessage": "Sawmill|8lumber mill"
     },
     "craft-shoemaker": {
-        "defaultMessage": "4Shoe Repair|shoe maker"
+        "defaultMessage": "4Shoe Repair|shoe maker|cobbler"
     },
     "craft-winery": {
         "defaultMessage": "Winery|Wine"
@@ -999,7 +999,7 @@
         "defaultMessage": "4Tailor|clothes alteration|alterations"
     },
     "area:highway-footway|area:highway-pedestrian|area:highway-steps|place-square": {
-        "defaultMessage": "Square"
+        "defaultMessage": "Square|plaza|piazza"
     },
     "place-sea": {
         "defaultMessage": "Sea|U+1F30A"
@@ -1071,7 +1071,7 @@
         "defaultMessage": "4Veterinary Doctor|3Veterinary|vet|veterinarian"
     },
     "amenity-animal_shelter": {
-        "defaultMessage": "6Animal Shelter"
+        "defaultMessage": "6Animal Shelter|Pound"
     },
     "amenity-animal_boarding": {
         "defaultMessage": "4Animal Boarding|3Pet Boarding|pet hotel"
@@ -1098,7 +1098,7 @@
         "defaultMessage": "4Bicycle Parking|4Bike Parking"
     },
     "amenity-waste_basket": {
-        "defaultMessage": "4Trash Bin|4litter bin|5waste basket|bin"
+        "defaultMessage": "4Trash Bin|4litter bin|5waste basket|bin|5dustbin"
     },
     "emergency-phone": {
         "defaultMessage": "4Emergency Phone"
@@ -1113,13 +1113,13 @@
         "defaultMessage": "3Tyre Repair|tyres|4puncture repair|tyre puncture repair|flat tyre repair|tyre replacement"
     },
     "shop-chemist|@shop": {
-        "defaultMessage": "4Chemist|Pharmacist"
+        "defaultMessage": "4Chemist|6Pharmacist|druggist"
     },
     "shop-pet|@shop": {
         "defaultMessage": "3Pet"
     },
     "tourism-zoo|@category_tourism|@category_children": {
-        "defaultMessage": "2Zoo"
+        "defaultMessage": "2Zoo|menagerie"
     },
     "attraction-animal": {
         "defaultMessage": "Animal Enclosure"
@@ -1185,13 +1185,13 @@
         "defaultMessage": "Fuel Dispenser|Gas Pump"
     },
     "building-garage": {
-        "defaultMessage": "Garage"
+        "defaultMessage": "Garage|car porch"
     },
     "highway-rest_area|highway-services": {
         "defaultMessage": "4Rest area|4Service area|station|rest stop"
     },
     "man_made-chimney": {
-        "defaultMessage": "Chimney"
+        "defaultMessage": "Chimney|smokestack"
     },
     "man_made-crane": {
         "defaultMessage": "Crane"
@@ -1203,7 +1203,7 @@
         "defaultMessage": "4Bookmaker"
     },
     "shop-seafood|@category_food|@shop": {
-        "defaultMessage": "4Fishmonger|4Seafood|fish market|fish|shellfish|marine"
+        "defaultMessage": "4Fishmonger|4Seafood|fish market|fish|shellfish|marine|blue food"
     },
     "shop-second_hand|@category_shopping|@shop|@category_secondhand": {
         "defaultMessage": "Thrift|4Thrift store|Flea market"
@@ -1248,7 +1248,7 @@
         "defaultMessage": "4Toll Booth"
     },
     "leisure-water_park|@category_tourism|@category_children": {
-        "defaultMessage": "Water Park|3aqua park"
+        "defaultMessage": "Water Park|3aqua park|6waterpark"
     },
     "man_made-water_tower": {
         "defaultMessage": "Water Tower"
@@ -1269,7 +1269,7 @@
         "defaultMessage": "Lock Gate"
     },
     "amenity-public_bookcase": {
-        "defaultMessage": "4Book Exchange|Book swap|book|books|public bookcase|bookcase|free library|street library|sidewalk library"
+        "defaultMessage": "4Book Exchange|Book swap|book|books|public bookcase|bookcase|free library|street library|sidewalk library|little free library"
     },
     "sport-climbing": {
         "defaultMessage": "4Climbing Centre|climbing"
@@ -1287,7 +1287,7 @@
         "defaultMessage": "Resort"
     },
     "amenity-biergarten|@category_eat|@category_nightlife": {
-        "defaultMessage": "5Biergarten"
+        "defaultMessage": "5Biergarten|beer garden"
     },
     "amenity-driving_school": {
         "defaultMessage": "4Driving school"
@@ -1296,7 +1296,7 @@
         "defaultMessage": "4Sailing school|4Boating school"
     },
     "amenity-flight_school": {
-        "defaultMessage": "5Flight school|Flying school"
+        "defaultMessage": "5Flight school|Flying school|5Aviation school"
     },
     "amenity-prep_school": {
         "defaultMessage": "3Tutorial school|Prep school|Test prep center|Cram school"
@@ -1308,7 +1308,7 @@
         "defaultMessage": "4Language school"
     },
     "amenity-ice_cream": {
-        "defaultMessage": "3Ice cream|Gelato"
+        "defaultMessage": "3Ice cream|Gelato|5cream ice"
     },
     "amenity-internet_cafe": {
         "defaultMessage": "3Internet Cafe|5Cybercafé"
@@ -1326,7 +1326,7 @@
         "defaultMessage": "4Nursing Home"
     },
     "amenity-payment_terminal": {
-        "defaultMessage": "3Payment Terminal"
+        "defaultMessage": "3Payment Terminal|card reader"
     },
     "amenity-payment_centre": {
         "defaultMessage": "3Payment Centre"
@@ -1422,7 +1422,7 @@
         "defaultMessage": "5National Park"
     },
     "leisure-nature_reserve|@category_tourism": {
-        "defaultMessage": "4Nature reserve"
+        "defaultMessage": "4Nature reserve|6wildlife reserve"
     },
     "natural-cape": {
         "defaultMessage": "Cape"
@@ -1434,7 +1434,7 @@
         "defaultMessage": "Glacier"
     },
     "highway-ford": {
-        "defaultMessage": "Ford"
+        "defaultMessage": "Ford|water crossing"
     },
     "leisure-marina": {
         "defaultMessage": "3Marina"
@@ -1455,10 +1455,10 @@
         "defaultMessage": "Coffee Retailer|Coffee"
     },
     "shop-fabric|@shop": {
-        "defaultMessage": "Fabric"
+        "defaultMessage": "Fabric|5textile"
     },
     "shop-money_lender": {
-        "defaultMessage": "5Money lender"
+        "defaultMessage": "5Money lender|4loan shark"
     },
     "shop-music|@shop": {
         "defaultMessage": "Record|4vinyl|Music|6Record store"
@@ -1539,7 +1539,7 @@
         "defaultMessage": "Track"
     },
     "leisure-bandstand": {
-        "defaultMessage": "5Bandstand"
+        "defaultMessage": "5Bandstand|music pavilion"
     },
     "amenity-stage": {
         "defaultMessage": "Stage"
@@ -1581,7 +1581,7 @@
         "defaultMessage": "Sports hall"
     },
     "amenity-arts_centre|@category_tourism": {
-        "defaultMessage": "Arts Center"
+        "defaultMessage": "Arts Center|6cultural center"
     },
     "amenity-prison": {
         "defaultMessage": "prison|jail|penitentiary|detention centre|detention center"
@@ -1593,7 +1593,7 @@
         "defaultMessage": "9Bathroom Furnishings"
     },
     "shop-bed|@shop": {
-        "defaultMessage": "3Bed Shop"
+        "defaultMessage": "3Bed Shop|Mattress"
     },
     "shop-boutique|@shop": {
         "defaultMessage": "4Boutique"
@@ -1611,7 +1611,7 @@
         "defaultMessage": "4Pet Grooming|groomer|dog grooming"
     },
     "shop-hifi|@shop": {
-        "defaultMessage": "4HiFi Audio Shop"
+        "defaultMessage": "4HiFi Audio Shop|5hi-fi"
     },
     "amenity-conference_centre": {
         "defaultMessage": "5Conference Center"
@@ -1620,7 +1620,7 @@
         "defaultMessage": "4Herbalist"
     },
     "shop-appliance|@shop": {
-        "defaultMessage": "4Appliance Shop|Kitchen appliances|Kitchen gallery"
+        "defaultMessage": "4Appliance Shop|Kitchen appliances|Kitchen gallery|household appliance"
     },
     "shop-agrarian|@shop": {
         "defaultMessage": "4Agricultural Shop|Feed store|Feed and seed|Farm supply"
@@ -1632,10 +1632,10 @@
         "defaultMessage": "Waste Transfer Station"
     },
     "shop-carpet|@shop": {
-        "defaultMessage": "4Carpet Shop"
+        "defaultMessage": "4Carpet Shop|3rugs"
     },
     "shop-craft|@shop": {
-        "defaultMessage": "3Craft"
+        "defaultMessage": "3Craft|6handicraft"
     },
     "shop-pasta|@shop": {
         "defaultMessage": "Pasta"
@@ -1662,10 +1662,10 @@
         "defaultMessage": "Breakfast"
     },
     "cuisine-burger|@fastfood": {
-        "defaultMessage": "Burger"
+        "defaultMessage": "Burger|4hamburger"
     },
     "cuisine-bubble_tea": {
-        "defaultMessage": "Bubble Tea|boba tea"
+        "defaultMessage": "Bubble Tea|4boba tea|pearl milk tea"
     },
     "cuisine-cake": {
         "defaultMessage": "Cake|bakery"
@@ -1680,7 +1680,7 @@
         "defaultMessage": "Diner"
     },
     "cuisine-donut": {
-        "defaultMessage": "Donuts"
+        "defaultMessage": "5Donuts"
     },
     "cuisine-fish_and_chips": {
         "defaultMessage": "Fish and Chips"
@@ -1692,10 +1692,10 @@
         "defaultMessage": "Grill"
     },
     "cuisine-hotdog|@fastfood": {
-        "defaultMessage": "Hotdog|hot dog"
+        "defaultMessage": "Hotdog|hot dog|glizzy"
     },
     "cuisine-ice_cream": {
-        "defaultMessage": "Ice Cream|gelato"
+        "defaultMessage": "Ice Cream|gelato|5cream ice"
     },
     "cuisine-kebab|@fastfood": {
         "defaultMessage": "Kebab"
@@ -1704,7 +1704,7 @@
         "defaultMessage": "Noodles"
     },
     "cuisine-pancake|cuisine-crepe": {
-        "defaultMessage": "Pancake|pancakes|crepes|crepe"
+        "defaultMessage": "Pancake|pancakes|crepes|crepe|hot cake|flapjack"
     },
     "cuisine-pasta": {
         "defaultMessage": "Pasta"
@@ -1716,19 +1716,19 @@
         "defaultMessage": "Ramen"
     },
     "cuisine-sandwich|@fastfood": {
-        "defaultMessage": "Sandwich"
+        "defaultMessage": "Sandwich|sub sandwich"
     },
     "cuisine-sausage|@fastfood": {
         "defaultMessage": "Sausage"
     },
     "cuisine-seafood|cuisine-fish": {
-        "defaultMessage": "Seafood|fish"
+        "defaultMessage": "Seafood|fish|blue food"
     },
     "cuisine-soba": {
         "defaultMessage": "Soba"
     },
     "cuisine-steak_house": {
-        "defaultMessage": "Steak House"
+        "defaultMessage": "Steak House|7steakhouse|chophouse"
     },
     "cuisine-sushi": {
         "defaultMessage": "Sushi"
