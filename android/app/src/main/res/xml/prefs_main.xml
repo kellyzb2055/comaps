@@ -18,6 +18,13 @@
     android:summary="@string/prefs_group_general_summary" />
 
   <PreferenceScreen
+    android:key="pref_screen_map_appearance"
+    android:title="@string/prefs_group_map_appearance"
+    app:fragment="app.organicmaps.settings.MapAppearanceSettingsFragment"
+    app:icon="@drawable/ic_show_on_map"
+    android:summary="@string/prefs_group_map_appearance_summary" />
+
+  <PreferenceScreen
     android:key="pref_screen_nav"
     android:title="@string/prefs_group_route"
     app:fragment="app.organicmaps.settings.NavigationSettingsFragment"
