@@ -614,19 +614,39 @@ UNIT_TEST(Russia_Moscow_KeepPrimary)
                                    FromLatLon(55.724623, 37.62588), 1921.88);
 }
 
-// https://github.com/organicmaps/organicmaps/issues/1727
-// https://github.com/organicmaps/organicmaps/issues/2020
-// https://github.com/organicmaps/organicmaps/issues/2057
-UNIT_TEST(DontUseLinksWhenRidingOnMotorway)
+UNIT_TEST(DontUseLinksWhenRidingOnMotorway1)
 {
+  // https://github.com/organicmaps/organicmaps/issues/1727
   CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car), FromLatLon(32.16881, 34.90656), {0., 0.},
                                    FromLatLon(32.1588823, 34.9330855), 2847.33);
+}
 
+UNIT_TEST(DontUseLinksWhenRidingOnMotorway2)
+{
+  // https://github.com/organicmaps/organicmaps/issues/2020
   CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car), FromLatLon(43.587808, 1.495385), {0., 0.},
                                    FromLatLon(43.600145, 1.490489), 1457.16);
+}
 
+UNIT_TEST(DontUseLinksWhenRidingOnMotorway3)
+{
+  // https://github.com/organicmaps/organicmaps/issues/2057
   CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car), FromLatLon(34.0175371, -84.3272339),
-                                   {0., 0.}, FromLatLon(34.0298011, -84.3182477), 1609.76);
+                                   {0., 0.}, FromLatLon(34.0298011, -84.3182477), 1609.9);
+}
+
+UNIT_TEST(DontUseLinksWhenRidingOnMotorway4)
+{
+  // https://codeberg.org/comaps/comaps/issues/3254
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car), FromLatLon(34.9382176, -92.0102853),
+                                   {0., 0.}, FromLatLon(34.9391724, -92.0087555), 245.19);
+}
+
+UNIT_TEST(DontUseLinksWhenRidingOnMotorway5)
+{
+  // https://codeberg.org/comaps/comaps/issues/4088
+  CalculateRouteAndTestRouteLength(GetVehicleComponents(VehicleType::Car), FromLatLon(61.5028877, 23.8642667),
+                                   {0., 0.}, FromLatLon(61.5036863, 23.8574754), 375.81);
 }
 
 UNIT_TEST(Russia_UseDonMotorway)
