@@ -208,7 +208,6 @@
     <string name="precise_location_is_disabled_long_text">Biex tassigura navigazzjoni preċiża, ixgħel Precise Location fis-settings</string>
     <string name="off">Itfi</string>
     <string name="pref_map_3d_buildings_title">Bini 3D</string>
-    <string name="prefs_group_general">Settings ġenerali</string>
     <string name="on">Ixgħel</string>
     <string name="pref_tts_street_names_title">Ħabbar l-ismijiet tat-toroq</string>
     <string name="downloader_status_maps">Mappep</string>
@@ -547,7 +546,7 @@
         <item quantity="many">Instabu %d fajls. Tista ’tarahom wara l-konverżjoni.</item>
         <item quantity="other">Instabu %d fajls. Tista ’tarahom wara l-konverżjoni.</item>
     </plurals>
-    <string name="privacy">Privatezza</string>
+    <string name="prefs_group_privacy">Privatezza</string>
     <string name="power_managment_setting_manual_max">Dejjem</string>
     <string name="privacy_policy">Politika dwar il-privatezza</string>
     <string name="power_managment_description">Ipprova naqqas l-użu ta\' enerġija b\'detriment ta’ xi funzjonalita`</string>

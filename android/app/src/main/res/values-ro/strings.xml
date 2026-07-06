@@ -181,13 +181,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Lungime</string>
     <string name="share_my_location">Trimite poziția mea</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Opțiuni generale</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informații</string>
     <string name="prefs_group_route">Navigare</string>
     <string name="pref_zoom_title">Butoane zoom</string>
     <string name="pref_zoom_summary">Arată pe hartă</string>
+    <string name="prefs_group_advanced">Avansate</string>
+    <string name="download_resources_custom_url_title">Server hărți custom</string>
+    <string name="download_resources_custom_url_message">Înlocuiți serverul prestabilit folosit pentru descărcarea hărților. Lăsați liber pentru serverul prestabilit.</string>
+    <string name="download_resources_custom_url_summary_none">Nesetat</string>
+    <string name="download_resources_custom_url_error_scheme">Introduceți o adresă completă care începe cu https:// și se termină cu /</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Mod nocturn</string>
     <!-- Generic «Off» string -->
@@ -584,7 +587,7 @@
         <item quantity="other">%d trasee</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Confidențialitate</string>
+    <string name="prefs_group_privacy">Confidențialitate</string>
     <string name="privacy_policy">Confidențialitate</string>
     <string name="terms_of_use">Termeni de utilizare</string>
     <string name="button_layer_traffic">Trafic</string>
@@ -888,11 +891,6 @@
     <string name="navigation_start_tts_disabled_message">Instrucțiuni vocale dezactivate: Nu este disponibil niciun sistem TTS</string>
     <string name="charge_socket_count">Număr</string>
     <string name="unknown_count">Necunoscut</string>
-    <string name="download_resources_custom_url_error_scheme">Introduceți o adresă completă care începe cu https:// și se termină cu /</string>
-    <string name="download_resources_custom_url_summary_none">Nesetat</string>
-    <string name="download_resources_custom_url_title">Server hărți custom</string>
-    <string name="download_resources_custom_url_message">Înlocuiți serverul prestabilit folosit pentru descărcarea hărților. Lăsați liber pentru serverul prestabilit.</string>
-    <string name="advanced">Avansate</string>
     <string name="pref_speedlimit_title">Afișează limita de viteză</string>
     <string name="rooms">%s camere</string>
     <string name="downloader_check_updates_button">Caută actualizări</string>

@@ -180,7 +180,7 @@
         <item quantity="other">Njia %d</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Faragha</string>
+    <string name="prefs_group_privacy">Faragha</string>
     <string name="privacy_policy">Sera ya faragha</string>
     <string name="terms_of_use">Masharti ya matumizi</string>
     <string name="button_layer_traffic">Trafiki</string>

@@ -2,6 +2,26 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto">
 
+  <ListPreference
+    android:entries="@array/measument_units"
+    android:entryValues="@array/measument_units_values"
+    android:key="@string/pref_munits"
+    android:summary="%s"
+    android:title="@string/measurement_units"
+    app:icon="@drawable/ic_straighten"
+    app:singleLineTitle="false" />
+
+  <PreferenceScreen
+      android:key="@string/prefs_routing"
+      android:title="@string/driving_options_title"
+      app:icon="@drawable/ic_instant_mix">
+    <intent
+        android:targetClass="app.organicmaps.settings.DrivingOptionsActivity"
+        android:targetPackage="@string/app_id">
+      <extra android:name="from" android:value="settings" />
+    </intent>
+  </PreferenceScreen>
+
   <SwitchPreferenceCompat
     android:key="@string/pref_3d"
     android:title="@string/pref_map_3d_title"
@@ -19,16 +39,6 @@
     android:title="@string/pref_tts_enable_title"
     app:icon="@drawable/ic_record_voice_over"
     app:singleLineTitle="false"/>
-  <PreferenceScreen
-    android:key="@string/prefs_routing"
-    android:title="@string/driving_options_title"
-    app:icon="@drawable/ic_instant_mix">
-    <intent
-      android:targetClass="app.organicmaps.settings.DrivingOptionsActivity"
-      android:targetPackage="@string/app_id">
-      <extra android:name="from" android:value="settings" />
-    </intent>
-  </PreferenceScreen>
   <SwitchPreferenceCompat
     android:defaultValue="true"
     android:key="@string/pref_speedlimit"

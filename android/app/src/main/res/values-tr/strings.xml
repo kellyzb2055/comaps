@@ -187,13 +187,13 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Uzunluk</string>
     <string name="share_my_location">Konumumu Paylaş</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Genel ayarlar</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Bilgi</string>
     <string name="prefs_group_route">Navigasyon</string>
     <string name="pref_zoom_title">Yakınlaştırma düğmeleri</string>
     <string name="pref_zoom_summary">Haritada göster</string>
+    <string name="download_resources_custom_url_title">Özel Harita Sunucusu</string>
+    <string name="download_resources_custom_url_message">Harita indirmek için kullanılan varsayılan sunucu yerine farklı sunucu kullanabilirsiniz. CoMaps varsayılan sunucusunu kullanmak için boş bırakın.</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Gece Modu</string>
     <!-- Generic «Off» string -->
@@ -587,7 +587,7 @@
         <item quantity="other">%d rota</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Gizlilik</string>
+    <string name="prefs_group_privacy">Gizlilik</string>
     <string name="privacy_policy">Gizlilik politikası</string>
     <string name="terms_of_use">Kullanım koşulları</string>
     <string name="button_layer_traffic">Trafik</string>
@@ -898,6 +898,4 @@
     <string name="pref_alt_map_lang_handling_ignore_alternatives">Alternatif dil kullanma</string>
     <string name="pref_alt_map_lang_handling_system_order">Sistem dili sırasına göre kullan</string>
     <string name="pref_alt_map_lang_handling_local_only">Sadece anadil olduğu yerlerde tercih et</string>
-    <string name="download_resources_custom_url_title">Özel Harita Sunucusu</string>
-    <string name="download_resources_custom_url_message">Harita indirmek için kullanılan varsayılan sunucu yerine farklı sunucu kullanabilirsiniz. CoMaps varsayılan sunucusunu kullanmak için boş bırakın.</string>
 </resources>

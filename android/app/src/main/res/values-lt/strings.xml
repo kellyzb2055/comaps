@@ -179,13 +179,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Ilgis</string>
     <string name="share_my_location">Bendrinti mano vietą</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Bendrieji nustatymai</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informacija</string>
     <string name="prefs_group_route">Navigacija</string>
     <string name="pref_zoom_title">Mastelio mygtukai</string>
     <string name="pref_zoom_summary">Rodyti žemėlapyje</string>
+    <string name="prefs_group_advanced">Kita</string>
+    <string name="download_resources_custom_url_title">Pasirinktinis žemėlapių serveris</string>
+    <string name="download_resources_custom_url_message">Žemėlapiams parsisiųsti galite nurodyti kitą, nei numatytasis, serverį. Palikite lauką tuščią, jei norite naudoti numatytąjį „CoMaps“ serverį.</string>
+    <string name="download_resources_custom_url_summary_none">Nenurodytas</string>
+    <string name="download_resources_custom_url_error_scheme">Įveskite URL adresą, prasidedantį „http://“ arba „https://“</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Nakties veiksena</string>
     <!-- Generic «Off» string -->
@@ -563,7 +566,7 @@
     <string name="profile">„OpenStreetMap“ profilis</string>
     <string name="restore">Atkurti</string>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privatumas</string>
+    <string name="prefs_group_privacy">Privatumas</string>
     <string name="privacy_policy">Privatumo politika</string>
     <string name="terms_of_use">Naudojimo sąlygos</string>
     <string name="button_layer_traffic">Eismas</string>
@@ -887,11 +890,6 @@
     <string name="prefs_speed_cameras_information">Įspėjimai apie greičio matuoklius negalimi šalyse, kuriose tai draudžiama įstatymu.</string>
     <string name="navigation_start_tts_message">"Pradedama navigacija, balso instrukcijų kalba: "</string>
     <string name="navigation_start_tts_disabled_message">Balso instrukcijos išjungtos: šnekos sintezės sistema neprieinama</string>
-    <string name="advanced">Kita</string>
-    <string name="download_resources_custom_url_title">Pasirinktinis žemėlapių serveris</string>
-    <string name="download_resources_custom_url_message">Žemėlapiams parsisiųsti galite nurodyti kitą, nei numatytasis, serverį. Palikite lauką tuščią, jei norite naudoti numatytąjį „CoMaps“ serverį.</string>
-    <string name="download_resources_custom_url_summary_none">Nenurodytas</string>
-    <string name="download_resources_custom_url_error_scheme">Įveskite URL adresą, prasidedantį „http://“ arba „https://“</string>
     <string name="pref_maplanguage_local">Vietos kalba</string>
     <string name="location_privacy_info">Programos vietovės duomenis gauna iš jūsų įrenginio operacinės sistemos vietovės tarnybos, kuri šiuos duomenis gali taip pat bendrinti su „Google“ ir/ar jūsų įrenginio gamintoju. Jei norite to išvengti, naudokitės privatumą saugančia „Android“ operacinės sistemos atmaina.</string>
     <string name="location_privacy">Vietovės duomenų privatumas</string>

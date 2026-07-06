@@ -12,7 +12,6 @@ import app.organicmaps.R;
 import app.organicmaps.sdk.util.Config;
 import app.organicmaps.sdk.util.NetworkPolicy;
 import app.organicmaps.sdk.util.PowerManagment;
-import app.organicmaps.util.ThemeSwitcher;
 import app.organicmaps.util.Utils;
 
 @Keep
@@ -28,30 +27,10 @@ public class PowerSettingsFragment extends BaseXmlSettingsFragment
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
   {
     super.onViewCreated(view, savedInstanceState);
-    initMapStylePrefsCallbacks();
     initUseMobileDataPrefsCallbacks();
     initPowerManagementPrefsCallbacks();
     initScreenSleepEnabledPrefsCallbacks();
     initShowOnLockScreenPrefsCallbacks();
-  }
-
-  private void initMapStylePrefsCallbacks()
-  {
-    final ListPreference pref = getPreference(getString(R.string.pref_map_style));
-    pref.setEntryValues(new CharSequence[] {Config.UiTheme.DEFAULT, Config.UiTheme.NIGHT, Config.UiTheme.AUTO,
-                                            Config.UiTheme.NAV_AUTO});
-    pref.setValue(Config.UiTheme.getUiThemeSettings());
-    pref.setSummary(pref.getEntry());
-    pref.setOnPreferenceChangeListener((preference, newValue) -> {
-      final String themeName = (String) newValue;
-      if (!Config.UiTheme.setUiThemeSettings(themeName))
-        return true;
-      ThemeSwitcher.INSTANCE.restart(false);
-      final ThemeMode mode = ThemeMode.getInstance(themeName);
-      final CharSequence summary = pref.getEntries()[mode.ordinal()];
-      pref.setSummary(summary);
-      return true;
-    });
   }
 
   private void initUseMobileDataPrefsCallbacks()
@@ -114,32 +93,5 @@ public class PowerSettingsFragment extends BaseXmlSettingsFragment
       }
       return true;
     });
-  }
-
-  enum ThemeMode
-  {
-    DEFAULT(Config.UiTheme.DEFAULT),
-    NIGHT(Config.UiTheme.NIGHT),
-    AUTO(Config.UiTheme.AUTO),
-    NAV_AUTO(Config.UiTheme.NAV_AUTO);
-
-    @NonNull
-    private final String mMode;
-
-    ThemeMode(@NonNull String mode)
-    {
-      mMode = mode;
-    }
-
-    @NonNull
-    public static ThemeMode getInstance(@NonNull String src)
-    {
-      for (ThemeMode each : values())
-      {
-        if (each.mMode.equals(src))
-          return each;
-      }
-      return AUTO;
-    }
   }
 }

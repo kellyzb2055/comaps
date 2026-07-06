@@ -559,7 +559,7 @@
         <item quantity="other">%d 추적</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">개인정보 보호</string>
+    <string name="prefs_group_privacy">개인정보 보호</string>
     <string name="privacy_policy">개인정보 보호 방침</string>
     <string name="terms_of_use">사용 약관</string>
     <string name="button_layer_traffic">트래픽</string>

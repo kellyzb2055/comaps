@@ -4,14 +4,6 @@
 
   <SwitchPreferenceCompat
     android:defaultValue="true"
-    android:key="@string/pref_play_services"
-    android:summary="@string/pref_use_google_play"
-    android:title="@string/google_play_services"
-    android:widgetLayout="@layout/preference_switch"
-    app:icon="@drawable/ic_wifi_find"
-    app:singleLineTitle="false" />
-  <SwitchPreferenceCompat
-    android:defaultValue="true"
     android:key="@string/pref_search_history"
     android:title="@string/search_history_title"
     android:widgetLayout="@layout/preference_switch"
@@ -24,5 +16,13 @@
     android:summary="@string/pref_keyboard_typing_history_summary"
     android:widgetLayout="@layout/preference_switch"
     app:icon="@drawable/ic_keyboard" />
+  <SwitchPreferenceCompat
+    android:defaultValue="true"
+    android:key="@string/pref_play_services"
+    android:summary="@string/pref_use_google_play"
+    android:title="@string/google_play_services"
+    android:widgetLayout="@layout/preference_switch"
+    app:icon="@drawable/ic_wifi_find"
+    app:singleLineTitle="false" />
 
 </androidx.preference.PreferenceScreen>

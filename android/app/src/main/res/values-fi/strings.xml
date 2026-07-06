@@ -186,13 +186,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Pituus</string>
     <string name="share_my_location">Jaa sijaintini</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Yleiset asetukset</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Tietoja</string>
     <string name="prefs_group_route">Navigointi</string>
     <string name="pref_zoom_title">Zoomauspainikkeet</string>
     <string name="pref_zoom_summary">Näytä kartalla</string>
+    <string name="prefs_group_advanced">Lisäasetukset</string>
+    <string name="download_resources_custom_url_title">Mukautettu karttapalvelin</string>
+    <string name="download_resources_custom_url_message">Ohita karttalatausten oletuspalvelin. Jätä tyhjäksi käyttääksesi CoMapsin oletuspalvelinta.</string>
+    <string name="download_resources_custom_url_summary_none">Ei asetettu</string>
+    <string name="download_resources_custom_url_error_scheme">Anna URL-osoite, joka alkaa http:// tai https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Yötila</string>
     <!-- Generic «Off» string -->
@@ -588,7 +591,7 @@
         <item quantity="other">%d reittiä</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Yksityisyys</string>
+    <string name="prefs_group_privacy">Yksityisyys</string>
     <string name="privacy_policy">Yksityisyyskäytäntö</string>
     <string name="terms_of_use">Käyttöehdot</string>
     <string name="button_layer_traffic">Liikenne</string>
@@ -901,11 +904,6 @@
     <string name="prefs_speed_cameras_information">Nopeuskameravaroitukset on poistettu käytöstä niissä maissa, missä varoitukset on kielletty lain nojalla.</string>
     <string name="power_management">Virranhallinta</string>
     <string name="navigation_start_tts_message">"Käynnistetään navigointi, ääniohjeistuksen kieli: "</string>
-    <string name="advanced">Lisäasetukset</string>
-    <string name="download_resources_custom_url_title">Mukautettu karttapalvelin</string>
-    <string name="download_resources_custom_url_summary_none">Ei asetettu</string>
-    <string name="download_resources_custom_url_error_scheme">Anna URL-osoite, joka alkaa http:// tai https://</string>
-    <string name="download_resources_custom_url_message">Ohita karttalatausten oletuspalvelin. Jätä tyhjäksi käyttääksesi CoMapsin oletuspalvelinta.</string>
     <string name="navigation_start_tts_disabled_message">Ääniohjeistukset pois käytöstä: TTS-moottori ei saatavilla</string>
     <string name="charge_socket_schuko">EU</string>
     <string name="pref_speedlimit_title">Näytä nopeusrajoitukset</string>

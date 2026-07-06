@@ -187,13 +187,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Longitud</string>
     <string name="share_my_location">Compartir mi ubicación</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Ajustes generales</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Información</string>
     <string name="prefs_group_route">Navegación</string>
     <string name="pref_zoom_title">Botones de zoom</string>
     <string name="pref_zoom_summary">Ver en el mapa</string>
+    <string name="prefs_group_advanced">Opciones avanzadas</string>
+    <string name="download_resources_custom_url_title">Servidor de mapas personalizado</string>
+    <string name="download_resources_custom_url_message">Sobreescribe el servidor de mapas por defecto. Déjalo en blanco para usar el servidor de CoMaps por defecto.</string>
+    <string name="download_resources_custom_url_summary_none">No establecido</string>
+    <string name="download_resources_custom_url_error_scheme">Por favor introduce un URL empezando con http:// o https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Modo nocturno</string>
     <!-- Generic «Off» string -->
@@ -592,7 +595,7 @@
         <item quantity="other">%d trazas</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privacidad</string>
+    <string name="prefs_group_privacy">Privacidad</string>
     <string name="privacy_policy">Política de privacidad</string>
     <string name="terms_of_use">Condiciones de uso</string>
     <string name="button_layer_traffic">Tráfico</string>
@@ -912,11 +915,6 @@
     <string name="prefs_speed_cameras_information">Las advertencias de radares de velocidad están deshabilitadas en países donde las alertas están prohibidas por ley.</string>
     <string name="navigation_start_tts_message">"Iniciando Navegación, idioma de las instrucciones por voz: "</string>
     <string name="navigation_start_tts_disabled_message">Instrucciones por voz deshabilitadas: Motor de TTS no disponible</string>
-    <string name="advanced">Opciones avanzadas</string>
-    <string name="download_resources_custom_url_title">Servidor de mapas personalizado</string>
-    <string name="download_resources_custom_url_message">Sobreescribe el servidor de mapas por defecto. Déjalo en blanco para usar el servidor de CoMaps por defecto.</string>
-    <string name="download_resources_custom_url_summary_none">No establecido</string>
-    <string name="download_resources_custom_url_error_scheme">Por favor introduce un URL empezando con http:// o https://</string>
     <string name="pref_maplanguage_local">Idioma local</string>
     <string name="rooms">%s habitaciones</string>
     <string name="mb_downloaded">%1$d MB / %2$d MB</string>
@@ -972,7 +970,6 @@
     <string name="capacity_charging">Plazas con cargadores: %s</string>
     <string name="capacity_charging_yes">Dispone de plazas con cargadores</string>
     <string name="capacity_charging_no">No hay plazas con cargadores</string>
-    <string name="prefs_group_general_summary">Unidades, idioma, almacenamiento</string>
     <string name="prefs_group_route_summary">Instrucciones de voz, opciones de la ruta</string>
     <string name="prefs_group_privacy_summary">Servicios de Google Play, historial de búsqueda</string>
     <string name="prefs_group_power_summary">Estilo del mapa, tiempo de espera de pantalla</string>

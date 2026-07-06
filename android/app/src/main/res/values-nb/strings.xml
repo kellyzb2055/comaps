@@ -187,13 +187,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Lengde</string>
     <string name="share_my_location">Del posisjonen min</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Generelle instillinger</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informasjon</string>
     <string name="prefs_group_route">Navigasjon</string>
     <string name="pref_zoom_title">Zoom-knapper</string>
     <string name="pref_zoom_summary">Vis på skjermen</string>
+    <string name="prefs_group_advanced">Avansert</string>
+    <string name="download_resources_custom_url_title">Tilpasset kartserver</string>
+    <string name="download_resources_custom_url_message">Overstyr standardserveren som brukes til nedlasting av kart. La det stå tomt for å bruke CoMaps standardserver.</string>
+    <string name="download_resources_custom_url_summary_none">Ikke angitt</string>
+    <string name="download_resources_custom_url_error_scheme">Angi en nettadresse som starter med http:// eller https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Nattmodus</string>
     <!-- Generic «Off» string -->
@@ -587,7 +590,7 @@
         <item quantity="other">%d spor</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Personvern</string>
+    <string name="prefs_group_privacy">Personvern</string>
     <string name="privacy_policy">Personvernpraksis</string>
     <string name="terms_of_use">Bruksbetingelser</string>
     <string name="button_layer_traffic">Trafikk</string>
@@ -896,11 +899,6 @@
     <string name="place_page_too_old_to_edit">OpenStreetMap-redigering er deaktivert fordi kartdataene er for gamle.</string>
     <string name="osm_note_hint">Alternativt, kan du legge til et notat i OpenStreetMap, slik at noen andre her kan legge til eller korrigere et sted.</string>
     <string name="osm_note_toast">Notatet vil bli sendt til OpenStreetMap</string>
-    <string name="advanced">Avansert</string>
-    <string name="download_resources_custom_url_summary_none">Ikke angitt</string>
-    <string name="download_resources_custom_url_error_scheme">Angi en nettadresse som starter med http:// eller https://</string>
-    <string name="download_resources_custom_url_message">Overstyr standardserveren som brukes til nedlasting av kart. La det stå tomt for å bruke CoMaps standardserver.</string>
-    <string name="download_resources_custom_url_title">Tilpasset kartserver</string>
     <string name="pref_maplanguage_local">Lokalt språk</string>
     <string name="location_privacy_info">Apper mottar posisjonsdata fra operativsystemets posisjonstjeneste, som kan dele posisjonen din med Google og/eller leverandøren av enheten din. Bruk et Android-operativsystem som ivaretar personvernet for å unngå dette.</string>
     <string name="location_privacy">Posisjonspersonvern</string>

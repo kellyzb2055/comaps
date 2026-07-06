@@ -182,13 +182,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Délka</string>
     <string name="share_my_location">Sdílet mé umístění</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Obecná nastavení</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informace</string>
     <string name="prefs_group_route">Navigace</string>
     <string name="pref_zoom_title">Tlačítka přiblížení/oddálení</string>
     <string name="pref_zoom_summary">Zobrazit na obrazovce</string>
+    <string name="prefs_group_advanced">Pokročilé</string>
+    <string name="download_resources_custom_url_title">Vlastní mapový server</string>
+    <string name="download_resources_custom_url_message">Přepsat výchozí server používaný ke stahování map. Nechte pole prázdné, pokud chcete použít výchozí server CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">Není nastaveno</string>
+    <string name="download_resources_custom_url_error_scheme">Zadejte prosím celou adresu URL začínající na http:// nebo https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Noční režim</string>
     <!-- Generic «Off» string -->
@@ -573,7 +576,7 @@
         <item quantity="other">%d stop</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Soukromí</string>
+    <string name="prefs_group_privacy">Soukromí</string>
     <string name="privacy_policy">Zásady ochrany osobních údajů</string>
     <string name="terms_of_use">Podmínky užívání</string>
     <string name="button_layer_traffic">Zácpy</string>
@@ -904,11 +907,6 @@
     <string name="place_page_update_too_old_map">Aktualizovat oblast mapy</string>
     <string name="place_page_too_old_to_edit">Úprava OpenStreetMap je zakázaná, protože mapová data jsou příliš stará.</string>
     <string name="navigation_start_tts_disabled_message">Hlasové pokyny vypnuty: služba TTS není dostupná</string>
-    <string name="download_resources_custom_url_title">Vlastní mapový server</string>
-    <string name="download_resources_custom_url_message">Přepsat výchozí server používaný ke stahování map. Nechte pole prázdné, pokud chcete použít výchozí server CoMaps.</string>
-    <string name="download_resources_custom_url_error_scheme">Zadejte prosím celou adresu URL začínající na http:// nebo https://</string>
-    <string name="advanced">Pokročilé</string>
-    <string name="download_resources_custom_url_summary_none">Není nastaveno</string>
     <string name="pref_maplanguage_local">Místní jazyk</string>
     <string name="location_privacy_info">Aplikace získávají data o poloze z polohové služby vašeho systému, která může sdílet vaši polohu se společností Google a/nebo výrobcem vašeho zařízení. Tomu se můžete vyhnout použitím systému Android chránícího soukromí.</string>
     <string name="location_privacy">Soukromí polohy</string>

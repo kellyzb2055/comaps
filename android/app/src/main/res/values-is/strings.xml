@@ -12,7 +12,6 @@
     <string name="category_recycling">Endurvinnsla</string>
     <string name="category_water">Vatn</string>
     <string name="edit">Breyta</string>
-    <string name="prefs_group_general">Almennar stillingar</string>
     <string name="prefs_group_information">Upplýsingar</string>
     <string name="off">Slökkt</string>
     <string name="on">Kveikt</string>
@@ -68,7 +67,7 @@
         <item quantity="one">%d ferill</item>
         <item quantity="other">%d ferlar</item>
     </plurals>
-    <string name="privacy">Friðhelgi</string>
+    <string name="prefs_group_privacy">Friðhelgi</string>
     <string name="speedcams_alert_title">Hraðamyndavélar</string>
     <string name="power_managment_setting_never">Aldrei</string>
     <string name="power_managment_setting_manual_max">Alltaf</string>

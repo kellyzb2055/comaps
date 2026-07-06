@@ -187,13 +187,14 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Luzera</string>
     <string name="share_my_location">Partekatu nire kokapena</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Ezarpen orokorrak</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informazioa</string>
     <string name="prefs_group_route">Nabigazioa</string>
     <string name="pref_zoom_title">Zoom botoiak</string>
     <string name="pref_zoom_summary">Erakutsi mapan</string>
+    <string name="download_resources_custom_url_message">Gainidatzi erabiltzen den mapa deskargatzeko zerbitzari lehenetsia. Utzi hutsik CoMaps zerbitzari lehenetsia erabiltzeko.</string>
+    <string name="download_resources_custom_url_summary_none">Ezarri gabe</string>
+    <string name="download_resources_custom_url_error_scheme">Sartu http:// edo https://-rekin hasten den URL bat</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Gaueko modua</string>
     <!-- Generic «Off» string -->
@@ -587,7 +588,7 @@
         <item quantity="other">%d arrasto</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Pribatutasuna</string>
+    <string name="prefs_group_privacy">Pribatutasuna</string>
     <string name="privacy_policy">Pribatutasun politika</string>
     <string name="terms_of_use">Erabilera baldintzak</string>
     <string name="button_layer_traffic">Trafikoa</string>
@@ -875,9 +876,6 @@
     <string name="unknown_power_output">ezezaguna</string>
     <string name="error_value_must_be_positive">Balioa positiboa izan behar du</string>
     <string name="list_description_empty">Editatu zerrenda deskribapen bat gehitzeko</string>
-    <string name="download_resources_custom_url_message">Gainidatzi erabiltzen den mapa deskargatzeko zerbitzari lehenetsia. Utzi hutsik CoMaps zerbitzari lehenetsia erabiltzeko.</string>
-    <string name="download_resources_custom_url_summary_none">Ezarri gabe</string>
-    <string name="download_resources_custom_url_error_scheme">Sartu http:// edo https://-rekin hasten den URL bat</string>
     <string name="pref_speedlimit_title">Erakutsi abiadura mugak</string>
     <string name="on_route">Bidean</string>
     <string name="pref_alt_map_lang_handling_ignore_alternatives">Ez erabili alternatibarik</string>

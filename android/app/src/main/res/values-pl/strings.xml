@@ -187,13 +187,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Długość</string>
     <string name="share_my_location">Udostępnij aktualne położenie</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Ustawienia ogólne</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informacje</string>
     <string name="prefs_group_route">Nawigacja</string>
     <string name="pref_zoom_title">Przyciski przybliżania</string>
     <string name="pref_zoom_summary">Wyświetla na ekranie</string>
+    <string name="prefs_group_advanced">Zaawansowane</string>
+    <string name="download_resources_custom_url_title">Własny serwer map</string>
+    <string name="download_resources_custom_url_message">Zastąp domyślny serwer pobierania map. Zostaw puste, by użyć domyślnego serwera CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">Nieustawiony</string>
+    <string name="download_resources_custom_url_error_scheme">Proszę wprowadzić URL zaczynający się od http:// lub https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Tryb nocny</string>
     <!-- Generic «Off» string -->
@@ -594,7 +597,7 @@
         <item quantity="other">%d tras</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Prywatność</string>
+    <string name="prefs_group_privacy">Prywatność</string>
     <string name="privacy_policy">Polityka prywatności</string>
     <string name="terms_of_use">Warunki użytkowania</string>
     <string name="button_layer_traffic">Ruch drogowy</string>
@@ -908,10 +911,6 @@
     <string name="prefs_speed_cameras_information">Ostrzeżenia o fotoradarach są wyłączone w krajach, gdzie takie alerty są zabronione prawnie.</string>
     <string name="navigation_start_tts_message">"Startowanie nawigacji, język komunikatów głosowych: "</string>
     <string name="navigation_start_tts_disabled_message">Komunikaty głosowe są wyłączone: silnik TTS jest niedostępny</string>
-    <string name="download_resources_custom_url_title">Własny serwer map</string>
-    <string name="download_resources_custom_url_message">Zastąp domyślny serwer pobierania map. Zostaw puste, by użyć domyślnego serwera CoMaps.</string>
-    <string name="download_resources_custom_url_summary_none">Nieustawiony</string>
-    <string name="download_resources_custom_url_error_scheme">Proszę wprowadzić URL zaczynający się od http:// lub https://</string>
     <string name="editor_business_vacant_button">Lokal jest pusty</string>
     <string name="editor_mark_business_vacant_title">Oznacz lokal jako pusty</string>
     <string name="place_page_map_too_old_title">Dane mapy nieaktualne</string>
@@ -919,7 +918,6 @@
     <string name="place_page_app_too_old_description">Twoje dane mapy są nieaktualne, proszę zaktualizować mapę oraz aplikację CoMaps.</string>
     <string name="place_page_update_too_old_map">Zaktualizuj region mapy</string>
     <string name="place_page_too_old_to_edit">Edytowanie OpenStreetMap jest wyłączone, ponieważ dane mapy są zbyt stare.</string>
-    <string name="advanced">Zaawansowane</string>
     <string name="pref_maplanguage_local">Język lokalny</string>
     <string name="pref_speedlimit_title">Pokazuj ograniczenia prędkości</string>
     <string name="location_privacy_info">Aplikacje otrzymują dane dotyczące lokalizacji z usługi lokalizacyjnej systemu operacyjnego, która może udostępniać Twoją lokalizację firmie Google i/lub producentowi urządzenia. Aby tego uniknąć, używaj systemu operacyjnego zapewniającego ochronę prywatności.</string>

@@ -102,11 +102,15 @@
     <string name="tracks_title">Poti</string>
     <string name="length">Dolžina</string>
     <string name="share_my_location">Deli moj položaj</string>
-    <string name="prefs_group_general">Splošne nastavitve</string>
     <string name="prefs_group_information">Informacije</string>
     <string name="prefs_group_route">Usmerjanje</string>
     <string name="pref_zoom_title">Gumbi za povečavo</string>
     <string name="pref_zoom_summary">Prikaži na zemljevidu</string>
+    <string name="prefs_group_advanced">Napredno</string>
+    <string name="download_resources_custom_url_title">Strežnik zemljevida po meri</string>
+    <string name="download_resources_custom_url_message">Prepiše privzeti strežnik za prenos zemljevidov, ki se uporablja za prenos zemljevidov. Pustite prazno, če želite uporabiti privzeti strežnik CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">Ni nastavljeno</string>
+    <string name="download_resources_custom_url_error_scheme">Vnesite polni URL, ki se začne z http:// ali https://</string>
     <string name="pref_map_style_title">Nočni način</string>
     <string name="off">Izklopljeno</string>
     <string name="on">Vklopljeno</string>
@@ -411,7 +415,7 @@
         <item quantity="few">%d poti</item>
         <item quantity="other">%d poti</item>
     </plurals>
-    <string name="privacy">Zasebnost</string>
+    <string name="prefs_group_privacy">Zasebnost</string>
     <string name="privacy_policy">Politika zasebnosti</string>
     <string name="terms_of_use">Pogoji uporabe</string>
     <string name="button_layer_traffic">Promet</string>
@@ -649,11 +653,6 @@
     <string name="navigation_start_tts_disabled_message">Glasovni napotki so onemogočeni: ustvarjalec glasu (TTS) ni na voljo</string>
     <string name="charge_socket_schuko">standardna evropska vtičnica (Schuko)</string>
     <string name="list_description_empty">Uredite seznam, da dodate opis</string>
-    <string name="advanced">Napredno</string>
-    <string name="download_resources_custom_url_title">Strežnik zemljevida po meri</string>
-    <string name="download_resources_custom_url_message">Prepiše privzeti strežnik za prenos zemljevidov, ki se uporablja za prenos zemljevidov. Pustite prazno, če želite uporabiti privzeti strežnik CoMaps.</string>
-    <string name="download_resources_custom_url_summary_none">Ni nastavljeno</string>
-    <string name="download_resources_custom_url_error_scheme">Vnesite polni URL, ki se začne z http:// ali https://</string>
     <string name="pref_maplanguage_local">Krajevni jezik</string>
     <string name="location_privacy_info">Orodja prejemajo podatke o trenutnem položaju od položajnih storitev vašega operacijskega sistema, ki lahko vaš položaj deli z Googlom in/ali proizvajalcem vaše naprave. Da se temu izognete, uporabljajte tak operacijski sistem Android, ki varuje zasebnost.</string>
     <string name="location_privacy">Zasebnost položaja</string>
@@ -683,7 +682,6 @@
     <string name="setting_value_system_default">Privzeto sistemsko</string>
     <string name="change_app_locale">Jezik orodja</string>
     <string name="downloader_check_updates_no_updates">Posodobitev ni na voljo</string>
-    <string name="prefs_group_general_summary">Enote, jezik, shramba</string>
     <string name="prefs_group_route_summary">Glasovno vodenje</string>
     <string name="tts_toggle_enable">Vklopi glasovno vodenje</string>
     <string name="tts_toggle_disable">Izklopi glasovno vodenje</string>

@@ -183,13 +183,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Lunghezza</string>
     <string name="share_my_location">Condividi la mia posizione</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Opzioni generali</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informazioni</string>
     <string name="prefs_group_route">Navigazione</string>
     <string name="pref_zoom_title">Pulsanti per lo zoom</string>
     <string name="pref_zoom_summary">Mostra sulla mappa</string>
+    <string name="prefs_group_advanced">Avanzate</string>
+    <string name="download_resources_custom_url_title">Server mappe personalizzato</string>
+    <string name="download_resources_custom_url_message">Sovrascrivi il server da cui scaricare le mappe. Lascia vuoto per usare i server default di CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">Non impostato</string>
+    <string name="download_resources_custom_url_error_scheme">Inserisci un URL che inizia con http:// o https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Modalità notturna</string>
     <!-- Generic «Off» string -->
@@ -585,7 +588,7 @@
         <item quantity="other">%d tracce</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privacy</string>
+    <string name="prefs_group_privacy">Privacy</string>
     <string name="privacy_policy">Polizza sulla privacy</string>
     <string name="terms_of_use">Termini di utilizzo</string>
     <string name="button_layer_traffic">Traffico</string>
@@ -896,11 +899,6 @@
     <string name="navigation_start_tts_disabled_message">Istruzioni vocali disabilitate: TTS non disponibile</string>
     <string name="prefs_speed_cameras_information">Gli avvisi di Autovelox sono disabilitati dove proibito dalla legge locale.</string>
     <string name="navigation_start_tts_message">"Inizio Navigazione, lingua per istruzioni vocali: "</string>
-    <string name="download_resources_custom_url_error_scheme">Inserisci un URL che inizia con http:// o https://</string>
-    <string name="download_resources_custom_url_summary_none">Non impostato</string>
-    <string name="download_resources_custom_url_message">Sovrascrivi il server da cui scaricare le mappe. Lascia vuoto per usare i server default di CoMaps.</string>
-    <string name="download_resources_custom_url_title">Server mappe personalizzato</string>
-    <string name="advanced">Avanzate</string>
     <string name="opens_at">Apre alle %s</string>
     <string name="closes_at">Chiude alle %s</string>
     <string name="pref_maplanguage_local">Lingua locale</string>

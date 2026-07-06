@@ -185,13 +185,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Μήκος</string>
     <string name="share_my_location">Κοινοποίηση της τοποθεσίας μου</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Γενικές Ρυθμίσεις</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Πληροφορίες</string>
     <string name="prefs_group_route">Πλοήγηση</string>
     <string name="pref_zoom_title">Πλήκτρα μεγέθυνσης</string>
     <string name="pref_zoom_summary">Εμφάνιση στο χάρτη</string>
+    <string name="prefs_group_advanced">Προχωρημένες</string>
+    <string name="download_resources_custom_url_title">Προσαρμοσμένος διακομιστής χάρτη</string>
+    <string name="download_resources_custom_url_message">Παρακάμπτει τον προεπιλεγμένο διακομιστή λήψης χάρτη για τις λήψεις χαρτών. Αφήστε το κενό για να χρησιμοποιήσετε τον προεπιλεγμένο διακομιστή του CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">Δεν έχει οριστεί</string>
+    <string name="download_resources_custom_url_error_scheme">Παρακαλούμε είσαγετε ένα URL που να ξεκινά με http:// ή https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Νυχτερινή λειτουργία</string>
     <!-- Generic «Off» string -->
@@ -583,7 +586,7 @@
         <item quantity="other">%d ίχνη</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Απόρρητο</string>
+    <string name="prefs_group_privacy">Απόρρητο</string>
     <string name="privacy_policy">Πολιτική απορρήτου</string>
     <string name="terms_of_use">Όροι χρήσης</string>
     <string name="button_layer_traffic">Κίνηση</string>
@@ -833,7 +836,6 @@
     <string name="avoid_paved">Αποφυγή στρωμένων δρόμων</string>
     <string name="unknown_power_output">άγνωστο</string>
     <string name="unknown_count">άγνωστο</string>
-    <string name="advanced">Προχωρημένες</string>
     <string name="charge_socket_count">Πλήθος</string>
     <string name="ruler">Χάρακας</string>
     <string name="clear">Εκκαθάριση</string>
@@ -860,14 +862,10 @@
     <string name="error_enter_correct_fediverse_page">Εισάγετε ένα έγκυρο όνομα χρήστη ή διεύθυνση Mastodon</string>
     <string name="error_enter_correct_bluesky_page">Εισάγετε ένα έγκυρο όνομα χρήστη ή διεύθυνση Bluesky</string>
     <string name="power_management">Διαχείριση ενέργειας</string>
-    <string name="download_resources_custom_url_error_scheme">Παρακαλούμε είσαγετε ένα URL που να ξεκινά με http:// ή https://</string>
     <string name="error_value_must_be_positive">Η τιμή πρέπει να είναι θετική</string>
     <string name="error_invalid_number">Άκυρος αριθμός</string>
     <string name="offline_explanation_title">Χάρτες εκτός σύνδεσης</string>
     <string name="list_description_empty">Επεξεργαστείτε τη λίστα για να προσθέσετε περιγραφή</string>
-    <string name="download_resources_custom_url_summary_none">Δεν έχει οριστεί</string>
-    <string name="download_resources_custom_url_title">Προσαρμοσμένος διακομιστής χάρτη</string>
-    <string name="download_resources_custom_url_message">Παρακάμπτει τον προεπιλεγμένο διακομιστή λήψης χάρτη για τις λήψεις χαρτών. Αφήστε το κενό για να χρησιμοποιήσετε τον προεπιλεγμένο διακομιστή του CoMaps.</string>
     <string name="navigation_start_tts_message">"Εκκίνηση Πλοήγησης, γλώσσα φωνητικών οδηγιών: "</string>
     <string name="navigation_start_tts_disabled_message">Φωνητικές οδηγίες απενεργοποιημένες: δεν υπάρχει διαθέσιμη μηχανή TTS</string>
     <string name="pref_tts_no_system_tts_short">Δεν βρέθηκε μηχανή κείμενο-σε-ομιλία, ελέγξτε τις ρυθμίσεις της εφαρμογής</string>
@@ -967,7 +965,6 @@
     <string name="capacity_disabled">Θέσεις για ΑΜΕΑ: %s</string>
     <string name="permission_read_navigation_label">Ανάγνωση δεδομένων πλοήγησης CoMaps</string>
     <string name="permission_read_navigation_description">ανάγνωση ζωντανών πληροφοριών πλοήγησης, όπως επερχόμενες στροφές ή ονομασία του δρόμου όπου βρίσκεστε</string>
-    <string name="prefs_group_general_summary">Μονάδες, γλώσσα, αποθηκευτικός χώρος</string>
     <string name="prefs_group_route_summary">Φωνητικές οδηγίες, επιλογές δρομολόγησης</string>
     <string name="prefs_group_privacy_summary">Υπηρεσίες Google Play, ιστορικό αναζήτησης</string>
     <string name="prefs_group_power_summary">Στυλ χάρτη, σβήσιμο οθόνης</string>

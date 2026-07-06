@@ -185,6 +185,11 @@
     <string name="prefs_group_route">Navigation</string>
     <string name="pref_zoom_title">Zoom-knapper</string>
     <string name="pref_zoom_summary">Vis på skærmen</string>
+    <string name="prefs_group_advanced">Avanceret</string>
+    <string name="download_resources_custom_url_title">Brugerdefineret kortserver</string>
+    <string name="download_resources_custom_url_message">Tilsidesæt den som standard anvendte server til download af kort. Lad feltet være tomt for at bruge CoMaps\' standardserver.</string>
+    <string name="download_resources_custom_url_summary_none">Ikke indstillet</string>
+    <string name="download_resources_custom_url_error_scheme">Indtast en URL, der starter med http:// eller https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Nattilstand</string>
     <!-- Generic «Off» string -->
@@ -565,7 +570,7 @@
         <item quantity="other">%d spor</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privatliv</string>
+    <string name="prefs_group_privacy">Privatliv</string>
     <string name="privacy_policy">Privatlivspolitik</string>
     <string name="terms_of_use">Vilkår for bruger</string>
     <string name="button_layer_traffic">Trafik</string>
@@ -793,7 +798,6 @@
     <string name="move_maps_error">Fejl ved flytning af kortfiler</string>
     <string name="disk_error">Kan ikke oprette mapper og flytte filer på enhedens interne hukommelse eller sd-kort</string>
     <string name="wikimedia_commons">Wikimedia Commons</string>
-    <string name="prefs_group_general">Generelle indstillinger</string>
     <string name="read_in_wikipedia">Wikipedia</string>
     <string name="menu">Menu</string>
     <string name="change_map_locale">Sprog på kort</string>
@@ -892,11 +896,6 @@
     <string name="place_page_update_too_old_map">Opdater kortregion</string>
     <string name="place_page_too_old_to_edit">Redigering af OpenStreetMap er deaktiveret, fordi kortdataene er for gamle.</string>
     <string name="navigation_start_tts_disabled_message">Stemmeinstruktioner deaktiveret: TTS-motor ikke tilgængelig</string>
-    <string name="advanced">Avanceret</string>
-    <string name="download_resources_custom_url_title">Brugerdefineret kortserver</string>
-    <string name="download_resources_custom_url_message">Tilsidesæt den som standard anvendte server til download af kort. Lad feltet være tomt for at bruge CoMaps\' standardserver.</string>
-    <string name="download_resources_custom_url_summary_none">Ikke indstillet</string>
-    <string name="download_resources_custom_url_error_scheme">Indtast en URL, der starter med http:// eller https://</string>
     <string name="pref_maplanguage_local">Lokalt sprog</string>
     <string name="location_privacy_info">Apps modtager placeringsdata fra din OS-placeringstjeneste, som muligvis deler din placering med Google og/eller din enhedsleverandør. Brug et Android-operativsystem, der beskytter dit privatliv, for at undgå dette.</string>
     <string name="location_privacy">Placeringsbeskyttelse</string>

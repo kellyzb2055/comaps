@@ -52,6 +52,11 @@
     <string name="load_kmz_title">Cargando favoritos</string>
     <string name="email">Correo electrónico</string>
     <string name="pref_zoom_summary">Mostrar no mapa</string>
+    <string name="prefs_group_advanced">Avanzado</string>
+    <string name="download_resources_custom_url_title">Servidor persoal do mapa</string>
+    <string name="download_resources_custom_url_message">Sobrescribe o servidor predefinido para descargar mapas. Deixar baleiro para usar o servidor por defecto de CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">Sen establecer</string>
+    <string name="download_resources_custom_url_error_scheme">Escribe un URL que comece por http:// ou https://</string>
     <string name="downloader_update_all_button">Actualizar todos</string>
     <string name="editor_time_title">Horario de apertura</string>
     <string name="editor_zip_code">Código postal</string>
@@ -64,7 +69,7 @@
     <string name="big_font">Aumentar tamaño do texto no mapa</string>
     <string name="traffic_update_app">Por favor, actualice CoMaps</string>
     <string name="prefs_languages_information_off_link">Para obter máis información, consulte esta guía</string>
-    <string name="privacy">Privacidade</string>
+    <string name="prefs_group_privacy">Privacidade</string>
     <string name="privacy_policy">Normativa de privacidade</string>
     <string name="terms_of_use">Condiciones de uso</string>
     <string name="button_layer_traffic">Tráfico</string>
@@ -197,7 +202,6 @@
     <string name="copied_to_clipboard">Copiado ao portarretallos: %s</string>
     <string name="data_version">Datos de OpenStreetMap: %s</string>
     <string name="share_my_location">Compartir a miña localización</string>
-    <string name="prefs_group_general">Axustes xerais</string>
     <string name="pref_zoom_title">Botóns de zum</string>
     <string name="pref_map_style_title">Modo nocturno</string>
     <string name="pref_map_3d_title">Vista en perspectiva</string>
@@ -641,11 +645,6 @@
     <string name="navigation_start_tts_message">"Comezando a Navegación, idioma das instruccións por voz: "</string>
     <string name="navigation_start_tts_disabled_message">Instruccións por voz desactivadas: non hai un motor TTS dispoñible</string>
     <string name="charge_socket_schuko">Doméstico na UE</string>
-    <string name="advanced">Avanzado</string>
-    <string name="download_resources_custom_url_title">Servidor persoal do mapa</string>
-    <string name="download_resources_custom_url_message">Sobrescribe o servidor predefinido para descargar mapas. Deixar baleiro para usar o servidor por defecto de CoMaps.</string>
-    <string name="download_resources_custom_url_summary_none">Sen establecer</string>
-    <string name="download_resources_custom_url_error_scheme">Escribe un URL que comece por http:// ou https://</string>
     <string name="bookmark_share_email_subject">Sigue esta ligazón %1$s ou pega estas coordenadas %2$s na túa aplicación de mapas para ver esta localización.</string>
     <string name="my_position_share_email">Sigue esta ligazón %1$s ou pega estas coordenadas %2$s na túa aplicación de mapas para ver a miña localización.</string>
     <string name="mb_downloaded">%1$d MB / %2$d MB</string>

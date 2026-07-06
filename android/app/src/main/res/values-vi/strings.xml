@@ -183,6 +183,11 @@
     <string name="prefs_group_route">Chỉ đường</string>
     <string name="pref_zoom_title">Nút thu phóng</string>
     <string name="pref_zoom_summary">Hiển thị trên bản đồ</string>
+    <string name="prefs_group_advanced">Nâng cao</string>
+    <string name="download_resources_custom_url_title">Tùy chỉnh máy chủ bản đồ</string>
+    <string name="download_resources_custom_url_message">Ghi đè máy chủ tải xuống bản đồ mặc định. Để trống để sử dụng máy chủ mặc định của CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">Chưa đặt</string>
+    <string name="download_resources_custom_url_error_scheme">Vui lòng nhập một URL bắt đầu bằng http:// hoặc https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Chế độ ban đêm</string>
     <!-- Generic «Off» string -->
@@ -556,7 +561,7 @@
         <item quantity="other">%d hành trình</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Sự riêng tư</string>
+    <string name="prefs_group_privacy">Sự riêng tư</string>
     <string name="privacy_policy">Chính sách bảo mật</string>
     <string name="terms_of_use">Điều khoản sử dụng</string>
     <string name="button_layer_traffic">Giao thông</string>
@@ -771,7 +776,6 @@
     <string name="share_bookmarks_email_body">Xin chào! \n \nĐính kèm là các điểm Ưa thích của tôi; vui lòng mở chúng trong CoMaps. Nếu bạn chưa cài đặt nó thì bạn có thể tải nó xuống ở đây: https://www.comaps.app/download/ \n \nTận hưởng hành trình với CoMaps nhé!</string>
     <string name="bookmark_share_email_subject">Theo đường dẫn này %1$s hoặc dán tọa độ này %2$s vào ứng dụng bản đồ của bạn để xem vị trí này.</string>
     <string name="my_position_share_email">Theo đường dẫn này %1$s hoặc dán tọa độ này %2$s vào ứng dụng bản đồ của bạn để xem vị trí của tôi.</string>
-    <string name="prefs_group_general">Cài đặt chung</string>
     <string name="prefs_group_information">Thông tin</string>
     <string name="menu">Menu</string>
     <string name="mb_downloaded">%1$d MB / %2$d MB</string>
@@ -805,7 +809,6 @@
     <string name="charge_socket_count">Số lượng</string>
     <string name="unknown_count">Không rõ</string>
     <string name="editor_submit">Gửi</string>
-    <string name="advanced">Nâng cao</string>
     <string name="destination">Điểm đến</string>
     <string name="stop">Điểm dừng</string>
     <string name="disk_error_title">Lỗi bộ nhớ</string>
@@ -833,7 +836,6 @@
     <string name="offline_explanation_title">Bản đồ ngoại tuyến</string>
     <string name="power_management">Quản lý năng lượng</string>
     <string name="charge_socket_schuko">Nội địa EU</string>
-    <string name="download_resources_custom_url_summary_none">Chưa đặt</string>
     <string name="pref_maplanguage_local">Ngôn ngữ địa phương</string>
     <string name="location_privacy">Quyền riêng tư vị trí</string>
     <string name="rooms">%s phòng</string>
@@ -898,9 +900,6 @@
     <string name="error_value_must_be_positive">Giá trị phải là dương</string>
     <string name="offline_explanation_text">Một bản đồ cần được tải xuống để xem và điều hướng trong vùng.\nTải xuống bản đồ cho những khu vực bạn muốn đến.</string>
     <string name="list_description_empty">Chỉnh sửa danh sách để thêm mô tả</string>
-    <string name="download_resources_custom_url_title">Tùy chỉnh máy chủ bản đồ</string>
-    <string name="download_resources_custom_url_message">Ghi đè máy chủ tải xuống bản đồ mặc định. Để trống để sử dụng máy chủ mặc định của CoMaps.</string>
-    <string name="download_resources_custom_url_error_scheme">Vui lòng nhập một URL bắt đầu bằng http:// hoặc https://</string>
     <string name="pref_alt_map_lang_handling">Ngôn ngữ bản đồ thay thế</string>
     <string name="pref_alt_map_lang_handling_ignore_alternatives">Không sử dụng ngôn ngữ thay thế</string>
     <string name="pref_alt_map_lang_handling_system_order">Dùng theo thứ tự hệ thống</string>

@@ -183,13 +183,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Comprimento</string>
     <string name="share_my_location">Partilhar a minha localização</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Configurações gerais</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informação</string>
     <string name="prefs_group_route">Navegação</string>
     <string name="pref_zoom_title">Botões de ampliação</string>
     <string name="pref_zoom_summary">Mostrar no ecrã</string>
+    <string name="prefs_group_advanced">Avançadas</string>
+    <string name="download_resources_custom_url_title">Servidor de Mapa Personalizado</string>
+    <string name="download_resources_custom_url_message">Substitui o servidor de download de mapas normal. Deixe em branco para usar o servidor do CoMaps padrão.</string>
+    <string name="download_resources_custom_url_summary_none">Indefinido</string>
+    <string name="download_resources_custom_url_error_scheme">Por favor, insira um URL começando com http:// ou https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Modo noturno</string>
     <!-- Generic «Off» string -->
@@ -574,7 +577,7 @@
         <item quantity="other">%d trajetos</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privacidade</string>
+    <string name="prefs_group_privacy">Privacidade</string>
     <string name="privacy_policy">Política de privacidade</string>
     <string name="terms_of_use">Termos de utilização</string>
     <string name="button_layer_traffic">Tráfego</string>
@@ -899,11 +902,6 @@
     <string name="prefs_speed_cameras_information">Avisos de câmaras de velocidade estão desativados em países onde alertas estão proibidos por lei.</string>
     <string name="navigation_start_tts_message">"Iniciando Navegação, idioma das instruções por voz: "</string>
     <string name="navigation_start_tts_disabled_message">Instruções por voz desativadas: nenhum motor de TTS disponível</string>
-    <string name="advanced">Avançadas</string>
-    <string name="download_resources_custom_url_title">Servidor de Mapa Personalizado</string>
-    <string name="download_resources_custom_url_message">Substitui o servidor de download de mapas normal. Deixe em branco para usar o servidor do CoMaps padrão.</string>
-    <string name="download_resources_custom_url_summary_none">Indefinido</string>
-    <string name="download_resources_custom_url_error_scheme">Por favor, insira um URL começando com http:// ou https://</string>
     <string name="pref_maplanguage_local">Idioma Local</string>
     <string name="location_privacy_info">Aplicações usam dados de localização do serviço de localização, que podem partilhar a sua localização com a Google e/ou a marca do seu dispositivo. Use um Android OS que proteja privacidade para evitar isto.</string>
     <string name="location_privacy">Privacidade da Localização</string>
@@ -959,7 +957,6 @@
     <string name="capacity_charging">Estacionamento com carregadores: %s</string>
     <string name="capacity_charging_yes">Têm estacionamento com carregadores</string>
     <string name="capacity_charging_no">Não tem estacionamento com carregadores</string>
-    <string name="prefs_group_general_summary">Unidades, idioma, armazenamento</string>
     <string name="prefs_group_route_summary">Instruções de voz, opções de roteamento</string>
     <string name="prefs_group_privacy_summary">Serviços da Google Play, histórico de pesquisa</string>
     <string name="prefs_group_power_summary">Estilo do mapa, tempo de proteção do ecrã</string>

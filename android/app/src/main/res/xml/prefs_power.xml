@@ -3,12 +3,6 @@
   xmlns:app="http://schemas.android.com/apk/res-auto">
 
   <ListPreference
-    android:entries="@array/map_style"
-    android:key="@string/pref_map_style"
-    android:title="@string/pref_map_style_title"
-    app:icon="@drawable/ic_dark_mode"
-    app:singleLineTitle="false" />
-  <ListPreference
     android:entries="@array/mobile_data_options"
     android:entryValues="@array/mobile_data_options_values"
     android:key="@string/pref_use_mobile_data"

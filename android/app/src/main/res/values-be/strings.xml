@@ -181,8 +181,6 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Даўжыня</string>
     <string name="share_my_location">Абагуліць маё месцазнаходжанне</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Агульныя налады</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Інфармацыя</string>
     <string name="prefs_group_route">Навігацыя</string>
@@ -576,7 +574,7 @@
         <item quantity="other">%d маршрутаў</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Прыватнасць</string>
+    <string name="prefs_group_privacy">Прыватнасць</string>
     <string name="privacy_policy">Палітыка прыватнасці</string>
     <string name="terms_of_use">Умовы выкарыстання</string>
     <string name="button_layer_traffic">Рух</string>

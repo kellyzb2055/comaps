@@ -559,7 +559,7 @@
         <item quantity="other">%d ติดตามต่าง ๆ</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">ความเป็นส่วนตัว</string>
+    <string name="prefs_group_privacy">ความเป็นส่วนตัว</string>
     <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
     <string name="terms_of_use">ข้อกำหนดในการใช้งาน</string>
     <string name="button_layer_traffic">การจราจร</string>

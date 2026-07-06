@@ -185,13 +185,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">الطول</string>
     <string name="share_my_location">شارك موقعي</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">الإعدادات العامة</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">معلومات</string>
     <string name="prefs_group_route">الملاحة</string>
     <string name="pref_zoom_title">أزرار تقريب/تبعيد</string>
     <string name="pref_zoom_summary">اعرض على الخريطة</string>
+    <string name="prefs_group_advanced">متقدم</string>
+    <string name="download_resources_custom_url_title">خادم خرائط مخصَّص</string>
+    <string name="download_resources_custom_url_message">تجاوز خادم تنزيل الخرائط المبدئي المستخدم لتنزيل الخرائط. اتركه فارغًا لاستخدام خادم CoMaps المبدئي.</string>
+    <string name="download_resources_custom_url_summary_none">غير مُعيِّن</string>
+    <string name="download_resources_custom_url_error_scheme">يُرجى إدخال رابط يبدأ بـ https:// أو http://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">الوضع الليلي</string>
     <!-- Generic «Off» string -->
@@ -593,7 +596,7 @@
         <item quantity="other">%d مسار</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">خصوصية</string>
+    <string name="prefs_group_privacy">خصوصية</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
     <string name="terms_of_use">شروط الاستخدام</string>
     <string name="button_layer_traffic">حركة مرور</string>
@@ -892,8 +895,6 @@
     <string name="charge_socket_type2_combo">النوع 2 كومبو</string>
     <string name="charge_socket_type1">النوع 1</string>
     <string name="charge_socket_nacs">NACS</string>
-    <string name="download_resources_custom_url_summary_none">غير مُعيِّن</string>
-    <string name="download_resources_custom_url_error_scheme">يُرجى إدخال رابط يبدأ بـ https:// أو http://</string>
     <string name="pref_alt_map_lang_handling">لغات بديلة للخريطة</string>
     <string name="pref_alt_map_lang_handling_ignore_alternatives">لا تستخدم بدائل</string>
     <string name="pref_alt_map_lang_handling_system_order">استخدم حسب ترتيب النظام</string>
@@ -930,9 +931,6 @@
     <string name="error_invalid_number">رقم غير صالح</string>
     <string name="offline_explanation_title">خرائط بلا اتصال بالإنترنت</string>
     <string name="offline_explanation_text">يجب تنزيل خريطة لعرض المنطقة والتنقل فيها.\nنزِّل خرائط للمناطق التي ترغب في السفر إليها.</string>
-    <string name="advanced">متقدم</string>
-    <string name="download_resources_custom_url_title">خادم خرائط مخصَّص</string>
-    <string name="download_resources_custom_url_message">تجاوز خادم تنزيل الخرائط المبدئي المستخدم لتنزيل الخرائط. اتركه فارغًا لاستخدام خادم CoMaps المبدئي.</string>
     <string name="ruler">مسطرة</string>
     <string name="route_type">نوع المسار</string>
     <string name="vehicle">مركبة</string>
@@ -977,7 +975,6 @@
     <string name="capacity_charging">أماكن مزودة بشواحن: %s</string>
     <string name="capacity_charging_yes">يحتوي على أماكن مزودة بشواحن</string>
     <string name="capacity_charging_no">لا أماكن مزودة بشواحن</string>
-    <string name="prefs_group_general_summary">الوحدات، اللغة، التخزين</string>
     <string name="prefs_group_route_summary">التعليمات الصوتية، خيارات المسار</string>
     <string name="prefs_group_privacy_summary">خدمات Google Play، سجل البحث</string>
     <string name="prefs_group_power_summary">نمط الخريطة، مهلة الشاشة</string>

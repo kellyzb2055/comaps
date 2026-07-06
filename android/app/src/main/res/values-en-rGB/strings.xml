@@ -130,7 +130,6 @@
     <string name="tracks_title">Tracks</string>
     <string name="length">Length</string>
     <string name="share_my_location">Share My Location</string>
-    <string name="prefs_group_general">General settings</string>
     <string name="prefs_group_information">Information</string>
     <string name="prefs_group_route">Navigation</string>
     <string name="pref_zoom_title">Zoom buttons</string>

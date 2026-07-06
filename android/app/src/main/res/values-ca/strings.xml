@@ -185,13 +185,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Longitud</string>
     <string name="share_my_location">Comparteix la meva ubicació</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Configuració general</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informació</string>
     <string name="prefs_group_route">Navegació</string>
     <string name="pref_zoom_title">Botons de zoom</string>
     <string name="pref_zoom_summary">Mostra\'ls al mapa</string>
+    <string name="prefs_group_advanced">Avançat</string>
+    <string name="download_resources_custom_url_title">Servidor de Mapes Personalitzat</string>
+    <string name="download_resources_custom_url_message">Sobreescriu el servidor de descàrrega de mapes per defecte. Deixa en blanc per a emprar el servidor per defecte de CoMaps.</string>
+    <string name="download_resources_custom_url_summary_none">No establert</string>
+    <string name="download_resources_custom_url_error_scheme">Per favor introdueix una URL que comence amb http:// o https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Mode nocturn</string>
     <!-- Generic «Off» string -->
@@ -589,7 +592,7 @@
         <item quantity="other">%d traces</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privadesa</string>
+    <string name="prefs_group_privacy">Privadesa</string>
     <string name="privacy_policy">Política de privadesa</string>
     <string name="terms_of_use">Condicions del servei</string>
     <string name="button_layer_traffic">Trànsit</string>
@@ -910,11 +913,6 @@
     <string name="prefs_speed_cameras_information">Les advertències de càmeres radar estan deshabilitades als països on estan prohibides per llei.</string>
     <string name="navigation_start_tts_message">"Iniciant Navegació, idioma d\'instruccions de veu: "</string>
     <string name="navigation_start_tts_disabled_message">Instruccions de veu desactivades: motor TTS no disponible</string>
-    <string name="advanced">Avançat</string>
-    <string name="download_resources_custom_url_title">Servidor de Mapes Personalitzat</string>
-    <string name="download_resources_custom_url_message">Sobreescriu el servidor de descàrrega de mapes per defecte. Deixa en blanc per a emprar el servidor per defecte de CoMaps.</string>
-    <string name="download_resources_custom_url_summary_none">No establert</string>
-    <string name="download_resources_custom_url_error_scheme">Per favor introdueix una URL que comence amb http:// o https://</string>
     <string name="pref_maplanguage_local">Idioma Local</string>
     <string name="location_privacy_info">Les aplicacions reben informació d\'ubicació del servei de localització del sistema, que pot compartir la teva ubicació amb Google i/o el proveïdor del teu dispositiu. Fes servir un SO Android respectuós amb la privacitat per evitar-ho.</string>
     <string name="location_privacy">Privacitat de Localització</string>

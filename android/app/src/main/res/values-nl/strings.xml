@@ -187,13 +187,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Lengte</string>
     <string name="share_my_location">Mijn locatie delen</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Algemene instellingen</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informatie</string>
     <string name="prefs_group_route">Navigatie</string>
     <string name="pref_zoom_title">Zoomknoppen</string>
     <string name="pref_zoom_summary">Toon op de kaart</string>
+    <string name="prefs_group_advanced">Geavanceerd</string>
+    <string name="download_resources_custom_url_title">Aangepaste kaartserver</string>
+    <string name="download_resources_custom_url_message">Overschrijf de standaard server voor het downloaden van kaarten. Laat leeg om de standaardserver van CoMaps te gebruiken.</string>
+    <string name="download_resources_custom_url_summary_none">Niet ingesteld</string>
+    <string name="download_resources_custom_url_error_scheme">Voer een URL in beginnend met https:// of http://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Nachtmodus</string>
     <!-- Generic «Off» string -->
@@ -585,7 +588,7 @@
         <item quantity="other">%d routes</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privacy</string>
+    <string name="prefs_group_privacy">Privacy</string>
     <string name="privacy_policy">Privacybeleid</string>
     <string name="terms_of_use">Gebruiksvoorwaarden</string>
     <string name="button_layer_traffic">Verkeer</string>
@@ -905,11 +908,6 @@
     <string name="place_page_app_too_old_description">Uw huidige kaartgegevens zijn erg oud. Update de CoMaps-app.</string>
     <string name="place_page_update_too_old_map">Kaartregio bijwerken</string>
     <string name="place_page_too_old_to_edit">Het bewerken van OpenStreetMap is uitgeschakeld omdat de kaartgegevens te oud zijn.</string>
-    <string name="advanced">Geavanceerd</string>
-    <string name="download_resources_custom_url_title">Aangepaste kaartserver</string>
-    <string name="download_resources_custom_url_message">Overschrijf de standaard server voor het downloaden van kaarten. Laat leeg om de standaardserver van CoMaps te gebruiken.</string>
-    <string name="download_resources_custom_url_summary_none">Niet ingesteld</string>
-    <string name="download_resources_custom_url_error_scheme">Voer een URL in beginnend met https:// of http://</string>
     <string name="pref_maplanguage_local">Plaatselijke taal</string>
     <string name="location_privacy_info">Apps ontvangen locatiegegevens van de locatiedienst van uw besturingssysteem, die deze gegevens kan delen met Google en/of de leverancier van uw apparaat. Gebruik een privacyvriendelijk Android-besturingssysteem om dit te voorkomen.</string>
     <string name="location_privacy">Privacy van locatie</string>
@@ -965,7 +963,6 @@
     <string name="capacity_charging">Plaatsen met laders: %s</string>
     <string name="capacity_charging_yes">Heeft plaatsen met laders</string>
     <string name="capacity_charging_no">Geen plaatsen met laders</string>
-    <string name="prefs_group_general_summary">Eenheden, taal, opslag</string>
     <string name="prefs_group_route_summary">Spraakinstructies, routeringsopties</string>
     <string name="prefs_group_privacy_summary">Google Play Services, zoekgeschiedenis</string>
     <string name="prefs_group_power_summary">Kaartstijl, scherm-time-out</string>

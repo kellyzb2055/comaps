@@ -181,13 +181,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Дужина</string>
     <string name="share_my_location">Подели моју локацију</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Општа подешавања</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Информације</string>
     <string name="prefs_group_route">Навигација</string>
     <string name="pref_zoom_title">Дугме за зумирање</string>
     <string name="pref_zoom_summary">Прикажи на мапи</string>
+    <string name="prefs_group_advanced">Напредно</string>
+    <string name="download_resources_custom_url_title">Сопствени сервер мапа</string>
+    <string name="download_resources_custom_url_message">Замени подразумевани сервер за преузимање мапа који се користи за преузимања мапа. Оставите празно да бисте користили CoMaps сервер.</string>
+    <string name="download_resources_custom_url_summary_none">Није постављено</string>
+    <string name="download_resources_custom_url_error_scheme">Унесите пуну УРЛ адресу која почиње са https:// и која се завршава са /</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Ноћни режим</string>
     <!-- Generic «Off» string -->
@@ -581,7 +584,7 @@
         <item quantity="other">%d путања</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Приватност</string>
+    <string name="prefs_group_privacy">Приватност</string>
     <string name="privacy_policy">Политика приватности</string>
     <string name="terms_of_use">Услови коришћења</string>
     <string name="button_layer_traffic">Саобраћај</string>
@@ -904,11 +907,6 @@
     <string name="navigation_start_tts_message">"Покретање навигације, језик гласовних инструкција: "</string>
     <string name="navigation_start_tts_disabled_message">Гласовне инструкције онемогућене: ТТС мотор није доступан</string>
     <string name="charge_socket_schuko">Шухо</string>
-    <string name="advanced">Напредно</string>
-    <string name="download_resources_custom_url_title">Сопствени сервер мапа</string>
-    <string name="download_resources_custom_url_message">Замени подразумевани сервер за преузимање мапа који се користи за преузимања мапа. Оставите празно да бисте користили CoMaps сервер.</string>
-    <string name="download_resources_custom_url_summary_none">Није постављено</string>
-    <string name="download_resources_custom_url_error_scheme">Унесите пуну УРЛ адресу која почиње са https:// и која се завршава са /</string>
     <string name="pref_maplanguage_local">Локални језик</string>
     <string name="location_privacy_info">Апликације добијају податке о локацији од услуге локације вашег ОС-а, која може да дели вашу локацију са Гугл-ом и/или продавцем вашег уређаја. Користите Андроид ОС који чува приватност да бисте ово избегли.</string>
     <string name="location_privacy">Локацијска приватност</string>

@@ -185,13 +185,14 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Garums</string>
     <string name="share_my_location">Kopīgot manu atrašanās vietu</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Vispārējie iestatījumi</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Informācija par lietotni</string>
     <string name="prefs_group_route">Navigācija</string>
     <string name="pref_zoom_title">Tālummaiņas pogas</string>
     <string name="pref_zoom_summary">Rādīt kartē</string>
+    <string name="prefs_group_advanced">Iestatījumi: izvērsta kopa</string>
+    <string name="download_resources_custom_url_summary_none">Nav iestatīts</string>
+    <string name="download_resources_custom_url_error_scheme">Lūgums ievadīt URL, kas sākas ar http:// vai https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Tumšais motīvs</string>
     <!-- Generic «Off» string -->
@@ -586,8 +587,8 @@
         <item quantity="other">%d pēdojumi</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privātums</string>
-    <string name="privacy_policy">Privātuma politika</string>
+    <string name="prefs_group_privacy">Datu aizsardzība</string>
+    <string name="privacy_policy">Datu aizsardzības politika</string>
     <string name="terms_of_use">Izmantošanas nosacījumi</string>
     <string name="button_layer_traffic">Satiksme</string>
     <string name="subway">Metro</string>
@@ -843,9 +844,6 @@
     <string name="navigation_start_tts_disabled_message">Balss norādes atspējotas: nav pieejams teksta pārveidošanas runā dzinējs</string>
     <string name="prefs_speed_cameras_information">Brīdinājumi par ātruma noteikšanas kamerā ir atspējoti valstīs, kurās šādus brīdinājumus aizliedz vietējais likums.</string>
     <string name="navigation_start_tts_message">"Uzsāk navigāciju, balss norāžu valoda: "</string>
-    <string name="download_resources_custom_url_summary_none">Nav iestatīts</string>
-    <string name="download_resources_custom_url_error_scheme">Lūgums ievadīt URL, kas sākas ar http:// vai https://</string>
-    <string name="advanced">Iestatījumi: izvērsta kopa</string>
     <plurals name="minutes_short">
         <item quantity="zero">%d min.</item>
         <item quantity="one">%d min.</item>

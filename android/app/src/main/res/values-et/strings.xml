@@ -181,13 +181,16 @@
     <!-- Length of track in cell that describes route -->
     <string name="length">Pikkus</string>
     <string name="share_my_location">Jaga minu asukohta</string>
-    <!-- Settings general group in settings screen -->
-    <string name="prefs_group_general">Üldseadistused</string>
     <!-- Settings information group in settings screen -->
     <string name="prefs_group_information">Teave</string>
     <string name="prefs_group_route">Tee juhatamine</string>
     <string name="pref_zoom_title">Suuminupud</string>
     <string name="pref_zoom_summary">Kuva kaardil</string>
+    <string name="prefs_group_advanced">Täiendavad seadistused</string>
+    <string name="download_resources_custom_url_title">Sinu oma kaardiserver</string>
+    <string name="download_resources_custom_url_message">Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. CoMapsi vaikimisi serveri kasutamiseks jäta tühjaks.</string>
+    <string name="download_resources_custom_url_summary_none">Pole määratud</string>
+    <string name="download_resources_custom_url_error_scheme">Palun sisesta täismahuline võrguaadress, mille alguses on http:// või https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Öörežiim</string>
     <!-- Generic «Off» string -->
@@ -581,7 +584,7 @@
         <item quantity="other">%d rada</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Privaatsus</string>
+    <string name="prefs_group_privacy">Privaatsus</string>
     <string name="privacy_policy">Privaatsuspoliitika</string>
     <string name="terms_of_use">Kasutustingimused</string>
     <string name="button_layer_traffic">Liiklus</string>
@@ -901,11 +904,6 @@
     <string name="place_page_update_too_old_map">Uuenda piirkonna kaardiandmeid</string>
     <string name="place_page_too_old_to_edit">Kuna kaardiandmed on liiga vanad, siis OpenStreetMapi muutmise võimalus on lülitatud välja.</string>
     <string name="navigation_start_tts_disabled_message">Hääljuhiste kasutamine on lülitatud välja: kõnesünteesimootorit pole saadaval</string>
-    <string name="download_resources_custom_url_summary_none">Pole määratud</string>
-    <string name="advanced">Täiendavad seadistused</string>
-    <string name="download_resources_custom_url_title">Sinu oma kaardiserver</string>
-    <string name="download_resources_custom_url_message">Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. CoMapsi vaikimisi serveri kasutamiseks jäta tühjaks.</string>
-    <string name="download_resources_custom_url_error_scheme">Palun sisesta täismahuline võrguaadress, mille alguses on http:// või https://</string>
     <string name="pref_maplanguage_local">Kohalik keel</string>
     <string name="location_privacy_info">Rakendused saavad asukohaandmed sinu operatsioonisüsteemi asukohateenuselt, mis võib jagada sinu asukohta Google\'i ja/või seadme valmistajaga. Selle vältimiseks kasuta mõnda privaatsusega arvestavat Androidi versiooni.</string>
     <string name="location_privacy">Asuukohaandmete privaatsus</string>
@@ -959,7 +957,6 @@
     <string name="capacity_disabled_no">Pole eraldi parkimiskohti puuetega inimeste jaoks</string>
     <string name="capacity_charging_yes">On laadijatega parkimiskohad</string>
     <string name="capacity_charging_no">Pole laadijatega parkimiskohti</string>
-    <string name="prefs_group_general_summary">Ühikud, keel, andmeruum</string>
     <string name="prefs_group_route_summary">Hääljuhised, teekonna koostamise valikud</string>
     <string name="prefs_group_privacy_summary">Google Play teenused, otsinguajalugu</string>
     <string name="prefs_group_power_summary">Kaardistiil, ekraani väljalülitumine</string>

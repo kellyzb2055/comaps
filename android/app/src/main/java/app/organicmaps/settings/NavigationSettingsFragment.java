@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
 import app.organicmaps.R;
 import app.organicmaps.sdk.Framework;
 import app.organicmaps.sdk.routing.RoutingOptions;
+import app.organicmaps.sdk.settings.UnitLocale;
 import app.organicmaps.sdk.util.Config;
 import app.organicmaps.util.Utils;
 
@@ -28,6 +30,7 @@ public class NavigationSettingsFragment extends BaseXmlSettingsFragment
   {
     super.onViewCreated(view, savedInstanceState);
 
+    initMeasureUnitsPrefsCallbacks();
     initPerspectivePrefsCallbacks();
     initAutoZoomPrefsCallbacks();
     initAndroidAutoSupportPrefsCallback();
@@ -71,6 +74,16 @@ public class NavigationSettingsFragment extends BaseXmlSettingsFragment
   {
     final Preference pref = getPreference(getString(R.string.prefs_routing));
     pref.setSummary(RoutingOptions.hasAnyOptions() ? R.string.on : R.string.off);
+  }
+
+  private void initMeasureUnitsPrefsCallbacks()
+  {
+    final Preference pref = getPreference(getString(R.string.pref_munits));
+    ((ListPreference) pref).setValue(String.valueOf(UnitLocale.getUnits()));
+    pref.setOnPreferenceChangeListener((preference, newValue) -> {
+      UnitLocale.setUnits(Integer.parseInt((String) newValue));
+      return true;
+    });
   }
 
   private void initPerspectivePrefsCallbacks()

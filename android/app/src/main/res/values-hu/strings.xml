@@ -189,6 +189,8 @@
     <string name="prefs_group_route">Navigáció</string>
     <string name="pref_zoom_title">Nagyítás/kicsinyítés gombok</string>
     <string name="pref_zoom_summary">Megjelenítés a térképen</string>
+    <string name="prefs_group_advanced">Speciális</string>
+    <string name="download_resources_custom_url_title">Egyéni térképkiszolgáló</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Éjszakai mód</string>
     <!-- Generic «Off» string -->
@@ -567,7 +569,7 @@
         <item quantity="other">%d nyomvonal</item>
     </plurals>
     <!-- Settings privacy group in settings screen -->
-    <string name="privacy">Adatvédelem</string>
+    <string name="prefs_group_privacy">Adatvédelem</string>
     <string name="privacy_policy">Adatvédelmi irányelvek</string>
     <string name="terms_of_use">Felhasználási feltételek</string>
     <string name="button_layer_traffic">Forgalom</string>
@@ -781,7 +783,6 @@
     <string name="wikimedia_commons">Wikimédia Commons</string>
     <string name="empty_street_name_error">Adjon meg egy utcanevet</string>
     <string name="read_in_wikipedia">Wikipédia</string>
-    <string name="prefs_group_general">Általános beállítások</string>
     <string name="menu">Menü</string>
     <string name="closes_in">Bezár %s múlva</string>
     <string name="opens_in">Kinyit %s múlva</string>
@@ -873,7 +874,6 @@
     <string name="error_invalid_number">Érvénytelen szám</string>
     <string name="offline_explanation_title">Offline térképek</string>
     <string name="offline_explanation_text">A terület megtekintéséhez és az azon való navigálásához egy térképet kell letölteni.\nTöltsön le térképeket azokra a területekre, ahová utazni szeretne.</string>
-    <string name="prefs_group_general_summary">Mértékegységek, nyelv és tárolás</string>
     <string name="prefs_group_route_summary">Hangutasítások, útvonaltervezési beállítások</string>
     <string name="tts_toggle_enable">Hangutasítások engedélyezése</string>
     <string name="tts_toggle_disable">Hangutasítások letiltása</string>
@@ -921,8 +921,6 @@
     <string name="navigation_start_tts_disabled_message">Hangutasítások letiltva: nem érhető el TTS szolgáltatás</string>
     <string name="charge_socket_type1_combo">1. típus, kombinált</string>
     <string name="charge_socket_schuko">Helyi, EU-s</string>
-    <string name="advanced">Speciális</string>
-    <string name="download_resources_custom_url_title">Egyéni térképkiszolgáló</string>
     <string name="bookmark_share_email_subject">Kövesse a %1$s hivatkozást, vagy illessze be a %2$s koordinátákat a térképalkalmazásába a hely megtekintéséhez.</string>
     <string name="my_position_share_email">Kövesse a %1$s hivatkozást, vagy illessze be a %2$s koordinátákat a térképalkalmazásába a helyem megtekintéséhez.</string>
     <string name="prefs_speed_cameras_information">A sebességkamera-figyelmeztetések le vannak tiltva azokban az országokban, ahol ezeket tiltja a törvényt.</string>
