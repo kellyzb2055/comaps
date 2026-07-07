@@ -1518,3 +1518,5 @@
 "type.organic.no" = "No organic options";
 "type.amenity.stage" = "Stage";
 "type.amenity.animal_boarding" = "Animal Boarding";
+"type.amenity.toilets.customers" = "Customer Access";
+"type.amenity.toilets.private" = "Private Access";

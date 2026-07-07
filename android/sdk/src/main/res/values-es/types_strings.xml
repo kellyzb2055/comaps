@@ -395,10 +395,10 @@
     <string name="type.highway.construction.primary_link">Vía en construcción</string>
     <string name="type.highway.construction.secondary">Vía en construcción</string>
     <string name="type.highway.construction.secondary_link">Vía en construcción</string>
-    <string name="type.highway.construction.tertiary">Vía en construcción</string>
-    <string name="type.highway.construction.tertiary_link">Vía en construcción</string>
-    <string name="type.highway.construction.residential">Vía en construcción</string>
-    <string name="type.highway.construction.unclassified">Vía en construcción</string>
+    <string name="type.highway.construction.tertiary">Carretera en obras</string>
+    <string name="type.highway.construction.tertiary_link">Carretera en obras</string>
+    <string name="type.highway.construction.residential">Obras en la vía</string>
+    <string name="type.highway.construction.unclassified">Vía en obras</string>
     <string name="type.highway.construction.service">Vía en construcción</string>
     <string name="type.highway.construction.living_street">Vía en construcción</string>
     <string name="type.highway.construction.road">Vía en construcción</string>
@@ -1537,4 +1537,7 @@
     <string name="type.sport.pickleball">Pickleball</string>
     <string name="type.organic.no">Cultivo convencional no orgánico</string>
     <string name="type.amenity.stage">Etapa</string>
+    <string name="type.amenity.animal_boarding">Alojamiento para animales</string>
+    <string name="type.amenity.toilets.customers">Acceso para clientes</string>
+    <string name="type.amenity.toilets.private">Acceso privado</string>
 </resources>

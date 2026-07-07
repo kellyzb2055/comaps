@@ -968,4 +968,8 @@
     <string name="prefs_group_power_summary">Kaartstijl, scherm-time-out</string>
     <string name="permission_read_navigation_label">CoMaps navigatiegegevens lezen</string>
     <string name="permission_read_navigation_description">lees live navigatie-informatie zoals aankomende bochten of de naam van de weg waarop u zich bevindt</string>
+    <string name="prefs_group_map_appearance">Kaartuiterlijk</string>
+    <string name="prefs_group_map_appearance_summary">Kaart-taal, labelgrootte, 2D/3D-gebouwen</string>
+    <string name="planning_route_preview">Voorbeeld</string>
+    <string name="search_in_all_lists">Zoek in alle lijsten</string>
 </resources>

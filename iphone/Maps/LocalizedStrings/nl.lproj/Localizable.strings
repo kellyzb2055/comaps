@@ -881,3 +881,5 @@
 "capacity_disabled_no" = "Geen plaatsen voor gehandicapten";
 "capacity_charging_yes" = "Heeft plaatsen met laders";
 "capacity_charging_no" = "Geen plaatsen met laders";
+"planning_route_preview" = "Voorbeeld";
+"planning_route_preview_sheet_title" = "Routevoorbeeld";

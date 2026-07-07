@@ -881,3 +881,5 @@
 "capacity_disabled_yes" = "Tem lugares de estacionamento reservados para pessoas com deficiência";
 "capacity_disabled_no" = "Não tem lugares de estacionamento reservados para pessoas com deficiência";
 "capacity_charging_yes" = "Têm estacionamento com carregadores";
+"planning_route_preview" = "Preview";
+"planning_route_preview_sheet_title" = "Route Preview";

@@ -881,3 +881,5 @@
 "capacity_disabled_no" = "Nincs kijelölt mozgássérült hely";
 "capacity_charging_yes" = "Van hely töltővel";
 "capacity_charging_no" = "Nincs hely töltővel";
+"planning_route_preview" = "Preview";
+"planning_route_preview_sheet_title" = "Route Preview";

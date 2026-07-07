@@ -1538,4 +1538,5 @@
     <string name="type.sport.pickleball">Pickleball</string>
     <string name="type.organic.no">Keine Bio-Produkte</string>
     <string name="type.amenity.stage">Bühne</string>
+    <string name="type.amenity.animal_boarding">Tierpension</string>
 </resources>

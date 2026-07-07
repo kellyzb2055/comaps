@@ -881,3 +881,5 @@
 "capacity_disabled_no" = "Nav atsevišķu invalīdu vietu";
 "capacity_charging_yes" = "Ir vietas ar lādētājiem";
 "capacity_charging_no" = "Nav vietu ar lādētājiem";
+"planning_route_preview" = "Preview";
+"planning_route_preview_sheet_title" = "Route Preview";

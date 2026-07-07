@@ -1518,3 +1518,5 @@
 "type.leisure.sports_hall" = "Sports hall";
 "type.xmas.tree" = "Christmas Tree";
 "type.amenity.stage" = "Stage";
+"type.amenity.toilets.customers" = "Customer Access";
+"type.amenity.toilets.private" = "Private Access";

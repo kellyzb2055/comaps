@@ -886,3 +886,5 @@
 "capacity_charging_no" = "No spaces with chargers";
 
 "carplay_highway_exit" = "Exit %@";
+"planning_route_preview" = "Preview";
+"planning_route_preview_sheet_title" = "Route Preview";

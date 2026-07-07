@@ -619,3 +619,5 @@
 "capacity_disabled_no" = "No dedicated disabled spaces";
 "capacity_charging_yes" = "Has spaces with chargers";
 "capacity_charging_no" = "No spaces with chargers";
+"planning_route_preview" = "Preview";
+"planning_route_preview_sheet_title" = "Route Preview";

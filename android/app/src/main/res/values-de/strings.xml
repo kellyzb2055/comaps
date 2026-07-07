@@ -957,4 +957,5 @@
     <string name="sort_categories">Favoritenliste sortieren</string>
     <string name="by_recently_used">Zuletzt verwendet</string>
     <string name="by_custom">benutzerdefiniert</string>
+    <string name="capacity_disabled">Behindertenparkplätze: %s</string>
 </resources>
