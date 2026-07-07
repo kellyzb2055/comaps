@@ -980,4 +980,8 @@
     <string name="prefs_group_power_summary">نمط الخريطة، مهلة الشاشة</string>
     <string name="permission_read_navigation_label">قراءة بيانات الملاحة من CoMaps</string>
     <string name="permission_read_navigation_description">قراءة معلومات الملاحة المباشرة، مثل المنعطفات القادمة أو اسم الطريق الذي تسير عليه</string>
+    <string name="prefs_group_map_appearance">مظهر الخريطة</string>
+    <string name="prefs_group_map_appearance_summary">لغة الخريطة وحجم التسميات و مباني 2D/3D</string>
+    <string name="planning_route_preview">معاينة</string>
+    <string name="search_in_all_lists">ابحث في كل القوائم</string>
 </resources>
