@@ -965,4 +965,5 @@
     <string name="capacity_charging_yes">Har pladser med ladere</string>
     <string name="capacity_charging_no">Ingen pladser med ladere</string>
     <string name="permission_read_navigation_label">Læs CoMaps-navigationsdata</string>
+    <string name="permission_read_navigation_description">læs live-navigationsoplysninger, såsom kommende sving eller navnet på den vej, du kører på</string>
 </resources>
