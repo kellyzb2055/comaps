@@ -881,5 +881,5 @@
 "capacity_disabled_no" = "لا مواقف مخصّصة لذوي الإعاقة";
 "capacity_charging_yes" = "يحتوي على أماكن مزودة بشواحن";
 "capacity_charging_no" = "لا أماكن مزودة بشواحن";
-"planning_route_preview" = "Preview";
+"planning_route_preview" = "معاينة";
 "planning_route_preview_sheet_title" = "Route Preview";
