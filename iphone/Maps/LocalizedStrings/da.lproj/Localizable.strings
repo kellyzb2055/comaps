@@ -878,8 +878,8 @@
 "oh_unknown" = "Åbningstider ukendt";
 "carplay_highway_exit" = "Afkørsel %@";
 "capacity_disabled_yes" = "Has dedicated disabled spaces";
-"capacity_disabled_no" = "No dedicated disabled spaces";
-"capacity_charging_yes" = "Has spaces with chargers";
-"capacity_charging_no" = "No spaces with chargers";
-"planning_route_preview" = "Preview";
+"capacity_disabled_no" = "Ingen særlige parkeringspladser for handicappede";
+"capacity_charging_yes" = "Har pladser med ladere";
+"capacity_charging_no" = "Ingen pladser med ladere";
+"planning_route_preview" = "Forhåndsvisning";
 "planning_route_preview_sheet_title" = "Route Preview";
