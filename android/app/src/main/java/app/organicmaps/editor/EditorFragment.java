@@ -1064,7 +1064,7 @@ public class EditorFragment extends BaseMwmFragment implements View.OnClickListe
   private void commitPlaceDoesntExist(@NonNull String text)
   {
     Editor.nativePlaceDoesNotExist(text);
-    mParent.onBackPressed();
+    mParent.ensureOsmAuthorized();
   }
 
   @NonNull
