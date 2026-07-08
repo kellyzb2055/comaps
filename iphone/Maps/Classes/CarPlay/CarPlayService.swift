@@ -652,23 +652,23 @@ extension CarPlayService: LocationModeListener {
     // exit if we're navigating
     guard let info = rootMapTemplate.userInfo as? MapInfo,
               info.type == CPConstants.TemplateType.main else {
-        MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate, newMode: mode)
+        MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate)
         return
     }
     switch mode {
     case .follow, .followAndRotate:
       if !rootMapTemplate.isPanningInterfaceVisible {
         MapTemplateBuilder.setupDestinationButton(mapTemplate: rootMapTemplate)
-        MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate, newMode: mode)
+        MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate)
       }
     case .notFollow:
       if !rootMapTemplate.isPanningInterfaceVisible {
         MapTemplateBuilder.setupRecenterButton(mapTemplate: rootMapTemplate)
-        MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate, newMode: mode)
+        MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate)
       }
     case .pendingPosition, .notFollowNoPosition:
       rootMapTemplate.leadingNavigationBarButtons = []
-      MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate, newMode: mode)
+      MapTemplateBuilder.updateMyPositionModeButton(mapTemplate: rootMapTemplate)
     }
   }
 }
