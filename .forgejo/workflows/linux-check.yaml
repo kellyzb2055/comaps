@@ -12,8 +12,9 @@ on:
       - .forgejo/workflows/linux-check.yaml  # Run check on self change
       - libs/**
       - '!**/*_tests/**'
-      - '!libs/platform/*apple*'
-      - '!libs/platform/*_ios*'
+      - '!libs/**/*apple*'
+      - '!libs/**/*_ios*'
+      - '!libs/platform/apple/**'
       - '!libs/platform/*_linux*'
       - '!libs/platform/*_mac*'
       - '!libs/platform/*_win*'
@@ -23,6 +24,8 @@ on:
       - generator/**
       - tools/unix/build_omim.sh
       - tools/unix/run_tests.sh
+      - '!iphone/**'
+      - '!xcode/**'
     branches:
       - main
   pull_request:
