@@ -897,10 +897,6 @@
     <string name="place_page_too_old_to_edit">Redigering af OpenStreetMap er deaktiveret, fordi kortdataene er for gamle.</string>
     <string name="navigation_start_tts_disabled_message">Stemmevejledninger deaktiveret: TTS-motor ikke tilgængelig</string>
     <string name="advanced">Avanceret</string>
-    <string name="download_resources_custom_url_title">Brugerdefineret kortserver</string>
-    <string name="download_resources_custom_url_message">Tilsidesæt den som standard anvendte server til download af kort. Lad feltet være tomt for at bruge CoMaps\' standardserver.</string>
-    <string name="download_resources_custom_url_summary_none">Ikke indstillet</string>
-    <string name="download_resources_custom_url_error_scheme">Indtast en URL, der starter med http:// eller https://</string>
     <string name="pref_maplanguage_local">Lokalt sprog</string>
     <string name="location_privacy_info">Apps modtager placeringsdata fra din OS-placeringstjeneste, som muligvis deler din placering med Google og/eller din enhedsleverandør. Brug et Android-operativsystem, der beskytter dit privatliv, for at undgå dette.</string>
     <string name="location_privacy">Placeringsbeskyttelse</string>
