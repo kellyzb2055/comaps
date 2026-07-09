@@ -100,6 +100,10 @@ if [ -z "$SKIP_MAP_DOWNLOAD" ]; then
   pushd data
 
   MWM_VERSION=$(awk -F'[:,]' '/"v":/{ $2 = substr($2, 2); print $2 }' countries.txt)
+  # Maps are found under this location
+  # https://mapgen-fi-1.comaps.app/maps/<map_series>/<version>/World.mwm
+  MAP_SERIES=$(awk -F'"' '/"map_series":/{ print $4; exit }' countries.txt)
+  MAPS_BASE_URL="https://mapgen-fi-1.comaps.app/maps/$MAP_SERIES/$MWM_VERSION"
   MWM_PATH="world_mwm/$MWM_VERSION"
   WORLD_PATH="$MWM_PATH/World.mwm"
   WORLD_PATH2="$MWM_PATH/WorldCoasts.mwm"
@@ -110,12 +114,17 @@ if [ -z "$SKIP_MAP_DOWNLOAD" ]; then
   if [ ! -f "$WORLD_PATH" ]; then
     echo "Downloading world map..."
     # mapgen-fi-1 is supposed to have all historic prod map versions as well as recent test maps
-    # TODO: change to use map series folders structure; try different CDN nodes
-    wget -N "https://mapgen-fi-1.comaps.app/maps/$MWM_VERSION/World.mwm" -P "$MWM_PATH" &&
+    if ! wget -N "$MAPS_BASE_URL/World.mwm" -P "$MWM_PATH"; then
+      echo "ERROR: could not download World.mwm from $MAPS_BASE_URL" >&2
+      exit 1
+    fi
     rm -f World.mwm; ln -s "$WORLD_PATH" World.mwm
   fi
   if [ ! -f "$WORLD_PATH2" ]; then
-    wget -N "https://mapgen-fi-1.comaps.app/maps/$MWM_VERSION/WorldCoasts.mwm" -P "$MWM_PATH" &&
+    if ! wget -N "$MAPS_BASE_URL/WorldCoasts.mwm" -P "$MWM_PATH"; then
+      echo "ERROR: could not download WorldCoasts.mwm from $MAPS_BASE_URL" >&2
+      exit 1
+    fi
     rm -f WorldCoasts.mwm; ln -s "$WORLD_PATH2" WorldCoasts.mwm
   fi
 
