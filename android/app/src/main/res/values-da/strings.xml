@@ -896,7 +896,6 @@
     <string name="place_page_update_too_old_map">Opdater kortregion</string>
     <string name="place_page_too_old_to_edit">Redigering af OpenStreetMap er deaktiveret, fordi kortdataene er for gamle.</string>
     <string name="navigation_start_tts_disabled_message">Stemmevejledninger deaktiveret: TTS-motor ikke tilgængelig</string>
-    <string name="advanced">Avanceret</string>
     <string name="pref_maplanguage_local">Lokalt sprog</string>
     <string name="location_privacy_info">Apps modtager placeringsdata fra din OS-placeringstjeneste, som muligvis deler din placering med Google og/eller din enhedsleverandør. Brug et Android-operativsystem, der beskytter dit privatliv, for at undgå dette.</string>
     <string name="location_privacy">Placeringsbeskyttelse</string>
@@ -946,7 +945,6 @@
     <string name="sort_categories">Sortér favoritlister</string>
     <string name="by_recently_used">Efter senest anvendte</string>
     <string name="by_custom">Efter brugerdefineret rækkefølge</string>
-    <string name="prefs_group_general_summary">Enheder, sprog, lagring</string>
     <string name="prefs_group_map_appearance">Kortets udseende</string>
     <string name="prefs_group_map_appearance_summary">Kortsprog, størrelse på etiketter, 2D/3D-bygninger</string>
     <string name="prefs_group_route_summary">Stemmevejledninger, indstillinger for ruteberegning</string>
