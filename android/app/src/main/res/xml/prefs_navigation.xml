@@ -54,6 +54,7 @@
     android:defaultValue="true"
     android:key="@string/pref_enable_auto_reroute"
     android:title="@string/pref_enable_auto_reroute_title"
+    android:summary="@string/pref_enable_auto_reroute_description"
     android:widgetLayout="@layout/preference_switch"
     app:singleLineTitle="false" />
 
