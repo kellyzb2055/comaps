@@ -1329,7 +1329,7 @@
         "defaultMessage": "Sporthal"
     },
     "amenity-arts_centre|@category_tourism": {
-        "defaultMessage": "Kunstcentrum"
+        "defaultMessage": "5Kunstcentrum|5Cultureel centrum"
     },
     "amenity-prison": {
         "defaultMessage": "5gevangenis|5penitentiaire inrichting|5detentiecentrum"
@@ -1341,7 +1341,7 @@
         "defaultMessage": "8Badkamerinrichting"
     },
     "shop-bed|@shop": {
-        "defaultMessage": "3Beddenwinkel"
+        "defaultMessage": "3Beddenwinkel|4Matras"
     },
     "shop-boutique|@shop": {
         "defaultMessage": "4Boetiek"
@@ -1647,7 +1647,7 @@
         "defaultMessage": "Diner"
     },
     "cuisine-donut": {
-        "defaultMessage": "Donuts"
+        "defaultMessage": "5Donuts"
     },
     "cuisine-fish_and_chips": {
         "defaultMessage": "Fish and chips"
@@ -1858,5 +1858,8 @@
     },
     "amenity-stage": {
         "defaultMessage": "Podium"
+    },
+    "amenity-animal_boarding": {
+        "defaultMessage": "4Dierenpension"
     }
 }

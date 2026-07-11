@@ -1149,7 +1149,7 @@
         "defaultMessage": "Grenzkontrolle"
     },
     "leisure-water_park|@category_tourism|@category_children": {
-        "defaultMessage": "Wasserpark|Freizeitbad|3Aquapark"
+        "defaultMessage": "Wasserpark|Freizeitbad|3Aquapark|4Spaßbad|Erlebnisbad"
     },
     "man_made-water_tower": {
         "defaultMessage": "Wasserturm"
@@ -1434,7 +1434,7 @@
         "defaultMessage": "Sporthalle"
     },
     "amenity-arts_centre|@category_tourism": {
-        "defaultMessage": "Kunstzentrum"
+        "defaultMessage": "Kunstzentrum|Kulturzentrum"
     },
     "amenity-prison": {
         "defaultMessage": "4Gefängnis"
@@ -1849,5 +1849,14 @@
     },
     "sport-four_square": {
         "defaultMessage": "Four Square"
+    },
+    "amenity-planetarium|@category_tourism": {
+        "defaultMessage": "5Sternwarte|5Astronomie"
+    },
+    "amenity-animal_boarding": {
+        "defaultMessage": "5Tierhotel|9Haustierhotel|5Tierpension|9Haustierpension"
+    },
+    "amenity-stage": {
+        "defaultMessage": "Bühne"
     }
 }

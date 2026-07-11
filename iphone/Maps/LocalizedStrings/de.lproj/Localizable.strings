@@ -877,9 +877,9 @@
 "editor_add_select_category_recent_subtitle" = "Kürzlich verwendet";
 "oh_unknown" = "Unbekannte Öffnungszeiten";
 "carplay_highway_exit" = "Ausfahrt %@";
-"capacity_disabled_yes" = "Has dedicated disabled spaces";
+"capacity_disabled_yes" = "Verfügt über ausgewiesene Behindertenparkplätze";
 "capacity_disabled_no" = "Keine ausgewiesenen Behindertenparkplätze";
 "capacity_charging_yes" = "Verfügt über Ladestellplätze";
 "capacity_charging_no" = "Keine Ladestellplätze";
 "planning_route_preview" = "Vorschau";
-"planning_route_preview_sheet_title" = "Route Preview";
+"planning_route_preview_sheet_title" = "Routenvorschau";

@@ -400,5 +400,56 @@
     },
     "from_600_feet": {
         "defaultMessage": "zeshonderd voet"
+    },
+    "route_not_recalculating": {
+        "defaultMessage": "U bent %1$s van de route"
+    },
+    "from_700_feet": {
+        "defaultMessage": "zevenhonderd voet"
+    },
+    "from_800_feet": {
+        "defaultMessage": "achthonderd voet"
+    },
+    "from_900_feet": {
+        "defaultMessage": "negenhonderd voet"
+    },
+    "from_1000_feet": {
+        "defaultMessage": "duizend voet"
+    },
+    "from_1500_feet": {
+        "defaultMessage": "vijftienhonderd voet"
+    },
+    "from_2000_feet": {
+        "defaultMessage": "tweeduizend voet"
+    },
+    "from_2500_feet": {
+        "defaultMessage": "tweeëneenhalf duizend voet"
+    },
+    "from_3000_feet": {
+        "defaultMessage": "drieduizend voet"
+    },
+    "from_3500_feet": {
+        "defaultMessage": "drieënhalf duizend voet"
+    },
+    "from_4000_feet": {
+        "defaultMessage": "vierduizend voet"
+    },
+    "from_4500_feet": {
+        "defaultMessage": "vierenhalf duizend voet"
+    },
+    "from_5000_feet": {
+        "defaultMessage": "vijfduizend voet"
+    },
+    "from_1_mile": {
+        "defaultMessage": "één mijl"
+    },
+    "from_1_5_miles": {
+        "defaultMessage": "anderhalf mijl"
+    },
+    "from_2_miles": {
+        "defaultMessage": "twee mijl"
+    },
+    "from_over_2_miles": {
+        "defaultMessage": "meer dan twee mijl"
     }
 }

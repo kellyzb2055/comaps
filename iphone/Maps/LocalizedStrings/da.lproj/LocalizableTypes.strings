@@ -1533,7 +1533,7 @@
 "type.leisure.sports_centre.sport.pickleball" = "Idrætscenter";
 "type.organic.no" = "Ikke økologisk";
 "type.amenity.stage" = "Scene";
-"type.amenity.animal_boarding" = "Animal Boarding";
-"type.amenity.toilets.customers" = "Customer Access";
-"type.amenity.toilets.private" = "Private Access";
+"type.amenity.animal_boarding" = "Dyrepension";
+"type.amenity.toilets.customers" = "Kundeadgang";
+"type.amenity.toilets.private" = "Privat adgang";
 "type.amenity.planetarium" = "Planetarium";

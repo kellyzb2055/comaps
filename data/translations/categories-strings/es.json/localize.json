@@ -1686,7 +1686,7 @@
         "defaultMessage": "Ramen"
     },
     "cuisine-sandwich|@fastfood": {
-        "defaultMessage": "Sándwiches"
+        "defaultMessage": "Sándwich"
     },
     "cuisine-sausage|@fastfood": {
         "defaultMessage": "Salchichas"
@@ -1849,5 +1849,14 @@
     },
     "cuisine-malagasy": {
         "defaultMessage": "malgache|comida malgache|cocina malgache"
+    },
+    "amenity-planetarium|@category_tourism": {
+        "defaultMessage": "5Planetario|U+1FA90|5astronomía"
+    },
+    "amenity-animal_boarding": {
+        "defaultMessage": "Residencia para animales|Residencia para mascotas|Hotel para mascotas"
+    },
+    "amenity-stage": {
+        "defaultMessage": "Etapa"
     }
 }

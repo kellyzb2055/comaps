@@ -957,9 +957,23 @@
     <string name="capacity_charging">Estacionamento com carregadores: %s</string>
     <string name="capacity_charging_yes">Têm estacionamento com carregadores</string>
     <string name="capacity_charging_no">Não tem estacionamento com carregadores</string>
-    <string name="prefs_group_route_summary">Instruções de voz, opções de roteamento</string>
-    <string name="prefs_group_privacy_summary">Serviços da Google Play, histórico de pesquisa</string>
-    <string name="prefs_group_power_summary">Estilo do mapa, tempo de proteção do ecrã</string>
+    <string name="prefs_group_route_summary">Unidades, instruções de voz, opções de roteamento</string>
+    <string name="prefs_group_privacy_summary">Histórico de pesquisa</string>
+    <string name="prefs_group_power_summary">Tempo de proteção do ecrã, dados móveis</string>
     <string name="permission_read_navigation_label">Ler dados de navegação do CoMaps</string>
     <string name="permission_read_navigation_description">ler informação de navegação ao vivo tal como saídas iminentes ou o nome da estrada em que se encontra</string>
+    <string name="pref_about_summary">Reporte problemas, obtenha ajuda, faça uma doação\nVersão: v%1$s</string>
+    <string name="prefs_group_map_appearance">Aspeto do mapa</string>
+    <string name="prefs_group_map_appearance_summary">Idioma do mapa, tamanho das etiquetas, edifícios 2D/3D</string>
+    <string name="prefs_group_interface">Interface</string>
+    <string name="prefs_group_interface_summary">Modo noturno, botões, idioma</string>
+    <string name="prefs_group_data_management">Gestão de dados</string>
+    <string name="prefs_group_data_management_summary">Armazenamento de mapas, backup de favoritos</string>
+    <string name="prefs_group_advanced_summary">Ativar os registos</string>
+    <string name="planning_route_preview">Pré-visualização</string>
+    <string name="search_in_all_lists">Procurar em todas as listas</string>
+    <string name="pref_enable_auto_reroute_title">Redirecionamento automático</string>
+    <string name="pref_enable_auto_reroute_description">Quando ativo, uma nova rota será automaticamente criada se sair da rota planeada.</string>
+    <string name="recalculate_route">Recalcular</string>
+    <string name="off_route">Saiu da rota planeada</string>
 </resources>

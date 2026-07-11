@@ -129,7 +129,7 @@
 "type.amenity.parking_space.permissive" = "停车位";
 "type.amenity.parking_space.private" = "停车位";
 "type.amenity.parking_space.underground" = "停车位";
-"type.amenity.parking_space.disabled" = "残疾人停车位";
+"type.amenity.parking_space.disabled" = "无障碍停车位";
 "type.amenity.car_pooling" = "拼车";
 "type.amenity.payment_terminal" = "支付终端";
 "type.amenity.payment_centre" = "付款中心";

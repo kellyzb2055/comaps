@@ -1531,4 +1531,8 @@
     <string name="type.sport.four_square">Four Square</string>
     <string name="type.amenity.mobile_money_agent">Mobilpengeagent</string>
     <string name="type.amenity.stage">Scene</string>
+    <string name="type.amenity.planetarium">Planetarium</string>
+    <string name="type.amenity.toilets.customers">Kundeadgang</string>
+    <string name="type.amenity.toilets.private">Privat adgang</string>
+    <string name="type.amenity.animal_boarding">Dyrepension</string>
 </resources>

@@ -27,7 +27,7 @@
     <!-- A dialog title, that warns a user that Precise Location is disabled and suggests to turn it on -->
     <string name="limited_accuracy">精度有限</string>
     <!-- A dialog text, that warns a user that Precise Location is disabled and suggests to turn it on -->
-    <string name="precise_location_is_disabled_long_text">为确保导航准确，请在设置中启用 \"精确定位\"</string>
+    <string name="precise_location_is_disabled_long_text">为确保导航准确，请在设置中启用确切位置</string>
     <!-- View and button titles for accessibility -->
     <string name="zoom_to_country">在地图上显示</string>
     <!-- Message to display at the center of the screen when the country download has failed -->
@@ -623,7 +623,7 @@
     <string name="power_managment_setting_auto">当电量低时</string>
     <string name="power_managment_setting_manual_max">最大程度省电</string>
     <string name="enable_logging_warning_message">临时启用此选项，以便使用“报告错误”功能在帮助对话框中记录并手动发送详细诊断日志给我们。日志可能包含位置信息。</string>
-    <string name="routing_options_title">绕行设置</string>
+    <string name="routing_options_title">路线选项</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
     <string name="avoid_tolls">避开收费公路</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
@@ -633,8 +633,8 @@
     <string name="avoid_motorways">避开高速公路</string>
     <string name="unable_to_calc_alert_title">无法规划路线</string>
     <string name="unable_to_calc_alert_subtitle">很遗憾，找不到可行的路线。这可能是因为您的路线选项当前不可用或 OpenStreetMap 数据不完整。请更改路线选项再重试。</string>
-    <string name="define_to_avoid_btn">选择要避开的道路</string>
-    <string name="change_driving_options_btn">绕行设置已开启</string>
+    <string name="define_to_avoid_btn">选择路线选项</string>
+    <string name="change_driving_options_btn">路线选项已启用</string>
     <string name="toll_road">收费公路</string>
     <string name="unpaved_road">非铺装道路</string>
     <string name="ferry_crossing">轮渡</string>
@@ -814,7 +814,7 @@
     <string name="edit_track">编辑轨迹</string>
     <string name="uri_open_location_failed">未安装可以打开位置的应用</string>
     <!-- preference string for using auto theme only in navigation mode -->
-    <string name="nav_auto">自动导航</string>
+    <string name="nav_auto">导航中自动</string>
     <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="app_site_url">https://comaps.app/zh-Hans/</string>
@@ -959,4 +959,29 @@
     <string name="sort_categories">排序收藏列表</string>
     <string name="by_recently_used">按最近使用过</string>
     <string name="by_custom">按自定义顺序</string>
+    <string name="planning_route_preview">预览</string>
+    <string name="capacity_disabled_no">无专用无障碍停车位</string>
+    <string name="capacity_charging_yes">有带充电桩的停车位</string>
+    <string name="capacity_charging_no">无带充电桩的停车位</string>
+    <string name="pref_about_summary">报告问题、获取帮助、捐赠\n版本：v%1$s</string>
+    <string name="prefs_group_map_appearance">地图外观</string>
+    <string name="prefs_group_map_appearance_summary">地图语言、标签大小、2D/3D 建筑</string>
+    <string name="prefs_group_interface">界面</string>
+    <string name="prefs_group_interface_summary">夜间模式、按钮、语言</string>
+    <string name="prefs_group_data_management">数据管理</string>
+    <string name="prefs_group_data_management_summary">地图存储、备份收藏</string>
+    <string name="prefs_group_route_summary">单位、语音提示、路线选项</string>
+    <string name="prefs_group_advanced_summary">启用日志记录</string>
+    <string name="prefs_group_privacy_summary">搜索历史记录</string>
+    <string name="prefs_group_power_summary">屏幕超时、移动数据</string>
+    <string name="search_in_all_lists">在所有列表中搜索</string>
+    <string name="pref_enable_auto_reroute_title">自动重新规划路线</string>
+    <string name="pref_enable_auto_reroute_description">启用后，当您偏离计划路线时，将自动规划新路线。</string>
+    <string name="recalculate_route">重新计算</string>
+    <string name="off_route">您已偏离路线</string>
+    <string name="capacity_disabled">无障碍停车位：%s</string>
+    <string name="capacity_disabled_yes">有专用无障碍停车位</string>
+    <string name="capacity_charging">带充电桩的停车位：%s</string>
+    <string name="permission_read_navigation_label">读取 CoMaps 导航数据</string>
+    <string name="permission_read_navigation_description">读取实时导航信息，例如即将到来的转弯或您当前所在道路的名称</string>
 </resources>

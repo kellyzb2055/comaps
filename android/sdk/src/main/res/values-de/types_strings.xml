@@ -657,7 +657,7 @@
     <string name="type.landuse.greenfield">Bauland</string>
     <string name="type.landuse.greenhouse_horticulture">Gewächshaus-Fläche</string>
     <string name="type.landuse.industrial">Industriegebiet</string>
-    <string name="type.landuse.landfill">Müllhalde</string>
+    <string name="type.landuse.landfill">Mülldeponie</string>
     <string name="type.landuse.meadow">Wiese</string>
     <string name="type.landuse.military">Militärgebiet</string>
     <string name="type.landuse.orchard">Obstplantage</string>
@@ -1539,4 +1539,7 @@
     <string name="type.organic.no">Keine Bio-Produkte</string>
     <string name="type.amenity.stage">Bühne</string>
     <string name="type.amenity.animal_boarding">Tierpension</string>
+    <string name="type.amenity.planetarium">Planetarium</string>
+    <string name="type.amenity.toilets.customers">Kundenzugang</string>
+    <string name="type.amenity.toilets.private">Privatzugang</string>
 </resources>

@@ -319,5 +319,35 @@
     },
     "at_the_end_of_the_road": {
         "defaultMessage": "No fim da rua,"
+    },
+    "in_over_3_kilometers": {
+        "defaultMessage": "Em mais de três quilômetros"
+    },
+    "from_50_meters": {
+        "defaultMessage": "cinquenta metros"
+    },
+    "from_100_meters": {
+        "defaultMessage": "cem metros"
+    },
+    "from_200_meters": {
+        "defaultMessage": "duzentos metros"
+    },
+    "from_250_meters": {
+        "defaultMessage": "duzentos e cinquenta metros"
+    },
+    "from_300_meters": {
+        "defaultMessage": "trezentos metros"
+    },
+    "from_400_meters": {
+        "defaultMessage": "quatrocentos metros"
+    },
+    "from_500_meters": {
+        "defaultMessage": "quinhentos metros"
+    },
+    "from_600_meters": {
+        "defaultMessage": "seiscentos metros"
+    },
+    "from_700_meters": {
+        "defaultMessage": "setecentos metros"
     }
 }

@@ -381,7 +381,7 @@
         "defaultMessage": "Πορνείο|οίκος ανοχής"
     },
     "@gambling": {
-        "defaultMessage": "ΤΥΧΕΡΑ ΠΑΙΧΝΙΔΙΑ"
+        "defaultMessage": "Τυχερά παιχνίδια"
     },
     "amenity-casino|@category_entertainment|@category_nightlife|@gambling": {
         "defaultMessage": "Καζίνο"
@@ -711,7 +711,7 @@
         "defaultMessage": "Τένις"
     },
     "sport-padel": {
-        "defaultMessage": "Padel"
+        "defaultMessage": "Πάντελ"
     },
     "sport-volleyball": {
         "defaultMessage": "Πετοσφαίριση"

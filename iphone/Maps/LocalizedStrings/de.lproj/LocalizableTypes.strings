@@ -694,7 +694,7 @@
 "type.landuse.greenfield" = "Bauland";
 "type.landuse.greenhouse_horticulture" = "Gewächshaus-Fläche";
 "type.landuse.industrial" = "Industriegebiet";
-"type.landuse.landfill" = "Müllhalde";
+"type.landuse.landfill" = "Mülldeponie";
 "type.landuse.meadow" = "Wiese";
 "type.landuse.military" = "Militärgebiet";
 "type.landuse.orchard" = "Obstplantage";
@@ -1534,6 +1534,6 @@
 "type.organic.no" = "Keine Bio-Produkte";
 "type.amenity.stage" = "Bühne";
 "type.amenity.animal_boarding" = "Tierpension";
-"type.amenity.toilets.customers" = "Customer Access";
-"type.amenity.toilets.private" = "Private Access";
+"type.amenity.toilets.customers" = "Kundenzugang";
+"type.amenity.toilets.private" = "Privatzugang";
 "type.amenity.planetarium" = "Planetarium";

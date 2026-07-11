@@ -177,7 +177,7 @@
     <!-- Text for message when used successfully copied something -->
     <string name="copied_to_clipboard">Αντιγράφηκε στο Πρόχειρο: %s</string>
     <!-- Used for bookmark editing -->
-    <string name="done">Ολοκλήρωση</string>
+    <string name="done">Έτοιμο</string>
     <!-- Data version in «About» screen, %@ is replaced by a local, human readable date. -->
     <string name="data_version">Δεδομένα OpenStreetMap: %s</string>
     <!-- Title for tracks category in bookmarks manager -->
@@ -194,7 +194,7 @@
     <string name="download_resources_custom_url_title">Προσαρμοσμένος διακομιστής χάρτη</string>
     <string name="download_resources_custom_url_message">Παρακάμπτει τον προεπιλεγμένο διακομιστή λήψης χάρτη για τις λήψεις χαρτών. Αφήστε το κενό για να χρησιμοποιήσετε τον προεπιλεγμένο διακομιστή του CoMaps.</string>
     <string name="download_resources_custom_url_summary_none">Δεν έχει οριστεί</string>
-    <string name="download_resources_custom_url_error_scheme">Παρακαλούμε είσαγετε ένα URL που να ξεκινά με http:// ή https://</string>
+    <string name="download_resources_custom_url_error_scheme">Παρακαλούμε εισάγετε ένα URL που να ξεκινά με http:// ή https://</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Νυχτερινή λειτουργία</string>
     <!-- Generic «Off» string -->
@@ -249,9 +249,9 @@
     <!-- Text in menu + Button in the main Help dialog -->
     <string name="report_a_bug">Αναφορά σφάλματος</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
-    <string name="compass_calibration_recommended">Βελτιώστε την κατεύθυνση των βελών μετακινώντας το τηλέφωνο με μια κίνηση σχήματος οκτώ για να καλιμπράρετε την πυξίδα.</string>
+    <string name="compass_calibration_recommended">Βελτιώστε την κατεύθυνση των βελών μετακινώντας το τηλέφωνο με μια κίνηση σχήματος οκτώ για να βαθμολογήσετε την πυξίδα.</string>
     <!-- Toast text when compass calibration may improve the correctness of the current position arrow -->
-    <string name="compass_calibration_required">Μετακινήστε το τηλέφωνο με μια κίνηση σχήματος οκτώ για να καλιμπράρετε την πυξίδα και να καθορίσετε την κατεύθυνση του βέλους στο χάρτη.</string>
+    <string name="compass_calibration_required">Μετακινήστε το τηλέφωνο με μια κίνηση σχήματος οκτώ για να βαθμολογήσετε την πυξίδα και να καθορίσετε την κατεύθυνση του βέλους στο χάρτη.</string>
     <!-- Toast text when user hides UI with a long tap anywhere on the map -->
     <string name="enable_long_tap_fullscreen_description">Πατήστε ξανά παρατεταμένα στο χάρτη για να δείτε το περιβάλλον εργασίας</string>
     <!-- Update all button text -->
@@ -259,7 +259,7 @@
     <!-- Cancel all button text -->
     <string name="downloader_cancel_all">Ακύρωση όλων</string>
     <!-- Downloaded maps list header -->
-    <string name="downloader_downloaded_subtitle">Κατεβασμένοι</string>
+    <string name="downloader_downloaded_subtitle">Κατέβηκαν</string>
     <!-- Country queued for download -->
     <string name="downloader_queued">Στην ουρά</string>
     <string name="downloader_near_me_subtitle">Κοντά μου</string>
@@ -312,7 +312,7 @@
     <!-- pink color -->
     <string name="pink">Ροζ</string>
     <!-- deep purple color -->
-    <string name="deep_purple">Βαθύ μωβ</string>
+    <string name="deep_purple">Σκούρο μωβ</string>
     <!-- light blue color -->
     <string name="light_blue">Γαλάζιο</string>
     <!-- cyan color -->
@@ -322,16 +322,16 @@
     <!-- lime color -->
     <string name="lime">Λάιμ</string>
     <!-- deep orange color -->
-    <string name="deep_orange">Βαθύ πορτοκαλί</string>
+    <string name="deep_orange">Σκούρο πορτοκαλί</string>
     <!-- gray color -->
     <string name="gray">Γκρι</string>
     <!-- blue gray color -->
     <string name="blue_gray">Γκρίζο μπλε</string>
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">Όταν ακολουθείτε την διαδρομή, να θυμάστε:</string>
-    <string name="dialog_routing_disclaimer_priority">- Οι οδικές συνθήκες, οι κανόνες οδικής κυκλοφορίας και οι πινακίδες έχουν πάντα προτεραιότητα έναντι των συμβουλών πλοήγησης;</string>
-    <string name="dialog_routing_disclaimer_precision">— Ο Χάρτης μπορεί να είναι ανακριβής, και η προτεινόμενη διαδρομή μπορεί να μην είναι πάντα ο βέλτιστος τρόπος να φτάσετε στον προορισμό;</string>
-    <string name="dialog_routing_disclaimer_recommendations">— Οι προτεινόμενες διαδρομές πρέπει να ερμηνεύονται μόνο ως συστάσεις;</string>
+    <string name="dialog_routing_disclaimer_priority">— Οι οδικές συνθήκες, οι κανόνες οδικής κυκλοφορίας και οι πινακίδες έχουν πάντα προτεραιότητα έναντι των συμβουλών πλοήγησης,</string>
+    <string name="dialog_routing_disclaimer_precision">— Ο Χάρτης μπορεί να είναι ανακριβής, και η προτεινόμενη διαδρομή μπορεί να μην είναι πάντα ο βέλτιστος τρόπος να φτάσετε στον προορισμό,</string>
+    <string name="dialog_routing_disclaimer_recommendations">— Οι προτεινόμενες διαδρομές πρέπει να ερμηνεύονται μόνο ως συστάσεις,</string>
     <string name="dialog_routing_disclaimer_borders">— Προσέξτε τις διαδρομές στις παραμεθόριες περιοχές: οι διαδρομές που δημιουργούνται από την εφαρμογή μας μπορεί μερικές φορές να διαπερνούν τα εθνικά σύνορα σε απαγορευμένες περιοχές.</string>
     <string name="dialog_routing_disclaimer_beware">Να είστε πάντα σε εγρήγορση και να οδηγείτε με ασφάλεια στους δρόμους!</string>
     <string name="dialog_routing_check_gps">Ελέγξτε το σήμα GPS</string>
@@ -385,7 +385,7 @@
     <string name="editor_time_from">Από</string>
     <!-- Tab title in the Edit Opening Hours time picker -->
     <string name="editor_time_to">Έως</string>
-    <string name="editor_time_add">Προσθέσετε χρονοδιάγραμμα</string>
+    <string name="editor_time_add">Προσθήκη χρονοδιαγράμματος</string>
     <string name="editor_time_delete">Διαγραφή χρονοδιαγράμματος</string>
     <!-- Text for allday switch. -->
     <string name="editor_time_allday">Όλη την ημέρα (24 ώρες)</string>
@@ -400,7 +400,7 @@
     <string name="editor_correct_mistake">Διόρθωση λάθους</string>
     <string name="editor_add_select_location">Επιλέξτε τοποθεσία</string>
     <string name="editor_report_problem_send_button">Αποστολή</string>
-    <string name="autodownload">Αυτόματη λήψη</string>
+    <string name="autodownload">Αυτόματη λήψη χαρτών</string>
     <!-- Place Page opening hours text -->
     <string name="daily">Καθημερινά</string>
     <string name="twentyfour_seven">24/7</string>
@@ -423,7 +423,7 @@
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Αριθμός κτιρίου</string>
     <string name="details">Λεπτομέρειες</string>
-    <string name="social_media">Μέσα κοινωνικής δικτύωσης</string>
+    <string name="social_media">Κοινωνικά Δίκτυα</string>
     <string name="building">Κτίριο</string>
     <!-- Text field to enter non-existing street name, below list of known streets around -->
     <string name="add_street">Προσθέστε οδό</string>
@@ -437,7 +437,7 @@
     <string name="editor_add_phone">Προσθήκη Τηλεφώνου</string>
     <string name="level">Όροφος</string>
     <string name="downloader_delete_map_dialog">Όλες οι αλλαγές που έχετε κάνει στο χάρτη θα διαγραφούν μαζί με το χάρτη</string>
-    <string name="downloader_update_maps">Ενημέρωση χαρτών</string>
+    <string name="downloader_update_maps">Ενημέρωση Χαρτών</string>
     <string name="downloader_mwm_migration_dialog">Για να δημιουργήσετε μια διαδρομή, πρέπει να ενημερώσετε όλους τους χάρτες και στη συνέχεια να σχεδιάσετε τη διαδρομή ξανά.</string>
     <string name="downloader_search_field_hint">Εύρεση χάρτη</string>
     <string name="common_check_internet_connection_dialog">Βεβαιωθείτε ότι η συσκευή σας είναι συνδεδεμένη στο Διαδίκτυο</string>
@@ -446,8 +446,8 @@
     <string name="editor_login_error_dialog">Σφάλμα σύνδεσης</string>
     <string name="editor_profile_changes">Επαληθευμένες αλλαγές</string>
     <string name="editor_focus_map_on_location">Σύρετε το χάρτη για να τοποθετήσετε το σταυρό στη θέση του τόπου ή της επιχείρησης.</string>
-    <string name="editor_edit_place_title">Επεξεργασία</string>
-    <string name="editor_add_place_title">Προσθήκη</string>
+    <string name="editor_edit_place_title">Επεξεργάζεται</string>
+    <string name="editor_add_place_title">Προστίθεται</string>
     <string name="editor_edit_place_name_hint">Όνομα τοποθεσίας</string>
     <!-- The second part of the editor_edit_place_name_hint to explain that name should be entered in a local language, see https://wiki.openstreetmap.org/wiki/Key:name -->
     <string name="editor_default_language_hint">Όπως είναι γραμμένο στην τοπική γλώσσα</string>
@@ -456,7 +456,7 @@
     <string name="editor_report_problem_other_title">Διαφορετικό πρόβλημα</string>
     <string name="message_invalid_feature_position">Δε μπορεί να τοποθετηθεί αντικείμενο εδώ</string>
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
-    <string name="osm_presentation">Δεδομένα OpenStreetMap που δημιουργήθηκαν από την κοινότητα στις %s. Μάθετε περισσότερα για τον τρόπο επεξεργασίας και ενημέρωσης του χάρτη στο OpenStreetMap.org</string>
+    <string name="osm_presentation">Δεδομένα OpenStreetMap που δημιουργήθηκαν από την κοινότητα μέχρι %s. Μάθετε περισσότερα για τον τρόπο επεξεργασίας και ενημέρωσης του χάρτη στο OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
     <string name="login_osm_presentation">Το OpenStreetMap.org (OSM) είναι ένα κοινοτικό έργο για τη δημιουργία ενός ελεύθερου και ανοικτού χάρτη. Είναι η κύρια πηγή δεδομένων χάρτη στους CoMaps και λειτουργεί παρόμοια με τη Βικιπαίδεια. Μπορείτε να προσθέσετε ή να επεξεργαστείτε τοποθεσίες και αυτές γίνονται διαθέσιμες σε εκατομμύρια χρήστες σε όλο τον κόσμο. \nΕνταχθείτε στην κοινότητα και βοηθήστε να φτιάξουμε έναν καλύτερο χάρτη για όλους!</string>
     <string name="login_to_make_edits_visible">Δημιουργήστε έναν λογαριασμό OpenStreetMap ή συνδεθείτε για να δημοσιεύσετε τις επεξεργασίες του χάρτη σας στον κόσμο</string>
@@ -503,10 +503,10 @@
     <string name="error_enter_correct_web">Εισάγετε μια έγκυρη ηλεκτρονική διεύθυνση</string>
     <string name="error_enter_correct_email">Εισάγετε ένα έγκυρο email</string>
     <string name="error_enter_correct_facebook_page">Εισάγετε μία έγκυρη διεύθυνση Facebook, λογαριασμού ή σελίδας</string>
-    <string name="error_enter_correct_instagram_page">Εισάγεται μια έγκυρη διεύθυνση Instagram</string>
-    <string name="error_enter_correct_twitter_page">Εισάγεται μια έγκυρη διεύθυνση X (δηλαδή Twitter)</string>
-    <string name="error_enter_correct_vk_page">Εισάγεται μια έγκυρη διεύθυνση VK</string>
-    <string name="error_enter_correct_line_page">Εισάγεται μια έκγυρη διεύθυνση LIME</string>
+    <string name="error_enter_correct_instagram_page">Εισάγετε μια έγκυρη διεύθυνση ή όνομα χρήστη Instagram</string>
+    <string name="error_enter_correct_twitter_page">Εισάγετε μια έγκυρη διεύθυνση ή όνομα χρήστη Twitter</string>
+    <string name="error_enter_correct_vk_page">Εισάγετε μια έγκυρη διεύθυνση ή όνομα χρήστη VK</string>
+    <string name="error_enter_correct_line_page">Εισάγετε ένα έγκυρο LINE ID ή διέυθυνση</string>
     <string name="placepage_add_place_button">Προσθήκη τοποθεσίας στο OpenStreetMap</string>
     <!-- Displayed when saving some edits to the map to warn against publishing personal data -->
     <string name="editor_share_to_all_dialog_title">Θέλετε να το στείλετε σε όλους τους χρήστες;</string>
@@ -521,17 +521,17 @@
     <!-- For the first routing -->
     <string name="decline">Διαφωνώ</string>
     <string name="mobile_data_dialog">Θέλετε να χρησιμοποιήσετε το δίκτυο κινητής τηλεφωνίας για να εμφανίσετε αναλυτικές πληροφορίες;</string>
-    <string name="mobile_data_option_always">Να χρησιμοποιείται πάντα</string>
-    <string name="mobile_data_option_today">Μόνο σήμερα</string>
-    <string name="mobile_data_option_not_today">Να μην χρησιμοποιηθεί σήμερα</string>
+    <string name="mobile_data_option_always">Χρήση Πάντα</string>
+    <string name="mobile_data_option_today">Μόνο Σήμερα</string>
+    <string name="mobile_data_option_not_today">Μη Χρησιμοποιηθεί Σήμερα</string>
     <string name="mobile_data">Ίντερνετ μέσω δικτύου κινητής</string>
     <!-- NOTE to translators: please synchronize your translation with the English one. -->
     <string name="mobile_data_description">Απαιτείται πρόσβαση στο διαδίκτυο μέσω δικτύου κινητής για τις ειδοποιήσεις ενημερώσεων χάρτη και μεταφορτώσεως επεξεργασιών</string>
-    <string name="mobile_data_option_never">Να μην χρησιμοποιείται ποτέ</string>
-    <string name="mobile_data_option_ask">Να γίνεται πάντα ερώτηση</string>
+    <string name="mobile_data_option_never">Μη Χρησιμοποιείται ποτέ</string>
+    <string name="mobile_data_option_ask">Πάντα Ερώτηση</string>
     <string name="traffic_update_maps_text">Για να εμφανιστούν πληροφορίες για την κίνηση, πρέπει να ενημερωθούν οι χάρτες</string>
-    <string name="big_font">Αύξηση μεγέθους γραμματοσειράς στο χάρτη</string>
-    <string name="traffic_update_app">Κάντε ενημέρωση του CoMaps</string>
+    <string name="big_font">Αύξηση μεγέθους γραμματοσειράς ετικετών χάρτη</string>
+    <string name="traffic_update_app">Παρακαλούμε ενημερώστε το CoMaps</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Οι πληροφορίες για την κίνηση δεν είναι διαθέσιμες</string>
     <string name="enable_logging">Ενεργοποίηση αρχείου καταγραφής</string>
@@ -693,7 +693,7 @@
     <string name="elevation_profile_max_elevation">Μέγ. υψόμετρο</string>
     <string name="elevation_profile_difficulty">Δυσκολία</string>
     <string name="elevation_profile_distance">Απόστ.:</string>
-    <string name="elevation_profile_time">Διάρκ:</string>
+    <string name="elevation_profile_time">Χρόνος:</string>
     <string name="isolines_toast_zooms_1_10">Μεγεθύνετε για να δείτε ισογραμμές</string>
     <string name="downloader_loading_ios">Κατέβασμα</string>
     <string name="download_map_title">Κατεβάστε τον παγκόσμιο χάρτη επισκόπησης</string>
@@ -739,11 +739,11 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Ο κύριος στόχος μας είναι να δημιουργήσουμε γρήγορους, εύχρηστους και με σεβασμό στην ιδιωτικότητα χάρτες που θα λατρέψετε.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Αυτή τη στιγμή το CoMaps βρίσκεται στην οθόνη του κινητού</string>
+    <string name="car_used_on_the_phone_screen">Τώρα χρησιμοποιείτε το CoMaps στην οθόνη του κινητού</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Αυτή τη στιγμή το CoMaps βρίσκεται στην οθόνη του αυτοκινήτου</string>
+    <string name="car_used_on_the_car_screen">Τώρα χρησιμοποιείτε το CoMaps στην οθόνη του αυτοκινήτου</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
-    <string name="aa_connected_title">Είστε συνδεδεμένοι στο Android Auto</string>
+    <string name="aa_connected_title">Έχετε συνδεθεί στο Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
     <string name="car_continue_on_the_phone">Συνέχεια στο κινητό</string>
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
@@ -757,17 +757,17 @@
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Να επιτραπεί</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
-    <string name="button_layer_outdoor">Πεζοπορία</string>
+    <string name="button_layer_outdoor">Εξωτερικοί Χώροι</string>
     <!-- Text displayed when a webview or a browser are disabled, and external links can't be opened. -->
     <string name="browser_not_available">Δεν είναι διαθέσιμος ο περιηγητής</string>
-    <string name="volume">Ένταση ήχου</string>
+    <string name="volume">Ένταση</string>
     <!-- Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks -->
     <string name="bookmarks_export">Εξαγωγή όλων των Αγαπημένων</string>
     <!-- button in (app) TTS settings, to open the system TTS settings. -->
     <string name="pref_tts_open_system_settings">Ρυθμίσεις συστήματος σύνθεσης ομιλίας</string>
     <!-- toast displayed when pressing the "Speech synthesis system settings" button, and the system settings aren't found. -->
     <string name="pref_tts_no_system_tts">Δεν βρέθηκαν οι ρυθμίσεις σύνθεσης ομιλίας, είστε σίγουροι ότι η συσκευή σας την υποστηρίζει;</string>
-    <string name="drive_through">Οδηγώ μέσα από</string>
+    <string name="drive_through">Εξυπηρέτηση απ\' το αυτοκίνητο</string>
     <string name="clear_the_search">Καθαρίστε την αναζήτηση</string>
     <string name="zoom_in">Μεγέθυνση</string>
     <!-- Accessibility text for the zoom-out button on the map -->
@@ -788,11 +788,11 @@
     <!-- Prompt to start recording a track. -->
     <string name="start_track_recording">Εγγραφή ίχνους</string>
     <!-- Prompt for stopping a track recording. -->
-    <string name="stop_track_recording">Σταματήστε την εγγραφή ίχνους</string>
+    <string name="stop_track_recording">Διακοπή εγγραφής ίχνους</string>
     <!-- Title for the "Stop Without Saving" action for the alert when saving a track recording. -->
-    <string name="stop_without_saving">Σταματήστε χωρίς αποθήκευση</string>
+    <string name="stop_without_saving">Διακοπή Χωρίς Αποθήκευση</string>
     <!-- Title for the "Stop Without Saving" action for the alert when saving a track recording. -->
-    <string name="continue_recording">Συνέχεια εγγραφής</string>
+    <string name="continue_recording">Συνέχεια Εγγραφής</string>
     <!-- Title for the alert when saving a track recording. -->
     <string name="track_recording_alert_title">Αποθήκευση στα Αγαπημένα;</string>
     <!-- Message for the toast when saving the track recording is finished but nothing to save. -->
@@ -803,7 +803,7 @@
     <string name="edit_track">Επεξεργασία ίχνους</string>
     <string name="uri_open_location_failed">Δεν υπάρχει εγκατεστημένη εφαρμογή που να μπορεί να ανοίξει την τοποθεσία</string>
     <!-- preference string for using auto theme only in navigation mode -->
-    <string name="nav_auto">Αυτόματη πλοήγηση</string>
+    <string name="nav_auto">Αυτόματο στην πλοήγηση</string>
     <string name="wikimedia_commons">Κοινά της Wikimedia</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="translated_om_site_url">https://comaps.app/</string>
@@ -818,10 +818,10 @@
     <string name="panoramax">εικόνα Panoramax</string>
     <string name="app_site_url">https://comaps.app/</string>
     <string name="saved">Αποθηκεύτηκε</string>
-    <string name="opens_at">Ανοίγει στις %s</string>
-    <string name="closes_at">Κλείνει στις %s</string>
-    <string name="opens_day_at">Ανοίγει στις %1$s στις %2$s</string>
-    <string name="closes_day_at">Κλείνει στις %1$s στις %2$s</string>
+    <string name="opens_at">Ανοίγει %s</string>
+    <string name="closes_at">Κλείνει %s</string>
+    <string name="opens_day_at">Ανοίγει %1$s στις %2$s</string>
+    <string name="closes_day_at">Κλείνει %1$s στις %2$s</string>
     <plurals name="minutes_short">
         <item quantity="one">%d λεπ</item>
         <item quantity="other">%d λεπ</item>
@@ -874,7 +874,7 @@
     <string name="editor_submit">Υποβολή</string>
     <string name="editor_mark_business_vacant_description">Χρησιμοποιήστε αυτό αν η επιχείρηση έχει μετακομίσει και ο χώρος είναι άδειος και έτοιμος για νέο ενοικιαστή.</string>
     <string name="place_page_map_too_old_description">Τα τρέχοντα δεδομένα χάρτη σας είναι πολύ παλιά, παρακαλούμε ενημερώστε τον χάρτη.</string>
-    <string name="place_page_map_too_old_title">Παλιά δεδομένα χάρτη</string>
+    <string name="place_page_map_too_old_title">Απαρχαιωμένα δεδομένα χάρτη</string>
     <string name="rooms">%s δωμάτια</string>
     <string name="location_privacy">Απόρρητο Τοποθεσίας</string>
     <string name="pref_speedlimit_title">Εμφάνιση ορίων ταχύτητας</string>
@@ -914,7 +914,7 @@
     <string name="pref_openexternallinks_title">Αυτόματο άνοιγμα τρίτων συνδέσμων</string>
     <string name="pref_openexternallinks_summary">Άνοιγμα τρίτων συνδέσμων στο CoMaps από προεπιλογή</string>
     <string name="destination">Προορισμός</string>
-    <string name="stop">Στάση</string>
+    <string name="stop">Τερματισμός</string>
     <string name="mb_downloaded">%1$d MB / %2$d MB</string>
     <string name="route_recalculating">Επαναϋπολογισμός της διαδρομής…</string>
     <string name="population">Πληθυσμός: %s</string>
@@ -969,7 +969,7 @@
     <string name="prefs_group_privacy_summary">Ιστορικό αναζητήσεων</string>
     <string name="prefs_group_power_summary">Σβήσιμο οθόνης, δεδομένα κινητής τηλεφωνίας</string>
     <string name="planning_route_preview">Προεπισκόπηση</string>
-    <string name="pref_about_summary">Αναφέρετε ζητήματ, λάβετε βοήθεια, κάντε δωρεά\nΈκδοση: v%1$s</string>
+    <string name="pref_about_summary">Αναφέρετε ζητήματα, λάβετε βοήθεια, κάντε δωρεά\nΈκδοση: v%1$s</string>
     <string name="prefs_group_map_appearance">Εμφάνιση χάρτη</string>
     <string name="prefs_group_map_appearance_summary">Γλώσσα χάρτη, μέγεθος ετικετών, 2D/3D κτίρια</string>
     <string name="prefs_group_interface">Διεπαφή</string>

@@ -650,7 +650,7 @@
 "power_managment_setting_auto" = "当电量低时";
 "power_managment_setting_manual_max" = "最大程度省电";
 "enable_logging_warning_message" = "临时启用此选项，以便使用“报告错误”功能在帮助对话框中记录并手动发送详细诊断日志给我们。日志可能包含位置信息。";
-"driving_options_title" = "绕行设置";
+"driving_options_title" = "路线选项";
 /* Recommended length for CarPlay and Android Auto is around 25-27 characters */
 "avoid_tolls" = "避开收费公路";
 /* Recommended length for CarPlay and Android Auto is around 25-27 characters */
@@ -663,7 +663,7 @@
 "unable_to_calc_alert_title" = "无法规划路线";
 "unable_to_calc_alert_subtitle" = "很遗憾，找不到可行的路线。这可能是因为您的路线选项当前不可用或 OpenStreetMap 数据不完整。请更改路线选项再重试。";
 "define_to_avoid_btn" = "选择要避开的道路";
-"change_driving_options_btn" = "绕行设置已开启";
+"change_driving_options_btn" = "路线选项已启用";
 "toll_road" = "收费公路";
 "unpaved_road" = "非铺装道路";
 "ferry_crossing" = "轮渡";
@@ -877,9 +877,9 @@
 "editor_add_select_category_recent_subtitle" = "最近用过";
 "oh_unknown" = "营业时间未知";
 "carplay_highway_exit" = "出口 %@";
-"capacity_disabled_yes" = "Has dedicated disabled spaces";
-"capacity_disabled_no" = "No dedicated disabled spaces";
-"capacity_charging_yes" = "Has spaces with chargers";
-"capacity_charging_no" = "No spaces with chargers";
-"planning_route_preview" = "Preview";
-"planning_route_preview_sheet_title" = "Route Preview";
+"capacity_disabled_yes" = "有专用无障碍停车位";
+"capacity_disabled_no" = "无专用无障碍停车位";
+"capacity_charging_yes" = "有带充电桩的停车位";
+"capacity_charging_no" = "无带充电桩的停车位";
+"planning_route_preview" = "预览";
+"planning_route_preview_sheet_title" = "路线预览";

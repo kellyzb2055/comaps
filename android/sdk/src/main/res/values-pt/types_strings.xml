@@ -1538,4 +1538,7 @@
     <string name="type.organic.no">Sem opções orgânicas</string>
     <string name="type.amenity.stage">Lugar</string>
     <string name="type.amenity.animal_boarding">Hotel de Animais</string>
+    <string name="type.amenity.planetarium">Planetário</string>
+    <string name="type.amenity.toilets.customers">Acesso para Clientes</string>
+    <string name="type.amenity.toilets.private">Acesso Privado</string>
 </resources>
