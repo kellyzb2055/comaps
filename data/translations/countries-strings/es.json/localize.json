@@ -3384,7 +3384,7 @@
         "defaultMessage": "Waco"
     },
     "US_Texas_West": {
-        "defaultMessage": "Odessa"
+        "defaultMessage": "El Paso"
     },
     "US_United States Minor Outlying Islands": {
         "defaultMessage": "Islas Ultramarinas Menores de los Estados Unidos"
@@ -3423,7 +3423,7 @@
         "defaultMessage": "Milwaukee"
     },
     "US_Wisconsin_North": {
-        "defaultMessage": "Norte de Wisconsin"
+        "defaultMessage": "Wisconsin — Norte"
     },
     "US_Wyoming": {
         "defaultMessage": "Wyoming"
@@ -6984,7 +6984,7 @@
         "defaultMessage": "Boise, Idaho Falls, Pocatello"
     },
     "US_Illinois_Chickago Description": {
-        "defaultMessage": "Chicago, Palos Hills, Park City"
+        "defaultMessage": "Waukegan, Arlington Heights, Downers Grove"
     },
     "US_Illinois_Elgin Description": {
         "defaultMessage": "Geneva, Country Club Hills, Wheaton"
@@ -7002,16 +7002,16 @@
         "defaultMessage": "Rockport, New Albany, Princeton"
     },
     "US_Indiana_Indianapolis Description": {
-        "defaultMessage": "Indianápolis, Connersville, Greensburg"
+        "defaultMessage": "Terre Haute, Noblesville, Richmond"
     },
     "US_Indiana_North Description": {
-        "defaultMessage": "Elwood, Kokomo, Whiting"
+        "defaultMessage": "Fort Wayne, South Bend, Hammond"
     },
     "US_Iowa_Des Moines Description": {
-        "defaultMessage": "Indianola, Slater, Martensdale"
+        "defaultMessage": "Davenport, Iowa City, Burlington"
     },
     "US_Iowa_Waterloo Description": {
-        "defaultMessage": "Dixon, Floyd, Elma"
+        "defaultMessage": "Cedar Rapids, Ames, Dubuque"
     },
     "US_Iowa_West Description": {
         "defaultMessage": "Churdan, Orange City, Paton"

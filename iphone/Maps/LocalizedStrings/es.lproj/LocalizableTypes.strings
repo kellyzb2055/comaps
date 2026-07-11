@@ -151,7 +151,7 @@
 "type.amenity.prison" = "Prisión";
 "type.amenity.pub" = "Taberna";
 "type.amenity.public_bookcase" = "Intercambio de libros";
-"type.amenity.recycling.centre" = "Centro de Reciclaje";
+"type.amenity.recycling.centre" = "Centro de reciclaje";
 "type.amenity.recycling.container" = "Contenedor de reciclaje";
 "type.recycling.batteries" = "Baterías";
 "type.recycling.clothes" = "Ropa";
@@ -923,7 +923,7 @@
 "type.power.generator.wind" = "Aerogenerador";
 "type.power.generator.gas" = "Planta termoeléctrica a gas";
 "type.power.generator.hydro" = "Planta hidroeléctrica";
-"type.power.line" = "Línea eléctrica";
+"type.power.line" = "Línea de alta tensión";
 "type.power.line.underground" = "Línea eléctrica subterránea";
 "type.power.minor_line" = "Línea eléctrica menor";
 "type.power.plant" = "Planta eléctrica";
@@ -1339,7 +1339,7 @@
 "type.shop.agrarian" = "Tienda agrícola";
 "type.shop.antiques" = "Antigüedades";
 "type.shop.appliance" = "Tienda de electrodomésticos";
-"type.shop.water" = "Empresas especializadas en la venta de sistemas de tratamiento de agua";
+"type.shop.water" = "Tienda de agua";
 /* maybe change to Art Gallery for en-US when supported */
 "type.shop.art" = "Tienda de arte";
 "type.shop.baby_goods" = "Tienda de artículos para bebés";
@@ -1424,7 +1424,7 @@
 "type.attraction.maze" = "Laberinto";
 "type.attraction.roller_coaster" = "Montaña rusa";
 "type.attraction.water_slide" = "Tobogán acuático";
-"type.tourism.attraction.specified" = "Atracción turística";
+"type.tourism.attraction.specified" = "Atracción";
 "type.tourism.camp_site" = "Paraje de acampada";
 "type.tourism.caravan_site" = "Zona de autocaravanas";
 /* A rentable countryside vacation house. */
@@ -1531,8 +1531,8 @@
 "type.leisure.sports_centre.sport.boules" = "Polideportivo";
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Centro deportivo";
-"type.organic.no" = "Cultivo convencional no orgánico";
-"type.amenity.stage" = "Etapa";
+"type.organic.no" = "Sin opciones orgánicas";
+"type.amenity.stage" = "Escenario";
 "type.amenity.animal_boarding" = "Alojamiento para animales";
 "type.amenity.toilets.customers" = "Acceso para clientes";
 "type.amenity.toilets.private" = "Acceso privado";

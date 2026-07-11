@@ -408,7 +408,7 @@
 "add_opening_hours" = "Añadir horarios de apertura";
 /* OpenStreetMap */
 "osm_mapdata" = "Datos de mapas de OpenStreetMap";
-"osm_mapdata_explanation %@" = "Datos de mapas creados por la comunidad a partir de *%@*. Más información sobre cómo editar y actualizar el mapa en [OpenStreetMap.org](https://openstreetmap.org).";
+"osm_mapdata_explanation %@" = "Datos de mapas creados por la comunidad a fecha de *%@*. Más información sobre cómo editar y actualizar el mapa en [OpenStreetMap.org](https://openstreetmap.org).";
 "osm_more_about" = "Más acerca de OpenStreetMap";
 "osm_more_about_url" = "https://wiki.openstreetmap.org/wiki/ES:Acerca_de_OpenStreetMap";
 /* OpenStreetMap Profile */
@@ -875,7 +875,7 @@
 "downloader_check_updates_no_updates" = "Sin actualizaciones";
 "downloader_check_updates_eol" = "No habrá más actualizaciones para esta versión de la aplicación. ¡Por favor, actualiza la aplicación!";
 "editor_add_select_category_recent_subtitle" = "Usado recientemente";
-"oh_unknown" = "Horario de apertura desconocido";
+"oh_unknown" = "Horario desconocido";
 "carplay_highway_exit" = "Salida %@";
 "capacity_disabled_yes" = "Has dedicated disabled spaces";
 "capacity_disabled_no" = "No hay plazas reservadas para personas con discapacidad";
