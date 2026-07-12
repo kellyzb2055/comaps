@@ -71,6 +71,49 @@ UNIT_TEST(RoadShields_Brazil)
     TEST_EQUAL(shield.m_type, RoadShieldType::Default, ());
 }
 
+UNIT_TEST(RoadShields_Norway)
+{
+  using namespace ftypes;
+
+  RoadShieldsSetT shields;
+  for (auto const & ref : {"E6", "E 6"})
+  {
+    shields = GetRoadShields("Norway", ref, HighwayClass::Motorway);
+    TEST_EQUAL(shields.size(), 1, (ref));
+    TEST_EQUAL(shields[0].m_type, RoadShieldType::Generic_Green, (ref));
+    TEST_EQUAL(shields[0].m_name, ref, (ref));
+  }
+
+  // The E-road designation takes precedence over the underlying highway class.
+  shields = GetRoadShields("Norway", "e-road/E 16", HighwayClass::Primary);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Generic_Green, ());
+
+  shields = GetRoadShields("Norway", "7", HighwayClass::Trunk);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Generic_Green, ());
+
+  shields = GetRoadShields("Norway", "123", HighwayClass::Primary);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Generic_White_Bordered, ());
+
+  shields = GetRoadShields("Norway", "Ring 3", HighwayClass::Trunk);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Generic_Pill_White_Bordered, ());
+  TEST_EQUAL(shields[0].m_name, "Ring 3", ());
+
+  shields = GetRoadShields("Norway", "Ring 2", HighwayClass::Primary);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Generic_Pill_White_Bordered, ());
+
+  // Four-digit county road numbers and municipal road numbers are not signed.
+  TEST(GetRoadShields("Norway", "1234", HighwayClass::Secondary).empty(), ());
+  shields = GetRoadShields("Norway", "Ring 4", HighwayClass::Secondary);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_type, RoadShieldType::Generic_Pill_White_Bordered, ());
+  TEST(GetRoadShields("Norway", "42", HighwayClass::LivingStreet).empty(), ());
+}
+
 UNIT_TEST(RoadShields_Smoke)
 {
   using namespace ftypes;

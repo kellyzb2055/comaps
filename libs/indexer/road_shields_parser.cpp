@@ -896,6 +896,63 @@ public:
   {}
 };
 
+class NorwayRoadShieldParser : public RoadShieldParser
+{
+public:
+  // Norway does as of July 12 2026 not use route relations,
+  // hence the E-Roads are not automatically rendered as green shields
+  // In addition, the state owned roads have green shields
+  // https://wiki.openstreetmap.org/wiki/Norway/Highways#Tagging_conventions
+  NorwayRoadShieldParser(std::string const & baseRoadNumber, HighwayClass highwayClass)
+    : RoadShieldParser(baseRoadNumber)
+    , m_highwayClass(highwayClass)
+  {}
+
+  RoadShield ParseRoadShield(std::string_view rawText, uint8_t /* index */) const override
+  {
+    if (rawText.size() > kMaxRoadShieldBytesSize)
+      return {};
+
+    std::string name(rawText);
+    strings::Trim(name);
+
+    bool isRingRoad = false;
+    if (name.starts_with("Ring"))
+    {
+      auto const numberPos = name.find_first_not_of(' ', 4);
+      isRingRoad = numberPos != std::string::npos && numberPos > 4 &&
+                   strings::IsASCIINumeric(std::string_view(name).substr(numberPos));
+    }
+    if (isRingRoad)
+      return {RoadShieldType::Generic_Pill_White_Bordered, name};
+
+    if (name.size() > 1 && name.front() == 'E')
+    {
+      auto const numberPos = name.find_first_not_of(' ', 1);
+      if (numberPos != std::string::npos && strings::IsASCIINumeric(std::string_view(name).substr(numberPos)))
+        return {RoadShieldType::Generic_Green, name};
+    }
+
+    uint64_t roadNumber;
+    if (!strings::to_uint(name, roadNumber))
+      return {RoadShieldType::Default, name};
+
+    switch (m_highwayClass)
+    {
+    case HighwayClass::Motorway:
+    case HighwayClass::Trunk: return {RoadShieldType::Generic_Green, name};
+    case HighwayClass::Primary: return {RoadShieldType::Generic_White_Bordered, name};
+    // Four-digit county road numbers are unsigned, but still tagged with ref instead of unsigned_ref
+    case HighwayClass::Secondary:
+    case HighwayClass::LivingStreet: return {RoadShieldType::Hidden, name};
+    default: return {RoadShieldType::Default, name};
+    }
+  }
+
+private:
+  HighwayClass const m_highwayClass;
+};
+
 class FinlandRoadShieldParser : public NumericRoadShieldParser
 {
 public:
@@ -1075,6 +1132,8 @@ RoadShieldsSetT GetRoadShields(std::string const & mwmName, std::string const & 
     return LatviaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Netherlands")
     return NetherlandsRoadShieldParser(roadNumber).GetRoadShields();
+  if (mwmName == "Norway")
+    return NorwayRoadShieldParser(roadNumber, highwayClass).GetRoadShields();
   if (mwmName == "Finland")
     return FinlandRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Estonia")
