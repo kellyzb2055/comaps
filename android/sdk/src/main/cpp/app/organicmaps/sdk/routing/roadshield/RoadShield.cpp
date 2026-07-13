@@ -18,7 +18,7 @@ jobject ToJavaRoadShield(JNIEnv * env, ftypes::RoadShield const & roadShield)
   // clang-format off
   jobject const result = env->NewObject(klass, ctorRouteInfoID,
     ToJavaRoadShieldType(env, roadShield.m_type),
-    jni::ToJavaString(env, roadShield.m_name),
+    jni::ToJavaString(env, roadShield.GetShieldText()),
     jni::ToJavaString(env, roadShield.m_additionalText)
   );
   // clang-format on
