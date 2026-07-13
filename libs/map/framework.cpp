@@ -759,17 +759,20 @@ void Framework::FillPostcodeInfo(string const & postcode, m2::PointD const & mer
 
 void Framework::FillInfoFromFeatureType(FeatureType & ft, place_page::Info & info) const
 {
-  info.SetFromFeatureType(ft);
-  auto const & types = info.GetTypes();
-  if (types.Empty())
-    return;
 
   auto const featureStatus = osm::Editor::Instance().GetFeatureStatus(ft.GetID());
   ASSERT_NOT_EQUAL(featureStatus, FeatureStatus::Deleted, ("Deleted features cannot be selected from UI."));
   info.SetFeatureStatus(featureStatus);
 
-  if (ftypes::IsAddressObjectChecker::Instance()(types))
+  if (ftypes::IsAddressObjectChecker::Instance()(ft))
     info.SetAddress(GetAddressAtPoint(feature::GetCenter(ft)).FormatAddress());
+
+  // SetFromFeatureType() expects an address to be set already
+  // TODO: move address setting inside of it?
+  info.SetFromFeatureType(ft);
+  auto const & types = info.GetTypes();
+  if (types.Empty())
+    return;
 
   FillReviews(ft, info);
   FillDescriptions(ft, info);
