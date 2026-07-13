@@ -651,7 +651,7 @@ string DetermineSurfaceAndHighwayType(OsmElement * p)
                                        "woodchips"};
 
   static base::StringIL veryBadSurfaces = {"dirt", "earth", "soil", "grass",           "ground",   "mud",
-                                           "rock", "sand",  "snow", "stepping_stones", "woodchips"};
+                                           "rock", "sand",  "snow", "stepping_stones", "woodchips", "laterite"};
 
   // surface=tartan/artificial_turf/clay are not used for highways (but for sport pitches etc).
 
