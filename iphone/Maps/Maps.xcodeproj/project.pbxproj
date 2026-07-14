@@ -950,6 +950,7 @@
 		34AB39BF1D2BD8310021857D /* MWMStopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MWMStopButton.h; sourceTree = "<group>"; tabWidth = 2; };
 		34AB39C01D2BD8310021857D /* MWMStopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = MWMStopButton.m; sourceTree = "<group>"; tabWidth = 2; };
 		34AB65C51FC5AA320078E451 /* MWMNavigationDashboardManager+Entity.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = "MWMNavigationDashboardManager+Entity.mm"; sourceTree = "<group>"; tabWidth = 2; };
+		DEAD5411D0000000000A0003 /* MWMRoadShieldInfo+CPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWMRoadShieldInfo+CPP.h"; sourceTree = "<group>"; };
 		DEAD5411D0000000000A0002 /* RoadShield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadShield.swift; sourceTree = "<group>"; };
 		34AB65C61FC5AA320078E451 /* MWMNavigationDashboardManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = MWMNavigationDashboardManager.mm; sourceTree = "<group>"; tabWidth = 2; };
 		34AB65C71FC5AA320078E451 /* MWMNavigationDashboardManager+Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = "MWMNavigationDashboardManager+Entity.h"; sourceTree = "<group>"; tabWidth = 2; };
@@ -2550,6 +2551,7 @@
 				34AB65C61FC5AA320078E451 /* MWMNavigationDashboardManager.mm */,
 				34AB65C71FC5AA320078E451 /* MWMNavigationDashboardManager+Entity.h */,
 				34AB65C51FC5AA320078E451 /* MWMNavigationDashboardManager+Entity.mm */,
+				DEAD5411D0000000000A0003 /* MWMRoadShieldInfo+CPP.h */,
 				DEAD5411D0000000000A0002 /* RoadShield.swift */,
 				34AB65CC1FC5AA320078E451 /* Views */,
 			);

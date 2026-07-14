@@ -1,6 +1,7 @@
 #import "MWMLocationManager.h"
 #import "MWMNavigationDashboardEntity.h"
 #import "MWMNavigationDashboardManager+Entity.h"
+#import "MWMRoadShieldInfo+CPP.h"
 #import "MWMRouter.h"
 #import "MWMRouterTransitStepInfo.h"
 #import "SwiftBridge.h"
@@ -177,13 +178,14 @@ NSArray<MWMRoadShield *> *buildRoadShields(ftypes::RoadShieldsSetT const & shiel
   return result;
 }
 
-MWMRoadShieldInfo *buildRoadShieldInfo(routing::FollowingInfo::RoadShieldInfo const & info) {
+}  // namespace
+
+MWMRoadShieldInfo * MWMBuildRoadShieldInfo(routing::FollowingInfo::RoadShieldInfo const & info) {
   if (info.m_targetRoadShields.empty() && info.m_junctionRoadShields.empty())
     return nil;
   return [[MWMRoadShieldInfo alloc] initWithTargetRoadShields:buildRoadShields(info.m_targetRoadShields)
                                          junctionRoadShields:buildRoadShields(info.m_junctionRoadShields)];
 }
-}  // namespace
 
 @interface MWMNavigationDashboardEntity ()
 
@@ -354,7 +356,7 @@ MWMRoadShieldInfo *buildRoadShieldInfo(routing::FollowingInfo::RoadShieldInfo co
       entity.nextDestination = @(info.m_nextDestination.c_str());
       entity.nextIsLink = info.m_nextIsLink;
       entity.isLeftHandTraffic = info.m_isLeftHandTraffic;
-      entity.nextRoadShields = buildRoadShieldInfo(info.m_nextStreetShields);
+      entity.nextRoadShields = MWMBuildRoadShieldInfo(info.m_nextStreetShields);
 
       NSArray<NSString *> * variants =
           [MWMNavigationInstructionFormatter instructionVariantsWithRoadName:entity.nextRoadName

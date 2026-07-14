@@ -296,17 +296,33 @@ extension CarPlayRouter {
     var maneuvers = [CPManeuver]()
     let primaryManeuver = CPManeuver()
     primaryManeuver.userInfo = CPConstants.Maneuvers.primary
-    var variants = instructionVariants(for: routeInfo)
+    let formattedVariants = NavigationInstructionFormatter.carPlayInstructionVariants(
+      roadName: routeInfo.roadName,
+      roadRef: routeInfo.roadRef,
+      junctionRef: routeInfo.junctionRef,
+      destinationRef: routeInfo.destinationRef,
+      destination: routeInfo.destination,
+      isLink: routeInfo.isLink,
+      isLeftHandTraffic: routeInfo.isLeftHandTraffic,
+      shields: routeInfo.roadShields)
+    var variants = formattedVariants.text
+    var attributedVariants = formattedVariants.attributed
     // On a roundabout, prefix each variant with the exit to take, e.g. "3rd exit, Main Street"
     // (or "3rd exit" alone when there's no road name).
     if routeInfo.roundExitNumber != 0 {
       let ordinalExitNumber = NumberFormatter.localizedString(from: NSNumber(value: routeInfo.roundExitNumber),
                                                               number: .ordinal)
       let exitNumber = String(format: L("carplay_roundabout_exit"), arguments: [ordinalExitNumber])
-      variants = variants.isEmpty ? [exitNumber] : variants.map { "\(exitNumber), \($0)" }
+      let prefixed = NavigationInstructionFormatter.prefixCarPlayInstructionVariants(
+        .init(text: variants, attributed: attributedVariants), with: exitNumber)
+      variants = prefixed.text
+      attributedVariants = prefixed.attributed
     }
     // CarPlay requires at least one variant; use "" when the turn has no road name.
     primaryManeuver.instructionVariants = variants.isEmpty ? [""] : variants
+    if !attributedVariants.isEmpty {
+      primaryManeuver.attributedInstructionVariants = attributedVariants
+    }
     if let imageName = routeInfo.turnImageName {
       if routeInfo.roundExitNumber != 0,
         let symbol = roundaboutSymbol(named: imageName, exitNumber: routeInfo.roundExitNumber) {

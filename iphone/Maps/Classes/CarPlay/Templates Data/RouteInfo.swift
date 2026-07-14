@@ -145,18 +145,111 @@ final class LaneInfo: NSObject {
 /// Reused by the phone navigation panel
 @objc(MWMNavigationInstructionFormatter)
 final class NavigationInstructionFormatter: NSObject {
+  struct CarPlayVariants {
+    let text: [String]
+    let attributed: [NSAttributedString]
+  }
+
+  private enum InstructionPart {
+    case text(String)
+    case roadRef(text: String, shields: [RoadShield], isJunction: Bool)
+  }
+
+  private struct InstructionCandidate {
+    let parts: [InstructionPart]
+
+    var plainText: String {
+      parts.map { part in
+        switch part {
+        case .text(let text), .roadRef(let text, _, _): return text
+        }
+      }.joined()
+    }
+
+    var hasCompactVariant: Bool {
+      parts.contains { part in
+        if case .roadRef(_, let shields, _) = part {
+          return shields.count > 1
+        }
+        return false
+      }
+    }
+  }
+
   @objc static func instructionVariants(roadName: String,
                                         roadRef: String,
                                         junctionRef: String,
                                         destinationRef: String,
                                         destination: String,
                                         isLink: Bool) -> [String] {
+    instructionCandidates(roadName: roadName,
+                          roadRef: roadRef,
+                          junctionRef: junctionRef,
+                          destinationRef: destinationRef,
+                          destination: destination,
+                          isLink: isLink,
+                          shields: nil).map(\.plainText)
+  }
+
+  static func carPlayInstructionVariants(roadName: String,
+                                         roadRef: String,
+                                         junctionRef: String,
+                                         destinationRef: String,
+                                         destination: String,
+                                         isLink: Bool,
+                                         isLeftHandTraffic: Bool,
+                                         shields: RoadShieldInfo?) -> CarPlayVariants {
+    let candidates = instructionCandidates(roadName: roadName,
+                                           roadRef: roadRef,
+                                           junctionRef: junctionRef,
+                                           destinationRef: destinationRef,
+                                           destination: destination,
+                                           isLink: isLink,
+                                           shields: shields)
+    let text = candidates.map(\.plainText)
+    var attributed = [NSAttributedString]()
+    var signatures = Set<String>()
+    var hasAttachment = false
+
+    for candidate in candidates {
+      let rich = render(candidate, primaryShieldOnly: false, isLeftHandTraffic: isLeftHandTraffic)
+      if signatures.insert(rich.signature).inserted {
+        attributed.append(rich.value)
+        hasAttachment = hasAttachment || rich.hasAttachment
+      }
+      if candidate.hasCompactVariant {
+        let compact = render(candidate, primaryShieldOnly: true, isLeftHandTraffic: isLeftHandTraffic)
+        if signatures.insert(compact.signature).inserted {
+          attributed.append(compact.value)
+          hasAttachment = hasAttachment || compact.hasAttachment
+        }
+      }
+    }
+
+    return CarPlayVariants(text: text, attributed: hasAttachment ? attributed : [])
+  }
+
+  static func prefixCarPlayInstructionVariants(_ variants: CarPlayVariants, with prefix: String) -> CarPlayVariants {
+    let separator = variants.text.isEmpty ? "" : ", "
+    let text = variants.text.isEmpty ? [prefix] : variants.text.map { prefix + separator + $0 }
+    let attributed = variants.attributed.map { instruction in
+      let result = NSMutableAttributedString(string: prefix + separator)
+      result.append(instruction)
+      return result
+    }
+    return CarPlayVariants(text: text, attributed: attributed)
+  }
+
+  private static func instructionCandidates(roadName: String,
+                                            roadRef: String,
+                                            junctionRef: String,
+                                            destinationRef: String,
+                                            destination: String,
+                                            isLink: Bool,
+                                            shields: RoadShieldInfo?) -> [InstructionCandidate] {
     func clean(_ s: String) -> String { s.trimmingCharacters(in: .whitespacesAndNewlines) }
-    /// Joins a leading label and a trailing destination with an arrow, tolerating empty sides.
-    func compose(_ lead: String, _ tail: String) -> String {
-      if lead.isEmpty { return tail }
-      if tail.isEmpty { return lead }
-      return "\(lead) → \(tail)"
+    func joined(_ groups: [[InstructionPart]], separator: String) -> [InstructionPart] {
+      Array(groups.filter { !$0.isEmpty }.joined(separator: [.text(separator)]))
     }
 
     let name = clean(roadName)
@@ -165,40 +258,118 @@ final class NavigationInstructionFormatter: NSObject {
     let destinationRef = clean(destinationRef)
     let destination = clean(destination)
 
-    var candidates: [String]
+    let targetShields = shields?.targetRoadShields ?? []
+    let junctionShields = shields?.junctionRoadShields ?? []
+    let nameParts: [InstructionPart] = name.isEmpty ? [] : [.text(name)]
+    let refParts: [InstructionPart] = ref.isEmpty ? [] : [.roadRef(text: ref,
+                                                                  shields: targetShields,
+                                                                  isJunction: false)]
+    var candidates = [[InstructionPart]]()
     let hasExitInfo = !junctionRef.isEmpty || !destinationRef.isEmpty || !destination.isEmpty
     if isLink || hasExitInfo {
       let exitLabel = junctionRef.isEmpty ? "" : String(format: L("carplay_highway_exit"), junctionRef)
-      // "Exit 6A: US 101 South"
-      let lead = [exitLabel, destinationRef].filter { !$0.isEmpty }.joined(separator: ": ")
+      let exitParts: [InstructionPart] = exitLabel.isEmpty ? [] : [.roadRef(text: exitLabel,
+                                                                           shields: junctionShields,
+                                                                           isJunction: true)]
+      let destinationRefParts: [InstructionPart] = destinationRef.isEmpty ? [] : [
+        .roadRef(text: destinationRef, shields: targetShields, isJunction: false),
+      ]
+      let lead = joined([exitParts, destinationRefParts], separator: ": ")
       // Destinations are "; "-separated; the first one is the primary place.
       let firstDestination = clean(String(destination.split(separator: ";", maxSplits: 1).first ?? ""))
       // Switch out ";" with a nicer separator.
       let destinationList = destination.split(separator: ";").map { clean(String($0)) }.filter { !$0.isEmpty }.joined(separator: " / ")
+      let destinationParts: [InstructionPart] = destinationList.isEmpty ? [] : [.text(destinationList)]
+      let firstDestinationParts: [InstructionPart] = firstDestination.isEmpty ? [] : [.text(firstDestination)]
       candidates = [
-        compose(lead, destinationList),
-        firstDestination == destination ? "" : compose(lead, firstDestination),
+        joined([lead, destinationParts], separator: " → "),
+        firstDestination == destination ? [] : joined([lead, firstDestinationParts], separator: " → "),
         lead,
-        exitLabel,
+        exitParts,
         // A link with no exit data at all (no junction/destination/ref) would produce nothing,
         // fall back to its plain road name/ref.
-        [ref, name].filter { !$0.isEmpty }.joined(separator: " "),
-        name,
+        joined([refParts, nameParts], separator: " "),
+        nameParts,
       ]
     } else {
       candidates = [
-        [ref, name].filter { !$0.isEmpty }.joined(separator: " "),
-        name,
-        ref,
+        joined([refParts, nameParts], separator: " "),
+        nameParts,
+        refParts,
       ]
     }
 
     // Drop empties, dedupe as variants may be equal, then enforce descending length.
     var seen = Set<String>()
     return candidates
-      .map(clean)
-      .filter { !$0.isEmpty && seen.insert($0).inserted }
-      .sorted { $0.count > $1.count }
+      .map(InstructionCandidate.init(parts:))
+      .filter { !$0.plainText.isEmpty && seen.insert($0.plainText).inserted }
+      .sorted { $0.plainText.count > $1.plainText.count }
+  }
+
+  private static func render(_ candidate: InstructionCandidate,
+                             primaryShieldOnly: Bool,
+                             isLeftHandTraffic: Bool) -> (value: NSAttributedString,
+                                                          signature: String,
+                                                          hasAttachment: Bool) {
+    let result = NSMutableAttributedString()
+    var signature = ""
+    var hasAttachment = false
+
+    for part in candidate.parts {
+      switch part {
+      case .text(let text):
+        result.append(NSAttributedString(string: text))
+        signature += text
+      case .roadRef(let text, let shields, let isJunction):
+        let selectedShields = primaryShieldOnly ? Array(shields.prefix(1)) : shields
+        if selectedShields.isEmpty {
+          result.append(NSAttributedString(string: text))
+          signature += text
+          continue
+        }
+
+        for (index, shield) in selectedShields.enumerated() {
+          if index > 0 {
+            result.append(NSAttributedString(string: " "))
+            signature += " "
+          }
+          let attachment = NSTextAttachment()
+          let image = carPlayShieldImage(for: shield,
+                                         isJunction: isJunction,
+                                         isLeftHandTraffic: isLeftHandTraffic)
+          attachment.image = image
+          attachment.bounds = CGRect(origin: .zero, size: image.size)
+          result.append(NSAttributedString(attachment: attachment))
+          signature += "[\(shield.type.rawValue):\(shield.text)]"
+          hasAttachment = true
+          if let additionalText = shield.additionalText, !additionalText.isEmpty {
+            let additional = " " + additionalText
+            result.append(NSAttributedString(string: additional))
+            signature += additional
+          }
+        }
+      }
+    }
+    return (result, signature, hasAttachment)
+  }
+
+  private static func carPlayShieldImage(for shield: RoadShield,
+                                         isJunction: Bool,
+                                         isLeftHandTraffic: Bool) -> UIImage {
+    let image = RoadShieldRenderer.image(for: shield,
+                                         textSize: 16,
+                                         drawOutline: true,
+                                         isJunction: isJunction,
+                                         isLeftHandTraffic: isLeftHandTraffic)
+    let maximumSize = CGSize(width: 64, height: 16)
+    let scale = min(1, maximumSize.width / image.size.width, maximumSize.height / image.size.height)
+    guard scale < 1 else { return image }
+
+    let size = CGSize(width: floor(image.size.width * scale), height: floor(image.size.height * scale))
+    return UIGraphicsImageRenderer(size: size).image { _ in
+      image.draw(in: CGRect(origin: .zero, size: size))
+    }
   }
 
   /// Builds an attributed turn instruction with inline drawn road shields, mirroring Android's
@@ -329,6 +500,7 @@ class RouteInfo: NSObject {
   let destinationRef: String
   let destination: String
   let isLink: Bool
+  let roadShields: RoadShieldInfo?
   let currentRoadName: String
   /// Upcoming maneuver direction, used for CarPlay instrument-cluster metadata.
   let carDirection: CarDirection
@@ -351,6 +523,7 @@ class RouteInfo: NSObject {
              destinationRef: String,
              destination: String,
              isLink: Bool,
+             roadShields: RoadShieldInfo?,
              currentRoadName: String,
              carDirectionIndex: UInt8,
              isLeftHandTraffic: Bool) {
@@ -372,6 +545,7 @@ class RouteInfo: NSObject {
     self.destinationRef = destinationRef
     self.destination = destination
     self.isLink = isLink
+    self.roadShields = roadShields
     self.currentRoadName = currentRoadName
     self.carDirection = CarDirection(rawValue: carDirectionIndex) ?? .none
     self.isLeftHandTraffic = isLeftHandTraffic
