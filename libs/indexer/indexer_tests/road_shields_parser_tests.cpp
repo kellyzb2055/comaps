@@ -2,6 +2,24 @@
 
 #include "indexer/road_shields_parser.hpp"
 
+UNIT_TEST(RoadShields_DisplayRef)
+{
+  using ftypes::GetRoadShieldDisplayRef;
+
+  TEST_EQUAL(GetRoadShieldDisplayRef(""), "", ());
+  TEST_EQUAL(GetRoadShieldDisplayRef("SP246"), "SP246", ());
+  TEST_EQUAL(GetRoadShieldDisplayRef("US 101 South"), "US 101 South", ());
+  TEST_EQUAL(GetRoadShieldDisplayRef("IT:VI/SP246"), "SP246", ());
+  TEST_EQUAL(GetRoadShieldDisplayRef("e-road/E 67;IT:VI/SP246;A 4"), "E 67;SP246;A 4", ());
+  TEST_EQUAL(GetRoadShieldDisplayRef(";e-road/E 67;;A 4;"), "E 67;A 4", ());
+  TEST_EQUAL(GetRoadShieldDisplayRef("network/;A 4"), "A 4", ());
+
+  auto const shields = ftypes::GetRoadShields("Italy", "IT:VI/SP246", ftypes::HighwayClass::Secondary);
+  TEST_EQUAL(shields.size(), 1, ());
+  TEST_EQUAL(shields[0].m_name, "SP246", ());
+  TEST_EQUAL(shields[0].m_type, ftypes::RoadShieldType::Generic_Blue_Bordered, ());
+}
+
 UNIT_TEST(RoadShields_Brazil)
 {
   using namespace ftypes;

@@ -69,7 +69,7 @@ public:
   // Road shields for the next next street.
   RoadShieldInfo m_nextNextStreetShields;
 
-  // Structured (shield-resolved) components of the next turn's road, mirroring
+  // Structured, presentation-safe components of the next turn's road, mirroring
   // RouteSegment::RoadNameInfo. Unlike m_nextStreetName these are not pre-formatted, letting
   // platform UIs (e.g. CarPlay) build their own width-appropriate instruction variants.
   // All may be empty.

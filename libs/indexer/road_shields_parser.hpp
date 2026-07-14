@@ -118,6 +118,9 @@ RoadShieldsSetT GetRoadShields(std::string_view mwmName, std::string const & roa
 // Simple parsing without specific country styles.
 RoadShieldsSetT GetRoadShields(std::string const & rawRoadNumber);
 
+// Removes network from the network/ref route relation encoding
+std::string GetRoadShieldDisplayRef(std::string const & rawRoadNumber);
+
 // Returns names of road shields if |ft| is a "highway" feature.
 std::vector<std::string> GetRoadShieldsNames(FeatureType & ft);
 

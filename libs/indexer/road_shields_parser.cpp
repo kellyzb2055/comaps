@@ -1172,6 +1172,19 @@ RoadShieldsSetT GetRoadShields(std::string const & rawRoadNumber)
   return SimpleRoadShieldParser(rawRoadNumber, SimpleRoadShieldParser::ShieldTypes()).GetRoadShields();
 }
 
+std::string GetRoadShieldDisplayRef(std::string const & rawRoadNumber)
+{
+  std::vector<std::string> displayRefs;
+  strings::Tokenize(rawRoadNumber, ";", [&](std::string_view token)
+  {
+    if (auto const slash = token.find('/'); slash != std::string_view::npos)
+      token.remove_prefix(slash + 1);
+    if (!token.empty())
+      displayRefs.emplace_back(token);
+  });
+  return strings::JoinStrings(displayRefs, ";");
+}
+
 std::vector<std::string> GetRoadShieldsNames(FeatureType & ft)
 {
   std::vector<std::string> names;

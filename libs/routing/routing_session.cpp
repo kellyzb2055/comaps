@@ -495,16 +495,14 @@ void RoutingSession::GetRouteFollowingInfo(FollowingInfo & info) const
   RouteSegment::RoadNameInfo currentRoadNameInfo;
   m_route->GetCurrentStreetName(currentRoadNameInfo);
   GetFullRoadName(currentRoadNameInfo, info.m_currentStreetShields, info.m_currentStreetName);
-
+  // Carry the structured components so platform UIs can build their own instruction variants
   RouteSegment::RoadNameInfo nextRoadNameInfo;
   m_route->GetNextTurnStreetName(nextRoadNameInfo);
   GetFullRoadName(nextRoadNameInfo, info.m_nextStreetShields, info.m_nextStreetName);
-  // Carry the structured (now shield-resolved) components so platform UIs can build their own
-  // instruction variants instead of parsing m_nextStreetName.
   info.m_nextName = nextRoadNameInfo.m_name;
-  info.m_nextRef = nextRoadNameInfo.m_ref;
+  info.m_nextRef = ftypes::GetRoadShieldDisplayRef(nextRoadNameInfo.m_ref);
   info.m_nextJunctionRef = nextRoadNameInfo.m_junction_ref;
-  info.m_nextDestinationRef = nextRoadNameInfo.m_destination_ref;
+  info.m_nextDestinationRef = ftypes::GetRoadShieldDisplayRef(nextRoadNameInfo.m_destination_ref);
   info.m_nextDestination = nextRoadNameInfo.m_destination;
   info.m_nextIsLink = nextRoadNameInfo.m_isLink;
   info.m_nextHighwayClass = nextRoadNameInfo.m_highwayClass;
