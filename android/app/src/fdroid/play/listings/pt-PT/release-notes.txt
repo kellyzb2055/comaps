@@ -1,10 +1,10 @@
-• Dados do OSM até 3/junho e atualizações semanais (botão «Verificar atualizações»)
-• Favoritos: ordenação manual ou por nome
-• Ocultação por toque longo desativada (reativar nas definições)
-• Seletor de endereços de contactos na pesquisa
-• Wikipedia: modo escuro e suporte RTL
-• TalkBack melhorado
-• Editor OSM: histórico de categorias recentes
-• Android Auto: mostra legibilidade da app nas definições
+• Mostra opções de percurso ativadas e botão para alterar ao criar
+• Pré-visualização das instruções de navegação passo a passo
+• Opções de percurso por meio de transporte
+• Instruções melhoradas para rotundas, inversões e outros casos
+• Ícones de destino e paragens na barra de progresso
+• Adicionados símbolos de estrada aos sinais de direção e melhores descrições de manobra
+• Pesquisa em todas as listas de favoritos
+• Definições divididas em subpáginas
 
-Detalhes em comaps.app/latest
+Mais detalhes em comaps.app/latest

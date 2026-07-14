@@ -1,10 +1,10 @@
-• OpenStreetMap-Daten vom 3. Juni, weitere wöchentliche Updates in "Updates prüfen"
-• Sortiere Favoritenlisten manuell oder nach Namen
-• Verstecktes Bedienfeld durch langes Berühren deaktiv, aktivierbar in Einstellung
-• Kontaktadressauswahl in Suche
-• Wikipedia-Artikel: Dunkler Modus, RTL
-• Verbessertes TalkBack
-• OSM-Editor: Verlauf letzter Kategorien
-• Android Auto: Anzeige Verfügbarkeit
+• Anzeige aktivierter Routenoptionen und Knopf zur Änderung beim Erstellen einer Route
+• Vorschau der Navigationsanweisungen
+• Separate Routenoptionen pro Verkehrsmittel
+• Verbesserte Abbiegehinweise in verschiedenen Fällen
+• Symbole für Ziel & Zwischenstopps in Navigationsfortschrittsleiste
+• Verbesserte Abbiegebeschreibungen, inkl. Routenschildern
+• Suche in allen Favoriten
+• Einstellungen in Unterseiten unterteilt
 
-Mehr Details auf comaps.app/latest
+Weitere Details unter comaps.app/latest

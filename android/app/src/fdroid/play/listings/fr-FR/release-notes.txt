@@ -1,7 +1,0 @@
-• Donnnées OpenStreetMap du 3 Juin et mise à jour hebdomadaire des cartes via le bouton "Vérifier les mises à jour"
-• Tri des listes de favoris manuellement ou par nom
-• Désactivation de l'appui long pour masquer l'interface, ré-activable dans les réglages
-• Sélecteur d'adresse parmi les contacts du téléphone dans l'écran de recherche
-• Articles Wikipedia : mode sombre et écriture RTL
-
-Plus de détails sur comaps.app/latest

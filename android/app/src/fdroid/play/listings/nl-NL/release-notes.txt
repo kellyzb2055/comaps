@@ -1,10 +1,10 @@
-• OpenStreetMap-gegevens per 3 juni, wekelijkse updates via de ‘Controleren op updates’-knop
-• Favorietenlijst handmatig of op naam sorteren
-• Lang indrukken om interface te verbergen uitgeschakeld; inschakelen via instellingen
-• Contactadreskiezer bij zoeken
-• Wikipedia-artikelen: donkere modus en RTL-ondersteuning
-• Verbeterde TalkBack-ondersteuning
-• OSM-editor: recente categoriegeschiedenis
-• Andoid Auto: beschikbaarheid weergeven in de instellingen
+• Toon actieve route-instellingen en een knop om ze te wijzigen tijdens het maken van een route
+• Voorbeeld van stapsgewijze routebeschrijvingen toegevoegd
+• Aparte route-instellingen per transportmodus
+• Afslaginstructies voor o.a. rotondes en u-bochten verbeterd
+• Bestemming en tussenstops in navigatievoorgangsbalk
+• Verbeterde richting-instructies inclusief weglabels
+• Zoeken door alle favorietenlijsten
+• Instellingen opgedeeld in sub-pagina's
 
 Meer details op comaps.app/latest
