@@ -131,8 +131,22 @@
 
 
   <releases>
-    <release version="2026.06.05" date="2026-06-05">
+    <release version="2026.06.15" date="2026-06-15">
      <url type="details">https://comaps.app/latest/</url>
+     <description><ul>
+<li>Added display of Mangrove user reviews in POI details</li>
+<li>Display numbers of parking spaces with electric chargers and for disabled drivers</li>
+<li>More preference for nearby results in search</li>
+<li>Outdoor style: softened borders of minor (white) roads</li>
+<li>Added stages, animal boarding places and planetariums</li>
+<li>Added specific Brazil, Norway and grey Latvia road shields</li>
+<li>Reduce ferry landing penalty for cars routing</li>
+<li>Always check for updates before downloading maps</li>
+<li>OpenStreetMap data as of July 14 and further weekly updates</li>
+     </ul></description>
+    </release>
+    <release version="2026.06.05" date="2026-06-05">
+     <url type="details">https://codeberg.org/comaps/comaps/releases/tag/v2026.06.05-11</url>
      <description><ul>
 <li>OpenStreetMap data as of June 3 and further weekly updates via "Check for updates" button in the download screen</li>
 <li>Subway layer additions: Kiev, Charleroi, Nantes light rail and Paris Transilien network</li>
