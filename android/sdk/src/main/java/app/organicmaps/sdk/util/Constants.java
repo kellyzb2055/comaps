@@ -11,7 +11,12 @@ public final class Constants
 
   public static class Url
   {
-    public static final String SHORT_SHARE_PREFIX_OLD = "cm://"; // Deprecated June 17, 2026
+    /**
+     * Deprecated July release 2026. Note: This usage of `cm://` only applies to creating/opening sharable URL links with this schema.
+     * `cm://` is used for OAuth redirection in other places.
+     */
+    @Deprecated
+    public static final String SHORT_SHARE_PREFIX_OLD = "cm://";
     public static final String SHORT_SHARE_PREFIX = "comaps://";
     public static final String HTTP_SHARE_PREFIX = "https://comaps.at/";
 

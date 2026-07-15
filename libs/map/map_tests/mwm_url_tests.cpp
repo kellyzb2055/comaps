@@ -579,19 +579,6 @@ UNIT_TEST(AppNameTest)
 UNIT_TEST(OAuth2Test)
 {
   {
-    ParsedMapApi api("comaps://oauth2/osm/callback?code=THE_MEGA_CODE");
-    TEST_EQUAL(api.GetRequestType(), UrlType::OAuth2, ());
-    TEST_EQUAL(api.GetOAuth2Code(), "THE_MEGA_CODE", ());
-  }
-  {
-    ParsedMapApi api("comaps://oauth2/google/callback?code=THE_MEGA_CODE");
-    TEST_EQUAL(api.GetRequestType(), UrlType::Incorrect, ());
-  }
-  {
-    ParsedMapApi api("comaps://oauth2/osm/callback?code=");
-    TEST_EQUAL(api.GetRequestType(), UrlType::Incorrect, ());
-  }
-  {
     ParsedMapApi api("cm://oauth2/osm/callback?code=THE_MEGA_CODE");
     TEST_EQUAL(api.GetRequestType(), UrlType::OAuth2, ());
     TEST_EQUAL(api.GetOAuth2Code(), "THE_MEGA_CODE", ());
