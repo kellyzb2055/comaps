@@ -103,6 +103,8 @@
 			<key>other</key>
 			<string>%lld θέσεις για ΑΜΕΑ</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
 	</dict>
 	<key>capacity_charging</key>
 	<dict>
@@ -117,6 +119,8 @@
 			<key>other</key>
 			<string>%lld θέσεις με φορτιστές</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
 	</dict>
 	<key>capacity</key>
 	<dict>
@@ -131,6 +135,8 @@
 			<key>other</key>
 			<string>%lld θέσεις</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
 	</dict>
 </dict>
 </plist>

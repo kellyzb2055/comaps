@@ -489,7 +489,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">Opérateur : %s</string>
     <string name="editor_category_unsuitable_title">Vous ne trouvez pas de catégorie appropriée ?</string>
-    <string name="editor_category_unsuitable_text">CoMaps ne permet d\'ajouter que des catégories de points simples ; il ne permet pas d\'ajouter des villes, des routes, des lacs, les contours de bâtiments, etc. Veuillez ajouter ces catégories directement sur <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consultez notre <a href="https://www.comaps.app/support/advanced-map-editing/">guide</a> pour obtenir des instructions détaillées étape par étape.</string>
+    <string name="editor_category_unsuitable_text">CoMaps ne permet d\'ajouter que des catégories de points simples ; il ne peut pas ajouter de villes, de routes, de lacs, de contours de bâtiments, etc. Veuillez ajouter ces catégories directement sur <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consultez notre <a href="https://www.comaps.app/support/advanced-map-editing/">guide</a> pour obtenir des instructions détaillées.</string>
     <string name="downloader_no_downloaded_maps_title">Vous n’avez téléchargé aucune carte</string>
     <string name="downloader_no_downloaded_maps_message">Télécharger des cartes pour rechercher un lieu et utiliser la navigation hors ligne</string>
     <string name="current_location_unknown_error_title">L’emplacement actuel est inconnu</string>

@@ -54,7 +54,7 @@
     <string name="type.amenity.compressed_air">Компримовани ваздух</string>
     <string name="type.amenity.conference_centre">Конференцијски центар</string>
     <string name="type.amenity.courthouse">Суд</string>
-    <string name="type.amenity.dentist">Стоматолог / Зубар</string>
+    <string name="type.amenity.dentist">Стоматолог</string>
     <string name="type.amenity.doctors">Доктор</string>
     <string name="type.amenity.drinking_water">Вода за пиће</string>
     <string name="type.drinking_water.yes">Вода за пиће</string>

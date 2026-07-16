@@ -358,7 +358,7 @@
     <!-- «Hide» context menu -->
     <string name="hide">أخفِ</string>
     <string name="categories">التصنيفات</string>
-    <string name="history">سجل البحث</string>
+    <string name="history">التأريخ</string>
     <string name="search_not_found">المعذرة، لم أعثر على أية نتائج</string>
     <!-- The message when user did not find anything in the search. -->
     <string name="search_not_found_query">نزّل المنطقة التي تبحث فيها أو حاول إضافة اسم بلدة/قرية قريبة.</string>
@@ -973,13 +973,23 @@
     <string name="capacity_charging">أماكن مزودة بشواحن: %s</string>
     <string name="capacity_charging_yes">يحتوي على أماكن مزودة بشواحن</string>
     <string name="capacity_charging_no">لا أماكن مزودة بشواحن</string>
-    <string name="prefs_group_route_summary">التعليمات الصوتية، خيارات المسار</string>
-    <string name="prefs_group_privacy_summary">خدمات Google Play، سجل البحث</string>
-    <string name="prefs_group_power_summary">نمط الخريطة، مهلة الشاشة</string>
+    <string name="prefs_group_route_summary">الوحدات والتعليمات الصوتية وخيارات المسار</string>
+    <string name="prefs_group_privacy_summary">سجل البحث</string>
+    <string name="prefs_group_power_summary">مهلة الشاشة وبيانات الجوّال</string>
     <string name="permission_read_navigation_label">قراءة بيانات الملاحة من CoMaps</string>
     <string name="permission_read_navigation_description">قراءة معلومات الملاحة المباشرة، مثل المنعطفات القادمة أو اسم الطريق الذي تسير عليه</string>
     <string name="prefs_group_map_appearance">مظهر الخريطة</string>
     <string name="prefs_group_map_appearance_summary">لغة الخريطة وحجم التسميات و مباني 2D/3D</string>
     <string name="planning_route_preview">معاينة</string>
     <string name="search_in_all_lists">ابحث في كل القوائم</string>
+    <string name="pref_about_summary">بلِغ عن علل واحصل على مساعدة وتبرَّع\nإصدار: v%1$s</string>
+    <string name="prefs_group_interface_summary">الوضع الليلي والأزرار واللغة</string>
+    <string name="prefs_group_data_management">إدارة البيانات</string>
+    <string name="prefs_group_data_management_summary">مساحة الخريطة ونسخ احتياطي المفضلات</string>
+    <string name="prefs_group_advanced_summary">فعِّل التسجيل</string>
+    <string name="pref_enable_auto_reroute_title">إعادة المسار التلقائي</string>
+    <string name="pref_enable_auto_reroute_description">عند تفعيل هذه الميزة، سيُنشئ مسار جديد تلقائيًّا عند الخروج عن المسار المخطّط.</string>
+    <string name="off_route">أنت خارج المسار</string>
+    <string name="prefs_group_interface">الواجهة</string>
+    <string name="recalculate_route">أعِد الحساب</string>
 </resources>

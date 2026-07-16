@@ -877,9 +877,9 @@
 "editor_add_select_category_recent_subtitle" = "Usado recientemente";
 "oh_unknown" = "Horario desconocido";
 "carplay_highway_exit" = "Salida %@";
-"capacity_disabled_yes" = "Has dedicated disabled spaces";
+"capacity_disabled_yes" = "Cuenta con espacios reservados para personas con discapacidad";
 "capacity_disabled_no" = "No hay plazas reservadas para personas con discapacidad";
 "capacity_charging_yes" = "Dispone de plazas con cargadores";
 "capacity_charging_no" = "No hay plazas con cargadores";
 "planning_route_preview" = "Vista previa";
-"planning_route_preview_sheet_title" = "Route Preview";
+"planning_route_preview_sheet_title" = "Vista previa de la ruta";

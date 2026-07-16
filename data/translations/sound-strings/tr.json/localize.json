@@ -316,5 +316,41 @@
     },
     "unknown_camera": {
         "defaultMessage": "İleride kamera var"
+    },
+    "from_600_meters": {
+        "defaultMessage": "altı yüz metre"
+    },
+    "from_700_meters": {
+        "defaultMessage": "yedi yüz metre"
+    },
+    "from_750_meters": {
+        "defaultMessage": "yedi yüz elli metre"
+    },
+    "from_800_meters": {
+        "defaultMessage": "sekiz yüz metre"
+    },
+    "from_900_meters": {
+        "defaultMessage": "dokuz yüz metre"
+    },
+    "from_1_kilometer": {
+        "defaultMessage": "bir kilometre"
+    },
+    "from_1_5_kilometers": {
+        "defaultMessage": "bir buçuk kilometre"
+    },
+    "from_2_kilometers": {
+        "defaultMessage": "iki kilometre"
+    },
+    "from_2_5_kilometers": {
+        "defaultMessage": "iki buçuk kilometre"
+    },
+    "from_3_kilometers": {
+        "defaultMessage": "üç kilometre"
+    },
+    "at_the_end_of_the_road": {
+        "defaultMessage": "Yolun sonunda,"
+    },
+    "from_200_feet": {
+        "defaultMessage": "iki yüz fit"
     }
 }

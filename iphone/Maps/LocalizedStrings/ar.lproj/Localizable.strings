@@ -348,7 +348,7 @@
 /* Text for routing::RouterResultCode::FileTooOld dialog. */
 "dialog_routing_download_and_update_maps" = "لإنشاء مسار، يرجى تنزيل وتحديث جميع الخرائط على امتداد الطريق.";
 "categories" = "التصنيفات";
-"history" = "سجل البحث";
+"history" = "التأريخ";
 "search_not_found" = "المعذرة، لم أعثر على أية نتائج.";
 /* The message when user did not find anything in the search. */
 "search_not_found_query" = "نزّل المنطقة التي تبحث فيها أو حاول إضافة اسم بلدة/قرية قريبة.";

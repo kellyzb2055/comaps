@@ -65,7 +65,7 @@
 "type.amenity.compressed_air" = "Компримовани ваздух";
 "type.amenity.conference_centre" = "Конференцијски центар";
 "type.amenity.courthouse" = "Суд";
-"type.amenity.dentist" = "Стоматолог / Зубар";
+"type.amenity.dentist" = "Стоматолог";
 "type.amenity.doctors" = "Доктор";
 "type.amenity.drinking_water" = "Вода за пиће";
 "type.drinking_water.yes" = "Вода за пиће";

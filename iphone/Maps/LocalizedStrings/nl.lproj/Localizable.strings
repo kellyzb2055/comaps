@@ -384,7 +384,7 @@
 "autodownload" = "Kaarten automatisch downloaden";
 /* Voice */
 "voice" = "Stem";
-"voice_explanation" = "Het is mogelijk om een betere stem te kiezen in de systeeminstellingen onder *Toegankelijkheid*, *Tekst-naar-Spraak*, *Stemmen*.";
+"voice_explanation" = "Het is mogelijk om een betere stem te kiezen in de systeeminstellingen onder *Toegankelijkheid*, *Lezen en spreken*, *Stemmen*.";
 "voice_explanation_before_version26" = "Het is mogelijk om een betere stem te kiezen in de systeeminstellingen onder *Toegankelijkeid*, *Gesproken tekst*, *Stemmen*.";
 "unknown" = "Onbekend";
 /* Place page confirmation messages and time ago formatting */

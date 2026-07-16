@@ -189,7 +189,7 @@
         "defaultMessage": "Трајект|Trajekt"
     },
     "amenity-taxi|@category_transport": {
-        "defaultMessage": "Такси|Taksi"
+        "defaultMessage": "4Такси|7Такси станица|4Taksi|7Taksi stanica"
     },
     "tourism-attraction|@category_tourism": {
         "defaultMessage": "Атракција|Atrakcija"

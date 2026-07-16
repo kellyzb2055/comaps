@@ -920,7 +920,7 @@
 "type.power" = "Moc";
 "type.power.generator" = "Generator prądu";
 "type.power.generator.solar" = "Generator słoneczny";
-"type.power.generator.wind" = "Generator wiatru";
+"type.power.generator.wind" = "Turbina wiatrowa";
 "type.power.generator.gas" = "Elektrownia z turbiną gazową";
 "type.power.generator.hydro" = "Elektrownia wodna";
 "type.power.line" = "Linia wysokiego napięcia";

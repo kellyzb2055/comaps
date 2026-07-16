@@ -1486,4 +1486,8 @@
     <string name="type.railway.miniature.bridge">Ponte ferrovia in miniatura</string>
     <string name="type.attraction">Attrazione</string>
     <string name="type.lateral.port">Porta</string>
+    <string name="type.amenity.planetarium">Planetario</string>
+    <string name="type.amenity.toilets.customers">Ingresso per i clienti</string>
+    <string name="type.amenity.animal_boarding">Pensione per animali</string>
+    <string name="type.leisure.bandstand">Chiosco della musica</string>
 </resources>

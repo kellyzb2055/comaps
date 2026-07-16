@@ -881,7 +881,7 @@
 "type.office.ngo" = "NGO-kantoor";
 "type.office.telecommunication" = "Mobiele provider";
 "type.organic.only" = "Alleen biologisch";
-"type.organic.yes" = "o.a. biologisch";
+"type.organic.yes" = "Biologisch verkrijgbaar";
 "type.place.city" = "Stad";
 "type.place.city.capital" = "Hoofdstad";
 "type.place.city.capital.10" = "Stad";
@@ -1531,7 +1531,7 @@
 "type.leisure.sports_centre.sport.boules" = "Sportcentrum";
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Sportcentrum";
-"type.organic.no" = "Geen biologisch";
+"type.organic.no" = "Geen biologisch verkrijgbaar";
 "type.amenity.stage" = "Podium";
 "type.amenity.animal_boarding" = "Dierenpension";
 "type.amenity.toilets.customers" = "Klanttoegang";

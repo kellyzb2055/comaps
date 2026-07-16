@@ -784,7 +784,7 @@
     <string name="type.place.town">Miasteczko</string>
     <string name="type.place.village">Wieś</string>
     <string name="type.power.generator.solar">Generator słoneczny</string>
-    <string name="type.power.generator.wind">Generator wiatru</string>
+    <string name="type.power.generator.wind">Turbina wiatrowa</string>
     <string name="type.power.generator.gas">Elektrownia z turbiną gazową</string>
     <string name="type.power.generator.hydro">Elektrownia wodna</string>
     <string name="type.power.line">Linia wysokiego napięcia</string>

@@ -655,8 +655,8 @@
     <string name="type.leisure.sauna">Sauna</string>
     <string name="type.leisure.slipway">Kızak</string>
     <string name="type.leisure.sports_centre">Spor Merkezi</string>
-    <string name="type.sport.climbing">Tırmanma Merkezi</string>
-    <string name="type.sport.yoga">Yoga Stüdyosu</string>
+    <string name="type.sport.climbing">Tırmanma</string>
+    <string name="type.sport.yoga">Yoga</string>
     <string name="type.leisure.stadium">Stadyum</string>
     <string name="type.leisure.swimming_pool">Yüzme Havuzu</string>
     <string name="type.leisure.swimming_pool.private">Yüzme Havuzu</string>
@@ -1432,4 +1432,9 @@
     <string name="type.amenity.car_pooling">Araç Paylaşım İstasyonu</string>
     <string name="type.amenity.payment_centre">Ödeme Merkezi</string>
     <string name="type.shop.beauty.nails">Tırnak Salonu</string>
+    <string name="type.amenity.planetarium">Planetaryum</string>
+    <string name="type.entrance.garage">Garaj Girişi</string>
+    <string name="type.entrance.emergency">Acil Çıkış</string>
+    <string name="type.railway.disused.tunnel">Kullanılmayan Demir Yolu Tüneli</string>
+    <string name="type.amenity.stage">Sahne</string>
 </resources>

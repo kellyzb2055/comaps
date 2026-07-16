@@ -1534,6 +1534,6 @@
 "type.organic.no" = "Sem opções orgânicas";
 "type.amenity.stage" = "Palco";
 "type.amenity.animal_boarding" = "Hotel de animais";
-"type.amenity.toilets.customers" = "Customer Access";
-"type.amenity.toilets.private" = "Private Access";
-"type.amenity.planetarium" = "Planetarium";
+"type.amenity.toilets.customers" = "Acesso para clientes";
+"type.amenity.toilets.private" = "Acesso privado";
+"type.amenity.planetarium" = "Planetário";

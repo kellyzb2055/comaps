@@ -709,7 +709,7 @@
 "type.landuse.vineyard" = "Vigne";
 "type.landuse.plant_nursery" = "Vivaio";
 "type.leisure" = "Tempo libero";
-"type.leisure.bandstand" = "Bandstand";
+"type.leisure.bandstand" = "Chiosco della musica";
 "type.leisure.common" = "Suolo Pubblico";
 "type.leisure.dog_park" = "Area sgambamento cani";
 "type.leisure.escape_game" = "Escape Room";
@@ -1533,7 +1533,7 @@
 "type.leisure.sports_centre.sport.pickleball" = "Centro sportivo";
 "type.organic.no" = "Nessun opzione organica";
 "type.amenity.stage" = "Stage";
-"type.amenity.animal_boarding" = "Animal Boarding";
-"type.amenity.toilets.customers" = "Customer Access";
+"type.amenity.animal_boarding" = "Pensione per animali";
+"type.amenity.toilets.customers" = "Ingresso per i clienti";
 "type.amenity.toilets.private" = "Private Access";
-"type.amenity.planetarium" = "Planetarium";
+"type.amenity.planetarium" = "Planetario";

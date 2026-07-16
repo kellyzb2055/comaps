@@ -945,10 +945,10 @@
     <string name="by_custom">Efter brugerdefineret rækkefølge</string>
     <string name="prefs_group_map_appearance">Kortets udseende</string>
     <string name="prefs_group_map_appearance_summary">Kortsprog, størrelse på etiketter, 2D/3D-bygninger</string>
-    <string name="prefs_group_route_summary">Stemmevejledninger, indstillinger for ruteberegning</string>
+    <string name="prefs_group_route_summary">Enheder, stemmevejledninger, indstillinger for ruteberegning</string>
     <string name="planning_route_preview">Forhåndsvisning</string>
-    <string name="prefs_group_privacy_summary">Google Play-tjenester, søgehistorik</string>
-    <string name="prefs_group_power_summary">Kortstil, skærmtimeout</string>
+    <string name="prefs_group_privacy_summary">Søgehistorik</string>
+    <string name="prefs_group_power_summary">Skærmtimeout, mobildata</string>
     <string name="search_in_all_lists">Søg i alle lister</string>
     <string name="capacity_disabled">Handicap-parkeringspladser: %s</string>
     <string name="capacity_disabled_yes">Har særlige pladser for handicappede</string>
@@ -958,4 +958,14 @@
     <string name="capacity_charging_no">Ingen pladser med ladere</string>
     <string name="permission_read_navigation_label">Læs CoMaps-navigationsdata</string>
     <string name="permission_read_navigation_description">læs live-navigationsoplysninger, såsom kommende sving eller navnet på den vej, du kører på</string>
+    <string name="pref_about_summary">Indberet problemer, få hjælp, donér\nVersion: v%1$s</string>
+    <string name="prefs_group_interface">Brugerflade</string>
+    <string name="prefs_group_interface_summary">Nattilstand, knapper, sprog</string>
+    <string name="prefs_group_data_management">Datahåndtering</string>
+    <string name="prefs_group_data_management_summary">Kortlagring, sikkerhedskopiering af favoritter</string>
+    <string name="prefs_group_advanced_summary">Aktivér logning</string>
+    <string name="pref_enable_auto_reroute_title">Automatisk omdirigering</string>
+    <string name="pref_enable_auto_reroute_description">Når aktiveret, oprettes der automatisk en ny rute, når du forlader den planlagte rute.</string>
+    <string name="recalculate_route">Genberegn</string>
+    <string name="off_route">Du er kommet væk fra ruten</string>
 </resources>

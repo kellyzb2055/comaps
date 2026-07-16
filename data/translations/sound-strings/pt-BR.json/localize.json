@@ -349,5 +349,107 @@
     },
     "from_700_meters": {
         "defaultMessage": "setecentos metros"
+    },
+    "route_not_recalculating": {
+        "defaultMessage": "Você está a %1$s da rota"
+    },
+    "from_750_meters": {
+        "defaultMessage": "setecentos e cinquenta metros"
+    },
+    "from_800_meters": {
+        "defaultMessage": "oitocentos metros"
+    },
+    "from_900_meters": {
+        "defaultMessage": "novecentos metros"
+    },
+    "from_1_kilometer": {
+        "defaultMessage": "um quilômetro"
+    },
+    "from_1_5_kilometers": {
+        "defaultMessage": "um quilômetro e meio"
+    },
+    "from_2_kilometers": {
+        "defaultMessage": "dois quilômetros"
+    },
+    "from_2_5_kilometers": {
+        "defaultMessage": "dois quilômetros e meio"
+    },
+    "from_3_kilometers": {
+        "defaultMessage": "três quilômetros"
+    },
+    "from_over_3_kilometers": {
+        "defaultMessage": "mais de três quilômetros"
+    },
+    "in_over_2_miles": {
+        "defaultMessage": "Em mais de duas milhas"
+    },
+    "from_50_feet": {
+        "defaultMessage": "cinquenta pés"
+    },
+    "from_100_feet": {
+        "defaultMessage": "cem pés"
+    },
+    "from_200_feet": {
+        "defaultMessage": "duzentos pés"
+    },
+    "from_300_feet": {
+        "defaultMessage": "trezentos pés"
+    },
+    "from_400_feet": {
+        "defaultMessage": "quatrocentos pés"
+    },
+    "from_500_feet": {
+        "defaultMessage": "quinhentos pés"
+    },
+    "from_600_feet": {
+        "defaultMessage": "seiscentos pés"
+    },
+    "from_700_feet": {
+        "defaultMessage": "setecentos pés"
+    },
+    "from_800_feet": {
+        "defaultMessage": "oitocentos pés"
+    },
+    "from_900_feet": {
+        "defaultMessage": "novecentos pés"
+    },
+    "from_1000_feet": {
+        "defaultMessage": "mil pés"
+    },
+    "from_1500_feet": {
+        "defaultMessage": "mil e quinhentos pés"
+    },
+    "from_2000_feet": {
+        "defaultMessage": "dois mil pés"
+    },
+    "from_2500_feet": {
+        "defaultMessage": "dois mil e quinhentos pés"
+    },
+    "from_3000_feet": {
+        "defaultMessage": "três mil pés"
+    },
+    "from_3500_feet": {
+        "defaultMessage": "três mil e quinhentos pés"
+    },
+    "from_4000_feet": {
+        "defaultMessage": "quatro mil pés"
+    },
+    "from_4500_feet": {
+        "defaultMessage": "quatro mil e quinhentos pés"
+    },
+    "from_5000_feet": {
+        "defaultMessage": "cinco mil pés"
+    },
+    "from_1_mile": {
+        "defaultMessage": "uma milha"
+    },
+    "from_1_5_miles": {
+        "defaultMessage": "uma milha e meia"
+    },
+    "from_2_miles": {
+        "defaultMessage": "duas milhas"
+    },
+    "from_over_2_miles": {
+        "defaultMessage": "mais de duas milhas"
     }
 }
