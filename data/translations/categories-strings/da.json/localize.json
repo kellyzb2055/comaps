@@ -39,7 +39,7 @@
         "defaultMessage": "Til RV"
     },
     "amenity-atm|@category_atm": {
-        "defaultMessage": "penge"
+        "defaultMessage": "4hæveautomat|5bankautomat|5bankomat|4penge"
     },
     "@category_bank": {
         "defaultMessage": "3Bank"
@@ -1104,7 +1104,7 @@
         "defaultMessage": "Betalingsautomat"
     },
     "amenity-public_bath": {
-        "defaultMessage": "Offentligt bad"
+        "defaultMessage": "Offentligt bad|havbad|søbad|badested"
     },
     "amenity-shower": {
         "defaultMessage": "Bruser|Brusebad"
@@ -1414,5 +1414,8 @@
     },
     "cuisine-vegan|@cuisine_all_vegetarian": {
         "defaultMessage": "Vegansk"
+    },
+    "amenity-studio": {
+        "defaultMessage": "Medie-studie|lydstudie|tv-studie|radiostudie|musikstudie"
     }
 }

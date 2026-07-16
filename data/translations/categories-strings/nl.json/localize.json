@@ -39,7 +39,7 @@
         "defaultMessage": "4Caravanfaciliteiten|4Caravan|4Camperfaciliteiten|4Camper"
     },
     "amenity-atm|@category_atm": {
-        "defaultMessage": "geld|cash|U+1F3E7|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7"
+        "defaultMessage": "geld|cash|5minibank|6mini-bank|6mini bank"
     },
     "@category_bank": {
         "defaultMessage": "3Bank"
@@ -78,7 +78,7 @@
         "defaultMessage": "3Bakkerij|Bakker|Gebak|Taart|3Taarten|5Banketbakker|5Banketbakkerij|3Patisserie"
     },
     "shop-cannabis|@shop": {
-        "defaultMessage": "Coffeeshop"
+        "defaultMessage": "Coffeeshop|wiet"
     },
     "shop-cosmetics|@category_shopping|@shop": {
         "defaultMessage": "4Cosmetica|5Schoonheidsmiddelen|4makeup|make-up"
@@ -129,7 +129,7 @@
         "defaultMessage": "4Huishouden"
     },
     "shop-jewelry|@category_shopping|@shop": {
-        "defaultMessage": "4Juwelier|sieraden"
+        "defaultMessage": "4Juwelier|sieraden|juwelen"
     },
     "shop-optician|@shop": {
         "defaultMessage": "4Opticien|4brillen|5zonnebrillen"
@@ -177,7 +177,7 @@
         "defaultMessage": "4Overschrijving|4Geld overmaken"
     },
     "shop-clothes|@category_shopping|@shop": {
-        "defaultMessage": "4Kleding|kleding|mode|kledingstukken "
+        "defaultMessage": "4Kleding|kleding|mode|kledingstukken"
     },
     "shop-car|@shop": {
         "defaultMessage": "4Autohandelaar|Autodealer|autos"
@@ -1861,5 +1861,8 @@
     },
     "amenity-animal_boarding": {
         "defaultMessage": "4Dierenpension"
+    },
+    "amenity-planetarium|@category_tourism": {
+        "defaultMessage": "5Planetarium|5astronomie"
     }
 }

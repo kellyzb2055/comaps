@@ -39,7 +39,7 @@
         "defaultMessage": "5Caravanas|5Autocaravanas|5Motorhome|camper|campervan|camper van"
     },
     "amenity-atm|@category_atm": {
-        "defaultMessage": "dinero|efectivo"
+        "defaultMessage": "dinero|efectivo|5minibank|6mini-bank|6mini bank|U+1F3E7|U+1F4B2|U+1F4B3|U+1F4B4|U+1F4B5|U+1F4B6|U+1F4B7"
     },
     "@category_bank": {
         "defaultMessage": "3Banco|4Sucursal bancaria"
@@ -138,7 +138,7 @@
         "defaultMessage": "Enseres domésticos|Artículos del hogar"
     },
     "shop-jewelry|@category_shopping|@shop": {
-        "defaultMessage": "Joyería|Joyas"
+        "defaultMessage": "4Joyería|4Diamante|U+1F48D"
     },
     "shop-optician|@shop": {
         "defaultMessage": "4Óptica|lentes|gafas|lentillas|lentes de sol|gafas de sol|anteojos"
@@ -174,7 +174,7 @@
         "defaultMessage": "4Confitería|4Pastelería|5Repostería|4Bollería|5dulces|5chucherías|5golosinas"
     },
     "shop-laundry": {
-        "defaultMessage": "4Lavandería"
+        "defaultMessage": "4Lavandería|Lavandería automática|lavandería|5lavandería de autoservicio|lavandería de monedas"
     },
     "shop-toys|@category_children|@shop": {
         "defaultMessage": "Tienda de juguetes|4Juguetería|juguetes"
@@ -186,7 +186,7 @@
         "defaultMessage": "Transferencia de dinero"
     },
     "shop-clothes|@category_shopping|@shop": {
-        "defaultMessage": "Tienda de ropa|3ropa "
+        "defaultMessage": "3Ropa|U+1F45A|U+1F457|U+1F456|U+1F455|prendas de vestir|confección|vestimenta|moda|prendas|atuendo"
     },
     "shop-caravan|@category_rv|@shop": {
         "defaultMessage": "Venta de caravanas|Venta de autocaravanas|Venta de motorhomes"
@@ -195,7 +195,7 @@
         "defaultMessage": "Venta de coches|Venta de autos|Automotora|Automotores|5Concesionaria|Concesionario|Carros|Coches|Automóviles|Autos"
     },
     "shop-bicycle|@shop": {
-        "defaultMessage": "Tienda de bicicletas|Tienda de bicis|bicicleta|4Bicicletas|Bicis|Ciclismo"
+        "defaultMessage": "4Bicicleta|Bici|7Tienda de ciclismo|bicicletas|U+1F6B2|U+1F6B4|U+1F6B5"
     },
     "shop-kiosk": {
         "defaultMessage": "4Quiosco|4Kiosko|kiosco"
@@ -204,13 +204,13 @@
         "defaultMessage": "4Parada de autobús|Parada|Autobús|Bus|omnibus|omni|bondi|colectivo"
     },
     "railway-tram_stop|@category_transport": {
-        "defaultMessage": "4Parada de tranvía|Parada|Tranvía"
+        "defaultMessage": "3Parada de tranvía|tranvía|parada|U+1F683"
     },
     "amenity-bus_station|@category_transport": {
         "defaultMessage": "3Estación de autobuses|Estación de ómnibus|Estación de micros|Estación de colectivos|Autobús|bus|Terminal de buses|Terminal de autobusesAutobús|omnibus|omni|bondi|colectivo"
     },
     "railway-station|railway-halt|building-train_station|@category_transport": {
-        "defaultMessage": "3Estación de tren|3tren|3Estación de trenes|trenes"
+        "defaultMessage": "3Estación de tren|estación de tren|4ferrocarril|vía férrea|4estación|U+1F684|U+1F685|U+1F689|U+1F682|U+1F686|U+1F688|U+1F68A|U+1F68B|Parada de tren"
     },
     "railway-station-funicular": {
         "defaultMessage": "4Funicular"
@@ -222,7 +222,7 @@
         "defaultMessage": "3Transbordador|terminal|ferry|4Terminal de ferry|puerto de ferry"
     },
     "amenity-taxi|@category_transport": {
-        "defaultMessage": "3Taxi|parada de taxi|Estación de taxis|estación de taxi|parada de taxis|taxis"
+        "defaultMessage": "Taxi|3Parada de taxis|Parada de taxis|taxi|U+1F695|U+1F696"
     },
     "amenity-townhall": {
         "defaultMessage": "3Ayuntamiento|Municipio"
@@ -234,7 +234,7 @@
         "defaultMessage": "3Obras de arte|Obra de arte"
     },
     "tourism-viewpoint|@category_tourism": {
-        "defaultMessage": "3Vista panorámica|4Mirador"
+        "defaultMessage": "4Mirador|Vista|4mirador|5mirador panorámico|punto estratégico|panorámico"
     },
     "tourism-information": {
         "defaultMessage": "4Información turística|Información"
@@ -297,7 +297,7 @@
         "defaultMessage": "Horca|Patíbulo|Guillotina|Cadalso"
     },
     "historic-memorial|@category_tourism": {
-        "defaultMessage": "4Memorial|Monumento conmemorativo|Monumento"
+        "defaultMessage": "4Memorial|monumento|5conmemoración|U+1F5FC|U+1F5FD|U+1F5FF"
     },
     "historic-memorial-cross": {
         "defaultMessage": "Cruz conmemorativa|Cruz"
@@ -450,7 +450,7 @@
         "defaultMessage": "Laboratorio médico|5Laboratorio clínico"
     },
     "healthcare-physiotherapist": {
-        "defaultMessage": "5Fisioterapeuta|Fisioterapia"
+        "defaultMessage": "7Fisioterapia"
     },
     "healthcare-alternative": {
         "defaultMessage": "5Medicina alternativa|medicina holística"
@@ -861,10 +861,10 @@
         "defaultMessage": "Operadora de telefonía móvil|Telefónica|Operadora de telefonía"
     },
     "craft-beekeeper": {
-        "defaultMessage": "Apicultor"
+        "defaultMessage": "Apicultor|5apicultor"
     },
     "craft-blacksmith": {
-        "defaultMessage": "Herrero"
+        "defaultMessage": "Herrero|forjador"
     },
     "craft-brewery": {
         "defaultMessage": "Fábrica de cerveza|6cervecera|cervecería|cerveza"
@@ -873,7 +873,7 @@
         "defaultMessage": "Catering|servicio de comida|servicio de cocina"
     },
     "craft-carpenter": {
-        "defaultMessage": "Carpintero|4Carpintería"
+        "defaultMessage": "4Carpintero|ebanista"
     },
     "craft-confectionery": {
         "defaultMessage": "4Confitería|4Pastelería|4Dulcería"
@@ -1548,7 +1548,7 @@
         "defaultMessage": "Entrada de parking|Parking|Estacionamiento|Aparcadero|aparcamiento"
     },
     "amenity-toilets|toilets-yes|@category_toilet": {
-        "defaultMessage": "wc"
+        "defaultMessage": "wc|4Baño|aseo|lavabo|5cuarto de baño|U+1F6BD|U+1F6BE|U+1F4A9|U+1F6BB|U+1F6B9|U+1F6BA"
     },
     "leisure-sports_centre-sport-swimming": {
         "defaultMessage": "4Centro de natación|centro de nado|natación|nado|piscina|piscinas|natatorio|complejo de natación|complejo acuático|alberca|pileta"
@@ -1710,7 +1710,7 @@
         "defaultMessage": "Té"
     },
     "@cuisine_all_vegetarian": {
-        "defaultMessage": "Cocina vegetariana"
+        "defaultMessage": "4Vegetariano|11Comida vegetariana|12Cocina vegetariana"
     },
     "cuisine-vegan|@cuisine_all_vegetarian": {
         "defaultMessage": "Cocina vegana"

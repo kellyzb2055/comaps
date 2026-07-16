@@ -1609,5 +1609,20 @@
     },
     "amenity-charging_station-motorcycle|@charging_station": {
         "defaultMessage": "5Station de recharge pour motos|Recharge pour motos"
+    },
+    "amenity-studio": {
+        "defaultMessage": "Studio de médias|Studio"
+    },
+    "tourism-artwork-sculpture": {
+        "defaultMessage": "Sculpture|Œuvre d'art|U+1F3A8"
+    },
+    "tourism-artwork-statue": {
+        "defaultMessage": "Statue|Œuvre d'art|U+1F3A8"
+    },
+    "tourism-artwork-painting": {
+        "defaultMessage": "Peinture|Œuvre d'art|U+1F3A8"
+    },
+    "amenity-planetarium|@category_tourism": {
+        "defaultMessage": "Planétarium|U+1FA90|Astronomie"
     }
 }

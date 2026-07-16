@@ -925,7 +925,6 @@
     <string name="route_finished">Rota tamamlandı</string>
     <string name="not_following_route">Rota takip edilmiyor</string>
     <string name="route_recalculating">Rota yeniden hesaplanıyor…</string>
-    <string name="pref_keyboard_typing_history_summary">Sistem klavyesinden yazma geçmişini saklamamasını iste</string>
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_enable_auto_reroute_title">Otomatik yeniden rota hesaplama</string>
     <string name="pref_enable_auto_reroute_description">Etkinleştirildiğinde, rotadan çıkarsanız yeni bir rota otomatik olarak oluşturulur.</string>
